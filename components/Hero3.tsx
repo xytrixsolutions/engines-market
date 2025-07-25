@@ -80,7 +80,7 @@ export default function Hero3() {
         {/* Load More Button with Lines */}
         <div className="flex items-center justify-center">
           <div className="flex-1 h-px bg-[#0037D6]"></div>
-          <button className=" bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-colors duration-200">
+          <button className=" bg-[#0037D6] hover:bg-transparent border-2 border-[#0037D6] text-white hover:text-[#0037D6] px-8 py-3 rounded-full font-semibold transition-all duration-300">
             Load More
           </button>
           <div className="flex-1 h-px bg-[#0037D6]"></div>

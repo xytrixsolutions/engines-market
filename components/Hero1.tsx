@@ -1,17 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, FC } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import Image from "next/image";
 
-const carImages = [
-  "/Home/banner 1.png",
-  "/Home/banner 1.png",
-  "/Home/banner 1.png",
-  "/Home/banner 1.png",
-];
-
-export default function Hero1() {
+interface Hero1Props {
+  carImages: string[];
+}
+const Hero1: FC<Hero1Props> = ({ carImages }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [prevIndex, setPrevIndex] = useState<number | null>(null);
 
@@ -22,7 +18,7 @@ export default function Hero1() {
     }, 4000);
 
     return () => clearInterval(interval);
-  }, [currentIndex]);
+  }, [carImages.length, currentIndex]);
 
   return (
     <div className="bg-[#F3F9FF] py-16 px-4 sm:px-6 lg:px-10">
@@ -122,3 +118,4 @@ export default function Hero1() {
     </div>
   );
 }
+export default Hero1;

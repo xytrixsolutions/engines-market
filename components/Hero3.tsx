@@ -2,35 +2,35 @@ import Image from "next/image";
 
 // Define your logos
 const brandLogos = [
-  { name: "BMW", src: "/Home/Brands/01.png" },
-  { name: "Jaguar", src: "/Home/Brands/02.png" },
-  { name: "Land Rover", src: "/Home/Brands/03.png" },
-  { name: "Mercedes", src: "/Home/Brands/04.png" },
-  { name: "Rangerover", src: "/Home/Brands/05.png" },
-  { name: "Mini", src: "/Home/Brands/06.png" },
-  { name: "Skoda", src: "/Home/Brands/07.png" },
-  { name: "Jaguar", src: "/Home/Brands/08.png" },
-  { name: "Land Rover", src: "/Home/Brands/09.png" },
-  { name: "Mercedes", src: "/Home/Brands/10.jpg" },
-  { name: "Rangerover", src: "/Home/Brands/11.png" },
-  { name: "Mini", src: "/Home/Brands/12.png" },
-  { name: "BMW", src: "/Home/Brands/13.png" },
-  { name: "Jaguar", src: "/Home/Brands/14.png" },
-  { name: "Land Rover", src: "/Home/Brands/15.png" },
-  { name: "Mercedes", src: "/Home/Brands/16.png" },
-  { name: "Rangerover", src: "/Home/Brands/17.png" },
-  { name: "Mini", src: "/Home/Brands/18.png" },
-  { name: "Skoda", src: "/Home/Brands/19.png" },
-  { name: "Jaguar", src: "/Home/Brands/20.png" },
-  { name: "Land Rover", src: "/Home/Brands/21.png" },
-  { name: "Mercedes", src: "/Home/Brands/22.png" },
-  { name: "Rangerover", src: "/Home/Brands/23.png" },
-  { name: "Mini", src: "/Home/Brands/24.png" },
-  { name: "Skoda", src: "/Home/Brands/25.png" },
-  { name: "Jaguar", src: "/Home/Brands/26.png" },
-  { name: "Land Rover", src: "/Home/Brands/27.png" },
-  { name: "Mercedes", src: "/Home/Brands/28.png" },
-  { name: "Rangerover", src: "/Home/Brands/29.svg" },
+  { name: "BMW", src: "/brands/01.png" },
+  { name: "Jaguar", src: "/brands/02.png" },
+  { name: "Land Rover", src: "/brands/03.png" },
+  { name: "Mercedes", src: "/brands/04.png" },
+  { name: "Rangerover", src: "/brands/05.png" },
+  { name: "Mini", src: "/brands/06.png" },
+  { name: "Skoda", src: "/brands/07.png" },
+  { name: "Jaguar", src: "/brands/08.png" },
+  { name: "Land Rover", src: "/brands/09.png" },
+  { name: "Mercedes", src: "/brands/10.jpg" },
+  { name: "Rangerover", src: "/brands/11.png" },
+  { name: "Mini", src: "/brands/12.png" },
+  { name: "BMW", src: "/brands/13.png" },
+  { name: "Jaguar", src: "/brands/14.png" },
+  { name: "Land Rover", src: "/brands/15.png" },
+  { name: "Mercedes", src: "/brands/16.png" },
+  { name: "Rangerover", src: "/brands/17.png" },
+  { name: "Mini", src: "/brands/18.png" },
+  { name: "Skoda", src: "/brands/19.png" },
+  { name: "Jaguar", src: "/brands/20.png" },
+  { name: "Land Rover", src: "/brands/21.png" },
+  { name: "Mercedes", src: "/brands/22.png" },
+  { name: "Rangerover", src: "/brands/23.png" },
+  { name: "Mini", src: "/brands/24.png" },
+  { name: "Skoda", src: "/brands/25.png" },
+  { name: "Jaguar", src: "/brands/26.png" },
+  { name: "Land Rover", src: "/brands/27.png" },
+  { name: "Mercedes", src: "/brands/28.png" },
+  { name: "Rangerover", src: "/brands/29.svg" },
 ];
 
 export default function Hero3() {
@@ -57,7 +57,7 @@ export default function Hero3() {
             </p>
           </div>
 
-         
+
 
 
         </div>

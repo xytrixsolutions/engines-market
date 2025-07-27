@@ -11,10 +11,11 @@ import EngineDealsCTA from "./components/EngineDealsCTA";
 
 const Page = (): JSX.Element => {
   const carImages = [
+    "/banners/banner-1.webp",
     "/banners/banner-2.webp",
     "/banners/banner-3.webp",
     "/banners/banner-4.webp",
-    "/banners/banner-1.webp",
+    "/banners/banner-5.webp",
   ];
 
   return (

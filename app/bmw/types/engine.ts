@@ -1,0 +1,35 @@
+// Shared types for engine-related components
+export type EngineData = {
+  engine_code: string;
+  make: string;
+  models: string;
+  valves: number;
+  displacement: number;
+  power: string;
+  fuel_type: string;
+  year_range: string;
+};
+
+export type TabKey =
+  | "range_rover"
+  | "land_rover"
+  | "bmw"
+  | "mercedes_benz"
+  | "jaguar_engines"
+  | "other";
+
+export type Tab = {
+  key: TabKey;
+  label: string;
+};
+
+export type Column<T = Record<string, unknown>> = {
+  key: string;
+  label: string;
+  render?: (value: unknown, row: T) => React.ReactNode;
+};
+
+export type TableProps<T = Record<string, unknown>> = {
+  columns: Column<T>[];
+  data: T[];
+};

@@ -1,17 +1,12 @@
 import React from "react";
+import { Column, TableProps } from "../types/engine";
 
-type Column = {
-  key: string;
-  label: string;
-  render?: (value: any, row: any) => React.ReactNode;
-};
+type EngineTableProps<T = Record<string, unknown>> = TableProps<T>;
 
-type EngineTableProps = {
-  columns: Column[];
-  data: any[];
-};
-
-const EngineTable: React.FC<EngineTableProps> = ({ columns, data }) => {
+const EngineTable = <T extends Record<string, unknown>>({
+  columns,
+  data,
+}: EngineTableProps<T>) => {
   return (
     <div className="overflow-x-auto rounded-lg">
       <table className="min-w-full text-gray-900">
@@ -39,7 +34,9 @@ const EngineTable: React.FC<EngineTableProps> = ({ columns, data }) => {
             >
               {columns.map((col) => (
                 <td key={col.key} className="px-4 py-2 align-middle">
-                  {col.render ? col.render(row[col.key], row) : row[col.key]}
+                  {col.render
+                    ? col.render(row[col.key], row)
+                    : String(row[col.key] || "")}
                 </td>
               ))}
             </tr>

@@ -1,4 +1,4 @@
-name: Vercel Production Deployment (Next.js + pnpm)
+name: Vercel Deployment
 
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
@@ -12,43 +12,29 @@ on:
 jobs:
   Deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'pnpm'
 
-      - name: Enable pnpm via Corepack
-        run: corepack enable
-
-      - name: Cache pnpm store
-        uses: actions/cache@v3
-        with:
-          path: ~/.local/share/pnpm/store
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-
-
-      - name: Cache Next.js build cache
-        uses: actions/cache@v3
-        with:
-          path: .next/cache
-          key: nextjs-${{ runner.os }}-${{ hashFiles('**/*.[jt]s', '**/*.json', '**/*.tsx', '**/*.ts') }}
-          restore-keys: |
-            nextjs-${{ runner.os }}-
+      - name: Install pnpm
+        run: npm install -g pnpm
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
 
-      - name: Pull Vercel Environment Info
-        run: pnpm dlx vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Install Vercel CLI
+        run: pnpm add -g vercel@latest
 
-      - name: Build project
-        run: pnpm dlx vercel build
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
 
-      - name: Deploy to Vercel (prebuilt)
-        run: pnpm dlx vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Build Project Artifacts
+        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy Project Artifacts to Vercel
+        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}

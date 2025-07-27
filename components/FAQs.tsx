@@ -146,7 +146,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="bg-[#f8fbfd] py-20 px-4">
+    <section className="bg-[#F3F9FF] py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-10">
           Frequently Asked Questions

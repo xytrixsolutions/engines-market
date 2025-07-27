@@ -32,7 +32,7 @@ const Hero1: FC<Hero1Props> = ({ carImages }) => {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
           {/* LEFT: Image */}
           <div className="lg:col-span-3 flex flex-col items-center">
-            <div className="w-full  relative aspect-[16/7] overflow-hidden rounded-lg mb-5">
+            <div className="w-full  relative aspect-[12/7] overflow-hidden rounded-lg mb-5">
               {carImages.map((src, index) => {
                 let className = "image-slide";
                 if (index === currentIndex) {

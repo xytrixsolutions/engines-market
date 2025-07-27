@@ -9,10 +9,11 @@ import FAQSection from "@/components/FAQs";
 
 export default function Home() {
   const carImages = [
-    "/banners/banner-1.png",
-    "/banners/banner-1.png",
-    "/banners/banner-1.png",
-    "/banners/banner-1.png",
+    "/banners/banner-1.webp",
+    "/banners/banner-2.webp",
+    "/banners/banner-3.webp",
+    "/banners/banner-4.webp",
+    "/banners/banner-5.webp",
   ]
 
   return (

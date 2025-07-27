@@ -1,14 +1,5 @@
 
 
-import { FaCheckCircle } from 'react-icons/fa';
-
-const topics = [
-  'Engine Buying Guides (Used vs. Reconditioned Engines)',
-  'Common Engine Issues by Car Brand',
-  'How to Extend Engine Life',
-  'Cost-Saving Tips for Engine Replacement',
-];
-
 const BlogCards = () => {
   return (
     <section className="py-16 px-4 bg-[#F3F9FF]">
@@ -24,7 +15,7 @@ const BlogCards = () => {
           {/* Card 1 – Featured Post */}
           <div className="bg-gray-50 p-6 rounded-2xl shadow-2xl transition">
             <h3 className="text-xl font-semibold text-gray-800 mb-3">
-              Buying Guide For Engine
+            Buying Guide For Engine
             </h3>
             <p className="text-gray-600 text-sm mb-4">
               Snippet from blog post - Learn everything you need to know about buying a used or
@@ -85,6 +76,7 @@ const BlogCards = () => {
           </div>
         </div>
       </div>
+      
     </section>
   );
 };

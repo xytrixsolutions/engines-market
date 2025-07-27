@@ -1,13 +1,14 @@
 import { JSX } from "react";
 import Hero1 from "../../components/Hero1";
 import WhyChoose from "./components/WhyChoose";
-import EngineGuide from "./components/engine-guide";
+import EngineGuide from "./components/EngineGuide";
 import EngineTablesTabs from "./components/EngineTablesTabs";
 import EngineProblemsSection from "./components/EngineProblemsSection";
 import EngineProsCons from "./components/EngineProsCons";
 import TroubleshootingGuide from "./components/TroubleShoot";
 import PerformanceUpgrades from "./components/PerformanceUpgrades";
 import EngineDealsCTA from "./components/EngineDealsCTA";
+import FAQSection from "@/components/FAQs";
 
 const Page = (): JSX.Element => {
   const carImages = [
@@ -29,6 +30,7 @@ const Page = (): JSX.Element => {
       <TroubleshootingGuide />
       <PerformanceUpgrades />
       <EngineDealsCTA />
+      <FAQSection />
     </>
   );
 };

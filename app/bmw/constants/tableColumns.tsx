@@ -1,22 +1,92 @@
 import React from "react";
-import { Column, EngineData } from "../types/engine";
+import {
+  Column,
+  Model,
+  EngineCode,
+  ModelEngine,
+  ReplacementCost,
+} from "../types/engine";
+import { Button } from "@/components/ui/button";
 
-export const ENGINE_TABLE_COLUMNS: Column<EngineData>[] = [
-  { key: "engine_code", label: "Engine Code" },
-  { key: "make", label: "Make" },
-  { key: "models", label: "Compatible Models" },
-  { key: "valves", label: "Valves" },
-  { key: "displacement", label: "Displacement (CC)" },
-  { key: "power", label: "Power (kW/HP)" },
-  { key: "fuel_type", label: "Fuel Type" },
-  { key: "year_range", label: "Year Range" },
+const quoteButton = (
+  <Button
+    variant="outline"
+    className="border-royal-blue text-royal-blue hover:bg-royal-blue hover:text-white transition-all duration-200"
+  >
+    Request Quote
+  </Button>
+);
+
+const sampleImage = (
+  <img
+    src="/bmw/bmw.png"
+    alt="Sample"
+    className="w-12 h-12 object-contain rounded-md border border-border bg-white"
+  />
+);
+
+export const MODEL_COLUMNS: Column<Model>[] = [
+  {
+    key: "image",
+    label: "",
+    render: () => sampleImage,
+  },
+  { key: "model_name", label: "Model Name" },
+  { key: "engine_options", label: "Engine Options" },
   {
     key: "action",
     label: "Request Quote",
-    render: () => (
-      <button className="bg-royal-blue hover:bg-transparent border-2 border-royal-blue text-white hover:text-royal-blue font-semibold px-4 py-2 rounded-full transition-all duration-200">
-        Get Quote
-      </button>
-    ),
+    render: () => quoteButton,
+  },
+];
+
+export const ENGINE_CODE_COLUMNS: Column<EngineCode>[] = [
+  { key: "engineCode", label: "Engine Code" },
+  { key: "engineSize", label: "Engine Size (L)" },
+  { key: "fuelType", label: "Fuel Type" },
+  { key: "turbo", label: "Turbo", render: (value) => (value ? "Yes" : "No") },
+  { key: "horsepower", label: "Horsepower" },
+  { key: "torque", label: "Torque (Nm)" },
+  { key: "productionYears", label: "Production Years" },
+  {
+    key: "action",
+    label: "Request Quote",
+    render: () => quoteButton,
+  },
+];
+
+export const MODEL_ENGINE_COLUMNS: Column<ModelEngine>[] = [
+  {
+    key: "image",
+    label: "",
+    render: () => sampleImage,
+  },
+  { key: "engineCode", label: "Engine Code" },
+  {
+    key: "compatibleModels",
+    label: "Compatible Models",
+    render: (value, row) =>
+      Array.isArray(value) ? value.join(", ") : String(value),
+  },
+  {
+    key: "action",
+    label: "Request Quote",
+    render: () => quoteButton,
+  },
+];
+
+export const REPLACEMENT_COST_COLUMNS: Column<ReplacementCost>[] = [
+  {
+    key: "image",
+    label: "",
+    render: () => sampleImage,
+  },
+  { key: "model", label: "Model" },
+  { key: "engineType", label: "Engine Type" },
+  { key: "estimatedCost", label: "Estimated Cost" },
+  {
+    key: "action",
+    label: "Request Quote",
+    render: () => quoteButton,
   },
 ];

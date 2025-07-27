@@ -77,7 +77,7 @@ const Hero1: FC<Hero1Props> = ({ carImages }) => {
                 <div className="absolute left-3 top-1/2 transform -translate-y-1/2 flex items-center">
                   <div className="w-8 h-6 relative mr-2">
                     <Image
-                      src="/Home/ChatGPT Image Jul 25, 2025, 02_17_06 AM.png"
+                      src="/Home/uk-flag.png"
                       alt="UK Flag"
                       fill
                       className="object-cover rounded-sm"
@@ -117,5 +117,5 @@ const Hero1: FC<Hero1Props> = ({ carImages }) => {
       </div>
     </div>
   );
-}
+};
 export default Hero1;

@@ -46,7 +46,7 @@ export default function Header() {
             <Link href="/contact" className="text-[#383838] hover:text-black font-semibold transition-colors duration-200">
               Contact
             </Link>
-            <button className="bg-black hover:bg-white text-white hover:text-black border-2 px-1 py-1 lg:px-4 lg:py-1 max-lg:text-sm border-black xl:px-6 xl:py-2 rounded-full font-medium flex items-center space-x-2 transition-all duration-300">
+            <button className="bg-black hover:bg-transparent text-white hover:text-black border-2 px-1 py-1 lg:px-4 lg:py-1 max-lg:text-sm border-black xl:px-6 xl:py-2 rounded-full font-medium flex items-center space-x-2 transition-all duration-300">
               <span>Request A Quote</span>
               <FiArrowUpRight className="w-7 h-7" />
             </button>
@@ -80,7 +80,7 @@ export default function Header() {
                 Contact
               </Link>
             </nav>
-            <button className="w-full bg-black hover:bg-white text-white hover:text-black border-2 px-6 py-2 border-black rounded-full font-medium flex justify-center items-center space-x-2 transition-all duration-300">
+            <button className="w-full bg-black hover:bg-transparent text-white hover:text-black border-2 px-6 py-2 border-black rounded-full font-medium flex justify-center items-center space-x-2 transition-all duration-300">
               <span>Request A Quote</span>
               <FiArrowUpRight className="w-6 h-6" />
             </button>

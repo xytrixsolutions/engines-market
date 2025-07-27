@@ -4,128 +4,129 @@ import { Card, CardContent } from "@/components/ui/card";
 import Container from "@/components/Container";
 import { ArrowRight, Phone, Mail, Clock, CheckCircle } from "lucide-react";
 
+// Reusable FeatureCard Component
+const FeatureCard = ({
+  icon,
+  title,
+  description,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) => (
+  <Card className="bg-white border border-gray-200 hover:shadow-md transition-all duration-300">
+    <CardContent className="py-6 text-center">
+      {icon}
+      <h3 className="font-semibold text-gray-800 mb-2">{title}</h3>
+      <p className="text-sm text-gray-600">{description}</p>
+    </CardContent>
+  </Card>
+);
+
+const iconClass = "h-8 w-8 mx-auto mb-3";
+
+const features = [
+  {
+    Icon: CheckCircle,
+    iconClassName: `${iconClass} text-green-600`,
+    title: "Best Prices Guaranteed",
+    description: "Competitive pricing on all engine types",
+  },
+  {
+    Icon: Clock,
+    iconClassName: `${iconClass} text-blue-600`,
+    title: "Fast Delivery",
+    description: "Quick turnaround times nationwide",
+  },
+  {
+    Icon: CheckCircle,
+    iconClassName: `${iconClass} text-green-600`,
+    title: "Quality Assured",
+    description: "All engines tested and warranted",
+  },
+];
+
+// Trust badges
+const trustIndicators = [
+  "Free Quotes",
+  "No Obligation",
+  "Expert Support",
+  "Nationwide Delivery",
+];
+
 const EngineDealsCTA: React.FC = () => {
   return (
-    <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-black py-16 relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 bg-[url('/placeholder.svg?height=400&width=800')] opacity-5" />
-      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl" />
+    <Container className="bg-[#F3F9FF] py-16 relative overflow-hidden text-gray-900">
+      <div className="text-center space-y-8">
+        {/* Heading */}
+        <div className="space-y-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            Compare Prices & Get the Best{" "}
+            <span className="text-[#0037D6]">BMW Engine Deals</span> Now!
+          </h2>
+          <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            At{" "}
+            <span className="font-semibold text-[#0037D6]">Engine Market</span>,
+            we offer the best prices and availability for all BMW engines.
+            Whether you&apos;re looking for a new, used, or reconditioned
+            engine, we&apos;ve got you covered. Don&apos;t wait, request a quote
+            today and get your BMW back on the road in no time!
+          </p>
+        </div>
 
-      <Container className="relative z-10">
-        <div className="text-center space-y-8">
-          {/* Main Heading */}
-          <div className="space-y-4">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-              Compare Prices & Get the Best{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-                BMW Engine Deals
-              </span>{" "}
-              Now!
-            </h2>
+        {/* Feature Cards */}
+        <div className="grid gap-6 md:grid-cols-3">
+          {features.map(({ Icon, iconClassName, title, description }, i) => (
+            <FeatureCard
+              key={i}
+              icon={<Icon className={iconClassName} />}
+              title={title}
+              description={description}
+            />
+          ))}
+        </div>
 
-            <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              At{" "}
-              <span className="font-semibold text-blue-400">Engine Market</span>
-              , we offer the best prices and availability for all BMW engines.
-              Whether you&apos;re looking for a new, used, or reconditioned
-              engine, we&apos;ve got you covered. Don&apos;t wait, request a
-              quote today and get your BMW back on the road in no time!
-            </p>
-          </div>
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Button
+            size="lg"
+            className="bg-[#0037D6] hover:bg-transparent hover:text-[#0037D6] border border-[#0037D6] text-white font-semibold px-8 py-3 text-lg transition-all duration-300 group"
+          >
+            Request a Quote Now!
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
 
-          {/* Features Grid */}
-          <div className="grid gap-6 md:grid-cols-3 max-w-4xl mx-auto">
-            <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300">
-              <CardContent className="pt-6 text-center">
-                <CheckCircle className="h-8 w-8 text-green-400 mx-auto mb-3" />
-                <h3 className="font-semibold text-white mb-2">
-                  Best Prices Guaranteed
-                </h3>
-                <p className="text-sm text-gray-300">
-                  Competitive pricing on all engine types
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300">
-              <CardContent className="pt-6 text-center">
-                <Clock className="h-8 w-8 text-blue-400 mx-auto mb-3" />
-                <h3 className="font-semibold text-white mb-2">Fast Delivery</h3>
-                <p className="text-sm text-gray-300">
-                  Quick turnaround times nationwide
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300">
-              <CardContent className="pt-6 text-center">
-                <CheckCircle className="h-8 w-8 text-purple-400 mx-auto mb-3" />
-                <h3 className="font-semibold text-white mb-2">
-                  Quality Assured
-                </h3>
-                <p className="text-sm text-gray-300">
-                  All engines tested and warranted
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-300 group"
-            >
-              Request a Quote Now!
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-
-            <div className="flex gap-4">
+          <div className="flex gap-4">
+            {[
+              { icon: Phone, label: "Call Now" },
+              { icon: Mail, label: "Email Us" },
+            ].map(({ icon: Icon, label }) => (
               <Button
+                key={label}
                 variant="outline"
                 size="lg"
-                className="border-white/30 text-white hover:bg-white/10 hover:text-white font-semibold px-6 py-3 bg-transparent"
+                className="border border-gray-300 text-gray-800 hover:bg-gray-100 font-semibold px-6 py-3 bg-white"
               >
-                <Phone className="mr-2 h-4 w-4" />
-                Call Now
+                <Icon className="mr-2 h-4 w-4" />
+                {label}
               </Button>
-
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-white/30 text-white hover:bg-white/10 hover:text-white font-semibold px-6 py-3 bg-transparent"
-              >
-                <Mail className="mr-2 h-4 w-4" />
-                Email Us
-              </Button>
-            </div>
-          </div>
-
-          {/* Trust Indicators */}
-          <div className="pt-8 border-t border-white/20">
-            <div className="flex flex-wrap justify-center items-center gap-8 text-gray-400">
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-green-400" />
-                <span className="text-sm">Free Quotes</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-green-400" />
-                <span className="text-sm">No Obligation</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-green-400" />
-                <span className="text-sm">Expert Support</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-green-400" />
-                <span className="text-sm">Nationwide Delivery</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-      </Container>
-    </section>
+
+        {/* Trust Indicators */}
+        <div className="pt-8 border-t border-gray-300">
+          <div className="flex flex-wrap justify-center items-center gap-8 text-gray-700">
+            {trustIndicators.map((text, i) => (
+              <div key={i} className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4 text-green-600" />
+                <span className="text-sm">{text}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
   );
 };
 

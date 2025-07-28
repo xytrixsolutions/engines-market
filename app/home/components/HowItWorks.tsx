@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HowItWorks = () => {
   return (
-    <Container className="flex flex-col md:flex-row items-center justify-between">
+    <Container className="flex flex-col-reverse md:flex-row items-center justify-between">
       {/* Right Side (Image) */}
       <div className="md:w-1/2 flex justify-start mb-10 md:mb-0">
         <Image
@@ -16,9 +16,9 @@ const HowItWorks = () => {
       </div>
 
       {/* Left Side (Text) */}
-      <div className="md:w-1/2 w-full flex justify-end">
+      <div className="md:w-1/2 w-full flex justify-end md:pb-8">
         <div className="w-full md:w-[90%] text-left">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0037D6] mb-4">
+          <h2 className="text-3xl  md:text-4xl font-bold text-[#0037D6] mb-5">
             How It Works - Simple & Straightforward
           </h2>
           <p className="text-lg text-gray-700 mb-6">

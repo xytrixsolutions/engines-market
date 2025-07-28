@@ -5,18 +5,15 @@ interface WrapperProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
 }
 
-const Heading = ({ children, className, ...props }: WrapperProps) => {
+const Accent = ({ children, className, ...props }: WrapperProps) => {
   return (
-    <h1
-      className={cn(
-        "text-3xl md:text-4xl font-bold leading-tight mb-6 text-charcoal-gray",
-        className,
-      )}
+    <span
+      className={cn("text-neon-red font-extrabold mx-2", className)}
       {...props}
     >
       {children}
-    </h1>
+    </span>
   );
 };
 
-export default Heading;
+export default Accent;

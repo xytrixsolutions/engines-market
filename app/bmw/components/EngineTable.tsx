@@ -25,7 +25,7 @@ const EngineTable = <T extends Record<string, unknown>>({
               {columns.map((col) => (
                 <TableHead
                   key={col.key}
-                  className="px-4 py-3 text-left font-semibold bg-royal-blue/85 text-white"
+                  className="px-4 py-3 text-left font-semibold bg-neon-red/85 text-white"
                 >
                   {col.label}
                 </TableHead>

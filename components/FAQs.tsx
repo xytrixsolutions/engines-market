@@ -1,6 +1,7 @@
 "use client";
 
 import Container from "./Container";
+import Heading from "./Heading";
 import {
   Accordion,
   AccordionContent,
@@ -17,9 +18,7 @@ export type FAQ = {
 const FAQSection = ({ faqs }: { faqs: FAQ[] }) => {
   return (
     <Container className=" py-20">
-      <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-10">
-        Frequently Asked Questions
-      </h2>
+      <Heading className="text-center">Frequently Asked Questions</Heading>
 
       <Accordion type="single" collapsible className="w-full space-y-2 ">
         {faqs.map((faq, index) => (
@@ -28,7 +27,7 @@ const FAQSection = ({ faqs }: { faqs: FAQ[] }) => {
             value={`item-${index}`}
             className="border border-gray-200 rounded-xl bg-white"
           >
-            <AccordionTrigger className="px-5 py-4 text-left text-gray-800 font-medium hover:no-underline">
+            <AccordionTrigger className="px-5 py-4 text-left text-gray-800 font-bold hover:no-underline">
               {faq.question}
             </AccordionTrigger>
             <AccordionContent className="px-5 pb-4 text-sm text-gray-700 space-y-2">

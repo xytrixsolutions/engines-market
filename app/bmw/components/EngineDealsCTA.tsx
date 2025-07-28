@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Container from "@/components/Container";
 import { ArrowRight, Phone, Mail, Clock, CheckCircle } from "lucide-react";
 import Heading from "@/components/Heading";
+import Paragraph from "@/components/Paragraph";
 
 // Reusable FeatureCard Component
 const FeatureCard = ({
@@ -16,7 +17,7 @@ const FeatureCard = ({
   description: string;
 }) => (
   <Card className="bg-white border border-gray-200 hover:shadow-md transition-all duration-300">
-    <CardContent className="py-6 text-center">
+    <CardContent className="py-12 text-center">
       {icon}
       <h3 className="font-semibold text-gray-800 mb-2">{title}</h3>
       <p className="text-sm text-gray-600">{description}</p>
@@ -63,16 +64,15 @@ const EngineDealsCTA: React.FC = () => {
         <div className="max-w-5xl mx-auto">
           <Heading>
             Compare Prices & Get the Best{" "}
-            <span className="text-[#0037D6]">BMW Engine Deals</span> Now!
+            <span className="text-neon-red">BMW Engine Deals</span> Now!
           </Heading>
-          <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-            At{" "}
-            <span className="font-semibold text-[#0037D6]">Engine Market</span>,
-            we offer the best prices and availability for all BMW engines.
-            Whether you&apos;re looking for a new, used, or reconditioned
-            engine, we&apos;ve got you covered. Don&apos;t wait, request a quote
-            today and get your BMW back on the road in no time!
-          </p>
+          <Paragraph>
+            At <strong>Engine Market</strong>, we offer the best prices and
+            availability for all BMW engines. Whether you&apos;re looking for a
+            new, used, or reconditioned engine, we&apos;ve got you covered.
+            Don&apos;t wait, request a quote today and get your BMW back on the
+            road in no time!
+          </Paragraph>
         </div>
 
         {/* Feature Cards */}
@@ -91,7 +91,7 @@ const EngineDealsCTA: React.FC = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button
             size="lg"
-            className="bg-[#0037D6] hover:bg-transparent hover:text-[#0037D6] border border-[#0037D6] text-white font-semibold px-8 py-3 text-lg transition-all duration-300 group"
+            className="bg-neon-red hover:bg-transparent hover:text-neon-red border border-neon-red text-white font-semibold px-8 py-3 text-lg transition-all duration-300 group"
           >
             Request a Quote Now!
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

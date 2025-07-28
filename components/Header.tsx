@@ -24,7 +24,7 @@ export default function Header() {
 
             <div className="text-xl lg:text-2xl xl:text-3xl font-bold">
               <span className="text-gray-900">ENGINES</span>
-              <span className="text-[#0037D6]">MARKET</span>
+              <span className="text-neon-red">MARKET</span>
             </div>
           </div>
 

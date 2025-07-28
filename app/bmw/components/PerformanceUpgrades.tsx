@@ -21,6 +21,8 @@ import {
   Info,
 } from "lucide-react";
 import Heading from "@/components/Heading";
+import Paragraph from "@/components/Paragraph";
+import Accent from "@/components/Accent";
 
 const PERFORMANCE_SECTIONS = [
   {
@@ -202,19 +204,23 @@ const getLevelColor = (level: string) => {
 const PerformanceUpgrades: React.FC = () => {
   return (
     <Container className="my-16">
-      <div className="text-center space-y-4 mb-12">
-        <Heading className="text-royal-blue">
-          Performance Upgrades & Modifications for BMW Engines
+      <div className="max-w-6xl mx-auto text-center space-y-4 mb-12">
+        <Heading>
+          Performance Upgrades & Modifications for<Accent>BMW Engines</Accent>
         </Heading>
-        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Common Tuning Options for Performance Enthusiasts
-        </p>
-        <p className="text-muted-foreground max-w-4xl mx-auto">
-          BMW engines are highly regarded for their performance potential, and
-          there are numerous tuning options available for enthusiasts looking to
-          enhance their vehicle&apos;s power and responsiveness. Here are some
-          of the most popular tuning options:
-        </p>
+        <Paragraph className="mb-1">
+          Common <strong>Tuning Options</strong> for{" "}
+          <strong>Performance Enthusiasts</strong>
+        </Paragraph>
+
+        <Paragraph className="text-base">
+          <strong>BMW engines</strong> are highly regarded for their
+          <strong> performance potential</strong>, and there are numerous
+          <strong> tuning options</strong> available for enthusiasts looking to
+          enhance their vehicle&apos;s <strong>power</strong> and{" "}
+          <strong>responsiveness</strong>. Here are some of the most popular
+          tuning options:
+        </Paragraph>
       </div>
 
       <Accordion

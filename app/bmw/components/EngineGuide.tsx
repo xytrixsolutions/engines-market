@@ -1,5 +1,7 @@
+import Accent from "@/components/Accent";
 import Container from "@/components/Container";
 import Heading from "@/components/Heading";
+import Paragraph from "@/components/Paragraph";
 import Image from "next/image";
 
 export default function BMWEngineGuide() {
@@ -8,17 +10,22 @@ export default function BMWEngineGuide() {
       {/* Heading and Text */}
       <div className="text-center space-y-6 mb-14 max-w-6xl mx-auto">
         <Heading className="leading-tight">
-          The Complete BMW Engine Guide: Engine Codes, Specifications,
-          Replacement Costs & Performance Upgrade
+          The Complete
+          <Accent className="mx-3">BMW Engine</Accent>
+          Guide: Engine Codes, Specifications, Replacement Costs &{" "}
+          <Accent>Performance Upgrade</Accent>
         </Heading>
 
-        <p className="text-gray-600 text-lg leading-relaxed mx-auto">
-          Welcome to ultimate BMW engines guide, this page is designed to give
-          you a complete overview of BMW replacement engines, estimated costs,
-          engine codes and their compatible models, along with troubleshooting
-          guides for common problems, pros & cons of various replacement engine
-          types, performance upgrade tips and most frequently asked questions.
-        </p>
+        <Paragraph>
+          Welcome to the ultimate BMW engines guide. This page provides a
+          comprehensive overview of <strong>BMW replacement engines</strong>,
+          including estimated costs, engine codes, and compatible models.
+          You&apos;ll also find <strong>troubleshooting guides</strong> for
+          common issues, a breakdown of the{" "}
+          <strong>pros and cons of different replacement engine types</strong>,{" "}
+          <strong>performance upgrade tips</strong>, and answers to the most
+          frequently asked questions.
+        </Paragraph>
       </div>
 
       {/* Image */}

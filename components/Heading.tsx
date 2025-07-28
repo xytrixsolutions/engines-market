@@ -5,15 +5,18 @@ interface WrapperProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
 }
 
-const Container = ({ children, className, ...props }: WrapperProps) => {
+const Heading = ({ children, className, ...props }: WrapperProps) => {
   return (
-    <div
-      className={cn("w-11/12 lg:w-10/12 mx-auto py-16", className)}
+    <h1
+      className={cn(
+        "text-3xl md:text-4xl text-gray-700 font-bold leading-tight mb-6",
+        className,
+      )}
       {...props}
     >
       {children}
-    </div>
+    </h1>
   );
 };
 
-export default Container;
+export default Heading;

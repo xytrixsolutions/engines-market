@@ -6,6 +6,7 @@ import WhyChoose from "./components/WhyChoose";
 import TrustBadges from "./components/TrustBadges";
 import BlogCards from "./components/Blog";
 import FAQSection from "@/components/FAQs";
+import EngineDealSection from "./components/EngineDealSection";
 
 export default function Home() {
   const carImages = [
@@ -14,11 +15,12 @@ export default function Home() {
     "/banners/banner-3.webp",
     "/banners/banner-4.webp",
     "/banners/banner-5.webp",
-  ]
+  ];
 
   return (
     <>
       <Hero1 carImages={carImages} />
+      <EngineDealSection />
       <Hero3 />
       <WhyChoose />
       <HowItWorks />

@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="p-5 bg-[#F3F9FF]">
-      <footer className="bg-black text-white rounded-2xl p-8 max-w-7xl mx-auto">
+    <div className="bg-black">
+      <footer className="text-white w-11/12 lg:w-10/12 mx-auto py-16">
         {/* Main footer content */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 gap-8 mb-8">
           {/* Links Column */}
@@ -109,39 +109,38 @@ export default function Footer() {
 
             {/* Description */}
             <p className="text-gray-300 text-sm leading-relaxed">
-            At Engine Market, we lead the way in providing high-quality reconditioned and used engines, revolutionizing how car owners and garages find reliable engine solutions.
+              At Engine Market, we lead the way in providing high-quality
+              reconditioned and used engines, revolutionizing how car owners and
+              garages find reliable engine solutions.
             </p>
           </div>
         </div>
 
         {/* Divider */}
         <div className="border-t border-gray-500 pt-6 w-full">
-  <div className="flex flex-col sm:flex-row items-center gap-4 w-full">
-    
-    {/* Social Media Links */}
-    <div className="flex gap-3">
-      <button className="border-2 border-white rounded-full px-4 py-2 text-sm hover:bg-white text-white hover:text-black transition-all duration-300 flex items-center gap-2">
-        <FaInstagram size={16} />
-        Instagram
-      </button>
-      <button className="border-2 border-white rounded-full px-4 py-2 text-sm hover:bg-white text-white hover:text-black transition-all duration-300 flex items-center gap-2">
-        <CiLinkedin size={18} />
-        LinkedIn
-      </button>
-      <button className="border-2 border-white rounded-full px-4 py-2 text-sm hover:bg-white text-white hover:text-black transition-all duration-300 flex items-center gap-2">
-        <CiTwitter size={20} />
-        Twitter
-      </button>
-    </div>
+          <div className="flex flex-col sm:flex-row items-center gap-4 w-full">
+            {/* Social Media Links */}
+            <div className="flex gap-3">
+              <button className="border-2 border-white rounded-full px-4 py-2 text-sm hover:bg-white text-white hover:text-black transition-all duration-300 flex items-center gap-2">
+                <FaInstagram size={16} />
+                Instagram
+              </button>
+              <button className="border-2 border-white rounded-full px-4 py-2 text-sm hover:bg-white text-white hover:text-black transition-all duration-300 flex items-center gap-2">
+                <CiLinkedin size={18} />
+                LinkedIn
+              </button>
+              <button className="border-2 border-white rounded-full px-4 py-2 text-sm hover:bg-white text-white hover:text-black transition-all duration-300 flex items-center gap-2">
+                <CiTwitter size={20} />
+                Twitter
+              </button>
+            </div>
 
-    {/* Full-width copyright button style */}
-    <div className="border-2 border-white rounded-full px-4 py-2 text-sm text-white w-full sm:flex-1 text-center">
-      ENGINEMARKET. All Rights Reserved
-    </div>
-  </div>
-</div>
-
-
+            {/* Full-width copyright button style */}
+            <div className="border-2 border-white rounded-full px-4 py-2 text-sm text-white w-full sm:flex-1 text-center">
+              ENGINEMARKET. All Rights Reserved
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );

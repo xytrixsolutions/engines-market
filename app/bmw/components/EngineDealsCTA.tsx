@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Container from "@/components/Container";
 import { ArrowRight, Phone, Mail, Clock, CheckCircle } from "lucide-react";
+import Heading from "@/components/Heading";
 
 // Reusable FeatureCard Component
 const FeatureCard = ({
@@ -59,11 +60,11 @@ const EngineDealsCTA: React.FC = () => {
     <Container className="bg-[#F3F9FF] py-16 relative overflow-hidden text-gray-900">
       <div className="text-center space-y-8">
         {/* Heading */}
-        <div className="space-y-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+        <div className="max-w-5xl mx-auto">
+          <Heading>
             Compare Prices & Get the Best{" "}
             <span className="text-[#0037D6]">BMW Engine Deals</span> Now!
-          </h2>
+          </Heading>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
             At{" "}
             <span className="font-semibold text-[#0037D6]">Engine Market</span>,

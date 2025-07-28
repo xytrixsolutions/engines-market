@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Container from "./Container";
 
 // Define your logos with different sizes
 const brandLogos = [
@@ -44,63 +45,60 @@ export default function Hero3() {
   };
 
   return (
-    <div className="bg-[#F3F9FF] py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <Container>
       <div className="items-center mb-12 text-center flex flex-col justify-center">
-  {/* Title */}
-  <div>
-    <h2 className="text-4xl md:text-5xl font-normal text-black leading-tight mb-5 text-center">
-      Explore By <span className="text-[#0037D6]">Manufacturer</span>
-    </h2>
-  </div>
-
-  {/* Description */}
-  <div>
-    <p className="text-gray-700 text-lg leading-relaxed max-w-3xl mx-auto">
-      Find the perfect engine for your car! Choose your manufacturer
-      below and get instant access to reconditioned, used, and new
-      engine options from trusted suppliers.
-    </p>
-  </div>
-</div>
-
-
-        {/* Manufacturer Logos */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12 max-w-6xl mx-auto">
-          {brandLogos.slice(0, visibleCount).map((logo, index) => (
-            <div
-              key={index}
-              className="mx-auto flex items-center justify-center"
-              style={{
-                width: `${logo.width + 20}px`,
-                height: `${logo.height + 20}px`,
-              }}
-            >
-              <Image
-                src={logo.src}
-                alt={logo.name}
-                width={logo.width}
-                height={logo.height}
-                className="object-contain"
-              />
-            </div>
-          ))}
+        {/* Title */}
+        <div>
+          <h2 className="text-4xl md:text-5xl font-normal text-black leading-tight mb-5 text-center">
+            Explore By <span className="text-[#0037D6]">Manufacturer</span>
+          </h2>
         </div>
 
-        {/* Load More Button */}
-        {visibleCount < brandLogos.length && (
-          <div className="flex items-center justify-center">
-            <div className="flex-1 h-px bg-[#0037D6]"></div>
-            <button
-              onClick={handleLoadMore}
-              className=" bg-[#0037D6] hover:bg-transparent border-2 border-[#0037D6] text-white hover:text-[#0037D6] px-8 py-3 rounded-full font-semibold transition-all duration-300"
-            >
-              Load More
-            </button>
-            <div className="flex-1 h-px bg-[#0037D6]"></div>
-          </div>
-        )}
+        {/* Description */}
+        <div>
+          <p className="text-gray-700 text-lg leading-relaxed max-w-6xl mx-auto">
+            Find the perfect engine for your car! Choose your manufacturer below
+            and get instant access to reconditioned, used, and new engine
+            options from trusted suppliers.
+          </p>
+        </div>
       </div>
-    </div>
+
+      {/* Manufacturer Logos */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+        {brandLogos.slice(0, visibleCount).map((logo, index) => (
+          <div
+            key={index}
+            className="mx-auto flex items-center justify-center"
+            style={{
+              width: `${logo.width + 20}px`,
+              height: `${logo.height + 20}px`,
+            }}
+          >
+            <Image
+              src={logo.src}
+              alt={logo.name}
+              width={logo.width}
+              height={logo.height}
+              className="object-contain"
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Load More Button */}
+      {visibleCount < brandLogos.length && (
+        <div className="flex items-center justify-center">
+          <div className="flex-1 h-px bg-[#0037D6]"></div>
+          <button
+            onClick={handleLoadMore}
+            className=" bg-[#0037D6] hover:bg-transparent border-2 border-[#0037D6] text-white hover:text-[#0037D6] px-8 py-3 rounded-full font-semibold transition-all duration-300"
+          >
+            Load More
+          </button>
+          <div className="flex-1 h-px bg-[#0037D6]"></div>
+        </div>
+      )}
+    </Container>
   );
 }

@@ -18,6 +18,7 @@ import {
   Shield,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import Heading from "@/components/Heading";
 
 const PROBLEMS = [
   {
@@ -93,15 +94,17 @@ const getSeverityColor = (severity: string) => {
 const EngineProblemsSection: React.FC = () => {
   return (
     <Container className="my-12">
-      <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-royal-blue">
-        Common BMW Engine Problems & How to Fix Them
-      </h2>
-      <p className="text-center text-muted-foreground mb-8 mx-auto">
-        BMW engines are renowned for their performance and engineering
-        excellence, but like any complex machinery, they can encounter issues.
-        Here are some of the most common problems found in BMW engines, along
-        with solutions and preventive measures:
-      </p>
+      <div className="max-w-5xl mx-auto">
+        <Heading className="text-center mb-6 text-royal-blue">
+          Common BMW Engine Problems & How to Fix Them
+        </Heading>
+        <p className="text-center text-muted-foreground mb-8 mx-auto">
+          BMW engines are renowned for their performance and engineering
+          excellence, but like any complex machinery, they can encounter issues.
+          Here are some of the most common problems found in BMW engines, along
+          with solutions and preventive measures:
+        </p>
+      </div>
       <Accordion
         type="single"
         collapsible

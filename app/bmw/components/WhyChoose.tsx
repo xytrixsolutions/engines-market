@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import Heading from "@/components/Heading";
 import Image from "next/image";
 
 const WhyChoose = () => {
@@ -7,9 +8,7 @@ const WhyChoose = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
         {/* Text Content */}
         <div className="space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold">
-            Why Choose Engines Market?
-          </h2>
+          <Heading>Why Choose Engines Market?</Heading>
 
           <p className="text-lg leading-relaxed">
             At Engines Market, we provide a wide range of BMW replacement

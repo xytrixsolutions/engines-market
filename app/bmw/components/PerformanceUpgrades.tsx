@@ -20,6 +20,7 @@ import {
   CheckCircle,
   Info,
 } from "lucide-react";
+import Heading from "@/components/Heading";
 
 const PERFORMANCE_SECTIONS = [
   {
@@ -202,9 +203,9 @@ const PerformanceUpgrades: React.FC = () => {
   return (
     <Container className="my-16">
       <div className="text-center space-y-4 mb-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-royal-blue">
+        <Heading className="text-royal-blue">
           Performance Upgrades & Modifications for BMW Engines
-        </h2>
+        </Heading>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
           Common Tuning Options for Performance Enthusiasts
         </p>

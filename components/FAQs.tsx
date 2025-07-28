@@ -150,7 +150,7 @@ const faqs: FAQ[] = [
 
 const FAQSection = () => {
   return (
-    <Container className=" py-20 px-4">
+    <Container className=" py-20">
       <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-10">
         Frequently Asked Questions
       </h2>

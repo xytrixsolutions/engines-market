@@ -16,33 +16,20 @@ const EngineDealSection = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false); // Start fade-out
+      setFade(false);
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        setFade(true); // Fade-in new image
-      }, 200); // Small delay for smoother fade effect
+        setFade(true);
+      }, 200);
     }, 3000);
 
     return () => clearInterval(interval);
   }, [images.length]);
 
   return (
-    <Container className="grid md:grid-cols-2 items-center space-y-8 md:space-y-0 md:gap-8">
-      {/* Image Section */}
-      <div className="flex justify-start">
-        <div className="relative w-[500px] h-[500px]">
-          <Image
-            key={images[currentIndex].src}
-            src={images[currentIndex].src}
-            alt={`Engine ${currentIndex + 1}`}
-            fill
-            className={`rounded-lg object-cover transition-opacity duration-700 ease-in-out ${fade ? "opacity-100" : "opacity-0"}`}
-          />
-        </div>
-      </div>
-
+    <Container className="grid md:grid-cols-2 items-center md:gap-8">
       {/* Text Section */}
-      <div className="text-center md:text-left space-y-4">
+      <div className="order-1 md:order-none text-center md:text-left space-y-4">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
           Find the Best Engine Deals with{" "}
           <span className="text-[#0037D6]">Engine Market</span>
@@ -54,6 +41,19 @@ const EngineDealSection = () => {
           Engine Market connects you with hundreds of trusted suppliers. Get
           competitive quotes in hours, compare prices, and save today!
         </p>
+      </div>
+
+      {/* Image Section */}
+      <div className="order-2 md:order-none flex justify-center lg:justify-start mt-8 md:mt-0">
+        <div className="relative w-[300px] h-[300px] lg:w-[500px] lg:h-[500px]">
+          <Image
+            key={images[currentIndex].src}
+            src={images[currentIndex].src}
+            alt={`Engine ${currentIndex + 1}`}
+            fill
+            className={`rounded-lg object-cover transition-opacity duration-700 ease-in-out ${fade ? "opacity-100" : "opacity-0"}`}
+          />
+        </div>
       </div>
     </Container>
   );

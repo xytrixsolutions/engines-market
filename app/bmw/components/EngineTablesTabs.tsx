@@ -51,7 +51,7 @@ const EngineTablesTabs: React.FC = () => {
           value={tableType}
           onValueChange={(v) => setTableType(v as TableKey)}
         >
-          <SelectTrigger className="w-full max-w-xs bg-background border-border text-foreground hover:bg-accent hover:text-accent-foreground focus:border-royal-blue focus:ring-royal-blue/20">
+          <SelectTrigger className="w-full max-w-xs bg-background border-border text-foreground hover:bg-accent hover:text-accent-foreground focus:border-neon-red focus:ring-neon-red/20">
             <SelectValue placeholder="Select table" />
           </SelectTrigger>
           <SelectContent className="bg-popover border-border">
@@ -59,7 +59,7 @@ const EngineTablesTabs: React.FC = () => {
               <SelectItem
                 key={opt.key}
                 value={opt.key}
-                className="text-popover-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground data-[highlighted]:bg-royal-blue/85 data-[highlighted]:text-white"
+                className="text-popover-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground data-[highlighted]:bg-neon-red/85 data-[highlighted]:text-white"
               >
                 {opt.label}
               </SelectItem>
@@ -77,8 +77,8 @@ const EngineTablesTabs: React.FC = () => {
             className={`px-6 py-2 font-bold rounded-t-md border-b-4 border border-border transition-all duration-200 flex-shrink-0
               ${
                 tableType === opt.key
-                  ? "bg-royal-blue/85 text-white border-border shadow-lg hover:bg-royal-blue/85 hover:text-white"
-                  : "bg-gray-100 text-gray-900 border-transparent shadow-md hover:bg-white hover:text-royal-blue"
+                  ? "bg-neon-red/85 text-white border-border shadow-lg hover:bg-neon-red/85 hover:text-white"
+                  : "bg-gray-100 text-gray-900 border-transparent shadow-md hover:bg-white hover:text-neon-red"
               }
             `}
           >

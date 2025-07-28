@@ -4,6 +4,8 @@ import { Badge } from "@/components/ui/badge";
 import Container from "@/components/Container";
 import { Check, X, Sparkles, DollarSign, Wrench } from "lucide-react";
 import Heading from "@/components/Heading";
+import Paragraph from "@/components/Paragraph";
+import Accent from "@/components/Accent";
 
 const ENGINE_TYPES = [
   {
@@ -65,19 +67,21 @@ const ENGINE_TYPES = [
 const EngineProsCons: React.FC = () => {
   return (
     <Container className="my-16">
-      <div className="max-w-5xl mx-auto text-center mb-12">
-        <Heading className="text-royal-blue">
-          Pros & Cons of New, Used & Reconditioned BMW Engines
+      <div className="max-w-6xl mx-auto text-center mb-12">
+        <Heading>
+          Pros & Cons of New, Used &<Accent>Reconditioned BMW Engines</Accent>
         </Heading>
-        <p className="text-muted-foreground">
-          Understanding the advantages and disadvantages of each engine type
-          will help you make an informed decision based on your budget, vehicle
-          age, and performance requirements.
-        </p>
+        <Paragraph>
+          Understanding the <strong>advantages and disadvantages</strong> of
+          each engine type will help you make an{" "}
+          <strong>informed decision</strong> based on your{" "}
+          <strong>budget</strong>, <strong>vehicle age</strong>, and{" "}
+          <strong>performance requirements</strong>.
+        </Paragraph>
       </div>
 
       <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-3">
-        {ENGINE_TYPES.map((engineType, index) => (
+        {ENGINE_TYPES.map((engineType, _) => (
           <Card
             key={engineType.title}
             className="relative overflow-hidden border-2 hover:shadow-lg transition-shadow duration-300"
@@ -129,7 +133,7 @@ const EngineProsCons: React.FC = () => {
             </CardContent>
 
             {/* Decorative element */}
-            <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-royal-blue/10 to-transparent rounded-bl-full" />
+            <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-neon-red/10 to-transparent rounded-bl-full" />
           </Card>
         ))}
       </div>

@@ -50,7 +50,7 @@ export default function Hero3() {
         {/* Title */}
         <div>
           <h2 className="text-4xl md:text-5xl font-normal text-black leading-tight mb-5 text-center">
-            Explore By <span className="text-[#0037D6]">Manufacturer</span>
+            Explore By <span className="text-neon-red">Manufacturer</span>
           </h2>
         </div>
 
@@ -89,14 +89,14 @@ export default function Hero3() {
       {/* Load More Button */}
       {visibleCount < brandLogos.length && (
         <div className="flex items-center justify-center">
-          <div className="flex-1 h-px bg-[#0037D6]"></div>
+          <div className="flex-1 h-px bg-neon-red"></div>
           <button
             onClick={handleLoadMore}
-            className=" bg-[#0037D6] hover:bg-transparent border-2 border-[#0037D6] text-white hover:text-[#0037D6] px-8 py-3 rounded-full font-semibold transition-all duration-300"
+            className=" bg-neon-red hover:bg-transparent border-2 border-neon-red text-white hover:text-neon-red px-8 py-3 rounded-full font-semibold transition-all duration-300"
           >
             Load More
           </button>
-          <div className="flex-1 h-px bg-[#0037D6]"></div>
+          <div className="flex-1 h-px bg-neon-red"></div>
         </div>
       )}
     </Container>

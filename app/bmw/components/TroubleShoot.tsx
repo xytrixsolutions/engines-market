@@ -17,6 +17,41 @@ import {
   Settings,
 } from "lucide-react";
 import Heading from "@/components/Heading";
+import Accent from "@/components/Accent";
+import Paragraph from "@/components/Paragraph";
+
+const TIPS = [
+  {
+    icon: Lightbulb,
+    iconColor: "text-blue-600",
+    border: "border-blue-200",
+    bg: "bg-blue-50",
+    title: "Regular Inspections",
+    titleColor: "text-blue-800",
+    text: "Check your engine monthly for early problem detection",
+    textColor: "text-blue-700",
+  },
+  {
+    icon: CheckCircle,
+    iconColor: "text-green-600",
+    border: "border-green-200",
+    bg: "bg-green-50",
+    title: "Preventive Maintenance",
+    titleColor: "text-green-800",
+    text: "Follow BMW's recommended service schedule",
+    textColor: "text-green-700",
+  },
+  {
+    icon: AlertTriangle,
+    iconColor: "text-orange-600",
+    border: "border-orange-200",
+    bg: "bg-orange-50",
+    title: "Act Quickly",
+    titleColor: "text-orange-800",
+    text: "Address warning signs immediately to prevent damage",
+    textColor: "text-orange-700",
+  },
+];
 
 const TROUBLESHOOTING_SECTIONS = [
   {
@@ -101,20 +136,22 @@ const getSeverityColor = (severity: string) => {
 const TroubleshootingGuide: React.FC = () => {
   return (
     <Container className="my-16">
-      <div className="max-w-4xl mx-auto text-center mb-12">
-        <Heading className="text-royal-blue">
-          Troubleshooting Guide for BMW Engines
+      <div className="max-w-4xl mx-auto text-center mb-12 space-y-4">
+        <Heading>
+          Troubleshooting Guide for<Accent>BMW Engines</Accent>
         </Heading>
-        <p className="text-lg text-muted-foreground">
-          Troubleshooting Tips to Prevent Engine Faults and Prolong Engine Life
-        </p>
-        <p className="text-muted-foreground">
-          Maintaining your BMW engine properly can help prevent faults and
-          extend its lifespan. Here are some troubleshooting tips to keep your
-          engine running smoothly:
-        </p>
-      </div>
+        <Paragraph className="mb-1">
+          Learn how to identify <strong>early signs of engine trouble</strong>{" "}
+          and take action before it becomes <strong>costly</strong>.
+        </Paragraph>
 
+        <Paragraph className="text-base">
+          Maintaining your <strong>BMW engine</strong> with proper care and
+          early troubleshooting can <strong>prevent common faults</strong> and
+          <strong> extend its lifespan</strong>. Here are actionable tips to
+          keep your engine running smoothly:
+        </Paragraph>
+      </div>
       <Accordion
         type="single"
         collapsible
@@ -157,7 +194,6 @@ const TroubleshootingGuide: React.FC = () => {
           </AccordionItem>
         ))}
       </Accordion>
-
       {/* Bottom Summary Card */}
       <Card className="mt-12 bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
         <CardContent className="pt-6">
@@ -180,43 +216,32 @@ const TroubleshootingGuide: React.FC = () => {
           </div>
         </CardContent>
       </Card>
-
       {/* Quick Reference Tips */}
       <div className="mt-8 grid gap-4 md:grid-cols-3">
-        <Card className="border-blue-200 bg-blue-50">
-          <CardContent className="pt-4 text-center">
-            <Lightbulb className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-            <h4 className="font-semibold text-blue-800 mb-1">
-              Regular Inspections
-            </h4>
-            <p className="text-sm text-blue-700">
-              Check your engine monthly for early problem detection
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card className="border-green-200 bg-green-50">
-          <CardContent className="pt-4 text-center">
-            <CheckCircle className="h-8 w-8 text-green-600 mx-auto mb-2" />
-            <h4 className="font-semibold text-green-800 mb-1">
-              Preventive Maintenance
-            </h4>
-            <p className="text-sm text-green-700">
-              Follow BMW&apos;s recommended service schedule
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card className="border-orange-200 bg-orange-50">
-          <CardContent className="pt-4 text-center">
-            <AlertTriangle className="h-8 w-8 text-orange-600 mx-auto mb-2" />
-            <h4 className="font-semibold text-orange-800 mb-1">Act Quickly</h4>
-            <p className="text-sm text-orange-700">
-              Address warning signs immediately to prevent damage
-            </p>
-          </CardContent>
-        </Card>
-      </div>
+        {TIPS.map(
+          (
+            {
+              icon: Icon,
+              iconColor,
+              border,
+              bg,
+              title,
+              titleColor,
+              text,
+              textColor,
+            },
+            idx,
+          ) => (
+            <Card key={idx} className={`${border} ${bg}`}>
+              <CardContent className="py-16 text-center">
+                <Icon className={`h-8 w-8 mx-auto mb-2 ${iconColor}`} />
+                <h4 className={`font-semibold mb-1 ${titleColor}`}>{title}</h4>
+                <p className={`text-sm ${textColor}`}>{text}</p>
+              </CardContent>
+            </Card>
+          ),
+        )}
+      </div>{" "}
     </Container>
   );
 };

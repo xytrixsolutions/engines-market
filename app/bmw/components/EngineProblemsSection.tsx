@@ -19,6 +19,8 @@ import {
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Heading from "@/components/Heading";
+import Accent from "@/components/Accent";
+import Paragraph from "@/components/Paragraph";
 
 const PROBLEMS = [
   {
@@ -94,16 +96,17 @@ const getSeverityColor = (severity: string) => {
 const EngineProblemsSection: React.FC = () => {
   return (
     <Container className="my-12">
-      <div className="max-w-5xl mx-auto">
-        <Heading className="text-center mb-6 text-royal-blue">
-          Common BMW Engine Problems & How to Fix Them
+      <div className="max-w-5xl mx-auto text-center">
+        <Heading className="mb-6">
+          Common<Accent>BMW Engine Problems</Accent>& How to Fix Them
         </Heading>
-        <p className="text-center text-muted-foreground mb-8 mx-auto">
+        <Paragraph>
           BMW engines are renowned for their performance and engineering
           excellence, but like any complex machinery, they can encounter issues.
-          Here are some of the most common problems found in BMW engines, along
-          with solutions and preventive measures:
-        </p>
+          Here are some of the most common problems found in{" "}
+          <strong>BMW engines</strong>, along with solutions and preventive
+          measures:
+        </Paragraph>
       </div>
       <Accordion
         type="single"
@@ -120,9 +123,7 @@ const EngineProblemsSection: React.FC = () => {
             <AccordionTrigger className="px-6 py-4 font-semibold text-lg text-royal-blue flex items-center justify-between select-none rounded-t-xl transition-all duration-300 hover:no-underline">
               <div className="flex items-center gap-3">
                 {item.icon}
-                <span>
-                  {idx + 1}. {item.title}
-                </span>
+                <span>{item.title}</span>
               </div>
               <Badge
                 variant={getSeverityColor(item.severity)}
@@ -135,8 +136,8 @@ const EngineProblemsSection: React.FC = () => {
               <div className="space-y-4">
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
-                    <AlertTriangle className="h-4 w-4 text-red-600" />
-                    <h4 className="font-bold text-red-600">Problem</h4>
+                    <AlertTriangle className="h-4 w-4 text-neon-red" />
+                    <h4 className="font-bold text-neon-red">Problem</h4>
                   </div>
                   <p className="text-foreground pl-6">{item.problem}</p>
                 </div>

@@ -28,8 +28,8 @@ const EngineDealSection = () => {
 
   return (
     <Container className="grid md:grid-cols-2 items-center md:gap-8">
-      {/* Text Section */}
-      <div className="order-1 md:order-none text-center md:text-left space-y-4">
+      {/* Text Section (comes first on mobile, second on desktop) */}
+      <div className="order-1 md:order-2 text-center md:text-left space-y-4">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
           Find the Best Engine Deals with{" "}
           <span className="text-[#0037D6]">Engine Market</span>
@@ -43,8 +43,8 @@ const EngineDealSection = () => {
         </p>
       </div>
 
-      {/* Image Section */}
-      <div className="order-2 md:order-none flex justify-center lg:justify-start mt-8 md:mt-0">
+      {/* Image Section (comes second on mobile, first on desktop) */}
+      <div className="order-2 md:order-1 flex justify-center lg:justify-start mt-8 md:mt-0">
         <div className="relative w-[300px] h-[300px] lg:w-[500px] lg:h-[500px]">
           <Image
             key={images[currentIndex].src}

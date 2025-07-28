@@ -5,7 +5,7 @@ const WhyChoose = () => {
   return (
     <Container className="flex flex-col md:flex-row items-center justify-between">
       {/* Left Side (Text) */}
-      <div className="w-full md:w-1/2 flex justify-start mb-10 md:mb-0">
+      <div className="w-full md:w-1/2 flex justify-center lg:justify-start mb-10 md:mb-0">
         <div className="w-full md:w-[90%] text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0037D6] mb-4">
             Why Choose Engine Market?
@@ -39,7 +39,7 @@ const WhyChoose = () => {
       </div>
 
       {/* Right Side (Image) */}
-      <div className="w-full md:w-1/2 flex justify-end">
+      <div className="w-full md:w-1/2 flex justify-center lg:justify-end">
         <Image
           src="/Home/image-2.png"
           alt="Engine Market"

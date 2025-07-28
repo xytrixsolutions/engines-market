@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Container from "@/components/Container";
 import { Check, X, Sparkles, DollarSign, Wrench } from "lucide-react";
+import Heading from "@/components/Heading";
 
 const ENGINE_TYPES = [
   {
@@ -64,11 +65,11 @@ const ENGINE_TYPES = [
 const EngineProsCons: React.FC = () => {
   return (
     <Container className="my-16">
-      <div className="text-center space-y-4 mb-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-royal-blue">
+      <div className="max-w-5xl mx-auto text-center mb-12">
+        <Heading className="text-royal-blue">
           Pros & Cons of New, Used & Reconditioned BMW Engines
-        </h2>
-        <p className="text-muted-foreground max-w-3xl mx-auto">
+        </Heading>
+        <p className="text-muted-foreground">
           Understanding the advantages and disadvantages of each engine type
           will help you make an informed decision based on your budget, vehicle
           age, and performance requirements.

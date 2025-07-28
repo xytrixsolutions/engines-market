@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
+import Container from "./Container";
 
 export default function TestimonialSection() {
   const testimonials = [
@@ -39,7 +40,7 @@ export default function TestimonialSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cardsPerView, setCardsPerView] = useState(4);
   const carouselRef = useRef(null);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null); // ✅ FIXED TYPING
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -61,7 +62,7 @@ export default function TestimonialSection() {
     const startCarousel = () => {
       intervalRef.current = setInterval(() => {
         setCurrentIndex((prevIndex) =>
-          prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+          prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1,
         );
       }, 3000);
     };
@@ -85,82 +86,80 @@ export default function TestimonialSection() {
   const visibleTestimonials = getVisibleTestimonials();
 
   return (
-    <div className="py-16 px-4 bg-[#F3F9FF]">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="mb-12">
-          <div className="flex items-center gap-3 mb-5">
-            <h2 className="text-3xl md:text-4xl font-bold text-black">
-              Customer Testimonials & Trust Signals
-            </h2>
-            <div className="flex">
-              <Image
-                src={"/testimonials/Group.png"}
-                alt={`testimonial`}
-                width={50}
-                height={50}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Carousel Container */}
-        <div className="relative overflow-hidden" ref={carouselRef}>
-          {/* Testimonial Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 transition-all duration-500 ease-in-out">
-            {visibleTestimonials.map((testimonial, index) => (
-              <div
-                key={`${testimonial.name}-${index}`}
-                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
-              >
-                {/* Card Header */}
-                <div className="bg-black text-white px-4 py-5 flex items-center justify-between">
-                  <span className="text-sm font-medium">Testimonial</span>
-                  <div className="rounded-full flex items-center justify-center">
-                    <div className="flex gap-1">
-                      {[...Array(5)].map((_, i) =>
-                        i < testimonial.rating ? (
-                          <FaStar
-                            key={i}
-                            className="w-5 h-5 text-white fill-white"
-                          />
-                        ) : (
-                          <CiStar key={i} className="w-5 h-5 text-white" />
-                        )
-                      )}
-                    </div>
-                  </div>
-                </div>
-
-                {/* Card Content */}
-                <div className="p-6">
-                  <div className="flex justify-center mb-4">
-                    <div className="w-50 h-50 rounded-full overflow-hidden">
-                      <Image
-                        src={testimonial.image || "/placeholder.svg"}
-                        alt={`${testimonial.name} testimonial`}
-                        width={150}
-                        height={150}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-                  <div className="text-center mb-4">
-                    <h3 className="font-semibold text-black text-lg mb-1">
-                      {testimonial.name}
-                    </h3>
-                    <p className="text-gray-600 text-sm">{testimonial.role}</p>
-                  </div>
-                  <p className="text-gray-700 text-sm leading-relaxed text-center">
-                    {testimonial.text}
-                  </p>
-                </div>
-              </div>
-            ))}
+    <Container>
+      {/* Header */}
+      <div className="mb-12">
+        <div className="flex items-center gap-3 mb-5">
+          <h2 className="text-3xl md:text-4xl font-bold text-black">
+            Customer Testimonials & Trust Signals
+          </h2>
+          <div className="flex">
+            <Image
+              src={"/testimonials/Group.png"}
+              alt={`testimonial`}
+              width={50}
+              height={50}
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
-    </div>
+
+      {/* Carousel Container */}
+      <div className="relative overflow-hidden" ref={carouselRef}>
+        {/* Testimonial Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 transition-all duration-500 ease-in-out">
+          {visibleTestimonials.map((testimonial, index) => (
+            <div
+              key={`${testimonial.name}-${index}`}
+              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
+            >
+              {/* Card Header */}
+              <div className="bg-black text-white px-4 py-5 flex items-center justify-between">
+                <span className="text-sm font-medium">Testimonial</span>
+                <div className="rounded-full flex items-center justify-center">
+                  <div className="flex gap-1">
+                    {[...Array(5)].map((_, i) =>
+                      i < testimonial.rating ? (
+                        <FaStar
+                          key={i}
+                          className="w-5 h-5 text-white fill-white"
+                        />
+                      ) : (
+                        <CiStar key={i} className="w-5 h-5 text-white" />
+                      ),
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              {/* Card Content */}
+              <div className="p-6">
+                <div className="flex justify-center mb-4">
+                  <div className="w-50 h-50 rounded-full overflow-hidden">
+                    <Image
+                      src={testimonial.image || "/placeholder.svg"}
+                      alt={`${testimonial.name} testimonial`}
+                      width={150}
+                      height={150}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="text-center mb-4">
+                  <h3 className="font-semibold text-black text-lg mb-1">
+                    {testimonial.name}
+                  </h3>
+                  <p className="text-gray-600 text-sm">{testimonial.role}</p>
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed text-center">
+                  {testimonial.text}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
   );
 }

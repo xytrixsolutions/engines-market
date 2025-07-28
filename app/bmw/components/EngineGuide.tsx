@@ -1,15 +1,16 @@
 import Container from "@/components/Container";
+import Heading from "@/components/Heading";
 import Image from "next/image";
 
 export default function BMWEngineGuide() {
   return (
-    <Container className="py-16 px-2 md:px-4">
+    <Container className="py-16">
       {/* Heading and Text */}
-      <div className="text-center space-y-6 mb-5">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+      <div className="text-center space-y-6 mb-14 max-w-6xl mx-auto">
+        <Heading className="leading-tight">
           The Complete BMW Engine Guide: Engine Codes, Specifications,
           Replacement Costs & Performance Upgrade
-        </h2>
+        </Heading>
 
         <p className="text-gray-600 text-lg leading-relaxed mx-auto">
           Welcome to ultimate BMW engines guide, this page is designed to give

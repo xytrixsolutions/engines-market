@@ -16,6 +16,7 @@ import {
   Lightbulb,
   Settings,
 } from "lucide-react";
+import Heading from "@/components/Heading";
 
 const TROUBLESHOOTING_SECTIONS = [
   {
@@ -100,14 +101,14 @@ const getSeverityColor = (severity: string) => {
 const TroubleshootingGuide: React.FC = () => {
   return (
     <Container className="my-16">
-      <div className="text-center space-y-4 mb-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-royal-blue">
+      <div className="max-w-4xl mx-auto text-center mb-12">
+        <Heading className="text-royal-blue">
           Troubleshooting Guide for BMW Engines
-        </h2>
-        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+        </Heading>
+        <p className="text-lg text-muted-foreground">
           Troubleshooting Tips to Prevent Engine Faults and Prolong Engine Life
         </p>
-        <p className="text-muted-foreground max-w-4xl mx-auto">
+        <p className="text-muted-foreground">
           Maintaining your BMW engine properly can help prevent faults and
           extend its lifespan. Here are some troubleshooting tips to keep your
           engine running smoothly:

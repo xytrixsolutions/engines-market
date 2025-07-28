@@ -23,14 +23,14 @@ const Hero1: FC<Hero1Props> = ({ carImages }) => {
   }, [carImages.length, currentIndex]);
 
   return (
-    <Container className="py-16 px-4 sm:px-6 lg:px-10">
+    <Container>
       <div className="text-center mb-16">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
           The UK’s Largest Engine Marketplace – Compare & Save Instantly!
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+      <div className="grid grid-cols-1 xl:grid-cols-5 gap-12 items-center">
         {/* LEFT: Form */}
         <div className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-6 sm:p-8">
           <div className="text-center mb-6">

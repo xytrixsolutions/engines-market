@@ -18,7 +18,7 @@ export type FAQ = {
 const FAQSection = ({ faqs }: { faqs: FAQ[] }) => {
   return (
     <Container className=" py-20">
-      <Heading className="text-center">Frequently Asked Questions</Heading>
+      <Heading className="text-center">Frequently <span className="text-neon-red">Asked Questions</span></Heading>
 
       <Accordion type="single" collapsible className="w-full space-y-2 ">
         {faqs.map((faq, index) => (
@@ -46,11 +46,11 @@ const FAQSection = ({ faqs }: { faqs: FAQ[] }) => {
 
       <div className="mt-10 text-sm text-gray-500 text-center">
         Still Searching for the Answer You Need?{" "}
-        <a href="#" className="text-blue-600 hover:underline">
+        <a href="#" className="text-royal-blue hover:underline">
           View FAQ Page
         </a>{" "}
         or{" "}
-        <a href="#" className="text-blue-600 hover:underline">
+        <a href="#" className="text-royal-blue hover:underline">
           Contact Us
         </a>
       </div>

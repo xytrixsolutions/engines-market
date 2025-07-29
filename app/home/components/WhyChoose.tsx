@@ -7,8 +7,8 @@ const WhyChoose = () => {
       {/* Left Side (Text) */}
       <div className="w-full md:w-1/2 flex justify-center lg:justify-start mb-10 md:mb-0">
         <div className="w-full md:w-[90%] text-left">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0037D6] mb-4">
-            Why Choose Engine Market?
+          <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-4">
+            Why Choose <span className="text-neon-red">Engine Market</span>?
           </h2>
           <p className="text-lg text-gray-700 mb-6">
             A Smarter Way to Buy Engines – The Power is in Your Hands!

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Container from "@/components/Container";
 import { ArrowRight, Phone, Mail, Clock, CheckCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 
@@ -58,7 +59,7 @@ const trustIndicators = [
 
 const EngineDealsCTA: React.FC = () => {
   return (
-    <Container className="bg-[#F3F9FF] py-16 relative overflow-hidden text-gray-900">
+    <Container className="py-16 relative overflow-hidden text-gray-900">
       <div className="text-center space-y-8">
         {/* Heading */}
         <div className="max-w-5xl mx-auto">
@@ -101,6 +102,7 @@ const EngineDealsCTA: React.FC = () => {
             {[
               { icon: Phone, label: "Call Now" },
               { icon: Mail, label: "Email Us" },
+              {icon: FaWhatsapp, label: "Whatsapp" }
             ].map(({ icon: Icon, label }) => (
               <Button
                 key={label}

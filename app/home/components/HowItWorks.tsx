@@ -18,8 +18,8 @@ const HowItWorks = () => {
       {/* Left Side (Text) */}
       <div className="md:w-1/2 w-full flex justify-end md:pb-8">
         <div className="w-full md:w-[90%] text-left">
-          <h2 className="text-3xl  md:text-4xl font-bold text-[#0037D6] mb-5">
-            How It Works - Simple & Straightforward
+          <h2 className="text-3xl  md:text-4xl font-bold text-charcoal-gray mb-5">
+            How It Works - <span className="text-neon-red">Simple & Straightforward</span>
           </h2>
           <p className="text-lg text-gray-700 mb-6">
             Get Multiple Quotes Within Hours!

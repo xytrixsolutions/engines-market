@@ -8,15 +8,24 @@ import Container from "./Container";
 
 interface Hero1Props {
   carImages: string[];
+  carModelNames: string[];
 }
-const Hero1: FC<Hero1Props> = ({ carImages }) => {
+
+const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [prevIndex, setPrevIndex] = useState<number | null>(null);
+  const [isTextVisible, setIsTextVisible] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setPrevIndex(currentIndex);
-      setCurrentIndex((prev) => (prev + 1) % carImages.length);
+      // Fade out text before changing
+      setIsTextVisible(false);
+
+      setTimeout(() => {
+        setPrevIndex(currentIndex);
+        setCurrentIndex((prev) => (prev + 1) % carImages.length);
+        setIsTextVisible(true); // Fade back in
+      }, 500); // match fade duration
     }, 4000);
 
     return () => clearInterval(interval);
@@ -25,7 +34,7 @@ const Hero1: FC<Hero1Props> = ({ carImages }) => {
   return (
     <Container>
       <div className="text-center mb-16">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+        <h1 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-4 leading-tight">
           The UK’s Largest Engine Marketplace – Compare & Save Instantly!
         </h1>
       </div>
@@ -44,21 +53,21 @@ const Hero1: FC<Hero1Props> = ({ carImages }) => {
 
           <div className="mb-6">
             <div className="relative">
-              <div className="absolute left-3 top-1/2 transform -translate-y-1/2 flex items-center">
-                <div className="w-8 h-6 relative mr-2">
+              <div className="absolute top-1/2 transform -translate-y-1/2">
+                <div className="w-10 h-16 relative">
                   <Image
-                    src="/Home/uk-flag.png"
+                    src="/Home/uknumberplate.png"
                     alt="UK Flag"
                     fill
-                    className="object-cover rounded-sm"
+                    className="object-cover rounded-l-md"
                   />
                 </div>
-                <span className="text-md font-bold text-black">UK</span>
               </div>
+
               <input
                 type="text"
                 placeholder="REG HERE"
-                className="w-full text-center py-4 text-lg font-semibold text-gray-700 bg-gray-100 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500"
+                className="w-full pl-16 text-center py-4 text-lg font-semibold text-gray-700 bg-gray-100 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-blue-500"
               />
             </div>
           </div>
@@ -68,7 +77,7 @@ const Hero1: FC<Hero1Props> = ({ carImages }) => {
             Engine & Get Quotes From UK’s Top Suppliers
           </p>
 
-          <button className="w-full bg-black hover:bg-transparent border-2 border-black text-white hover:text-black py-4 rounded-full font-semibold flex items-center justify-center space-x-2 transition-all duration-300 mb-4">
+          <button className="w-full bg-spanish-green hover:bg-transparent border-2 border-spanish-green text-white hover:text-spanish-green py-4 rounded-full font-semibold flex items-center justify-center space-x-2 transition-all duration-300 mb-4">
             <span>Get Free Quote Now</span>
             <FiArrowUpRight className="w-5 h-5" />
           </button>
@@ -84,7 +93,7 @@ const Hero1: FC<Hero1Props> = ({ carImages }) => {
           </p>
         </div>
 
-        {/* RIGHT: Image */}
+        {/* RIGHT: Image + Model Name */}
         <div className="lg:col-span-3 flex flex-col items-center">
           <div className="w-full relative aspect-[12/7] overflow-x-hidden rounded-lg mb-5 flex items-center justify-center">
             {carImages.map((src, index) => {
@@ -107,13 +116,21 @@ const Hero1: FC<Hero1Props> = ({ carImages }) => {
               );
             })}
           </div>
-          <button className="bg-neon-red hover:bg-transparent border-2 border-neon-red text-white hover:text-neon-red px-8 py-3 rounded-full font-semibold flex items-center space-x-2 transition-all duration-300">
-            <span>Request a Free Quote Now</span>
-            <FiArrowUpRight className="w-5 h-5" />
-          </button>
+
+          {/* Model name with fade effect */}
+          <div className="h-8 text-neon-red text-3xl md:text-4xl font-bold">
+            <span
+              className={`transition-opacity duration-700 ease-in-out ${
+                isTextVisible ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              {carModelNames[currentIndex]}
+            </span>
+          </div>
         </div>
       </div>
     </Container>
   );
 };
+
 export default Hero1;

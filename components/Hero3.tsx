@@ -49,7 +49,7 @@ export default function Hero3() {
       <div className="items-center mb-12 text-center flex flex-col justify-center">
         {/* Title */}
         <div>
-          <h2 className="text-4xl md:text-5xl font-normal text-black leading-tight mb-5 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray leading-tight mb-5 text-center">
             Explore By <span className="text-neon-red">Manufacturer</span>
           </h2>
         </div>

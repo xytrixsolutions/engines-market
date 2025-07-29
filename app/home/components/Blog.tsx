@@ -3,8 +3,8 @@ import Container from "@/components/Container";
 const BlogCards = () => {
   return (
     <Container>
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
-        Featured Blog Post - Latest Engine Buying Guides
+      <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-6 text-center">
+        Featured Blog Post - <span className="text-neon-red">Latest Engine Buying Guides</span>
       </h2>
       <p className="text-center text-gray-500 mb-12">
         Stay informed with our expert guides and insider tips!

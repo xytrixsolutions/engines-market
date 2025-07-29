@@ -89,7 +89,7 @@ const EngineProsCons: React.FC = () => {
             <CardHeader className="pb-4">
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center gap-2 text-royal-blue">
-                  {engineType.icon}
+                  {/* {engineType.icon} */}
                   <CardTitle className="text-lg">{engineType.title}</CardTitle>
                 </div>
                 <Badge variant={engineType.badgeVariant}>

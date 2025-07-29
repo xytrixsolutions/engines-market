@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const WhyChoose = () => {
   return (
-    <Container className="py-16 px-4 md:px-8 bg-background">
+    <Container className="py-16 px-4 md:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
         {/* Text Content */}
         <div className="space-y-6">

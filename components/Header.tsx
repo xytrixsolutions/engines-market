@@ -58,7 +58,7 @@ export default function Header() {
             >
               Contact
             </Link>
-            <button className="bg-black hover:bg-transparent text-white hover:text-black border-2 px-1 py-1 lg:px-4 lg:py-1 max-lg:text-sm border-black xl:px-6 xl:py-2 rounded-full font-medium flex items-center space-x-2 transition-all duration-300">
+            <button className="bg-neon-red hover:bg-transparent text-white hover:text-neon-red border-2 px-1 py-1 lg:px-4 lg:py-1 max-lg:text-sm border-neon-red xl:px-6 xl:py-2 rounded-full font-medium flex items-center space-x-2 transition-all duration-300">
               <span>Request A Quote</span>
               <FiArrowUpRight className="w-7 h-7" />
             </button>

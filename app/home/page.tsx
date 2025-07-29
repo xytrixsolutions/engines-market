@@ -16,6 +16,14 @@ export default function Home() {
     "/banners/banner-4.webp",
     "/banners/banner-5.webp",
   ];
+  
+  const carModelNames = [
+    "BMW X5",
+    "Audi A6",
+    "Mercedes C-Class",
+    "Range Rover Evoque",
+    "Volkswagen Golf",
+  ];
 
   const faqs: FAQ[] = [
     {
@@ -153,7 +161,7 @@ export default function Home() {
   ];
   return (
     <>
-      <Hero1 carImages={carImages} />
+      <Hero1 carImages={carImages} carModelNames={carModelNames} />
       <EngineDealSection />
       <Hero3 />
       <WhyChoose />

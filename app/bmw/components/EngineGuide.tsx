@@ -6,10 +6,10 @@ import Image from "next/image";
 
 export default function BMWEngineGuide() {
   return (
-    <Container className="py-16">
+    <Container dark className="py-16">
       {/* Heading and Text */}
-      <div className="text-center space-y-6 mb-14 max-w-6xl mx-auto">
-        <Heading className="leading-tight">
+      <div className="text-center text-charcoal-gray-muted space-y-6 mb-14 max-w-6xl mx-auto">
+        <Heading className="leading-tight text-charcoal-gray-muted">
           The Complete
           <Accent className="mx-3">BMW Engine</Accent>
           Guide: Engine Codes, Specifications, Replacement Costs &{" "}

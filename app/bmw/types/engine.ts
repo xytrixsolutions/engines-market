@@ -1,34 +1,3 @@
-export enum FuelType {
-  Petrol = "Petrol",
-  Diesel = "Diesel",
-  Hybrid = "Hybrid",
-  Electric = "Electric",
-}
-
-export type EngineData = {
-  engine_code: string;
-  make: string;
-  models: string;
-  valves: number;
-  displacement: number;
-  power: string;
-  fuel_type: FuelType;
-  year_range: string;
-};
-
-export type TabKey =
-  | "range_rover"
-  | "land_rover"
-  | "bmw"
-  | "mercedes_benz"
-  | "jaguar_engines"
-  | "other";
-
-export type Tab = {
-  key: TabKey;
-  label: string;
-};
-
 export type Column<T = Record<string, unknown>> = {
   key: string;
   label: string;

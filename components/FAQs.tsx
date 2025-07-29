@@ -1,5 +1,6 @@
 "use client";
 
+import Accent from "./Accent";
 import Container from "./Container";
 import Heading from "./Heading";
 import {
@@ -17,8 +18,10 @@ export type FAQ = {
 
 const FAQSection = ({ faqs }: { faqs: FAQ[] }) => {
   return (
-    <Container className=" py-20">
-      <Heading className="text-center">Frequently <span className="text-neon-red">Asked Questions</span></Heading>
+    <Container dark className=" py-20 text-charcoal-gray-muted">
+      <Heading className="text-center text-charcoal-gray-muted">
+        Frequently <Accent>Asked Questions</Accent>
+      </Heading>
 
       <Accordion type="single" collapsible className="w-full space-y-2 ">
         {faqs.map((faq, index) => (
@@ -44,13 +47,13 @@ const FAQSection = ({ faqs }: { faqs: FAQ[] }) => {
         ))}
       </Accordion>
 
-      <div className="mt-10 text-sm text-gray-500 text-center">
+      <div className="mt-10 text-sm text-charcoal-gray-muted text-center">
         Still Searching for the Answer You Need?{" "}
-        <a href="#" className="text-royal-blue hover:underline">
+        <a href="#" className="text-neon-red hover:underline">
           View FAQ Page
         </a>{" "}
         or{" "}
-        <a href="#" className="text-royal-blue hover:underline">
+        <a href="#" className="text-neon-red hover:underline">
           Contact Us
         </a>
       </div>

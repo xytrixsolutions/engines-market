@@ -203,9 +203,9 @@ const getLevelColor = (level: string) => {
 
 const PerformanceUpgrades: React.FC = () => {
   return (
-    <Container className="my-16">
-      <div className="max-w-6xl mx-auto text-center space-y-4 mb-12">
-        <Heading>
+    <Container dark className="my-16">
+      <div className="max-w-6xl mx-auto text-center space-y-4 mb-12 text-charcoal-gray-muted">
+        <Heading className="text-charcoal-gray-muted">
           Performance Upgrades & Modifications for<Accent>BMW Engines</Accent>
         </Heading>
         <Paragraph className="mb-1">

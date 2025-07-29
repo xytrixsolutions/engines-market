@@ -89,14 +89,14 @@ export default function Hero3() {
       {/* Load More Button */}
       {visibleCount < brandLogos.length && (
         <div className="flex items-center justify-center">
-          <div className="flex-1 h-px bg-neon-red"></div>
+          <div className="flex-1 h-px neon-red-gradient"></div>
           <button
+            className="rounded-full border-2 border-transparent bg-gradient-to-r from-[#b30529] via-[#ff0033] to-[#b30529] text-white px-8 py-3 transition-all duration-500 hover:bg-none hover:border-2 hover:border-[#ff0033] hover:text-[#ff0033]"
             onClick={handleLoadMore}
-            className=" bg-neon-red hover:bg-transparent border-2 border-neon-red text-white hover:text-neon-red px-8 py-3 rounded-full font-semibold transition-all duration-300"
           >
             Load More
           </button>
-          <div className="flex-1 h-px bg-neon-red"></div>
+          <div className="flex-1 h-px neon-red-gradient"></div>
         </div>
       )}
     </Container>

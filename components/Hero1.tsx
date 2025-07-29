@@ -32,16 +32,17 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
   }, [carImages.length, currentIndex]);
 
   return (
-    <Container>
+    <Container dark>
       <div className="text-center mb-16">
-        <h1 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-4 leading-tight">
+        {/* <h1 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-4 leading-tight"> */}
+        <h1 className="text-3xl md:text-4xl font-bold text-charcoal-gray-muted mb-4 leading-tight">
           The UK’s Largest Engine Marketplace – Compare & Save Instantly!
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 xl:grid-cols-5 gap-12 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
         {/* LEFT: Form */}
-        <div className="lg:col-span-2 bg-white rounded-3xl shadow-xl p-6 sm:p-8">
+        <div className="lg:col-span-2 bg-white rounded-3xl shadow-2xl p-6 sm:p-8 max-w-xl lg:max-w-none mx-auto lg:mr-0 lg:ml-auto z-50">
           <div className="text-center mb-6">
             <h3 className="text-xl font-bold text-gray-900 mb-2">
               Enter Your Vehicle Registration To
@@ -94,8 +95,8 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
         </div>
 
         {/* RIGHT: Image + Model Name */}
-        <div className="lg:col-span-3 flex flex-col items-center">
-          <div className="w-full relative aspect-[12/7] overflow-x-hidden rounded-lg mb-5 flex items-center justify-center">
+        <div className="lg:col-span-3 flex flex-col items-center z-0">
+          <div className="w-full relative aspect-[12/7] overflow-x-visible rounded-lg mb-5 flex items-center justify-center max-w-xl lg:max-w-none mx-auto ">
             {carImages.map((src, index) => {
               let className = "image-slide";
               if (index === currentIndex) {
@@ -118,7 +119,7 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
           </div>
 
           {/* Model name with fade effect */}
-          <div className="h-8 text-neon-red text-3xl md:text-4xl font-bold">
+          <div className="h-8 text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#ff5a73] to-[#b30529] text-transparent bg-clip-text">
             <span
               className={`transition-opacity duration-700 ease-in-out ${
                 isTextVisible ? "opacity-100" : "opacity-0"

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import EngineTable from "./EngineTable";
-import { ENGINE_DATA } from "../data/engineData";
+import ENGINE_DATA from "../data/engineData.json";
 import {
   MODEL_COLUMNS,
   ENGINE_CODE_COLUMNS,
@@ -23,7 +23,6 @@ const TABLE_OPTIONS = [
   { key: "models", label: "Models" },
   { key: "engine_codes", label: "Engine Codes" },
   { key: "models_engines", label: "Model Compatibility" },
-  { key: "replacement_costs", label: "Replacement Costs" },
 ] as const;
 
 type TableKey = (typeof TABLE_OPTIONS)[number]["key"];
@@ -33,7 +32,31 @@ const TABLE_COLUMNS: Record<TableKey, Column<any>[]> = {
   models: MODEL_COLUMNS,
   engine_codes: ENGINE_CODE_COLUMNS,
   models_engines: MODEL_ENGINE_COLUMNS,
-  replacement_costs: REPLACEMENT_COST_COLUMNS,
+};
+
+// Table meta info for headings, descriptions, and notes
+const TABLE_META: Record<
+  TableKey,
+  { title: string; description: string; note: string }
+> = {
+  models: {
+    title: "Browse Engines by Vehicle Model",
+    description:
+      "Use this table to find compatible engine options by selecting your vehicle’s make and model. You can view available engine sizes of a each model such as 1.5L petrol or 2.0L diesel. Simply click the “Request Quote” button next to engine type you’re looking for to receive multiple engine replacement quotes from trusted UK suppliers.",
+    note: "Note: Looking to find the right replacement engine for your vehicle? This model-based engine quote table helps you quickly compare available engine sizes across different series and generations. Whether you drive a hatchback, saloon, SUV, or coupe, choosing your model allows you to view compatible petrol and diesel engines instantly. This is one of the easiest ways to request engine quotes without needing to know technical specs or engine codes. All engines listed are sourced from trusted UK suppliers with warranty options available.",
+  },
+  engine_codes: {
+    title: "Search Engines by Technical Specification (Engine Code)",
+    description:
+      "Looking for a specific engine code? This section lists engines by their technical specifications: including engine size, fuel type, turbocharger status, horsepower, torque, and production years. Ideal for those who already know their engine codes, this table lets you compare engines at a glance and request a quote directly based on exact specs.",
+    note: "Note: If you know your vehicle’s engine code or you’re replacing a like-for-like unit, this section is ideal. Searching by engine code gives you access to detailed technical specs - such as fuel type, power output, torque, and turbo configuration. It’s perfect for garages, mechanics, or anyone comparing engines across production years. Entering or matching your engine code ensures the right compatibility, and you can get quotes instantly for used, reconditioned, or refurbished options. ",
+  },
+  models_engines: {
+    title: "Engine & Model Compatibility Chart",
+    description:
+      "Cross-reference engine codes with compatible vehicle models using this chart. If you already have an engine code and want to confirm which models it fits, this tool will help. You’ll find compatibility details across various series and model years. Once you confirm fitment, you can instantly request quotes from our verified engine suppliers.",
+    note: "Not all engines fit only one model, many are compatible with multiple vehicles across different years or series. This compatibility chart helps you understand which models can share the same engine type, making it easier to explore cost-effective or alternative replacements. If you’re wondering “what other cars use the same engine as mine?”, this is the place to look. Knowing engine-to-model compatibility is also useful when buying used or reconditioned engines, especially if your original part is discontinued or rare.",
+  },
 };
 
 const EngineTablesTabs: React.FC = () => {
@@ -41,6 +64,10 @@ const EngineTablesTabs: React.FC = () => {
   const columns = TABLE_COLUMNS[tableType];
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const data: any[] = ENGINE_DATA[tableType];
+
+  if (!columns) return null; // Guard against undefined columns
+
+  const meta = TABLE_META[tableType];
 
   return (
     <Container className="mt-10 px-4 md:px-0">
@@ -86,8 +113,28 @@ const EngineTablesTabs: React.FC = () => {
           </Button>
         ))}
       </div>
+      {/* Table Meta Heading & Description */}
+      <div className="max-w-2xl mx-auto text-center mb-8">
+        <h2 className="text-2xl md:text-3xl font-bold mb-3 text-royal-blue">
+          {meta.title}
+        </h2>
+        <p className="text-base md:text-lg text-muted-foreground mb-2">
+          {meta.description}
+        </p>
+      </div>
       {/* Table */}
       <EngineTable columns={columns} data={data} />
+      {/* Table Note */}
+      <div className="w-full bg-blue-50 border-t border-b border-blue-200 py-10 my-12">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <div className="text-blue-700 font-bold text-lg mb-2">
+            Need Help Choosing?
+          </div>
+          <div className="text-black text-base font-normal">
+            {meta.note.replace(/^Note:\s*/, "")}
+          </div>
+        </div>
+      </div>
     </Container>
   );
 };

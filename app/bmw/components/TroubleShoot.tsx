@@ -135,9 +135,9 @@ const getSeverityColor = (severity: string) => {
 
 const TroubleshootingGuide: React.FC = () => {
   return (
-    <Container className="my-16">
-      <div className="max-w-4xl mx-auto text-center mb-12 space-y-4">
-        <Heading>
+    <Container dark className="my-16">
+      <div className="max-w-4xl mx-auto text-center mb-12 space-y-4 text-charcoal-gray-muted">
+        <Heading className="text-charcoal-gray-muted">
           Troubleshooting Guide for<Accent>BMW Engines</Accent>
         </Heading>
         <Paragraph className="mb-1">
@@ -230,7 +230,7 @@ const TroubleshootingGuide: React.FC = () => {
               text,
               textColor,
             },
-            idx,
+            idx
           ) => (
             <Card key={idx} className={`${border} ${bg}`}>
               <CardContent className="py-16 text-center">
@@ -239,7 +239,7 @@ const TroubleshootingGuide: React.FC = () => {
                 <p className={`text-sm ${textColor}`}>{text}</p>
               </CardContent>
             </Card>
-          ),
+          )
         )}
       </div>{" "}
     </Container>

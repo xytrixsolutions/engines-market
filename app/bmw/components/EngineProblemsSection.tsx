@@ -95,9 +95,9 @@ const getSeverityColor = (severity: string) => {
 
 const EngineProblemsSection: React.FC = () => {
   return (
-    <Container className="my-12">
-      <div className="max-w-5xl mx-auto text-center">
-        <Heading className="mb-6">
+    <Container dark className="my-12">
+      <div className="max-w-5xl mx-auto text-center text-charcoal-gray-muted">
+        <Heading className="mb-6 text-charcoal-gray-muted">
           Common<Accent>BMW Engine Problems</Accent>& How to Fix Them
         </Heading>
         <Paragraph>

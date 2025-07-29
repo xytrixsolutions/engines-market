@@ -47,7 +47,7 @@
   --color-neon-red: #b30529;
   --color-royal-blue: #0037d6;
   --color-charcoal-gray: #383838;
-  --color-charcoal-muted: #5a5a5a;
+  --color-charcoal-gray-muted: #d0d0d0;
   --color-spanish-green: #17894e;
 }
 
@@ -166,5 +166,10 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+@layer components {
+  .bg-charcoal-gray-gradient {
+    @apply bg-[radial-gradient(ellipse_at_center,_#484848_0%,_#383838_40%,_#1a1a1a_100%)];
   }
 }

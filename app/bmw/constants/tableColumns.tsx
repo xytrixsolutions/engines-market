@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 const quoteButton = (
   <Button
     variant="outline"
-    className="border-neon-red text-neon-red hover:bg-neon-red hover:text-white transition-all duration-200"
+    className="bg-gradient-to-r from-[#057532] to-[#49B34B] text-white border-2 border-[#057532] hover:bg-none hover:text-[#057532] transition-all duration-200"
   >
     Request Quote
   </Button>

@@ -4,7 +4,10 @@ import EngineTable from "./EngineTable";
 import ENGINE_DATA from "../data/engineData.json";
 import { REPLACEMENT_COST_COLUMNS } from "../constants/tableColumns";
 import Container from "@/components/Container";
-import { Button } from "@/components/ui/button";
+
+import Image from "next/image";
+import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
+import Button from "@/components/Button";
 
 const ReplacementCostsTable: React.FC = () => {
   const columns = REPLACEMENT_COST_COLUMNS;
@@ -15,8 +18,9 @@ const ReplacementCostsTable: React.FC = () => {
     <Container className="my-16">
       {/* Heading and Description */}
       <div className="max-w-2xl mx-auto text-center mb-8">
-        <h2 className="text-3xl font-bold mb-3 text-royal-blue">
-          Average Engine Replacement Cost Estimates
+        <h2 className="text-3xl font-bold mb-3 text-charcoal-gray">
+          Average <span className="text-neon-red">Engine Replacement</span> Cost
+          Estimates
         </h2>
         <p className="text-lg text-muted-foreground mb-2">
           Get an idea of what it costs to replace your engine based on your
@@ -48,42 +52,60 @@ const ReplacementCostsTable: React.FC = () => {
           </div>
         </div>
       </div>
-      {/* CTA Section */}
-      <div className="bg-gradient-to-b from-blue-50 to-blue-100 rounded-xl shadow-lg py-10 px-6 max-w-2xl mx-auto flex flex-col items-center mb-4">
-        <h3 className="text-2xl font-bold text-center text-royal-blue mb-2">
-          Still Unsure Which is The Right Engine!!!
+      {/* CTA Section - Updated to Match Screenshot */}
+      <div
+        className="bg-gray-100 rounded-3xl shadow-5xl py-12 px-6 max-w-3xl mx-auto text-center"
+        style={{
+          boxShadow: "0 0 100px rgba(255, 255, 255, 0.35)",
+        }}
+      >
+        <h3 className="text-3xl font-bold text-gray-900 mb-4">
+          Ready to Get Engine Quotes?
         </h3>
-        <p className="text-lg font-semibold text-center text-blue-700 mb-1">
-          Why Not Try Our Accurate DVLA Reg Lookup Tool!
+        <p className="text-lg text-gray-700 mb-6">
+          Enter your vehicle registration number and let Engine Finders find you
+          the best replacement engine deals on Jaguar & Land Rover.
         </p>
-        <p className="text-base text-center text-muted-foreground mb-4">
-          Simply Enter Your Vehicle Reg Here & Let us Find Your Engine
-          Accurately!
+
+        <p className="text-base font-semibold text-blue-800 mb-4">
+          Just Add Your Reg & Click Go - It's That Simple
         </p>
-        <div className="flex flex-col sm:flex-row items-center gap-3 w-full justify-center mb-4">
-          <input
-            type="text"
-            value={reg}
-            onChange={(e) => setReg(e.target.value)}
-            placeholder="Enter Vehicle Reg..."
-            className="w-full sm:w-64 px-4 py-3 rounded border border-border text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-neon-red bg-white shadow"
-            maxLength={12}
-            autoCapitalize="characters"
-          />
-          <Button className="w-full sm:w-auto px-8 py-3 text-lg font-bold rounded bg-neon-red text-white hover:bg-red-600 transition-all mt-2 sm:mt-0">
-            Request Free Quote
+
+        {/* REG Input */}
+        <div className="flex justify-center mb-6">
+          <div className="relative w-full max-w-sm">
+            <div className="absolute top-1/2 transform -translate-y-1/2">
+              <div className="w-10 h-16 relative">
+                <Image
+                  src="/Home/uknumberplate.png"
+                  alt="UK Flag"
+                  fill
+                  className="object-cover rounded-l-md"
+                />
+              </div>
+            </div>
+
+            <input
+              type="text"
+              placeholder="REG HERE"
+              className="w-full text-center py-4 text-lg font-semibold text-gray-700 bg-[#ffcb05] border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
+            />
+          </div>
+        </div>
+
+        {/* Centered Button */}
+        <div className="flex justify-center">
+          <Button className="w-full max-w-xs border-2 text-white py-4 rounded-full font-semibold flex items-center justify-center space-x-2 transition-all duration-300 mb-4">
+            <span>Get Free Quote Now</span>
+            <FiArrowUpRight className="w-5 h-5" />
           </Button>
         </div>
-        {/* Placeholder image for CTA */}
-        <div className="mt-4">
-          <img
-            src="/images/number-plate-uk.png"
-            alt="UK Number Plate Example"
-            className="h-16 rounded shadow border border-border mx-auto"
-            style={{ background: "#ffe600" }}
-            onError={(e) => (e.currentTarget.style.display = "none")}
-          />
-        </div>
+
+        {/* Bottom text */}
+        <p className="mt-6 text-sm text-gray-600 max-w-md mx-auto">
+          Engine Finders instantly matches your vehicle with our trusted engine
+          suppliers and garages near you. Save time. Save money. No stress.
+        </p>
       </div>
     </Container>
   );

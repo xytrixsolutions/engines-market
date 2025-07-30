@@ -114,11 +114,11 @@ const EngineTablesTabs: React.FC = () => {
         ))}
       </div>
       {/* Table Meta Heading & Description */}
-      <div className="max-w-2xl mx-auto text-center mb-8">
-        <h2 className="text-2xl md:text-3xl font-bold mb-3 text-royal-blue">
+      <div className="max-w-5xl mx-auto text-center mb-8 mt-10">
+        <h2 className="text-2xl md:text-3xl font-bold mb-3 text-neon-red">
           {meta.title}
         </h2>
-        <p className="text-base md:text-lg text-muted-foreground mb-2">
+        <p className="text-base md:text-lg text-charcoal-gray mb-2 ">
           {meta.description}
         </p>
       </div>

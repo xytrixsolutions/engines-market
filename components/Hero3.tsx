@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Container from "./Container";
+import Button from "./Button";
 
 // Define your logos with different sizes
 const brandLogos = [
@@ -90,12 +91,12 @@ export default function Hero3() {
       {visibleCount < brandLogos.length && (
         <div className="flex items-center justify-center">
           <div className="flex-1 h-px neon-red-gradient"></div>
-          <button
-            className="rounded-full border-2 border-transparent bg-gradient-to-r from-[#b30529] via-[#ff0033] to-[#b30529] text-white px-8 py-3 transition-all duration-500 hover:bg-none hover:border-2 hover:border-[#ff0033] hover:text-[#ff0033]"
+          <Button
+            className=""
             onClick={handleLoadMore}
           >
             Load More
-          </button>
+          </Button>
           <div className="flex-1 h-px neon-red-gradient"></div>
         </div>
       )}

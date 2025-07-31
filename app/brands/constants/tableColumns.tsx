@@ -78,7 +78,17 @@ export const REPLACEMENT_COST_COLUMNS: Column<ReplacementCost>[] = [
   {
     key: "image",
     label: "",
-    render: () => sampleImage,
+    render: (value) => (
+      <img
+        src={value as string}
+        alt="BMW Model"
+        className="w-32 h-24s object-contain rounded-lg"
+        onError={(e) => {
+          console.log("Image failed to load:", value);
+          e.currentTarget.style.display = "none";
+        }}
+      />
+    ),
   },
   { key: "model", label: "Model" },
   { key: "engineType", label: "Engine Type" },

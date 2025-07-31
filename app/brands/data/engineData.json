@@ -721,196 +721,235 @@
   ],
   "replacement_costs": [
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW 1 Series",
       "engineType": "1.5L Petrol",
       "estimatedCost": "£2,500 - £4,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW 1 Series",
       "engineType": "2.0L Diesel",
       "estimatedCost": "£3,000 - £5,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW 2 Series",
       "engineType": "1.5L Petrol",
       "estimatedCost": "£2,500 - £4,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW 2 Series",
       "engineType": "2.0L Diesel",
       "estimatedCost": "£3,500 - £5,500"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW 3 Series",
       "engineType": "2.0L Petrol",
       "estimatedCost": "£3,000 - £5,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW 3 Series",
       "engineType": "3.0L Diesel",
       "estimatedCost": "£4,000 - £6,500"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW 4 Series",
       "engineType": "2.0L Petrol",
       "estimatedCost": "£3,500 - £5,500"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW 4 Series",
       "engineType": "3.0L Diesel",
       "estimatedCost": "£4,500 - £7,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW 5 Series",
       "engineType": "2.0L Petrol",
       "estimatedCost": "£3,500 - £5,500"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW 5 Series",
       "engineType": "3.0L Diesel",
       "estimatedCost": "£4,500 - £7,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW 6 Series",
       "engineType": "3.0L Petrol",
       "estimatedCost": "£5,000 - £8,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW 6 Series",
       "engineType": "4.4L V8",
       "estimatedCost": "£7,000 - £12,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW 7 Series",
       "engineType": "3.0L Petrol",
       "estimatedCost": "£5,000 - £8,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW 7 Series",
       "engineType": "4.4L V8",
       "estimatedCost": "£7,000 - £12,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW X1",
       "engineType": "1.5L Petrol",
       "estimatedCost": "£2,500 - £4,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW X1",
       "engineType": "2.0L Diesel",
       "estimatedCost": "£3,000 - £5,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW X3",
       "engineType": "2.0L Petrol",
       "estimatedCost": "£3,500 - £5,500"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW X3",
       "engineType": "3.0L Diesel",
       "estimatedCost": "£4,500 - £7,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW X4",
       "engineType": "2.0L Petrol",
       "estimatedCost": "£3,500 - £5,500"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW X4",
       "engineType": "3.0L Diesel",
       "estimatedCost": "£4,500 - £7,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW X5",
       "engineType": "3.0L Petrol",
       "estimatedCost": "£5,000 - £8,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW X5",
       "engineType": "4.4L V8",
       "estimatedCost": "£7,000 - £12,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW X6",
       "engineType": "3.0L Petrol",
       "estimatedCost": "£5,500 - £8,500"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW X6",
       "engineType": "4.4L V8",
       "estimatedCost": "£7,500 - £12,500"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW X7",
       "engineType": "3.0L Petrol",
       "estimatedCost": "£6,000 - £10,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW X7",
       "engineType": "4.4L V8",
       "estimatedCost": "£7,500 - £12,500"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW 8 Series",
       "engineType": "3.0L Petrol",
       "estimatedCost": "£6,000 - £10,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW 8 Series",
       "engineType": "4.4L V8",
       "estimatedCost": "£7,000 - £12,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW Z3",
       "engineType": "2.0L Petrol",
       "estimatedCost": "£3,000 - £5,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW Z3",
       "engineType": "2.8L Petrol",
       "estimatedCost": "£4,000 - £6,500"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW Z4",
       "engineType": "2.0L Petrol",
       "estimatedCost": "£3,500 - £5,500"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW Z4",
       "engineType": "3.0L Petrol",
       "estimatedCost": "£4,500 - £7,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW i3",
       "engineType": "Electric",
       "estimatedCost": "£4,000 - £6,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW i8",
       "engineType": "1.5L Hybrid",
       "estimatedCost": "£6,000 - £10,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW M2",
       "engineType": "3.0L Petrol",
       "estimatedCost": "£5,000 - £8,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW M3",
       "engineType": "3.0L Petrol",
       "estimatedCost": "£5,000 - £8,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW M4",
       "engineType": "3.0L Petrol",
       "estimatedCost": "£5,000 - £8,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW M5",
       "engineType": "4.4L V8",
       "estimatedCost": "£7,000 - £12,000"
     },
     {
+      "image": "/bmw/bmw-1-series.png",
       "model": "BMW M8",
       "engineType": "4.4L V8",
       "estimatedCost": "£7,500 - £12,500"

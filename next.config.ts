@@ -5,16 +5,16 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  reactStrictMode: false,
+  // reactStrictMode: false,
   productionBrowserSourceMaps: false,
-  experimental: {
-    devtoolNewPanelUI: true,
-    globalNotFound: true,
-    optimizeCss: true,
-    optimizeRouterScrolling: true,
-    optimizeServerReact: true,
-    optimizePackageImports: ["*"],
-  },
+  // experimental: {
+  //   devtoolNewPanelUI: true,
+  //   globalNotFound: true,
+  //   optimizeCss: true,
+  //   optimizeRouterScrolling: true,
+  //   optimizeServerReact: true,
+  //   optimizePackageImports: ["*"],
+  // },
 };
 
 export default nextConfig;

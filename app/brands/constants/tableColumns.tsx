@@ -7,16 +7,9 @@ import {
   ModelEngine,
   ReplacementCost,
 } from "../types/engine";
-import { Button } from "@/components/ui/button";
+import Button from "@/components/Button";
 
-const quoteButton = (
-  <Button
-    variant="outline"
-    className="bg-gradient-to-r from-[#057532] to-[#49B34B] text-white border-2 border-[#057532] hover:bg-none hover:text-[#057532] transition-all duration-200"
-  >
-    Request Quote
-  </Button>
-);
+const quoteButton = <Button variant="green">Request Quote</Button>;
 
 const sampleImage = (
   <img

@@ -65,9 +65,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  transition:
-    transform 1s ease-in-out,
-    opacity 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
   opacity: 0;
   z-index: 0;
 }
@@ -91,6 +89,7 @@
 }
 
 :root {
+  font-family: var(--font-poppins), sans-serif;
   --radius: 0.625rem;
   --background: #f3f9ff;
   --foreground: #171717;
@@ -173,4 +172,3 @@
     @apply bg-[radial-gradient(ellipse_at_center,_#484848_0%,_#383838_40%,_#1a1a1a_100%)];
   }
 }
-

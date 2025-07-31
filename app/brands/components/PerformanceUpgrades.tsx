@@ -23,6 +23,7 @@ import {
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import Accent from "@/components/Accent";
+import GradientBorderWrapper from "@/components/GradientBorderWrapper";
 
 const PERFORMANCE_SECTIONS = [
   {
@@ -230,142 +231,142 @@ const PerformanceUpgrades: React.FC = () => {
         className="space-y-4"
       >
         {PERFORMANCE_SECTIONS.map((section) => (
-          <AccordionItem
-            key={section.id}
-            value={section.id}
-            className="rounded-xl border border-border bg-card shadow-sm"
-          >
-            <AccordionTrigger className="px-6 py-4 font-semibold text-lg text-royal-blue flex items-center justify-between select-none rounded-t-xl transition-all duration-300 hover:no-underline">
-              <div className="flex items-center gap-3">
-                {section.icon}
-                <span>{section.title}</span>
-              </div>
-              <Badge
-                variant={getLevelColor(section.level)}
-                className="ml-auto mr-4"
-              >
-                {section.level}
-              </Badge>
-            </AccordionTrigger>
-            <AccordionContent className="px-6 pb-5 pt-4 transition-all duration-300">
-              <div className="space-y-6">
-                {/* Basic Enhancement Options */}
-                {section.upgrades && (
-                  <div className="grid gap-4 md:grid-cols-2">
-                    {section.upgrades.map((upgrade, idx) => (
-                      <Card key={idx} className="border-l-4 border-l-blue-500">
-                        <CardHeader className="pb-3">
-                          <CardTitle className="text-base flex items-center gap-2">
-                            {upgrade.icon}
-                            {upgrade.name}
-                          </CardTitle>
-                        </CardHeader>
-                        <CardContent className="space-y-3">
-                          <p className="text-sm text-muted-foreground">
-                            {upgrade.description}
-                          </p>
-                          <div className="space-y-2">
-                            <div className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
-                              <div>
-                                <span className="font-semibold text-green-700 text-sm">
-                                  Benefits:{" "}
-                                </span>
-                                <span className="text-sm">
-                                  {upgrade.benefits}
-                                </span>
+          <GradientBorderWrapper key={section.id}>
+            <AccordionItem
+              value={section.id}
+              className="rounded-xl bg-card shadow-sm"
+            >
+              <AccordionTrigger className="px-6 py-4 font-semibold text-lg text-royal-blue flex items-center justify-between select-none rounded-t-xl transition-all duration-300 hover:no-underline">
+                <div className="flex items-center gap-3">
+                  {section.icon}
+                  <span>{section.title}</span>
+                </div>
+                <Badge
+                  variant={getLevelColor(section.level)}
+                  className="ml-auto mr-4"
+                >
+                  {section.level}
+                </Badge>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-5 pt-4 transition-all duration-300">
+                <div className="space-y-6">
+                  {/* Basic Enhancement Options */}
+                  {section.upgrades && (
+                    <div className="grid gap-4 md:grid-cols-2">
+                      {section.upgrades.map((upgrade, idx) => (
+                        <Card
+                          key={idx}
+                          className="border-l-4 border-l-blue-500"
+                        >
+                          <CardHeader className="pb-3">
+                            <CardTitle className="text-base flex items-center gap-2">
+                              {upgrade.icon}
+                              {upgrade.name}
+                            </CardTitle>
+                          </CardHeader>
+                          <CardContent className="space-y-3">
+                            <p className="text-sm text-muted-foreground">
+                              {upgrade.description}
+                            </p>
+                            <div className="space-y-2">
+                              <div className="flex items-start gap-2">
+                                <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                                <div>
+                                  <span className="font-semibold text-green-700 text-sm">
+                                    Benefits:
+                                  </span>
+                                  <span className="text-sm">
+                                    {upgrade.benefits}
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="flex items-start gap-2">
+                                <Info className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
+                                <div>
+                                  <span className="font-semibold text-amber-700 text-sm">
+                                    Considerations:
+                                  </span>
+                                  <span className="text-sm">
+                                    {upgrade.considerations}
+                                  </span>
+                                </div>
                               </div>
                             </div>
-                            <div className="flex items-start gap-2">
-                              <Info className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
-                              <div>
-                                <span className="font-semibold text-amber-700 text-sm">
-                                  Considerations:{" "}
-                                </span>
-                                <span className="text-sm">
-                                  {upgrade.considerations}
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </CardContent>
-                      </Card>
-                    ))}
-                  </div>
-                )}
-
-                {/* Tuning Stages */}
-                {section.stages && (
-                  <div className="space-y-4">
-                    {section.stages.map((stage, idx) => (
-                      <Card
-                        key={idx}
-                        className="border-l-4 border-l-purple-500"
-                      >
-                        <CardContent className="pt-4 space-y-3">
-                          <h4 className="font-bold text-purple-700 flex items-center gap-2">
-                            <TrendingUp className="h-4 w-4" />
-                            {stage.stage}
-                          </h4>
-                          <p className="text-sm text-muted-foreground pl-6">
-                            {stage.description}
-                          </p>
-                          <div className="pl-6 space-y-2">
-                            <div className="flex items-start gap-2">
-                              <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
-                              <div>
-                                <span className="font-semibold text-green-700 text-sm">
-                                  Benefits:{" "}
-                                </span>
-                                <span className="text-sm">
-                                  {stage.benefits}
-                                </span>
-                              </div>
-                            </div>
-                            <div className="flex items-start gap-2">
-                              <Info className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
-                              <div>
-                                <span className="font-semibold text-amber-700 text-sm">
-                                  Considerations:{" "}
-                                </span>
-                                <span className="text-sm">
-                                  {stage.considerations}
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </CardContent>
-                      </Card>
-                    ))}
-                  </div>
-                )}
-
-                {/* Content sections for other types */}
-                {section.content && (
-                  <div className="space-y-4">
-                    <p className="text-muted-foreground">
-                      {section.content.description}
-                    </p>
-                    <div className="space-y-3">
-                      {section.content.points.map((point, idx) => (
-                        <div key={idx} className="space-y-2">
-                          <div className="flex items-center gap-2">
-                            <Cog className="h-4 w-4 text-blue-600" />
-                            <h4 className="font-bold text-blue-700">
-                              {point.title}
-                            </h4>
-                          </div>
-                          <p className="text-foreground pl-6 text-sm leading-relaxed">
-                            {point.description}
-                          </p>
-                        </div>
+                          </CardContent>
+                        </Card>
                       ))}
                     </div>
-                  </div>
-                )}
-              </div>
-            </AccordionContent>
-          </AccordionItem>
+                  )}
+                  {/* Tuning Stages */}
+                  {section.stages && (
+                    <div className="space-y-4">
+                      {section.stages.map((stage, idx) => (
+                        <Card
+                          key={idx}
+                          className="border-l-4 border-l-blue-500"
+                        >
+                          <CardHeader className="pb-3">
+                            <CardTitle className="text-base flex items-center gap-2">
+                              {stage.stage}
+                            </CardTitle>
+                          </CardHeader>
+                          <CardContent className="space-y-3">
+                            <p className="text-sm text-muted-foreground">
+                              {stage.description}
+                            </p>
+                            <div className="space-y-2">
+                              <div className="flex items-start gap-2">
+                                <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                                <div>
+                                  <span className="font-semibold text-green-700 text-sm">
+                                    Benefits:
+                                  </span>
+                                  <span className="text-sm">
+                                    {stage.benefits}
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="flex items-start gap-2">
+                                <Info className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
+                                <div>
+                                  <span className="font-semibold text-amber-700 text-sm">
+                                    Considerations:
+                                  </span>
+                                  <span className="text-sm">
+                                    {stage.considerations}
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      ))}
+                    </div>
+                  )}
+                  {/* Turbo Upgrades, Engine Internals, Reliability Impact */}
+                  {section.content && (
+                    <div className="space-y-4">
+                      <p className="text-sm text-muted-foreground">
+                        {section.content.description}
+                      </p>
+                      {section.content.points && (
+                        <ul className="list-disc pl-6 space-y-2">
+                          {section.content.points.map((point, idx) => (
+                            <li key={idx}>
+                              <span className="font-semibold">
+                                {point.title}:
+                              </span>
+                              {point.description}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          </GradientBorderWrapper>
         ))}
       </Accordion>
 

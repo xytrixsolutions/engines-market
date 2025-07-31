@@ -19,6 +19,7 @@ import {
 import Heading from "@/components/Heading";
 import Accent from "@/components/Accent";
 import Paragraph from "@/components/Paragraph";
+import GradientBorderWrapper from "@/components/GradientBorderWrapper";
 
 const TIPS = [
   {
@@ -159,39 +160,40 @@ const TroubleshootingGuide: React.FC = () => {
         className="space-y-4"
       >
         {TROUBLESHOOTING_SECTIONS.map((section, idx) => (
-          <AccordionItem
-            key={section.id}
-            value={section.id}
-            className="rounded-xl border border-border bg-card shadow-sm"
-          >
-            <AccordionTrigger className="px-6 py-4 font-semibold text-lg text-royal-blue flex items-center justify-between select-none rounded-t-xl transition-all duration-300 hover:no-underline">
-              <div className="flex items-center gap-3">
-                {section.icon}
-                <span>{section.title}</span>
-              </div>
-              <Badge
-                variant={getSeverityColor(section.severity)}
-                className="ml-auto mr-4"
-              >
-                {section.severity}
-              </Badge>
-            </AccordionTrigger>
-            <AccordionContent className="px-6 pb-5 pt-4 transition-all duration-300">
-              <div className="space-y-4">
-                {section.tips.map((tip, tipIdx) => (
-                  <div key={tipIdx} className="space-y-2">
-                    <div className="flex items-center gap-2">
-                      <Settings className="h-4 w-4 text-blue-600" />
-                      <h4 className="font-bold text-blue-700">{tip.title}</h4>
+          <GradientBorderWrapper key={section.id}>
+            <AccordionItem
+              value={section.id}
+              className="rounded-xl bg-card shadow-sm"
+            >
+              <AccordionTrigger className="px-6 py-4 font-semibold text-lg text-royal-blue flex items-center justify-between select-none rounded-t-xl transition-all duration-300 hover:no-underline">
+                <div className="flex items-center gap-3">
+                  {section.icon}
+                  <span>{section.title}</span>
+                </div>
+                <Badge
+                  variant={getSeverityColor(section.severity)}
+                  className="ml-auto mr-4"
+                >
+                  {section.severity}
+                </Badge>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-5 pt-4 transition-all duration-300">
+                <div className="space-y-4">
+                  {section.tips.map((tip, tipIdx) => (
+                    <div key={tipIdx} className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <Settings className="h-4 w-4 text-blue-600" />
+                        <h4 className="font-bold text-blue-700">{tip.title}</h4>
+                      </div>
+                      <p className="text-foreground pl-6 text-sm leading-relaxed">
+                        {tip.description}
+                      </p>
                     </div>
-                    <p className="text-foreground pl-6 text-sm leading-relaxed">
-                      {tip.description}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </AccordionContent>
-          </AccordionItem>
+                  ))}
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          </GradientBorderWrapper>
         ))}
       </Accordion>
       {/* Bottom Summary Card */}

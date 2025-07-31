@@ -75,9 +75,15 @@ const EngineTable = <T extends Record<string, unknown>>({
             {columns.map((col) => (
               <div key={col.key} className="flex justify-between items-start">
                 <span className="font-semibold text-foreground">
-                  {col.label}:
+                  {col.label}
                 </span>
-                <div className="text-right text-foreground">
+                <div
+                  className={`text-foreground ${
+                    (col.key === "model" && col.render) || col.key === "image"
+                      ? "flex justify-center w-full"
+                      : "text-right"
+                  }`}
+                >
                   {col.render
                     ? col.render(row[col.key], row)
                     : String(row[col.key] || "")}

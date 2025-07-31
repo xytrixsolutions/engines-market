@@ -21,15 +21,25 @@ const sampleImage = (
 
 export const MODEL_COLUMNS: Column<Model>[] = [
   {
-    key: "image",
+    key: "model",
     label: "",
-    render: () => sampleImage,
+    render: (value) => (
+      <img
+        src={value as string}
+        alt="BMW Model"
+        className="w-32 h-24s object-contain rounded-lg"
+        onError={(e) => {
+          console.log("Image failed to load:", value);
+          e.currentTarget.style.display = "none";
+        }}
+      />
+    ),
   },
   { key: "model_name", label: "Model Name" },
   { key: "engine_options", label: "Engine Options" },
   {
     key: "action",
-    label: "Request Quote",
+    label: "",
     render: () => quoteButton,
   },
 ];
@@ -44,17 +54,12 @@ export const ENGINE_CODE_COLUMNS: Column<EngineCode>[] = [
   { key: "productionYears", label: "Production Years" },
   {
     key: "action",
-    label: "Request Quote",
+    label: "",
     render: () => quoteButton,
   },
 ];
 
 export const MODEL_ENGINE_COLUMNS: Column<ModelEngine>[] = [
-  {
-    key: "image",
-    label: "",
-    render: () => sampleImage,
-  },
   { key: "engineCode", label: "Engine Code" },
   {
     key: "compatibleModels",
@@ -64,7 +69,7 @@ export const MODEL_ENGINE_COLUMNS: Column<ModelEngine>[] = [
   },
   {
     key: "action",
-    label: "Request Quote",
+    label: "",
     render: () => quoteButton,
   },
 ];
@@ -80,7 +85,7 @@ export const REPLACEMENT_COST_COLUMNS: Column<ReplacementCost>[] = [
   { key: "estimatedCost", label: "Estimated Cost" },
   {
     key: "action",
-    label: "Request Quote",
+    label: "",
     render: () => quoteButton,
   },
 ];

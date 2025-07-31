@@ -89,7 +89,8 @@
 }
 
 :root {
-  font-family: var(--font-poppins), sans-serif;
+  /* font-family: var(--font-poppins), sans-serif; */
+  scroll-behavior: smooth;
   --radius: 0.625rem;
   --background: #f3f9ff;
   --foreground: #171717;

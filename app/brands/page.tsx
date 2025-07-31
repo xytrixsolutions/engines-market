@@ -18,7 +18,6 @@ const Page = (): JSX.Element => {
   const carImages: string[] = carImagesData;
   const carModelNames: string[] = carModelNamesData;
   const faqs: FAQ[] = faqsData;
-
   return (
     <>
       <Hero1 carImages={carImages} carModelNames={carModelNames} />

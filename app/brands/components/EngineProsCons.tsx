@@ -1,4 +1,4 @@
-import type React from "react";
+import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Container from "@/components/Container";
@@ -6,6 +6,7 @@ import { Check, X, Sparkles, DollarSign, Wrench } from "lucide-react";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import Accent from "@/components/Accent";
+import SummaryCard from "@/components/SummaryCard";
 
 const ENGINE_TYPES = [
   {
@@ -139,22 +140,10 @@ const EngineProsCons: React.FC = () => {
       </div>
 
       {/* Bottom CTA/Info Section */}
-      <Card className="mt-12 bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">
-        <CardContent className="py-6">
-          <div className="text-center space-y-3">
-            <h3 className="text-xl font-semibold text-royal-blue">
-              Need Help Choosing?
-            </h3>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Consider your vehicle&apos;s age, mileage, intended use, and
-              budget when selecting an engine type. For vehicles under 5 years
-              old, new engines are often worth the investment. For older
-              vehicles, reconditioned engines offer the best balance of
-              reliability and cost.
-            </p>
-          </div>
-        </CardContent>
-      </Card>
+      <SummaryCard
+        variant="card"
+        content="Consider your vehicle's age, mileage, intended use, and budget when selecting an engine type. For vehicles under 5 years old, new engines are often worth the investment. For older vehicles, reconditioned engines offer the best balance of reliability and cost."
+      />
     </Container>
   );
 };

@@ -1,18 +1,18 @@
 "use client";
-import React, { useState } from "react";
+import { FC } from "react";
 import EngineTable from "./EngineTable";
 import ENGINE_DATA from "../data/engineData.json";
 import { REPLACEMENT_COST_COLUMNS } from "../constants/tableColumns";
 import Container from "@/components/Container";
 
 import Image from "next/image";
-import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
+import { FiArrowUpRight } from "react-icons/fi";
 import Button from "@/components/Button";
+import SummaryCard from "@/components/SummaryCard";
 
-const ReplacementCostsTable: React.FC = () => {
+const ReplacementCostsTable: FC = () => {
   const columns = REPLACEMENT_COST_COLUMNS;
   const data = ENGINE_DATA["replacement_costs"];
-  const [reg, setReg] = useState("");
 
   return (
     <Container className="my-16">
@@ -33,28 +33,15 @@ const ReplacementCostsTable: React.FC = () => {
       </div>
       {/* Table */}
       <EngineTable columns={columns} data={data} />
-      {/* Note */}
-      <div className="w-full bg-blue-50 border-t border-b border-blue-200 py-10 my-12">
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <div className="text-blue-700 font-bold text-lg mb-2">
-            Need Help Choosing?
-          </div>
-          <div className="text-black text-base font-normal">
-            Engine replacement costs in the UK can vary depending on the engine
-            type, condition (used vs. reconditioned), and whether fitting is
-            included. This price table offers real-world averages so you know
-            what to expect before getting quotes. Customers often search for
-            phrases like “engine replacement cost UK” or “how much is a
-            reconditioned engine for BMW” and this section gives you a solid
-            benchmark. For accurate pricing based on your specific vehicle and
-            preferred fitting option, request a tailored quote directly from the
-            table above.
-          </div>
-        </div>
-      </div>
+      <SummaryCard
+        variant="card"
+        title="Need Help Choosing?"
+        content="Engine replacement costs in the UK can vary depending on the engine type, condition (used vs. reconditioned), and whether fitting is included. This price table offers real-world averages so you know what to expect before getting quotes. Customers often search for phrases like “engine replacement cost UK” or “how much is a reconditioned engine for BMW” and this section gives you a solid benchmark. For accurate pricing based on your specific vehicle and preferred fitting option, request a tailored quote directly from the table above."
+      />
       {/* CTA Section - Updated to Match Screenshot */}
       <div
-        className="bg-gray-100 rounded-3xl shadow-5xl py-12 px-6 max-w-3xl mx-auto text-center"
+        id="cta2"
+        className="bg-gray-100 rounded-3xl shadow-2xl drop-shadow-2xl py-12 px-6 text-center"
         style={{
           boxShadow: "0 0 100px rgba(255, 255, 255, 0.35)",
         }}
@@ -68,7 +55,7 @@ const ReplacementCostsTable: React.FC = () => {
         </p>
 
         <p className="text-base font-semibold text-blue-800 mb-4">
-          Just Add Your Reg & Click Go - It's That Simple
+          Just Add Your Reg & Click Go - It&apos;s That Simple
         </p>
 
         {/* REG Input */}

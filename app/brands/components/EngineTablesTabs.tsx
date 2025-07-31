@@ -6,7 +6,6 @@ import {
   MODEL_COLUMNS,
   ENGINE_CODE_COLUMNS,
   MODEL_ENGINE_COLUMNS,
-  REPLACEMENT_COST_COLUMNS,
 } from "../constants/tableColumns";
 import {
   Select,
@@ -18,6 +17,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Column } from "../types/engine";
 import Container from "@/components/Container";
+import SummaryCard from "@/components/SummaryCard";
 
 const TABLE_OPTIONS = [
   { key: "models", label: "Models" },
@@ -125,16 +125,10 @@ const EngineTablesTabs: React.FC = () => {
       {/* Table */}
       <EngineTable columns={columns} data={data} />
       {/* Table Note */}
-      <div className="w-full bg-blue-50 border-t border-b border-blue-200 py-10 my-12">
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <div className="text-blue-700 font-bold text-lg mb-2">
-            Need Help Choosing?
-          </div>
-          <div className="text-black text-base font-normal">
-            {meta.note.replace(/^Note:\s*/, "")}
-          </div>
-        </div>
-      </div>
+      <SummaryCard
+        variant="card"
+        content={meta.note.replace(/^Note:\s*/, "")}
+      />
     </Container>
   );
 };

@@ -15,11 +15,19 @@ const EngineTable = <T extends Record<string, unknown>>({
   columns,
   data,
 }: EngineTableProps<T>) => {
+  // Check if this is the models table (has model_name and engine_options columns)
+  const isModelsTable =
+    columns.some((col) => col.key === "model_name") &&
+    columns.some((col) => col.key === "engine_options");
+
+  const tableContainerClass =
+    "hidden lg:block bg-card rounded-2xl shadow-lg mb-5 overflow-hidden w-full mx-auto";
+
   return (
     <>
       {/* Desktop Table View */}
-      <div className="hidden lg:block bg-card rounded-2xl shadow-lg mb-5 overflow-hidden">
-        <Table>
+      <div className={tableContainerClass}>
+        <Table className="w-full table-auto">
           <TableHeader>
             <TableRow className="border-b border-border">
               {columns.map((col) => (
@@ -45,7 +53,9 @@ const EngineTable = <T extends Record<string, unknown>>({
                 {columns.map((col) => (
                   <TableCell
                     key={col.key}
-                    className="px-4 py-2 text-foreground"
+                    className={`px-4 py-2 text-foreground ${
+                      i === 0 ? "font-bold" : ""
+                    } ${col.key === "action" ? "text-right" : ""}`}
                   >
                     {col.render
                       ? col.render(row[col.key], row)
@@ -61,43 +71,19 @@ const EngineTable = <T extends Record<string, unknown>>({
       {/* Mobile Card View */}
       <div className="lg:hidden space-y-4">
         {data.map((row, i) => (
-          <div
-            key={i}
-            className="bg-card rounded-lg border border-border shadow-sm hover:shadow-md transition-shadow duration-200"
-          >
-            <div className="p-4 space-y-3">
-              {columns.map((col) => {
-                // Skip action column in mobile view as it will be at the bottom
-                if (col.key === "action") return null;
-
-                return (
-                  <div
-                    key={col.key}
-                    className="flex justify-between items-start"
-                  >
-                    <span className="text-sm font-medium text-muted-foreground min-w-[120px]">
-                      {col.label}:
-                    </span>
-                    <span className="text-sm text-foreground text-right flex-1">
-                      {col.render
-                        ? col.render(row[col.key], row)
-                        : String(row[col.key] || "")}
-                    </span>
-                  </div>
-                );
-              })}
-
-              {/* Action button at the bottom for mobile */}
-              {columns.find((col) => col.key === "action") && (
-                <div className="pt-3 border-t border-border">
-                  <div className="flex justify-center">
-                    {columns
-                      .find((col) => col.key === "action")
-                      ?.render?.(row["action"], row)}
-                  </div>
+          <div key={i} className="bg-card rounded-xl shadow-lg p-4 space-y-3">
+            {columns.map((col) => (
+              <div key={col.key} className="flex justify-between items-start">
+                <span className="font-semibold text-foreground">
+                  {col.label}:
+                </span>
+                <div className="text-right text-foreground">
+                  {col.render
+                    ? col.render(row[col.key], row)
+                    : String(row[col.key] || "")}
                 </div>
-              )}
-            </div>
+              </div>
+            ))}
           </div>
         ))}
       </div>

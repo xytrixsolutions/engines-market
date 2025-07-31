@@ -6,6 +6,7 @@ import { ArrowRight, Phone, Mail, Clock, CheckCircle } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
+import Link from "next/link";
 
 // Reusable FeatureCard Component
 const FeatureCard = ({
@@ -89,20 +90,22 @@ const EngineDealsCTA: React.FC = () => {
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col gap-4 justify-center items-center">
+          {/* First line - Request a Quote button */}
           <Button
             size="lg"
             className="bg-neon-red hover:bg-transparent hover:text-neon-red border border-neon-red text-white font-semibold px-8 py-3 text-lg transition-all duration-300 group"
           >
-            Request a Quote Now!
+            <Link href={"#cta2"}>Request a Quote Now!</Link>
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
 
+          {/* Second line - Other buttons */}
           <div className="flex gap-4">
             {[
               { icon: Phone, label: "Call Now" },
               { icon: Mail, label: "Email Us" },
-              {icon: FaWhatsapp, label: "Whatsapp" }
+              { icon: FaWhatsapp, label: "WhatsApp" },
             ].map(({ icon: Icon, label }) => (
               <Button
                 key={label}

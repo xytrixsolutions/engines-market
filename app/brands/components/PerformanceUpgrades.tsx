@@ -24,6 +24,7 @@ import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import Accent from "@/components/Accent";
 import GradientBorderWrapper from "@/components/GradientBorderWrapper";
+import SummaryCard from "@/components/SummaryCard";
 
 const PERFORMANCE_SECTIONS = [
   {
@@ -371,27 +372,11 @@ const PerformanceUpgrades: React.FC = () => {
       </Accordion>
 
       {/* Bottom Summary Card */}
-      <Card className="mt-12 bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">
-        <CardContent className="pt-6">
-          <div className="flex items-start gap-4">
-            <div className="flex-shrink-0">
-              <CheckCircle className="h-6 w-6 text-blue-600 mt-1" />
-            </div>
-            <div className="space-y-2">
-              <h3 className="text-xl font-semibold text-blue-800">
-                Performance Enhancement Summary
-              </h3>
-              <p className="text-blue-700 leading-relaxed">
-                By carefully selecting and implementing performance upgrades,
-                you can transform your BMW into a high-performance machine while
-                maintaining a balance between power, reliability, and
-                efficiency. Always consult with experienced professionals and
-                use high-quality components for the best results.
-              </p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+      <SummaryCard
+        variant="performance"
+        title="Performance Enhancement Summary"
+        content="By carefully selecting and implementing performance upgrades, you can transform your BMW into a high-performance machine while maintaining a balance between power, reliability, and efficiency. Always consult with experienced professionals and use high-quality components for the best results."
+      />
     </Container>
   );
 };

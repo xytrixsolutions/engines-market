@@ -20,6 +20,7 @@ import Heading from "@/components/Heading";
 import Accent from "@/components/Accent";
 import Paragraph from "@/components/Paragraph";
 import GradientBorderWrapper from "@/components/GradientBorderWrapper";
+import SummaryCard from "@/components/SummaryCard";
 
 const TIPS = [
   {
@@ -197,27 +198,11 @@ const TroubleshootingGuide: React.FC = () => {
         ))}
       </Accordion>
       {/* Bottom Summary Card */}
-      <Card className="mt-12 bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
-        <CardContent className="pt-6">
-          <div className="flex items-start gap-4">
-            <div className="flex-shrink-0">
-              <CheckCircle className="h-6 w-6 text-green-600 mt-1" />
-            </div>
-            <div className="space-y-2">
-              <h3 className="text-xl font-semibold text-green-800">
-                Key Takeaway
-              </h3>
-              <p className="text-green-700 leading-relaxed">
-                By following these troubleshooting tips and maintaining regular
-                engine checks, you can help ensure your BMW engine remains in
-                top condition, prolonging its life and performance. Early
-                detection and prompt action are crucial for preventing minor
-                issues from becoming major repairs.
-              </p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+      <SummaryCard
+        variant="green"
+        title="Key Takeaway"
+        content="By following these troubleshooting tips and maintaining regular engine checks, you can help ensure your BMW engine remains in top condition, prolonging its life and performance. Early detection and prompt action are crucial for preventing minor issues from becoming major repairs."
+      />
       {/* Quick Reference Tips */}
       <div className="mt-8 grid gap-4 md:grid-cols-3">
         {TIPS.map(

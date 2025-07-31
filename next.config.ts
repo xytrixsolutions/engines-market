@@ -4,7 +4,17 @@ const nextConfig: NextConfig = {
   /* config options here */
   eslint: {
     ignoreDuringBuilds: true,
-  }
+  },
+  reactStrictMode: false,
+  productionBrowserSourceMaps: false,
+  experimental: {
+    devtoolNewPanelUI: true,
+    globalNotFound: true,
+    optimizeCss: true,
+    optimizeRouterScrolling: true,
+    optimizeServerReact: true,
+    optimizePackageImports: ["*"],
+  },
 };
 
 export default nextConfig;

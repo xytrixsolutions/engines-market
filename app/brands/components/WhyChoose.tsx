@@ -4,15 +4,17 @@ import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
+import { data } from "../types/data";
 
 const WhyChoose = () => {
+  const section0Image = data[0].section0Image;
   return (
     <Container className="px-4 md:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
         {/* Image Content */}
         <div className="flex justify-center bg-charcoal-gray">
           <Image
-            src="/bmw/bmw.png"
+            src={section0Image.img}
             alt="BMW Engine"
             width={400}
             height={300}

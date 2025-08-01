@@ -10,14 +10,12 @@ import PerformanceUpgrades from "./components/PerformanceUpgrades";
 import ReplacementCostsTable from "./components/ReplacementCostsTable";
 import EngineDealsCTA from "./components/EngineDealsCTA";
 import FAQSection, { FAQ } from "@/components/FAQs";
-import carImagesData from "./data/carImages.json";
-import carModelNamesData from "./data/carModelNames.json";
-import faqsData from "./data/faqs.json";
+import { data } from "./types/data";
 
 const Page = (): JSX.Element => {
-  const carImages: string[] = carImagesData;
-  const carModelNames: string[] = carModelNamesData;
-  const faqs: FAQ[] = faqsData;
+  const carImages: string[] = data[0].carImages;
+  const carModelNames: string[] = data[0].carModelNames;
+  const faqs: FAQ[] = data[0].faqs;
   return (
     <>
       <Hero1 carImages={carImages} carModelNames={carModelNames} />

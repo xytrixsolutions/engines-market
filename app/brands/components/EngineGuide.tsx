@@ -3,8 +3,10 @@ import Container from "@/components/Container";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import Image from "next/image";
+import { data } from "../types/data";
 
 export default function BMWEngineGuide() {
+  const section1Image = data[0].section1Image;
   return (
     <Container dark className="py-16">
       {/* Heading and Text */}
@@ -30,7 +32,7 @@ export default function BMWEngineGuide() {
 
       {/* Image */}
       <Image
-        src="/bmw/engine-guide.png"
+        src={section1Image.img}
         alt="BMW Dealership with BMW Cars"
         width={0}
         height={0}

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import EngineTable from "./EngineTable";
 import { data } from "../types/data";
 import {
@@ -114,7 +114,7 @@ const EngineTablesTabs: React.FC = () => {
         ))}
       </div>
       {/* Table Meta Heading & Description */}
-      <div className="max-w-5xl mx-auto text-center mb-8 mt-10">
+      <div className="text-center mb-8 mt-10">
         <h2 className="text-2xl md:text-3xl font-bold mb-3 text-neon-red">
           {meta.title}
         </h2>
@@ -125,10 +125,7 @@ const EngineTablesTabs: React.FC = () => {
       {/* Table */}
       <EngineTable columns={columns} data={tableData} />
       {/* Table Note */}
-      <SummaryCard
-        variant="card"
-        content={meta.note}
-      />
+      <SummaryCard variant="card" content={meta.note} />
     </Container>
   );
 };

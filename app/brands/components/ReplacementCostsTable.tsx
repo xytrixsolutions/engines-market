@@ -17,7 +17,7 @@ const ReplacementCostsTable: FC = () => {
   return (
     <Container className="my-16">
       {/* Heading and Description */}
-      <div className="max-w-2xl mx-auto text-center mb-8">
+      <div className="text-center mb-8">
         <h2 className="text-3xl font-bold mb-3 text-charcoal-gray">
           Average <span className="text-neon-red">Engine Replacement</span> Cost
           Estimates

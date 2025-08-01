@@ -3,13 +3,15 @@ import React from "react";
 
 interface WrapperProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
+  dark?: boolean;
 }
 
-const Paragraph = ({ children, className, ...props }: WrapperProps) => {
+const Paragraph = ({ children, className, dark, ...props }: WrapperProps) => {
   return (
     <p
       className={cn(
-        "text-lg text-muted-foreground mx-auto mb-8 leading-relaxed",
+        "text-lg mx-auto mb-8 leading-relaxed",
+        dark ? "text-charcoal-gray-muted" : "text-muted-foreground",
         className,
       )}
       {...props}

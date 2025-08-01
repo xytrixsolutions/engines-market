@@ -1,9 +1,14 @@
 import {
   AlertTriangle,
   Clock,
+  Cog,
   Droplets,
   Fuel,
+  Snowflake,
   Thermometer,
+  TrendingUp,
+  Volume2,
+  Wind,
   Zap,
 } from "lucide-react";
 import { Gauge } from "lucide-react";
@@ -99,6 +104,39 @@ export interface Data {
       titleColor: string;
       text: string;
       textColor: string;
+    }>;
+    summary?: {
+      variant: string;
+      title: string;
+      content: string;
+    };
+  };
+  section9?: {
+    performanceUpgrades: Array<{
+      id: string;
+      title: string;
+      icon?: ReactNode;
+      level: "Beginner" | "Progressive" | "Advanced" | "Expert" | "Important";
+      upgrades?: Array<{
+        name: string;
+        icon?: ReactNode;
+        description: string;
+        benefits: string;
+        considerations: string;
+      }>;
+      stages?: Array<{
+        stage: string;
+        description: string;
+        benefits: string;
+        considerations: string;
+      }>;
+      content?: {
+        description: string;
+        points?: Array<{
+          title: string;
+          description: string;
+        }>;
+      };
     }>;
     summary?: {
       variant: string;
@@ -677,6 +715,174 @@ export const data: Data[] = [
         title: "Key Takeaway",
         content:
           "By following these troubleshooting tips and maintaining regular engine checks, you can help ensure your BMW engine remains in top condition, prolonging its life and performance. Early detection and prompt action are crucial for preventing minor issues from becoming major repairs.",
+      },
+    },
+    section9: {
+      performanceUpgrades: [
+        {
+          id: "basic-enhancements",
+          title: "Basic Enhancement Options",
+          icon: <Zap className="h-5 w-5" />,
+          level: "Beginner",
+          upgrades: [
+            {
+              name: "ECU Remapping (Chip Tuning)",
+              icon: <Cog className="h-4 w-4" />,
+              description:
+                "ECU remapping involves altering the software that controls the engine's functions to optimize performance. This can increase horsepower, torque, and fuel efficiency.",
+              benefits:
+                "Improved throttle response, increased power and torque, and better fuel economy.",
+              considerations:
+                "Ensure the remap is done by a reputable tuner to avoid potential engine damage.",
+            },
+            {
+              name: "Cold Air Intakes",
+              icon: <Wind className="h-4 w-4" />,
+              description:
+                "Replacing the stock air intake with a cold air intake system allows the engine to breathe cooler, denser air, which can improve combustion efficiency.",
+              benefits:
+                "Increased horsepower and torque, improved engine sound.",
+              considerations:
+                "Ensure the intake is properly sealed to prevent debris from entering the engine.",
+            },
+            {
+              name: "Exhaust System Upgrades",
+              icon: <Volume2 className="h-4 w-4" />,
+              description:
+                "Upgrading to a performance exhaust system can reduce backpressure and improve exhaust flow.",
+              benefits:
+                "Enhanced power output, improved exhaust note, potential weight reduction.",
+              considerations:
+                "Check local regulations regarding noise levels and emissions.",
+            },
+            {
+              name: "Intercooler Upgrades",
+              icon: <Snowflake className="h-4 w-4" />,
+              description:
+                "An upgraded intercooler can lower the temperature of the air entering the engine, which is particularly beneficial for turbocharged engines.",
+              benefits:
+                "Increased power and reliability, reduced risk of engine knock.",
+              considerations:
+                "Ensure the intercooler is compatible with your specific engine setup.",
+            },
+          ],
+        },
+        {
+          id: "tuning-stages",
+          title: "Tuning Upgrade: Stage 1-3",
+          icon: <TrendingUp className="h-5 w-5" />,
+          level: "Progressive",
+          stages: [
+            {
+              stage: "Stage 1 Tuning",
+              description:
+                "Basic modifications that do not require any additional hardware changes. Typically includes ECU remapping and minor bolt-on parts like air filters and exhaust systems.",
+              benefits:
+                "Noticeable increase in power and torque, improved throttle response.",
+              considerations:
+                "Generally safe for daily driving with minimal impact on reliability.",
+            },
+            {
+              stage: "Stage 2 Tuning",
+              description:
+                "More advanced modifications that may require supporting hardware changes. This can include upgraded intercoolers, downpipes, and more aggressive ECU tuning.",
+              benefits:
+                "Significant power gains, improved performance across the rev range.",
+              considerations:
+                "May require additional maintenance and monitoring to ensure reliability.",
+            },
+            {
+              stage: "Stage 3 Tuning",
+              description:
+                "Extensive modifications that often involve internal engine upgrades such as forged pistons, upgraded turbochargers, and high-flow fuel systems.",
+              benefits: "Maximum power output, track-ready performance.",
+              considerations:
+                "Can significantly impact reliability and fuel efficiency, often not suitable for daily driving.",
+            },
+          ],
+        },
+        {
+          id: "turbo-upgrades",
+          title: "Turbo Upgrades",
+          icon: <Gauge className="h-5 w-5" />,
+          level: "Advanced",
+          content: {
+            description:
+              "Upgrading the turbocharger is one of the most effective ways to increase the power output of a BMW engine.",
+            points: [
+              {
+                title: "Larger Turbochargers",
+                description:
+                  "Installing a larger turbo can increase the amount of air forced into the engine, resulting in higher power and torque.",
+              },
+              {
+                title: "Twin-Turbo Systems",
+                description:
+                  "For engines that already have a single turbo, upgrading to a twin-turbo setup can provide even greater performance gains.",
+              },
+              {
+                title: "Supporting Modifications",
+                description:
+                  "Turbo upgrades often require additional modifications such as upgraded intercoolers, fuel injectors, and exhaust systems to handle the increased airflow and power.",
+              },
+            ],
+          },
+        },
+        {
+          id: "engine-internals",
+          title: "Engine Internals Reinforcements",
+          icon: <Cog className="h-5 w-5" />,
+          level: "Expert",
+          content: {
+            description:
+              "For those seeking extreme performance, reinforcing the internal components of the engine is essential.",
+            points: [
+              {
+                title: "Forged Pistons and Rods",
+                description:
+                  "Stronger than stock components, forged pistons and rods can handle higher power levels and boost pressures.",
+              },
+              {
+                title: "Upgraded Bearings",
+                description:
+                  "High-performance bearings can reduce friction and improve durability under extreme conditions.",
+              },
+              {
+                title: "Strengthened Crankshafts",
+                description:
+                  "A stronger crankshaft can withstand the increased forces generated by high-power engines.",
+              },
+            ],
+          },
+        },
+        {
+          id: "reliability-impact",
+          title: "Impact on Reliability & Fuel Efficiency",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          level: "Important",
+          content: {
+            description:
+              "While performance upgrades can significantly enhance the driving experience, they can also impact the reliability and fuel efficiency of the engine.",
+            points: [
+              {
+                title: "Reliability",
+                description:
+                  "Higher power levels can put additional stress on engine components, potentially leading to increased wear and the need for more frequent maintenance. It's crucial to use high-quality parts and have the modifications performed by experienced professionals.",
+              },
+              {
+                title: "Fuel Efficiency",
+                description:
+                  "Performance upgrades often result in increased fuel consumption, especially under aggressive driving conditions. However, some tuning options, like ECU remapping, can improve fuel efficiency during normal driving by optimizing the engine's performance.",
+              },
+            ],
+          },
+        },
+      ],
+      summary: {
+        variant: "performance",
+        title: "Performance Enhancement Summary",
+        content:
+          "By carefully selecting and implementing performance upgrades, you can transform your BMW into a high-performance machine while maintaining a balance between power, reliability, and efficiency. Always consult with experienced professionals and use high-quality components for the best results.",
       },
     },
     faqs: [

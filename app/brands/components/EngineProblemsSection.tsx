@@ -7,79 +7,14 @@ import {
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import Container from "@/components/Container";
-import {
-  Droplets,
-  Thermometer,
-  Clock,
-  Zap,
-  Fuel,
-  AlertTriangle,
-  Wrench,
-  Shield,
-} from "lucide-react";
+import { AlertTriangle, Wrench, Shield } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Heading from "@/components/Heading";
 import Accent from "@/components/Accent";
 import Paragraph from "@/components/Paragraph";
 import GradientBorderWrapper from "@/components/GradientBorderWrapper";
-
-const PROBLEMS = [
-  {
-    title: "Oil Leaks",
-    icon: <Droplets className="h-5 w-5" />,
-    severity: "Common",
-    problem:
-      "Oil leaks are a prevalent issue in many BMW models, often caused by worn or damaged gaskets and seals. Common areas for oil leaks include the valve cover gasket, oil filter housing gasket, and oil pan gasket.",
-    solution:
-      "Regularly inspect the engine for visible signs of oil leaks, such as puddles or stains underneath your vehicle. Replace any worn or damaged gaskets and seals promptly. Ensure that oil changes are performed regularly and check for leaks during routine maintenance.",
-    prevention:
-      "Use high-quality oil and gaskets, and adhere to the recommended oil change intervals to prevent leaks.",
-  },
-  {
-    title: "Overheating Issues",
-    icon: <Thermometer className="h-5 w-5" />,
-    severity: "Critical",
-    problem:
-      "Engine overheating can cause significant damage to BMW engines. Common causes include a faulty thermostat, a failing water pump, or a leaking radiator.",
-    solution:
-      "Check the coolant level and inspect the cooling system for leaks. Ensure that the radiator and water pump are functioning correctly and replace any faulty components. If the engine consistently overheats, have a professional inspect the thermostat and cooling system.",
-    prevention:
-      "Regularly maintain the cooling system, including flushing the coolant and replacing the thermostat and water pump as needed.",
-  },
-  {
-    title: "Timing Chain Problems",
-    icon: <Clock className="h-5 w-5" />,
-    severity: "Critical",
-    problem:
-      "Timing chain issues are common in some BMW engines, particularly the N20 and N26 models. A failing timing chain can lead to severe engine damage.",
-    solution:
-      "Listen for unusual noises from the engine, such as rattling or ticking sounds, which may indicate a timing chain issue. If detected, have the timing chain inspected and replaced by a professional.",
-    prevention:
-      "Follow the manufacturer's maintenance schedule and replace the timing chain and related components at the recommended intervals.",
-  },
-  {
-    title: "Misfiring Engines",
-    icon: <Zap className="h-5 w-5" />,
-    severity: "Moderate",
-    problem:
-      "Engine misfires can result from faulty spark plugs, ignition coils, or fuel injectors. Misfires can lead to poor engine performance and increased emissions.",
-    solution:
-      "Diagnose the issue using an OBD-II scanner to identify the specific problem. Replace faulty spark plugs, ignition coils, or fuel injectors as needed.",
-    prevention:
-      "Regularly replace spark plugs and ignition coils according to the manufacturer's recommendations. Use high-quality fuel to prevent injector clogging.",
-  },
-  {
-    title: "HPFP Failure (High-Pressure Fuel Pump)",
-    icon: <Fuel className="h-5 w-5" />,
-    severity: "Critical",
-    problem:
-      "The high-pressure fuel pump (HPFP) in some BMW models, particularly those with turbocharged engines like the N54, can fail, leading to poor engine performance and starting issues.",
-    solution:
-      "If you experience symptoms such as long cranking times or loss of power, have the HPFP inspected and replaced if necessary.",
-    prevention:
-      "Use high-quality fuel and follow the recommended maintenance schedule to reduce the risk of HPFP failure.",
-  },
-];
+import { data } from "../types/data";
+const PROBLEMS = data[0].section4.EngineProblems;
 
 const getSeverityColor = (severity: string) => {
   switch (severity) {
@@ -127,7 +62,7 @@ const EngineProblemsSection: React.FC = () => {
                   <span>{item.title}</span>
                 </div>
                 <Badge
-                  variant={getSeverityColor(item.severity)}
+                  variant={getSeverityColor(item.severity || "Common")}
                   className="ml-auto mr-4"
                 >
                   {item.severity}

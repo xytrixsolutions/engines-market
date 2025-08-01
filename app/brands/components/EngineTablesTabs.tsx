@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import EngineTable from "./EngineTable";
-import ENGINE_DATA from "../data/engineData.json";
+import { data } from "../types/data";
 import {
   MODEL_COLUMNS,
   ENGINE_CODE_COLUMNS,
@@ -43,13 +43,13 @@ const TABLE_META: Record<
     title: "Browse Engines by Vehicle Model",
     description:
       "Use this table to find compatible engine options by selecting your vehicle’s make and model. You can view available engine sizes of a each model such as 1.5L petrol or 2.0L diesel. Simply click the “Request Quote” button next to engine type you’re looking for to receive multiple engine replacement quotes from trusted UK suppliers.",
-    note: "Note: Looking to find the right replacement engine for your vehicle? This model-based engine quote table helps you quickly compare available engine sizes across different series and generations. Whether you drive a hatchback, saloon, SUV, or coupe, choosing your model allows you to view compatible petrol and diesel engines instantly. This is one of the easiest ways to request engine quotes without needing to know technical specs or engine codes. All engines listed are sourced from trusted UK suppliers with warranty options available.",
+    note: "Looking to find the right replacement engine for your vehicle? This model-based engine quote table helps you quickly compare available engine sizes across different series and generations. Whether you drive a hatchback, saloon, SUV, or coupe, choosing your model allows you to view compatible petrol and diesel engines instantly. This is one of the easiest ways to request engine quotes without needing to know technical specs or engine codes. All engines listed are sourced from trusted UK suppliers with warranty options available.",
   },
   engine_codes: {
     title: "Search Engines by Technical Specification (Engine Code)",
     description:
       "Looking for a specific engine code? This section lists engines by their technical specifications: including engine size, fuel type, turbocharger status, horsepower, torque, and production years. Ideal for those who already know their engine codes, this table lets you compare engines at a glance and request a quote directly based on exact specs.",
-    note: "Note: If you know your vehicle’s engine code or you’re replacing a like-for-like unit, this section is ideal. Searching by engine code gives you access to detailed technical specs - such as fuel type, power output, torque, and turbo configuration. It’s perfect for garages, mechanics, or anyone comparing engines across production years. Entering or matching your engine code ensures the right compatibility, and you can get quotes instantly for used, reconditioned, or refurbished options. ",
+    note: "If you know your vehicle’s engine code or you’re replacing a like-for-like unit, this section is ideal. Searching by engine code gives you access to detailed technical specs - such as fuel type, power output, torque, and turbo configuration. It’s perfect for garages, mechanics, or anyone comparing engines across production years. Entering or matching your engine code ensures the right compatibility, and you can get quotes instantly for used, reconditioned, or refurbished options. ",
   },
   models_engines: {
     title: "Engine & Model Compatibility Chart",
@@ -63,7 +63,7 @@ const EngineTablesTabs: React.FC = () => {
   const [tableType, setTableType] = useState<TableKey>("models");
   const columns = TABLE_COLUMNS[tableType];
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const data: any[] = ENGINE_DATA[tableType];
+  const tableData: any[] = data[0].engineData[tableType];
 
   if (!columns) return null; // Guard against undefined columns
 
@@ -123,11 +123,11 @@ const EngineTablesTabs: React.FC = () => {
         </p>
       </div>
       {/* Table */}
-      <EngineTable columns={columns} data={data} />
+      <EngineTable columns={columns} data={tableData} />
       {/* Table Note */}
       <SummaryCard
         variant="card"
-        content={meta.note.replace(/^Note:\s*/, "")}
+        content={meta.note}
       />
     </Container>
   );

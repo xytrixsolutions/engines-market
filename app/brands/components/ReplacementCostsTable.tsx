@@ -47,11 +47,11 @@ const ReplacementCostsTable: FC = () => {
         }}
       >
         <h3 className="text-3xl font-bold text-gray-900 mb-4">
-          Ready to Get Engine Quotes?
+          Find the Best Replacement Engine Deals for Your BMW
         </h3>
         <p className="text-lg text-gray-700 mb-6">
-          Enter your vehicle registration number and let Engine Finders find you
-          the best replacement engine deals on Jaguar & Land Rover.
+        Looking for a reliable, cost-effective engine replacement? With Engines Market, getting the right engine for your BMW has never been easier.
+
         </p>
 
         <p className="text-base font-semibold text-blue-800 mb-4">

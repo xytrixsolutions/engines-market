@@ -1,18 +1,18 @@
 "use client";
 import { FC } from "react";
 import EngineTable from "./EngineTable";
-import ENGINE_DATA from "../data/engineData.json";
 import { REPLACEMENT_COST_COLUMNS } from "../constants/tableColumns";
 import Container from "@/components/Container";
+import { data as datadata } from "../data/data";
 
 import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
 import Button from "@/components/Button";
 import SummaryCard from "@/components/SummaryCard";
 
-const ReplacementCostsTable: FC = () => {
+const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand: brand }) => {
   const columns = REPLACEMENT_COST_COLUMNS;
-  const data = ENGINE_DATA["replacement_costs"];
+  const { replacement_costs } = datadata[brand].engineData;
 
   return (
     <Container className="my-16">
@@ -32,7 +32,7 @@ const ReplacementCostsTable: FC = () => {
         </p>
       </div>
       {/* Table */}
-      <EngineTable columns={columns} data={data} />
+      <EngineTable columns={columns} data={replacement_costs} />
       <SummaryCard
         variant="card"
         title="Need Help Choosing?"
@@ -50,8 +50,9 @@ const ReplacementCostsTable: FC = () => {
           Find the Best Replacement Engine Deals for Your BMW
         </h3>
         <p className="text-lg text-gray-700 mb-6">
-        Looking for a reliable, cost-effective engine replacement? With Engines Market, getting the right engine for your BMW has never been easier.
-
+          Looking for a reliable, cost-effective engine replacement? With
+          Engines Market, getting the right engine for your BMW has never been
+          easier.
         </p>
 
         <p className="text-base font-semibold text-blue-800 mb-4">

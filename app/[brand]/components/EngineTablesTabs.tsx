@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import EngineTable from "./EngineTable";
-import { data } from "../types/data";
+import { data } from "../data/data";
 import {
   MODEL_COLUMNS,
   ENGINE_CODE_COLUMNS,
@@ -59,11 +59,11 @@ const TABLE_META: Record<
   },
 };
 
-const EngineTablesTabs: React.FC = () => {
+const EngineTablesTabs: React.FC<{ brand: string }> = ({ brand }) => {
   const [tableType, setTableType] = useState<TableKey>("models");
   const columns = TABLE_COLUMNS[tableType];
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const tableData: any[] = data[0].engineData[tableType];
+  const tableData: any[] = data[brand].engineData[tableType];
 
   if (!columns) return null; // Guard against undefined columns
 

@@ -13,8 +13,7 @@ import Heading from "@/components/Heading";
 import Accent from "@/components/Accent";
 import Paragraph from "@/components/Paragraph";
 import GradientBorderWrapper from "@/components/GradientBorderWrapper";
-import { data } from "../types/data";
-const PROBLEMS = data[0].section4.EngineProblems;
+import { data } from "../data/data";
 
 const getSeverityColor = (severity: string) => {
   switch (severity) {
@@ -29,12 +28,14 @@ const getSeverityColor = (severity: string) => {
   }
 };
 
-const EngineProblemsSection: React.FC = () => {
+const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
+  const { EngineProblems } = data[brand].section4;
+  const { brandName } = data[brand];
   return (
     <Container dark className="my-12">
       <div className="max-w-5xl mx-auto text-center text-charcoal-gray-muted">
         <Heading className="mb-6 text-charcoal-gray-muted">
-          Common<Accent>BMW Engine Problems</Accent>& How to Fix Them
+          Common<Accent>{brandName} Engine Problems</Accent>& How to Fix Them
         </Heading>
         <Paragraph>
           BMW engines are renowned for their performance and engineering
@@ -50,7 +51,7 @@ const EngineProblemsSection: React.FC = () => {
         defaultValue="item-0"
         className="space-y-4"
       >
-        {PROBLEMS.map((item, idx) => (
+        {EngineProblems.map((item, idx) => (
           <GradientBorderWrapper key={item.title} variant="conic">
             <AccordionItem
               value={`item-${idx}`}

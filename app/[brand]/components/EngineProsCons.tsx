@@ -7,70 +7,16 @@ import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import Accent from "@/components/Accent";
 import SummaryCard from "@/components/SummaryCard";
+import { data } from "../data/data";
 
-const ENGINE_TYPES = [
-  {
-    title: "New BMW Engines",
-    icon: <Sparkles className="h-6 w-6" />,
-    badge: "Premium",
-    badgeVariant: "default" as const,
-    pros: [
-      "100% reliability with a factory warranty",
-      "Best performance & longevity",
-      "Latest technology and improvements",
-      "No hidden issues or wear",
-    ],
-    cons: [
-      "Higher cost",
-      "Limited availability for older models",
-      "Longer delivery times",
-      "May be overkill for older vehicles",
-    ],
-  },
-  {
-    title: "Used BMW Engines",
-    icon: <DollarSign className="h-6 w-6" />,
-    badge: "Budget-Friendly",
-    badgeVariant: "secondary" as const,
-    pros: [
-      "Cost-effective & widely available",
-      "Good for quick replacements",
-      "Immediate availability",
-      "Suitable for older vehicles",
-    ],
-    cons: [
-      "Potential hidden wear and tear",
-      "Shorter lifespan than new or reconditioned engines",
-      "Limited or no warranty",
-      "Unknown maintenance history",
-    ],
-  },
-  {
-    title: "Reconditioned BMW Engines",
-    icon: <Wrench className="h-6 w-6" />,
-    badge: "Best Value",
-    badgeVariant: "outline" as const,
-    pros: [
-      "Professionally rebuilt with new components",
-      "More reliable than used engines",
-      "Balanced cost vs. performance",
-      "Often comes with warranty",
-    ],
-    cons: [
-      "Slightly more expensive than used engines",
-      "Quality varies by rebuilder",
-      "May not include latest improvements",
-      "Longer process than buying used",
-    ],
-  },
-];
-
-const EngineProsCons: React.FC = () => {
+const EngineProsCons: React.FC<{ brand: string }> = ({ brand: brand }) => {
+  const { section7, brandName } = data[brand];
   return (
     <Container className="my-16">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <Heading>
-          Pros & Cons of New, Used &<Accent>Reconditioned BMW Engines</Accent>
+          Pros & Cons of New, Used &
+          <Accent>Reconditioned {brandName} Engines</Accent>
         </Heading>
         <Paragraph>
           Understanding the <strong>advantages and disadvantages</strong> of
@@ -82,7 +28,7 @@ const EngineProsCons: React.FC = () => {
       </div>
 
       <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-3">
-        {ENGINE_TYPES.map((engineType, _) => (
+        {section7.map((engineType, _) => (
           <Card
             key={engineType.title}
             className="relative overflow-hidden border-2 hover:shadow-lg transition-shadow duration-300"

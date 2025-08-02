@@ -19,8 +19,8 @@ const Page = (): JSX.Element => {
   return (
     <>
       <Hero1 carImages={carImages} carModelNames={carModelNames} />
-      <WhyChoose />
       <EngineGuide />
+      <WhyChoose />
       <EngineTablesTabs />
       <EngineProblemsSection />
       <EngineProsCons />

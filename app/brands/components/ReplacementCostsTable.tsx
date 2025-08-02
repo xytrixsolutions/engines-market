@@ -41,7 +41,7 @@ const ReplacementCostsTable: FC = () => {
       {/* CTA Section - Updated to Match Screenshot */}
       <div
         id="cta2"
-        className="bg-gray-100 rounded-3xl shadow-2xl drop-shadow-2xl py-12 px-6 text-center"
+        className="bg-gray-100 rounded-3xl shadow-2xl drop-shadow-2xl py-12 px-6 text-center mt-20"
         style={{
           boxShadow: "0 0 100px rgba(255, 255, 255, 0.35)",
         }}

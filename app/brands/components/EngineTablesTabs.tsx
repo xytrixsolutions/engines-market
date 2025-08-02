@@ -123,7 +123,7 @@ const EngineTablesTabs: React.FC = () => {
         </p>
       </div>
       {/* Table */}
-      <EngineTable columns={columns} data={tableData} />
+      <EngineTable columns={columns} data={tableData} tableType={tableType} />
       {/* Table Note */}
       <SummaryCard variant="card" content={meta.note} />
     </Container>

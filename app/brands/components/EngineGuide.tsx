@@ -8,10 +8,10 @@ import { data } from "../types/data";
 export default function BMWEngineGuide() {
   const section1Image = data[0].section1Image;
   return (
-    <Container dark className="py-16">
+    <Container className="py-16">
       {/* Heading and Text */}
-      <div className="text-center text-charcoal-gray-muted space-y-6 mb-14 max-w-6xl mx-auto">
-        <Heading className="leading-tight text-charcoal-gray-muted">
+      <div className="text-center text-charcoal-gray space-y-6 mb-14 max-w-6xl mx-auto">
+        <Heading className="leading-tight text-charcoal-gray">
           The Complete
           <Accent className="mx-3">BMW Engine</Accent>
           Guide: Engine Codes, Specifications, Replacement Costs &{" "}

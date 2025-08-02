@@ -340,7 +340,7 @@ export const data: Data[] = [
           engine_options: "1.5L Petrol, 2.0L Diesel",
         },
         {
-          model: "/bmw/bmw-x7.png",
+          model: "/bmw/BMW X7.png",
           model_name: "BMW X7",
           engine_options: "1.5L Petrol, 2.0L Diesel",
         },
@@ -374,6 +374,31 @@ export const data: Data[] = [
           model_name: "BMW i8",
           engine_options: "1.5L Hybrid",
         },
+        {
+          model: "/bmw/bmw-m2.png",
+          model_name: "BMW M2",
+          engine_options: "3.0L Petrol",
+        },
+        {
+          model: "/bmw/bmw-m3.png",
+          model_name: "BMW M3",
+          engine_options: "3.0L Petrol",
+        },
+        {
+          model: "/bmw/bmw-m4.png",
+          model_name: "BMW M4",
+          engine_options: "3.0L Petrol",
+        },
+        {
+          model: "/bmw/bmw-m5.png",
+          model_name: "BMW M5",
+          engine_options: "4.4L V8",
+        },
+        {
+          model: "/bmw/bmw-m8.png",
+          model_name: "BMW M8",
+          engine_options: "4.4L V8",
+        }
       ],
       engine_codes: [
         {

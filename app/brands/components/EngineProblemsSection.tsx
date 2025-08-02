@@ -100,12 +100,14 @@ const EngineProblemsSection: React.FC = () => {
         ))}
       </Accordion>
       <Card className="bg-blue-50 border-blue-200 mt-5">
-        <CardContent className="py-6">
+        <CardContent>
           <div className="flex items-start gap-3">
-            <Shield className="h-5 w-5 text-blue-600 mt-0.5" />
-            <div>
-              <h3 className="font-semibold text-blue-900 mb-2">Key Takeaway</h3>
-              <p className="text-sm text-blue-800">
+            <Shield className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+            <div className="min-w-0">
+              <h3 className="text-base md:text-lg font-semibold text-blue-900 mb-2">
+                Key Takeaway
+              </h3>
+              <p className="text-sm md:text-base text-blue-800">
                 By understanding these common issues and taking preventive
                 measures, you can ensure your BMW engine remains in top
                 condition, providing you with the performance and reliability

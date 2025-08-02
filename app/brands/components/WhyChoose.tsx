@@ -40,7 +40,7 @@ const WhyChoose = () => {
             customer satisfaction.
           </Paragraph>
 
-          <div className="space-y-6 text-charcoal-gray-muted pl-10">
+          <div className="space-y-6 text-charcoal-gray-muted ">
             {[
               "Free Instant Quotes",
               "12 Years Industry Experience",
@@ -49,7 +49,7 @@ const WhyChoose = () => {
               "Save 40% on Replacement Cost",
               "Certified Engines with OEM Parts",
             ].map((text, i) => (
-              <div key={i} className="flex items-center space-x-3">
+              <div key={i} className="flex items-center space-x-3 translate-x-6 sm:translate-x-10 md:translate-x-48 lg:translate-x-10 xl:translate-x-10 [@media(min-width:1400px)]:translate-x-16 [@media(min-width:1600px)]:translate-x-24 [@media(min-width:1700px)]:translate-x-36 ">
                 <CheckCircle className="w-5 h-5 text-green-400" />
                 <span className="font-semibold">{text}</span>
               </div>

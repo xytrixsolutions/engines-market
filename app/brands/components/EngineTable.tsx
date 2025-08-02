@@ -81,12 +81,15 @@ const EngineTable = <T extends Record<string, unknown>>({
                   {col.label}
                 </span>
                 <div
-                  className={`text-foreground ${
-                    (col.key === "model" && col.render) || col.key === "image"
-                      ? "flex justify-center w-full"
-                      : "text-right"
-                  }`}
-                >
+  className={`text-foreground ${
+    (col.key === "model" && col.render) || col.key === "image"
+      ? "flex justify-center w-full"
+      : col.key === "action"
+      ? "flex justify-center w-full"
+      : "text-right"
+  }`}
+>
+
                   {col.render
                     ? col.render(row[col.key], row)
                     : String(row[col.key] || "")}

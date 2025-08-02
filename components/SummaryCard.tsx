@@ -89,7 +89,7 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
       <Card
         className={`mt-5 mb-5 rounded-xl shadow-lg border ${cardStyling} ${className}`}
       >
-        <CardContent className="py-6">
+        <CardContent className="py-0">
           <div className="flex items-start gap-3">
             {cardIcon}
             <div>
@@ -108,7 +108,7 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
       <Card
         className={`mt-12 rounded-xl shadow-lg border ${cardStyling} ${className}`}
       >
-        <CardContent className="pt-6">
+        <CardContent className="">
           <div className="flex items-start gap-4">
             <div className="flex-shrink-0">{cardIcon}</div>
             <div className="space-y-2">

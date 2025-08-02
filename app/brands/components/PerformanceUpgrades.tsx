@@ -47,17 +47,22 @@ const PerformanceUpgrades = () => {
         </Heading>
         <Paragraph className="mb-1">
           Common <strong>Tuning Options</strong> for{" "}
-          <strong>Performance Enthusiasts</strong>
-        </Paragraph>
-
-        <Paragraph className="text-base">
-          <strong>{data[0].brandName} engines</strong> are highly regarded for their
+          <strong>Performance Enthusiasts</strong> <strong>{data[0].brandName} engines</strong> are highly regarded for their
           <strong> performance potential</strong>, and there are numerous
           <strong> tuning options</strong> available for enthusiasts looking to
           enhance their vehicle&apos;s <strong>power</strong> and{" "}
           <strong>responsiveness</strong>. Here are some of the most popular
           tuning options:
         </Paragraph>
+
+        {/* <Paragraph className="text-base">
+          <strong>{data[0].brandName} engines</strong> are highly regarded for their
+          <strong> performance potential</strong>, and there are numerous
+          <strong> tuning options</strong> available for enthusiasts looking to
+          enhance their vehicle&apos;s <strong>power</strong> and{" "}
+          <strong>responsiveness</strong>. Here are some of the most popular
+          tuning options:
+        </Paragraph> */}
       </div>
 
       {performanceData && performanceData.performanceUpgrades && (

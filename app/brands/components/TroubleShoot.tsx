@@ -39,21 +39,24 @@ const TroubleshootingGuide: React.FC = () => {
 
   return (
     <Container dark className="my-16">
-      <div className="max-w-4xl mx-auto text-center mb-12 space-y-4 text-charcoal-gray-muted">
+      <div className="max-w-full mx-auto text-center mb-12 space-y-4 text-charcoal-gray-muted">
         <Heading className="text-charcoal-gray-muted">
           Troubleshooting Guide for<Accent>BMW Engines</Accent>
         </Heading>
         <Paragraph className="mb-1">
           Learn how to identify <strong>early signs of engine trouble</strong>{" "}
-          and take action before it becomes <strong>costly</strong>.
-        </Paragraph>
-
-        <Paragraph className="text-base">
-          Maintaining your <strong>BMW engine</strong> with proper care and
+          and take action before it becomes <strong>costly</strong>. Maintaining your <strong>BMW engine</strong> with proper care and
           early troubleshooting can <strong>prevent common faults</strong> and
           <strong> extend its lifespan</strong>. Here are actionable tips to
           keep your engine running smoothly:
         </Paragraph>
+
+        {/* <Paragraph className="text-base">
+          Maintaining your <strong>BMW engine</strong> with proper care and
+          early troubleshooting can <strong>prevent common faults</strong> and
+          <strong> extend its lifespan</strong>. Here are actionable tips to
+          keep your engine running smoothly:
+        </Paragraph> */}
       </div>
 
       <Accordion
@@ -123,7 +126,7 @@ const TroubleshootingGuide: React.FC = () => {
 
             return (
               <Card key={idx} className={`${tip.border} ${tip.bg}`}>
-                <CardContent className="py-16 text-center">
+                <CardContent className="py-8 text-center">
                   <Icon className={`h-8 w-8 mx-auto mb-2 ${tip.iconColor}`} />
                   <h4 className={`font-semibold mb-1 ${tip.titleColor}`}>
                     {tip.title}

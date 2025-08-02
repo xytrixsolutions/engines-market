@@ -38,8 +38,8 @@ const badges: Badge[] = [
 
 const TrustBadges = () => {
   return (
-    <Container>
-      <h2 className="text-3xl font-bold text-center text-charcoal-gray mb-14">
+    <Container dark>
+      <h2 className="text-3xl font-bold text-center text-charcoal-gray-muted mb-14">
         Why <span className="text-neon-red">Choose</span> Us?
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -47,6 +47,10 @@ const TrustBadges = () => {
           <div
             key={index}
             className="relative bg-white py-14 px-auto text-center rounded-xl shadow-md hover:shadow-lg transition"
+            style={{
+              boxShadow: "0 0 100px rgba(255, 255, 255, 0.35)", // <- even on all sides
+              borderRadius: "1.5rem",
+            }}
           >
             {/* Icon circle */}
             <div className="absolute -top-7 left-1/2 transform -translate-x-1/2">

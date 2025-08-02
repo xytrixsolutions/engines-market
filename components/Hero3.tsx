@@ -46,18 +46,18 @@ export default function Hero3() {
   };
 
   return (
-    <Container>
+    <Container dark>
       <div className="items-center mb-12 text-center flex flex-col justify-center">
         {/* Title */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray leading-tight mb-5 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray-muted leading-tight mb-5 text-center">
             Explore By <span className="text-neon-red">Manufacturer</span>
           </h2>
         </div>
 
         {/* Description */}
         <div>
-          <p className="text-gray-700 text-lg leading-relaxed max-w-6xl mx-auto">
+          <p className="text-gray-300 text-lg leading-relaxed max-w-6xl mx-auto">
             Find the perfect engine for your car! Choose your manufacturer below
             and get instant access to reconditioned, used, and new engine
             options from trusted suppliers.

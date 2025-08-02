@@ -8,19 +8,23 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-type EngineTableProps<T = Record<string, unknown>> = TableProps<T>;
+type EngineTableProps<T = Record<string, unknown>> = TableProps<T> & {
+  tableType?: "models" | "engine_codes" | "models_engines";
+};
 
 const EngineTable = <T extends Record<string, unknown>>({
   columns,
   data,
+  tableType,
 }: EngineTableProps<T>) => {
-  // Check if this is the models table (has model_name and engine_options columns)
-  const isModelsTable =
-    columns.some((col) => col.key === "model_name") &&
-    columns.some((col) => col.key === "engine_options");
+  const getWidthClass = () => {
+    if (tableType === "models" || tableType === "models_engines") {
+      return "w-4xl";
+    }
+    return "w-full";
+  };
 
-  const tableContainerClass =
-    "hidden lg:block bg-card rounded-2xl shadow-lg mb-5 overflow-hidden w-full mx-auto";
+  const tableContainerClass = `hidden lg:block bg-card rounded-2xl shadow-lg mb-5 overflow-hidden ${getWidthClass()} mx-auto`;
 
   return (
     <>
@@ -53,7 +57,7 @@ const EngineTable = <T extends Record<string, unknown>>({
                   <TableCell
                     key={col.key}
                     className={`px-4 py-2 text-foreground ${
-                      i === 0 ? "font-bold" : ""
+                      i === 0 ? "" : ""
                     } ${col.key === "action" ? "text-right" : ""}`}
                   >
                     {col.render

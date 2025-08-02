@@ -3,10 +3,15 @@ import Container from "@/components/Container";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import Image from "next/image";
-import { data } from "../types/data";
+import { data } from "../data/data";
+import React from "react";
 
-export default function BMWEngineGuide() {
-  const section1Image = data[0].section1Image;
+const EngineGuide: React.FC<{ brand: string }> = ({
+  brand,
+}: {
+  brand: string;
+}) => {
+  const section1Image = data[brand].section1Image;
   return (
     <Container className="py-16">
       {/* Heading and Text */}
@@ -41,4 +46,5 @@ export default function BMWEngineGuide() {
       />
     </Container>
   );
-}
+};
+export default EngineGuide;

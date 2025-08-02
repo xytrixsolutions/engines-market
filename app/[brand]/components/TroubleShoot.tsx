@@ -14,10 +14,10 @@ import Accent from "@/components/Accent";
 import Paragraph from "@/components/Paragraph";
 import GradientBorderWrapper from "@/components/GradientBorderWrapper";
 import SummaryCard from "@/components/SummaryCard";
-import { data } from "../types/data";
+import { data } from "../data/data";
 
-const TroubleshootingGuide: React.FC = () => {
-  const { section8 } = data[0];
+const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand: brand })  => {
+  const { section8 } = data[brand];
   const {
     EngineProblems: troubleshootingSections = [],
     maintenanceTips: tips = [],
@@ -45,8 +45,9 @@ const TroubleshootingGuide: React.FC = () => {
         </Heading>
         <Paragraph className="mb-1">
           Learn how to identify <strong>early signs of engine trouble</strong>{" "}
-          and take action before it becomes <strong>costly</strong>. Maintaining your <strong>BMW engine</strong> with proper care and
-          early troubleshooting can <strong>prevent common faults</strong> and
+          and take action before it becomes <strong>costly</strong>. Maintaining
+          your <strong>BMW engine</strong> with proper care and early
+          troubleshooting can <strong>prevent common faults</strong> and
           <strong> extend its lifespan</strong>. Here are actionable tips to
           keep your engine running smoothly:
         </Paragraph>

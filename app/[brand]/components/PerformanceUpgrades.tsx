@@ -14,7 +14,7 @@ import Paragraph from "@/components/Paragraph";
 import Accent from "@/components/Accent";
 import GradientBorderWrapper from "@/components/GradientBorderWrapper";
 import SummaryCard from "@/components/SummaryCard";
-import { data } from "../types/data"; // Import your data file
+import { data } from "../data/data"; // Import your data file
 
 const getLevelColor = (level: string) => {
   switch (level) {
@@ -33,21 +33,19 @@ const getLevelColor = (level: string) => {
   }
 };
 
-
-const PerformanceUpgrades = () => {
-  // Get the performance upgrades data from your data file
-  const performanceData = data[0].section9;
-
+const PerformanceUpgrades: React.FC<{ brand: string }> = ({ brand: brand }) => {
+  const { section9, brandName } = data[brand];
   return (
     <Container dark className="my-16">
       <div className="max-w-6xl mx-auto text-center space-y-4 mb-12 text-charcoal-gray-muted">
         <Heading className="text-charcoal-gray-muted">
           Performance Upgrades & Modifications for
-          <Accent>{data[0].brandName} Engines</Accent>
+          <Accent>{brandName} Engines</Accent>
         </Heading>
         <Paragraph className="mb-1">
           Common <strong>Tuning Options</strong> for{" "}
-          <strong>Performance Enthusiasts</strong> <strong>{data[0].brandName} engines</strong> are highly regarded for their
+          <strong>Performance Enthusiasts</strong>{" "}
+          <strong>{brandName} engines</strong> are highly regarded for their
           <strong> performance potential</strong>, and there are numerous
           <strong> tuning options</strong> available for enthusiasts looking to
           enhance their vehicle&apos;s <strong>power</strong> and{" "}
@@ -65,14 +63,14 @@ const PerformanceUpgrades = () => {
         </Paragraph> */}
       </div>
 
-      {performanceData && performanceData.performanceUpgrades && (
+      {section9 && section9.performanceUpgrades && (
         <Accordion
           type="single"
           collapsible
-          defaultValue={performanceData.performanceUpgrades[0]?.id}
+          defaultValue={section9.performanceUpgrades[0]?.id}
           className="space-y-4"
         >
-          {performanceData.performanceUpgrades.map((section) => (
+          {section9.performanceUpgrades.map((section) => (
             <GradientBorderWrapper key={section.id}>
               <AccordionItem
                 value={section.id}
@@ -214,18 +212,18 @@ const PerformanceUpgrades = () => {
       )}
 
       {/* Bottom Summary Card */}
-      {performanceData?.summary && (
+      {section9?.summary && (
         <SummaryCard
           variant={
-            performanceData.summary.variant as
+            section9.summary.variant as
               | "blue"
               | "card"
               | "green"
               | "performance"
               | undefined
           }
-          title={performanceData.summary.title}
-          content={performanceData.summary.content}
+          title={section9.summary.title}
+          content={section9.summary.content}
         />
       )}
     </Container>

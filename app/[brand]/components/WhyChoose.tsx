@@ -4,10 +4,10 @@ import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
-import { data } from "../types/data";
+import { data } from "../data/data";
 
-const WhyChoose = () => {
-  const section0Image = data[0].section0Image;
+const WhyChoose: React.FC<{ brand: string }> = ({ brand }) => {
+  const { section0Image } = data[brand];
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 items-center h-auto lg:h-[85vh]">
@@ -49,7 +49,10 @@ const WhyChoose = () => {
               "Save 40% on Replacement Cost",
               "Certified Engines with OEM Parts",
             ].map((text, i) => (
-              <div key={i} className="flex items-center space-x-3 translate-x-6 sm:translate-x-10 md:translate-x-48 lg:translate-x-10 xl:translate-x-10 [@media(min-width:1400px)]:translate-x-16 [@media(min-width:1600px)]:translate-x-24 [@media(min-width:1700px)]:translate-x-36 ">
+              <div
+                key={i}
+                className="flex items-center space-x-3 translate-x-6 sm:translate-x-10 md:translate-x-48 lg:translate-x-10 xl:translate-x-10 [@media(min-width:1400px)]:translate-x-16 [@media(min-width:1600px)]:translate-x-24 [@media(min-width:1700px)]:translate-x-36 "
+              >
                 <CheckCircle className="w-5 h-5 text-green-400" />
                 <span className="font-semibold">{text}</span>
               </div>

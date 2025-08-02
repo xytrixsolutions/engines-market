@@ -7,6 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import Link from "next/link";
+import { data } from "../data/data";
 
 // Reusable FeatureCard Component
 const FeatureCard = ({
@@ -58,7 +59,8 @@ const trustIndicators = [
   "Nationwide Delivery",
 ];
 
-const EngineDealsCTA: React.FC = () => {
+const EngineDealsCTA: React.FC<{ brand: string }> = ({ brand: brand }) => {
+  const { brandName } = data[brand];
   return (
     <Container className="py-16 relative overflow-hidden text-gray-900">
       <div className="text-center space-y-8">
@@ -66,14 +68,14 @@ const EngineDealsCTA: React.FC = () => {
         <div className="max-w-5xl mx-auto">
           <Heading>
             Compare Prices & Get the Best{" "}
-            <span className="text-neon-red">BMW Engine Deals</span> Now!
+            <span className="text-neon-red">{brandName} Engine Deals</span> Now!
           </Heading>
           <Paragraph>
             At <strong>Engine Market</strong>, we offer the best prices and
-            availability for all BMW engines. Whether you&apos;re looking for a
-            new, used, or reconditioned engine, we&apos;ve got you covered.
-            Don&apos;t wait, request a quote today and get your BMW back on the
-            road in no time!
+            availability for all {brandName} engines. Whether you&apos;re
+            looking for a new, used, or reconditioned engine, we&apos;ve got you
+            covered. Don&apos;t wait, request a quote today and get your{" "}
+            {brandName} back on the road in no time!
           </Paragraph>
         </div>
 

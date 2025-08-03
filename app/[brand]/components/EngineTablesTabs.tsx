@@ -20,9 +20,9 @@ import Container from "@/components/Container";
 import SummaryCard from "@/components/SummaryCard";
 
 const TABLE_OPTIONS = [
-  { key: "models", label: "Models" },
-  { key: "engine_codes", label: "Engine Codes" },
-  { key: "models_engines", label: "Model Compatibility" },
+  { key: "models", label: "Model Names" },
+  { key: "engine_codes", label: "Technical Specifications" },
+  { key: "models_engines", label: "Model & Engine Compatibility" },
 ] as const;
 
 type TableKey = (typeof TABLE_OPTIONS)[number]["key"];
@@ -72,8 +72,8 @@ const EngineTablesTabs: React.FC<{ brand: string }> = ({ brand }) => {
   return (
     <Container className="mt-10 px-4 md:px-0" id="tables">
       {/* Mobile Dropdown Switcher */}
-      <div className="mb-6 flex items-center space-x-2 lg:hidden transition-all duration-300">
-        <label className="text-sm font-medium text-gray-700">Show Table:</label>
+      <div className="mb-6 flex items-center space-x- lg:hidden transition-all duration-300">
+        <label className="text-sm font-medium text-gray-700 w-full">FIND YOUR ENGINE BY:</label>
         <Select
           value={tableType}
           onValueChange={(v) => setTableType(v as TableKey)}

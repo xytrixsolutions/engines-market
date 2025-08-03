@@ -19,6 +19,11 @@ import {
 import { ReactNode } from "react";
 
 export interface Data {
+  metadata?: {
+    title?: string;
+    description?: string;
+    keywords?: string[];
+  };
   brandName: string;
   carImages: string[];
   carModelNames: string[];
@@ -164,6 +169,29 @@ export interface Data {
 
 export const data: Record<string, Data> = {
   bmw: {
+    metadata: {
+      title:
+        "BMW Engine Guide: Specs, Replacement Costs, Troubleshooting & Performance Upgrades | Engine Market",
+      description:
+        "Explore comprehensive information about BMW engines, including common problems, performance upgrades, and maintenance tips.",
+      keywords: [
+        "BMW engine specifications",
+        "Reconditioned BMW engines",
+        "Used BMW engines for sale",
+        "BMW engine replacement cost",
+        "BMW engine troubleshooting",
+        "Best BMW engine prices",
+        "BMW engine performance upgrades",
+        "BMW engine compatibility chart",
+        "BMW engine reliability",
+        "BMW engine common problems",
+        "BMW engine tuning",
+        "BMW engine repair guide",
+        "BMW engine buying guide",
+        "BMW engine deals",
+        "BMW engine cost UK",
+      ],
+    },
     brandName: "BMW",
     carImages: [
       "/banners/banner-1.webp",
@@ -1172,6 +1200,29 @@ export const data: Record<string, Data> = {
     ],
   },
   audi: {
+    metadata: {
+      title:
+        "Audi Engine Guide: Specs, Replacement Costs, Troubleshooting & Performance Upgrades | Engine Market",
+      description:
+        "Explore comprehensive information about BMW engines, including common problems, performance upgrades, and maintenance tips.",
+      keywords: [
+        "Audi engine specifications",
+        "Reconditioned Audi engines",
+        "Used Audi engines for sale",
+        "Audi engine replacement cost",
+        "Audi engine troubleshooting",
+        "Best Audi engine prices",
+        "Audi engine performance upgrades",
+        "Audi engine compatibility chart",
+        "Audi engine reliability",
+        "Audi engine common problems",
+        "Audi engine tuning",
+        "Audi engine repair guide",
+        "Audi engine buying guide",
+        "Audi engine deals",
+        "Audi engine cost UK",
+      ],
+    },
     brandName: "Audi",
     carImages: [
       "/banners/banner-1.webp",
@@ -2180,6 +2231,29 @@ export const data: Record<string, Data> = {
     ],
   },
   volkswagen: {
+    metadata: {
+      title:
+        "BMW Engine Guide: Specs, Replacement Costs, Troubleshooting & Performance Upgrades | Engine Market",
+      description:
+        "Explore comprehensive information about BMW engines, including common problems, performance upgrades, and maintenance tips.",
+      keywords: [
+        "BMW engine specifications",
+        "Reconditioned BMW engines",
+        "Used BMW engines for sale",
+        "BMW engine replacement cost",
+        "BMW engine troubleshooting",
+        "Best BMW engine prices",
+        "BMW engine performance upgrades",
+        "BMW engine compatibility chart",
+        "BMW engine reliability",
+        "BMW engine common problems",
+        "BMW engine tuning",
+        "BMW engine repair guide",
+        "BMW engine buying guide",
+        "BMW engine deals",
+        "BMW engine cost UK",
+      ],
+    },
     brandName: "BMW",
     carImages: [
       "/banners/banner-1.webp",

@@ -1,4 +1,3 @@
-import { JSX } from "react";
 import Hero1 from "../../components/Hero1";
 import WhyChoose from "./components/WhyChoose";
 import EngineGuide from "./components/EngineGuide";
@@ -13,16 +12,36 @@ import FAQSection from "@/components/FAQs";
 import { data } from "./data/data";
 import { notFound } from "next/navigation";
 import SearchNav from "@/components/SearchNav";
+import BrandSchema from "./data/schema";
+import { use } from "react";
+import Head from "next/head";
 
-interface PageProps {
-  params: Promise<{
-    brand: string;
-  }>;
+export async function generateMetadata({ params }) {
+  const brand = (await params).brand.toLowerCase();
+  const brandData = data[brand];
+
+  if (!brandData) {
+    return {
+      title: "Brand Not Found",
+      description: "The requested brand does not exist",
+    };
+  }
+
+  // Use brand-specific metadata if available, fallback to generated
+  return {
+    title: brandData.metadata?.title || `${brandData.brandName} Engines`,
+    description:
+      brandData.metadata?.description ||
+      `Complete guide to ${brandData.brandName} engines`,
+    keywords: brandData.metadata?.keywords || [
+      `${brandData.brandName} engines`,
+      `${brandData.brandName} engine specs`,
+    ],
+  };
 }
 
-const Page = async ({ params }: PageProps): Promise<JSX.Element> => {
-  const brand = (await params).brand.toLowerCase();
-
+const Page = ({ params }) => {
+  const brand = use(params).brand.toLowerCase();
   if (!data[brand]) notFound();
   const { carImages, carModelNames, faqs } = data[brand];
 
@@ -34,12 +53,18 @@ const Page = async ({ params }: PageProps): Promise<JSX.Element> => {
     { label: "Pros & Cons", id: "pros-cons" },
     { label: "Troubleshooting Guide", id: "troubleshooting-guide" },
     { label: "Engine Replacement Cost", id: "engine-replacement-cost" },
-    { label: "Performance Upgrades & Modifications", id: "performance-upgrades-modifications" },
+    {
+      label: "Performance Upgrades & Modifications",
+      id: "performance-upgrades-modifications",
+    },
     { label: "Frequently Asked Questions", id: "faqs" },
   ];
 
   return (
     <>
+      <Head>
+        <BrandSchema brand={brand} />
+      </Head>
       <SearchNav navItems={navItems} />
       <Hero1 carImages={carImages} carModelNames={carModelNames} />
       <EngineGuide brand={brand} />

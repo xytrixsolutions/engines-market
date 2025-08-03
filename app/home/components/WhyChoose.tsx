@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const WhyChoose = () => {
   return (
-    <Container className="flex flex-col md:flex-row items-center justify-between">
+    <Container className="flex flex-col md:flex-row items-center justify-between" id="why-choose-engine-market">
       {/* Left Side (Text) */}
       <div className="w-full md:w-1/2 flex justify-center lg:justify-start mb-10 md:mb-0">
         <div className="w-full md:w-[90%] text-left">

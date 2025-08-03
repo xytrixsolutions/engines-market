@@ -27,7 +27,7 @@ const EngineDealSection = () => {
   }, [images.length]);
 
   return (
-    <Container className="grid md:grid-cols-2 items-center md:gap-8">
+    <Container className="grid md:grid-cols-2 items-center md:gap-8" id="best-engine">
       {/* Text Section (comes first on mobile, second on desktop) */}
       <div className="order-1 md:order-2 text-center md:text-left space-y-4">
         <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray">

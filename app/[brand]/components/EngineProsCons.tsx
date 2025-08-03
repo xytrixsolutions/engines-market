@@ -12,7 +12,7 @@ import { data } from "../data/data";
 const EngineProsCons: React.FC<{ brand: string }> = ({ brand: brand }) => {
   const { section7, brandName } = data[brand];
   return (
-    <Container className="my-16">
+    <Container className="my-16" id="pros-cons">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <Heading>
           Pros & Cons of New, Used &

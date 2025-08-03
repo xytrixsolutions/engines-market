@@ -38,7 +38,7 @@ const badges: Badge[] = [
 
 const TrustBadges = () => {
   return (
-    <Container dark>
+    <Container dark id="why-choose-us">
       <h2 className="text-3xl font-bold text-center text-charcoal-gray-muted mb-14">
         Why <span className="text-neon-red">Choose</span> Us?
       </h2>

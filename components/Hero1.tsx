@@ -91,7 +91,7 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
                 Right Engine & Get Quotes From UK’s Top Suppliers
               </p>
 
-              <Button variant="red" className="w-full mb-4">
+              <Button variant="red" className="w-full mb-4 before:bg-white">
                 <span>Get Free Quote Now</span>
                 <FiArrowUpRight className="w-5 h-5" />
               </Button>

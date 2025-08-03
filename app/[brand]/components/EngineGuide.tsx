@@ -13,7 +13,7 @@ const EngineGuide: React.FC<{ brand: string }> = ({
 }) => {
   const section1Image = data[brand].section1Image;
   return (
-    <Container className="py-16">
+    <Container className="py-16" id="engine-guide">
       {/* Heading and Text */}
       <div className="text-center text-charcoal-gray space-y-6 mb-14 max-w-6xl mx-auto">
         <Heading className="leading-tight text-charcoal-gray">

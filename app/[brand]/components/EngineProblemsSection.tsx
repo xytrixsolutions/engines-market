@@ -32,7 +32,7 @@ const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
   const { EngineProblems } = data[brand].section4;
   const { brandName } = data[brand];
   return (
-    <Container dark className="my-12">
+    <Container dark className="my-12" id="engine-problems">
       <div className="max-w-5xl mx-auto text-center text-charcoal-gray-muted">
         <Heading className="mb-6 text-charcoal-gray-muted">
           Common<Accent>{brandName} Engine Problems</Accent>& How to Fix Them

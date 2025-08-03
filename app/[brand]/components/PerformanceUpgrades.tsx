@@ -36,7 +36,7 @@ const getLevelColor = (level: string) => {
 const PerformanceUpgrades: React.FC<{ brand: string }> = ({ brand: brand }) => {
   const { section9, brandName } = data[brand];
   return (
-    <Container dark className="my-16">
+    <Container dark className="my-16" id="performance-upgrades-modifications">
       <div className="max-w-6xl mx-auto text-center space-y-4 mb-12 text-charcoal-gray-muted">
         <Heading className="text-charcoal-gray-muted">
           Performance Upgrades & Modifications for

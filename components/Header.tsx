@@ -80,7 +80,7 @@ export default function Header() {
 
           {/* Right Side Actions (desktop only) */}
           <div className="hidden md:flex items-center space-x-6 justify-end flex-1">
-            <Button variant="red" className="max-lg:text-sm xl:px-6 xl:py-2">
+            <Button variant="red" className="max-lg:text-sm xl:px-6 xl:py-2 before:bg-charcoal-gray">
               <span>Request A Quote</span>
               <FiArrowUpRight className="w-7 h-7" />
             </Button>

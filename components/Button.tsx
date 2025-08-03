@@ -18,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({
     }
 
     // Default red variant
-    return "relative rounded-full font-semibold border-2 border-neon-red bg-gradient-to-r from-[#b30529] via-[#ff0033] to-[#b30529] text-white px-8 py-3 hover:border-neon-red hover:text-[#ff0033] transition-all duration-400 overflow-hidden before:absolute before:inset-0 before:bg-white before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-400";
+    return "relative rounded-full font-semibold border-2 border-neon-red bg-gradient-to-r from-[#b30529] via-[#ff0033] to-[#b30529] text-white px-8 py-3 hover:border-neon-red hover:text-[#ff0033] transition-all duration-400 overflow-hidden before:absolute before:inset-0  before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-400";
   };
 
   const baseStyles = getVariantStyles();

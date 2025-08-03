@@ -18,7 +18,7 @@ export type FAQ = {
 
 const FAQSection = ({ faqs }: { faqs: FAQ[] }) => {
   return (
-    <Container dark className=" py-20 text-charcoal-gray-muted">
+    <Container dark className=" py-20 text-charcoal-gray-muted" id="faqs">
       <Heading className="text-center text-charcoal-gray-muted">
         Frequently <Accent>Asked Questions</Accent>
       </Heading>

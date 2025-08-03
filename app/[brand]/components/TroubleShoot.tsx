@@ -38,7 +38,7 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand: brand })  =>
   };
 
   return (
-    <Container dark className="my-16">
+    <Container dark className="my-16" id="troubleshooting-guide">
       <div className="max-w-full mx-auto text-center mb-12 space-y-4 text-charcoal-gray-muted">
         <Heading className="text-charcoal-gray-muted">
           Troubleshooting Guide for<Accent>BMW Engines</Accent>

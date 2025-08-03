@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   // reactStrictMode: false,
-  productionBrowserSourceMaps: false,
+  // productionBrowserSourceMaps: false,
   // experimental: {
   //   devtoolNewPanelUI: true,
   //   globalNotFound: true,

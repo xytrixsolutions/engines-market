@@ -1172,7 +1172,7 @@ export const data: Record<string, Data> = {
     ],
   },
   audi: {
-    brandName: "BMW",
+    brandName: "Audi",
     carImages: [
       "/banners/banner-1.webp",
       "/banners/banner-2.webp",

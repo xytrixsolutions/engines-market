@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { IoIosSearch } from "react-icons/io";
+import { IoCloseSharp } from "react-icons/io5";
 
 type NavItem = {
   label: string;
@@ -32,7 +33,7 @@ export default function SearchNav({ navItems }: SearchNavProps) {
             onClick={() => setIsOpen(false)}
             className="absolute top-2 left-2 p-1 rounded-full cursor-pointer hover:bg-gray-100"
           >
-            <IoIosSearch className="h-6 w-6 text-gray-600 " />
+            <IoCloseSharp className="h-6 w-6 text-gray-600 " />
           </div>
 
           {navItems.map(({ label, id }, idx) => (

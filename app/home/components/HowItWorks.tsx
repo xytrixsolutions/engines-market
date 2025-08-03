@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HowItWorks = () => {
   return (
-    <Container dark className="flex flex-col-reverse md:flex-row items-center justify-between">
+    <Container dark className="flex flex-col-reverse md:flex-row items-center justify-between" id="how-it-works">
       {/* Right Side (Image) */}
       <div className="md:w-1/2 flex justify-start mb-10 md:mb-0 max-md:mt-10">
         <Image

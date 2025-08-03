@@ -12,6 +12,7 @@ import EngineDealsCTA from "./components/EngineDealsCTA";
 import FAQSection from "@/components/FAQs";
 import { data } from "./data/data";
 import { notFound } from "next/navigation";
+import SearchNav from "@/components/SearchNav";
 
 interface PageProps {
   params: Promise<{
@@ -25,8 +26,21 @@ const Page = async ({ params }: PageProps): Promise<JSX.Element> => {
   if (!data[brand]) notFound();
   const { carImages, carModelNames, faqs } = data[brand];
 
+  const navItems = [
+    { label: "Engine Guide", id: "engine-guide" },
+    { label: "Why Choose Us", id: "why-choose" },
+    { label: "Models, Engine Code & Compatibility Table", id: "tables" },
+    { label: "Common Engine Problems", id: "engine-problems" },
+    { label: "Pros & Cons", id: "pros-cons" },
+    { label: "Troubleshooting Guide", id: "troubleshooting-guide" },
+    { label: "Engine Replacement Cost", id: "engine-replacement-cost" },
+    { label: "Performance Upgrades & Modifications", id: "performance-upgrades-modifications" },
+    { label: "Frequently Asked Questions", id: "faqs" },
+  ];
+
   return (
     <>
+      <SearchNav navItems={navItems} />
       <Hero1 carImages={carImages} carModelNames={carModelNames} />
       <EngineGuide brand={brand} />
       <WhyChoose brand={brand} />

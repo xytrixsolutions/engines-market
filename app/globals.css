@@ -174,3 +174,24 @@
     @apply bg-[radial-gradient(ellipse_at_center,_#484848_0%,_#383838_40%,_#1a1a1a_100%)];
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.4s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.98);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+}

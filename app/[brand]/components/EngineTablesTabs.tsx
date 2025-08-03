@@ -70,7 +70,7 @@ const EngineTablesTabs: React.FC<{ brand: string }> = ({ brand }) => {
   const meta = TABLE_META[tableType];
 
   return (
-    <Container className="mt-10 px-4 md:px-0">
+    <Container className="mt-10 px-4 md:px-0" id="tables">
       {/* Mobile Dropdown Switcher */}
       <div className="mb-6 flex items-center space-x-2 lg:hidden transition-all duration-300">
         <label className="text-sm font-medium text-gray-700">Show Table:</label>
@@ -123,7 +123,13 @@ const EngineTablesTabs: React.FC<{ brand: string }> = ({ brand }) => {
         </p>
       </div>
       {/* Table */}
-      <EngineTable columns={columns} data={tableData} tableType={tableType} />
+      <div
+  key={tableType}
+  className="transition-all duration-500 ease-in-out opacity-0 animate-fadeIn"
+>
+  <EngineTable columns={columns} data={tableData} tableType={tableType} />
+</div>
+
       {/* Table Note */}
       <SummaryCard variant="card" content={meta.note} />
     </Container>

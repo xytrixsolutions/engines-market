@@ -2,7 +2,7 @@ import Container from "@/components/Container";
 
 const BlogCards = () => {
   return (
-    <Container>
+    <Container id="blog">
       <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-6 text-center">
         Featured Blog Post - <span className="text-neon-red">Latest Engine Buying Guides</span>
       </h2>

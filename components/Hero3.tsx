@@ -209,7 +209,7 @@ export default function Hero3() {
   };
 
   return (
-    <Container dark>
+    <Container dark id="explore-by-manufacturer">
       <div className="items-center mb-12 text-center flex flex-col justify-center">
         {/* Title */}
         <div>
@@ -256,7 +256,7 @@ export default function Hero3() {
       {visibleCount < brandLogos.length && (
         <div className="flex items-center justify-center">
           <div className="flex-1 h-px neon-red-gradient"></div>
-          <Button className="" onClick={handleLoadMore}>
+          <Button className="before:bg-charcoal-gray" onClick={handleLoadMore}>
             Load More
           </Button>
           <div className="flex-1 h-px neon-red-gradient"></div>

@@ -15,7 +15,7 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand: brand }) =>
   const { replacement_costs } = datadata[brand].engineData;
 
   return (
-    <Container className="my-16">
+    <Container className="my-16" id="engine-replacement-cost">
       {/* Heading and Description */}
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold mb-3 text-charcoal-gray">
@@ -55,8 +55,8 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand: brand }) =>
           easier.
         </p>
 
-        <p className="text-base font-semibold text-blue-800 mb-4">
-          Just Add Your Reg & Click Go - It&apos;s That Simple
+        <p className="mx-auto text-base font-semibold text-blue-800 mb-4 max-w-3xl ">
+        Simply enter your Reg Num below, and we’ll instantly search trusted UK suppliers and local garages to bring you the best available engine deals.
         </p>
 
         {/* REG Input */}
@@ -75,24 +75,27 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand: brand }) =>
 
             <input
               type="text"
-              placeholder="REG HERE"
-              className="w-full text-center py-4 text-lg font-semibold text-gray-700 bg-[#ffcb05] border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
+              placeholder="Enter Reg Number Here"
+              className="w-full text-center py-4 text-xl font-semibold text-gray-700 bg-[#ffcb05] border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
             />
           </div>
         </div>
 
         {/* Centered Button */}
         <div className="flex justify-center">
-          <Button className="w-full max-w-xs border-2 text-white py-4 rounded-full font-semibold flex items-center justify-center space-x-2 transition-all duration-300 mb-4">
-            <span>Get Free Quote Now</span>
+          <Button className="w-full max-w-xs border-2 text-white py-4 rounded-full font-semibold flex items-center justify-center space-x-2 transition-all duration-300 mb-4 before:bg-gray-100">
+            <span>Get Free Quotes Now</span>
             <FiArrowUpRight className="w-5 h-5" />
           </Button>
         </div>
 
         {/* Bottom text */}
-        <p className="mt-6 text-sm text-gray-600 max-w-md mx-auto">
-          Engine Finders instantly matches your vehicle with our trusted engine
-          suppliers and garages near you. Save time. Save money. No stress.
+        <p className="mt-6 text-sm text-gray-600 max-w-lg mx-auto">
+        We match your exact vehicle details to quality recycled, reconditioned and Rebuilt - saving you time, money, and hassle. Fast, simple, and stress-free.  
+        </p>
+        {/* Bottom text */}
+        <p className="mt-6 text-sm text-blue-600  mx-auto">
+        🇬🇧 Trusted by thousands across the UK   |   Free, no-obligation quotes   |   Direct supplier access
         </p>
       </div>
     </Container>

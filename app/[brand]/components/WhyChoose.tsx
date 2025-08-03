@@ -10,7 +10,7 @@ const WhyChoose: React.FC<{ brand: string }> = ({ brand }) => {
   const { section0Image } = data[brand];
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 items-center h-auto lg:h-[85vh]">
+    <div className="grid grid-cols-1 lg:grid-cols-2 items-center h-auto lg:h-[85vh]" id="why-choose">
       {/* Image Side - Full height + BG */}
       <div className="bg-[url('/why-choose-bg.png')] bg-cover bg-center flex justify-center items-center py-16 lg:py-0 h-full">
         <Image

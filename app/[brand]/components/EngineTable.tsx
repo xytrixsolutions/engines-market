@@ -18,10 +18,10 @@ const EngineTable = <T extends Record<string, unknown>>({
   tableType,
 }: EngineTableProps<T>) => {
   const getWidthClass = () => {
-    if (tableType === "models" || tableType === "models_engines") {
-      return "w-4xl";
+    if (tableType === "engine_codes") {
+      return "w-full";
     }
-    return "w-full";
+    return "w-4xl";
   };
 
   const tableContainerClass = `hidden lg:block bg-card rounded-2xl shadow-lg mb-5 overflow-hidden ${getWidthClass()} mx-auto`;

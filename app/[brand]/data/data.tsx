@@ -1202,25 +1202,24 @@ export const data: Record<string, Data> = {
   audi: {
     metadata: {
       title:
-        "Audi Engine Guide: Specs, Replacement Costs, Troubleshooting & Performance Upgrades | Engine Market",
+        "Audi Engines for Sale | New, Used & Reconditioned Audi Engines – Lowest Prices!",
       description:
-        "Explore comprehensive information about BMW engines, including common problems, performance upgrades, and maintenance tips.",
+        "Looking for a high-quality Audi engine? We offer new, used, and reconditioned Audi engines at the lowest prices, covering all models. Get expert guidance, a comprehensive engine compatibility chart, and troubleshooting support. Compare prices and find the best Audi engine deals today",
       keywords: [
-        "Audi engine specifications",
-        "Reconditioned Audi engines",
-        "Used Audi engines for sale",
-        "Audi engine replacement cost",
+        "Audi engines for sale",
+        "buy Audi engine",
+        "Audi engine replacement",
+        "used Audi engines",
+        "reconditioned Audi engines",
+        "Audi engine prices",
+        "Audi engine repair",
+        "Audi engine compatibility",
+        "best Audi engines",
+        "Audi petrol engines",
+        "Audi diesel engines",
         "Audi engine troubleshooting",
-        "Best Audi engine prices",
         "Audi engine performance upgrades",
-        "Audi engine compatibility chart",
-        "Audi engine reliability",
-        "Audi engine common problems",
-        "Audi engine tuning",
-        "Audi engine repair guide",
-        "Audi engine buying guide",
-        "Audi engine deals",
-        "Audi engine cost UK",
+        "Audi engine specs",
       ],
     },
     brandName: "Audi",
@@ -1243,16 +1242,16 @@ export const data: Record<string, Data> = {
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/bmw/engine-guide.png",
+      img: "/engine-guide-banners/image 1.png",
       alt: "BMW rear view",
     },
     tableOneBottomParagraph:
-      "This table includes some of the most popular and in-demand BMW models, focusing on their diverse engine options. If you need more detailed information on any specific model, feel free to Contact Us!",
+      "This table includes some of the most popular and in-demand Audi models, focusing on their diverse engine options. If you need more detailed information on any specific model, feel free to ask!",
     tableFourBottomParagraph:
       "These estimates provide a general idea of the costs involved in replacing a BMW engine. Prices can vary based on location, availability of parts, and the specific service provider.",
     section4: {
       mainParagraph:
-        "BMW engines are renowned for their performance and engineering excellence, but like any complex machinery, they can encounter issues. Here are some of the most common problems found in BMW engines, along with solutions and preventive measures:",
+        "BMW engin are renowned for their performance and engineering excellence, but like any complex machinery, they can encounter issues. Here are some of the most common problems found in BMW engines, along with solutions and preventive measures:",
       EngineProblems: [
         {
           title: "Oil Leaks",
@@ -1345,405 +1344,410 @@ export const data: Record<string, Data> = {
       models: [
         {
           model: "/bmw/bmw-1-series.png",
-          model_name: "BMW 1 Series",
-          engine_options: "1.5L Petrol, 2.0L Diesel",
+          model_name: "Audi A3",
+          engine_options: "1.0L TFSI, 1.5L TFSI, 2.0L TDI",
         },
         {
           model: "/bmw/bmw-2-series.png",
-          model_name: "BMW 2 Series",
-          engine_options: "2.0L Turbo Petrol, 3.0L Diesel",
+          model_name: "Audi A4",
+          engine_options: "2.0L TFSI, 2.0L TDI",
         },
         {
           model: "/bmw/bmw-3-series.png",
-          model_name: "BMW 3 Series",
-          engine_options: "2.0L Petrol, 3.0L Diesel, 2.0L Hybrid",
+          model_name: "Audi A5",
+          engine_options: "2.0L TFSI, 2.0L TDI, 3.0L TFSI",
         },
         {
           model: "/bmw/bmw-4-series.png",
-          model_name: "BMW 4 Series",
-          engine_options: "2.0L Turbo Petrol, 3.0L V6 Diesel",
+          model_name: "Audi A6",
+          engine_options: "2.0L TFSI, 2.0L TDI, 3.0L TFSI, 3.0L TDI",
         },
         {
           model: "/bmw/bmw-5-series.png",
-          model_name: "BMW 5 Series",
-          engine_options: "2.0L Petrol, 3.0L Diesel, 3.0L Hybrid",
+          model_name: "Audi A7",
+          engine_options: "2.0L TFSI, 3.0L TFSI, 3.0L TDI",
         },
         {
           model: "/bmw/bmw-6-series.png",
-          model_name: "BMW 6 Series",
-          engine_options: "3.0L Diesel, 4.4L V8 Petrol",
+          model_name: "Audi A8",
+          engine_options: "3.0L TFSI, 4.0L TFSI, 3.0L TDI",
         },
         {
           model: "/bmw/bmw-7-series.png",
-          model_name: "BMW 7 Series",
-          engine_options: "3.0L Petrol, 4.4L V8, 3.0L Hybrid",
+          model_name: "Audi Q2",
+          engine_options: "1.0L TFSI, 1.5L TFSI, 2.0L TDI",
         },
         {
           model: "/bmw/bmw-x1.png",
-          model_name: "BMW X1",
-          engine_options: "1.5L Petrol, 2.0L Diesel",
+          model_name: "Audi Q3",
+          engine_options: "1.5L TFSI, 2.0L TFSI, 2.0L TDI",
         },
         {
           model: "/bmw/bmw-x2.png",
-          model_name: "BMW X2",
-          engine_options: "1.5L Petrol, 2.0L Diesel",
-        },
-        {
-          model: "/bmw/bmw-x3.png",
-          model_name: "BMW X3",
-          engine_options: "1.5L Petrol, 2.0L Diesel",
-        },
-        {
-          model: "/bmw/bmw-x4.png",
-          model_name: "BMW X4",
-          engine_options: "1.5L Petrol, 2.0L Diesel",
-        },
-        {
-          model: "/bmw/bmw-x5.png",
-          model_name: "BMW X5",
-          engine_options: "1.5L Petrol, 2.0L Diesel",
-        },
-        {
-          model: "/bmw/bmw-x6.png",
-          model_name: "BMW X6",
-          engine_options: "1.5L Petrol, 2.0L Diesel",
-        },
-        {
-          model: "/bmw/BMW X7.png",
-          model_name: "BMW X7",
-          engine_options: "1.5L Petrol, 2.0L Diesel",
-        },
-        {
-          model: "/bmw/bmw-8-series.png",
-          model_name: "BMW 8 Series",
-          engine_options: "3.0L Petrol, 4.4L V8",
-        },
-        {
-          model: "/bmw/bmw-z-series.png",
-          model_name: "BMW Z Series",
-          engine_options: "2.0L Turbo Petrol, 3.0L Twin-Turbo Petrol",
-        },
-        {
-          model: "/bmw/bmw-z4.png",
-          model_name: "BMW Z4",
-          engine_options: "2.0L Petrol, 3.0L Petrol",
-        },
-        {
-          model: "/bmw/bmw-i-series.png",
-          model_name: "BMW i Series",
-          engine_options: "Fully Electric, Plug-in Hybrid",
-        },
-        {
-          model: "/bmw/bmw-i3.png",
-          model_name: "BMW i3",
+          model_name: "Audi Q4 e-tron",
           engine_options: "Electric",
         },
         {
+          model: "/bmw/bmw-x3.png",
+          model_name: "Audi Q5",
+          engine_options: "2.0L TFSI, 2.0L TDI, 3.0L TFSI, 3.0L TDI, Hybrid",
+        },
+        {
+          model: "/bmw/bmw-x4.png",
+          model_name: "Audi Q7",
+          engine_options: "2.0L TFSI, 3.0L TFSI, 3.0L TDI, Hybrid",
+        },
+        {
+          model: "/bmw/bmw-x5.png",
+          model_name: "Audi Q8",
+          engine_options: "3.0L TFSI, 4.0L TFSI, 3.0L TDI, Hybrid",
+        },
+        {
+          model: "/bmw/bmw-x6.png",
+          model_name: "Audi Q8 e-tron",
+          engine_options: "Electric",
+        },
+        {
+          model: "/bmw/BMW X7.png",
+          model_name: "Audi TT",
+          engine_options: "2.0L TFSI",
+        },
+        {
+          model: "/bmw/bmw-8-series.png",
+          model_name: "Audi R8",
+          engine_options: "5.2L V10",
+        },
+        {
+          model: "/bmw/bmw-z-series.png",
+          model_name: "Audi e-tron GT",
+          engine_options: "Electric",
+        },
+        {
+          model: "/bmw/bmw-z4.png",
+          model_name: "Audi RS3",
+          engine_options: "2.5L TFSI",
+        },
+        {
+          model: "/bmw/bmw-i-series.png",
+          model_name: "Audi RS4",
+          engine_options: "2.9L TFSI",
+        },
+        {
+          model: "/bmw/bmw-i3.png",
+          model_name: "Audi RS5",
+          engine_options: "2.9L TFSI",
+        },
+        {
           model: "/bmw/bmw-i8.png",
-          model_name: "BMW i8",
-          engine_options: "1.5L Hybrid",
-        },
-        {
-          model: "/bmw/bmw-m2.png",
-          model_name: "BMW M2",
-          engine_options: "3.0L Petrol",
-        },
-        {
-          model: "/bmw/bmw-m3.png",
-          model_name: "BMW M3",
-          engine_options: "3.0L Petrol",
-        },
-        {
-          model: "/bmw/bmw-m4.png",
-          model_name: "BMW M4",
-          engine_options: "3.0L Petrol",
-        },
-        {
-          model: "/bmw/bmw-m5.png",
-          model_name: "BMW M5",
-          engine_options: "4.4L V8",
-        },
-        {
-          model: "/bmw/bmw-m8.png",
-          model_name: "BMW M8",
-          engine_options: "4.4L V8",
+          model_name: "Audi RS6",
+          engine_options: "4.0L TFSI",
         },
       ],
+      
       engine_codes: [
         {
-          engineCode: "B38 A15",
-          engineSize: 1.5,
-          fuelType: "Petrol",
-          turbo: true,
-          horsepower: "134-136",
-          torque: 220,
-          productionYears: "2013-present",
-        },
-        {
-          engineCode: "B47 D20",
-          engineSize: 2,
+          engineCode: "CAGA",
+          engineSize: 2.0,
           fuelType: "Diesel",
           turbo: true,
-          horsepower: 190,
-          torque: 400,
-          productionYears: "2014-present",
+          horsepower: 140,
+          torque: 320,
+          productionYears: "2007-2013",
         },
         {
-          engineCode: "B47 D20 A",
-          engineSize: 2,
+          engineCode: "CAHA",
+          engineSize: 3.0,
           fuelType: "Diesel",
           turbo: true,
-          horsepower: 190,
-          torque: 400,
-          productionYears: "2014-present",
-        },
-        {
-          engineCode: "B47 D20 B",
-          engineSize: 2,
-          fuelType: "Diesel",
-          turbo: true,
-          horsepower: 231,
+          horsepower: 240,
           torque: 500,
-          productionYears: "2014-present",
+          productionYears: "2009-2015",
         },
         {
-          engineCode: "B48 A20",
-          engineSize: 2,
+          engineCode: "CDNC",
+          engineSize: 2.0,
           fuelType: "Petrol",
           turbo: true,
-          horsepower: "192-306",
-          torque: "280-450",
-          productionYears: "2014-present",
+          horsepower: 211,
+          torque: 350,
+          productionYears: "2008-2014",
         },
         {
-          engineCode: "B48 B20",
-          engineSize: 2,
+          engineCode: "CGWD",
+          engineSize: 4.0,
           fuelType: "Petrol",
           turbo: true,
-          horsepower: "192-302",
-          torque: "280-450",
-          productionYears: "2014-present",
+          horsepower: 560,
+          torque: 700,
+          productionYears: "2012-2018",
         },
         {
-          engineCode: "B57 D30",
-          engineSize: 3,
+          engineCode: "CRTD",
+          engineSize: 1.6,
           fuelType: "Diesel",
           turbo: true,
-          horsepower: "261-400",
-          torque: "620-760",
-          productionYears: "2015-present",
+          horsepower: 105,
+          torque: 250,
+          productionYears: "2010-2018",
         },
         {
-          engineCode: "B57 D30 O0",
-          engineSize: 3,
-          fuelType: "Diesel",
+          engineCode: "CZEA",
+          engineSize: 2.0,
+          fuelType: "Petrol",
           turbo: true,
-          horsepower: 265,
-          torque: 620,
-          productionYears: "2015-present",
+          horsepower: 252,
+          torque: 370,
+          productionYears: "2015-2022",
         },
         {
-          engineCode: "B57 D30 T0",
-          engineSize: 3,
-          fuelType: "Diesel",
-          turbo: true,
-          horsepower: 320,
-          torque: 680,
-          productionYears: "2015-present",
-        },
-        {
-          engineCode: "B57 D30 T1",
-          engineSize: 3,
-          fuelType: "Diesel",
+          engineCode: "DAZA",
+          engineSize: 2.5,
+          fuelType: "Petrol",
           turbo: true,
           horsepower: 400,
-          torque: 760,
-          productionYears: "2016-present",
+          torque: 480,
+          productionYears: "2017-Present",
         },
         {
-          engineCode: "B58 B30",
-          engineSize: 3,
+          engineCode: "DTDA",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 286,
+          torque: 620,
+          productionYears: "2017-Present",
+        },
+        {
+          engineCode: "CJXC",
+          engineSize: 3.0,
           fuelType: "Petrol",
           turbo: true,
-          horsepower: "335-382",
-          torque: "500-550",
-          productionYears: "2015-present",
+          horsepower: 333,
+          torque: 440,
+          productionYears: "2013-2018",
+        },
+        {
+          engineCode: "CCWA",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 245,
+          torque: 500,
+          productionYears: "2009-2016",
+        },
+        {
+          engineCode: "CZDA",
+          engineSize: 1.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 95,
+          torque: 160,
+          productionYears: "2015-Present",
+        },
+        {
+          engineCode: "DETA",
+          engineSize: 1.4,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 150,
+          torque: 250,
+          productionYears: "2014-2020",
+        },
+        {
+          engineCode: "CJCB",
+          engineSize: 2.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 190,
+          torque: 400,
+          productionYears: "2013-2018",
+        },
+        {
+          engineCode: "CLAB",
+          engineSize: 3.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 272,
+          torque: 400,
+          productionYears: "2014-2018",
+        },
+        {
+          engineCode: "CRCA",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 245,
+          torque: 550,
+          productionYears: "2010-2015",
+        },
+        {
+          engineCode: "CZGA",
+          engineSize: 4.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 560,
+          torque: 700,
+          productionYears: "2013-2018",
+        },
+        {
+          engineCode: "CWGD",
+          engineSize: 4.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 605,
+          torque: 750,
+          productionYears: "2015-2018",
         },
       ],
+      
       models_engines: [
         {
-          engineCode: "B37 D15",
-          compatibleModels: ["BMW 1 Series (F20)", "BMW 2 Series (F22)"],
+          engineCode: "CZDA",
+          compatibleModels: ["A1", "A3", "Q2"],
         },
         {
-          engineCode: "B38 A15",
-          compatibleModels: ["BMW 2 Series (F45)", "BMW i8 (I12)"],
+          engineCode: "DETA",
+          compatibleModels: ["A3", "A4", "A5", "Q3"],
         },
         {
-          engineCode: "B47 D20",
-          compatibleModels: ["BMW 3 Series (G20)", "BMW X3 (G01)"],
+          engineCode: "CJCB",
+          compatibleModels: ["A4", "A5", "A6", "Q5"],
         },
         {
-          engineCode: "B48 B20",
-          compatibleModels: ["BMW 3 Series (G20)", "BMW X3 (G01)", "BMW 330i"],
+          engineCode: "CRCA",
+          compatibleModels: ["A6", "A7", "A8", "Q7"],
         },
         {
-          engineCode: "B57 D30",
-          compatibleModels: [
-            "BMW 5 Series (G30)",
-            "BMW X5 (G05)",
-            "BMW 540d",
-            "BMW X7 xDrive40d",
-          ],
-        },
-        {
-          engineCode: "B58 B30",
-          compatibleModels: [
-            "BMW 3 Series (G20)",
-            "BMW Z4 (G29)",
-            "BMW 340i",
-            "BMW X5 xDrive40i",
-          ],
+          engineCode: "CWGD",
+          compatibleModels: ["R8"],
         },
       ],
+      
       replacement_costs: [
         {
           image: "/bmw/bmw-1-series.png",
-          model: "BMW 1 Series",
-          engineType: "1.5L Petrol",
-          estimatedCost: "£2,500 - £4,000",
+          model: "Audi A1, Audi A3",
+          engineType: "1.4L Petrol",
+          estimatedCost: "£1,500 - £3,000",
         },
         {
           image: "/bmw/bmw-1-series.png",
-          model: "BMW 1 Series",
+          model: "Audi A4, Audi A5",
           engineType: "2.0L Diesel",
-          estimatedCost: "£3,000 - £5,000",
+          estimatedCost: "£2,500 - £4,500",
         },
         {
           image: "/bmw/bmw-1-series.png",
-          model: "BMW 2 Series",
-          engineType: "1.5L Petrol",
-          estimatedCost: "£2,500 - £4,000",
-        },
-        {
-          image: "/bmw/bmw-1-series.png",
-          model: "BMW 2 Series",
-          engineType: "2.0L Diesel",
-          estimatedCost: "£3,500 - £5,500",
-        },
-        {
-          image: "/bmw/bmw-1-series.png",
-          model: "BMW 3 Series",
+          model: "Audi Q3, Audi Q5",
           engineType: "2.0L Petrol",
           estimatedCost: "£3,000 - £5,000",
         },
         {
           image: "/bmw/bmw-1-series.png",
-          model: "BMW 3 Series",
+          model: "Audi A6, Audi A7",
           engineType: "3.0L Diesel",
-          estimatedCost: "£4,000 - £6,500",
+          estimatedCost: "£4,000 - £7,000",
         },
         {
           image: "/bmw/bmw-1-series.png",
-          model: "BMW 4 Series",
-          engineType: "2.0L Petrol",
-          estimatedCost: "£3,500 - £5,500",
-        },
-        {
-          image: "/bmw/bmw-1-series.png",
-          model: "BMW 4 Series",
-          engineType: "3.0L Diesel",
-          estimatedCost: "£4,500 - £7,000",
-        },
-        {
-          image: "/bmw/bmw-1-series.png",
-          model: "BMW 5 Series",
-          engineType: "2.0L Petrol",
-          estimatedCost: "£3,500 - £5,500",
-        },
-        {
-          image: "/bmw/bmw-1-series.png",
-          model: "BMW 5 Series",
-          engineType: "3.0L Diesel",
-          estimatedCost: "£4,500 - £7,000",
-        },
-        {
-          image: "/bmw/bmw-1-series.png",
-          model: "BMW 6 Series",
+          model: "Audi Q7, Audi Q8",
           engineType: "3.0L Petrol",
+          estimatedCost: "£4,500 - £7,500",
+        },
+        {
+          image: "/bmw/bmw-1-series.png",
+          model: "Audi TT, Audi TTS",
+          engineType: "2.0L Turbo Petrol",
+          estimatedCost: "£3,500 - £6,000",
+        },
+        {
+          image: "/bmw/bmw-1-series.png",
+          model: "Audi S3, Audi S4",
+          engineType: "3.0L V6 Petrol",
           estimatedCost: "£5,000 - £8,000",
         },
         {
           image: "/bmw/bmw-1-series.png",
-          model: "BMW 6 Series",
-          engineType: "4.4L V8",
-          estimatedCost: "£7,000 - £12,000",
+          model: "Audi RS3, Audi RS4",
+          engineType: "2.5L Turbo Petrol",
+          estimatedCost: "£6,000 - £9,000",
         },
         {
           image: "/bmw/bmw-1-series.png",
-          model: "BMW 7 Series",
-          engineType: "3.0L Petrol",
+          model: "Audi A8, Audi S8",
+          engineType: "4.0L V8 Petrol",
+          estimatedCost: "£7,000 - £11,000",
+        },
+        {
+          image: "/bmw/bmw-1-series.png",
+          model: "Audi R8",
+          engineType: "5.2L V10 Petrol",
+          estimatedCost: "£8,000 - £13,000",
+        },
+        {
+          image: "/bmw/bmw-1-series.png",
+          model: "Audi e-tron, Audi Q4 e-tron",
+          engineType: "Electric",
           estimatedCost: "£5,000 - £8,000",
         },
         {
           image: "/bmw/bmw-1-series.png",
-          model: "BMW 7 Series",
-          engineType: "4.4L V8",
-          estimatedCost: "£7,000 - £12,000",
+          model: "Audi A3 e-tron, Audi Q5 TFSI e",
+          engineType: "Hybrid",
+          estimatedCost: "£4,500 - £7,500",
         },
         {
           image: "/bmw/bmw-1-series.png",
-          model: "BMW X1",
+          model: "Audi A4 Allroad, Audi A6 Allroad",
+          engineType: "3.0L Diesel",
+          estimatedCost: "£4,500 - £7,500",
+        },
+        {
+          image: "/bmw/bmw-1-series.png",
+          model: "Audi Q2, Audi Q3",
           engineType: "1.5L Petrol",
-          estimatedCost: "£2,500 - £4,000",
+          estimatedCost: "£2,000 - £3,500",
         },
         {
           image: "/bmw/bmw-1-series.png",
-          model: "BMW X1",
-          engineType: "2.0L Diesel",
-          estimatedCost: "£3,000 - £5,000",
+          model: "Audi S5, Audi S6",
+          engineType: "4.0L V8 Petrol",
+          estimatedCost: "£6,500 - £10,000",
         },
       ],
+      
     },
     section7: [
       {
-        title: "New BMW Engines",
+        title: "New Audi Engines",
         icon: <Sparkles className="h-6 w-6" />,
         badge: "Premium",
         badgeVariant: "default" as const,
         pros: [
           "100% reliability with a factory warranty",
           "Best performance & longevity",
-          "Latest technology and improvements",
-          "No hidden issues or wear",
         ],
         cons: [
           "Higher cost",
           "Limited availability for older models",
-          "Longer delivery times",
-          "May be overkill for older vehicles",
         ],
       },
       {
-        title: "Used BMW Engines",
+        title: "Used Audi Engines",
         icon: <DollarSign className="h-6 w-6" />,
         badge: "Budget-Friendly",
         badgeVariant: "secondary" as const,
         pros: [
           "Cost-effective & widely available",
           "Good for quick replacements",
-          "Immediate availability",
-          "Suitable for older vehicles",
         ],
         cons: [
           "Potential hidden wear and tear",
           "Shorter lifespan than new or reconditioned engines",
-          "Limited or no warranty",
-          "Unknown maintenance history",
         ],
       },
       {
-        title: "Reconditioned BMW Engines",
+        title: "Reconditioned Audi Engines",
         icon: <Wrench className="h-6 w-6" />,
         badge: "Best Value",
         badgeVariant: "outline" as const,
@@ -1751,16 +1755,13 @@ export const data: Record<string, Data> = {
           "Professionally rebuilt with new components",
           "More reliable than used engines",
           "Balanced cost vs. performance",
-          "Often comes with warranty",
         ],
         cons: [
           "Slightly more expensive than used engines",
-          "Quality varies by rebuilder",
-          "May not include latest improvements",
-          "Longer process than buying used",
         ],
       },
     ],
+    
 
     section8: {
       EngineProblems: [
@@ -2038,197 +2039,107 @@ export const data: Record<string, Data> = {
     },
     faqs: [
       {
-        question: "What is EnginesMarket.co.uk?",
+        question: "What is the best engine for an Audi?",
         answer:
-          "EnginesMarket.co.uk is a price comparison website specializing in providing competitive quotes for new, used, and reconditioned BMW engines from multiple trusted sellers.",
+          "The best engine depends on the model and driving needs. Popular choices include the 2.0 TFSI petrol engine for performance and fuel efficiency, while the 3.0 TDI diesel engine is known for torque and longevity.",
       },
       {
-        question: "How does EnginesMarket.co.uk work?",
+        question: "Are Audi engines reliable?",
         answer:
-          "Simply enter your BMW model and engine requirements on our platform, and we will connect you with multiple sellers offering the best prices and availability. You can compare quotes and choose the best option for your needs.",
+          "Yes, Audi engines are renowned for their performance and durability. Regular servicing and proper maintenance can significantly extend the lifespan of an Audi engine.",
       },
       {
-        question:
-          "Why should I choose EnginesMarket.co.uk for my BMW engine replacement?",
+        question: "How much does an Audi engine replacement cost?",
         answer:
-          "EnginesMarket.co.uk offers a wide range of BMW engines at unbeatable prices. Our platform saves you time and money by providing competitive quotes from multiple sellers, ensuring you get a high-quality, reliable engine.",
+          "The cost varies depending on the model and engine type. Used Audi engines start from £1,000, reconditioned engines range from £1,500–£3,500, and brand-new Audi engines can cost over £5,000.",
       },
       {
-        question:
-          "Do you offer warranties on the engines listed on EnginesMarket.co.uk?",
+        question: "Where can I buy a replacement Audi engine?",
         answer:
-          "Yes, many of the engines listed on our platform come with warranties. The warranty details vary depending on the seller and the type of engine (new, used, or reconditioned). Be sure to check the warranty information provided by the seller.",
+          "You can buy new, used, and reconditioned Audi engines from trusted suppliers and marketplaces like Engine Market, ensuring quality and compatibility.",
       },
       {
-        question:
-          "How can I request a quote for a BMW engine on EnginesMarket.co.uk?",
+        question: "What are the common problems with Audi engines?",
         answer:
-          'To request a quote, simply visit our website, enter your BMW model and engine specifications, and click on the "Request a Quote" button. You will receive multiple quotes from trusted sellers, allowing you to compare and choose the best option.',
+          "Common issues include oil consumption (TFSI engines), timing chain failures (older models), turbocharger faults, and carbon buildup in direct-injection petrol engines.",
       },
       {
-        question: "What are the most common BMW engine problems?",
-        answerList: [
-          "Oil leaks",
-          "Overheating issues",
-          "Timing chain problems",
-          "Misfiring engines",
-          "High-pressure fuel pump (HPFP) failures",
-        ],
-      },
-      {
-        question: "Which BMW engines are known for their reliability?",
+        question: "What are the most common Audi petrol engines?",
         answer:
-          "Some of the most reliable BMW engines include the M54, N52, and B58 engines.",
+          "Popular Audi petrol engines include the 1.8 TFSI, 2.0 TFSI, and 4.2L V8 FSI, known for power, efficiency, and smooth performance.",
       },
       {
-        question: "What is the best BMW engine for performance?",
+        question: "What are the best Audi diesel engines?",
         answer:
-          "The S55 and N54 engines are highly regarded for their performance and tuning potential.",
+          "The 2.0 TDI and 3.0 TDI engines are highly regarded for their strong torque, fuel efficiency, and longevity.",
       },
       {
-        question: "How often should I service my BMW engine?",
+        question: "Does Audi make hybrid and electric engines?",
         answer:
-          "It is recommended to service your BMW engine every 10,000 to 15,000 miles or once a year, whichever comes first. Regular maintenance includes oil changes, filter replacements, and inspections of key components.",
+          "Yes, Audi offers TFSI e plug-in hybrids and fully electric models like the Audi e-tron, designed for efficiency and performance.",
       },
       {
-        question: "Can I upgrade my BMW engine for better performance?",
+        question: "What is the most powerful Audi engine?",
         answer:
-          "Yes, common performance upgrades include ECU remapping, cold air intakes, exhaust system upgrades, intercooler upgrades, and turbocharger enhancements.",
+          "The 5.2L V10 FSI engine found in the Audi R8 produces up to 620 horsepower, making it one of the most powerful engines Audi has ever built.",
       },
       {
-        question:
-          "What is the difference between a new, used, and reconditioned BMW engine?",
+        question: "Which Audi models have turbocharged engines?",
         answer:
-          "New engines offer the best performance and come with a warranty but are the most expensive. Used engines are more affordable but may have wear and tear. Reconditioned engines are rebuilt with new or refurbished parts, offering a reliable and cost-effective middle ground.",
+          "Most Audi models feature turbocharged petrol (TFSI) and diesel (TDI) engines, including the A3, A4, A6, Q5, and RS series.",
       },
       {
-        question: "How can I prevent common BMW engine problems?",
+        question: "How long do Audi engines last?",
         answer:
-          "Regular maintenance, using high-quality oil and parts, and addressing issues promptly can help prevent common BMW engine problems.",
+          "With proper maintenance, Audi engines can last over 200,000 miles, especially TDI diesel engines, which are known for longevity.",
       },
       {
-        question: "What are the benefits of a turbocharged BMW engine?",
+        question: "What oil is best for an Audi engine?",
         answer:
-          "Turbocharged BMW engines offer increased power and torque, improved fuel efficiency, and better overall performance compared to naturally aspirated engines.",
+          "Audi recommends fully synthetic 5W-30 or 0W-20 engine oil, depending on the model, for optimal performance and longevity.",
       },
       {
-        question: "Which BMW models are compatible with the N47 engine?",
+        question: "How often should I change my Audi’s timing belt or chain?",
         answer:
-          "The N47 engine is compatible with models such as the BMW 1 Series (E81/E87) and BMW 3 Series (E90/E91).",
+          "Timing belts typically need replacing every 60,000–100,000 miles, while timing chains can last longer but require monitoring for wear.",
       },
       {
-        question: "What should I look for when buying a used BMW engine?",
-        answerList: [
-          "Engine mileage",
-          "Maintenance history",
-          "Overall condition",
-          "Reputation of the seller",
-          "Warranty availability",
-        ],
-      },
-      {
-        question: "How do I know if my BMW engine needs a rebuild?",
+        question: "Why is my Audi engine consuming too much oil?",
         answer:
-          "Signs that your BMW engine may need a rebuild include excessive oil consumption, loss of power, unusual noises, and poor fuel efficiency.",
+          "Some TFSI engines are known for high oil consumption due to piston ring wear or PCV valve issues, requiring regular top-ups or repairs.",
       },
       {
-        question: "What is the lifespan of a BMW engine?",
+        question: "What are the symptoms of a failing Audi turbocharger?",
         answer:
-          "With proper maintenance, a BMW engine can last well over 200,000 miles.",
+          "Signs include power loss, excessive smoke from the exhaust, a whining noise, and poor acceleration.",
       },
       {
-        question: "Are BMW diesel engines reliable?",
+        question: "Can I remap my Audi engine for more power?",
         answer:
-          "BMW diesel engines, such as the M57, are known for their reliability and efficiency.",
+          "Yes! A professional ECU remap can increase horsepower and torque by 20–40%, depending on the engine.",
       },
       {
-        question: "What is the best BMW engine for fuel efficiency?",
+        question: "What are the best performance upgrades for Audi engines?",
         answer:
-          "The N52 and B48 engines are known for their excellent fuel efficiency while still providing good performance.",
+          "Popular upgrades include turbocharger enhancements, cold air intakes, ECU tuning, and performance exhaust systems.",
       },
       {
-        question:
-          "Can I install a BMW engine from a different model in my car?",
+        question: "Can I swap my Audi engine for a bigger one?",
         answer:
-          "Engine swaps are possible, but compatibility depends on the engine code and model. It's important to consult with a professional to ensure a successful swap.",
+          "Yes, but engine swaps require modifications to the ECU, transmission, and cooling system to ensure proper performance.",
       },
       {
-        question: "What are the most reliable BMW engines?",
+        question: "Is it better to buy a used or reconditioned Audi engine?",
         answer:
-          "The B58 3.0L turbocharged petrol engine and the N57 3.0L diesel engine are widely regarded as the most reliable BMW engines due to their durability, performance, and fuel efficiency.",
+          "Used engines are more affordable but may have higher mileage. Reconditioned engines are rebuilt with new parts, offering better reliability and a longer lifespan.",
       },
       {
-        question: "How much does it cost to replace a BMW engine?",
+        question: "How do I check if a used Audi engine is in good condition?",
         answer:
-          "The cost of replacing a BMW engine ranges from £1,500 to £10,000, depending on the engine type, model, and whether you choose a new, used, or reconditioned engine.",
+          "Check the mileage, service history, compression test results, and warranty options to ensure the engine is in good shape.",
       },
-      {
-        question: "Are reconditioned BMW engines reliable?",
-        answer:
-          "Yes, reconditioned BMW engines are thoroughly rebuilt to meet OEM standards, making them a cost-effective and reliable option for engine replacement.",
-      },
-      {
-        question:
-          "Can I replace my BMW engine with a different model's engine?",
-        answer:
-          "Engine compatibility depends on the model and engine type. Use our BMW engine compatibility chart to find the right engine for your vehicle.",
-      },
-      {
-        question: "What is the best BMW engine for performance?",
-        answer:
-          "The S63 4.4L twin-turbo V8 engine, found in the BMW M5 and X5 M, is one of the best engines for performance, offering up to 625 HP and 800 Nm of torque.",
-      },
-      {
-        question: "How do I know if my BMW engine needs replacement?",
-        answerList: [
-          "Excessive smoke",
-          "Knocking sounds",
-          "Loss of power",
-          "Frequent overheating",
-          "Diagnostic check confirming engine failure",
-        ],
-      },
-      {
-        question: "What is the most fuel-efficient BMW engine?",
-        answer:
-          "The B47 2.0L diesel engine is one of the most fuel-efficient BMW engines, offering excellent mileage and low emissions.",
-      },
-      {
-        question: "What is the best BMW engine for towing?",
-        answer:
-          "The B57 3.0L diesel engine, found in models like the X5 and X7, is ideal for towing due to its high torque output and durability.",
-      },
-      {
-        question: "How do I find the right engine for my BMW model?",
-        answer:
-          "Use our BMW engine compatibility chart or contact our experts at EnginesMarket.co.uk to find the perfect engine for your BMW.",
-      },
-      {
-        question: "What is the most powerful BMW engine ever made?",
-        answer:
-          "The S63 4.4L twin-turbo V8 engine in the BMW M5 CS produces 635 HP, making it the most powerful BMW engine to date.",
-      },
-      {
-        question: "What is the cost of a reconditioned BMW engine?",
-        answer:
-          "Reconditioned BMW engines typically cost between £2,000 and £6,000, depending on the engine type and model.",
-      },
-      {
-        question: "Can I install a used BMW engine myself?",
-        answer:
-          "While it's possible, installing a used BMW engine requires specialized tools and expertise. We recommend hiring a professional mechanic for the job.",
-      },
-      {
-        question: "What is the best BMW engine for a daily driver?",
-        answer:
-          "The B48 2.0L turbo petrol engine is an excellent choice for daily driving, offering a balance of performance, efficiency, and reliability.",
-      },
-      {
-        question: "Where can I buy a BMW engine at the best price?",
-        answer:
-          "At EnginesMarket.co.uk, we connect you with multiple trusted sellers to ensure you get the best price for your BMW engine replacement.",
-      },
-    ],
+    ]
+    
   },
   volkswagen: {
     metadata: {

@@ -167,7 +167,9 @@ export interface Data {
   }>;
 }
 
-export const data: Record<string, Data> = {
+type BrandsData = Record<string, Data>;
+
+export const data: BrandsData = {
   bmw: {
     metadata: {
       title:

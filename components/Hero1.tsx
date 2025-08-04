@@ -39,7 +39,7 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (registration) {
-      router.push(`/contact?reg=${encodeURIComponent(registration)}`);
+      router.push(`/contact?reg=${encodeURIComponent(registration)}&source=form`);
     }
   };
 

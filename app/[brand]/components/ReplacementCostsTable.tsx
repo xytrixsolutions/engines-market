@@ -1,9 +1,10 @@
 "use client";
-import { FC } from "react";
+import { FC, useState } from "react";
 import EngineTable from "./EngineTable";
 import { REPLACEMENT_COST_COLUMNS } from "../constants/tableColumns";
 import Container from "@/components/Container";
 import { data as datadata } from "../data/data";
+import { useRouter } from "next/navigation";
 
 import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
@@ -13,8 +14,19 @@ import SummaryCard from "@/components/SummaryCard";
 const ReplacementCostsTable: React.FC<{ brand: string }> = ({
   brand: brand,
 }) => {
+  const router = useRouter();
+  const [registration, setRegistration] = useState("");
   const columns = REPLACEMENT_COST_COLUMNS;
   const { replacement_costs } = datadata[brand].engineData;
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (registration) {
+      router.push(
+        `/contact?reg=${encodeURIComponent(registration)}&source=form`
+      );
+    }
+  };
 
   return (
     <Container className="my-16" id="engine-replacement-cost">
@@ -68,34 +80,41 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({
         </p>
 
         {/* REG Input */}
-        <div className="flex justify-center mb-6">
-          <div className="relative w-full max-w-sm">
-            <div className="absolute top-1/2 transform -translate-y-1/2">
-              <div className="w-10 h-16 relative">
-                <Image
-                  src="/Home/uknumberplate.png"
-                  alt="UK Flag"
-                  fill
-                  className="object-cover rounded-l-md"
-                />
+        <form onSubmit={handleSubmit}>
+          <div className="flex justify-center mb-6">
+            <div className="relative w-full max-w-sm">
+              <div className="absolute top-1/2 transform -translate-y-1/2">
+                <div className="w-10 h-16 relative">
+                  <Image
+                    src="/Home/uknumberplate.png"
+                    alt="UK Flag"
+                    fill
+                    className="object-cover rounded-l-md"
+                  />
+                </div>
               </div>
+
+              <input
+                type="text"
+                placeholder="Enter Reg Number Here"
+                value={registration}
+                onChange={(e) => setRegistration(e.target.value.toUpperCase())}
+                className="w-full text-center py-4 text-xl font-semibold text-gray-700 bg-[#ffcb05] border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
+              />
             </div>
-
-            <input
-              type="text"
-              placeholder="Enter Reg Number Here"
-              className="w-full text-center py-4 text-xl font-semibold text-gray-700 bg-[#ffcb05] border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
-            />
           </div>
-        </div>
 
-        {/* Centered Button */}
-        <div className="flex justify-center">
-          <Button className="w-full max-w-xs border-2 text-white py-4 rounded-full font-semibold flex items-center justify-center space-x-2 transition-all duration-300 mb-4 before:bg-gray-100">
-            <span>Get Free Quotes Now</span>
-            <FiArrowUpRight className="w-5 h-5" />
-          </Button>
-        </div>
+          {/* Centered Button */}
+          <div className="flex justify-center">
+            <Button
+              type="submit"
+              className="w-full max-w-xs border-2 text-white py-4 rounded-full font-semibold flex items-center justify-center space-x-2 transition-all duration-300 mb-4 before:bg-gray-100"
+            >
+              <span>Get Free Quotes Now</span>
+              <FiArrowUpRight className="w-5 h-5" />
+            </Button>
+          </div>
+        </form>
 
         {/* Bottom text */}
         <p className="mt-6 text-sm text-gray-600 max-w-lg mx-auto">

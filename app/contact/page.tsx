@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "@/components/Button";
 import Container from "@/components/Container";
 import { submitForm } from "@/app/actions/submitForm";
@@ -7,12 +9,80 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useSearchParams } from "next/navigation";
+import { Suspense, useEffect, useState } from "react";
 import axios from "axios";
+import Image from "next/image";
+interface VehicleInfo {
+  registration?: string;
+  make?: string;
+  model?: string;
+  year?: string;
+  fuelType?: string;
+  engineCapacity?: string;
+  data?: string; // This can be used to store additional data if needed
+}
 
-export default function VehicleServiceForm() {
-  const response = axios.get(
-    " https://api.checkcardetails.co.uk/vehicledata/vehicleregistration?apikey=b627ac2f1dfb771559815c03e3161e91&vrm=EA65AMX ",
-  );
+function VehicleServiceFormContent() {
+  const searchParams = useSearchParams();
+  const [vehicleInfo, setVehicleInfo] = useState<VehicleInfo>({
+    registration: "",
+    make: "",
+    model: "",
+    year: "",
+    fuelType: "",
+    engineCapacity: "",
+    data: "",
+  });
+
+  useEffect(() => {
+    const regNumber = searchParams.get("reg");
+    const source = searchParams.get("source");
+
+    if (regNumber) {
+      if (source === "form") {
+        // When coming from registration input forms, fetch vehicle details
+        const fetchVehicleData = async () => {
+          try {
+            const response = await axios.get(
+              `/api/vehicle?reg=${encodeURIComponent(regNumber)}`
+            );
+            if (response.data) {
+              setVehicleInfo({
+                registration: regNumber,
+                make: response.data.make || "",
+                model: response.data.model || "",
+                year: response.data.yearOfManufacture || "",
+                fuelType: response.data.fuelType || "",
+                engineCapacity: response.data.engineCapacity || "",
+              });
+            }
+          } catch (error) {
+            console.error("Error fetching vehicle data:", error);
+            // Even if API fails, set at least the registration
+            setVehicleInfo((prev) => ({
+              ...prev,
+              registration: regNumber,
+            }));
+          }
+        };
+        fetchVehicleData();
+      } else {
+        // Validate that regNumber is a valid string and not empty/null/undefined
+        if (
+          regNumber !== null &&
+          regNumber !== undefined &&
+          regNumber !== "" &&
+          typeof regNumber === "string"
+        ) {
+          setVehicleInfo({
+            data: regNumber,
+          });
+        }
+      }
+    }
+  }, [searchParams]);
+
   return (
     <Container>
       <div className="max-w-4xl mx-auto p-6">
@@ -21,12 +91,46 @@ export default function VehicleServiceForm() {
           <h1 className="text-3xl md:text-4xl font-bold text-neon-red mb-2">
             Fast Turnaround & Warranty Backed Services
           </h1>
-          <p className="text-charcoal-gray text-xl mb-2">
+          <p className="text-charcoal-gray text-xl mb-4">
             Get back on the road with peace of mind!
           </p>
-          <p className="text-gray-600">
-            Audi 2021 Audi A1 Petrol Cylinder Head
-          </p>
+          {vehicleInfo.registration && (
+            <div className="flex flex-col items-center gap-4">
+              <div className="flex items-center gap-4 flex-wrap justify-center">
+                {/* Vehicle Details */}
+                <p className="text-lg font-medium text-gray-700">
+                  {[
+                    vehicleInfo.make,
+                    vehicleInfo.model,
+                    vehicleInfo.year,
+                    vehicleInfo.fuelType,
+                    vehicleInfo.engineCapacity,
+                  ]
+                    .filter(Boolean)
+                    .join(" ")}
+                </p>
+                {/* Number Plate */}
+                <div className="relative w-44">
+                  <div className="absolute top-1/2 transform -translate-y-1/2">
+                    <div className="w-8 h-12 relative">
+                      <Image
+                        src="/Home/uknumberplate.png"
+                        alt="UK Flag"
+                        fill
+                        className="object-cover rounded-l-md"
+                      />
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    value={vehicleInfo.registration || ""}
+                    disabled
+                    className="w-full text-center py-2.5 text-lg font-semibold text-gray-700 bg-[#ffcb05] border-2 border-black rounded-lg"
+                  />
+                </div>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Form Section */}
@@ -38,9 +142,33 @@ export default function VehicleServiceForm() {
 
             <p className="text-gray-600 mb-6">
               Ensure you&apos;re getting the most competitive price by comparing
-              engine quotes from local and national suppliers — instantly.
+              engine quotes from local and national suppliers, instantly.
             </p>
-
+            {vehicleInfo.registration && (
+              <>
+                <input type="hidden" name="make" value={vehicleInfo.make} />
+                <input type="hidden" name="model" value={vehicleInfo.model} />
+                <input type="hidden" name="year" value={vehicleInfo.year} />
+                <input
+                  type="hidden"
+                  name="fuel_type"
+                  value={vehicleInfo.fuelType}
+                />
+                <input
+                  type="hidden"
+                  name="engine_capacity"
+                  value={vehicleInfo.engineCapacity}
+                />
+                <input
+                  type="hidden"
+                  name="registration"
+                  value={vehicleInfo.registration}
+                />
+              </>
+            )}
+            {vehicleInfo.data && (
+              <input type="hidden" name="data" value={vehicleInfo.data} />
+            )}
             <div className="space-y-4">
               <input
                 type="text"
@@ -102,9 +230,9 @@ export default function VehicleServiceForm() {
                       <div className="space-y-2">
                         <label className="flex items-center">
                           <input
-                            type="radio"
-                            name="service"
-                            value="partSupplied"
+                            type="checkbox"
+                            name="part_supplied_fitted"
+                            value="part_supplied_fitted"
                             className="mr-3 h-4 w-4"
                           />
                           <span className="text-gray-700">
@@ -113,9 +241,9 @@ export default function VehicleServiceForm() {
                         </label>
                         <label className="flex items-center">
                           <input
-                            type="radio"
-                            name="service"
-                            value="supplyOnly"
+                            type="checkbox"
+                            name="supply_only"
+                            value="supply_only"
                             className="mr-3 h-4 w-4"
                           />
                           <span className="text-gray-700">Supply Only</span>
@@ -131,8 +259,8 @@ export default function VehicleServiceForm() {
                       <div className="space-y-2">
                         <label className="flex items-center">
                           <input
-                            type="radio"
-                            name="engineType"
+                            type="checkbox"
+                            name="new"
                             value="new"
                             className="mr-3 h-4 w-4"
                           />
@@ -140,8 +268,8 @@ export default function VehicleServiceForm() {
                         </label>
                         <label className="flex items-center">
                           <input
-                            type="radio"
-                            name="engineType"
+                            type="checkbox"
+                            name="used"
                             value="used"
                             className="mr-3 h-4 w-4"
                           />
@@ -149,12 +277,12 @@ export default function VehicleServiceForm() {
                         </label>
                         <label className="flex items-center">
                           <input
-                            type="radio"
-                            name="engineType"
-                            value="reconditioned"
+                            type="checkbox"
+                            name="rebuilt"
+                            value="rebuilt"
                             className="mr-3 h-4 w-4"
                           />
-                          <span className="text-gray-700">Reconditioned</span>
+                          <span className="text-gray-700">Rebuilt</span>
                         </label>
                       </div>
                     </div>
@@ -255,5 +383,17 @@ export default function VehicleServiceForm() {
         </form>
       </div>
     </Container>
+  );
+}
+
+export default function VehicleServiceForm() {
+  return (
+    <Suspense fallback={
+      <div className="flex justify-center items-center min-h-[400px]">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-neon-red"></div>
+      </div>
+    }>
+      <VehicleServiceFormContent />
+    </Suspense>
   );
 }

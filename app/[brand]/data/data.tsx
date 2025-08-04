@@ -2551,7 +2551,7 @@ export const data: BrandsData = {
       ],
       replacement_costs: [
         {
-          image: "/bmw/bmw-1-series.png",
+          image: "/engine-guide-banners/engine-guide.png",
           model: "BMW 1 Series",
           engineType: "1.5L Petrol",
           estimatedCost: "£2,500 - £4,000",

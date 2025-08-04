@@ -39,7 +39,7 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand: brand })  =>
 
   return (
     <Container dark className="my-16" id="troubleshooting-guide">
-      <div className="max-w-full mx-auto text-center mb-12 space-y-4 text-charcoal-gray-muted">
+      <div className="max-w-full mx-auto text-center mb-12 space-y-4 text-charcoal-gray-muted" data-aos="fade-down">
         <Heading className="text-charcoal-gray-muted">
           Troubleshooting Guide for<Accent>BMW Engines</Accent>
         </Heading>
@@ -71,6 +71,7 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand: brand })  =>
             <AccordionItem
               value={section.id}
               className="rounded-xl bg-card shadow-sm"
+              data-aos="fade-down-right"
             >
               <AccordionTrigger className="px-6 py-4 font-semibold text-lg text-royal-blue flex items-center justify-between select-none rounded-t-xl transition-all duration-300 hover:no-underline">
                 <div className="flex items-center gap-3">
@@ -114,6 +115,7 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand: brand })  =>
           variant={summary.variant as "green" | "blue" | "card" | "performance"} // Adjust based on your actual variants
           title={summary.title}
           content={summary.content}
+          
         />
       )}
 

@@ -209,7 +209,7 @@ export default function Hero3() {
   };
 
   return (
-    <Container dark id="explore-by-manufacturer">
+    <Container dark id="explore-by-manufacturer" data-aos="fade-down">
       <div className="items-center mb-12 text-center flex flex-col justify-center">
         {/* Title */}
         <div>

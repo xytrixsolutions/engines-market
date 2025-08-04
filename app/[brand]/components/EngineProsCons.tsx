@@ -13,7 +13,7 @@ const EngineProsCons: React.FC<{ brand: string }> = ({ brand: brand }) => {
   const { section7, brandName } = data[brand];
   return (
     <Container className="my-16" id="pros-cons">
-      <div className="max-w-6xl mx-auto text-center mb-12">
+      <div className="max-w-6xl mx-auto text-center mb-12" data-aos="fade-down">
         <Heading>
           Pros & Cons of New, Used &
           <Accent>Reconditioned {brandName} Engines</Accent>
@@ -30,6 +30,7 @@ const EngineProsCons: React.FC<{ brand: string }> = ({ brand: brand }) => {
       <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-3">
         {section7.map((engineType, _) => (
           <Card
+          data-aos="fade-down-right"
             key={engineType.title}
             className="relative overflow-hidden border-2 hover:shadow-lg transition-shadow duration-300"
           >
@@ -87,6 +88,7 @@ const EngineProsCons: React.FC<{ brand: string }> = ({ brand: brand }) => {
 
       {/* Bottom CTA/Info Section */}
       <SummaryCard
+      data-aos="fade-down"
         variant="card"
         content="Consider your vehicle's age, mileage, intended use, and budget when selecting an engine type. For vehicles under 5 years old, new engines are often worth the investment. For older vehicles, reconditioned engines offer the best balance of reliability and cost."
       />

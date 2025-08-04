@@ -47,7 +47,7 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
     <Container dark>
       <div className="text-center mb-16">
         {/* <h1 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-4 leading-tight"> */}
-        <h1 className="text-3xl md:text-4xl font-bold text-charcoal-gray-muted mb-4 leading-tight">
+        <h1 className="text-3xl md:text-4xl font-bold text-charcoal-gray-muted mb-4 leading-tight" data-aos="fade-down">
           The UK’s Largest Engine Marketplace – Compare & Save Instantly!
         </h1>
       </div>
@@ -55,6 +55,7 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
         {/* LEFT: Form */}
         <div
+        data-aos="fade-right"
           className="relative lg:col-span-2 max-w-xl lg:max-w-none mx-auto lg:mr-0 lg:ml-auto z-50 overflow-visible"
           style={{
             boxShadow: "0 0 100px rgba(255, 255, 255, 0.35)", // <- even on all sides
@@ -128,7 +129,7 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
         </div>
 
         {/* RIGHT: Image + Model Name */}
-        <div className="lg:col-span-3 flex flex-col items-center z-0">
+        <div className="lg:col-span-3 flex flex-col items-center z-0" data-aos="fade-left">
           <div className="w-full relative aspect-[12/7] overflow-x-visible rounded-lg mb-5 flex items-center justify-center max-w-xl lg:max-w-none mx-auto ">
             {carImages.map((src, index) => {
               let className = "image-slide";

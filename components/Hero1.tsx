@@ -6,6 +6,8 @@ import { FiArrowUpRight } from "react-icons/fi";
 import Image from "next/image";
 import Container from "./Container";
 import Button from "./Button";
+import { submitForm } from "@/app/actions/submitForm";
+import { useRouter } from "next/navigation";
 
 interface Hero1Props {
   carImages: string[];
@@ -13,6 +15,8 @@ interface Hero1Props {
 }
 
 const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
+  const router = useRouter();
+  const [registration, setRegistration] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [prevIndex, setPrevIndex] = useState<number | null>(null);
   const [isTextVisible, setIsTextVisible] = useState(true);
@@ -31,6 +35,13 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
 
     return () => clearInterval(interval);
   }, [carImages.length, currentIndex]);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (registration) {
+      router.push(`/contact?reg=${encodeURIComponent(registration)}`);
+    }
+  };
 
   return (
     <Container dark>
@@ -65,8 +76,8 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
                 </h4>
               </div>
 
-              <div className="mb-6">
-                <div className="relative">
+              <form onSubmit={handleSubmit}>
+                <div className="relative w-3xs mx-auto mb-6">
                   <div className="absolute top-1/2 transform -translate-y-1/2">
                     <div className="w-10 h-16 relative">
                       <Image
@@ -79,22 +90,29 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
                   </div>
 
                   <input
-                    type="text"
                     placeholder="REG HERE"
-                    className="w-full text-center py-4 text-lg font-semibold text-gray-700 bg-[#ffcb05] border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
+                    value={registration}
+                    onChange={(e) => {
+                      const value = e.target.value.toUpperCase();
+                      setRegistration(value);
+                    }}
+                    className="w-full text-center py-4 text-2xl font-semibold text-gray-700 bg-[#ffcb05] border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
                   />
                 </div>
-              </div>
+                <p className="text-center text-gray-600 mb-6 leading-relaxed">
+                  Enter Your Vehicle Registration Number To Instantly Locate the
+                  Right Engine & Get Quotes From UK’s Top Suppliers
+                </p>
 
-              <p className="text-center text-gray-600 mb-6 leading-relaxed">
-                Enter Your Vehicle Registration Number To Instantly Locate the
-                Right Engine & Get Quotes From UK’s Top Suppliers
-              </p>
-
-              <Button variant="red" className="w-full mb-4 before:bg-white">
-                <span>Get Free Quote Now</span>
-                <FiArrowUpRight className="w-5 h-5" />
-              </Button>
+                <Button
+                  type="submit"
+                  variant="red"
+                  className="w-full mb-4 before:bg-white"
+                >
+                  <span>Get Free Quote Now</span>
+                  <FiArrowUpRight className="w-5 h-5" />
+                </Button>
+              </form>
 
               <p className="text-center text-gray-600">
                 {"Don't Have REG..? "}

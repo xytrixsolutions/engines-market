@@ -9,7 +9,11 @@ import {
 } from "@/components/ui/table";
 
 type EngineTableProps<T = Record<string, unknown>> = TableProps<T> & {
-  tableType?: "models" | "engine_codes" | "models_engines";
+  tableType?:
+    | "models"
+    | "engine_codes"
+    | "models_engines"
+    | "replacement_costs";
 };
 
 const EngineTable = <T extends Record<string, unknown>>({
@@ -17,6 +21,22 @@ const EngineTable = <T extends Record<string, unknown>>({
   data,
   tableType,
 }: EngineTableProps<T>) => {
+  // Add function to determine if cell should be bold
+  const shouldBeBold = (columnKey: string) => {
+    switch (tableType) {
+      case "models":
+        return columnKey === "model_name";
+      case "engine_codes":
+        return columnKey === "engineCode";
+      case "models_engines":
+        return columnKey === "engineCode";
+      case "replacement_costs":
+        return columnKey === "model";
+      default:
+        return false;
+    }
+  };
+
   const getWidthClass = () => {
     if (tableType === "engine_codes") {
       return "w-full";
@@ -53,18 +73,20 @@ const EngineTable = <T extends Record<string, unknown>>({
                     : "bg-muted/30 border-b border-border hover:bg-accent/50"
                 }
               >
-                {columns.map((col) => (
-                  <TableCell
-                    key={col.key}
-                    className={`px-4 py-2 text-foreground ${
-                      i === 0 ? "" : ""
-                    } ${col.key === "action" ? "text-right" : ""}`}
-                  >
-                    {col.render
-                      ? col.render(row[col.key], row)
-                      : String(row[col.key] || "")}
-                  </TableCell>
-                ))}
+                {columns.map((col) => {
+                  return (
+                    <TableCell
+                      key={col.key}
+                      className={`px-4 py-2 text-foreground ${
+                        shouldBeBold(col.key) ? "font-bold" : ""
+                      } ${col.key === "action" ? "text-right" : ""}`}
+                    >
+                      {col.render
+                        ? col.render(row[col.key], row)
+                        : String(row[col.key] || "")}
+                    </TableCell>
+                  );
+                })}
               </TableRow>
             ))}
           </TableBody>
@@ -81,15 +103,16 @@ const EngineTable = <T extends Record<string, unknown>>({
                   {col.label}
                 </span>
                 <div
-  className={`text-foreground ${
-    (col.key === "model" && col.render) || col.key === "image"
-      ? "flex justify-center w-full"
-      : col.key === "action"
-      ? "flex justify-center w-full"
-      : "text-right"
-  }`}
->
-
+                  className={`text-foreground ${
+                    shouldBeBold(col.key) ? "font-bold" : ""
+                  } ${
+                    (col.key === "model" && col.render) || col.key === "image"
+                      ? "flex justify-center w-full"
+                      : col.key === "action"
+                      ? "flex justify-center w-full"
+                      : "text-right"
+                  }`}
+                >
                   {col.render
                     ? col.render(row[col.key], row)
                     : String(row[col.key] || "")}

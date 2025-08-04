@@ -10,7 +10,9 @@ import { FiArrowUpRight } from "react-icons/fi";
 import Button from "@/components/Button";
 import SummaryCard from "@/components/SummaryCard";
 
-const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand: brand }) => {
+const ReplacementCostsTable: React.FC<{ brand: string }> = ({
+  brand: brand,
+}) => {
   const columns = REPLACEMENT_COST_COLUMNS;
   const { replacement_costs } = datadata[brand].engineData;
 
@@ -32,7 +34,11 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand: brand }) =>
         </p>
       </div>
       {/* Table */}
-      <EngineTable columns={columns} data={replacement_costs} />
+      <EngineTable
+        columns={columns}
+        data={replacement_costs}
+        tableType={"replacement_costs"}
+      />
       <SummaryCard
         variant="card"
         title="Need Help Choosing?"
@@ -56,7 +62,9 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand: brand }) =>
         </p>
 
         <p className="mx-auto text-base font-semibold text-blue-800 mb-4 max-w-3xl ">
-        Simply enter your Reg Num below, and we’ll instantly search trusted UK suppliers and local garages to bring you the best available engine deals.
+          Simply enter your Reg Num below, and we’ll instantly search trusted UK
+          suppliers and local garages to bring you the best available engine
+          deals.
         </p>
 
         {/* REG Input */}
@@ -91,11 +99,14 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand: brand }) =>
 
         {/* Bottom text */}
         <p className="mt-6 text-sm text-gray-600 max-w-lg mx-auto">
-        We match your exact vehicle details to quality recycled, reconditioned and Rebuilt - saving you time, money, and hassle. Fast, simple, and stress-free.  
+          We match your exact vehicle details to quality recycled, reconditioned
+          and Rebuilt - saving you time, money, and hassle. Fast, simple, and
+          stress-free.
         </p>
         {/* Bottom text */}
         <p className="mt-6 text-sm text-blue-600  mx-auto">
-        🇬🇧 Trusted by thousands across the UK   |   Free, no-obligation quotes   |   Direct supplier access
+          🇬🇧 Trusted by thousands across the UK | Free, no-obligation quotes |
+          Direct supplier access
         </p>
       </div>
     </Container>

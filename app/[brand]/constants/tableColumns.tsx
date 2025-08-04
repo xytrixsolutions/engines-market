@@ -7,9 +7,7 @@ import {
   ModelEngine,
   ReplacementCost,
 } from "../types/engine";
-import Button from "@/components/Button";
-
-const quoteButton = <Button variant="green">Request Quote</Button>;
+import QuoteButton from "@/components/QuoteButton";
 
 const sampleImage = (
   <img
@@ -40,7 +38,7 @@ export const MODEL_COLUMNS: Column<Model>[] = [
   {
     key: "action",
     label: "",
-    render: () => quoteButton,
+    render: (_, row) => <QuoteButton data={row} keyToInclude="model_name" />,
   },
 ];
 
@@ -55,7 +53,7 @@ export const ENGINE_CODE_COLUMNS: Column<EngineCode>[] = [
   {
     key: "action",
     label: "",
-    render: () => quoteButton,
+    render: (_, row) => <QuoteButton data={row} keyToInclude="engineCode" />,
   },
 ];
 
@@ -70,7 +68,7 @@ export const MODEL_ENGINE_COLUMNS: Column<ModelEngine>[] = [
   {
     key: "action",
     label: "",
-    render: () => quoteButton,
+    render: (_, row) => <QuoteButton data={row} keyToInclude="engineCode" />,
   },
 ];
 
@@ -96,6 +94,6 @@ export const REPLACEMENT_COST_COLUMNS: Column<ReplacementCost>[] = [
   {
     key: "action",
     label: "",
-    render: () => quoteButton,
+    render: (_, row) => <QuoteButton data={row} keyToInclude="model" />,
   },
 ];

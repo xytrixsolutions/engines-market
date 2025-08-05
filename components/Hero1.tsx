@@ -39,7 +39,9 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (registration) {
-      router.push(`/contact?reg=${encodeURIComponent(registration)}&source=form`);
+      router.push(
+        `/contact?reg=${encodeURIComponent(registration)}&source=form`
+      );
     }
   };
 
@@ -47,7 +49,10 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
     <Container dark>
       <div className="text-center mb-16">
         {/* <h1 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-4 leading-tight"> */}
-        <h1 className="text-3xl md:text-4xl font-bold text-charcoal-gray-muted mb-4 leading-tight" data-aos="fade-down">
+        <h1
+          className="text-3xl md:text-4xl font-bold text-charcoal-gray-muted mb-4 leading-tight"
+          data-aos="fade-down"
+        >
           The UK’s Largest Engine Marketplace – Compare & Save Instantly!
         </h1>
       </div>
@@ -55,7 +60,7 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
         {/* LEFT: Form */}
         <div
-        data-aos="fade-right"
+          data-aos="fade-right"
           className="relative lg:col-span-2 max-w-xl lg:max-w-none mx-auto lg:mr-0 lg:ml-auto z-50 overflow-visible"
           style={{
             boxShadow: "0 0 100px rgba(255, 255, 255, 0.35)", // <- even on all sides
@@ -76,33 +81,47 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
                   Find Best Supplier Near You
                 </h4>
               </div>
-
               <form onSubmit={handleSubmit}>
-                <div className="relative w-3xs mx-auto mb-6">
-                  <div className="absolute top-1/2 transform -translate-y-1/2">
-                    <div className="w-10 h-16 relative">
-                      <Image
-                        src="/Home/uknumberplate.png"
-                        alt="UK Flag"
-                        fill
-                        className="object-cover rounded-l-md"
+                <div className="flex justify-center mb-4">
+                  <div className="relative w-full max-w-md">
+                    {/* Number plate container with shared background and border */}
+                    <div
+                      className="flex items-center border-4 border-black rounded-md overflow-hidden bg-[#ffcb05]"
+                      style={{
+                        fontFamily: "'Charles Wright', sans-serif",
+                        height: "5rem",
+                      }}
+                    >
+                      {/* Flag container */}
+                      <div className="w-10 h-full relative flex-shrink-0 ml-[-1px]">
+                        <Image
+                          src="/Home/uknumberplate.png"
+                          alt="UK Flag"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+
+                      {/* Input field - now properly centered without interference */}
+                      <input
+                        id="vehicle-input"
+                        type="text"
+                        placeholder="REG HERE"
+                        value={registration}
+                        onChange={(e) => {
+                          const value = e.target.value.toUpperCase();
+                          setRegistration(value);
+                        }}
+                        className="vehicle-inp w-full h-20 py-3 text-3xl placeholder:font-bold text-black placeholder-black bg-transparent focus:outline-none text-center placeholder:text-center"
+                        onFocus={(e) => (e.target.placeholder = "")}
+                        onBlur={(e) => (e.target.placeholder = "REG HERE")}
                       />
                     </div>
                   </div>
-
-                  <input
-                    placeholder="REG HERE"
-                    value={registration}
-                    onChange={(e) => {
-                      const value = e.target.value.toUpperCase();
-                      setRegistration(value);
-                    }}
-                    className="w-full text-center py-4 text-2xl font-semibold text-gray-700 bg-[#ffcb05] border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
-                  />
                 </div>
                 <p className="text-center text-gray-600 mb-6 leading-relaxed">
                   Enter Your Vehicle Registration Number To Instantly Locate the
-                  Right Engine & Get Quotes From UK’s Top Suppliers
+                  Right Engine & Get Quotes From UK's Top Suppliers
                 </p>
 
                 <Button
@@ -129,7 +148,10 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
         </div>
 
         {/* RIGHT: Image + Model Name */}
-        <div className="lg:col-span-3 flex flex-col items-center z-0" data-aos="fade-left">
+        <div
+          className="lg:col-span-3 flex flex-col items-center z-0"
+          data-aos="fade-left"
+        >
           <div className="w-full relative aspect-[12/7] overflow-x-visible rounded-lg mb-5 flex items-center justify-center max-w-xl lg:max-w-none mx-auto ">
             {carImages.map((src, index) => {
               let className = "image-slide";

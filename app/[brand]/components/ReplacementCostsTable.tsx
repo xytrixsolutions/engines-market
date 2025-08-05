@@ -3,7 +3,7 @@ import { FC, useState } from "react";
 import EngineTable from "./EngineTable";
 import { REPLACEMENT_COST_COLUMNS } from "../constants/tableColumns";
 import Container from "@/components/Container";
-import { data as datadata } from "../data/data";
+import { data } from "../data/data";
 import { useRouter } from "next/navigation";
 
 import Image from "next/image";
@@ -17,7 +17,8 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({
   const router = useRouter();
   const [registration, setRegistration] = useState("");
   const columns = REPLACEMENT_COST_COLUMNS;
-  const { replacement_costs } = datadata[brand].engineData;
+  const { replacement_costs } = data[brand].engineData;
+  const { brandName } = data[brand];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -54,7 +55,7 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({
       <SummaryCard
         variant="card"
         title="Need Help Choosing?"
-        content="Engine replacement costs in the UK can vary depending on the engine type, condition (used vs. reconditioned), and whether fitting is included. This price table offers real-world averages so you know what to expect before getting quotes. Customers often search for phrases like “engine replacement cost UK” or “how much is a reconditioned engine for BMW” and this section gives you a solid benchmark. For accurate pricing based on your specific vehicle and preferred fitting option, request a tailored quote directly from the table above."
+        content={`Engine replacement costs in the UK can vary depending on the engine type, condition (used vs. reconditioned), and whether fitting is included. This price table offers real-world averages so you know what to expect before getting quotes. Customers often search for phrases like “engine replacement cost UK” or “how much is a reconditioned engine for ${brandName}” and this section gives you a solid benchmark. For accurate pricing based on your specific vehicle and preferred fitting option, request a tailored quote directly from the table above.`}
       />
       {/* CTA Section - Updated to Match Screenshot */}
       <div
@@ -65,12 +66,12 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({
         }}
       >
         <h3 className="text-3xl font-bold text-gray-900 mb-4">
-          Find the Best Replacement Engine Deals for Your BMW
+          Find the Best Replacement Engine Deals for Your {brandName}
         </h3>
         <p className="text-lg text-gray-700 mb-6">
           Looking for a reliable, cost-effective engine replacement? With
-          Engines Market, getting the right engine for your BMW has never been
-          easier.
+          Engines Market, getting the right engine for your {brandName} has
+          never been easier.
         </p>
 
         <p className="mx-auto text-base font-semibold text-blue-800 mb-4 max-w-3xl ">
@@ -79,28 +80,32 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({
           deals.
         </p>
 
-        {/* REG Input */}
         <form onSubmit={handleSubmit}>
           <div className="flex justify-center mb-6">
             <div className="relative w-full max-w-sm">
-              <div className="absolute top-1/2 transform -translate-y-1/2">
-                <div className="w-10 h-16 relative">
+              {/* Number plate container with shared background and border */}
+              <div className="flex items-center border-2 border-black rounded-lg overflow-hidden bg-[#ffcb05]">
+                {/* Flag container */}
+                <div className="w-10 h-16 relative flex-shrink-0">
                   <Image
                     src="/Home/uknumberplate.png"
                     alt="UK Flag"
                     fill
-                    className="object-cover rounded-l-md"
+                    className="object-cover ml-[-1px]"
                   />
                 </div>
-              </div>
 
-              <input
-                type="text"
-                placeholder="Enter Reg Number Here"
-                value={registration}
-                onChange={(e) => setRegistration(e.target.value.toUpperCase())}
-                className="w-full text-center py-4 text-xl font-semibold text-gray-700 bg-[#ffcb05] border-2 border-black rounded-lg focus:outline-none focus:border-blue-500"
-              />
+                {/* Input field - now properly centered without interference */}
+                <input
+                  type="text"
+                  placeholder="Enter Reg Number Here"
+                  value={registration}
+                  onChange={(e) =>
+                    setRegistration(e.target.value.toUpperCase())
+                  }
+                  className="w-full py-4 text-xl font-semibold text-gray-700 bg-transparent focus:outline-none text-center placeholder:text-center"
+                />
+              </div>
             </div>
           </div>
 

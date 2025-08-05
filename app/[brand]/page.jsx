@@ -43,7 +43,7 @@ export async function generateMetadata({ params }) {
 const Page = ({ params }) => {
   const brand = use(params).brand.toLowerCase();
   if (!data[brand]) notFound();
-  const { carImages, carModelNames, faqs } = data[brand];
+  const { carImages, carModelNames, faqs, brandName } = data[brand];
 
   const navItems = [
     { label: "Engine Guide", id: "engine-guide" },
@@ -76,7 +76,7 @@ const Page = ({ params }) => {
       <ReplacementCostsTable brand={brand} />
       <PerformanceUpgrades brand={brand} />
       <EngineDealsCTA brand={brand} />
-      <FAQSection faqs={faqs} />
+      <FAQSection faqs={faqs} brandName={brandName} />
     </>
   );
 };

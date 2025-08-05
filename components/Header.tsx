@@ -4,6 +4,7 @@ import { FiArrowUpRight, FiMenu, FiX } from "react-icons/fi";
 import Image from "next/image";
 import { useState } from "react";
 import Button from "./Button";
+import { submitForm } from "@/app/actions/submitForm";
 
 // Reusable navigation link component
 const NavLink = ({
@@ -79,12 +80,19 @@ export default function Header() {
           </nav>
 
           {/* Right Side Actions (desktop only) */}
-          <div className="hidden md:flex items-center space-x-6 justify-end flex-1">
-            <Button variant="red" className="max-lg:text-sm xl:px-6 xl:py-2 before:bg-charcoal-gray">
+          <form
+            action={"/contact"}
+            className="hidden md:flex items-center space-x-6 justify-end flex-1"
+          >
+            <Button
+              variant="red"
+              type="submit"
+              className="max-lg:text-sm xl:px-6 xl:py-2 before:bg-charcoal-gray"
+            >
               <span>Request A Quote</span>
               <FiArrowUpRight className="w-7 h-7" />
             </Button>
-          </div>
+          </form>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden ml-2">
@@ -127,7 +135,8 @@ export default function Header() {
                 </div>
               ))}
             </nav>
-            <div
+            <form
+              action={"/contact"}
               className="transform transition-all duration-300 ease-out"
               style={{
                 transitionDelay: `${NAV_ITEMS.length * 50}ms`,
@@ -137,11 +146,11 @@ export default function Header() {
                 opacity: isMobileMenuOpen ? 1 : 0,
               }}
             >
-              <Button variant="red" className="w-full">
+              <Button type="submit" variant="red" className="w-full">
                 <span>Request A Quote</span>
                 <FiArrowUpRight className="w-6 h-6" />
               </Button>
-            </div>
+            </form>
           </div>
         </div>
       </nav>

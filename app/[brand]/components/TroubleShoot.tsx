@@ -16,8 +16,10 @@ import GradientBorderWrapper from "@/components/GradientBorderWrapper";
 import SummaryCard from "@/components/SummaryCard";
 import { data } from "../data/data";
 
-const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand: brand })  => {
-  const { section8 } = data[brand];
+const TroubleshootingGuide: React.FC<{ brand: string }> = ({
+  brand: brand,
+}) => {
+  const { section8, brandName } = data[brand];
   const {
     EngineProblems: troubleshootingSections = [],
     maintenanceTips: tips = [],
@@ -39,25 +41,21 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand: brand })  =>
 
   return (
     <Container dark className="my-16" id="troubleshooting-guide">
-      <div className="max-w-full mx-auto text-center mb-12 space-y-4 text-charcoal-gray-muted" data-aos="fade-down">
+      <div
+        className="max-w-full mx-auto text-center mb-12 space-y-4 text-charcoal-gray-muted"
+        data-aos="fade-down"
+      >
         <Heading className="text-charcoal-gray-muted">
-          Troubleshooting Guide for<Accent>BMW Engines</Accent>
+          Troubleshooting Guide for<Accent>{brandName} Engines</Accent>
         </Heading>
         <Paragraph className="mb-1">
           Learn how to identify <strong>early signs of engine trouble</strong>{" "}
           and take action before it becomes <strong>costly</strong>. Maintaining
-          your <strong>BMW engine</strong> with proper care and early
+          your <strong>{brandName} engine</strong> with proper care and early
           troubleshooting can <strong>prevent common faults</strong> and
           <strong> extend its lifespan</strong>. Here are actionable tips to
           keep your engine running smoothly:
         </Paragraph>
-
-        {/* <Paragraph className="text-base">
-          Maintaining your <strong>BMW engine</strong> with proper care and
-          early troubleshooting can <strong>prevent common faults</strong> and
-          <strong> extend its lifespan</strong>. Here are actionable tips to
-          keep your engine running smoothly:
-        </Paragraph> */}
       </div>
 
       <Accordion
@@ -71,7 +69,6 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand: brand })  =>
             <AccordionItem
               value={section.id}
               className="rounded-xl bg-card shadow-sm"
-              data-aos="fade-down-right"
             >
               <AccordionTrigger className="px-6 py-4 font-semibold text-lg text-royal-blue flex items-center justify-between select-none rounded-t-xl transition-all duration-300 hover:no-underline">
                 <div className="flex items-center gap-3">
@@ -115,7 +112,6 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand: brand })  =>
           variant={summary.variant as "green" | "blue" | "card" | "performance"} // Adjust based on your actual variants
           title={summary.title}
           content={summary.content}
-          
         />
       )}
 

@@ -11,24 +11,28 @@ const EngineGuide: React.FC<{ brand: string }> = ({
 }: {
   brand: string;
 }) => {
-  const section1Image = data[brand].section1Image;
+  const { section1Image, brandName } = data[brand];
   return (
     <Container className="py-16" id="engine-guide">
       {/* Heading and Text */}
-      <div className="text-center text-charcoal-gray space-y-6 mb-14 max-w-6xl mx-auto" data-aos="fade-down">
+      <div
+        className="text-center text-charcoal-gray space-y-6 mb-14 max-w-6xl mx-auto"
+        data-aos="fade-down"
+      >
         <Heading className="leading-tight text-charcoal-gray">
           The Complete
-          <Accent className="mx-3">BMW Engine</Accent>
+          <Accent className="mx-3">{brandName} Engine</Accent>
           Guide: Engine Codes, Specifications, Replacement Costs &{" "}
           <Accent>Performance Upgrade</Accent>
         </Heading>
 
-        <Paragraph >
-          Welcome to the ultimate BMW engines guide. This page provides a
-          comprehensive overview of <strong>BMW replacement engines</strong>,
-          including estimated costs, engine codes, and compatible models.
-          You&apos;ll also find <strong>troubleshooting guides</strong> for
-          common issues, a breakdown of the{" "}
+        <Paragraph>
+          Welcome to the ultimate {brandName} engines guide. This page provides
+          a comprehensive overview of{" "}
+          <strong>{brandName} replacement engines</strong>, including estimated
+          costs, engine codes, and compatible models. You&apos;ll also find{" "}
+          <strong>troubleshooting guides</strong> for common issues, a breakdown
+          of the{" "}
           <strong>pros and cons of different replacement engine types</strong>,{" "}
           <strong>performance upgrade tips</strong>, and answers to the most
           frequently asked questions.
@@ -37,9 +41,9 @@ const EngineGuide: React.FC<{ brand: string }> = ({
 
       {/* Image */}
       <Image
-      data-aos="fade-down"
+        data-aos="fade-down"
         src={section1Image.img}
-        alt="BMW Dealership with BMW Cars"
+        alt={`${brandName} Dealership with ${brandName} Cars`}
         width={0}
         height={0}
         sizes="100%"

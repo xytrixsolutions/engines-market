@@ -33,7 +33,7 @@ const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
   const { brandName } = data[brand];
   return (
     <Container dark className="my-12" id="engine-problems">
-      <div className="max-w-5xl mx-auto text-center text-charcoal-gray-muted">
+      <div className="max-w-5xl mx-auto text-center text-charcoal-gray-muted" data-aos="fade-down">
         <Heading className="mb-6 text-charcoal-gray-muted">
           Common<Accent>{brandName} Engine Problems</Accent>& How to Fix Them
         </Heading>
@@ -52,10 +52,10 @@ const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
         className="space-y-4"
       >
         {EngineProblems.map((item, idx) => (
-          <GradientBorderWrapper key={item.title} variant="conic">
+          <GradientBorderWrapper key={item.title} variant="conic" >
             <AccordionItem
               value={`item-${idx}`}
-              className="rounded-xl bg-card shadow-sm"
+              className="rounded-xl bg-card shadow-sm" data-aos="fade-down-right"
             >
               <AccordionTrigger className="px-6 py-4 font-semibold text-lg text-royal-blue flex items-center justify-between select-none rounded-t-xl transition-all duration-300 hover:no-underline">
                 <div className="flex items-center gap-3">
@@ -100,8 +100,8 @@ const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
           </GradientBorderWrapper>
         ))}
       </Accordion>
-      <Card className="bg-blue-50 border-blue-200 mt-5">
-        <CardContent>
+      <Card className="bg-blue-50 border-blue-200 mt-5" data-aos="fade-down">
+        <CardContent >
           <div className="flex items-start gap-3">
             <Shield className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
             <div className="min-w-0">

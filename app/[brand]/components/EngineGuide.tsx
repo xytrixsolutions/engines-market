@@ -15,7 +15,7 @@ const EngineGuide: React.FC<{ brand: string }> = ({
   return (
     <Container className="py-16" id="engine-guide">
       {/* Heading and Text */}
-      <div className="text-center text-charcoal-gray space-y-6 mb-14 max-w-6xl mx-auto">
+      <div className="text-center text-charcoal-gray space-y-6 mb-14 max-w-6xl mx-auto" data-aos="fade-down">
         <Heading className="leading-tight text-charcoal-gray">
           The Complete
           <Accent className="mx-3">BMW Engine</Accent>
@@ -23,7 +23,7 @@ const EngineGuide: React.FC<{ brand: string }> = ({
           <Accent>Performance Upgrade</Accent>
         </Heading>
 
-        <Paragraph>
+        <Paragraph >
           Welcome to the ultimate BMW engines guide. This page provides a
           comprehensive overview of <strong>BMW replacement engines</strong>,
           including estimated costs, engine codes, and compatible models.
@@ -37,6 +37,7 @@ const EngineGuide: React.FC<{ brand: string }> = ({
 
       {/* Image */}
       <Image
+      data-aos="fade-down"
         src={section1Image.img}
         alt="BMW Dealership with BMW Cars"
         width={0}

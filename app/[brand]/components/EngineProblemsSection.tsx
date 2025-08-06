@@ -102,7 +102,7 @@ const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
           </GradientBorderWrapper>
         ))}
       </Accordion>
-      <Card className="bg-blue-50 border-blue-200 mt-5" data-aos="fade-down">
+      <Card className="bg-blue-50 border-blue-200 mt-5">
         <CardContent>
           <div className="flex items-start gap-3">
             <Shield className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />

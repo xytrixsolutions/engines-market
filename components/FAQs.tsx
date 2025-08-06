@@ -26,12 +26,12 @@ const FAQSection = ({
   return (
     <Container dark className="py-20 text-charcoal-gray-muted" id="faqs">
       {brandName && (
-        <Heading className="text-center text-charcoal-gray-muted">
+        <Heading className="text-center text-charcoal-gray-muted" data-aos="fade-down">
           Frequently Asked Questions about <Accent>{brandName}</Accent>
         </Heading>
       )}
       {!brandName && (
-        <Heading className="text-center text-charcoal-gray-muted">
+        <Heading className="text-center text-charcoal-gray-muted" data-aos="fade-down">
           Frequently <Accent>Asked Questions</Accent>
         </Heading>
       )}

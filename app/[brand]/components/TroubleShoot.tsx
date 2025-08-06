@@ -85,7 +85,7 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({
               <AccordionContent className="px-6 pb-5 pt-4 transition-all duration-300">
                 <div className="space-y-4">
                   {section.data?.map((item, index) => (
-                    <div key={index} className="space-y-2">
+                    <div key={index} className="space-y-2" >
                       <div className="flex items-center gap-2">
                         <Settings className="h-4 w-4 text-blue-600" />
                         <h4 className="font-bold text-blue-700">

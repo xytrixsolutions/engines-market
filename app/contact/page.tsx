@@ -121,6 +121,19 @@ function VehicleServiceFormContent() {
               <p className="text-charcoal-gray text-xl mb-4">
                 Get back on the road with peace of mind!
               </p>
+              {(() => {
+  const modelParam = searchParams.get("model_name") || searchParams.get("engineCode") || searchParams.get("model");
+  if (!modelParam) return null;
+  const decodedModel = decodeURIComponent(modelParam).replace(/\+/g, " ");
+  return (
+    <div className="text-center mb-4">
+      <p className="text-lg font-semibold text-gray-800">
+        Model:{" "}
+        <span className="font-medium text-neon-red">{decodedModel}</span>
+      </p>
+    </div>
+  );
+})()}
               {vehicleInfo.registration && (
                 <div className="flex flex-col items-center gap-4">
                   {/* ... (vehicle details display) ... */}

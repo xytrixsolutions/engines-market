@@ -1,15 +1,19 @@
 // src/components/AOSInit.tsx
-'use client';
+"use client";
 
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function AOSInit() {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      // duration: 1000,
+      // once: true,
+      duration: 500,
+      easing: "ease-out-quart", // Smooth & fast
       once: true,
+      offset: 50,
     });
   }, []);
 

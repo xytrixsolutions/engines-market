@@ -14,12 +14,20 @@ const FeatureCard = ({
   icon,
   title,
   description,
+  aosDelay = 0,
 }: {
   icon: React.ReactNode;
   title: string;
   description: string;
+  aosDelay?: number;
 }) => (
-  <Card className="bg-white border border-gray-200 hover:shadow-md transition-all duration-300">
+  <Card
+    className="bg-white border border-gray-200 hover:shadow-md transition-all duration-300"
+    data-aos="fade-down"
+    data-aos-delay={aosDelay}
+    data-aos-duration="600"
+    data-aos-once="true"
+  >
     <CardContent className="py-12 text-center">
       {icon}
       <h3 className="font-semibold text-gray-800 mb-2">{title}</h3>
@@ -62,10 +70,22 @@ const trustIndicators = [
 const EngineDealsCTA: React.FC<{ brand: string }> = ({ brand: brand }) => {
   const { brandName } = data[brand];
   return (
-    <Container className="py-16 relative overflow-hidden text-gray-900">
+    <Container
+      className="py-16 relative overflow-hidden text-gray-900"
+      data-aos="fade-down"
+      data-aos-delay="0"
+      data-aos-duration="600"
+      data-aos-once="true"
+    >
       <div className="text-center space-y-8">
         {/* Heading */}
-        <div className="max-w-5xl mx-auto">
+        <div
+          className="max-w-5xl mx-auto"
+          data-aos="fade-down"
+          data-aos-delay="100"
+          data-aos-duration="600"
+          data-aos-once="true"
+        >
           <Heading>
             Compare Prices & Get the Best{" "}
             <span className="text-neon-red">{brandName} Engine Deals</span> Now!
@@ -80,19 +100,32 @@ const EngineDealsCTA: React.FC<{ brand: string }> = ({ brand: brand }) => {
         </div>
 
         {/* Feature Cards */}
-        <div className="grid gap-6 md:grid-cols-3">
+        <div
+          className="grid gap-6 md:grid-cols-3"
+          data-aos="fade-down"
+          data-aos-delay="200"
+          data-aos-duration="600"
+          data-aos-once="true"
+        >
           {features.map(({ Icon, iconClassName, title, description }, i) => (
             <FeatureCard
               key={i}
               icon={<Icon className={iconClassName} />}
               title={title}
               description={description}
+              aosDelay={100 + i * 200}
             />
           ))}
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col gap-4 justify-center items-center">
+        <div
+          className="flex flex-col gap-4 justify-center items-center"
+          data-aos="fade-down"
+          data-aos-delay="500"
+          data-aos-duration="600"
+          data-aos-once="true"
+        >
           {/* First line - Request a Quote button */}
           <Button
             size="lg"
@@ -108,12 +141,16 @@ const EngineDealsCTA: React.FC<{ brand: string }> = ({ brand: brand }) => {
               { icon: Phone, label: "Call Now" },
               { icon: Mail, label: "Email Us" },
               { icon: FaWhatsapp, label: "WhatsApp" },
-            ].map(({ icon: Icon, label }) => (
+            ].map(({ icon: Icon, label }, i) => (
               <Button
                 key={label}
                 variant="outline"
                 size="lg"
                 className="border border-gray-300 text-gray-800 hover:bg-gray-100 font-semibold px-6 py-3 bg-white"
+                data-aos="fade-down"
+                data-aos-delay={600 + i * 100}
+                data-aos-duration="600"
+                data-aos-once="true"
               >
                 <Icon className="mr-2 h-4 w-4" />
                 {label}
@@ -123,10 +160,23 @@ const EngineDealsCTA: React.FC<{ brand: string }> = ({ brand: brand }) => {
         </div>
 
         {/* Trust Indicators */}
-        <div className="pt-8 border-t border-gray-300">
+        <div
+          className="pt-8 border-t border-gray-300"
+          data-aos="fade-down"
+          data-aos-delay="800"
+          data-aos-duration="600"
+          data-aos-once="true"
+        >
           <div className="flex flex-wrap justify-center items-center gap-8 text-gray-700">
             {trustIndicators.map((text, i) => (
-              <div key={i} className="flex items-center gap-2">
+              <div
+                key={i}
+                className="flex items-center gap-2"
+                data-aos="fade-down"
+                data-aos-delay={900 + i * 100}
+                data-aos-duration="600"
+                data-aos-once="true"
+              >
                 <CheckCircle className="h-4 w-4 text-green-600" />
                 <span className="text-sm">{text}</span>
               </div>

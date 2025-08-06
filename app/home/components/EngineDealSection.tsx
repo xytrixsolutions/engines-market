@@ -27,9 +27,15 @@ const EngineDealSection = () => {
   }, [images.length]);
 
   return (
-    <Container className="grid md:grid-cols-2 items-center md:gap-8" id="best-engine">
+    <Container
+      className="grid md:grid-cols-2 items-center md:gap-8"
+      id="best-engine"
+    >
       {/* Text Section (comes first on mobile, second on desktop) */}
-      <div className="order-1 md:order-2 text-center md:text-left space-y-4">
+      <div
+        className="order-1 md:order-2 text-center md:text-left space-y-4"
+        data-aos="fade-left"
+      >
         <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray">
           Find the Best Engine Deals with{" "}
           <span className="text-neon-red">Engine Market</span>
@@ -44,7 +50,10 @@ const EngineDealSection = () => {
       </div>
 
       {/* Image Section (comes second on mobile, first on desktop) */}
-      <div className="order-2 md:order-1 flex justify-center lg:justify-start mt-8 md:mt-0">
+      <div
+        className="order-2 md:order-1 flex justify-center lg:justify-start mt-8 md:mt-0"
+        data-aos="fade-right"
+      >
         <div className="relative w-[300px] h-[300px] lg:w-[500px] lg:h-[500px]">
           <Image
             key={images[currentIndex].src}

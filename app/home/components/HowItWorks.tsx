@@ -3,9 +3,16 @@ import Image from "next/image";
 
 const HowItWorks = () => {
   return (
-    <Container dark className="flex flex-col-reverse md:flex-row items-center justify-between" id="how-it-works">
+    <Container
+      dark
+      className="flex flex-col-reverse md:flex-row items-center justify-between"
+      id="how-it-works"
+    >
       {/* Right Side (Image) */}
-      <div className="md:w-1/2 flex justify-start mb-10 md:mb-0 max-md:mt-10">
+      <div
+        data-aos="fade-right"
+        className="md:w-1/2 flex justify-start mb-10 md:mb-0 max-md:mt-10"
+      >
         <Image
           src="/Home/image-2.png"
           alt="Engine Market"
@@ -16,10 +23,14 @@ const HowItWorks = () => {
       </div>
 
       {/* Left Side (Text) */}
-      <div className="md:w-1/2 w-full flex justify-end md:pb-8">
+      <div
+        data-aos="fade-left"
+        className="md:w-1/2 w-full flex justify-end md:pb-8"
+      >
         <div className="w-full md:w-[90%] text-left">
           <h2 className="text-3xl  md:text-4xl font-bold text-charcoal-gray-muted mb-5">
-            How It Works - <span className="text-neon-red">Simple & Straightforward</span>
+            How It Works -{" "}
+            <span className="text-neon-red">Simple & Straightforward</span>
           </h2>
           <p className="text-lg text-gray-300 mb-6">
             Get Multiple Quotes Within Hours!

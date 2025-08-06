@@ -86,7 +86,13 @@ const brandLogos = [
     width: 150,
     height: 80,
   },
-  { link: "/honda", name: "Honda", src: "/brands/honda.png", width: 95, height: 95 },
+  {
+    link: "/honda",
+    name: "Honda",
+    src: "/brands/honda.png",
+    width: 95,
+    height: 95,
+  },
   {
     link: "/hyundai",
     name: "Hyundai",
@@ -203,22 +209,31 @@ const brandLogos = [
 
 export default function Hero3() {
   const [visibleCount, setVisibleCount] = useState(5);
+  const [isExpanded, setIsExpanded] = useState(false);
 
-  const handleLoadMore = () => {
-    setVisibleCount(brandLogos.length); // show all logos
+  const handleToggle = () => {
+    if (isExpanded) {
+      setVisibleCount(5);
+    } else {
+      setVisibleCount(brandLogos.length);
+    }
+    setIsExpanded(!isExpanded);
   };
 
   return (
-    <Container dark id="explore-by-manufacturer" data-aos="fade-down">
+    <Container
+      dark
+      id="explore-by-manufacturer"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+      className="overflow-hidden"
+    >
       <div className="items-center mb-12 text-center flex flex-col justify-center">
-        {/* Title */}
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray-muted leading-tight mb-5 text-center">
             Explore By <span className="text-neon-red">Manufacturer</span>
           </h2>
         </div>
-
-        {/* Description */}
         <div>
           <p className="text-gray-300 text-lg leading-relaxed max-w-6xl mx-auto">
             Find the perfect engine for your car! Choose your manufacturer below
@@ -229,11 +244,15 @@ export default function Hero3() {
       </div>
 
       {/* Manufacturer Logos */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+      <div
+        className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12 transition-all duration-1000 overflow-hidden ${
+          isExpanded ? "max-h-[2000px]" : "max-h-80"
+        }`}
+      >
         {brandLogos.slice(0, visibleCount).map((logo, index) => (
           <div
             key={index}
-            className="mx-auto flex items-center justify-center"
+            className="mx-auto flex items-center justify-center transition-all duration-1000"
             style={{
               width: `${logo.width + 20}px`,
               height: `${logo.height + 20}px`,
@@ -245,23 +264,21 @@ export default function Hero3() {
                 alt={logo.name}
                 width={logo.width}
                 height={logo.height}
-                className="object-contain"
+                className="object-contain transition-all"
               />
             </Link>
           </div>
         ))}
       </div>
 
-      {/* Load More Button */}
-      {visibleCount < brandLogos.length && (
-        <div className="flex items-center justify-center">
-          <div className="flex-1 h-px neon-red-gradient"></div>
-          <Button className="before:bg-charcoal-gray" onClick={handleLoadMore}>
-            Load More
-          </Button>
-          <div className="flex-1 h-px neon-red-gradient"></div>
-        </div>
-      )}
+      {/* Load More / Show Less Button */}
+      <div className="flex items-center justify-center">
+        <div className="flex-1 h-px neon-red-gradient"></div>
+        <Button className="before:bg-charcoal-gray" onClick={handleToggle}>
+          {isExpanded ? "Show Less" : "Load More"}
+        </Button>
+        <div className="flex-1 h-px neon-red-gradient"></div>
+      </div>
     </Container>
   );
 }

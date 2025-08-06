@@ -214,7 +214,7 @@ export const data: BrandsData = {
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/bmw/engine-guide.png",
+      img: "/engine-guide-banners/engine-guide.png",
       alt: "BMW rear view",
     },
     section4: {

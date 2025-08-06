@@ -37,8 +37,6 @@ export interface Data {
     img: string;
     alt: string;
   };
-  tableOneBottomParagraph: string;
-  tableFourBottomParagraph: string;
   section4: {
     mainParagraph?: string;
     EngineProblems: Array<{
@@ -219,10 +217,6 @@ export const data: BrandsData = {
       img: "/bmw/engine-guide.png",
       alt: "BMW rear view",
     },
-    tableOneBottomParagraph:
-      "This table includes some of the most popular and in-demand BMW models, focusing on their diverse engine options. If you need more detailed information on any specific model, feel free to Contact Us!",
-    tableFourBottomParagraph:
-      "These estimates provide a general idea of the costs involved in replacing a BMW engine. Prices can vary based on location, availability of parts, and the specific service provider.",
     section4: {
       mainParagraph:
         "BMW engines are renowned for their performance and engineering excellence, but like any complex machinery, they can encounter issues. Here are some of the most common problems found in BMW engines, along with solutions and preventive measures:",
@@ -1208,7 +1202,7 @@ export const data: BrandsData = {
       title:
         "Audi Engines for Sale | New, Used & Reconditioned Audi Engines – Lowest Prices!",
       description:
-        "Looking for a high-quality Audi engine? We offer new, used, and reconditioned Audi engines at the lowest prices, covering all models. Get expert guidance, a comprehensive engine compatibility chart, and troubleshooting support. Compare prices and find the best Audi engine deals today",
+        "Looking for a high-quality Audi engine? We offer new, used, and reconditioned Audi engines at the lowest prices, covering all models. Get expert guidance, a comprehensive engine compatibility chart, and troubleshooting support. Compare prices and find the best Audi engine deals today!",
       keywords: [
         "Audi engines for sale",
         "buy Audi engine",
@@ -1249,10 +1243,6 @@ export const data: BrandsData = {
       img: "/engine-guide-banners/image 1.png",
       alt: "BMW rear view",
     },
-    tableOneBottomParagraph:
-      "This table includes some of the most popular and in-demand Audi models, focusing on their diverse engine options. If you need more detailed information on any specific model, feel free to ask!",
-    tableFourBottomParagraph:
-      "These estimates provide a general idea of the costs involved in replacing a BMW engine. Prices can vary based on location, availability of parts, and the specific service provider.",
     section4: {
       mainParagraph:
         "BMW engin are renowned for their performance and engineering excellence, but like any complex machinery, they can encounter issues. Here are some of the most common problems found in BMW engines, along with solutions and preventive measures:",
@@ -1447,7 +1437,7 @@ export const data: BrandsData = {
           engine_options: "4.0L TFSI",
         },
       ],
-      
+
       engine_codes: [
         {
           engineCode: "CAGA",
@@ -1603,7 +1593,7 @@ export const data: BrandsData = {
           productionYears: "2015-2018",
         },
       ],
-      
+
       models_engines: [
         {
           engineCode: "CZDA",
@@ -1626,7 +1616,7 @@ export const data: BrandsData = {
           compatibleModels: ["R8"],
         },
       ],
-      
+
       replacement_costs: [
         {
           image: "/bmw/bmw-1-series.png",
@@ -1719,7 +1709,6 @@ export const data: BrandsData = {
           estimatedCost: "£6,500 - £10,000",
         },
       ],
-      
     },
     section7: [
       {
@@ -1731,10 +1720,7 @@ export const data: BrandsData = {
           "100% reliability with a factory warranty",
           "Best performance & longevity",
         ],
-        cons: [
-          "Higher cost",
-          "Limited availability for older models",
-        ],
+        cons: ["Higher cost", "Limited availability for older models"],
       },
       {
         title: "Used Audi Engines",
@@ -1760,12 +1746,9 @@ export const data: BrandsData = {
           "More reliable than used engines",
           "Balanced cost vs. performance",
         ],
-        cons: [
-          "Slightly more expensive than used engines",
-        ],
+        cons: ["Slightly more expensive than used engines"],
       },
     ],
-    
 
     section8: {
       EngineProblems: [
@@ -2142,8 +2125,7 @@ export const data: BrandsData = {
         answer:
           "Check the mileage, service history, compression test results, and warranty options to ensure the engine is in good shape.",
       },
-    ]
-    
+    ],
   },
   alfaromeo: {
     metadata: {
@@ -2151,19 +2133,18 @@ export const data: BrandsData = {
         "Affordable Alfa Romeo Engines | New, Used &amp; Reconditioned | EnginesMarket.co.uk",
       description:
         "Discover unbeatable prices on new, used, and reconditioned Alfa Romeo engines at EnginesMarket.co.uk. Compare quotes from multiple sellers and save time and money on high-quality replacement engines for your Alfa Romeo. Request a quote today!",
-        keywords: [
-          "Alfa Romeo engines",
-          "Reconditioned Alfa Romeo engines",
-          "Used Alfa Romeo engines",
-          "Replacement Alfa Romeo engines",
-          "Best Alfa Romeo engine prices",
-          "Alfa Romeo engine quotes",
-          "Affordable Alfa Romeo engines",
-          "Alfa Romeo engine replacement",
-          "Buy Alfa Romeo engines",
-          "Alfa Romeo engine deals",
-        ],
-        
+      keywords: [
+        "Alfa Romeo engines",
+        "Reconditioned Alfa Romeo engines",
+        "Used Alfa Romeo engines",
+        "Replacement Alfa Romeo engines",
+        "Best Alfa Romeo engine prices",
+        "Alfa Romeo engine quotes",
+        "Affordable Alfa Romeo engines",
+        "Alfa Romeo engine replacement",
+        "Buy Alfa Romeo engines",
+        "Alfa Romeo engine deals",
+      ],
     },
     brandName: "Alfa Romeo",
     carImages: [
@@ -2188,71 +2169,67 @@ export const data: BrandsData = {
       img: "/bmw/engine-guide.png",
       alt: "BMW rear view",
     },
-    tableOneBottomParagraph:
-      "This table includes some of the most popular and in-demand BMW models, focusing on their diverse engine options. If you need more detailed information on any specific model, feel free to Contact Us!",
-    tableFourBottomParagraph:
-      "These estimates provide a general idea of the costs involved in replacing a BMW engine. Prices can vary based on location, availability of parts, and the specific service provider.",
     section4: {
       mainParagraph:
         "Alfa Romeo engines are known for their performance and distinctive Italian engineering, but like any other brand, they have their share of common issues. Here are some of the most frequent problems found in Alfa Romeo engines, along with their solutions and preventive measures:",
-        EngineProblems: [
-          {
-            title: "Electrical Problems",
-            icon: <Zap className="h-5 w-5" />,
-            problem:
-              "Electrical problems are one of the most notorious issues in Alfa Romeo engines, particularly in models like the Giulia. These can include random warning lights, battery drainage, and issues with the stop-start system.",
-            solution:
-              "Regularly check electrical connections and battery health. Ensure wiring is intact and free from corrosion. Use an OBD-II scanner to diagnose and clear error codes.",
-            prevention:
-              "Perform regular maintenance and apply timely software updates. Keep battery terminals clean and ensure a good ground connection.",
-            severity: "Common",
-          },
-          {
-            title: "Engine Misfires",
-            icon: <AlertTriangle className="h-5 w-5" />,
-            problem:
-              "Misfires are common in Alfa Romeo turbocharged engines and can lead to overheating of the catalytic converter and potential engine damage.",
-            solution:
-              "Replace faulty spark plugs and ignition coils. Clean or replace fuel injectors if needed. Inspect engine timing and fuel system if misfires persist.",
-            prevention:
-              "Replace spark plugs and ignition components according to manufacturer guidelines. Use high-quality fuel and perform periodic fuel system cleaning.",
-            severity: "Moderate",
-          },
-          {
-            title: "Fuel Leaks",
-            icon: <Fuel className="h-5 w-5" />,
-            problem:
-              "Fuel leaks in older Alfa Romeo models pose a fire hazard, often due to aging fuel lines and connections.",
-            solution:
-              "Inspect fuel lines and connections for damage or wear. Replace cracked or leaking components immediately and check the fuel tank and injectors.",
-            prevention:
-              "Conduct regular inspections of the fuel system. Use fuel system cleaners and additives to help maintain fuel line integrity.",
-            severity: "Critical",
-          },
-          {
-            title: "ABS Failures",
-            icon: <Activity className="h-5 w-5" />,
-            problem:
-              "ABS (Anti-Lock Brake System) failures have been reported in some Alfa Romeo models, which may reduce braking power and increase safety risks.",
-            solution:
-              "Replace the ABS module and hydraulic control unit if faulty. Maintain proper brake fluid levels and ensure it's clean.",
-            prevention:
-              "Regularly maintain the brake system, including fluid flushes and component inspections. Keep brake parts clean and free from debris.",
-            severity: "Moderate",
-          },
-          {
-            title: "Turbocharger Issues",
-            icon: <RotateCcw className="h-5 w-5" />,
-            problem:
-              "Turbochargers in Alfa Romeo engines may fail, leading to poor performance and higher emissions.",
-            solution:
-              "Inspect the turbo for wear or damage and replace it if necessary. Make sure the oil supply is clean and sufficient.",
-            prevention:
-              "Use high-quality synthetic oil and change it regularly. Avoid aggressive driving and allow the engine to cool down after intense runs.",
-            severity: "Common",
-          },
-        ],
-        
+      EngineProblems: [
+        {
+          title: "Electrical Problems",
+          icon: <Zap className="h-5 w-5" />,
+          problem:
+            "Electrical problems are one of the most notorious issues in Alfa Romeo engines, particularly in models like the Giulia. These can include random warning lights, battery drainage, and issues with the stop-start system.",
+          solution:
+            "Regularly check electrical connections and battery health. Ensure wiring is intact and free from corrosion. Use an OBD-II scanner to diagnose and clear error codes.",
+          prevention:
+            "Perform regular maintenance and apply timely software updates. Keep battery terminals clean and ensure a good ground connection.",
+          severity: "Common",
+        },
+        {
+          title: "Engine Misfires",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          problem:
+            "Misfires are common in Alfa Romeo turbocharged engines and can lead to overheating of the catalytic converter and potential engine damage.",
+          solution:
+            "Replace faulty spark plugs and ignition coils. Clean or replace fuel injectors if needed. Inspect engine timing and fuel system if misfires persist.",
+          prevention:
+            "Replace spark plugs and ignition components according to manufacturer guidelines. Use high-quality fuel and perform periodic fuel system cleaning.",
+          severity: "Moderate",
+        },
+        {
+          title: "Fuel Leaks",
+          icon: <Fuel className="h-5 w-5" />,
+          problem:
+            "Fuel leaks in older Alfa Romeo models pose a fire hazard, often due to aging fuel lines and connections.",
+          solution:
+            "Inspect fuel lines and connections for damage or wear. Replace cracked or leaking components immediately and check the fuel tank and injectors.",
+          prevention:
+            "Conduct regular inspections of the fuel system. Use fuel system cleaners and additives to help maintain fuel line integrity.",
+          severity: "Critical",
+        },
+        {
+          title: "ABS Failures",
+          icon: <Activity className="h-5 w-5" />,
+          problem:
+            "ABS (Anti-Lock Brake System) failures have been reported in some Alfa Romeo models, which may reduce braking power and increase safety risks.",
+          solution:
+            "Replace the ABS module and hydraulic control unit if faulty. Maintain proper brake fluid levels and ensure it's clean.",
+          prevention:
+            "Regularly maintain the brake system, including fluid flushes and component inspections. Keep brake parts clean and free from debris.",
+          severity: "Moderate",
+        },
+        {
+          title: "Turbocharger Issues",
+          icon: <RotateCcw className="h-5 w-5" />,
+          problem:
+            "Turbochargers in Alfa Romeo engines may fail, leading to poor performance and higher emissions.",
+          solution:
+            "Inspect the turbo for wear or damage and replace it if necessary. Make sure the oil supply is clean and sufficient.",
+          prevention:
+            "Use high-quality synthetic oil and change it regularly. Avoid aggressive driving and allow the engine to cool down after intense runs.",
+          severity: "Common",
+        },
+      ],
+
       engineReliabilityAndPerformance: [
         {
           reliability: [
@@ -2658,10 +2635,7 @@ export const data: BrandsData = {
           "100% reliability with a factory warranty",
           "Best performance & longevity",
         ],
-        cons: [
-          "Higher cost",
-          "Limited availability for older models",
-        ],
+        cons: ["Higher cost", "Limited availability for older models"],
       },
       {
         title: "Used Alfa Romeo Engines",
@@ -2687,12 +2661,9 @@ export const data: BrandsData = {
           "More reliable than used engines",
           "Balanced cost vs. performance",
         ],
-        cons: [
-          "Slightly more expensive than used engines",
-        ],
+        cons: ["Slightly more expensive than used engines"],
       },
     ],
-    
 
     section8: {
       EngineProblems: [
@@ -2771,7 +2742,7 @@ export const data: BrandsData = {
           ],
         },
       ],
-      
+
       maintenanceTips: [
         {
           icon: "Lightbulb",
@@ -2834,8 +2805,7 @@ export const data: BrandsData = {
               icon: <Wind className="h-4 w-4" />,
               description:
                 "Replacing the stock air intake with a system that draws cooler air from outside the engine bay.",
-              benefits:
-                "Increases power by improving air flow to the engine.",
+              benefits: "Increases power by improving air flow to the engine.",
               considerations:
                 "Regular maintenance of the air filter is required to maintain performance.",
             },
@@ -2861,7 +2831,7 @@ export const data: BrandsData = {
             },
           ],
         },
-        
+
         {
           id: "tuning-stages",
           title: "Tuning Upgrade: Stage 1-3",
@@ -2992,7 +2962,8 @@ export const data: BrandsData = {
           "Simply enter your vehicle details and engine requirements on our platform, and we will connect you with multiple sellers who provide competitive quotes, helping you find the best deal.",
       },
       {
-        question: "What types of Alfa Romeo engines can I find on EnginesMarket.co.uk?",
+        question:
+          "What types of Alfa Romeo engines can I find on EnginesMarket.co.uk?",
         answer:
           "You can find a wide range of Alfa Romeo engines, including reconditioned, used, and replacement engines for various models.",
       },
@@ -3002,7 +2973,8 @@ export const data: BrandsData = {
           "To request a quote, visit our website, enter your vehicle details and engine requirements, and submit the form. You will receive quotes from multiple sellers, allowing you to compare and choose the best option.",
       },
       {
-        question: "Why should I use EnginesMarket.co.uk for my engine replacement needs?",
+        question:
+          "Why should I use EnginesMarket.co.uk for my engine replacement needs?",
         answer:
           "EnginesMarket.co.uk offers a convenient way to compare prices from multiple sellers, ensuring you get the best deal on high-quality engines. Our platform saves you time and money while providing reliable options.",
       },
@@ -3039,7 +3011,8 @@ export const data: BrandsData = {
         ],
       },
       {
-        question: "What is the difference between a reconditioned and a used Alfa Romeo engine?",
+        question:
+          "What is the difference between a reconditioned and a used Alfa Romeo engine?",
         answer:
           "A reconditioned engine has been rebuilt to meet original specifications, while a used engine is typically sold as-is with no major repairs.",
       },
@@ -3084,7 +3057,8 @@ export const data: BrandsData = {
           "It is best to use the oil recommended by the manufacturer, typically a high-quality synthetic oil.",
       },
       {
-        question: "How do I troubleshoot a check engine light on my Alfa Romeo?",
+        question:
+          "How do I troubleshoot a check engine light on my Alfa Romeo?",
         answer:
           "Use an OBD-II scanner to read the fault codes and diagnose the issue. Common causes include a loose gas cap, faulty oxygen sensor, or catalytic converter issues.",
       },

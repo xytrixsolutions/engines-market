@@ -4,7 +4,6 @@ import { FiArrowUpRight, FiMenu, FiX } from "react-icons/fi";
 import Image from "next/image";
 import { useState } from "react";
 import Button from "./Button";
-import { submitForm } from "@/app/actions/submitForm";
 
 // Reusable navigation link component
 const NavLink = ({

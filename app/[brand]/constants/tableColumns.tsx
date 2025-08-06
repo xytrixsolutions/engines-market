@@ -9,14 +9,6 @@ import {
 } from "../types/engine";
 import QuoteButton from "@/components/QuoteButton";
 
-const sampleImage = (
-  <img
-    src="/bmw/bmw.png"
-    alt="Sample"
-    className="w-12 h-12 object-contain rounded-md border border-border bg-white"
-  />
-);
-
 export const MODEL_COLUMNS: Column<Model>[] = [
   {
     key: "model",
@@ -62,7 +54,7 @@ export const MODEL_ENGINE_COLUMNS: Column<ModelEngine>[] = [
   {
     key: "compatibleModels",
     label: "Compatible Models",
-    render: (value, row) =>
+    render: (value, _) =>
       Array.isArray(value) ? value.join(", ") : String(value),
   },
   {

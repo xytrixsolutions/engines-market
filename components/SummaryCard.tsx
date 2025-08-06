@@ -1,10 +1,12 @@
 import React from "react";
 import { HelpCircle, CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { JSX } from "react/jsx-dev-runtime";
 
 interface SummaryCardProps {
   title?: string;
   content: string;
+  contact?: JSX.Element;
   variant?: "blue" | "card" | "green" | "performance";
   icon?: React.ReactNode;
   className?: string;
@@ -13,6 +15,7 @@ interface SummaryCardProps {
 const SummaryCard: React.FC<SummaryCardProps> = ({
   title = "Need Help Choosing?",
   content,
+  contact,
   variant = "blue",
   icon,
   className = "",
@@ -94,7 +97,10 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
             {cardIcon}
             <div>
               <h3 className={textStyling.title}>{title}</h3>
-              <p className={textStyling.content}>{content}</p>
+              <p className={textStyling.content}>
+                {content}
+                {contact && contact}
+              </p>
             </div>
           </div>
         </CardContent>

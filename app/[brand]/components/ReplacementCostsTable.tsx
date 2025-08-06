@@ -10,6 +10,7 @@ import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
 import Button from "@/components/Button";
 import SummaryCard from "@/components/SummaryCard";
+import Accent from "@/components/Accent";
 
 const ReplacementCostsTable: React.FC<{ brand: string }> = ({
   brand: brand,
@@ -24,7 +25,7 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({
     e.preventDefault();
     if (registration) {
       router.push(
-        `/contact?reg=${encodeURIComponent(registration)}&source=form`
+        `/contact?reg=${encodeURIComponent(registration)}&source=form`,
       );
     }
   };
@@ -34,16 +35,14 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({
       {/* Heading and Description */}
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold mb-3 text-charcoal-gray">
-          Average <span className="text-neon-red">Engine Replacement</span> Cost
-          Estimates
+          Estimated <Accent>Engines Replacement</Accent> Costs for {brandName}{" "}
+          Models
         </h2>
         <p className="text-lg text-muted-foreground mb-2">
-          Get an idea of what it costs to replace your engine based on your
-          vehicle model and engine type. This table shows estimated price ranges
-          for used, reconditioned, and refurbished engines, with or without
-          fitting included. While actual quotes may vary, this section helps set
-          expectations. Request tailored engine quotes directly from this table
-          based on your needs.
+          Below is a table with estimated replacement costs for various{" "}
+          {brandName} models and engine types, replacing an engine can vary
+          significantly based on the model and engine type. Below is a rough
+          estimate of the replacement costs, including parts and labour:
         </p>
       </div>
       {/* Table */}
@@ -55,7 +54,7 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({
       <SummaryCard
         variant="card"
         title="Need Help Choosing?"
-        content={`Engine replacement costs in the UK can vary depending on the engine type, condition (used vs. reconditioned), and whether fitting is included. This price table offers real-world averages so you know what to expect before getting quotes. Customers often search for phrases like “engine replacement cost UK” or “how much is a reconditioned engine for ${brandName}” and this section gives you a solid benchmark. For accurate pricing based on your specific vehicle and preferred fitting option, request a tailored quote directly from the table above.`}
+        content={`These estimates provide a general idea of the costs involved in replacing a ${brandName} engine. Prices can vary based on location, availability of parts, and the specific service provider.`}
       />
       {/* CTA Section - Updated to Match Screenshot */}
       <div

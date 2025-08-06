@@ -86,12 +86,13 @@ export default function TestimonialSection() {
   const visibleTestimonials = getVisibleTestimonials();
 
   return (
-    <Container id="customer-testimonials">
+    <Container id="customer-testimonials" data-aos="fade-right">
       {/* Header */}
       <div className="mb-12">
         <div className="flex items-center gap-3 mb-5">
           <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray">
-            Customer <span className="text-neon-red">Testimonials</span> & <span className="text-neon-red">Trust Signals</span>
+            Customer <span className="text-neon-red">Testimonials</span> &{" "}
+            <span className="text-neon-red">Trust Signals</span>
           </h2>
           <div className="flex">
             <Image

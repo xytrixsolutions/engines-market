@@ -39,26 +39,36 @@ const badges: Badge[] = [
 const TrustBadges = () => {
   return (
     <Container dark id="why-choose-us">
-      <h2 className="text-3xl font-bold text-center text-charcoal-gray-muted mb-14">
+      {/* Section Heading */}
+      <h2
+        className="text-3xl font-bold text-center text-charcoal-gray-muted mb-10"
+        data-aos="fade-down"
+        data-aos-delay="50"
+        data-aos-duration="500"
+        data-aos-once="true"
+      >
         Why <span className="text-neon-red">Choose</span> Us?
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+      {/* Badges Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {badges.map((badge, index) => (
           <div
             key={index}
-            className="relative bg-white py-14 px-auto text-center rounded-xl shadow-md hover:shadow-lg transition"
-            style={{
-              boxShadow: "0 0 100px rgba(255, 255, 255, 0.35)", // <- even on all sides
-              borderRadius: "1.5rem",
-            }}
+            className="relative bg-white py-14 text-center rounded-xl shadow-md hover:shadow-lg transition-transform duration-300"
+            data-aos="fade-right"
+            data-aos-delay={100 + index * 100} // Faster: 50ms, 90ms, 130ms, 170ms
+            data-aos-duration="500" // Snappier animation
+            data-aos-once="true"
           >
-            {/* Icon circle */}
+            {/* Icon Circle */}
             <div className="absolute -top-7 left-1/2 transform -translate-x-1/2">
               <div className="bg-black rounded-full w-22 h-22 flex items-center justify-center">
                 {badge.icon}
               </div>
             </div>
 
+            {/* Text Content */}
             <h3 className="text-lg font-semibold text-gray-800 mt-8">
               {badge.title}
             </h3>

@@ -3,9 +3,15 @@ import Image from "next/image";
 
 const WhyChoose = () => {
   return (
-    <Container className="flex flex-col md:flex-row items-center justify-between" id="why-choose-engine-market">
+    <Container
+      className="flex flex-col md:flex-row items-center justify-between"
+      id="why-choose-engine-market"
+    >
       {/* Left Side (Text) */}
-      <div className="w-full md:w-1/2 flex justify-center lg:justify-start mb-10 md:mb-0">
+      <div
+        data-aos="fade-right"
+        className="w-full md:w-1/2 flex justify-center lg:justify-start mb-10 md:mb-0"
+      >
         <div className="w-full md:w-[90%] text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-4">
             Why Choose <span className="text-neon-red">Engine Market</span>?
@@ -39,7 +45,10 @@ const WhyChoose = () => {
       </div>
 
       {/* Right Side (Image) */}
-      <div className="w-full md:w-1/2 flex justify-center lg:justify-end">
+      <div
+        data-aos="fade-left"
+        className="w-full md:w-1/2 flex justify-center lg:justify-end"
+      >
         <Image
           src="/Home/image-2.png"
           alt="Engine Market"

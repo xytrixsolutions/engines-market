@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import EngineTable from "./EngineTable";
 import { data } from "../data/data";
 import {
@@ -18,6 +18,7 @@ import { Button } from "@/components/ui/button";
 import { Column } from "../types/engine";
 import Container from "@/components/Container";
 import SummaryCard from "@/components/SummaryCard";
+import Link from "next/link";
 
 const TABLE_OPTIONS = [
   { key: "models", label: "Model Names" },
@@ -34,46 +35,43 @@ const TABLE_COLUMNS: Record<TableKey, Column<any>[]> = {
   models_engines: MODEL_ENGINE_COLUMNS,
 };
 
-// Table meta info for headings, descriptions, and notes
-const TABLE_META: Record<
-  TableKey,
-  { title: string; description: string; note: string }
-> = {
-  models: {
-    title: "Browse Engines by Vehicle Model",
-    description:
-      "Use this table to find compatible engine options by selecting your vehicle’s make and model. You can view available engine sizes of a each model such as 1.5L petrol or 2.0L diesel. Simply click the “Request Quote” button next to engine type you’re looking for to receive multiple engine replacement quotes from trusted UK suppliers.",
-    note: "Looking to find the right replacement engine for your vehicle? This model-based engine quote table helps you quickly compare available engine sizes across different series and generations. Whether you drive a hatchback, saloon, SUV, or coupe, choosing your model allows you to view compatible petrol and diesel engines instantly. This is one of the easiest ways to request engine quotes without needing to know technical specs or engine codes. All engines listed are sourced from trusted UK suppliers with warranty options available.",
-  },
-  engine_codes: {
-    title: "Search Engines by Technical Specification (Engine Code)",
-    description:
-      "Looking for a specific engine code? This section lists engines by their technical specifications: including engine size, fuel type, turbocharger status, horsepower, torque, and production years. Ideal for those who already know their engine codes, this table lets you compare engines at a glance and request a quote directly based on exact specs.",
-    note: "If you know your vehicle’s engine code or you’re replacing a like-for-like unit, this section is ideal. Searching by engine code gives you access to detailed technical specs - such as fuel type, power output, torque, and turbo configuration. It’s perfect for garages, mechanics, or anyone comparing engines across production years. Entering or matching your engine code ensures the right compatibility, and you can get quotes instantly for used, reconditioned, or refurbished options. ",
-  },
-  models_engines: {
-    title: "Engine & Model Compatibility Chart",
-    description:
-      "Cross-reference engine codes with compatible vehicle models using this chart. If you already have an engine code and want to confirm which models it fits, this tool will help. You’ll find compatibility details across various series and model years. Once you confirm fitment, you can instantly request quotes from our verified engine suppliers.",
-    note: "Not all engines fit only one model, many are compatible with multiple vehicles across different years or series. This compatibility chart helps you understand which models can share the same engine type, making it easier to explore cost-effective or alternative replacements. If you’re wondering “what other cars use the same engine as mine?”, this is the place to look. Knowing engine-to-model compatibility is also useful when buying used or reconditioned engines, especially if your original part is discontinued or rare.",
-  },
-};
-
-const EngineTablesTabs: React.FC<{ brand: string }> = ({ brand }) => {
+const EngineTablesTabs = ({ brand }: { brand: string }) => {
   const [tableType, setTableType] = useState<TableKey>("models");
   const columns = TABLE_COLUMNS[tableType];
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const tableData: any[] = data[brand].engineData[tableType];
 
-  if (!columns) return null; // Guard against undefined columns
+  const tableData = data[brand].engineData[tableType];
+  const { brandName } = data[brand];
+
+  const TABLE_META = useMemo(() => {
+    return {
+      models: {
+        title: "Browse Engines by Vehicle Model",
+        description: `Here’s a list of ${brandName}’s most popular car models and their compatible engine types, you can request a price quote for your car model, by clicking on Request Quote button next to it.`,
+        note: `This table includes some of the most popular and in-demand ${brandName} models, focusing on their diverse engine options. While we cover all ${brandName} models, these are the ones most frequently sought-after. If you need more detailed information on any specific model,`,
+      },
+      engine_codes: {
+        title: "Search Engines by Technical Specification (Engine Code)",
+        description: `Below is a detailed table of ${brandName} engine specifications, covering key parameters such as engine code, displacement, fuel type, turbo status, horsepower, torque, and production years, if you know your vehicle’s engine code, you can directly request a quote from this list.`,
+        note: `his table provides a detailed overview of popular ${brandName} engines, ensuring you have the necessary information to make informed decisions about your engine needs. If you need further assistance,`,
+      },
+      models_engines: {
+        title: "Engine & Model Compatibility Chart",
+        description: `Here’s a compatibility chart for ${brandName}’s Engine Codes & Car Models, an engine could potentially be compatible with more than a dozen car models, this table serves as exemplary purpose only.`,
+        note: `This chart highlights the compatibility of various ${brandName} engines with popular models, ensuring you can find the right engine for your vehicle with ease.`,
+      },
+    };
+  }, [brandName]);
+  if (!columns) return null;
 
   const meta = TABLE_META[tableType];
 
   return (
     <Container className="mt-10 px-4 md:px-0" id="tables">
-      {/* Mobile Dropdown Switcher */}
+      {/* Mobile Dropdown */}
       <div className="mb-6 flex items-center space-x- lg:hidden transition-all duration-300">
-        <label className="text-sm font-medium text-gray-700 w-full">FIND YOUR ENGINE BY:</label>
+        <label className="text-sm font-medium text-gray-700 w-full">
+          FIND YOUR ENGINE BY:
+        </label>
         <Select
           value={tableType}
           onValueChange={(v) => setTableType(v as TableKey)}
@@ -94,7 +92,8 @@ const EngineTablesTabs: React.FC<{ brand: string }> = ({ brand }) => {
           </SelectContent>
         </Select>
       </div>
-      {/* Desktop Tab Switcher */}
+
+      {/* Desktop Tabs */}
       <div className="hidden lg:flex space-x-2 mb-6 justify-center">
         {TABLE_OPTIONS.map((opt) => (
           <Button
@@ -113,7 +112,8 @@ const EngineTablesTabs: React.FC<{ brand: string }> = ({ brand }) => {
           </Button>
         ))}
       </div>
-      {/* Table Meta Heading & Description */}
+
+      {/* Table Meta */}
       <div className="text-center mb-8 mt-10">
         <h2 className="text-2xl md:text-3xl font-bold mb-3 text-neon-red">
           {meta.title}
@@ -122,16 +122,29 @@ const EngineTablesTabs: React.FC<{ brand: string }> = ({ brand }) => {
           {meta.description}
         </p>
       </div>
+
       {/* Table */}
       <div
-  key={tableType}
-  className="transition-all duration-500 ease-in-out opacity-0 animate-fadeIn"
->
-  <EngineTable columns={columns} data={tableData} tableType={tableType} />
-</div>
+        key={tableType}
+        className="transition-all duration-500 ease-in-out opacity-0 animate-fadeIn"
+      >
+        <EngineTable columns={columns} data={tableData} tableType={tableType} />
+      </div>
 
-      {/* Table Note */}
-      <SummaryCard variant="card" content={meta.note} />
+      {/* Note */}
+      <SummaryCard
+        variant="card"
+        content={meta.note}
+        contact={
+          <>
+            feel free to{" "}
+            <Link href={"/contact"} className="font-bold">
+              Contact
+            </Link>{" "}
+            Us!
+          </>
+        }
+      />
     </Container>
   );
 };

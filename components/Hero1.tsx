@@ -1,20 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { useEffect, useState, FC } from "react";
+import { useEffect, useState } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import Image from "next/image";
 import Container from "./Container";
 import Button from "./Button";
-import { submitForm } from "@/app/actions/submitForm";
 import { useRouter } from "next/navigation";
+import { JSX } from "react/jsx-dev-runtime";
 
-interface Hero1Props {
+const Hero1 = ({
+  carImages,
+  carModelNames,
+  brandName,
+}: {
   carImages: string[];
   carModelNames: string[];
-}
-
-const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
+  brandName?: string;
+}): JSX.Element => {
   const router = useRouter();
   const [registration, setRegistration] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,7 +43,7 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
     e.preventDefault();
     if (registration) {
       router.push(
-        `/contact?reg=${encodeURIComponent(registration)}&source=form`
+        `/contact?reg=${encodeURIComponent(registration)}&source=form`,
       );
     }
   };
@@ -53,7 +56,9 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
           className="text-3xl md:text-4xl font-bold text-charcoal-gray-muted mb-4 leading-tight"
           data-aos="fade-down"
         >
-          The UK’s Largest Engine Marketplace – Compare & Save Instantly!
+          {brandName
+            ? `Find the Best ${brandName} Engines – New, Used & Reconditioned at Unbeatable Prices!`
+            : "The UK’s Largest Engine Marketplace – Compare & Save Instantly!"}
         </h1>
       </div>
 
@@ -121,7 +126,7 @@ const Hero1: FC<Hero1Props> = ({ carImages, carModelNames }) => {
                 </div>
                 <p className="text-center text-gray-600 mb-6 leading-relaxed">
                   Enter Your Vehicle Registration Number To Instantly Locate the
-                  Right Engine & Get Quotes From UK's Top Suppliers
+                  Right Engine & Get Quotes From UK&apos;s Top Suppliers
                 </p>
 
                 <Button

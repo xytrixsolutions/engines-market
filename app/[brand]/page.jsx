@@ -66,7 +66,11 @@ const Page = ({ params }) => {
         <BrandSchema brand={brand} />
       </Head>
       <SearchNav navItems={navItems} />
-      <Hero1 carImages={carImages} carModelNames={carModelNames} />
+      <Hero1
+        carImages={carImages}
+        carModelNames={carModelNames}
+        brandName={brandName}
+      />
       <EngineGuide brand={brand} />
       <WhyChoose brand={brand} />
       <EngineTablesTabs brand={brand} />

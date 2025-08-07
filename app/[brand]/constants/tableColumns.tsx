@@ -54,7 +54,7 @@ export const MODEL_ENGINE_COLUMNS: Column<ModelEngine>[] = [
   {
     key: "compatibleModels",
     label: "Compatible Models",
-    render: (value, _) =>
+    render: (value, row) =>
       Array.isArray(value) ? value.join(", ") : String(value),
   },
   {

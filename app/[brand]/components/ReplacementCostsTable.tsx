@@ -3,7 +3,7 @@ import { FC, useState } from "react";
 import EngineTable from "./EngineTable";
 import { REPLACEMENT_COST_COLUMNS } from "../constants/tableColumns";
 import Container from "@/components/Container";
-import { data } from "../data/data";
+import { data } from "../../../data/brands";
 import { useRouter } from "next/navigation";
 
 import Image from "next/image";

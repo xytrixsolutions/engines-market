@@ -12,7 +12,7 @@ import Heading from "@/components/Heading";
 import Accent from "@/components/Accent";
 import Paragraph from "@/components/Paragraph";
 import GradientBorderWrapper from "@/components/GradientBorderWrapper";
-import { data } from "../data/data";
+import { data } from "../../../data/brands";
 
 const getSeverityColor = (severity: string) => {
   switch (severity) {

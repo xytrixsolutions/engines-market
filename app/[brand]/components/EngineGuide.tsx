@@ -3,7 +3,7 @@ import Container from "@/components/Container";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import Image from "next/image";
-import { data } from "../data/data";
+import { data } from "../../../data/brands";
 import React from "react";
 
 const EngineGuide: React.FC<{ brand: string }> = ({

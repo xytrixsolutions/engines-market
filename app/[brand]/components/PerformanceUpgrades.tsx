@@ -14,7 +14,7 @@ import Paragraph from "@/components/Paragraph";
 import Accent from "@/components/Accent";
 import GradientBorderWrapper from "@/components/GradientBorderWrapper";
 import SummaryCard from "@/components/SummaryCard";
-import { data } from "../data/data"; // Import your data file
+import { data } from "../../../data/brands"; // Import your data file
 
 const getLevelColor = (level: string) => {
   switch (level) {
@@ -37,7 +37,10 @@ const PerformanceUpgrades: React.FC<{ brand: string }> = ({ brand: brand }) => {
   const { section9, brandName } = data[brand];
   return (
     <Container dark className="my-16" id="performance-upgrades-modifications">
-      <div className="max-w-6xl mx-auto text-center space-y-4 mb-12 text-charcoal-gray-muted" data-aos="fade-down">
+      <div
+        className="max-w-6xl mx-auto text-center space-y-4 mb-12 text-charcoal-gray-muted"
+        data-aos="fade-down"
+      >
         <Heading className="text-charcoal-gray-muted">
           Performance Upgrades & Modifications for
           <Accent>{brandName} Engines</Accent>

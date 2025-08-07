@@ -473,7 +473,7 @@ function VehicleServiceFormContent() {
 }
 
 // The VehicleServiceForm wrapper component remains the same
-export default function VehicleServiceForm() {
+function VehicleServiceForm() {
   return (
     <Suspense
       fallback={
@@ -485,6 +485,13 @@ export default function VehicleServiceForm() {
       }
     >
       <VehicleServiceFormContent />
+    </Suspense>
+  );
+}
+export default function Page() {
+  return (
+    <Suspense>
+      <VehicleServiceForm />
     </Suspense>
   );
 }

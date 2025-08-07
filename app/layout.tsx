@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AOSInit from "@/components/AOSInit"; // Import the client component
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased bg-white">
+        <Toaster richColors />
         <AOSInit /> {/* Initialize AOS on the client */}
         <Header />
         {children}

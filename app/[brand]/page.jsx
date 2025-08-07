@@ -9,10 +9,10 @@ import PerformanceUpgrades from "./components/PerformanceUpgrades";
 import ReplacementCostsTable from "./components/ReplacementCostsTable";
 import EngineDealsCTA from "./components/EngineDealsCTA";
 import FAQSection from "@/components/FAQs";
-import { data } from "./data/data";
+import { data } from "@/data/brands";
 import { notFound } from "next/navigation";
 import SearchNav from "@/components/SearchNav";
-import BrandSchema from "./data/schema";
+import BrandSchema from "@/components/schema";
 import { use } from "react";
 import Head from "next/head";
 

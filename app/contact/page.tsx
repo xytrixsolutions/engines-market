@@ -10,9 +10,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useSearchParams } from "next/navigation";
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import Image from "next/image";
+import { toast } from "sonner";
+import { useRouter } from "next/navigation";
 interface VehicleInfo {
   registration?: string;
   make?: string;
@@ -22,6 +24,19 @@ interface VehicleInfo {
   engineCapacity?: string;
   data?: string; // This can be used to store additional data if needed
 }
+
+enum OPTIONS {
+  model_name = "model_name",
+  model = "model",
+  engineCode = "engineCode",
+  reg = "reg",
+  success = "success",
+}
+const checkFalsy = (param: unknown) =>
+  param !== null &&
+  param !== undefined &&
+  param !== "" &&
+  typeof param === "string";
 
 function VehicleServiceFormContent() {
   const searchParams = useSearchParams();
@@ -35,21 +50,72 @@ function VehicleServiceFormContent() {
     data: "",
   });
 
-  // 1. Add the loading state
   const [isFetchingVehicle, setIsFetchingVehicle] = useState(false);
+  const get = useCallback(
+    (param: string) => searchParams.get(param) || "",
+    [searchParams],
+  );
+
+  const regNumber = get(OPTIONS.reg) || "";
+  const model_name = get(OPTIONS.model_name);
+  const model = get(OPTIONS.model);
+  const engineCode = get(OPTIONS.engineCode);
+  const success = get(OPTIONS.success);
+  const data = model || model_name || engineCode;
+  const router = useRouter();
 
   useEffect(() => {
-    const regNumber = searchParams.get("reg");
-    const source = searchParams.get("source");
-
-    // Define the async function inside the effect
+    if (success === "true") {
+      toast.success("Form submitted successfully", {
+        position: "top-right",
+      });
+      const newParams = new URLSearchParams(searchParams.toString());
+      newParams.delete(OPTIONS.success);
+      router.replace(`?${newParams.toString()}`, { scroll: false });
+    } else if (success === "false") {
+      toast.error("Unexpected error occured", {
+        position: "top-right",
+      });
+      const newParams = new URLSearchParams(searchParams.toString());
+      newParams.delete(OPTIONS.success);
+      router.replace(`?${newParams.toString()}`, { scroll: false });
+    }
+  }, [success, searchParams, router]);
+  useEffect(() => {
     const fetchVehicleData = async () => {
-      // 3a. Set loading to true before the call
       setIsFetchingVehicle(true);
       try {
         const response = await axios.get(
-          `/api/vehicle?reg=${encodeURIComponent(regNumber!)}`
+          `/api/vehicle?reg=${encodeURIComponent(regNumber!)}`,
         );
+        // WARN: Do not Remove this comment, this is for testing in order to avoid API calls
+        // const response = {
+        //   data: {
+        //     registrationNumber: "EA65AMX",
+        //     make: "BMW",
+        //     model: "X5 SPORT D AUTO",
+        //     colour: "BLACK",
+        //     fuelType: "DIESEL",
+        //     engineCapacity: "2993",
+        //     yearOfManufacture: "2006",
+        //     vehicleAge: "15 Years 2 Months",
+        //     wheelplan: "2 AXLE RIGID BODY",
+        //     dateOfLastV5CIssued: "2021-12-15",
+        //     typeApproval: "M1",
+        //     co2Emissions: 250,
+        //     registrationPlace: "Birmingham",
+        //     tax: {
+        //       taxStatus: "Untaxed",
+        //       taxDueDate: "2021-09-07",
+        //       days: "108",
+        //     },
+        //     mot: {
+        //       motStatus: "Valid",
+        //       motDueDate: "2022-07-05",
+        //       days: 193,
+        //     },
+        //   },
+        // };
         if (response.data) {
           setVehicleInfo({
             registration: regNumber!,
@@ -60,48 +126,25 @@ function VehicleServiceFormContent() {
             engineCapacity: response.data.engineCapacity || "",
           });
         }
+        setIsFetchingVehicle(false);
       } catch (error) {
         console.error("Error fetching vehicle data:", error);
-        // Even if API fails, set at least the registration
         setVehicleInfo((prev) => ({
           ...prev,
           registration: regNumber!,
         }));
       } finally {
-        // 3b. Set loading to false after the call (success or failure)
         setIsFetchingVehicle(false);
       }
     };
 
-    if (regNumber) {
-      if (source === "form") {
-        // When coming from registration input forms, fetch vehicle details
-        // 3c. Call the async function
-        fetchVehicleData();
-      } else {
-        // Validate and set data directly if not from form
-        if (
-          regNumber !== null &&
-          regNumber !== undefined &&
-          regNumber !== "" &&
-          typeof regNumber === "string"
-        ) {
-          setVehicleInfo({
-            data: regNumber,
-          });
-        }
-        // Ensure loading state is false if not fetching via API
-        setIsFetchingVehicle(false);
-      }
-    } else {
-      // Ensure loading state is false if no regNumber
-      setIsFetchingVehicle(false);
+    if (regNumber && checkFalsy(regNumber)) {
+      fetchVehicleData();
+    } else if (data && checkFalsy(data)) {
+      console.log("data ===>", data);
+      setVehicleInfo({ data });
     }
-    // Include setIsFetchingVehicle in the dependency array if it somehow changes,
-    // but typically it's stable. The main dependency is searchParams.
-  }, [searchParams]); // Add setIsFetchingVehicle here only if necessary, usually not.
-
-  // ... (rest of the component logic)
+  }, [get, data, regNumber]); // Add setIsFetchingVehicle here only if necessary, usually not.
 
   return (
     <Container className="min-h-[50vh]">
@@ -121,54 +164,59 @@ function VehicleServiceFormContent() {
               <p className="text-charcoal-gray text-xl mb-4">
                 Get back on the road with peace of mind!
               </p>
-              {(() => {
-  const modelParam = searchParams.get("model_name") || searchParams.get("engineCode") || searchParams.get("model");
-  if (!modelParam) return null;
-  const decodedModel = decodeURIComponent(modelParam).replace(/\+/g, " ");
-  return (
-    <div className="text-center mb-4">
-      <p className="text-lg font-semibold text-gray-800">
-        Model:{" "}
-        <span className="font-medium text-neon-red">{decodedModel}</span>
-      </p>
-    </div>
-  );
-})()}
-              {vehicleInfo.registration && (
+              {vehicleInfo && (
                 <div className="flex flex-col items-center gap-4">
                   {/* ... (vehicle details display) ... */}
-                  <div className="flex items-center gap-4 flex-wrap justify-center">
+                  <div className="flex items-center gap-2 flex-wrap justify-center">
                     {/* Vehicle Details */}
-                    <p className="text-lg font-medium text-gray-700">
+                    <p className="text-md font-semibold text-neon-red inline">
+                      {(() => {
+                        if (model) return "Model:";
+                        if (model_name) return "Model Name:";
+                        if (engineCode) return "Engine Code:";
+                      })()}
+                    </p>
+                    <p className="text-sm font-medium text-gray-500 inline">
                       {[
                         vehicleInfo.make,
                         vehicleInfo.model,
                         vehicleInfo.year,
                         vehicleInfo.fuelType,
                         vehicleInfo.engineCapacity,
+                        vehicleInfo.data,
                       ]
                         .filter(Boolean)
                         .join(" ")}
                     </p>
                     {/* Number Plate */}
-                    <div className="relative w-44">
-                      <div className="absolute top-1/2 transform -translate-y-1/2">
-                        <div className="w-8 h-12 relative">
+                    {vehicleInfo.registration && (
+                      <div
+                        className="flex items-center w-32 h-9 bg-[#ffcb05] border-2 border-black rounded-md overflow-hidden"
+                        style={{
+                          fontFamily: "'Charles Wright', sans-serif",
+                          letterSpacing: "0.8px", // helps maintain number plate spacing at small size
+                        }}
+                      >
+                        {/* UK Flag Strip - Slimmer */}
+                        <div className="w-5 h-full relative flex-shrink-0">
                           <Image
                             src="/Home/uknumberplate.png"
                             alt="UK Flag"
                             fill
-                            className="object-cover rounded-l-md"
+                            className="object-cover"
                           />
                         </div>
+
+                        {/* Registration Display */}
+                        <input
+                          type="text"
+                          value={vehicleInfo.registration || ""}
+                          disabled
+                          className="w-full text-center text-sm font-bold text-black bg-transparent border-none outline-none pointer-events-none"
+                          style={{ letterSpacing: "1px" }}
+                        />
                       </div>
-                      <input
-                        type="text"
-                        value={vehicleInfo.registration || ""}
-                        disabled
-                        className="w-full text-center py-2.5 text-lg font-semibold text-gray-700 bg-[#ffcb05] border-2 border-black rounded-lg"
-                      />
-                    </div>
+                    )}
                   </div>
                 </div>
               )}
@@ -427,7 +475,15 @@ function VehicleServiceFormContent() {
 // The VehicleServiceForm wrapper component remains the same
 export default function VehicleServiceForm() {
   return (
-    <Suspense>
+    <Suspense
+      fallback={
+        !useSearchParams().get(OPTIONS.reg) ? (
+          <div className="flex flex-col justify-center items-center min-h-screen bg-white z-50 fixed inset-0">
+            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-neon-red"></div>
+          </div>
+        ) : null
+      }
+    >
       <VehicleServiceFormContent />
     </Suspense>
   );

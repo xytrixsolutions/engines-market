@@ -1,7 +1,7 @@
 "use client";
 import { useMemo, useState } from "react";
 import EngineTable from "./EngineTable";
-import { data } from "../data/data";
+import { data } from "../../../data/brands";
 import {
   MODEL_COLUMNS,
   ENGINE_CODE_COLUMNS,

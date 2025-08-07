@@ -1,4 +1,4 @@
-import { data } from "@/app/[brand]/data/data";
+import { data } from "@/data/brands";
 import Script from "next/script";
 
 interface BrandSchemaProps {

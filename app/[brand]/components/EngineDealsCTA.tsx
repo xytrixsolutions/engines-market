@@ -7,7 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import Link from "next/link";
-import { data } from "../data/data";
+import { data } from "../../../data/brands";
 
 // Reusable FeatureCard Component
 const FeatureCard = ({

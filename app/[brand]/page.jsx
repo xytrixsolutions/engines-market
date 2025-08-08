@@ -1,20 +1,20 @@
-import Hero1 from "../../components/Hero1";
-import WhyChoose from "./components/WhyChoose";
-import EngineGuide from "./components/EngineGuide";
-import EngineTablesTabs from "./components/EngineTablesTabs";
-import EngineProblemsSection from "./components/EngineProblemsSection";
-import EngineProsCons from "./components/EngineProsCons";
-import TroubleshootingGuide from "./components/TroubleShoot";
-import PerformanceUpgrades from "./components/PerformanceUpgrades";
-import ReplacementCostsTable from "./components/ReplacementCostsTable";
-import EngineDealsCTA from "./components/EngineDealsCTA";
 import FAQSection from "@/components/FAQs";
-import { data } from "@/data/brands";
-import { notFound } from "next/navigation";
 import SearchNav from "@/components/SearchNav";
 import BrandSchema from "@/components/schema";
-import { use } from "react";
+import { data } from "@/data/brands";
 import Head from "next/head";
+import { notFound } from "next/navigation";
+import { use } from "react";
+import Hero1 from "../../components/Hero1";
+import EngineDealsCTA from "./components/EngineDealsCTA";
+import EngineGuide from "./components/EngineGuide";
+import EngineProblemsSection from "./components/EngineProblemsSection";
+import EngineProsCons from "./components/EngineProsCons";
+import EngineTablesTabs from "./components/EngineTablesTabs";
+import PerformanceUpgrades from "./components/PerformanceUpgrades";
+import ReplacementCostsTable from "./components/ReplacementCostsTable";
+import TroubleshootingGuide from "./components/TroubleShoot";
+import WhyChoose from "./components/WhyChoose";
 
 export async function generateMetadata({ params }) {
   const brand = (await params).brand.toLowerCase();

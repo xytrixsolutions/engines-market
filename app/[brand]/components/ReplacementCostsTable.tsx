@@ -1,20 +1,17 @@
 "use client";
-import { FC, useState } from "react";
+import { useState } from "react";
 import EngineTable from "./EngineTable";
 import { REPLACEMENT_COST_COLUMNS } from "../constants/tableColumns";
 import Container from "@/components/Container";
 import { data } from "../../../data/brands";
 import { useRouter } from "next/navigation";
-
 import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
 import Button from "@/components/Button";
 import SummaryCard from "@/components/SummaryCard";
 import Accent from "@/components/Accent";
 
-const ReplacementCostsTable: React.FC<{ brand: string }> = ({
-  brand: brand,
-}) => {
+const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand }) => {
   const router = useRouter();
   const [registration, setRegistration] = useState("");
   const columns = REPLACEMENT_COST_COLUMNS;
@@ -33,58 +30,77 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({
   return (
     <Container className="my-16" id="engine-replacement-cost">
       {/* Heading and Description */}
-      <div className="text-center mb-8">
+      <div className="text-center mb-8" data-aos="fade-up" data-aos-delay="0">
         <h2 className="text-3xl font-bold mb-3 text-charcoal-gray">
           Estimated <Accent>Engines Replacement</Accent> Costs for {brandName}{" "}
           Models
         </h2>
         <p className="text-lg text-muted-foreground mb-2">
           Below is a table with estimated replacement costs for various{" "}
-          {brandName} models and engine types, replacing an engine can vary
-          significantly based on the model and engine type. Below is a rough
-          estimate of the replacement costs, including parts and labour:
+          {brandName} models and engine types. Prices can vary significantly
+          based on model, engine type, parts, and labour.
         </p>
       </div>
+
       {/* Table */}
-      <EngineTable
-        columns={columns}
-        data={replacement_costs}
-        tableType={"replacement_costs"}
-      />
+      <div data-aos="fade-up" data-aos-delay="25">
+        <EngineTable
+          columns={columns}
+          data={replacement_costs}
+          tableType="replacement_costs"
+        />
+      </div>
+
       <SummaryCard
         variant="card"
         title="Need Help Choosing?"
         content={`These estimates provide a general idea of the costs involved in replacing a ${brandName} engine. Prices can vary based on location, availability of parts, and the specific service provider.`}
+        data-aos="fade-up"
+        data-aos-delay="50"
       />
-      {/* CTA Section - Updated to Match Screenshot */}
+
+      {/* CTA Section - Cascading Animation */}
       <div
         id="cta2"
-        className="bg-gray-100 rounded-3xl shadow-2xl drop-shadow-2xl py-12 px-6 text-center mt-20"
+        className="bg-gray-100 rounded-3xl py-12 px-6 text-center mt-20"
         style={{
           boxShadow: "0 0 100px rgba(255, 255, 255, 0.35)",
         }}
+        data-aos="fade-up"
+        data-aos-delay="75"
       >
-        <h3 className="text-3xl font-bold text-gray-900 mb-4">
+        <h3
+          className="text-3xl font-bold text-gray-900 mb-4"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           Find the Best Replacement Engine Deals for Your {brandName}
         </h3>
-        <p className="text-lg text-gray-700 mb-6">
+
+        <p
+          className="text-lg text-gray-700 mb-6"
+          data-aos="fade-up"
+          data-aos-delay="125"
+        >
           Looking for a reliable, cost-effective engine replacement? With
           Engines Market, getting the right engine for your {brandName} has
           never been easier.
         </p>
 
-        <p className="mx-auto text-base font-semibold text-blue-800 mb-4 max-w-3xl ">
-          Simply enter your Reg Num below, and we’ll instantly search trusted UK
-          suppliers and local garages to bring you the best available engine
+        <p
+          className="mx-auto text-base font-semibold text-blue-800 mb-4 max-w-3xl"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
+          Simply enter your Reg Number below, and we’ll instantly search trusted
+          UK suppliers and local garages to bring you the best available engine
           deals.
         </p>
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} data-aos="fade-up" data-aos-delay="175">
           <div className="flex justify-center mb-6">
             <div className="relative w-full max-w-sm">
-              {/* Number plate container with shared background and border */}
               <div className="flex items-center border-2 border-black rounded-lg overflow-hidden bg-[#ffcb05]">
-                {/* Flag container */}
                 <div className="w-10 h-16 relative flex-shrink-0">
                   <Image
                     src="/Home/uknumberplate.png"
@@ -93,8 +109,6 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({
                     className="object-cover ml-[-1px]"
                   />
                 </div>
-
-                {/* Input field - now properly centered without interference */}
                 <input
                   type="text"
                   placeholder="Enter Reg Number Here"
@@ -108,7 +122,6 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({
             </div>
           </div>
 
-          {/* Centered Button */}
           <div className="flex justify-center">
             <Button
               type="submit"
@@ -120,14 +133,22 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({
           </div>
         </form>
 
-        {/* Bottom text */}
-        <p className="mt-6 text-sm text-gray-600 max-w-lg mx-auto">
-          We match your exact vehicle details to quality recycled, reconditioned
-          and Rebuilt - saving you time, money, and hassle. Fast, simple, and
-          stress-free.
+        {/* Bottom Text */}
+        <p
+          className="mt-6 text-sm text-gray-600 max-w-lg mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          We match your exact vehicle details to quality recycled,
+          reconditioned, and rebuilt engines — saving you time, money, and
+          hassle. Fast, simple, and stress-free.
         </p>
-        {/* Bottom text */}
-        <p className="mt-6 text-sm text-blue-600  mx-auto">
+
+        <p
+          className="mt-6 text-sm text-blue-600 mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="225"
+        >
           🇬🇧 Trusted by thousands across the UK | Free, no-obligation quotes |
           Direct supplier access
         </p>

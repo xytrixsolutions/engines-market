@@ -225,7 +225,7 @@ export default function Hero3() {
       dark
       id="explore-by-manufacturer"
       data-aos="fade-up"
-      data-aos-anchor-placement="top-center"
+      // data-aos-anchor-placement="top-center"
       className="overflow-hidden"
     >
       <div className="items-center mb-12 text-center flex flex-col justify-center">

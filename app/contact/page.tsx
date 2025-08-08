@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/accordion";
 import { useSearchParams } from "next/navigation";
 import { Suspense, useCallback, useEffect, useState } from "react";
-import axios from "axios";
 import Image from "next/image";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
@@ -85,37 +84,37 @@ function VehicleServiceFormContent() {
     const fetchVehicleData = async () => {
       setIsFetchingVehicle(true);
       try {
-        const response = await axios.get(
-          `/api/vehicle?reg=${encodeURIComponent(regNumber!)}`,
-        );
+        // const response = await axios.get(
+        //   `/api/vehicle?reg=${encodeURIComponent(regNumber!)}`,
+        // );
         // WARN: Do not Remove this comment, this is for testing in order to avoid API calls
-        // const response = {
-        //   data: {
-        //     registrationNumber: "EA65AMX",
-        //     make: "BMW",
-        //     model: "X5 SPORT D AUTO",
-        //     colour: "BLACK",
-        //     fuelType: "DIESEL",
-        //     engineCapacity: "2993",
-        //     yearOfManufacture: "2006",
-        //     vehicleAge: "15 Years 2 Months",
-        //     wheelplan: "2 AXLE RIGID BODY",
-        //     dateOfLastV5CIssued: "2021-12-15",
-        //     typeApproval: "M1",
-        //     co2Emissions: 250,
-        //     registrationPlace: "Birmingham",
-        //     tax: {
-        //       taxStatus: "Untaxed",
-        //       taxDueDate: "2021-09-07",
-        //       days: "108",
-        //     },
-        //     mot: {
-        //       motStatus: "Valid",
-        //       motDueDate: "2022-07-05",
-        //       days: 193,
-        //     },
-        //   },
-        // };
+        const response = {
+          data: {
+            registrationNumber: "EA65AMX",
+            make: "BMW",
+            model: "X5 SPORT D AUTO",
+            colour: "BLACK",
+            fuelType: "DIESEL",
+            engineCapacity: "2993",
+            yearOfManufacture: "2006",
+            vehicleAge: "15 Years 2 Months",
+            wheelplan: "2 AXLE RIGID BODY",
+            dateOfLastV5CIssued: "2021-12-15",
+            typeApproval: "M1",
+            co2Emissions: 250,
+            registrationPlace: "Birmingham",
+            tax: {
+              taxStatus: "Untaxed",
+              taxDueDate: "2021-09-07",
+              days: "108",
+            },
+            mot: {
+              motStatus: "Valid",
+              motDueDate: "2022-07-05",
+              days: 193,
+            },
+          },
+        };
         if (response.data) {
           setVehicleInfo({
             registration: regNumber!,
@@ -167,31 +166,46 @@ function VehicleServiceFormContent() {
               {vehicleInfo && (
                 <div className="flex flex-col items-center gap-4">
                   {/* ... (vehicle details display) ... */}
-                  <div className="flex items-center gap-2 flex-wrap justify-center">
-                    {/* Vehicle Details */}
-                    <p className="text-md font-semibold text-neon-red inline">
-                      {(() => {
-                        if (model) return "Model:";
-                        if (model_name) return "Model Name:";
-                        if (engineCode) return "Engine Code:";
-                      })()}
-                    </p>
-                    <p className="text-sm font-medium text-gray-500 inline">
-                      {[
-                        vehicleInfo.make,
-                        vehicleInfo.model,
-                        vehicleInfo.year,
-                        vehicleInfo.fuelType,
-                        vehicleInfo.engineCapacity,
-                        vehicleInfo.data,
-                      ]
-                        .filter(Boolean)
-                        .join(" ")}
-                    </p>
-                    {/* Number Plate */}
+                  <div className="flex flex-col items-center gap-2">
+                    {/* Vehicle Details - All on one line centered */}
+                    <div className="flex items-center gap-2 flex-wrap justify-center">
+                      <p className="text-md font-semibold text-neon-red">
+                        {(() => {
+                          if (model) return "Model:";
+                          if (model_name) return "Model Name:";
+                          if (engineCode) return "Engine Code:";
+                        })()}
+                      </p>
+                      <p className="text-sm font-medium text-gray-500">
+                        {[
+                          vehicleInfo.make,
+                          vehicleInfo.model,
+                          vehicleInfo.year,
+                          vehicleInfo.fuelType,
+                          vehicleInfo.engineCapacity &&
+                            (
+                              parseFloat(vehicleInfo.engineCapacity) / 1000
+                            ).toFixed(1) + "L",
+                          vehicleInfo.data,
+                        ]
+                          .filter(Boolean)
+                          .map((item = "", idx) => {
+                            if (idx === 4) return item;
+                            return item.replace(
+                              /\w\S*/g,
+                              (txt) =>
+                                txt.charAt(0).toUpperCase() +
+                                txt.substr(1).toLowerCase(),
+                            );
+                          })
+                          .join(", ")}
+                      </p>
+                    </div>
+
+                    {/* Number Plate - On next line, centered */}
                     {vehicleInfo.registration && (
                       <div
-                        className="flex items-center w-32 h-9 bg-[#ffcb05] border-2 border-black rounded-md overflow-hidden"
+                        className="flex items-center w-32 h-9 bg-[#ffcb05] border-2 border-black rounded-md overflow-hidden mt-2"
                         style={{
                           fontFamily: "'Charles Wright', sans-serif",
                           letterSpacing: "0.8px", // helps maintain number plate spacing at small size

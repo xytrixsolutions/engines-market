@@ -9,7 +9,7 @@ const WhyChoose = () => {
     >
       {/* Left Side (Text) */}
       <div
-        data-aos="fade-right"
+        data-aos="fade-up"
         className="w-full md:w-1/2 flex justify-center lg:justify-start mb-10 md:mb-0"
       >
         <div className="w-full md:w-[90%] text-left">
@@ -46,7 +46,7 @@ const WhyChoose = () => {
 
       {/* Right Side (Image) */}
       <div
-        data-aos="fade-left"
+        data-aos="fade-up"
         className="w-full md:w-1/2 flex justify-center lg:justify-end"
       >
         <Image

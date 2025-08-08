@@ -10,7 +10,7 @@ const HowItWorks = () => {
     >
       {/* Right Side (Image) */}
       <div
-        data-aos="fade-right"
+        data-aos="fade-up"
         className="md:w-1/2 flex justify-start mb-10 md:mb-0 max-md:mt-10"
       >
         <Image
@@ -24,7 +24,7 @@ const HowItWorks = () => {
 
       {/* Left Side (Text) */}
       <div
-        data-aos="fade-left"
+        data-aos="fade-up"
         className="md:w-1/2 w-full flex justify-end md:pb-8"
       >
         <div className="w-full md:w-[90%] text-left">

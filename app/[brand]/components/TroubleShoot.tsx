@@ -116,15 +116,18 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({
       )}
 
       {/* Quick Reference Tips */}
+      {/* Quick Reference Tips */}
       {tips.length > 0 && (
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {tips.map((tip, idx) => {
-            // You'll need to dynamically import the icon component based on tip.icon
-            // This is a placeholder - you'll need to implement actual icon mapping
-            const Icon = Settings; // Replace with your icon mapping logic
-
+            const Icon = Settings; // Replace with dynamic icon mapping if needed
             return (
-              <Card key={idx} className={`${tip.border} ${tip.bg}`} data-aos="fade-up">
+              <Card
+                key={idx}
+                className={`${tip.border} ${tip.bg}`}
+                data-aos="fade-up"
+                data-aos-delay={idx * 250} // 👈 Add delay here
+              >
                 <CardContent className="py-8 text-center">
                   <Icon className={`h-8 w-8 mx-auto mb-2 ${tip.iconColor}`} />
                   <h4 className={`font-semibold mb-1 ${tip.titleColor}`}>

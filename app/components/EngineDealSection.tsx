@@ -34,7 +34,7 @@ const EngineDealSection = () => {
       {/* Text Section (comes first on mobile, second on desktop) */}
       <div
         className="order-1 md:order-2 text-center md:text-left space-y-4"
-        data-aos="fade-left"
+        data-aos="fade-up"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray">
           Find the Best Engine Deals with{" "}
@@ -52,7 +52,7 @@ const EngineDealSection = () => {
       {/* Image Section (comes second on mobile, first on desktop) */}
       <div
         className="order-2 md:order-1 flex justify-center lg:justify-start mt-8 md:mt-0"
-        data-aos="fade-right"
+        data-aos="fade-up"
       >
         <div className="relative w-[300px] h-[300px] lg:w-[500px] lg:h-[500px]">
           <Image

@@ -42,7 +42,7 @@ const TrustBadges = () => {
       {/* Section Heading */}
       <h2
         className="text-3xl font-bold text-center text-charcoal-gray-muted mb-10"
-        data-aos="fade-down"
+        data-aos="fade-up"
         data-aos-delay="50"
         data-aos-duration="500"
         data-aos-once="true"
@@ -56,8 +56,8 @@ const TrustBadges = () => {
           <div
             key={index}
             className="relative bg-white py-14 text-center rounded-xl shadow-md hover:shadow-lg transition-transform duration-300"
-            data-aos="fade-right"
-            data-aos-delay={100 + index * 100} // Faster: 50ms, 90ms, 130ms, 170ms
+            data-aos="fade-up"
+            data-aos-delay={100 + index * 100}
             data-aos-duration="500" // Snappier animation
             data-aos-once="true"
           >

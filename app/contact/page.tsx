@@ -182,12 +182,15 @@ function VehicleServiceFormContent() {
                           vehicleInfo.model,
                           vehicleInfo.year,
                           vehicleInfo.fuelType,
-                          vehicleInfo.engineCapacity + "(cc)",
+                          vehicleInfo.engineCapacity &&
+                            (
+                              parseFloat(vehicleInfo.engineCapacity) / 1000
+                            ).toFixed(1) + "L",
                           vehicleInfo.data,
                         ]
                           .filter(Boolean)
-                          .map((item = "") => {
-                            // Convert to title case (first letter caps, rest lowercase)
+                          .map((item = "", idx) => {
+                            if (idx === 4) return item;
                             return item.replace(
                               /\w\S*/g,
                               (txt) =>

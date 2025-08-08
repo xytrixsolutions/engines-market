@@ -17,7 +17,7 @@ const WhyChoose: React.FC<{ brand: string }> = ({ brand }) => {
       {/* Image Side - Full height + BG */}
       <div
         className="bg-[url('/why-choose-bg.webp')] bg-cover bg-center flex justify-center items-center py-16 lg:py-0 h-full"
-        data-aos="fade-right"
+        data-aos="fade-up"
       >
         <Image
           src={section0Image.img}
@@ -30,7 +30,7 @@ const WhyChoose: React.FC<{ brand: string }> = ({ brand }) => {
       {/* Text Side - Inside layout container */}
       <div
         className="bg-[linear-gradient(90deg,_#2e2e2e,_#727272,_#2e2e2e)] bg-blend-color-burn h-full flex items-center max-lg:py-10"
-        data-aos="fade-left"
+        data-aos="fade-up"
       >
         <div
           className="w-11/12 lg:w-10/12 max-w-screen-xl mx-auto px-4 py-12 pb-20 rounded-xl bg-neutral-800/20 backdrop-blur-md border border-white/20 shadow-md"

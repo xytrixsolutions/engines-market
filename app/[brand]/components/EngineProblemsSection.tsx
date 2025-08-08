@@ -34,7 +34,7 @@ const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
     <Container dark className="my-12" id="engine-problems">
       <div
         className="max-w-5xl mx-auto text-center text-charcoal-gray-muted"
-        data-aos="fade-down"
+        data-aos="fade-up"
       >
         <Heading className="mb-6 text-charcoal-gray-muted">
           Common<Accent>{brandName} Engine Problems</Accent>& How to Fix Them
@@ -102,8 +102,9 @@ const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
           </GradientBorderWrapper>
         ))}
       </Accordion>
-      <Card className="bg-blue-50 border-blue-200 mt-5">
+      <Card className="bg-blue-50 border-blue-200 mt-5" data-aos="fade-up">
         <CardContent>
+          
           <div className="flex items-start gap-3">
             <Shield className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
             <div className="min-w-0">

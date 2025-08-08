@@ -43,7 +43,7 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({
     <Container dark className="my-16" id="troubleshooting-guide">
       <div
         className="max-w-full mx-auto text-center mb-12 space-y-4 text-charcoal-gray-muted"
-        data-aos="fade-down"
+        data-aos="fade-up"
       >
         <Heading className="text-charcoal-gray-muted">
           Troubleshooting Guide for<Accent>{brandName} Engines</Accent>
@@ -124,7 +124,7 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({
             const Icon = Settings; // Replace with your icon mapping logic
 
             return (
-              <Card key={idx} className={`${tip.border} ${tip.bg}`}>
+              <Card key={idx} className={`${tip.border} ${tip.bg}`} data-aos="fade-up">
                 <CardContent className="py-8 text-center">
                   <Icon className={`h-8 w-8 mx-auto mb-2 ${tip.iconColor}`} />
                   <h4 className={`font-semibold mb-1 ${tip.titleColor}`}>

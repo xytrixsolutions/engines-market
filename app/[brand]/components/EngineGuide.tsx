@@ -17,7 +17,7 @@ const EngineGuide: React.FC<{ brand: string }> = ({
       {/* Heading and Text */}
       <div
         className="text-center text-charcoal-gray space-y-6 mb-14 max-w-6xl mx-auto"
-        data-aos="fade-down"
+        data-aos="fade-up"
       >
         <Heading className="leading-tight text-charcoal-gray">
           The Complete
@@ -41,7 +41,7 @@ const EngineGuide: React.FC<{ brand: string }> = ({
 
       {/* Image */}
       <Image
-        data-aos="fade-down"
+        data-aos="fade-up"
         src={section1Image.img}
         alt={`${brandName} Dealership with ${brandName} Cars`}
         width={0}

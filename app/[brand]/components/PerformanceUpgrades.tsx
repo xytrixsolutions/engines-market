@@ -39,7 +39,7 @@ const PerformanceUpgrades: React.FC<{ brand: string }> = ({ brand: brand }) => {
     <Container dark className="my-16" id="performance-upgrades-modifications">
       <div
         className="max-w-6xl mx-auto text-center space-y-4 mb-12 text-charcoal-gray-muted"
-        data-aos="fade-down"
+        data-aos="fade-up"
       >
         <Heading className="text-charcoal-gray-muted">
           Performance Upgrades & Modifications for

@@ -1,15 +1,14 @@
-import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Container from "@/components/Container";
-import { Check, X, Sparkles, DollarSign, Wrench } from "lucide-react";
+import { Check, X } from "lucide-react";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import Accent from "@/components/Accent";
 import SummaryCard from "@/components/SummaryCard";
 import { data } from "../../../data/brands";
 
-const EngineProsCons: React.FC<{ brand: string }> = ({ brand: brand }) => {
+const EngineProsCons = ({ brand: brand }: { brand: string }) => {
   const { section7, brandName } = data[brand];
   return (
     <Container className="my-16" id="pros-cons">
@@ -28,10 +27,11 @@ const EngineProsCons: React.FC<{ brand: string }> = ({ brand: brand }) => {
       </div>
 
       <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-3">
-        {section7.map((engineType, _) => (
+        {section7.map((engineType, key) => (
           <Card
             data-aos="fade-up"
-            key={engineType.title}
+            data-aos-delay={(key + 1) * 250}
+            key={key}
             className="relative overflow-hidden border-2 hover:shadow-lg transition-shadow duration-300"
           >
             <CardHeader className="pb-4">

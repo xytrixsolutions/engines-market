@@ -23,9 +23,9 @@ const FeatureCard = ({
 }) => (
   <Card
     className="bg-white border border-gray-200 hover:shadow-md transition-all duration-300"
-    data-aos="fade-up"
+    data-aos="fade-up" // 👉 Pop from bottom
     data-aos-delay={aosDelay}
-    data-aos-duration="600"
+    data-aos-duration="500"
     data-aos-once="true"
   >
     <CardContent className="py-12 text-center">
@@ -73,9 +73,9 @@ const EngineDealsCTA: React.FC<{ brand: string }> = ({ brand: brand }) => {
     <Container
       className="py-16 relative overflow-hidden text-gray-900"
       id="last-cta"
-      data-aos="fade-down"
+      data-aos="fade-up"
       data-aos-delay="0"
-      data-aos-duration="600"
+      data-aos-duration="500"
       data-aos-once="true"
     >
       <div className="text-center space-y-8">
@@ -83,8 +83,8 @@ const EngineDealsCTA: React.FC<{ brand: string }> = ({ brand: brand }) => {
         <div
           className="max-w-5xl mx-auto"
           data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="600"
+          data-aos-delay="50"
+          data-aos-duration="500"
           data-aos-once="true"
         >
           <Heading>
@@ -103,9 +103,9 @@ const EngineDealsCTA: React.FC<{ brand: string }> = ({ brand: brand }) => {
         {/* Feature Cards */}
         <div
           className="grid gap-6 md:grid-cols-3"
-          data-aos="fade-down"
-          data-aos-delay="200"
-          data-aos-duration="600"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="500"
           data-aos-once="true"
         >
           {features.map(({ Icon, iconClassName, title, description }, i) => (
@@ -114,7 +114,7 @@ const EngineDealsCTA: React.FC<{ brand: string }> = ({ brand: brand }) => {
               icon={<Icon className={iconClassName} />}
               title={title}
               description={description}
-              aosDelay={100 + i * 200}
+              aosDelay={100 + i * 80}
             />
           ))}
         </div>
@@ -122,21 +122,21 @@ const EngineDealsCTA: React.FC<{ brand: string }> = ({ brand: brand }) => {
         {/* CTA Buttons */}
         <div
           className="flex flex-col gap-4 justify-center items-center"
-          data-aos="fade-down"
-          data-aos-delay="500"
-          data-aos-duration="600"
+          data-aos="fade-up"
+          data-aos-delay="180"
+          data-aos-duration="500"
           data-aos-once="true"
         >
-          {/* First line - Request a Quote button */}
+          {/* Primary Button */}
           <Button
             size="lg"
             className="bg-neon-red hover:bg-transparent hover:text-neon-red border border-neon-red text-white font-semibold px-8 py-3 text-lg transition-all duration-300 group"
           >
-            <Link href={"#cta2"}>Request a Quote Now!</Link>
+            <Link href="#cta2">Request a Quote Now!</Link>
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
 
-          {/* Second line - Other buttons */}
+          {/* Secondary Buttons */}
           <div className="flex gap-4">
             {[
               { icon: Phone, label: "Call Now" },
@@ -148,9 +148,9 @@ const EngineDealsCTA: React.FC<{ brand: string }> = ({ brand: brand }) => {
                 variant="outline"
                 size="lg"
                 className="border border-gray-300 text-gray-800 hover:bg-gray-100 font-semibold px-6 py-3 bg-white"
-                data-aos="fade-down"
-                data-aos-delay={600 + i * 100}
-                data-aos-duration="600"
+                data-aos="fade-up"
+                data-aos-delay={200 + i * 60} // Very tight delay
+                data-aos-duration="500"
                 data-aos-once="true"
               >
                 <Icon className="mr-2 h-4 w-4" />
@@ -163,9 +163,9 @@ const EngineDealsCTA: React.FC<{ brand: string }> = ({ brand: brand }) => {
         {/* Trust Indicators */}
         <div
           className="pt-8 border-t border-gray-300"
-          data-aos="fade-down"
-          data-aos-delay="800"
-          data-aos-duration="600"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="500"
           data-aos-once="true"
         >
           <div className="flex flex-wrap justify-center items-center gap-8 text-gray-700">
@@ -173,9 +173,9 @@ const EngineDealsCTA: React.FC<{ brand: string }> = ({ brand: brand }) => {
               <div
                 key={i}
                 className="flex items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay={900 + i * 100}
-                data-aos-duration="600"
+                data-aos="fade-up"
+                data-aos-delay={320 + i * 50} // Super subtle
+                data-aos-duration="500"
                 data-aos-once="true"
               >
                 <CheckCircle className="h-4 w-4 text-green-600" />

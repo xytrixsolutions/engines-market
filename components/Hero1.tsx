@@ -117,7 +117,7 @@ const Hero1 = ({
                           const value = e.target.value.toUpperCase();
                           setRegistration(value);
                         }}
-                        className="vehicle-inp w-full h-20 py-3 text-3xl placeholder:font-bold text-black placeholder-black bg-transparent focus:outline-none text-center placeholder:text-center"
+                        className="vehicle-inp w-full h-20 py-3 text-3xl font-bold placeholder:font-bold text-black placeholder-black bg-transparent focus:outline-none text-center placeholder:text-center"
                         onFocus={(e) => (e.target.placeholder = "")}
                         onBlur={(e) => (e.target.placeholder = "REG HERE")}
                       />

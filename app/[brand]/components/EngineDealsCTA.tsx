@@ -23,7 +23,7 @@ const FeatureCard = ({
 }) => (
   <Card
     className="bg-white border border-gray-200 hover:shadow-md transition-all duration-300"
-    data-aos="fade-down"
+    data-aos="fade-up"
     data-aos-delay={aosDelay}
     data-aos-duration="600"
     data-aos-once="true"
@@ -82,7 +82,7 @@ const EngineDealsCTA: React.FC<{ brand: string }> = ({ brand: brand }) => {
         {/* Heading */}
         <div
           className="max-w-5xl mx-auto"
-          data-aos="fade-down"
+          data-aos="fade-up"
           data-aos-delay="100"
           data-aos-duration="600"
           data-aos-once="true"

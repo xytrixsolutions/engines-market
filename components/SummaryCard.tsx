@@ -91,6 +91,7 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
     return (
       <Card
         className={`mt-5 mb-5 rounded-xl shadow-lg border ${cardStyling} ${className}`}
+        data-aos="fade-up"
       >
         <CardContent className="py-0">
           <div className="flex items-start gap-3">
@@ -113,6 +114,7 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
     return (
       <Card
         className={`mt-12 rounded-xl shadow-lg border ${cardStyling} ${className}`}
+        data-aos="fade-up"
       >
         <CardContent className="">
           <div className="flex items-start gap-4">
@@ -131,6 +133,7 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
   return (
     <div
       className={`w-full bg-blue-50 border-t border-b border-blue-200 py-10 my-12 rounded-xl shadow-lg ${className}`}
+      data-aos="fade-up"
     >
       <div className="max-w-3xl mx-auto px-4 text-center">
         <div className={textStyling.title}>{title}</div>

@@ -13,7 +13,7 @@ const EngineProsCons: React.FC<{ brand: string }> = ({ brand: brand }) => {
   const { section7, brandName } = data[brand];
   return (
     <Container className="my-16" id="pros-cons">
-      <div className="max-w-6xl mx-auto text-center mb-12" data-aos="fade-down">
+      <div className="max-w-6xl mx-auto text-center mb-12" data-aos="fade-up">
         <Heading>
           Pros & Cons of New, Used &
           <Accent>Reconditioned {brandName} Engines</Accent>
@@ -30,7 +30,7 @@ const EngineProsCons: React.FC<{ brand: string }> = ({ brand: brand }) => {
       <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-3">
         {section7.map((engineType, _) => (
           <Card
-            data-aos="fade-down-right"
+            data-aos="fade-up"
             key={engineType.title}
             className="relative overflow-hidden border-2 hover:shadow-lg transition-shadow duration-300"
           >

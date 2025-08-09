@@ -19,6 +19,7 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
   variant = "blue",
   icon,
   className = "",
+  ...opts
 }) => {
   // Default icons based on variant
   const getDefaultIcon = () => {
@@ -91,7 +92,7 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
     return (
       <Card
         className={`mt-5 mb-5 rounded-xl shadow-lg border ${cardStyling} ${className}`}
-        data-aos="fade-up"
+        {...opts}
       >
         <CardContent className="py-0">
           <div className="flex items-start gap-3">

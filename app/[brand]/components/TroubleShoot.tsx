@@ -1,3 +1,4 @@
+"use client";
 import type React from "react";
 import {
   Accordion,
@@ -8,17 +9,16 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import Container from "@/components/Container";
-import { Settings } from "lucide-react"; // Only import what you need
+import { Settings } from "lucide-react";
 import Heading from "@/components/Heading";
 import Accent from "@/components/Accent";
 import Paragraph from "@/components/Paragraph";
 import GradientBorderWrapper from "@/components/GradientBorderWrapper";
 import SummaryCard from "@/components/SummaryCard";
 import { data } from "../../../data/brands";
+import { motion } from "framer-motion";
 
-const TroubleshootingGuide: React.FC<{ brand: string }> = ({
-  brand: brand,
-}) => {
+const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand }) => {
   const { section8, brandName } = data[brand];
   const {
     EngineProblems: troubleshootingSections = [],
@@ -41,9 +41,13 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({
 
   return (
     <Container dark className="my-16" id="troubleshooting-guide">
-      <div
+      {/* Main Heading */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6 }}
         className="max-w-full mx-auto text-center mb-12 space-y-4 text-charcoal-gray-muted"
-        data-aos="fade-up"
       >
         <Heading className="text-charcoal-gray-muted">
           Troubleshooting Guide for<Accent>{brandName} Engines</Accent>
@@ -56,8 +60,9 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({
           <strong> extend its lifespan</strong>. Here are actionable tips to
           keep your engine running smoothly:
         </Paragraph>
-      </div>
+      </motion.div>
 
+      {/* Accordion Sections */}
       <Accordion
         type="single"
         collapsible
@@ -106,39 +111,63 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({
         ))}
       </Accordion>
 
-      {/* Bottom Summary Card */}
+      {/* Summary Card */}
       {summary && (
-        <SummaryCard
-          variant={summary.variant as "green" | "blue" | "card" | "performance"} // Adjust based on your actual variants
-          title={summary.title}
-          content={summary.content}
-        />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-8"
+        >
+          <SummaryCard
+            variant={
+              summary.variant as "green" | "blue" | "card" | "performance"
+            }
+            title={summary.title}
+            content={summary.content}
+          />
+        </motion.div>
       )}
 
       {/* Quick Reference Tips */}
-      {/* Quick Reference Tips */}
       {tips.length > 0 && (
-        <div className="mt-8 grid gap-4 md:grid-cols-3">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="mt-8 grid gap-4 md:grid-cols-3"
+        >
           {tips.map((tip, idx) => {
-            const Icon = Settings; // Replace with dynamic icon mapping if needed
+            const Icon = Settings;
             return (
-              <Card
+              <motion.div
                 key={idx}
-                className={`${tip.border} ${tip.bg}`}
-                data-aos="fade-up"
-                data-aos-delay={idx * 250} // 👈 Add delay here
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                      duration: 0.6,
+                      delay: idx * 0.2, // 0s, 0.2s, 0.4s...
+                    },
+                  },
+                }}
               >
-                <CardContent className="py-8 text-center">
-                  <Icon className={`h-8 w-8 mx-auto mb-2 ${tip.iconColor}`} />
-                  <h4 className={`font-semibold mb-1 ${tip.titleColor}`}>
-                    {tip.title}
-                  </h4>
-                  <p className={`text-sm ${tip.textColor}`}>{tip.text}</p>
-                </CardContent>
-              </Card>
+                <Card className={`${tip.border} ${tip.bg}`}>
+                  <CardContent className="py-8 text-center">
+                    <Icon className={`h-8 w-8 mx-auto mb-2 ${tip.iconColor}`} />
+                    <h4 className={`font-semibold mb-1 ${tip.titleColor}`}>
+                      {tip.title}
+                    </h4>
+                    <p className={`text-sm ${tip.textColor}`}>{tip.text}</p>
+                  </CardContent>
+                </Card>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       )}
     </Container>
   );

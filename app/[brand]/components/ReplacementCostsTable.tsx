@@ -10,6 +10,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import Button from "@/components/Button";
 import SummaryCard from "@/components/SummaryCard";
 import Accent from "@/components/Accent";
+import { motion } from "framer-motion";
 
 const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand }) => {
   const router = useRouter();
@@ -30,7 +31,13 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand }) => {
   return (
     <Container className="my-16" id="engine-replacement-cost">
       {/* Heading and Description */}
-      <div className="text-center mb-8" data-aos="fade-up">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6 }}
+        className="text-center mb-8"
+      >
         <h2 className="text-3xl font-bold mb-3 text-charcoal-gray">
           Estimated <Accent>Engines Replacement</Accent> Costs for {brandName}{" "}
           Models
@@ -40,7 +47,7 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand }) => {
           {brandName} models and engine types. Prices can vary significantly
           based on model, engine type, parts, and labour.
         </p>
-      </div>
+      </motion.div>
 
       {/* Table */}
       <EngineTable
@@ -49,37 +56,74 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand }) => {
         tableType="replacement_costs"
       />
 
-      <SummaryCard
-        variant="card"
-        title="Need Help Choosing?"
-        content={`These estimates provide a general idea of the costs involved in replacing a ${brandName} engine. Prices can vary based on location, availability of parts, and the specific service provider.`}
-      />
+      {/* Summary Card */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="mt-8"
+      >
+        <SummaryCard
+          variant="card"
+          title="Need Help Choosing?"
+          content={`These estimates provide a general idea of the costs involved in replacing a ${brandName} engine. Prices can vary based on location, availability of parts, and the specific service provider.`}
+        />
+      </motion.div>
 
       {/* CTA Section - Cascading Animation */}
-      <div
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.7, delay: 0.5 }}
         id="cta2"
         className="bg-gray-100 rounded-3xl py-12 px-6 text-center mt-20"
         style={{
           boxShadow: "0 0 100px rgba(255, 255, 255, 0.35)",
         }}
       >
-        <h3 className="text-3xl font-bold text-gray-900 mb-4">
+        <motion.h3
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="text-3xl font-bold text-gray-900 mb-4"
+        >
           Find the Best Replacement Engine Deals for Your {brandName}
-        </h3>
+        </motion.h3>
 
-        <p className="text-lg text-gray-700 mb-6">
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+          className="text-lg text-gray-700 mb-6"
+        >
           Looking for a reliable, cost-effective engine replacement? With
           Engines Market, getting the right engine for your {brandName} has
           never been easier.
-        </p>
+        </motion.p>
 
-        <p className="mx-auto text-base font-semibold text-blue-800 mb-4 max-w-3xl">
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="mx-auto text-base font-semibold text-blue-800 mb-4 max-w-3xl"
+        >
           Simply enter your Reg Number below, and we’ll instantly search trusted
           UK suppliers and local garages to bring you the best available engine
           deals.
-        </p>
+        </motion.p>
 
-        <form onSubmit={handleSubmit}>
+        <motion.form
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.9 }}
+          onSubmit={handleSubmit}
+        >
           <div className="flex justify-center mb-6">
             <div className="relative w-full max-w-sm">
               <div className="flex items-center border-2 border-black rounded-lg overflow-hidden bg-[#ffcb05]">
@@ -113,20 +157,32 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand }) => {
               <FiArrowUpRight className="w-5 h-5" />
             </Button>
           </div>
-        </form>
+        </motion.form>
 
         {/* Bottom Text */}
-        <p className="mt-6 text-sm text-gray-600 max-w-lg mx-auto">
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 1.0 }}
+          className="mt-6 text-sm text-gray-600 max-w-lg mx-auto"
+        >
           We match your exact vehicle details to quality recycled,
           reconditioned, and rebuilt engines — saving you time, money, and
           hassle. Fast, simple, and stress-free.
-        </p>
+        </motion.p>
 
-        <p className="mt-6 text-sm text-blue-600 mx-auto">
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 1.1 }}
+          className="mt-6 text-sm text-blue-600 mx-auto"
+        >
           🇬🇧 Trusted by thousands across the UK | Free, no-obligation quotes |
           Direct supplier access
-        </p>
-      </div>
+        </motion.p>
+      </motion.div>
     </Container>
   );
 };

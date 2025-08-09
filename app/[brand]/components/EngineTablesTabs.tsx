@@ -19,7 +19,7 @@ import { Column } from "../types/engine";
 import Container from "@/components/Container";
 import SummaryCard from "@/components/SummaryCard";
 import Link from "next/link";
-import { easeOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const TABLE_OPTIONS = [
   { key: "models", label: "Model Names" },
@@ -38,8 +38,9 @@ const TABLE_COLUMNS: Record<TableKey, Column<any>[]> = {
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: easeOut } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
+const MotionSummaryCard = motion(SummaryCard);
 const EngineTablesTabs = ({ brand }: { brand: string }) => {
   const [tableType, setTableType] = useState<TableKey>("models");
   const columns = TABLE_COLUMNS[tableType];
@@ -157,7 +158,11 @@ const EngineTablesTabs = ({ brand }: { brand: string }) => {
       </motion.div>
 
       {/* Note */}
-      <SummaryCard
+      <MotionSummaryCard
+        viewport={{ once: true }}
+        whileInView="visible"
+        variants={fadeUp}
+        initial="hidden"
         variant="card"
         content={meta.note}
         contact={

@@ -30,7 +30,7 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand }) => {
   return (
     <Container className="my-16" id="engine-replacement-cost">
       {/* Heading and Description */}
-      <div className="text-center mb-8" data-aos="fade-up" data-aos-delay="0">
+      <div className="text-center mb-8" data-aos="fade-up">
         <h2 className="text-3xl font-bold mb-3 text-charcoal-gray">
           Estimated <Accent>Engines Replacement</Accent> Costs for {brandName}{" "}
           Models
@@ -43,20 +43,16 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand }) => {
       </div>
 
       {/* Table */}
-      <div data-aos="fade-up" data-aos-delay="25">
-        <EngineTable
-          columns={columns}
-          data={replacement_costs}
-          tableType="replacement_costs"
-        />
-      </div>
+      <EngineTable
+        columns={columns}
+        data={replacement_costs}
+        tableType="replacement_costs"
+      />
 
       <SummaryCard
         variant="card"
         title="Need Help Choosing?"
         content={`These estimates provide a general idea of the costs involved in replacing a ${brandName} engine. Prices can vary based on location, availability of parts, and the specific service provider.`}
-        data-aos="fade-up"
-        data-aos-delay="50"
       />
 
       {/* CTA Section - Cascading Animation */}

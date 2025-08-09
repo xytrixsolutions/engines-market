@@ -44,12 +44,12 @@ const EngineTable = <T extends Record<string, unknown>>({
     return "w-4xl";
   };
 
-  const tableContainerClass = `hidden lg:block bg-card rounded-2xl shadow-lg mb-5 overflow-y-hidden overflow-y-hidden ${getWidthClass()} mx-auto`;
+  const tableContainerClass = `hidden lg:block bg-card rounded-2xl shadow-lg mb-5 overflow-hidden ${getWidthClass()} mx-auto`;
 
   return (
     <>
       {/* Desktop Table View */}
-      <div className={tableContainerClass} data-aos="fade-up">
+      <div className={tableContainerClass}>
         <Table className="w-full table-auto">
           <TableHeader>
             <TableRow className="border-b border-border">

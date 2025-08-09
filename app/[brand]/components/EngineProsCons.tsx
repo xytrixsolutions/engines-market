@@ -88,7 +88,7 @@ const EngineProsCons = ({ brand: brand }: { brand: string }) => {
 
       {/* Bottom CTA/Info Section */}
       <SummaryCard
-        data-aos="fade-down"
+        data-aos="fade-up"
         variant="card"
         content="Consider your vehicle's age, mileage, intended use, and budget when selecting an engine type. For vehicles under 5 years old, new engines are often worth the investment. For older vehicles, reconditioned engines offer the best balance of reliability and cost."
       />

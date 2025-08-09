@@ -5,6 +5,7 @@ import Image from "next/image";
 import Container from "./Container";
 import Button from "./Button";
 import Link from "next/link";
+import FadeUp from "./motion/FadeUp";
 
 // Define your logos with different sizes
 const brandLogos = [
@@ -221,64 +222,62 @@ export default function Hero3() {
   };
 
   return (
-    <Container
-      dark
-      id="explore-by-manufacturer"
-      data-aos="fade-up"
-      // data-aos-anchor-placement="top-center"
-      className="overflow-hidden"
-    >
-      <div className="items-center mb-12 text-center flex flex-col justify-center">
-        <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray-muted leading-tight mb-5 text-center">
-            Explore By <span className="text-neon-red">Manufacturer</span>
-          </h2>
-        </div>
-        <div>
-          <p className="text-gray-300 text-lg leading-relaxed max-w-6xl mx-auto">
-            Find the perfect engine for your car! Choose your manufacturer below
-            and get instant access to reconditioned, used, and new engine
-            options from trusted suppliers.
-          </p>
-        </div>
-      </div>
-
-      {/* Manufacturer Logos */}
-      <div
-        className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12 transition-all duration-1000 overflow-hidden ${
-          isExpanded ? "max-h-[2000px]" : "max-h-80"
-        }`}
-      >
-        {brandLogos.slice(0, visibleCount).map((logo, index) => (
-          <div
-            key={index}
-            className="mx-auto flex items-center justify-center transition-all duration-1000"
-            style={{
-              width: `${logo.width + 20}px`,
-              height: `${logo.height + 20}px`,
-            }}
-          >
-            <Link href={logo.link}>
-              <Image
-                src={logo.src}
-                alt={logo.name}
-                width={logo.width}
-                height={logo.height}
-                className="object-contain transition-all"
-              />
-            </Link>
+    <Container dark id="explore-by-manufacturer" className="overflow-hidden">
+      <FadeUp delay={0.25}>
+        <div className="items-center mb-12 text-center flex flex-col justify-center">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray-muted leading-tight mb-5 text-center">
+              Explore By <span className="text-neon-red">Manufacturer</span>
+            </h2>
           </div>
-        ))}
-      </div>
+          <div>
+            <p className="text-gray-300 text-lg leading-relaxed max-w-6xl mx-auto">
+              Find the perfect engine for your car! Choose your manufacturer
+              below and get instant access to reconditioned, used, and new
+              engine options from trusted suppliers.
+            </p>
+          </div>
+        </div>
 
-      {/* Load More / Show Less Button */}
-      <div className="flex items-center justify-center">
-        <div className="flex-1 h-px neon-red-gradient"></div>
-        <Button className="before:bg-charcoal-gray" onClick={handleToggle}>
-          {isExpanded ? "Show Less" : "Load More"}
-        </Button>
-        <div className="flex-1 h-px neon-red-gradient"></div>
-      </div>
+        {/* Manufacturer Logos */}
+        <div
+          className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12 transition-all duration-1000 overflow-hidden ${
+            isExpanded ? "max-h-[2000px]" : "max-h-80"
+          }`}
+        >
+          {brandLogos.slice(0, visibleCount).map((logo, index) => (
+            <div
+              key={index}
+              className="mx-auto flex items-center justify-center transition-all duration-1000"
+              style={{
+                width: `${logo.width + 20}px`,
+                height: `${logo.height + 20}px`,
+              }}
+            >
+              <FadeUp delay={(index % 5) * 0.1}>
+                <Link href={logo.link}>
+                  <Image
+                    src={logo.src}
+                    alt={logo.name}
+                    width={logo.width}
+                    height={logo.height}
+                    className="object-contain transition-all"
+                  />
+                </Link>
+              </FadeUp>
+            </div>
+          ))}
+        </div>
+
+        {/* Load More / Show Less Button */}
+        <div className="flex items-center justify-center">
+          <div className="flex-1 h-px neon-red-gradient"></div>
+          <Button className="before:bg-charcoal-gray" onClick={handleToggle}>
+            {isExpanded ? "Show Less" : "Load More"}
+          </Button>
+          <div className="flex-1 h-px neon-red-gradient"></div>
+        </div>
+      </FadeUp>
     </Container>
   );
 }

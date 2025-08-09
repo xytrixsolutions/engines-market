@@ -19,156 +19,6 @@ import {
   Activity,
   Car,
 } from "lucide-react";
-import { ReactNode } from "react";
-
-export interface Data {
-  metadata?: {
-    title?: string;
-    description?: string;
-    keywords?: string[];
-  };
-  brandName: string;
-  carImages: string[];
-  carModelNames: string[];
-  section0Image: {
-    img: string;
-    alt: string;
-  };
-  section1Image: {
-    img: string;
-    alt: string;
-  };
-  section4: {
-    mainParagraph?: string;
-    EngineProblems: Array<{
-      title: string;
-      icon?: ReactNode;
-      problem: string;
-      solution: string;
-      prevention: string;
-      affectedModelsAndYears?: string;
-      severity?: "Common" | "Moderate" | "Critical";
-    }>;
-    engineReliabilityAndPerformance?: Array<{
-      reliability: Array<{
-        heading: string;
-        paragraph: string;
-      }>;
-      performance: Array<{
-        heading: string;
-        paragraph: string;
-      }>;
-    }>;
-    conclusion: string;
-  };
-  engineData: {
-    models: Array<{
-      model: string;
-      model_name: string;
-      engine_options: string;
-    }>;
-    engine_codes: Array<{
-      engineCode: string;
-      engineSize: number;
-      fuelType: string;
-      turbo: boolean;
-      horsepower: string | number;
-      torque: number | string;
-      productionYears: string;
-    }>;
-    models_engines: Array<{
-      engineCode: string;
-      compatibleModels: string[];
-    }>;
-    replacement_costs: Array<{
-      image: string;
-      model: string;
-      engineType: string;
-      estimatedCost: string;
-    }>;
-  };
-  section7: Array<{
-    title: string;
-    icon: ReactNode;
-    badge: string;
-    badgeVariant: "default" | "secondary" | "outline";
-    pros: string[];
-    cons: string[];
-  }>;
-  section8: {
-    EngineProblems: Array<{
-      id: string; // Add this
-      title: string;
-      icon?: ReactNode;
-      severity?: "Common" | "Moderate" | "Critical";
-      data: Array<{
-        heading: string;
-        paragraph?: string;
-        points?: string[];
-      }>;
-      tips?: Array<{
-        title: string;
-        description: string;
-      }>;
-    }>;
-    maintenanceTips?: Array<{
-      icon: string;
-      iconColor: string;
-      border: string;
-      bg: string;
-      title: string;
-      titleColor: string;
-      text: string;
-      textColor: string;
-    }>;
-    summary?: {
-      variant: string;
-      title: string;
-      content: string;
-    };
-  };
-  section9?: {
-    performanceUpgrades: Array<{
-      id: string;
-      title: string;
-      icon?: ReactNode;
-      level: "Beginner" | "Progressive" | "Advanced" | "Expert" | "Important";
-      upgrades?: Array<{
-        name: string;
-        icon?: ReactNode;
-        description: string;
-        benefits: string;
-        considerations: string;
-      }>;
-      stages?: Array<{
-        stage: string;
-        description: string;
-        benefits: string;
-        considerations: string;
-      }>;
-      content?: {
-        description: string;
-        points?: Array<{
-          title: string;
-          description: string;
-        }>;
-      };
-    }>;
-    summary?: {
-      variant: string;
-      title: string;
-      content: string;
-    };
-  };
-
-  faqs: Array<{
-    question: string;
-    answer?: string;
-    answerList?: string[];
-  }>;
-}
-
-type BrandsData = Record<string, Data>;
 
 export const data: BrandsData = {
   bmw: {
@@ -1750,7 +1600,6 @@ export const data: BrandsData = {
         cons: ["Slightly more expensive than used engines"],
       },
     ],
-
     section8: {
       EngineProblems: [
         {
@@ -3068,27 +2917,26 @@ export const data: BrandsData = {
   bentley: {
     metadata: {
       title:
-  "Best Bentley Engines for Sale | New, Used & Reconditioned | Engines Market",
-description:
-  "Discover top-quality Bentley engines at unbeatable prices. Compare quotes for new, used, and reconditioned Bentley engines. Save time and money with Engines Market.",
-keywords: [
-  "Bentley engines",
-  "Reconditioned Bentley engines",
-  "Used Bentley engines",
-  "Replacement Bentley engines",
-  "Best Bentley engine prices",
-  "Bentley engine quotes",
-  "Bentley engine comparison",
-  "Buy Bentley engines",
-  "Bentley engine deals",
-  "Bentley engine parts",
-  "Bentley engine replacement",
-  "Bentley engine upgrades",
-  "Bentley engine tuning",
-  "Bentley engine specifications",
-  "Bentley engine troubleshooting",
-],
-
+        "Best Bentley Engines for Sale | New, Used & Reconditioned | Engines Market",
+      description:
+        "Discover top-quality Bentley engines at unbeatable prices. Compare quotes for new, used, and reconditioned Bentley engines. Save time and money with Engines Market.",
+      keywords: [
+        "Bentley engines",
+        "Reconditioned Bentley engines",
+        "Used Bentley engines",
+        "Replacement Bentley engines",
+        "Best Bentley engine prices",
+        "Bentley engine quotes",
+        "Bentley engine comparison",
+        "Buy Bentley engines",
+        "Bentley engine deals",
+        "Bentley engine parts",
+        "Bentley engine replacement",
+        "Bentley engine upgrades",
+        "Bentley engine tuning",
+        "Bentley engine specifications",
+        "Bentley engine troubleshooting",
+      ],
     },
     brandName: "Bentley",
     carImages: [
@@ -3116,93 +2964,93 @@ keywords: [
     section4: {
       mainParagraph:
         "Bentley engines are renowned for their performance and engineering excellence, but like any complex machinery, they can encounter issues. Here are some of the most common problems found in BMW engines, along with solutions and preventive measures:",
-        EngineProblems: [
-          {
-            title: "Oil Leaks",
-            icon: <Droplets className="h-5 w-5" />,
-            problem:
-              "Oil leaks are a common issue in Bentley engines, particularly in older models. These leaks can lead to engine damage if not addressed promptly.",
-            solution:
-              "Regularly check for oil leaks and replace any worn gaskets or seals. Using high-quality oil and changing it at recommended intervals can also help prevent leaks.",
-            prevention:
-              "Regular maintenance and inspections can catch leaks early. Ensure that the engine is not overfilled with oil, as this can increase pressure and cause leaks.",
-            severity: "Common",
-          },
-          {
-            title: "Turbocharger Failures",
-            icon: <Wind className="h-5 w-5" />,
-            problem:
-              "Turbocharger failures can occur due to oil contamination, lack of lubrication, or excessive heat. This can lead to a loss of power and increased exhaust smoke.",
-            solution:
-              "Regularly inspect and maintain the turbocharger. Ensure that the oil is clean and at the correct level. Replace the turbocharger if it shows signs of wear or damage.",
-            prevention:
-              "Use high-quality oil and change it regularly. Allow the engine to idle for a few minutes after driving to let the turbocharger cool down.",
-            severity: "Critical",
-          },
-          {
-            title: "Air Suspension Problems",
-            icon: <Car className="h-5 w-5" />,
-            problem:
-              "Bentley's air suspension system can develop leaks or fail, leading to an uneven ride height and poor handling.",
-            solution:
-              "Inspect the air suspension components regularly and replace any damaged parts. Ensure that the air compressor is functioning correctly.",
-            prevention:
-              "Regular maintenance and inspections can help catch issues early. Avoid overloading the vehicle, as this can strain the suspension system.",
-            severity: "Moderate",
-          },
-          {
-            title: "Cooling System Failures",
-            icon: <Thermometer className="h-5 w-5" />,
-            problem:
-              "Cooling system failures can lead to engine overheating, which can cause severe damage. Common issues include radiator leaks, thermostat failures, and water pump malfunctions.",
-            solution:
-              "Regularly check the coolant levels and inspect the cooling system components. Replace any faulty parts immediately.",
-            prevention:
-              "Maintain the cooling system by flushing and replacing the coolant at recommended intervals. Ensure that the radiator and other components are clean and free of debris.",
-            severity: "Critical",
-          },
-          {
-            title: "Ignition Coil Failures",
-            icon: <Zap className="h-5 w-5" />,
-            problem:
-              "Ignition coil failures can cause misfires, poor fuel economy, and engine stalling. This issue is common in high-performance engines like those in Bentleys.",
-            solution:
-              "Replace faulty ignition coils and spark plugs. Regularly inspect the ignition system for signs of wear or damage.",
-            prevention:
-              "Use high-quality ignition components and replace them at recommended intervals. Regular maintenance can help catch issues early.",
-            severity: "Moderate",
-          },
-        ],
-        
-        engineReliabilityAndPerformance: [
-          {
-            reliability: [
-              {
-                heading: "4.0L V8 Engine – Reliability and Durability",
-                paragraph:
-                  "The 4.0L V8 engine, found in models like the Bentley Continental GT and Flying Spur, is renowned for its robust build quality and long-term reliability. With regular maintenance and timely repairs, this engine can deliver consistent performance and longevity.",
-              },
-              {
-                heading: "Importance of Regular Maintenance",
-                paragraph:
-                  "To ensure reliability, Bentley engines require:\n- Routine oil changes with high-quality synthetic oil\n- Scheduled inspections of seals, gaskets, and belts\n- Timely replacement of worn components\n- Professional diagnostics for early detection of issues\nAdhering to these practices significantly improves engine lifespan.",
-              },
-            ],
-            performance: [
-              {
-                heading: "6.0L W12 Engine – Exceptional Power",
-                paragraph:
-                  "Used in high-performance models like the Bentley Bentayga and Continental GT Speed, the 6.0L W12 engine delivers remarkable horsepower and smooth acceleration. It offers elite performance suitable for grand touring and luxury driving experiences.",
-              },
-              {
-                heading: "Maintenance Demands for Peak Performance",
-                paragraph:
-                  "To maintain peak performance, the W12 engine requires meticulous attention:\n- Frequent oil changes due to high operating temperatures\n- Monitoring of turbocharger health and intercooler efficiency\n- Cooling system flushes and inspections\n- Precise calibration of engine management systems\nNeglecting maintenance can compromise performance and lead to costly repairs.",
-              },
-            ],
-          },
-        ],
-        
+      EngineProblems: [
+        {
+          title: "Oil Leaks",
+          icon: <Droplets className="h-5 w-5" />,
+          problem:
+            "Oil leaks are a common issue in Bentley engines, particularly in older models. These leaks can lead to engine damage if not addressed promptly.",
+          solution:
+            "Regularly check for oil leaks and replace any worn gaskets or seals. Using high-quality oil and changing it at recommended intervals can also help prevent leaks.",
+          prevention:
+            "Regular maintenance and inspections can catch leaks early. Ensure that the engine is not overfilled with oil, as this can increase pressure and cause leaks.",
+          severity: "Common",
+        },
+        {
+          title: "Turbocharger Failures",
+          icon: <Wind className="h-5 w-5" />,
+          problem:
+            "Turbocharger failures can occur due to oil contamination, lack of lubrication, or excessive heat. This can lead to a loss of power and increased exhaust smoke.",
+          solution:
+            "Regularly inspect and maintain the turbocharger. Ensure that the oil is clean and at the correct level. Replace the turbocharger if it shows signs of wear or damage.",
+          prevention:
+            "Use high-quality oil and change it regularly. Allow the engine to idle for a few minutes after driving to let the turbocharger cool down.",
+          severity: "Critical",
+        },
+        {
+          title: "Air Suspension Problems",
+          icon: <Car className="h-5 w-5" />,
+          problem:
+            "Bentley's air suspension system can develop leaks or fail, leading to an uneven ride height and poor handling.",
+          solution:
+            "Inspect the air suspension components regularly and replace any damaged parts. Ensure that the air compressor is functioning correctly.",
+          prevention:
+            "Regular maintenance and inspections can help catch issues early. Avoid overloading the vehicle, as this can strain the suspension system.",
+          severity: "Moderate",
+        },
+        {
+          title: "Cooling System Failures",
+          icon: <Thermometer className="h-5 w-5" />,
+          problem:
+            "Cooling system failures can lead to engine overheating, which can cause severe damage. Common issues include radiator leaks, thermostat failures, and water pump malfunctions.",
+          solution:
+            "Regularly check the coolant levels and inspect the cooling system components. Replace any faulty parts immediately.",
+          prevention:
+            "Maintain the cooling system by flushing and replacing the coolant at recommended intervals. Ensure that the radiator and other components are clean and free of debris.",
+          severity: "Critical",
+        },
+        {
+          title: "Ignition Coil Failures",
+          icon: <Zap className="h-5 w-5" />,
+          problem:
+            "Ignition coil failures can cause misfires, poor fuel economy, and engine stalling. This issue is common in high-performance engines like those in Bentleys.",
+          solution:
+            "Replace faulty ignition coils and spark plugs. Regularly inspect the ignition system for signs of wear or damage.",
+          prevention:
+            "Use high-quality ignition components and replace them at recommended intervals. Regular maintenance can help catch issues early.",
+          severity: "Moderate",
+        },
+      ],
+
+      engineReliabilityAndPerformance: [
+        {
+          reliability: [
+            {
+              heading: "4.0L V8 Engine – Reliability and Durability",
+              paragraph:
+                "The 4.0L V8 engine, found in models like the Bentley Continental GT and Flying Spur, is renowned for its robust build quality and long-term reliability. With regular maintenance and timely repairs, this engine can deliver consistent performance and longevity.",
+            },
+            {
+              heading: "Importance of Regular Maintenance",
+              paragraph:
+                "To ensure reliability, Bentley engines require:\n- Routine oil changes with high-quality synthetic oil\n- Scheduled inspections of seals, gaskets, and belts\n- Timely replacement of worn components\n- Professional diagnostics for early detection of issues\nAdhering to these practices significantly improves engine lifespan.",
+            },
+          ],
+          performance: [
+            {
+              heading: "6.0L W12 Engine – Exceptional Power",
+              paragraph:
+                "Used in high-performance models like the Bentley Bentayga and Continental GT Speed, the 6.0L W12 engine delivers remarkable horsepower and smooth acceleration. It offers elite performance suitable for grand touring and luxury driving experiences.",
+            },
+            {
+              heading: "Maintenance Demands for Peak Performance",
+              paragraph:
+                "To maintain peak performance, the W12 engine requires meticulous attention:\n- Frequent oil changes due to high operating temperatures\n- Monitoring of turbocharger health and intercooler efficiency\n- Cooling system flushes and inspections\n- Precise calibration of engine management systems\nNeglecting maintenance can compromise performance and lead to costly repairs.",
+            },
+          ],
+        },
+      ],
+
       conclusion:
         "By addressing these common problems and following preventive measures, you can ensure that your Bentley engine remains in peak condition, providing a reliable and luxurious driving experience.",
     },
@@ -3284,7 +3132,6 @@ keywords: [
           engine_options: "6.0L W12",
         },
       ],
-      
       engine_codes: [
         {
           engineCode: "CZMA",
@@ -3350,7 +3197,6 @@ keywords: [
           productionYears: "2010–2020",
         },
       ],
-      
       models_engines: [
         {
           engineCode: "CZMA",
@@ -3374,14 +3220,16 @@ keywords: [
         },
         {
           engineCode: "CTVA",
-          compatibleModels: ["Bentley Continental GT Speed", "Bentley Bentayga"],
+          compatibleModels: [
+            "Bentley Continental GT Speed",
+            "Bentley Bentayga",
+          ],
         },
         {
           engineCode: "CJEB",
           compatibleModels: ["Bentley Flying Spur", "Bentley Continental GT"],
         },
       ],
-      
       replacement_costs: [
         {
           image: "/bentley/bentley-continental-gt.png",
@@ -3474,7 +3322,6 @@ keywords: [
           estimatedCost: "£14,000 - £19,000",
         },
       ],
-      
     },
     section7: [
       {
@@ -3486,10 +3333,7 @@ keywords: [
           "100% reliability with a factory warranty",
           "Best performance & longevity",
         ],
-        cons: [
-          "Higher cost",
-          "Limited availability for older models",
-        ],
+        cons: ["Higher cost", "Limited availability for older models"],
       },
       {
         title: "Used Bentley Engines",
@@ -3515,13 +3359,9 @@ keywords: [
           "More reliable than used engines",
           "Balanced cost vs. performance",
         ],
-        cons: [
-          "Slightly more expensive than used engines",
-        ],
+        cons: ["Slightly more expensive than used engines"],
       },
     ],
-    
-
     section8: {
       EngineProblems: [
         {
@@ -3589,7 +3429,7 @@ keywords: [
           ],
         },
       ],
-      
+
       maintenanceTips: [
         {
           icon: "Lightbulb",
@@ -3662,8 +3502,7 @@ keywords: [
               icon: <Wind className="h-4 w-4" />,
               description:
                 "Cold air intakes increase the volume of cool air entering the engine, improving combustion.",
-              benefits:
-                "Enhanced power output and engine efficiency.",
+              benefits: "Enhanced power output and engine efficiency.",
               considerations:
                 "Improper installation may allow debris into the engine—ensure proper sealing.",
             },
@@ -3707,8 +3546,7 @@ keywords: [
               stage: "Stage 3 Tuning",
               description:
                 "Comprehensive tuning involving forged pistons, camshafts, and crankshafts. Typically used for racing or high-performance applications.",
-              benefits:
-                "Maximum power output, ideal for track performance.",
+              benefits: "Maximum power output, ideal for track performance.",
               considerations:
                 "High impact on reliability and fuel efficiency—less suited for daily driving.",
             },
@@ -3793,7 +3631,6 @@ keywords: [
           "By carefully selecting and installing performance upgrades, you can enjoy a more powerful and thrilling Bentley while maintaining a balance between performance, reliability, and fuel efficiency. Always consult professional tuners and use high-quality components for best results.",
       },
     },
-    
     faqs: [
       {
         question: "What is EnginesMarket.co.uk?",
@@ -3806,12 +3643,14 @@ keywords: [
           "Simply enter your vehicle details and engine requirements on our platform. We will then provide you with quotes from various sellers, allowing you to compare prices and choose the best option for your needs.",
       },
       {
-        question: "What types of Bentley engines can I find on EnginesMarket.co.uk?",
+        question:
+          "What types of Bentley engines can I find on EnginesMarket.co.uk?",
         answer:
           "We offer a wide range of Bentley engines, including reconditioned, used, and replacement engines for various Bentley models. Our platform ensures you get high-quality engines at competitive prices.",
       },
       {
-        question: "Why should I choose EnginesMarket.co.uk for my Bentley engine needs?",
+        question:
+          "Why should I choose EnginesMarket.co.uk for my Bentley engine needs?",
         answer:
           "EnginesMarket.co.uk offers a convenient and cost-effective way to find the perfect engine for your Bentley. By comparing quotes from multiple sellers, you can save time and money while ensuring you get a reliable and high-quality engine.",
       },
@@ -3841,7 +3680,8 @@ keywords: [
           "Yes, you can upgrade your Bentley engine with performance modifications such as ECU remapping, turbo upgrades, and high-performance exhaust systems. These upgrades can enhance power and efficiency.",
       },
       {
-        question: "What is the difference between a reconditioned and a used Bentley engine?",
+        question:
+          "What is the difference between a reconditioned and a used Bentley engine?",
         answer:
           "A reconditioned Bentley engine has been disassembled, cleaned, and rebuilt with new or refurbished parts to meet original specifications. A used engine, on the other hand, is typically removed from a vehicle and sold as-is.",
       },
@@ -3851,7 +3691,8 @@ keywords: [
           "The engine code can usually be found on the engine block, in the owner's manual, or on the vehicle's identification plate. It is essential for ordering the correct replacement parts.",
       },
       {
-        question: "What are the benefits of using a reconditioned Bentley engine?",
+        question:
+          "What are the benefits of using a reconditioned Bentley engine?",
         answer:
           "Reconditioned engines offer a cost-effective alternative to new engines, providing similar performance and reliability. They are thoroughly inspected and rebuilt to meet original specifications.",
       },
@@ -3895,7 +3736,6 @@ keywords: [
         answer:
           "Some of the most popular Bentley engine models include the 6.0L W12, 4.0L V8, and 6.75L V8. These engines are known for their power and performance.",
       },
-     
     ],
   },
 };

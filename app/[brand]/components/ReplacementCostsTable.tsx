@@ -62,38 +62,24 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand }) => {
         style={{
           boxShadow: "0 0 100px rgba(255, 255, 255, 0.35)",
         }}
-        data-aos="fade-up"
-        data-aos-delay="75"
       >
-        <h3
-          className="text-3xl font-bold text-gray-900 mb-4"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+        <h3 className="text-3xl font-bold text-gray-900 mb-4">
           Find the Best Replacement Engine Deals for Your {brandName}
         </h3>
 
-        <p
-          className="text-lg text-gray-700 mb-6"
-          data-aos="fade-up"
-          data-aos-delay="125"
-        >
+        <p className="text-lg text-gray-700 mb-6">
           Looking for a reliable, cost-effective engine replacement? With
           Engines Market, getting the right engine for your {brandName} has
           never been easier.
         </p>
 
-        <p
-          className="mx-auto text-base font-semibold text-blue-800 mb-4 max-w-3xl"
-          data-aos="fade-up"
-          data-aos-delay="150"
-        >
+        <p className="mx-auto text-base font-semibold text-blue-800 mb-4 max-w-3xl">
           Simply enter your Reg Number below, and we’ll instantly search trusted
           UK suppliers and local garages to bring you the best available engine
           deals.
         </p>
 
-        <form onSubmit={handleSubmit} data-aos="fade-up" data-aos-delay="175">
+        <form onSubmit={handleSubmit}>
           <div className="flex justify-center mb-6">
             <div className="relative w-full max-w-sm">
               <div className="flex items-center border-2 border-black rounded-lg overflow-hidden bg-[#ffcb05]">
@@ -130,21 +116,13 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand }) => {
         </form>
 
         {/* Bottom Text */}
-        <p
-          className="mt-6 text-sm text-gray-600 max-w-lg mx-auto"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
+        <p className="mt-6 text-sm text-gray-600 max-w-lg mx-auto">
           We match your exact vehicle details to quality recycled,
           reconditioned, and rebuilt engines — saving you time, money, and
           hassle. Fast, simple, and stress-free.
         </p>
 
-        <p
-          className="mt-6 text-sm text-blue-600 mx-auto"
-          data-aos="fade-up"
-          data-aos-delay="225"
-        >
+        <p className="mt-6 text-sm text-blue-600 mx-auto">
           🇬🇧 Trusted by thousands across the UK | Free, no-obligation quotes |
           Direct supplier access
         </p>

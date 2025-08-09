@@ -19,6 +19,7 @@ import { Column } from "../types/engine";
 import Container from "@/components/Container";
 import SummaryCard from "@/components/SummaryCard";
 import Link from "next/link";
+import { easeOut, motion } from "framer-motion";
 
 const TABLE_OPTIONS = [
   { key: "models", label: "Model Names" },
@@ -35,6 +36,10 @@ const TABLE_COLUMNS: Record<TableKey, Column<any>[]> = {
   models_engines: MODEL_ENGINE_COLUMNS,
 };
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: easeOut } },
+};
 const EngineTablesTabs = ({ brand }: { brand: string }) => {
   const [tableType, setTableType] = useState<TableKey>("models");
   const columns = TABLE_COLUMNS[tableType];
@@ -68,7 +73,13 @@ const EngineTablesTabs = ({ brand }: { brand: string }) => {
   return (
     <Container className="mt-10 px-4 md:px-0" id="tables">
       {/* Mobile Dropdown */}
-      <div className="mb-6 flex items-center space-x- lg:hidden transition-all duration-300">
+      <motion.div
+        className="mb-6 flex items-center space-x- lg:hidden"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <label className="text-sm font-medium text-gray-700 w-full">
           FIND YOUR ENGINE BY:
         </label>
@@ -91,10 +102,16 @@ const EngineTablesTabs = ({ brand }: { brand: string }) => {
             ))}
           </SelectContent>
         </Select>
-      </div>
+      </motion.div>
 
       {/* Desktop Tabs */}
-      <div className="hidden lg:flex space-x-2 mb-6 justify-center">
+      <motion.div
+        className="hidden lg:flex space-x-2 mb-6 justify-center"
+        viewport={{ once: true }}
+        whileInView="visible"
+        variants={fadeUp}
+        initial="hidden"
+      >
         {TABLE_OPTIONS.map((opt) => (
           <Button
             key={opt.key}
@@ -111,25 +128,33 @@ const EngineTablesTabs = ({ brand }: { brand: string }) => {
             {opt.label}
           </Button>
         ))}
-      </div>
+      </motion.div>
 
       {/* Table Meta */}
-      <div className="text-center mb-8 mt-10">
+      <motion.div
+        className="text-center mb-8 mt-10"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <h2 className="text-2xl md:text-3xl font-bold mb-3 text-neon-red">
           {meta.title}
         </h2>
         <p className="text-base md:text-lg text-charcoal-gray mb-2 ">
           {meta.description}
         </p>
-      </div>
+      </motion.div>
 
       {/* Table */}
-      <div
+      <motion.div
         key={tableType}
-        className="transition-all duration-500 ease-in-out opacity-0 animate-fadeIn"
+        variants={fadeUp}
+        initial="hidden"
+        animate="visible"
       >
         <EngineTable columns={columns} data={tableData} tableType={tableType} />
-      </div>
+      </motion.div>
 
       {/* Note */}
       <SummaryCard

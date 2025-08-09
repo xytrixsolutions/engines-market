@@ -7,7 +7,17 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { easeOut, motion } from "framer-motion";
 
+const tableContainer = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.05 } },
+};
+
+const tableRowAnim = {
+  hidden: { opacity: 0, y: 15 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: easeOut } },
+};
 type EngineTableProps<T = Record<string, unknown>> = TableProps<T> & {
   tableType?:
     | "models"
@@ -49,7 +59,12 @@ const EngineTable = <T extends Record<string, unknown>>({
   return (
     <>
       {/* Desktop Table View */}
-      <div className={tableContainerClass}>
+      <motion.div
+        className={tableContainerClass}
+        variants={tableContainer}
+        initial="hidden"
+        animate="visible"
+      >
         <Table className="w-full table-auto">
           <TableHeader>
             <TableRow className="border-b border-border">
@@ -91,12 +106,21 @@ const EngineTable = <T extends Record<string, unknown>>({
             ))}
           </TableBody>
         </Table>
-      </div>
+      </motion.div>
 
       {/* Mobile Card View */}
-      <div className="lg:hidden space-y-4">
+      <motion.div
+        variants={tableContainer}
+        initial="hidden"
+        animate="visible"
+        className="lg:hidden space-y-4"
+      >
         {data.map((row, i) => (
-          <div key={i} className="bg-card rounded-xl shadow-lg p-4 space-y-3">
+          <motion.div
+            key={i}
+            variants={tableRowAnim}
+            className="bg-card rounded-xl shadow-lg p-4 space-y-3"
+          >
             {columns.map((col) => (
               <div key={col.key} className="flex justify-between items-start">
                 <span className="font-semibold text-foreground">
@@ -119,9 +143,9 @@ const EngineTable = <T extends Record<string, unknown>>({
                 </div>
               </div>
             ))}
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </>
   );
 };

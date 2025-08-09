@@ -8,6 +8,22 @@ import Container from "./Container";
 import Button from "./Button";
 import { useRouter } from "next/navigation";
 import { JSX } from "react/jsx-dev-runtime";
+import { motion } from "motion/react";
+
+const fadeDown = {
+  hidden: { opacity: 0, y: -50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+};
+
+const fadeRight = {
+  hidden: { opacity: 0, x: -50 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+};
+
+const fadeLeft = {
+  hidden: { opacity: 0, x: 50 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+};
 
 const Hero1 = ({
   carImages,
@@ -26,14 +42,12 @@ const Hero1 = ({
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // Fade out text before changing
       setIsTextVisible(false);
-
       setTimeout(() => {
         setPrevIndex(currentIndex);
         setCurrentIndex((prev) => (prev + 1) % carImages.length);
-        setIsTextVisible(true); // Fade back in
-      }, 500); // match fade duration
+        setIsTextVisible(true);
+      }, 500);
     }, 4000);
 
     return () => clearInterval(interval);
@@ -51,32 +65,35 @@ const Hero1 = ({
   return (
     <Container dark>
       <div className="text-center mb-16">
-        {/* <h1 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-4 leading-tight"> */}
-        <h1
+        <motion.h1
           className="text-3xl md:text-4xl font-bold text-charcoal-gray-muted mb-4 leading-tight"
-          data-aos="fade-down"
+          variants={fadeDown}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
         >
           {brandName
             ? `Find the Best ${brandName} Engines – New, Used & Reconditioned at Unbeatable Prices!`
             : "The UK’s Largest Engine Marketplace – Compare & Save Instantly!"}
-        </h1>
+        </motion.h1>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
         {/* LEFT: Form */}
-        <div
-          data-aos="fade-right"
+        <motion.div
+          variants={fadeRight}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
           className="relative lg:col-span-2 max-w-xl lg:max-w-none mx-auto lg:mr-0 lg:ml-auto z-50 overflow-visible"
           style={{
-            boxShadow: "0 0 100px rgba(255, 255, 255, 0.35)", // <- even on all sides
+            boxShadow: "0 0 100px rgba(255, 255, 255, 0.35)",
             borderRadius: "1.5rem",
           }}
         >
           <div className="relative overflow-hidden rounded-3xl">
-            {/* Rotated Background with Diagonal Split */}
             <div className="absolute inset-0 -z-10 transform rotate-[4deg] scale-110 bg-[conic-gradient(from_221deg,white_0deg,white_50%,#ededed_50%,#ededed_100%)]"></div>
 
-            {/* Foreground Form */}
             <div className="relative p-6 sm:p-8">
               <div className="text-center mb-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -89,7 +106,6 @@ const Hero1 = ({
               <form onSubmit={handleSubmit}>
                 <div className="flex justify-center mb-4">
                   <div className="relative w-full max-w-md">
-                    {/* Number plate container with shared background and border */}
                     <div
                       className="flex items-center border-4 border-black rounded-md overflow-hidden bg-[#ffcb05]"
                       style={{
@@ -97,7 +113,6 @@ const Hero1 = ({
                         height: "5rem",
                       }}
                     >
-                      {/* Flag container */}
                       <div className="w-10 h-full relative flex-shrink-0 ml-[-1px]">
                         <Image
                           src="/Home/uknumberplate.png"
@@ -107,7 +122,6 @@ const Hero1 = ({
                         />
                       </div>
 
-                      {/* Input field - now properly centered without interference */}
                       <input
                         id="vehicle-input"
                         type="text"
@@ -150,12 +164,15 @@ const Hero1 = ({
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* RIGHT: Image + Model Name */}
-        <div
+        <motion.div
           className="lg:col-span-3 flex flex-col items-center z-0"
-          data-aos="fade-left"
+          variants={fadeLeft}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
         >
           <div className="w-full relative aspect-[12/7] overflow-x-visible rounded-lg mb-5 flex items-center justify-center max-w-xl lg:max-w-none mx-auto ">
             {carImages.map((src, index) => {
@@ -179,7 +196,6 @@ const Hero1 = ({
             })}
           </div>
 
-          {/* Model name with fade effect */}
           <div className="h-full text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#ff5a73] to-[#b30529] text-transparent bg-clip-text">
             <span
               className={`transition-opacity duration-700 ease-in-out ${
@@ -189,7 +205,7 @@ const Hero1 = ({
               {carModelNames[currentIndex]}
             </span>
           </div>
-        </div>
+        </motion.div>
       </div>
     </Container>
   );

@@ -1,10 +1,30 @@
+"use client";
 import Accent from "@/components/Accent";
-import Container from "@/components/Container";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
-import { data } from "../../../data/brands";
+import { data } from "@/data/brands";
+import { easeOut, motion } from "framer-motion";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: easeOut } },
+};
+
+const listContainer = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15, // delay between each child
+    },
+  },
+};
+
+const listItem = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: easeOut } },
+};
 
 const WhyChoose: React.FC<{ brand: string }> = ({ brand }) => {
   const { section0Image } = data[brand];
@@ -14,10 +34,13 @@ const WhyChoose: React.FC<{ brand: string }> = ({ brand }) => {
       className="grid grid-cols-1 lg:grid-cols-2 items-center h-auto lg:h-[85vh]"
       id="why-choose"
     >
-      {/* Image Side - Full height + BG */}
-      <div
+      {/* Image Side */}
+      <motion.div
         className="bg-[url('/why-choose-bg.webp')] bg-cover bg-center flex justify-center items-center py-16 lg:py-0 h-full"
-        data-aos="fade-up"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
       >
         <Image
           src={section0Image.img}
@@ -25,12 +48,15 @@ const WhyChoose: React.FC<{ brand: string }> = ({ brand }) => {
           width={400}
           height={300}
         />
-      </div>
+      </motion.div>
 
-      {/* Text Side - Inside layout container */}
-      <div
+      {/* Text Side */}
+      <motion.div
         className="bg-[linear-gradient(90deg,_#2e2e2e,_#727272,_#2e2e2e)] bg-blend-color-burn h-full flex items-center max-lg:py-10"
-        data-aos="fade-up"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
       >
         <div
           className="w-11/12 lg:w-10/12 max-w-screen-xl mx-auto px-4 py-12 pb-20 rounded-xl bg-neutral-800/20 backdrop-blur-md border border-white/20 shadow-md"
@@ -49,7 +75,13 @@ const WhyChoose: React.FC<{ brand: string }> = ({ brand }) => {
             customer satisfaction.
           </Paragraph>
 
-          <div className="space-y-6 text-charcoal-gray-muted ">
+          <motion.div
+            className="space-y-6 text-charcoal-gray-muted"
+            variants={listContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          >
             {[
               "Free Instant Quotes",
               "12 Years Industry Experience",
@@ -58,17 +90,18 @@ const WhyChoose: React.FC<{ brand: string }> = ({ brand }) => {
               "Save 40% on Replacement Cost",
               "Certified Engines with OEM Parts",
             ].map((text, i) => (
-              <div
+              <motion.div
                 key={i}
-                className="flex items-center space-x-3 translate-x-6 sm:translate-x-10 md:translate-x-48 lg:translate-x-10 xl:translate-x-10 [@media(min-width:1400px)]:translate-x-16 [@media(min-width:1600px)]:translate-x-24 [@media(min-width:1700px)]:translate-x-36 "
+                variants={listItem}
+                className="flex items-center space-x-3 translate-x-6 sm:translate-x-10 md:translate-x-48 lg:translate-x-10 xl:translate-x-10 [@media(min-width:1400px)]:translate-x-16 [@media(min-width:1600px)]:translate-x-24 [@media(min-width:1700px)]:translate-x-36"
               >
                 <CheckCircle className="w-5 h-5 text-green-400" />
                 <span className="font-semibold">{text}</span>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

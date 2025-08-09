@@ -1,4 +1,7 @@
+"use client";
+
 import Container from "@/components/Container";
+import { motion } from "framer-motion";
 
 const cards = [
   {
@@ -6,21 +9,21 @@ const cards = [
     titleColor: "text-gray-800",
     textColor: "text-gray-600",
     buttonExtra: "hover:text-[#EB0808]",
-    delay: 100,
+    delay: 0.1, // in seconds
   },
   {
     bg: "bg-[#1E3A8A]",
     titleColor: "text-white",
     textColor: "text-white",
     buttonExtra: "",
-    delay: 200,
+    delay: 0.2,
   },
   {
     bg: "bg-gray-50",
     titleColor: "text-gray-800",
     textColor: "text-gray-600",
     buttonExtra: "hover:text-[#EB0808]",
-    delay: 300,
+    delay: 0.3,
   },
 ];
 
@@ -29,10 +32,24 @@ const snippet =
     3,
   );
 
+const fadeUpVariant = {
+  hidden: { opacity: 0, y: 50 },
+  visible: (delay: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, delay },
+  }),
+};
+
 const BlogCards = () => {
   return (
     <Container id="blog">
-      <div data-aos="fade-up">
+      <motion.div
+        variants={fadeUpVariant}
+        initial="hidden"
+        animate="visible"
+        custom={0}
+      >
         <h2 className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-6 text-center">
           Featured Blog Post -{" "}
           <span className="text-neon-red">Latest Engine Buying Guides</span>
@@ -40,17 +57,18 @@ const BlogCards = () => {
         <p className="text-center text-gray-500 mb-12">
           Stay informed with our expert guides and insider tips!
         </p>
-      </div>
+      </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {cards.map(({ bg, titleColor, textColor, buttonExtra, delay }, i) => (
-          <div
+          <motion.div
             key={i}
-            className={`${bg} p-6 rounded-2xl shadow-2xl transition`}
-            data-aos="fade-up"
-            data-aos-delay={delay}
-            data-aos-duration="600"
-            data-aos-once="true"
+            className={`${bg} p-6 rounded-2xl shadow-2xl`}
+            variants={fadeUpVariant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            custom={delay}
           >
             <h3 className={`text-xl font-semibold ${titleColor} mb-3`}>
               Buying Guide For Engine
@@ -62,7 +80,7 @@ const BlogCards = () => {
             >
               Read More →
             </a>
-          </div>
+          </motion.div>
         ))}
       </div>
     </Container>

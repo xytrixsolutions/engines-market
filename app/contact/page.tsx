@@ -176,7 +176,7 @@ function VehicleServiceFormContent() {
                           if (engineCode) return "Engine Code:";
                         })()}
                       </p>
-                      <p className="text-sm font-medium text-gray-500">
+                      <p className="text-lg font-medium text-gray-500">
                         {[
                           vehicleInfo.make,
                           vehicleInfo.model,

@@ -1,3 +1,4 @@
+"use client";
 import {
   Accordion,
   AccordionContent,
@@ -13,6 +14,7 @@ import Accent from "@/components/Accent";
 import Paragraph from "@/components/Paragraph";
 import GradientBorderWrapper from "@/components/GradientBorderWrapper";
 import { data } from "../../../data/brands";
+import { motion } from "framer-motion";
 
 const getSeverityColor = (severity: string) => {
   switch (severity) {
@@ -30,11 +32,25 @@ const getSeverityColor = (severity: string) => {
 const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
   const { EngineProblems } = data[brand].section4;
   const { brandName } = data[brand];
+
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6 },
+    },
+  };
+
   return (
     <Container dark className="my-12" id="engine-problems">
-      <div
+      <motion.div
         className="max-w-5xl mx-auto text-center text-charcoal-gray-muted"
-        data-aos="fade-up"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+        variants={containerVariants}
       >
         <Heading className="mb-6 text-charcoal-gray-muted">
           Common<Accent>{brandName} Engine Problems</Accent>& How to Fix Them
@@ -46,12 +62,13 @@ const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
           <strong>{brandName} engines</strong>, along with solutions and
           preventive measures:
         </Paragraph>
-      </div>
+      </motion.div>
+
       <Accordion
         type="single"
         collapsible
         defaultValue="item-0"
-        className="space-y-4"
+        className="space-y-4 mt-8"
       >
         {EngineProblems.map((item, idx) => (
           <GradientBorderWrapper key={item.title} variant="conic">
@@ -102,25 +119,32 @@ const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
           </GradientBorderWrapper>
         ))}
       </Accordion>
-      <Card className="bg-blue-50 border-blue-200 mt-5" data-aos="fade-up">
-        <CardContent>
-          
-          <div className="flex items-start gap-3">
-            <Shield className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-            <div className="min-w-0">
-              <h3 className="text-base md:text-lg font-semibold text-blue-900 mb-2">
-                Key Takeaway
-              </h3>
-              <p className="text-sm md:text-base text-blue-800">
-                By understanding these common issues and taking preventive
-                measures, you can ensure your {brandName} engine remains in top
-                condition, providing you with the performance and reliability
-                you expect from the brand.
-              </p>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
+        <Card className="bg-blue-50 border-blue-200 mt-5">
+          <CardContent>
+            <div className="flex items-start gap-3">
+              <Shield className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+              <div className="min-w-0">
+                <h3 className="text-base md:text-lg font-semibold text-blue-900 mb-2">
+                  Key Takeaway
+                </h3>
+                <p className="text-sm md:text-base text-blue-800">
+                  By understanding these common issues and taking preventive
+                  measures, you can ensure your {brandName} engine remains in
+                  top condition, providing you with the performance and
+                  reliability you expect from the brand.
+                </p>
+              </div>
             </div>
-          </div>
-        </CardContent>
-      </Card>
+          </CardContent>
+        </Card>
+      </motion.div>
     </Container>
   );
 };

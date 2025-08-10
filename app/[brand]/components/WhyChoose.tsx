@@ -1,10 +1,18 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Accent from "@/components/Accent";
-import Container from "@/components/Container";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
-import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 import { data } from "../../../data/brands";
+import * as motion from "motion/react-client";
+import type { HTMLMotionProps } from "framer-motion";
+
+const motionProps: HTMLMotionProps<any> = {
+  initial: { opacity: 0, y: 50 },
+  transition: { duration: 1, delay: 0.2, ease: "easeOut" as any }, // fix
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+};
 
 const WhyChoose: React.FC<{ brand: string }> = ({ brand }) => {
   const { section0Image } = data[brand];
@@ -15,22 +23,23 @@ const WhyChoose: React.FC<{ brand: string }> = ({ brand }) => {
       id="why-choose"
     >
       {/* Image Side - Full height + BG */}
-      <div
+      <motion.div
         className="bg-[url('/why-choose-bg.webp')] bg-cover bg-center flex justify-center items-center py-16 lg:py-0 h-full"
-        data-aos="fade-up"
+        {...motionProps}
       >
-        <Image
+        <motion.img
+          {...motionProps}
           src={section0Image.img}
           alt="BMW Engine"
           width={400}
           height={300}
         />
-      </div>
+      </motion.div>
 
       {/* Text Side - Inside layout container */}
-      <div
+      <motion.div
         className="bg-[linear-gradient(90deg,_#2e2e2e,_#727272,_#2e2e2e)] bg-blend-color-burn h-full flex items-center max-lg:py-10"
-        data-aos="fade-up"
+        {...motionProps}
       >
         <div
           className="w-11/12 lg:w-10/12 max-w-screen-xl mx-auto px-4 py-12 pb-20 rounded-xl bg-neutral-800/20 backdrop-blur-md border border-white/20 shadow-md"
@@ -68,7 +77,7 @@ const WhyChoose: React.FC<{ brand: string }> = ({ brand }) => {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

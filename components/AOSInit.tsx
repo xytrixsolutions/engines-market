@@ -1,43 +1,24 @@
-// // src/components/AOSInit.tsx
-// "use client";
-//
-// import { useEffect } from "react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-//
-// export default function AOSInit() {
-//   useEffect(() => {
-//     AOS.init({
-//       // duration: 1000,
-//       // once: true,
-//       duration: 500,
-//       easing: "ease-out-quart", // Smooth & fast
-//       once: true,
-//       offset: 50,
-//     });
-//   }, []);
-//
-//   return null;
-// }
-// app/components/AOSWrapper.tsx
 "use client";
 
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { usePathname } from "next/navigation";
 
 const AOSWrapper = () => {
+  const pathname = usePathname();
+
   useEffect(() => {
     AOS.init({
       duration: 800,
       once: true,
     });
-
-    // refresh after short delay to ensure DOM is ready
-    setTimeout(() => {
-      AOS.refresh();
-    }, 500);
   }, []);
+
+  useEffect(() => {
+    // Runs every time the route changes
+    AOS.refresh();
+  }, [pathname]);
 
   return null;
 };

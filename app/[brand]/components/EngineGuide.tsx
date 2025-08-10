@@ -5,6 +5,7 @@ import Paragraph from "@/components/Paragraph";
 import Image from "next/image";
 import { data } from "../../../data/brands";
 import React from "react";
+import * as motion from "motion/react-client";
 
 const EngineGuide: React.FC<{ brand: string }> = ({
   brand,
@@ -15,9 +16,12 @@ const EngineGuide: React.FC<{ brand: string }> = ({
   return (
     <Container className="py-16" id="engine-guide">
       {/* Heading and Text */}
-      <div
+      <motion.div
         className="text-center text-charcoal-gray space-y-6 mb-14 max-w-6xl mx-auto"
-        data-aos="fade-up"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true }}
       >
         <Heading className="leading-tight text-charcoal-gray">
           The Complete
@@ -37,11 +41,14 @@ const EngineGuide: React.FC<{ brand: string }> = ({
           <strong>performance upgrade tips</strong>, and answers to the most
           frequently asked questions.
         </Paragraph>
-      </div>
+      </motion.div>
 
       {/* Image */}
-      <Image
-        data-aos="fade-up"
+      <motion.img
+        initial={{ opacity: 0, y: 50 }}
+        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         src={section1Image.img}
         alt={`${brandName} Dealership with ${brandName} Cars`}
         width={0}

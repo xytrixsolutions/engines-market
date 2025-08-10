@@ -15,6 +15,7 @@ import PerformanceUpgrades from "./components/PerformanceUpgrades";
 import ReplacementCostsTable from "./components/ReplacementCostsTable";
 import TroubleshootingGuide from "./components/TroubleShoot";
 import WhyChoose from "./components/WhyChoose";
+import { ClientWrapper } from "./components/ClientWrapper";
 
 export async function generateMetadata({ params }) {
   const brand = (await params).brand.toLowerCase();
@@ -65,6 +66,7 @@ const Page = ({ params }) => {
       <Head>
         <BrandSchema brand={brand} />
       </Head>
+      <ClientWrapper />
       <SearchNav navItems={navItems} />
       <Hero1
         carImages={carImages}

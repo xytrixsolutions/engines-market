@@ -24,6 +24,7 @@ import {
   Microchip,
   Hammer,
   Filter,
+  Battery,
 } from "lucide-react";
 
 export const data: BrandsData = {
@@ -12587,6 +12588,3241 @@ export const data: BrandsData = {
         question: "Can I perform engine modifications on my Isuzu vehicle myself?",
         answer:
           "Basic modifications like ECU tuning or air intake upgrades can be done by experienced enthusiasts, but advanced work like turbo upgrades or internal engine modifications should be handled by professionals for safety and performance.",
+      },
+    ],
+  },
+  iveco: {
+    metadata: {
+      title: "Top-Quality Iveco Engines | New, Used & Reconditioned | Best Prices",
+      description: "Discover the best deals on Iveco engines at EnginesMarket.co.uk. Explore our wide range of new, used, and reconditioned Iveco engines. Save time and money with competitive quotes from multiple sellers. Request a quote today!",
+      keywords: [
+        "Iveco engines",
+        "new Iveco engines",
+        "used Iveco engines",
+        "reconditioned Iveco engines",
+        "best Iveco engine prices",
+        "replacement Iveco engines",
+        "affordable Iveco engines",
+        "high-quality Iveco engines",
+        "Iveco engine quotes",
+        "EnginesMarket.co.uk",
+        "buy Iveco engines",
+        "Iveco engine deals",
+        "Iveco engine comparison",
+        "Iveco engine sellers",
+        "Iveco engine marketplace"
+      ],
+    },
+    brandName: "Iveco",
+    carImages: [
+      "/banners/banner-1.webp",
+      "/banners/banner-2.webp",
+      "/banners/banner-3.webp",
+      "/banners/banner-4.webp",
+      "/banners/banner-5.webp",
+    ],
+    carModelNames: [
+      "BMW X5",
+      "Audi A6",
+      "Mercedes C-Class",
+      "Range Rover Evoque",
+      "Volkswagen Golf",
+    ],
+    section0Image: {
+      img: "/bmw/bmw.png",
+      alt: "BMW front view",
+    },
+    section1Image: {
+      img: "/engine-guide-banners/engine-guide.png",
+      alt: "BMW rear view",
+    },
+    section4: {
+      mainParagraph:
+        "Iveco engines are known for their durability and performance, especially in commercial and heavy-duty applications, but like any mechanical system, they can encounter issues. Here are some of the most common problems found in Iveco engines, along with solutions and preventive measures:",
+      EngineProblems: [
+        {
+          title: "EGR Valve Problems",
+          icon: <Filter className="h-5 w-5" />,
+          problem:
+            "The Exhaust Gas Recirculation (EGR) valve can become clogged with carbon deposits, especially in urban driving conditions, leading to reduced engine performance, increased emissions, and rough idling.",
+          solution:
+            "Clean the EGR valve regularly using professional decarbonization methods. If the valve is damaged or heavily clogged, replace it with an OEM or high-quality aftermarket unit.",
+          prevention:
+            "Use high-quality diesel fuel and perform regular maintenance. Incorporate fuel additives that reduce carbon buildup and schedule periodic EGR system inspections to prevent long-term issues.",
+          severity: "Common",
+        },
+        {
+          title: "Fuel Injector Issues",
+          icon: <Droplet className="h-5 w-5" />,
+          problem:
+            "Faulty or clogged fuel injectors are a common issue in Iveco engines, resulting in poor acceleration, misfires, increased fuel consumption, and black smoke from the exhaust.",
+          solution:
+            "Replace or professionally clean defective injectors and ensure proper calibration. Use diagnostic tools to verify injection timing and spray pattern for optimal performance.",
+          prevention:
+            "Use premium diesel fuel and add injector-cleaning additives during refueling. Regular fuel system servicing helps prevent deposit buildup and maintains injector efficiency.",
+          severity: "Moderate",
+        },
+        {
+          title: "Turbocharger Failures",
+          icon: <Wind className="h-5 w-5" />,
+          problem:
+            "Turbocharger failure in Iveco engines—especially in models like the Stralis and Daily—can result from oil contamination, poor lubrication, or excessive heat, leading to power loss and excessive smoke.",
+          solution:
+            "Replace the failed turbocharger and inspect oil lines and filters for blockages. Ensure proper oil flow and use high-quality synthetic oil to support turbo longevity.",
+          prevention:
+            "Follow a strict oil change schedule, allow proper cool-down periods after heavy use, and inspect the turbo system regularly for oil leaks, bearing play, or compressor damage.",
+          severity: "Critical",
+        },
+        {
+          title: "Automatic Gearbox Problems",
+          icon: <Settings className="h-5 w-5" />,
+          problem:
+            "Iveco vehicles equipped with automated manual or full automatic transmissions may experience erratic shifting, gear slipping, or delayed engagement due to electronic or hydraulic faults.",
+          solution:
+            "Diagnose the issue using a professional OBD2 scanner. Check the electronic control module (ECM), solenoids, and transmission fluid condition. Replace or reprogram faulty components as needed.",
+          prevention:
+            "Service the gearbox at recommended intervals, maintain correct fluid levels, and address warning lights immediately. Avoid aggressive driving patterns that stress the transmission.",
+          severity: "Moderate",
+        },
+        {
+          title: "Fuel Pump Failures",
+          icon: <Fuel className="h-5 w-5" />,
+          problem:
+            "Fuel pump failures can cause hard starting, stalling, or complete engine shutdown. These are often due to contaminated fuel, electrical faults, or wear in high-mileage engines.",
+          solution:
+            "Replace the faulty fuel pump and flush the fuel system. Inspect and replace the fuel filter and water separator to prevent recurrence.",
+          prevention:
+            "Use clean, high-quality diesel and replace the fuel filter regularly. Install a fuel pre-filter in harsh operating environments to protect the pump from contaminants.",
+          severity: "Critical",
+        },
+      ],
+      engineReliabilityAndPerformance: [
+        {
+          reliability: [
+            {
+              heading: "Best Engines for Reliability",
+              paragraph:
+                "The Iveco Daily with its 2.3L and 3.0L diesel engines is a top choice for reliability. These engines are engineered for longevity, low maintenance, and consistent performance in delivery vans, service trucks, and urban transport.",
+            },
+            {
+              heading: "Maintenance Tips for Longevity",
+              paragraph:
+                "To maximize engine life, adhere to scheduled oil changes, coolant flushes, and air filter replacements. Pay special attention to the EGR system, fuel filters, and turbocharger maintenance to avoid common failures.",
+            },
+          ],
+          performance: [
+            {
+              heading: "Best Engines for Performance",
+              paragraph:
+                "The Iveco Stralis powered by the 12.9L Cursor diesel engine delivers exceptional power and torque, making it ideal for long-haul freight, heavy towing, and demanding commercial operations where performance and efficiency are critical.",
+            },
+            {
+              heading: "Performance Maintenance Tips",
+              paragraph:
+                "Ensure optimal airflow and exhaust efficiency with clean intercoolers and exhaust systems. Use high-grade oils and perform regular DPF and turbo inspections to maintain peak performance under load.",
+            },
+          ],
+        },
+      ],
+      conclusion:
+        "By understanding these common issues and their solutions, you can keep your Iveco engine running reliably and efficiently. Regular maintenance, using high-quality fluids and parts, and addressing problems early are essential to preventing major repairs and ensuring long-term durability. Whether you're operating a Daily van or a heavy-duty Stralis truck, proper care will maximize the lifespan and performance of your Iveco engine.",
+    },
+    engineData: {
+      models: [
+        {
+          model: "/iveco/iveco-daily.png",
+          model_name: "Iveco Daily",
+          engine_options: "2.3L Diesel, 3.0L Diesel, Electric",
+        },
+        {
+          model: "/iveco/iveco-eurocargo.png",
+          model_name: "Iveco Eurocargo",
+          engine_options: "4.5L Diesel, 6.7L Diesel",
+        },
+        {
+          model: "/iveco/iveco-stralis.png",
+          model_name: "Iveco Stralis",
+          engine_options: "8.7L Diesel, 11.1L Diesel, 12.9L Diesel",
+        },
+        {
+          model: "/iveco/iveco-sway.png",
+          model_name: "Iveco S-Way",
+          engine_options: "8.7L Diesel, 11.1L Diesel, 12.9L Diesel",
+        },
+        {
+          model: "/iveco/iveco-trakker.png",
+          model_name: "Iveco Trakker",
+          engine_options: "8.7L Diesel, 12.9L Diesel",
+        },
+        {
+          model: "/iveco/iveco-tector.png",
+          model_name: "Iveco Tector",
+          engine_options: "3.9L Diesel, 5.9L Diesel",
+        },
+        {
+          model: "/iveco/iveco-cursor.png",
+          model_name: "Iveco Cursor",
+          engine_options: "7.8L Diesel, 10.3L Diesel",
+        },
+        {
+          model: "/iveco/iveco-magirus.png",
+          model_name: "Iveco Magirus",
+          engine_options: "6.7L Diesel, 8.7L Diesel",
+        },
+        {
+          model: "/iveco/iveco-massif.png",
+          model_name: "Iveco Massif",
+          engine_options: "3.0L Diesel",
+        },
+        {
+          model: "/iveco/iveco-powerstar.png",
+          model_name: "Iveco PowerStar",
+          engine_options: "8.7L Diesel, 12.9L Diesel",
+        },
+        {
+          model: "/iveco/iveco-astra.png",
+          model_name: "Iveco Astra",
+          engine_options: "8.7L Diesel, 12.9L Diesel",
+        },
+        {
+          model: "/iveco/iveco-lmv.png",
+          model_name: "Iveco LMV",
+          engine_options: "3.0L Diesel",
+        },
+        {
+          model: "/iveco/iveco-turbodaily.png",
+          model_name: "Iveco TurboDaily",
+          engine_options: "2.5L Diesel, 2.8L Diesel",
+        },
+        {
+          model: "/iveco/iveco-turbostar.png",
+          model_name: "Iveco TurboStar",
+          engine_options: "13.8L Diesel",
+        },
+        {
+          model: "/iveco/iveco-turbotech.png",
+          model_name: "Iveco TurboTech",
+          engine_options: "9.5L Diesel, 13.8L Diesel",
+        },
+        {
+          model: "/iveco/iveco-eurostar.png",
+          model_name: "Iveco EuroStar",
+          engine_options: "9.5L Diesel, 13.8L Diesel",
+        },
+        {
+          model: "/iveco/iveco-eurotech.png",
+          model_name: "Iveco EuroTech",
+          engine_options: "9.5L Diesel, 13.8L Diesel",
+        },
+        {
+          model: "/iveco/iveco-eurotrakker.png",
+          model_name: "Iveco EuroTrakker",
+          engine_options: "9.5L Diesel, 13.8L Diesel",
+        },
+        {
+          model: "/iveco/iveco-daily-4x4.png",
+          model_name: "Iveco Daily 4x4",
+          engine_options: "3.0L Diesel",
+        },
+        {
+          model: "/iveco/iveco-daily-hi-matic.png",
+          model_name: "Iveco Daily Hi-Matic",
+          engine_options: "2.3L Diesel, 3.0L Diesel",
+        },
+      ],
+      engine_codes: [
+        {
+          engineCode: "F1CFL411H",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 170,
+          torque: 400,
+          productionYears: "2011-2020",
+        },
+        {
+          engineCode: "F1CFL411E",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 146,
+          torque: 350,
+          productionYears: "2011-2020",
+        },
+        {
+          engineCode: "8140.43B",
+          engineSize: 2.8,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 125,
+          torque: 270,
+          productionYears: "1998-2006",
+        },
+        {
+          engineCode: "F1AE0481D",
+          engineSize: 2.3,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 116,
+          torque: 290,
+          productionYears: "2006-2011",
+        },
+        {
+          engineCode: "F1CE3481E",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 146,
+          torque: 350,
+          productionYears: "2006-2011",
+        },
+        {
+          engineCode: "F1AE0481FA",
+          engineSize: 2.3,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 126,
+          torque: 320,
+          productionYears: "2011-2020",
+        },
+        {
+          engineCode: "F1CE3481FA",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 170,
+          torque: 400,
+          productionYears: "2011-2020",
+        },
+        {
+          engineCode: "F1CFL411D",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 146,
+          torque: 350,
+          productionYears: "2011-2020",
+        },
+        {
+          engineCode: "F1AE0481GA",
+          engineSize: 2.3,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 136,
+          torque: 350,
+          productionYears: "2011-2020",
+        },
+        {
+          engineCode: "F1CE3481GA",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 180,
+          torque: 430,
+          productionYears: "2011-2020",
+        },
+        {
+          engineCode: "F1AE3481E",
+          engineSize: 2.3,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 126,
+          torque: 320,
+          productionYears: "2006-2011",
+        },
+        {
+          engineCode: "F1CE3481D",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 146,
+          torque: 350,
+          productionYears: "2006-2011",
+        },
+        {
+          engineCode: "F1AE0481HA",
+          engineSize: 2.3,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 136,
+          torque: 350,
+          productionYears: "2011-2020",
+        },
+        {
+          engineCode: "F1CE3481HA",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 180,
+          torque: 430,
+          productionYears: "2011-2020",
+        },
+        {
+          engineCode: "F1AE0481JA",
+          engineSize: 2.3,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 136,
+          torque: 350,
+          productionYears: "2011-2020",
+        },
+        {
+          engineCode: "F1CE3481JA",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 180,
+          torque: 430,
+          productionYears: "2011-2020",
+        },
+        {
+          engineCode: "F1AE0481KA",
+          engineSize: 2.3,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 136,
+          torque: 350,
+          productionYears: "2011-2020",
+        },
+        {
+          engineCode: "F1CE3481KA",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 180,
+          torque: 430,
+          productionYears: "2011-2020",
+        },
+        {
+          engineCode: "F1AE0481LA",
+          engineSize: 2.3,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 136,
+          torque: 350,
+          productionYears: "2011-2020",
+        },
+        {
+          engineCode: "F1CE3481LA",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 180,
+          torque: 430,
+          productionYears: "2011-2020",
+        },
+      ],
+      models_engines: [
+        {
+          engineCode: "F1AE0481",
+          compatibleModels: ["Iveco Daily", "Fiat Ducato", "Citroen Jumper"],
+        },
+        {
+          engineCode: "F1CE0481",
+          compatibleModels: ["Iveco Daily", "Peugeot Boxer", "Renault Master"],
+        },
+        {
+          engineCode: "8140",
+          compatibleModels: ["Iveco Daily", "Fiat Ducato", "Citroen Jumper"],
+        },
+        {
+          engineCode: "814021",
+          compatibleModels: ["Iveco Daily", "Fiat Ducato", "Renault Messenger"],
+        },
+        {
+          engineCode: "814027",
+          compatibleModels: ["Iveco Daily", "Fiat Ducato", "Renault Master"],
+        },
+        {
+          engineCode: "814043",
+          compatibleModels: ["Iveco Daily", "Peugeot Boxer", "Fiat Ducato"],
+        },
+        {
+          engineCode: "814043B",
+          compatibleModels: ["Iveco Daily", "Fiat Ducato", "Renault Master"],
+        },
+        {
+          engineCode: "814063",
+          compatibleModels: ["Iveco Daily", "Fiat Ducato", "Citroen Jumper"],
+        },
+        {
+          engineCode: "F1AE3481",
+          compatibleModels: ["Iveco Daily", "Fiat Ducato", "Citroen Jumper"],
+        },
+        {
+          engineCode: "F1CE3481",
+          compatibleModels: ["Iveco Daily", "Peugeot Boxer", "Renault Master"],
+        },
+        {
+          engineCode: "4P10",
+          compatibleModels: ["Iveco Daily", "Mitsubishi Canter"],
+        },
+        {
+          engineCode: "43S",
+          compatibleModels: ["Iveco Daily", "Peugeot Boxer", "Citroen Jumper"],
+        },
+        {
+          engineCode: "F1AFL411B",
+          compatibleModels: ["Iveco Daily", "Fiat Ducato", "Citroen Jumper"],
+        },
+        {
+          engineCode: "F1AFL411C",
+          compatibleModels: ["Iveco Daily", "Peugeot Boxer", "Renault Master"],
+        },
+        {
+          engineCode: "F1CE0481A",
+          compatibleModels: ["Iveco Daily", "Fiat Ducato", "Citroen Jumper"],
+        },
+        {
+          engineCode: "F1CE0481B",
+          compatibleModels: ["Iveco Daily", "Peugeot Boxer", "Renault Master"],
+        },
+        {
+          engineCode: "F1CE0481D",
+          compatibleModels: ["Iveco Daily", "Fiat Ducato", "Citroen Jumper"],
+        },
+        {
+          engineCode: "F1CE0481F",
+          compatibleModels: ["Iveco Daily", "Peugeot Boxer", "Renault Master"],
+        },
+        {
+          engineCode: "F1CE0481H",
+          compatibleModels: ["Iveco Daily", "Fiat Ducato", "Citroen Jumper"],
+        },
+        {
+          engineCode: "F1CE0481HA",
+          compatibleModels: ["Iveco Daily", "Peugeot Boxer", "Renault Master"],
+        },
+      ],
+      replacement_costs: [
+        {
+          image: "/iveco/iveco-generic.png",
+          model: "Iveco Daily, Daily 4x4",
+          engineType: "2.3L Diesel",
+          estimatedCost: "£2,500 - £4,500",
+        },
+        {
+          image: "/iveco/iveco-generic.png",
+          model: "Iveco Daily, Daily 4x4, Hi-Matic",
+          engineType: "3.0L Diesel",
+          estimatedCost: "£3,000 - £5,500",
+        },
+        {
+          image: "/iveco/iveco-generic.png",
+          model: "Iveco Eurocargo",
+          engineType: "4.5L Diesel",
+          estimatedCost: "£4,000 - £6,500",
+        },
+        {
+          image: "/iveco/iveco-generic.png",
+          model: "Iveco Eurocargo, Magirus",
+          engineType: "6.7L Diesel",
+          estimatedCost: "£5,000 - £8,000",
+        },
+        {
+          image: "/iveco/iveco-generic.png",
+          model: "Iveco Stralis, S-Way, Trakker",
+          engineType: "8.7L Diesel",
+          estimatedCost: "£6,000 - £9,500",
+        },
+        {
+          image: "/iveco/iveco-generic.png",
+          model: "Iveco Stralis, S-Way",
+          engineType: "11.1L Diesel",
+          estimatedCost: "£7,500 - £12,000",
+        },
+        {
+          image: "/iveco/iveco-generic.png",
+          model: "Iveco Stralis, S-Way, Trakker, Astra",
+          engineType: "12.9L Diesel",
+          estimatedCost: "£8,000 - £13,500",
+        },
+      ],
+    },
+    section7: [
+      {
+        title: "New Iveco Engines",
+        icon: <Sparkles className="h-6 w-6" />,
+        badge: "Premium",
+        badgeVariant: "default" as const,
+        pros: [
+          "100% reliability with a factory warranty",
+          "Best performance & longevity",
+          "Latest technology and emissions compliance",
+          "No hidden issues or prior wear and tear",
+        ],
+        cons: [
+          "Higher cost compared to used or reconditioned options",
+          "Limited availability for older or discontinued models",
+          "Longer delivery times due to ordering requirements",
+          "May be unnecessarily expensive for short-term or budget builds",
+        ],
+      },
+      {
+        title: "Used Iveco Engines",
+        icon: <DollarSign className="h-6 w-6" />,
+        badge: "Budget-Friendly",
+        badgeVariant: "secondary" as const,
+        pros: [
+          "Cost-effective solution for engine replacement",
+          "Widely available for common models like Daily and Eurocargo",
+          "Immediate availability in many cases",
+          "Ideal for quick repairs or older vehicle restorations",
+        ],
+        cons: [
+          "Potential hidden wear and tear or mechanical faults",
+          "Shorter lifespan compared to new or reconditioned engines",
+          "Limited or no warranty coverage",
+          "Unknown maintenance and usage history",
+        ],
+      },
+      {
+        title: "Reconditioned Iveco Engines",
+        icon: <Wrench className="h-6 w-6" />,
+        badge: "Best Value",
+        badgeVariant: "outline" as const,
+        pros: [
+          "Professionally rebuilt with new critical components",
+          "More reliable than used engines with tested performance",
+          "Balanced cost versus performance and durability",
+          "Often comes with a warranty (typically 12–24 months)",
+        ],
+        cons: [
+          "Slightly more expensive than used engines",
+          "Quality can vary depending on the rebuilder or supplier",
+          "May not include the latest engine updates or software",
+          "Rebuilding process may take longer than sourcing a used unit",
+        ],
+      },
+    ],
+    section8: {
+      EngineProblems: [
+        {
+          id: "check-engine-light-issues",
+          title: "Check Engine Light Issues",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          severity: "Common",
+          data: [
+            {
+              heading: "Diagnose Promptly",
+              paragraph:
+                "When the check engine light illuminates, use an OBD-II scanner to retrieve error codes. Common causes include faulty EGR valves, malfunctioning oxygen sensors, or issues with the DPF (Diesel Particulate Filter) system.",
+            },
+            {
+              heading: "Regular Diagnostics",
+              paragraph:
+                "Perform routine diagnostic scans during servicing to catch early signs of sensor failure, emissions issues, or electronic control module (ECM) faults before they lead to breakdowns.",
+            },
+            {
+              heading: "Sensor Maintenance",
+              paragraph:
+                "Ensure sensors such as the MAF (Mass Air Flow), boost pressure, and temperature sensors are clean and functioning correctly. Faulty readings can reduce efficiency and trigger warning lights.",
+            },
+          ],
+        },
+        {
+          id: "power-loss-and-turbo-failures",
+          title: "Power Loss & Turbo Failures",
+          icon: <Gauge className="h-5 w-5" />,
+          severity: "Critical",
+          data: [
+            {
+              heading: "Regular Oil Changes",
+              paragraph:
+                "Use high-quality diesel engine oil and follow strict oil change intervals. Poor lubrication is a leading cause of turbocharger failure in Iveco engines like the F1C and Cursor series.",
+            },
+            {
+              heading: "Clean Air Filters",
+              paragraph:
+                "Replace air filters regularly, especially in dusty or off-road environments. Restricted airflow reduces turbo efficiency and can lead to power loss and increased fuel consumption.",
+            },
+            {
+              heading: "Monitor Boost Pressure",
+              paragraph:
+                "Check boost levels using diagnostic tools. A drop in pressure may indicate a leaking intercooler, damaged hoses, wastegate issues, or internal turbo damage requiring immediate repair.",
+            },
+          ],
+        },
+        {
+          id: "excessive-smoke-and-oil-leaks",
+          title: "Excessive Smoke & Oil Leaks",
+          icon: <Smoke className="h-5 w-5" />,
+          severity: "Moderate",
+          data: [
+            {
+              heading: "Inspect Seals and Gaskets",
+              paragraph:
+                "Check valve cover gaskets, oil pan seals, and turbocharger oil feed lines for leaks. Replace worn components promptly to avoid oil loss and potential fire hazards.",
+            },
+            {
+              heading: "Identify Smoke Color",
+              paragraph:
+                "Blue smoke suggests oil burning due to worn piston rings or valve stem seals. White smoke may indicate coolant entering combustion chambers (head gasket issue), while black smoke points to over-fueling or clogged air filters.",
+            },
+            {
+              heading: "Monitor Coolant Levels",
+              paragraph:
+                "Low coolant can lead to overheating, warping of cylinder heads, and head gasket failure—common in high-load Iveco trucks. Inspect for coolant contamination in oil or exhaust fumes.",
+            },
+          ],
+        },
+      ],
+      maintenanceTips: [
+        {
+          icon: "Lightbulb",
+          iconColor: "text-blue-600",
+          border: "border-blue-200",
+          bg: "bg-blue-50",
+          title: "Regular Inspections",
+          titleColor: "text-blue-800",
+          text: "Check your Iveco engine monthly for early problem detection",
+          textColor: "text-blue-700",
+        },
+        {
+          icon: "CheckCircle",
+          iconColor: "text-green-600",
+          border: "border-green-200",
+          bg: "bg-green-50",
+          title: "Preventive Maintenance",
+          titleColor: "text-green-800",
+          text: "Follow Iveco's recommended service schedule for optimal performance",
+          textColor: "text-green-700",
+        },
+        {
+          icon: "AlertTriangle",
+          iconColor: "text-orange-600",
+          border: "border-orange-200",
+          bg: "bg-orange-50",
+          title: "Act Quickly",
+          titleColor: "text-orange-800",
+          text: "Address warning signs immediately to prevent costly repairs",
+          textColor: "text-orange-700",
+        },
+      ],
+      summary: {
+        variant: "green",
+        title: "Key Takeaway",
+        content:
+          "By following these troubleshooting tips and maintaining regular engine checks, you can help prevent common Iveco engine faults and extend its lifespan. Regular maintenance, timely diagnostics, and prompt attention to warning signs are essential to keeping your commercial or heavy-duty vehicle running smoothly and reliably for years to come. At EnginesMarket.co.uk, we provide the best Iveco engine prices and ensure you get high-quality replacement engines to keep your fleet in top condition.",
+      },
+    },
+    section9: {
+      performanceUpgrades: [
+        {
+          id: "basic-enhancements",
+          title: "Basic Enhancement Options",
+          icon: <Zap className="h-5 w-5" />,
+          level: "Beginner",
+          upgrades: [
+            {
+              name: "ECU Remapping (Stage 1 Tuning)",
+              icon: <Cog className="h-4 w-4" />,
+              description:
+                "ECU remapping involves reprogramming the engine control unit to optimize fuel delivery, boost pressure, and ignition timing. This is the most common tuning method for Iveco engines like the F1C and Cursor series.",
+              benefits:
+                "10–18% increase in horsepower and torque, improved throttle response, and better fuel efficiency under load—ideal for commercial and daily use.",
+              considerations:
+                "Must be performed by a certified tuner using Iveco-specific software to avoid triggering fault codes or damaging sensitive electronics.",
+            },
+            {
+              name: "Performance Air Intake Systems",
+              icon: <Wind className="h-4 w-4" />,
+              description:
+                "Upgrading to a high-flow air intake system allows cooler, denser air to enter the engine, improving combustion efficiency in turbocharged Iveco diesel engines.",
+              benefits:
+                "Enhanced engine breathing, reduced turbo lag, and improved low-end torque—especially beneficial for Iveco Daily and Eurocargo models used in stop-start conditions.",
+              considerations:
+                "Ensure proper sealing and filtration to prevent dust or water ingestion, which can damage the turbo or DPF system.",
+            },
+            {
+              name: "Exhaust System Upgrades",
+              icon: <Volume2 className="h-4 w-4" />,
+              description:
+                "Replacing the stock exhaust with a performance cat-back or full system reduces backpressure, allowing the turbo to spool faster and improving engine efficiency.",
+              benefits:
+                "Noticeable mid-range power gains, improved engine sound, and better thermal management—ideal for Iveco Stralis and S-Way long-haul trucks.",
+              considerations:
+                "May affect emissions compliance; always pair with ECU tuning to avoid triggering DPF or EGR-related error codes.",
+            },
+            {
+              name: "Intercooler Upgrades",
+              icon: <Snowflake className="h-4 w-4" />,
+              description:
+                "An upgraded intercooler reduces intake air temperature after compression, increasing air density and reducing the risk of knock in high-load Iveco engines.",
+              benefits:
+                "Improved power consistency during towing or continuous operation, reduced thermal stress on the turbo, and enhanced tuning headroom.",
+              considerations:
+                "Ensure compatibility with your model (e.g., Daily, Stralis) and proper installation to avoid airflow restrictions or coolant leaks.",
+            },
+          ],
+        },
+        {
+          id: "tuning-stages",
+          title: "Tuning Upgrade: Stage 1-3",
+          icon: <TrendingUp className="h-5 w-5" />,
+          level: "Progressive",
+          stages: [
+            {
+              stage: "Stage 1 Tuning",
+              description:
+                "Software-only ECU remap with no hardware changes. Often combined with performance air filters and exhaust tips for mild but effective gains.",
+              benefits:
+                "Safe 10–18% power increase, improved drivability, and better fuel economy under optimal conditions—ideal for Iveco Daily 3.0 HPT and Eurocargo.",
+              considerations:
+                "Maintains factory reliability when done correctly; use reputable tuners familiar with Iveco’s engine management systems (EDC17, EDC16).",
+            },
+            {
+              stage: "Stage 2 Tuning",
+              description:
+                "Combines ECU tuning with hardware upgrades such as high-flow fuel injectors, performance downpipes, upgraded intercoolers, and modified DPF/EGR settings.",
+              benefits:
+                "20–40% more horsepower and torque, faster turbo spool, and improved performance under heavy loads or mountainous terrain.",
+              considerations:
+                "Requires supporting modifications and more frequent maintenance; may void warranty and fail emissions tests if not properly calibrated.",
+            },
+            {
+              stage: "Stage 3 Tuning",
+              description:
+                "Full performance build involving internal engine modifications, larger turbochargers, custom fuel systems, and race-grade ECU calibration for maximum output.",
+              benefits: "50%+ power gains, ideal for motorsport, extreme off-road, or high-performance commercial applications.",
+              considerations:
+                "Significantly impacts engine longevity and fuel economy; requires expert setup, reinforced drivetrain, and ongoing monitoring to prevent failure.",
+            },
+          ],
+        },
+        {
+          id: "turbo-upgrades",
+          title: "Turbo Upgrades",
+          icon: <Gauge className="h-5 w-5" />,
+          level: "Advanced",
+          content: {
+            description:
+              "Turbocharger upgrades are one of the most effective ways to unlock additional power in Iveco’s F1C, NEF, and Cursor engines used across the Daily, Stralis, and S-Way range.",
+            points: [
+              {
+                title: "Holset HX35W Turbo",
+                description:
+                  "A popular upgrade for Iveco NEF 6-cylinder engines, offering increased boost capacity and improved efficiency for heavy-duty applications.",
+              },
+              {
+                title: "Garrett GTA2260LV Turbo",
+                description:
+                  "Ideal for the Iveco Daily 3.0L engine, this turbo provides seamless integration, faster spool, and reliable performance gains without excessive lag.",
+              },
+              {
+                title: "Supporting Modifications",
+                description:
+                  "Turbo upgrades require high-flow fuel pumps, upgraded intercoolers, reinforced oil lines, and proper ECU remapping to handle increased boost and prevent engine damage.",
+              },
+            ],
+          },
+        },
+        {
+          id: "engine-internals",
+          title: "Engine Internals Reinforcements",
+          icon: <Cog className="h-5 w-5" />,
+          level: "Expert",
+          content: {
+            description:
+              "For extreme performance builds, reinforcing internal engine components is essential to withstand high boost pressures, increased torque, and elevated cylinder temperatures.",
+            points: [
+              {
+                title: "Forged Pistons and Connecting Rods",
+                description:
+                  "Replace stock cast components with forged internals to handle extreme compression and boost—critical for high-output builds on 3.0L and 12.9L Iveco engines.",
+              },
+              {
+                title: "Performance Camshafts",
+                description:
+                  "Optimized valve timing improves airflow and scavenging, increasing power output and responsiveness—commonly used in track-focused Iveco builds.",
+              },
+              {
+                title: "Heavy-Duty Crankshaft & Bearings",
+                description:
+                  "Strengthened crankshafts and performance bearings reduce flex and wear under high load, ensuring durability in modified Iveco engines.",
+              },
+            ],
+          },
+        },
+        {
+          id: "reliability-impact",
+          title: "Impact on Reliability & Fuel Efficiency",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          level: "Important",
+          content: {
+            description:
+              "While performance upgrades enhance power and responsiveness, they also introduce trade-offs in engine longevity and fuel economy. Understanding these is key to a sustainable build.",
+            points: [
+              {
+                title: "Reliability",
+                description:
+                  "Higher power output increases stress on engine, transmission, and turbo components. Without proper cooling, oiling, and maintenance, this can lead to premature failure. Use quality parts and professional tuning to preserve reliability.",
+              },
+              {
+                title: "Fuel Efficiency",
+                description:
+                  "Stage 1 tuning may improve fuel efficiency through optimized combustion. However, Stage 2 and 3 modifications often increase fuel consumption due to richer mixtures and aggressive driving patterns.",
+              },
+            ],
+          },
+        },
+      ],
+      summary: {
+        variant: "performance",
+        title: "Performance Enhancement Summary",
+        content:
+          "By carefully selecting and implementing performance upgrades, you can significantly enhance the power, torque, and driving experience of your Iveco vehicle. From ECU remapping on a Daily van to full internal builds on a Stralis truck, each stage offers greater performance potential—but also demands greater responsibility. Always work with experienced professionals, use high-quality components, and maintain your modified engine diligently to balance performance, reliability, and efficiency. At EnginesMarket.co.uk, we provide the best Iveco engine prices and ensure you get high-quality replacement engines to support your performance goals.",
+      },
+    },
+    faqs: [
+      {
+        question: "What is EnginesMarket.co.uk?",
+        answer:
+          "EnginesMarket.co.uk is a price comparison website specializing in providing competitive quotes for new, used, and reconditioned Iveco engines from multiple trusted sellers. We help you find the best deals on high-quality replacement engines for various Iveco models.",
+      },
+      {
+        question: "How does EnginesMarket.co.uk work?",
+        answer:
+          "Simply enter your Iveco model and engine requirements on our platform, and we will connect you with multiple sellers offering the best prices and availability. You can compare quotes and choose the most suitable option for your needs.",
+      },
+      {
+        question: "What types of Iveco engines can I find on EnginesMarket.co.uk?",
+        answer:
+          "We offer a wide range of Iveco engines, including diesel, reconditioned, used, and replacement options. Our inventory covers popular models like the Daily, Eurocargo, Stralis, S-Way, and Trakker, ensuring you find the right fit for your vehicle.",
+      },
+      {
+        question: "Why should I use EnginesMarket.co.uk for my Iveco engine replacement?",
+        answer:
+          "Using EnginesMarket.co.uk saves you time and money by providing multiple quotes from trusted sellers, ensuring you get the best prices and availability for high-quality Iveco engines. Our platform simplifies the entire replacement process.",
+      },
+      {
+        question: "Is there a warranty on engines purchased through EnginesMarket.co.uk?",
+        answer:
+          "Warranty terms vary by seller, but many offer warranties—especially on reconditioned and new units. Be sure to review the specific warranty details provided with each quote before making a purchase.",
+      },
+      {
+        question: "What are the most common Iveco engine problems?",
+        answerList: [
+          "EGR valve clogging",
+          "Fuel injector failures",
+          "Turbocharger damage due to oil contamination",
+          "Automatic gearbox erratic shifting",
+          "Fuel pump failures",
+        ],
+      },
+      {
+        question: "How often should I service my Iveco engine?",
+        answer:
+          "It is recommended to service your Iveco engine every 10,000 to 15,000 miles or as specified in the owner’s manual, whichever comes first. Regular servicing ensures optimal performance and long-term reliability.",
+      },
+      {
+        question: "What is the average lifespan of an Iveco engine?",
+        answer:
+          "With proper maintenance, an Iveco engine can last several hundred thousand miles—often exceeding 300,000 miles. Their robust diesel engines, especially in the Daily and Stralis models, are known for exceptional durability.",
+      },
+      {
+        question: "Can I use synthetic oil in my Iveco engine?",
+        answer:
+          "Yes, high-quality synthetic diesel engine oil is recommended for Iveco engines, particularly in heavy-duty or extreme temperature applications. It provides superior lubrication and protection for turbocharged and high-pressure systems.",
+      },
+      {
+        question: "What are the benefits of a reconditioned Iveco engine?",
+        answer:
+          "Reconditioned Iveco engines are professionally rebuilt using new or refurbished components, tested for performance, and often come with a warranty. They offer a reliable, cost-effective alternative to new engines.",
+      },
+      {
+        question: "How do I know if my Iveco engine needs to be replaced?",
+        answerList: [
+          "Persistent loss of power",
+          "Excessive smoke (blue, white, or black)",
+          "Metal shavings or sludge in oil",
+          "Frequent stalling or failure to start",
+          "Severe oil or coolant leaks",
+        ],
+      },
+      {
+        question: "What is the difference between a used and a reconditioned Iveco engine?",
+        answer:
+          "A used Iveco engine is removed from another vehicle and sold as-is, with unknown wear. A reconditioned engine has been disassembled, inspected, rebuilt with new parts, and tested to ensure reliability and performance.",
+      },
+      {
+        question: "Are Iveco engines reliable?",
+        answer:
+          "Yes, Iveco engines are known for their reliability and durability, especially when properly maintained. Models like the Iveco Daily and Stralis are widely used in commercial and heavy-duty applications due to their robust engineering.",
+      },
+      {
+        question: "What is the cost of replacing an Iveco engine?",
+        answer:
+          "The cost of replacing an Iveco engine typically ranges from £2,500 to £13,500, depending on the model, engine type (new, used, reconditioned), and labor costs. Larger engines like the 12.9L in the Stralis are at the higher end of the range.",
+      },
+      {
+        question: "Can I install an Iveco engine myself?",
+        answer:
+          "While experienced mechanics may attempt an engine swap, it's highly recommended to have a professional technician perform the installation—especially for commercial vehicles—to ensure proper calibration, safety, and compliance.",
+      },
+      {
+        question: "What should I do if my Iveco engine overheats?",
+        answer:
+          "If your Iveco engine overheats, pull over safely, turn off the engine, and allow it to cool. Check coolant levels and look for leaks. If the issue persists, consult a qualified mechanic to avoid serious engine damage.",
+      },
+      {
+        question: "How can I improve the fuel efficiency of my Iveco engine?",
+        answer:
+          "Regular maintenance, using the correct oil and fuel grades, keeping the air filter clean, ensuring proper tire pressure, and adopting efficient driving habits can all help improve fuel economy in your Iveco vehicle.",
+      },
+      {
+        question: "What is the best oil for an Iveco engine?",
+        answer:
+          "The best oil for an Iveco engine is a high-quality synthetic or semi-synthetic diesel engine oil that meets manufacturer specifications—such as 10W-40 or 5W-30—depending on the model and operating conditions.",
+      },
+      {
+        question: "How do I check the engine code on my Iveco?",
+        answer:
+          "You can find the engine code on the engine identification plate, usually located on the engine block or cylinder head. It may also be listed in the vehicle’s service manual or on the VIN documentation.",
+      },
+      {
+        question: "What are the signs of a failing Iveco turbocharger?",
+        answerList: [
+          "Reduced engine power and acceleration",
+          "Excessive blue or black exhaust smoke",
+          "Whining or grinding noises from the turbo",
+          "Increased oil consumption",
+          "Oil leaks around the turbocharger housing",
+        ],
+      },
+      {
+        question: "Can I upgrade the turbocharger on my Iveco engine?",
+        answer:
+          "Yes, upgrading the turbocharger—such as with a Holset HX35W or Garrett GTA2260LV—can significantly improve performance. These upgrades are popular for Iveco Daily and Stralis models used in demanding applications.",
+      },
+      {
+        question: "What is the best Iveco engine for performance?",
+        answer:
+          "The Iveco Stralis equipped with the 12.9L Cursor diesel engine delivers exceptional power and torque, making it ideal for heavy-duty hauling, long-haul transport, and performance-focused commercial use.",
+      },
+      {
+        question: "Where can I buy a replacement Iveco engine?",
+        answer:
+          "You can find high-quality replacement Iveco engines on EnginesMarket.co.uk. Our platform connects you with trusted sellers offering competitive prices on new, used, and reconditioned engines.",
+      },
+      {
+        question: "Are hybrid or electric Iveco engines available on EnginesMarket.co.uk?",
+        answer:
+          "Yes, EnginesMarket.co.uk offers a variety of engine types, including hybrid and electric options where available, helping you find a modern, eco-friendly solution for your Iveco vehicle or fleet.",
+      },
+      {
+        question: "What should I look for when buying a used Iveco engine?",
+        answer:
+          "When buying a used Iveco engine, inspect for oil leaks, unusual noises, exhaust smoke, and verify the engine's service history and mileage. A compression test and diagnostic scan can also reveal hidden issues.",
+      },
+      {
+        question: "Can I perform engine modifications on my Iveco vehicle myself?",
+        answer:
+          "Basic modifications like ECU remapping or air intake upgrades can be done by experienced DIYers, but advanced work such as turbo upgrades or internal engine modifications should be performed by professionals for safety and reliability.",
+      },
+    ],
+  },
+  jaguar: {
+    metadata: {
+      title: "Jaguar Engines for Sale - New, Used & Reconditioned | Engines Market",
+      description: "Explore Engines Market for unbeatable prices on new, used, and reconditioned Jaguar engines. Find the best engine for your Jaguar and save time and money. Request a quote today!",
+      keywords: [
+        "Jaguar engines",
+        "reconditioned Jaguar engines",
+        "used Jaguar engines",
+        "new Jaguar engines",
+        "best Jaguar engine prices",
+        "Jaguar engine replacement",
+        "Jaguar engine deals",
+        "Engines Market",
+        "Jaguar engine quotes",
+        "Jaguar engine performance upgrades",
+        "Jaguar V6 engine",
+        "Jaguar V8 engine",
+        "Jaguar XF engine",
+        "Jaguar F-Type engine",
+        "Jaguar XJ engine"
+      ],
+    },
+    brandName: "Jaguar",
+    carImages: [
+      "/banners/banner-1.webp",
+      "/banners/banner-2.webp",
+      "/banners/banner-3.webp",
+      "/banners/banner-4.webp",
+      "/banners/banner-5.webp",
+    ],
+    carModelNames: [
+      "BMW X5",
+      "Audi A6",
+      "Mercedes C-Class",
+      "Range Rover Evoque",
+      "Volkswagen Golf",
+    ],
+    section0Image: {
+      img: "/bmw/bmw.png",
+      alt: "BMW front view",
+    },
+    section1Image: {
+      img: "/engine-guide-banners/engine-guide.png",
+      alt: "BMW rear view",
+    },
+    section4: {
+      mainParagraph:
+        "Jaguar engines are renowned for their performance and refinement, but like all precision-engineered powertrains, they can develop issues over time. Whether you own an XF, F-Type, or XJ, understanding common engine problems—and how to address them—can help preserve reliability and driving enjoyment. Below are the most frequently encountered Jaguar engine issues, along with solutions and preventive measures:",
+      EngineProblems: [
+        {
+          title: "Engine Misfires",
+          icon: <Zap className="h-5 w-5" />,
+          problem:
+            "Engine misfires are common in Jaguar models equipped with Ingenium or supercharged V6/V8 engines. Symptoms include rough idling, loss of power, and illuminated check engine light. Causes often include faulty spark plugs, failing ignition coils, clogged fuel injectors, or vacuum leaks.",
+          solution:
+            "Replace worn spark plugs and defective ignition coils, clean or replace clogged fuel injectors, and use diagnostic tools to identify vacuum leaks. Addressing coil-on-plug failures promptly prevents catalytic converter damage.",
+          prevention:
+            "Follow recommended service intervals for spark plug replacement (every 60,000–80,000 miles), use high-octane fuel, and perform regular OBD-II scans to catch early signs of misfire codes.",
+          severity: "Moderate",
+        },
+        {
+          title: "Overheating",
+          icon: <Thermometer className="h-5 w-5" />,
+          problem:
+            "Overheating can occur in Jaguars due to low coolant levels, a failed thermostat, water pump failure, or radiator blockages—especially in older models or those with high-performance engines.",
+          solution:
+            "Inspect and refill coolant, replace faulty thermostats or water pumps, and flush the cooling system. Check for leaks in hoses, radiator, or head gasket. In severe cases, inspect for internal engine damage.",
+          prevention:
+            "Perform annual cooling system inspections, replace coolant every 3–5 years, and monitor temperature gauges, especially during high-speed or hot-weather driving.",
+          severity: "Critical",
+        },
+        {
+          title: "Oil Leaks",
+          icon: <Droplet className="h-5 w-5" />,
+          problem:
+            "Oil leaks are a common issue in Jaguar engines, particularly from the valve cover gasket, oil pan seal, or timing chain cover. Leaks can lead to low oil levels, engine noise, and potential damage if ignored.",
+          solution:
+            "Identify the source of the leak and replace worn gaskets or seals. Common culprits include the valve cover gasket (especially on V8 models) and rear main seal. Use OEM-quality replacements for durability.",
+          prevention:
+            "Inspect engine bay regularly for oil residue, change oil with high-quality synthetic, and avoid engine strain during cold starts to reduce seal stress.",
+          severity: "Common",
+        },
+        {
+          title: "Starter Motor Problems",
+          icon: <Battery className="h-5 w-5" />,
+          problem:
+            "Starter motor issues can cause slow cranking, clicking noises, or failure to start—particularly in Jaguars with complex electrical systems. These problems may stem from a failing starter, weak battery, or corroded connections.",
+          solution:
+            "Test the starter motor and battery health. Replace the starter if defective and clean or replace corroded terminals. Ensure the battery management system (BMS) is functioning correctly.",
+          prevention:
+            "Maintain battery health with regular voltage checks, especially in stop-start models. Replace the battery every 5–7 years and ensure proper grounding connections.",
+          severity: "Moderate",
+        },
+        {
+          title: "Transmission Issues",
+          icon: <Settings className="h-5 w-5" />,
+          problem:
+            "Jaguar vehicles with ZF automatic transmissions may experience jerking, delayed shifting, or slipping gears. This can be due to low or degraded transmission fluid, solenoid faults, or software glitches.",
+          solution:
+            "Check and replace transmission fluid and filter at recommended intervals. Perform software updates and use diagnostic tools to identify faulty solenoids or valve body issues.",
+          prevention:
+            "Change transmission fluid every 60,000 miles, avoid aggressive driving, and allow the transmission to warm up before heavy acceleration to prolong life.",
+          severity: "Moderate",
+        },
+      ],
+      engineReliabilityAndPerformance: [
+        {
+          reliability: [
+            {
+              heading: "Best Engines for Reliability",
+              paragraph:
+                "The 2.0L Ingenium turbocharged inline-4 engine is known for its reliability, fuel efficiency, and lower maintenance costs. Found in models like the XF, XE, and F-PACE, it's ideal for daily drivers seeking a balance of performance and longevity.",
+            },
+            {
+              heading: "Maintenance Tips for Longevity",
+              paragraph:
+                "To maximize engine life, adhere to scheduled services, use premium synthetic oil (0W-20 or 5W-30), replace spark plugs and air filters on time, and keep the cooling and intake systems clean.",
+            },
+          ],
+          performance: [
+            {
+              heading: "Best Engines for Performance",
+              paragraph:
+                "The supercharged 3.0L V6 and 5.0L V8 engines deliver exhilarating performance, making them favorites in the F-Type, XFR, and XJR models. These powertrains offer thrilling acceleration and a signature exhaust note.",
+            },
+            {
+              heading: "Performance Maintenance Tips",
+              paragraph:
+                "For high-performance Jaguars, regular inspection of supercharger belts, intercoolers, and engine mounts is essential. Use high-octane fuel and schedule performance diagnostics to maintain peak output.",
+            },
+          ],
+        },
+      ],
+      conclusion:
+        "By understanding these common Jaguar engine problems and their solutions, you can keep your luxury vehicle running smoothly and reliably. Regular maintenance, using high-quality fluids and parts, and addressing warning signs early are key to preserving both performance and resale value. Whether you drive a refined XF or a track-ready F-Type, proper care ensures your Jaguar continues to deliver an exceptional driving experience for years to come.",
+    },
+    engineData: {
+      models: [
+        {
+          model: "/jaguar/jaguar-xe.png",
+          model_name: "Jaguar XE",
+          engine_options: "2.0L Turbo Petrol, 2.0L Diesel, 2.0L Hybrid",
+        },
+        {
+          model: "/jaguar/jaguar-xf.png",
+          model_name: "Jaguar XF",
+          engine_options: "2.0L Turbo Petrol, 2.0L Diesel, 3.0L V6",
+        },
+        {
+          model: "/jaguar/jaguar-fpace.png",
+          model_name: "Jaguar F-Pace",
+          engine_options: "2.0L Turbo Petrol, 3.0L Diesel, 3.0L V6",
+        },
+        {
+          model: "/jaguar/jaguar-xj.png",
+          model_name: "Jaguar XJ",
+          engine_options: "3.0L V6, 5.0L V8",
+        },
+        {
+          model: "/jaguar/jaguar-ftype.png",
+          model_name: "Jaguar F-Type",
+          engine_options: "3.0L V6, 5.0L V8, 5.0L V8 Supercharged",
+        },
+        {
+          model: "/jaguar/jaguar-epece.png",
+          model_name: "Jaguar E-Pace",
+          engine_options: "2.0L Turbo Petrol, 2.0L Diesel",
+        },
+        {
+          model: "/jaguar/jaguar-ipace.png",
+          model_name: "Jaguar I-Pace",
+          engine_options: "Electric",
+        },
+        {
+          model: "/jaguar/jaguar-xjr.png",
+          model_name: "Jaguar XJR",
+          engine_options: "5.0L V8 Supercharged",
+        },
+        {
+          model: "/jaguar/jaguar-xk.png",
+          model_name: "Jaguar XK",
+          engine_options: "5.0L V8, 5.0L V8 Supercharged",
+        },
+        {
+          model: "/jaguar/jaguar-stype.png",
+          model_name: "Jaguar S-Type",
+          engine_options: "3.0L V6, 4.2L V8",
+        },
+        {
+          model: "/jaguar/jaguar-xtype.png",
+          model_name: "Jaguar X-Type",
+          engine_options: "2.0L Diesel, 3.0L V6",
+        },
+        {
+          model: "/jaguar/jaguar-markx.png",
+          model_name: "Jaguar Mark X",
+          engine_options: "3.8L V8",
+        },
+        {
+          model: "/jaguar/jaguar-ctype.png",
+          model_name: "Jaguar C-Type",
+          engine_options: "3.4L Inline-6",
+        },
+        {
+          model: "/jaguar/jaguar-dtype.png",
+          model_name: "Jaguar D-Type",
+          engine_options: "3.4L Inline-6",
+        },
+        {
+          model: "/jaguar/jaguar-xjs.png",
+          model_name: "Jaguar XJS",
+          engine_options: "3.6L V6, 4.0L V8, 5.3L V12",
+        },
+        {
+          model: "/jaguar/jaguar-xj220.png",
+          model_name: "Jaguar XJ220",
+          engine_options: "3.5L Turbo V6",
+        },
+        {
+          model: "/jaguar/jaguar-etype.png",
+          model_name: "Jaguar E-Type",
+          engine_options: "3.8L Inline-6, 4.2L Inline-6, 5.3L V12",
+        },
+      ],
+      engine_codes: [
+        {
+          engineCode: "306PS",
+          engineSize: 3.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 400,
+          torque: 550,
+          productionYears: "2015-2025",
+        },
+        {
+          engineCode: "204DTD",
+          engineSize: 2.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 180,
+          torque: 430,
+          productionYears: "2015-2025",
+        },
+        {
+          engineCode: "306DT",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 275,
+          torque: 600,
+          productionYears: "2009-2025",
+        },
+        {
+          engineCode: "508PS",
+          engineSize: 5.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 575,
+          torque: 700,
+          productionYears: "2013-2025",
+        },
+        {
+          engineCode: "AJ8FT",
+          engineSize: 4.2,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 400,
+          torque: 553,
+          productionYears: "2002-2010",
+        },
+        {
+          engineCode: "AJ200D",
+          engineSize: 2.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 180,
+          torque: 430,
+          productionYears: "2015-2025",
+        },
+        {
+          engineCode: "AJ126",
+          engineSize: 3.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 340,
+          torque: 450,
+          productionYears: "2012-2025",
+        },
+        {
+          engineCode: "AJ133",
+          engineSize: 5.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 510,
+          torque: 625,
+          productionYears: "2009-2025",
+        },
+        {
+          engineCode: "AJ20P",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 250,
+          torque: 365,
+          productionYears: "2015-2025",
+        },
+        {
+          engineCode: "AJ20D",
+          engineSize: 2.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 240,
+          torque: 500,
+          productionYears: "2015-2025",
+        },
+        {
+          engineCode: "AJ200P",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 300,
+          torque: 400,
+          productionYears: "2015-2025",
+        },
+        {
+          engineCode: "AJ126S",
+          engineSize: 3.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 380,
+          torque: 450,
+          productionYears: "2012-2025",
+        },
+        {
+          engineCode: "AJ133S",
+          engineSize: 5.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 550,
+          torque: 680,
+          productionYears: "2009-2025",
+        },
+        {
+          engineCode: "AJ200H",
+          engineSize: 2.0,
+          fuelType: "Hybrid",
+          turbo: true,
+          horsepower: 300,
+          torque: 400,
+          productionYears: "2018-2025",
+        },
+        {
+          engineCode: "AJ20E",
+          engineSize: 2.0,
+          fuelType: "Electric",
+          turbo: false,
+          horsepower: 400,
+          torque: 700,
+          productionYears: "2020-2025",
+        },
+        {
+          engineCode: "AJ-V6",
+          engineSize: 3.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 380,
+          torque: 450,
+          productionYears: "2012-2025",
+        },
+        {
+          engineCode: "204DTA",
+          engineSize: 2.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 180,
+          torque: 430,
+          productionYears: "2015-2025",
+        },
+        {
+          engineCode: "224DT",
+          engineSize: 2.2,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 200,
+          torque: 450,
+          productionYears: "2012-2025",
+        },
+        {
+          engineCode: "204PT",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 250,
+          torque: 365,
+          productionYears: "2015-2025",
+        },
+        {
+          engineCode: "PT204",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 300,
+          torque: 400,
+          productionYears: "2015-2025",
+        },
+        {
+          engineCode: "RG (AJ-V8)",
+          engineSize: 5.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 575,
+          torque: 700,
+          productionYears: "2013-2025",
+        },
+      ],
+      models_engines: [
+        {
+          engineCode: "306PS",
+          compatibleModels: ["Jaguar XF", "Jaguar XE", "Jaguar F-Pace", "Jaguar F-Type", "Jaguar XJ", "Range Rover Sport", "Discovery", "Velar"],
+        },
+        {
+          engineCode: "204DTD",
+          compatibleModels: ["Jaguar XE", "Jaguar XF", "Jaguar F-Pace", "Jaguar E-Pace", "Land Rover Discovery Sport", "Range Rover Evoque"],
+        },
+        {
+          engineCode: "306DT",
+          compatibleModels: ["Jaguar XF", "Jaguar XJ", "Jaguar F-Pace", "Range Rover", "Range Rover Sport", "Discovery"],
+        },
+        {
+          engineCode: "508PS",
+          compatibleModels: ["Jaguar F-Pace", "Jaguar F-Type", "Jaguar XE", "Jaguar XF", "Jaguar XJ", "Jaguar XKR", "Jaguar XKR-S", "Range Rover Sport", "Velar", "Vogue"],
+        },
+        {
+          engineCode: "AJ8FT",
+          compatibleModels: ["Jaguar S-Type", "Jaguar XK8", "Jaguar XJ8", "Jaguar XJR", "Jaguar XKR"],
+        },
+        {
+          engineCode: "AJ200D",
+          compatibleModels: ["Jaguar XE", "Jaguar XF", "Jaguar F-Pace", "Jaguar E-Pace"],
+        },
+        {
+          engineCode: "AJ126",
+          compatibleModels: ["Jaguar XF", "Jaguar XJ", "Jaguar F-Pace", "Jaguar F-Type", "Range Rover Sport", "Discovery"],
+        },
+        {
+          engineCode: "AJ133",
+          compatibleModels: ["Jaguar XF", "Jaguar XJ", "Jaguar XK", "Range Rover", "Range Rover Sport"],
+        },
+        {
+          engineCode: "AJ20P",
+          compatibleModels: ["Jaguar XE", "Jaguar XF", "Jaguar F-Pace", "Jaguar E-Pace", "Range Rover Evoque", "Discovery Sport"],
+        },
+        {
+          engineCode: "AJ20D",
+          compatibleModels: ["Jaguar XE", "Jaguar XF", "Jaguar F-Pace", "Jaguar E-Pace"],
+        },
+        {
+          engineCode: "AJ200P",
+          compatibleModels: ["Jaguar XE", "Jaguar XF", "Jaguar F-Pace", "Jaguar E-Pace"],
+        },
+        {
+          engineCode: "AJ126S",
+          compatibleModels: ["Jaguar XF", "Jaguar XJ", "Jaguar F-Pace", "Jaguar F-Type", "Range Rover Sport", "Discovery"],
+        },
+        {
+          engineCode: "AJ133S",
+          compatibleModels: ["Jaguar XF", "Jaguar XJ", "Jaguar XK", "Range Rover", "Range Rover Sport"],
+        },
+        {
+          engineCode: "AJ200H",
+          compatibleModels: ["Jaguar XE", "Jaguar XF", "Jaguar F-Pace", "Jaguar E-Pace"],
+        },
+        {
+          engineCode: "AJ20E",
+          compatibleModels: ["Jaguar I-Pace"],
+        },
+        {
+          engineCode: "AJ-V6",
+          compatibleModels: ["Jaguar XF", "Jaguar XJ", "Jaguar F-Pace", "Jaguar F-Type", "Range Rover Sport", "Discovery"],
+        },
+        {
+          engineCode: "204DTA",
+          compatibleModels: ["Jaguar XE", "Jaguar XF", "Jaguar F-Pace", "Jaguar E-Pace", "Discovery Sport", "Range Rover Evoque"],
+        },
+        {
+          engineCode: "224DT",
+          compatibleModels: ["Jaguar XF", "Jaguar XJ", "Jaguar F-Pace", "Range Rover", "Range Rover Sport", "Discovery"],
+        },
+        {
+          engineCode: "204PT",
+          compatibleModels: ["Jaguar XE", "Jaguar XF", "Jaguar F-Pace", "Jaguar E-Pace", "Range Rover Evoque", "Discovery Sport"],
+        },
+        {
+          engineCode: "PT204",
+          compatibleModels: ["Jaguar XE", "Jaguar XF", "Jaguar F-Pace", "Jaguar E-Pace", "Range Rover Evoque", "Discovery Sport"],
+        },
+        {
+          engineCode: "RG (AJ-V8)",
+          compatibleModels: ["Jaguar XF", "Jaguar XJ", "Jaguar XK", "Range Rover", "Range Rover Sport"],
+        },
+      ],
+      replacement_costs: [
+        {
+          image: "/jaguar/jaguar-generic.png",
+          model: "Jaguar XE, Jaguar XF",
+          engineType: "2.0L Diesel",
+          estimatedCost: "£2,500 - £4,500",
+        },
+        {
+          image: "/jaguar/jaguar-generic.png",
+          model: "Jaguar XJ, Jaguar F-Type",
+          engineType: "3.0L V6 Petrol",
+          estimatedCost: "£4,000 - £7,000",
+        },
+        {
+          image: "/jaguar/jaguar-generic.png",
+          model: "Jaguar E-Pace, Jaguar F-Pace",
+          engineType: "2.0L Petrol",
+          estimatedCost: "£3,000 - £5,000",
+        },
+        {
+          image: "/jaguar/jaguar-generic.png",
+          model: "Jaguar I-Pace",
+          engineType: "Electric",
+          estimatedCost: "£5,000 - £8,000",
+        },
+        {
+          image: "/jaguar/jaguar-generic.png",
+          model: "Jaguar XK, Jaguar XKR",
+          engineType: "5.0L V8 Petrol",
+          estimatedCost: "£6,000 - £10,000",
+        },
+        {
+          image: "/jaguar/jaguar-generic.png",
+          model: "Jaguar S-Type, Jaguar X-Type",
+          engineType: "2.5L V6 Petrol",
+          estimatedCost: "£3,500 - £6,000",
+        },
+        {
+          image: "/jaguar/jaguar-generic.png",
+          model: "Jaguar XJ6, Jaguar XJ8",
+          engineType: "4.2L V8 Petrol",
+          estimatedCost: "£5,000 - £8,500",
+        },
+        {
+          image: "/jaguar/jaguar-generic.png",
+          model: "Jaguar XJR, Jaguar XKR-S",
+          engineType: "5.0L V8 Supercharged",
+          estimatedCost: "£7,000 - £12,000",
+        },
+        {
+          image: "/jaguar/jaguar-generic.png",
+          model: "Jaguar F-Type R, Jaguar F-Type SVR",
+          engineType: "5.0L V8 Supercharged",
+          estimatedCost: "£7,500 - £12,500",
+        },
+        {
+          image: "/jaguar/jaguar-generic.png",
+          model: "Jaguar XE SV Project 8",
+          engineType: "5.0L V8 Supercharged",
+          estimatedCost: "£8,000 - £13,000",
+        },
+        {
+          image: "/jaguar/jaguar-generic.png",
+          model: "Jaguar XJ12",
+          engineType: "6.0L V12 Petrol",
+          estimatedCost: "£9,000 - £15,000",
+        },
+        {
+          image: "/jaguar/jaguar-generic.png",
+          model: "Jaguar E-Type",
+          engineType: "4.2L I6 Petrol",
+          estimatedCost: "£6,000 - £10,000",
+        },
+        {
+          image: "/jaguar/jaguar-generic.png",
+          model: "Jaguar Mark 2",
+          engineType: "3.8L I6 Petrol",
+          estimatedCost: "£5,500 - £9,000",
+        },
+        {
+          image: "/jaguar/jaguar-generic.png",
+          model: "Jaguar XJS",
+          engineType: "5.3L V12 Petrol",
+          estimatedCost: "£8,000 - £13,000",
+        },
+        {
+          image: "/jaguar/jaguar-generic.png",
+          model: "Jaguar D-Type",
+          engineType: "3.4L I6 Petrol",
+          estimatedCost: "£7,000 - £11,000",
+        },
+      ],
+    },
+    section7: [
+      {
+        title: "New Range Rover Engines",
+        icon: <Sparkles className="h-6 w-6" />,
+        badge: "Premium",
+        badgeVariant: "default" as const,
+        pros: [
+          "100% reliability with a factory warranty",
+          "Best performance & longevity",
+        ],
+        cons: [
+          "Higher cost",
+          "Limited availability for older models",
+        ],
+      },
+      {
+        title: "Used Range Rover Engines",
+        icon: <DollarSign className="h-6 w-6" />,
+        badge: "Budget-Friendly",
+        badgeVariant: "secondary" as const,
+        pros: [
+          "Cost-effective & widely available",
+          "Good for quick replacements",
+        ],
+        cons: [
+          "Potential hidden wear and tear",
+          "Shorter lifespan than new or reconditioned engines",
+        ],
+      },
+      {
+        title: "Reconditioned Range Rover Engines",
+        icon: <Wrench className="h-6 w-6" />,
+        badge: "Best Value",
+        badgeVariant: "outline" as const,
+        pros: [
+          "Professionally rebuilt with new components",
+          "More reliable than used engines",
+          "Balanced cost vs. performance",
+        ],
+        cons: [
+          "Slightly more expensive than used engines",
+        ],
+      },
+    ],
+    section8: {
+      EngineProblems: [
+        {
+          id: "check-engine-light-issues",
+          title: "Check Engine Light Issues",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          severity: "Common",
+          data: [
+            {
+              heading: "Common Causes",
+              paragraph:
+                "Faulty oxygen sensors, loose gas cap, malfunctioning catalytic converter, and faulty mass airflow sensor are frequent triggers for the check engine light.",
+            },
+            {
+              heading: "Effective Solutions",
+              paragraph:
+                "Use an OBD-II scanner to read error codes, tighten or replace the gas cap, replace faulty sensors, and check and clean the mass airflow sensor to resolve the issue.",
+            },
+            {
+              heading: "Prevention Tips",
+              paragraph:
+                "Regular maintenance checks, timely replacement of sensors, and ensuring proper fuel cap usage can help prevent check engine light issues.",
+            },
+          ],
+        },
+        {
+          id: "power-loss-and-turbo-failures",
+          title: "Power Loss & Turbo Failures",
+          icon: <Gauge className="h-5 w-5" />,
+          severity: "Critical",
+          data: [
+            {
+              heading: "Identifying Root Causes",
+              paragraph:
+                "Clogged air filters, faulty turbocharger, worn spark plugs, and low fuel pressure are common causes of power loss and turbo failures in Range Rover engines.",
+            },
+            {
+              heading: "Repair Solutions",
+              paragraph:
+                "Replace air filters, inspect and repair or replace the turbocharger, replace worn spark plugs, and check and maintain proper fuel pressure to restore performance.",
+            },
+            {
+              heading: "Preventive Measures",
+              paragraph:
+                "Regular air filter changes, timely turbocharger maintenance, and using quality fuel and additives help prevent future power loss issues.",
+            },
+          ],
+        },
+        {
+          id: "excessive-smoke-and-oil-leaks",
+          title: "Excessive Smoke & Oil Leaks",
+          icon: <Smoke className="h-5 w-5" />,
+          severity: "Moderate",
+          data: [
+            {
+              heading: "Understanding the Causes",
+              paragraph:
+                "Worn piston rings, faulty PCV valve, damaged turbo seals, and excessive oil consumption are primary causes of smoke and oil leak problems.",
+            },
+            {
+              heading: "Troubleshooting Steps",
+              paragraph:
+                "Replace worn piston rings, check and replace the PCV valve, inspect and repair turbo seals, and monitor oil levels and consumption to address these issues.",
+            },
+            {
+              heading: "Maintenance for Prevention",
+              paragraph:
+                "Regular oil level checks, timely replacement of PCV valve and piston rings, and ensuring proper turbo maintenance help avoid excessive smoke and leaks.",
+            },
+          ],
+        },
+      ],
+      maintenanceTips: [
+        {
+          icon: "Lightbulb",
+          iconColor: "text-blue-600",
+          border: "border-blue-200",
+          bg: "bg-blue-50",
+          title: "Regular Inspections",
+          titleColor: "text-blue-800",
+          text: "Check your Range Rover engine monthly for early problem detection",
+          textColor: "text-blue-700",
+        },
+        {
+          icon: "CheckCircle",
+          iconColor: "text-green-600",
+          border: "border-green-200",
+          bg: "bg-green-50",
+          title: "Preventive Maintenance",
+          titleColor: "text-green-800",
+          text: "Follow manufacturer's recommended service schedule for optimal performance",
+          textColor: "text-green-700",
+        },
+        {
+          icon: "AlertTriangle",
+          iconColor: "text-orange-600",
+          border: "border-orange-200",
+          bg: "bg-orange-50",
+          title: "Act Quickly",
+          titleColor: "text-orange-800",
+          text: "Address warning signs immediately to prevent costly repairs",
+          textColor: "text-orange-700",
+        },
+      ],
+      summary: {
+        variant: "green",
+        title: "Key Takeaway",
+        content:
+          "By following these troubleshooting tips and maintaining regular engine checks, you can help prevent common Range Rover engine faults and extend its lifespan. Regular maintenance, timely diagnostics, and prompt attention to warning signs are essential to keeping your luxury SUV running smoothly and reliably for years to come. At EnginesMarket.co.uk, we provide the best Range Rover engine prices and ensure you get high-quality replacement engines to keep your vehicle in top condition.",
+      },
+    },
+    section9: {
+      performanceUpgrades: [
+        {
+          id: "basic-enhancements",
+          title: "Basic Enhancement Options",
+          icon: <Zap className="h-5 w-5" />,
+          level: "Beginner",
+          upgrades: [
+            {
+              name: "ECU Remapping (Stage 1 Tuning)",
+              icon: <Cog className="h-4 w-4" />,
+              description:
+                "ECU remapping involves optimizing the engine's parameters such as fuel delivery, ignition timing, and airflow. This is the most common tuning method for Jaguar engines, providing significant horsepower gains without hardware changes.",
+              benefits:
+                "15-25% increase in horsepower and torque, improved throttle response, and enhanced overall driving experience—ideal for daily driving and performance enthusiasts.",
+              considerations:
+                "Must be performed by a certified tuner using Jaguar-specific software to avoid triggering fault codes or damaging sensitive electronics and emissions systems.",
+            },
+            {
+              name: "Performance Air Intake Systems",
+              icon: <Wind className="h-4 w-4" />,
+              description:
+                "Upgrading to a high-flow air intake system allows cooler, denser air to enter the engine, improving combustion efficiency in Jaguar's supercharged and naturally aspirated engines.",
+              benefits:
+                "Enhanced engine breathing, reduced intake noise, and improved mid-range torque—especially beneficial for XF, XJ, and F-Type models.",
+              considerations:
+                "Ensure proper sealing and filtration to prevent dust or water ingestion, which can damage the supercharger or engine internals.",
+            },
+            {
+              name: "Exhaust System Upgrades",
+              icon: <Volume2 className="h-4 w-4" />,
+              description:
+                "Replacing the stock exhaust with a performance cat-back or de-cat system reduces backpressure, allowing the engine to breathe better and improving overall efficiency.",
+              benefits:
+                "Noticeable power gains, improved engine sound, and better thermal management—ideal for enhancing the sporty character of Jaguar vehicles.",
+              considerations:
+                "May affect emissions compliance and void warranty; always pair with ECU tuning to avoid triggering check engine lights.",
+            },
+          ],
+        },
+        {
+          id: "tuning-stages",
+          title: "Tuning Upgrade: Stage 1-3",
+          icon: <TrendingUp className="h-5 w-5" />,
+          level: "Progressive",
+          stages: [
+            {
+              stage: "Stage 1 Tuning",
+              description:
+                "Software-only ECU remap with no hardware changes. Optimizes fuel maps, ignition timing, and boost pressure for safe power gains.",
+              benefits:
+                "Safe 15-25% power increase, improved drivability, and better throttle response—ideal for Jaguar XF, XJ, and F-Type models.",
+              considerations:
+                "Maintains factory reliability when done correctly; use reputable tuners familiar with Jaguar's engine management systems.",
+            },
+            {
+              stage: "Stage 2 Tuning",
+              description:
+                "Combines ECU tuning with hardware upgrades such as installing a lower supercharger pulley, high-flow intake, and performance exhaust systems.",
+              benefits:
+                "30-50 horsepower gains, faster supercharger spool, and improved performance under heavy throttle or high-speed driving.",
+              considerations:
+                "Requires supporting modifications and more frequent maintenance; may void warranty and affect emissions compliance.",
+            },
+            {
+              stage: "Stage 3 Tuning",
+              description:
+                "Full performance build involving supercharger upgrades, larger charge coolers, high-flow catalytic converters, and custom ECU calibration for maximum output.",
+              benefits: "60-100+ horsepower gains, ideal for track use, extreme performance builds, or modified Jaguar sports cars.",
+              considerations:
+                "Significantly impacts engine longevity and fuel economy; requires expert setup, reinforced drivetrain, and ongoing monitoring to prevent failure.",
+            },
+          ],
+        },
+        {
+          id: "turbo-upgrades",
+          title: "Turbo Upgrades",
+          icon: <Gauge className="h-5 w-5" />,
+          level: "Advanced",
+          content: {
+            description:
+              "Turbocharging is a popular method to increase engine performance by forcing more air into the combustion chamber, significantly boosting power output in Jaguar's turbocharged engines.",
+            points: [
+              {
+                title: "Stock Turbo Replacement",
+                description:
+                  "Replacing the stock turbo with a larger, more efficient turbo can provide a substantial increase in power while maintaining reliability for daily driving.",
+              },
+              {
+                title: "Turbo Component Upgrades",
+                description:
+                  "Upgrading with larger compressor wheels, improved turbine housings, and wastegate controllers can further enhance performance for track-focused builds.",
+              },
+              {
+                title: "Supporting Modifications",
+                description:
+                  "Turbo upgrades require high-flow fuel systems, upgraded intercoolers, reinforced oil lines, and proper ECU remapping to handle increased boost and prevent engine damage.",
+              },
+            ],
+          },
+        },
+        {
+          id: "engine-internals",
+          title: "Engine Internals Reinforcements",
+          icon: <Cog className="h-5 w-5" />,
+          level: "Expert",
+          content: {
+            description:
+              "To handle the increased power from tuning and turbo upgrades, reinforcing the engine internals is crucial for reliability and longevity of high-performance Jaguar engines.",
+            points: [
+              {
+                title: "Forged Pistons and Rods",
+                description:
+                  "Upgrading to forged pistons and rods can handle higher cylinder pressures and prevent engine failure in high-boost applications.",
+              },
+              {
+                title: "Upgraded Bearings and Gaskets",
+                description:
+                  "High-performance bearings and gaskets can withstand the increased stress and heat generated by performance upgrades in modified engines.",
+              },
+              {
+                title: "Strengthened Crankshaft",
+                description:
+                  "Reinforcing the crankshaft can prevent it from bending or breaking under high power output, essential for extreme performance builds.",
+              },
+            ],
+          },
+        },
+        {
+          id: "reliability-impact",
+          title: "Impact on Reliability & Fuel Efficiency",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          level: "Important",
+          content: {
+            description:
+              "While performance upgrades can significantly enhance power and torque, they can also impact the engine's reliability and fuel efficiency. Understanding these trade-offs is essential for a sustainable build.",
+            points: [
+              {
+                title: "Reliability",
+                description:
+                  "Properly executed upgrades with high-quality components can maintain or even improve engine reliability. However, pushing the engine beyond its limits without proper reinforcement can lead to premature wear and failure.",
+              },
+              {
+                title: "Fuel Efficiency",
+                description:
+                  "Performance upgrades often result in higher fuel consumption due to increased power output. Tuning and turbo upgrades can lead to decreased fuel efficiency, especially under heavy throttle or aggressive driving conditions.",
+              },
+            ],
+          },
+        },
+      ],
+      summary: {
+        variant: "performance",
+        title: "Performance Enhancement Summary",
+        content:
+          "By carefully selecting and implementing performance upgrades, you can significantly enhance the power, torque, and driving experience of your Jaguar vehicle. From ECU remapping on a daily driver to full internal builds on a track-focused F-Type, each stage offers greater performance potential—but also demands greater responsibility. Always work with experienced professionals, use high-quality components, and maintain your modified engine diligently to balance performance, reliability, and efficiency. At EnginesMarket.co.uk, we provide the best Jaguar engine prices and ensure you get high-quality replacement engines to support your performance goals.",
+      },
+    },
+    faqs: [
+      {
+        question: "What is EnginesMarket.co.uk?",
+        answer:
+          "EnginesMarket.co.uk is a price comparison website specializing in providing competitive quotes for new, used, and reconditioned Jaguar engines from multiple trusted sellers. We help you find the best deals on high-quality replacement engines for various Jaguar models.",
+      },
+      {
+        question: "How does EnginesMarket.co.uk work?",
+        answer:
+          "Simply enter your Jaguar model and engine requirements on our platform, and we will connect you with multiple sellers offering the best prices and availability. You can compare quotes and choose the most suitable option for your needs.",
+      },
+      {
+        question: "What types of Jaguar engines can I find on EnginesMarket.co.uk?",
+        answer:
+          "We offer a wide range of Jaguar engines, including petrol, diesel, reconditioned, used, and performance upgrade options. Our inventory covers popular models like the XF, XJ, F-Type, and E-Pace, ensuring you find the right fit for your vehicle.",
+      },
+      {
+        question: "Why should I use EnginesMarket.co.uk for my Jaguar engine replacement?",
+        answer:
+          "Using EnginesMarket.co.uk saves you time and money by providing multiple quotes from trusted sellers, ensuring you get the best prices and availability for high-quality Jaguar engines. Our platform simplifies the entire replacement process.",
+      },
+      {
+        question: "Is there a warranty on engines purchased through EnginesMarket.co.uk?",
+        answer:
+          "Warranty terms vary by seller, but many offer warranties—especially on reconditioned and new units. Be sure to review the specific warranty details provided with each quote before making a purchase.",
+      },
+      {
+        question: "What are the most common Jaguar engine problems?",
+        answerList: [
+          "Oil leaks from engine gaskets and seals",
+          "Timing chain tensioner and guide failures",
+          "Overheating due to thermostat or water pump issues",
+          "Supercharger bearing wear in supercharged models",
+          "Fuel injector clogging and failure",
+        ],
+      },
+      {
+        question: "How often should I service my Jaguar engine?",
+        answer:
+          "It is recommended to service your Jaguar engine every 10,000 miles or annually, whichever comes first. Regular servicing ensures optimal performance and long-term reliability, especially for supercharged engines.",
+      },
+      {
+        question: "What is the average lifespan of a Jaguar engine?",
+        answer:
+          "With proper maintenance, a Jaguar engine can last between 150,000 to 200,000 miles. Their robust engineering, especially in the supercharged V6 and V8 engines, is known for exceptional durability when properly maintained.",
+      },
+      {
+        question: "Can I use synthetic oil in my Jaguar engine?",
+        answer:
+          "Yes, high-quality synthetic engine oil is recommended for Jaguar engines, particularly in supercharged and high-performance models. It provides superior lubrication and protection for advanced engine technologies.",
+      },
+      {
+        question: "What are the benefits of a reconditioned Jaguar engine?",
+        answer:
+          "Reconditioned Jaguar engines are professionally rebuilt using new or refurbished components, tested for performance, and often come with a warranty. They offer a reliable, cost-effective alternative to new engines with improved reliability over used units.",
+      },
+      {
+        question: "How do I know if my Jaguar engine needs to be replaced?",
+        answerList: [
+          "Persistent engine misfires or rough idling",
+          "Excessive smoke (blue, white, or black) from exhaust",
+          "Loss of power and acceleration",
+          "Severe oil or coolant leaks",
+          "Overheating or frequent stalling",
+        ],
+      },
+      {
+        question: "What is the difference between a used and a reconditioned Jaguar engine?",
+        answer:
+          "A used Jaguar engine is removed from another vehicle and sold as-is, with unknown wear. A reconditioned engine has been disassembled, inspected, rebuilt with new parts, and tested to ensure reliability and performance.",
+      },
+      {
+        question: "Are Jaguar engines reliable?",
+        answer:
+          "Yes, Jaguar engines are known for their reliability and performance, especially when properly maintained. Models like the supercharged V6 and V8 engines are widely praised for their power and durability in luxury applications.",
+      },
+      {
+        question: "What is the cost of replacing a Jaguar engine?",
+        answer:
+          "The cost of replacing a Jaguar engine typically ranges from £3,000 to £10,000, depending on the model, engine type (new, used, reconditioned), and labor costs. High-performance models like the F-Type are at the higher end of the range.",
+      },
+      {
+        question: "Can I install a Jaguar engine myself?",
+        answer:
+          "While experienced mechanics may attempt an engine swap, it's highly recommended to have a professional technician perform the installation—especially for supercharged engines—to ensure proper calibration, safety, and compliance.",
+      },
+      {
+        question: "What should I do if my Jaguar engine overheats?",
+        answer:
+          "If your Jaguar engine overheats, pull over safely, turn off the engine, and allow it to cool. Check coolant levels and look for leaks. If the issue persists, consult a qualified mechanic to avoid serious engine damage, especially in supercharged models.",
+      },
+      {
+        question: "How can I improve the fuel efficiency of my Jaguar engine?",
+        answer:
+          "Regular maintenance, using the correct oil and fuel grades, keeping the air filter clean, ensuring proper tire pressure, and adopting efficient driving habits can all help improve fuel economy in your Jaguar vehicle.",
+      },
+      {
+        question: "What is the best oil for a Jaguar engine?",
+        answer:
+          "The best oil for a Jaguar engine is a high-quality synthetic engine oil that meets manufacturer specifications—such as 5W-30 or 0W-20—depending on the model and operating conditions, especially for supercharged engines.",
+      },
+      {
+        question: "How do I check the engine code on my Jaguar?",
+        answer:
+          "You can find the engine code on the engine identification plate, usually located on the engine block or intake manifold. It may also be listed in the vehicle's service manual or on the VIN documentation.",
+      },
+      {
+        question: "What are the signs of a failing Jaguar supercharger?",
+        answerList: [
+          "Whining or grinding noises from the engine bay",
+          "Reduced engine power and acceleration",
+          "Overheating or excessive oil consumption",
+          "Check engine light or supercharger fault codes",
+          "Visible oil leaks around the supercharger unit",
+        ],
+      },
+      {
+        question: "Can I upgrade the supercharger on my Jaguar engine?",
+        answer:
+          "Yes, upgrading the supercharger pulley, intercooler, or ECU calibration can significantly improve performance. These upgrades are popular for XF, XJ, and F-Type models seeking enhanced power and driving experience.",
+      },
+      {
+        question: "What is the best Jaguar engine for performance?",
+        answer:
+          "The supercharged 5.0L V8 engine found in the F-Type R and XJR models delivers exceptional power and torque, making it ideal for performance enthusiasts seeking the ultimate driving experience.",
+      },
+      {
+        question: "Where can I buy a replacement Jaguar engine?",
+        answer:
+          "You can find high-quality replacement Jaguar engines on EnginesMarket.co.uk. Our platform connects you with trusted sellers offering competitive prices on new, used, and reconditioned engines.",
+      },
+      {
+        question: "Are performance upgrade engines available on EnginesMarket.co.uk?",
+        answer:
+          "Yes, EnginesMarket.co.uk offers a variety of engine types, including performance upgrade options where available, helping you find a high-performance solution for your Jaguar vehicle or fleet.",
+      },
+      {
+        question: "What should I look for when buying a used Jaguar engine?",
+        answer:
+          "When buying a used Jaguar engine, inspect for oil leaks, unusual noises, exhaust smoke, and verify the engine's service history and mileage. A compression test and diagnostic scan can also reveal hidden issues.",
+      },
+      {
+        question: "Can I perform engine modifications on my Jaguar vehicle myself?",
+        answer:
+          "Basic modifications like ECU remapping or air intake upgrades can be done by experienced DIYers, but advanced work such as supercharger upgrades or internal engine modifications should be performed by professionals for safety and reliability.",
+      },
+    ],
+  },
+  jeep: {
+    metadata: {
+      title: "Jaguar Engines for Sale - New, Used & Reconditioned | Engines Market",
+      description: "Explore Engines Market for unbeatable prices on new, used, and reconditioned Jaguar engines. Find the best engine for your Jaguar and save time and money. Request a quote today!",
+      keywords: [
+        "Jaguar engines",
+        "reconditioned Jaguar engines",
+        "used Jaguar engines",
+        "new Jaguar engines",
+        "best Jaguar engine prices",
+        "Jaguar engine replacement",
+        "Jaguar engine deals",
+        "Engines Market",
+        "Jaguar engine quotes",
+        "Jaguar engine performance upgrades",
+        "Jaguar V6 engine",
+        "Jaguar V8 engine",
+        "Jaguar XF engine",
+        "Jaguar F-Type engine",
+        "Jaguar XJ engine"
+      ],
+    },
+    brandName: "Jeep",
+    carImages: [
+      "/banners/banner-1.webp",
+      "/banners/banner-2.webp",
+      "/banners/banner-3.webp",
+      "/banners/banner-4.webp",
+      "/banners/banner-5.webp",
+    ],
+    carModelNames: [
+      "BMW X5",
+      "Audi A6",
+      "Mercedes C-Class",
+      "Range Rover Evoque",
+      "Volkswagen Golf",
+    ],
+    section0Image: {
+      img: "/bmw/bmw.png",
+      alt: "BMW front view",
+    },
+    section1Image: {
+      img: "/engine-guide-banners/engine-guide.png",
+      alt: "BMW rear view",
+    },
+    section4: {
+      mainParagraph:
+        "Jeep engines are renowned for their rugged performance and off-road capability, but like all mechanical components, they can encounter issues over time. Whether you own a Wrangler, Cherokee, or Grand Cherokee, understanding common engine problems—and how to address them—can help preserve reliability and driving enjoyment. Below are the most frequently encountered Jeep engine issues, along with solutions and preventive measures:",
+      EngineProblems: [
+        {
+          title: "Engine Misfires",
+          icon: <Zap className="h-5 w-5" />,
+          problem:
+            "Engine misfires are common in Jeep models equipped with Pentastar V6 or turbocharged engines. Symptoms include rough idling, loss of power, and illuminated check engine light. Causes often include faulty spark plugs, failing ignition coils, clogged fuel injectors, or vacuum leaks.",
+          solution:
+            "Replace worn spark plugs and defective ignition coils, clean or replace clogged fuel injectors, and use diagnostic tools to identify vacuum leaks. Addressing coil-on-plug failures promptly prevents catalytic converter damage.",
+          prevention:
+            "Follow recommended service intervals for spark plug replacement (every 30,000–60,000 miles), use high-quality fuel, and perform regular OBD-II scans to catch early signs of misfire codes.",
+          severity: "Moderate",
+        },
+        {
+          title: "Overheating",
+          icon: <Thermometer className="h-5 w-5" />,
+          problem:
+            "Overheating can occur in Jeeps due to low coolant levels, a failed thermostat, water pump failure, or radiator blockages—especially in older models or those used for heavy towing or off-road driving.",
+          solution:
+            "Inspect and refill coolant, replace faulty thermostats or water pumps, and flush the cooling system. Check for leaks in hoses, radiator, or head gasket. In severe cases, inspect for internal engine damage.",
+          prevention:
+            "Perform annual cooling system inspections, replace coolant every 3–5 years, and monitor temperature gauges, especially during heavy towing or off-road driving.",
+          severity: "Critical",
+        },
+        {
+          title: "Oil Leaks",
+          icon: <Droplet className="h-5 w-5" />,
+          problem:
+            "Oil leaks are a common issue in Jeep engines, particularly from the valve cover gasket, oil pan seal, or timing chain cover. Leaks can lead to low oil levels, engine noise, and potential damage if ignored.",
+          solution:
+            "Identify the source of the leak and replace worn gaskets or seals. Common culprits include the valve cover gasket and oil pan gasket. Use OEM-quality replacements for durability.",
+          prevention:
+            "Inspect engine bay regularly for oil residue, change oil with high-quality synthetic, and avoid engine strain during cold starts to reduce seal stress.",
+          severity: "Common",
+        },
+        {
+          title: "Ticking Noise",
+          icon: <Volume2 className="h-5 w-5" />,
+          problem:
+            "Ticking or tapping sounds from the engine, especially during startup, are common in Jeep engines. This is often caused by worn-out lifters, rocker arms, or insufficient oil pressure.",
+          solution:
+            "Replace lifters and rocker arms, ensure proper lubrication of engine components, and check oil pressure. In some cases, adjusting valve clearances may resolve the issue.",
+          prevention:
+            "Regular oil changes with the correct oil viscosity, avoiding extended idling, and using high-quality engine oil can help prevent this issue.",
+          severity: "Moderate",
+        },
+        {
+          title: "Excessive Fuel Consumption",
+          icon: <Fuel className="h-5 w-5" />,
+          problem:
+            "Decreased fuel efficiency and frequent refueling are common complaints in Jeep vehicles. This can be due to a dirty air filter, faulty oxygen sensor, issues with the fuel injection system, or aggressive driving habits.",
+          solution:
+            "Replace the air filter and oxygen sensor, clean or replace fuel injectors as needed, and check for vacuum leaks. Ensure proper tire pressure and driving habits to optimize fuel economy.",
+          prevention:
+            "Regular maintenance, using high-quality fuel, and adopting efficient driving habits can help maintain optimal fuel efficiency.",
+          severity: "Common",
+        },
+      ],
+      engineReliabilityAndPerformance: [
+        {
+          reliability: [
+            {
+              heading: "Best Engines for Reliability",
+              paragraph:
+                "The 3.6L Pentastar V6 is known for its durability and reliability. It provides a good balance of power and efficiency, making it a popular choice for many Jeep models including the Wrangler, Cherokee, and Grand Cherokee.",
+            },
+            {
+              heading: "Maintenance Tips for Longevity",
+              paragraph:
+                "To maximize engine life, adhere to scheduled services, use premium synthetic oil (5W-20 or 5W-30), replace spark plugs and air filters on time, and keep the cooling and intake systems clean. Regular inspection of belts and hoses is also essential.",
+            },
+          ],
+          performance: [
+            {
+              heading: "Best Engines for Performance",
+              paragraph:
+                "The 2.0L Turbocharged engine offers impressive power and torque, making it ideal for those seeking enhanced performance. It is particularly favored in models like the Jeep Wrangler and Cherokee for its blend of efficiency and off-road capability.",
+            },
+            {
+              heading: "Performance Maintenance Tips",
+              paragraph:
+                "For high-performance Jeeps, regular inspection of turbocharger components, intercoolers, and engine mounts is essential. Use high-quality fuel and schedule performance diagnostics to maintain peak output and reliability.",
+            },
+          ],
+        },
+      ],
+      conclusion:
+        "By understanding these common Jeep engine problems and their solutions, you can keep your rugged vehicle running smoothly and reliably. Regular maintenance, using high-quality fluids and parts, and addressing warning signs early are key to preserving both performance and resale value. Whether you drive a daily commuter Cherokee or a trail-ready Wrangler, proper care ensures your Jeep continues to deliver exceptional capability and adventure for years to come.",
+    },
+    engineData: {
+      models: [
+        {
+          model: "/jeep/jeep-wrangler.png",
+          model_name: "Jeep Wrangler",
+          engine_options: "2.0L Turbo Petrol, 3.6L V6 Petrol, 2.2L Diesel, 4xe Hybrid",
+        },
+        {
+          model: "/jeep/jeep-grand-cherokee.png",
+          model_name: "Jeep Grand Cherokee",
+          engine_options: "3.6L V6 Petrol, 5.7L V8 Petrol, 3.0L Diesel, 4xe Hybrid",
+        },
+        {
+          model: "/jeep/jeep-compass.png",
+          model_name: "Jeep Compass",
+          engine_options: "1.3L Turbo Petrol, 2.4L Petrol, 2.0L Diesel",
+        },
+        {
+          model: "/jeep/jeep-renegade.png",
+          model_name: "Jeep Renegade",
+          engine_options: "1.0L Turbo Petrol, 1.3L Turbo Petrol, 1.6L Diesel",
+        },
+        {
+          model: "/jeep/jeep-cherokee.png",
+          model_name: "Jeep Cherokee",
+          engine_options: "2.0L Turbo Petrol, 3.2L V6 Petrol, 2.2L Diesel",
+        },
+        {
+          model: "/jeep/jeep-gladiator.png",
+          model_name: "Jeep Gladiator",
+          engine_options: "3.6L V6 Petrol, 3.0L Diesel",
+        },
+        {
+          model: "/jeep/jeep-wagoneer.png",
+          model_name: "Jeep Wagoneer",
+          engine_options: "5.7L V8 Petrol, 6.4L V8 Petrol",
+        },
+        {
+          model: "/jeep/jeep-patriot.png",
+          model_name: "Jeep Patriot",
+          engine_options: "2.0L Petrol, 2.4L Petrol, 2.2L Diesel",
+        },
+        {
+          model: "/jeep/jeep-commander.png",
+          model_name: "Jeep Commander",
+          engine_options: "3.7L V6 Petrol, 5.7L V8 Petrol, 3.0L Diesel",
+        },
+        {
+          model: "/jeep/jeep-liberty.png",
+          model_name: "Jeep Liberty",
+          engine_options: "3.7L V6 Petrol, 2.8L Diesel",
+        },
+        {
+          model: "/jeep/jeep-avenger.png",
+          model_name: "Jeep Avenger",
+          engine_options: "1.2L Turbo Petrol, 1.5L Diesel",
+        },
+        {
+          model: "/jeep/jeep-trailhawk.png",
+          model_name: "Jeep Trailhawk",
+          engine_options: "2.0L Turbo Petrol, 3.2L V6 Petrol",
+        },
+        {
+          model: "/jeep/jeep-laredo.png",
+          model_name: "Jeep Laredo",
+          engine_options: "3.6L V6 Petrol, 5.7L V8 Petrol",
+        },
+        {
+          model: "/jeep/jeep-overland.png",
+          model_name: "Jeep Overland",
+          engine_options: "3.6L V6 Petrol, 5.7L V8 Petrol",
+        },
+        {
+          model: "/jeep/jeep-srt.png",
+          model_name: "Jeep SRT",
+          engine_options: "6.4L V8 Petrol",
+        },
+        {
+          model: "/jeep/jeep-trackhawk.png",
+          model_name: "Jeep Trackhawk",
+          engine_options: "6.2L Supercharged V8 Petrol",
+        },
+        {
+          model: "/jeep/jeep-rubicon.png",
+          model_name: "Jeep Rubicon",
+          engine_options: "2.0L Turbo Petrol, 3.6L V6 Petrol, 2.2L Diesel",
+        },
+        {
+          model: "/jeep/jeep-sahara.png",
+          model_name: "Jeep Sahara",
+          engine_options: "2.0L Turbo Petrol, 3.6L V6 Petrol",
+        },
+        {
+          model: "/jeep/jeep-latitude.png",
+          model_name: "Jeep Latitude",
+          engine_options: "2.4L Petrol, 2.0L Diesel",
+        },
+        {
+          model: "/jeep/jeep-summit.png",
+          model_name: "Jeep Summit",
+          engine_options: "3.6L V6 Petrol, 5.7L V8 Petrol",
+        },
+      ],
+      engine_codes: [
+        {
+          engineCode: "552 83 099",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 270,
+          torque: 295,
+          productionYears: "2020-2025",
+        },
+        {
+          engineCode: "552 63 088",
+          engineSize: 3.6,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 285,
+          torque: 260,
+          productionYears: "2012-2025",
+        },
+        {
+          engineCode: "552 60 384",
+          engineSize: 2.0,
+          fuelType: "Hybrid",
+          turbo: true,
+          horsepower: 375,
+          torque: 470,
+          productionYears: "2021-2025",
+        },
+        {
+          engineCode: "552 63 842",
+          engineSize: 6.4,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 470,
+          torque: 470,
+          productionYears: "2020-2025",
+        },
+        {
+          engineCode: "683 06 384",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 260,
+          torque: 600,
+          productionYears: "2014-2025",
+        },
+        {
+          engineCode: "683 06 842",
+          engineSize: 2.4,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 180,
+          torque: 237,
+          productionYears: "2014-2025",
+        },
+        {
+          engineCode: "683 63 099",
+          engineSize: 1.3,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 177,
+          torque: 285,
+          productionYears: "2018-2025",
+        },
+        {
+          engineCode: "683 63 088",
+          engineSize: 2.2,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 200,
+          torque: 450,
+          productionYears: "2015-2025",
+        },
+        {
+          engineCode: "683 60 384",
+          engineSize: 1.6,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 120,
+          torque: 320,
+          productionYears: "2016-2025",
+        },
+        {
+          engineCode: "683 63 842",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 270,
+          torque: 295,
+          productionYears: "2018-2025",
+        },
+        {
+          engineCode: "684 06 384",
+          engineSize: 3.6,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 285,
+          torque: 260,
+          productionYears: "2012-2025",
+        },
+        {
+          engineCode: "684 06 842",
+          engineSize: 2.0,
+          fuelType: "Hybrid",
+          turbo: true,
+          horsepower: 375,
+          torque: 470,
+          productionYears: "2021-2025",
+        },
+        {
+          engineCode: "684 63 099",
+          engineSize: 6.4,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 470,
+          torque: 470,
+          productionYears: "2020-2025",
+        },
+        {
+          engineCode: "684 63 088",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 260,
+          torque: 600,
+          productionYears: "2014-2025",
+        },
+        {
+          engineCode: "684 60 384",
+          engineSize: 2.4,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 180,
+          torque: 237,
+          productionYears: "2014-2025",
+        },
+        {
+          engineCode: "684 63 842",
+          engineSize: 1.3,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 177,
+          torque: 285,
+          productionYears: "2018-2025",
+        },
+        {
+          engineCode: "685 06 384",
+          engineSize: 2.2,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 200,
+          torque: 450,
+          productionYears: "2015-2025",
+        },
+        {
+          engineCode: "685 06 842",
+          engineSize: 1.6,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 120,
+          torque: 320,
+          productionYears: "2016-2025",
+        },
+        {
+          engineCode: "685 63 099",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 270,
+          torque: 295,
+          productionYears: "2018-2025",
+        },
+        {
+          engineCode: "685 63 088",
+          engineSize: 3.6,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 285,
+          torque: 260,
+          productionYears: "2012-2025",
+        },
+      ],
+      models_engines: [
+        {
+          engineCode: "552 83 099",
+          compatibleModels: ["Wrangler", "Cherokee"],
+        },
+        {
+          engineCode: "552 63 088",
+          compatibleModels: ["Grand Cherokee", "Gladiator"],
+        },
+        {
+          engineCode: "552 60 384",
+          compatibleModels: ["Wrangler 4xe", "Grand Cherokee 4xe"],
+        },
+        {
+          engineCode: "552 63 842",
+          compatibleModels: ["Grand Cherokee SRT", "Trackhawk"],
+        },
+        {
+          engineCode: "683 06 384",
+          compatibleModels: ["Grand Cherokee", "Gladiator"],
+        },
+        {
+          engineCode: "683 06 842",
+          compatibleModels: ["Compass", "Renegade"],
+        },
+        {
+          engineCode: "683 63 099",
+          compatibleModels: ["Renegade", "Compass"],
+        },
+        {
+          engineCode: "683 63 088",
+          compatibleModels: ["Cherokee", "Grand Cherokee"],
+        },
+        {
+          engineCode: "683 60 384",
+          compatibleModels: ["Renegade", "Compass"],
+        },
+        {
+          engineCode: "683 63 842",
+          compatibleModels: ["Wrangler", "Cherokee"],
+        },
+        {
+          engineCode: "684 06 384",
+          compatibleModels: ["Grand Cherokee", "Gladiator"],
+        },
+        {
+          engineCode: "684 06 842",
+          compatibleModels: ["Wrangler 4xe", "Grand Cherokee 4xe"],
+        },
+        {
+          engineCode: "684 63 099",
+          compatibleModels: ["Renegade", "Compass"],
+        },
+        {
+          engineCode: "684 63 088",
+          compatibleModels: ["Cherokee", "Grand Cherokee"],
+        },
+        {
+          engineCode: "684 60 384",
+          compatibleModels: ["Renegade", "Compass"],
+        },
+        {
+          engineCode: "684 63 842",
+          compatibleModels: ["Wrangler", "Cherokee"],
+        },
+        {
+          engineCode: "685 06 384",
+          compatibleModels: ["Grand Cherokee", "Gladiator"],
+        },
+        {
+          engineCode: "685 06 842",
+          compatibleModels: ["Compass", "Renegade"],
+        },
+        {
+          engineCode: "685 63 099",
+          compatibleModels: ["Renegade", "Compass"],
+        },
+        {
+          engineCode: "685 63 088",
+          compatibleModels: ["Cherokee", "Grand Cherokee"],
+        },
+      ],
+      replacement_costs: [
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Wrangler",
+          engineType: "2.0L Turbo Petrol",
+          estimatedCost: "£4,000 - £6,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Wrangler",
+          engineType: "3.6L V6 Petrol",
+          estimatedCost: "£5,000 - £7,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Grand Cherokee",
+          engineType: "3.6L V6 Petrol",
+          estimatedCost: "£5,500 - £8,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Grand Cherokee",
+          engineType: "5.7L V8 Petrol",
+          estimatedCost: "£7,000 - £10,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Grand Cherokee",
+          engineType: "3.0L Diesel",
+          estimatedCost: "£6,000 - £9,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Compass",
+          engineType: "1.3L Turbo Petrol",
+          estimatedCost: "£3,500 - £5,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Compass",
+          engineType: "2.0L Diesel",
+          estimatedCost: "£4,500 - £6,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Renegade",
+          engineType: "1.0L Turbo Petrol",
+          estimatedCost: "£3,000 - £4,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Renegade",
+          engineType: "1.6L Diesel",
+          estimatedCost: "£3,500 - £5,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Cherokee",
+          engineType: "2.0L Turbo Petrol",
+          estimatedCost: "£4,500 - £6,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Cherokee",
+          engineType: "3.2L V6 Petrol",
+          estimatedCost: "£5,500 - £8,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Gladiator",
+          engineType: "3.6L V6 Petrol",
+          estimatedCost: "£5,000 - £7,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Gladiator",
+          engineType: "3.0L Diesel",
+          estimatedCost: "£6,000 - £9,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Patriot",
+          engineType: "2.0L Petrol",
+          estimatedCost: "£3,500 - £5,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Patriot",
+          engineType: "2.4L Petrol",
+          estimatedCost: "£4,000 - £6,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Liberty",
+          engineType: "3.7L V6 Petrol",
+          estimatedCost: "£5,000 - £7,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Liberty",
+          engineType: "2.8L Diesel",
+          estimatedCost: "£5,500 - £8,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Commander",
+          engineType: "3.7L V6 Petrol",
+          estimatedCost: "£5,500 - £8,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Commander",
+          engineType: "5.7L V8 Petrol",
+          estimatedCost: "£7,000 - £10,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Wagoneer",
+          engineType: "5.7L V8 Petrol",
+          estimatedCost: "£7,500 - £10,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Wagoneer",
+          engineType: "6.4L V8 Petrol",
+          estimatedCost: "£8,000 - £11,000",
+        },
+      ],
+    },
+    section7: [
+      {
+        title: "New Jeep Engines",
+        icon: <Sparkles className="h-6 w-6" />,
+        badge: "Premium",
+        badgeVariant: "default" as const,
+        pros: [
+          "100% reliability with a factory warranty",
+          "Best performance & longevity",
+        ],
+        cons: [
+          "Higher cost",
+          "Limited availability for older models",
+        ],
+      },
+      {
+        title: "Used Jeep Engines",
+        icon: <DollarSign className="h-6 w-6" />,
+        badge: "Budget-Friendly",
+        badgeVariant: "secondary" as const,
+        pros: [
+          "Cost-effective & widely available",
+          "Good for quick replacements",
+        ],
+        cons: [
+          "Potential hidden wear and tear",
+          "Shorter lifespan than new or reconditioned engines",
+        ],
+      },
+      {
+        title: "Reconditioned Jeep Engines",
+        icon: <Wrench className="h-6 w-6" />,
+        badge: "Best Value",
+        badgeVariant: "outline" as const,
+        pros: [
+          "Professionally rebuilt with new components",
+          "More reliable than used engines",
+          "Balanced cost vs. performance",
+        ],
+        cons: [
+          "Slightly more expensive than used engines",
+        ],
+      },
+    ],
+    section8: {
+      EngineProblems: [
+        {
+          id: "check-engine-light-issues",
+          title: "Check Engine Light Issues",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          severity: "Common",
+          data: [
+            {
+              heading: "Common Causes",
+              paragraph:
+                "The check engine light can indicate various issues, from a loose gas cap to serious engine problems such as faulty oxygen sensors, malfunctioning catalytic converter, or mass airflow sensor failures.",
+            },
+            {
+              heading: "Effective Solutions",
+              paragraph:
+                "Use an OBD-II scanner to read error codes and identify the specific issue. Address problems promptly by tightening or replacing the gas cap, replacing faulty sensors, and cleaning or replacing the mass airflow sensor.",
+            },
+            {
+              heading: "Prevention Tips",
+              paragraph:
+                "Regular maintenance checks, timely replacement of sensors, and ensuring proper fuel cap usage can help prevent check engine light issues from occurring.",
+            },
+          ],
+        },
+        {
+          id: "power-loss-and-turbo-failures",
+          title: "Power Loss & Turbo Failures",
+          icon: <Gauge className="h-5 w-5" />,
+          severity: "Critical",
+          data: [
+            {
+              heading: "Identifying Root Causes",
+              paragraph:
+                "Power loss can be due to turbocharger failure, clogged air filters, fuel system issues, or worn spark plugs. These problems can significantly impact engine performance and drivability.",
+            },
+            {
+              heading: "Repair Solutions",
+              paragraph:
+                "Inspect and clean or replace the air filter, check the turbocharger for damage, ensure the fuel system is functioning correctly, and replace worn spark plugs to restore performance.",
+            },
+            {
+              heading: "Preventive Measures",
+              paragraph:
+                "Regularly maintain the turbocharger and fuel system, use high-quality fuel and oil, and perform routine inspections to prevent future power loss issues.",
+            },
+          ],
+        },
+        {
+          id: "excessive-smoke-and-oil-leaks",
+          title: "Excessive Smoke & Oil Leaks",
+          icon: <Smoke className="h-5 w-5" />,
+          severity: "Moderate",
+          data: [
+            {
+              heading: "Understanding the Causes",
+              paragraph:
+                "Excessive smoke can result from burning oil due to worn piston rings or valve seals, while oil leaks can be caused by worn gaskets, seals, or a damaged oil pan.",
+            },
+            {
+              heading: "Troubleshooting Steps",
+              paragraph:
+                "Identify the source of the smoke or leak, and replace any damaged gaskets or seals. Check for worn piston rings or valve seals and monitor oil levels and consumption.",
+            },
+            {
+              heading: "Maintenance for Prevention",
+              paragraph:
+                "Regularly check and maintain the engine's oil levels, replace gaskets and seals as needed, and perform routine inspections to avoid excessive smoke and leaks.",
+            },
+          ],
+        },
+        {
+          id: "overheating",
+          title: "Engine Overheating",
+          icon: <Thermometer className="h-5 w-5" />,
+          severity: "Critical",
+          data: [
+            {
+              heading: "Common Causes",
+              paragraph:
+                "Overheating can be caused by a malfunctioning cooling system, such as a faulty radiator, water pump, thermostat, or low coolant levels. Blocked coolant passages can also contribute to this issue.",
+            },
+            {
+              heading: "Repair Solutions",
+              paragraph:
+                "Inspect and replace any faulty cooling system components including the radiator, water pump, or thermostat. Ensure the coolant levels are adequate and the system is free from blockages.",
+            },
+            {
+              heading: "Prevention Tips",
+              paragraph:
+                "Regularly check the cooling system, replace coolant according to the manufacturer's recommendations, and inspect hoses and connections to prevent overheating issues.",
+            },
+          ],
+        },
+        {
+          id: "engine-misfire",
+          title: "Engine Misfire",
+          icon: <Zap className="h-5 w-5" />,
+          severity: "Moderate",
+          data: [
+            {
+              heading: "Identifying Causes",
+              paragraph:
+                "Engine misfires can be due to faulty spark plugs, ignition coils, fuel injectors, or vacuum leaks. These issues can cause rough idling, loss of power, and decreased fuel efficiency.",
+            },
+            {
+              heading: "Troubleshooting Steps",
+              paragraph:
+                "Replace faulty spark plugs, ignition coils, or fuel injectors. Ensure the fuel system is clean and functioning properly, and check for vacuum leaks in the intake system.",
+            },
+            {
+              heading: "Preventive Maintenance",
+              paragraph:
+                "Regularly inspect and replace spark plugs and ignition components as part of routine maintenance. Use high-quality fuel and perform regular diagnostic scans to catch issues early.",
+            },
+          ],
+        },
+      ],
+      maintenanceTips: [
+        {
+          icon: "Lightbulb",
+          iconColor: "text-blue-600",
+          border: "border-blue-200",
+          bg: "bg-blue-50",
+          title: "Regular Inspections",
+          titleColor: "text-blue-800",
+          text: "Check your Jeep engine monthly for early problem detection",
+          textColor: "text-blue-700",
+        },
+        {
+          icon: "CheckCircle",
+          iconColor: "text-green-600",
+          border: "border-green-200",
+          bg: "bg-green-50",
+          title: "Preventive Maintenance",
+          titleColor: "text-green-800",
+          text: "Follow manufacturer's recommended service schedule for optimal performance",
+          textColor: "text-green-700",
+        },
+        {
+          icon: "AlertTriangle",
+          iconColor: "text-orange-600",
+          border: "border-orange-200",
+          bg: "bg-orange-50",
+          title: "Act Quickly",
+          titleColor: "text-orange-800",
+          text: "Address warning signs immediately to prevent costly repairs",
+          textColor: "text-orange-700",
+        },
+      ],
+      summary: {
+        variant: "green",
+        title: "Key Takeaway",
+        content:
+          "By following these troubleshooting tips and maintaining regular engine checks, you can help prevent common Jeep engine faults and extend its lifespan. Regular maintenance, timely diagnostics, and prompt attention to warning signs are essential to keeping your rugged vehicle running smoothly and reliably for years to come. At EnginesMarket.co.uk, we provide the best Jeep engine prices and ensure you get high-quality replacement engines to keep your adventure-ready vehicle in top condition.",
+      },
+    },
+    section9: {
+      performanceUpgrades: [
+        {
+          id: "basic-enhancements",
+          title: "Basic Enhancement Options",
+          icon: <Zap className="h-5 w-5" />,
+          level: "Beginner",
+          upgrades: [
+            {
+              name: "ECU Remapping (Stage 1 Tuning)",
+              icon: <Cog className="h-4 w-4" />,
+              description:
+                "ECU remapping involves adjusting the engine control unit (ECU) to optimize performance parameters such as fuel delivery, ignition timing, and airflow. This is the most common tuning method for Jeep engines, providing significant horsepower gains without hardware changes.",
+              benefits:
+                "10-30% increase in horsepower and torque, improved throttle response, and enhanced overall driving experience—ideal for daily driving and off-road adventures.",
+              considerations:
+                "Must be performed by a certified tuner using Jeep-specific software to avoid triggering fault codes or damaging sensitive electronics and emissions systems.",
+            },
+            {
+              name: "Cold Air Intake Systems",
+              icon: <Wind className="h-4 w-4" />,
+              description:
+                "Replacing the stock air intake with a cold air intake system increases airflow and improves combustion efficiency in Jeep's naturally aspirated and turbocharged engines.",
+              benefits:
+                "Enhanced engine breathing, reduced intake temperatures, and improved mid-range torque—especially beneficial for Wrangler, Cherokee, and Grand Cherokee models.",
+              considerations:
+                "Ensure proper sealing and filtration to prevent dust or water ingestion, which can damage the turbocharger or engine internals, especially important for off-road use.",
+            },
+            {
+              name: "Performance Exhaust Systems",
+              icon: <Volume2 className="h-4 w-4" />,
+              description:
+                "Replacing the stock exhaust with a high-flow cat-back or axle-back system reduces backpressure, allowing the engine to breathe better and improving overall efficiency.",
+              benefits:
+                "Noticeable power gains, improved exhaust note, and better thermal management—ideal for enhancing the aggressive character of Jeep vehicles.",
+              considerations:
+                "May affect emissions compliance and void warranty; always pair with ECU tuning to avoid triggering check engine lights and ensure optimal performance.",
+            },
+            {
+              name: "Upgraded Intercoolers",
+              icon: <Snowflake className="h-4 w-4" />,
+              description:
+                "Installing a larger or more efficient intercooler lowers intake air temperatures and increases power, especially beneficial for turbocharged Jeep engines.",
+              benefits:
+                "Improved power consistency during towing or off-road driving, reduced thermal stress on the turbo, and enhanced tuning headroom for future upgrades.",
+              considerations:
+                "Ensure compatibility with your model and proper installation to avoid airflow restrictions or coolant leaks that could impact performance.",
+            },
+          ],
+        },
+        {
+          id: "tuning-stages",
+          title: "Tuning Upgrade: Stage 1-3",
+          icon: <TrendingUp className="h-5 w-5" />,
+          level: "Progressive",
+          stages: [
+            {
+              stage: "Stage 1 Tuning",
+              description:
+                "Software-only ECU remap with no hardware changes. Often combined with performance air filters and exhaust tips for mild but effective gains.",
+              benefits:
+                "Safe 10-30% power increase, improved drivability, and better throttle response—ideal for Jeep Wrangler, Cherokee, and Grand Cherokee models.",
+              considerations:
+                "Maintains factory reliability when done correctly; use reputable tuners familiar with Jeep's engine management systems (MEVD, MEDC).",
+            },
+            {
+              stage: "Stage 2 Tuning",
+              description:
+                "Combines ECU tuning with hardware upgrades such as upgraded turbochargers, high-flow intake, performance exhaust systems, and upgraded intercoolers.",
+              benefits:
+                "30-50 horsepower gains, faster turbo spool, and improved performance under heavy loads or off-road conditions.",
+              considerations:
+                "Requires supporting modifications and more frequent maintenance; may void warranty and affect emissions compliance if not properly calibrated.",
+            },
+            {
+              stage: "Stage 3 Tuning",
+              description:
+                "Full performance build involving extensive engine modifications, larger turbochargers, custom fuel systems, and race-grade ECU calibration for maximum output.",
+              benefits: "50%+ power gains, ideal for motorsport, extreme off-road, or high-performance Jeep builds.",
+              considerations:
+                "Significantly impacts engine longevity and fuel economy; requires expert setup, reinforced drivetrain, and ongoing monitoring to prevent failure.",
+            },
+          ],
+        },
+        {
+          id: "turbo-upgrades",
+          title: "Turbo Upgrades",
+          icon: <Gauge className="h-5 w-5" />,
+          level: "Advanced",
+          content: {
+            description:
+              "Upgrading the turbocharger can significantly boost your Jeep engine's performance by forcing more air into the combustion chamber, especially beneficial for turbocharged models like the 2.0L and 3.0L engines.",
+            points: [
+              {
+                title: "Hybrid Turbos",
+                description:
+                  "Combining parts from different turbochargers to create a unit that offers better performance and reliability—popular for Jeep's 2.0L turbo engines used in Wrangler and Cherokee.",
+              },
+              {
+                title: "Larger Turbochargers",
+                description:
+                  "Installing a larger turbocharger to increase boost pressure and airflow, resulting in higher power output for modified Jeep builds and towing applications.",
+              },
+              {
+                title: "Supporting Modifications",
+                description:
+                  "Turbo upgrades require high-flow fuel systems, upgraded intercoolers, reinforced oil lines, and proper ECU remapping to handle increased boost and prevent engine damage.",
+              },
+            ],
+          },
+        },
+        {
+          id: "engine-internals",
+          title: "Engine Internals Reinforcements",
+          icon: <Cog className="h-5 w-5" />,
+          level: "Expert",
+          content: {
+            description:
+              "To handle the increased power from tuning and turbo upgrades, reinforcing the engine internals is crucial for reliability and longevity of high-performance Jeep engines.",
+            points: [
+              {
+                title: "Forged Pistons and Rods",
+                description:
+                  "Stronger and lighter than stock components, forged pistons and rods reduce the risk of failure under high stress—essential for modified high-output Jeep engines.",
+              },
+              {
+                title: "Upgraded Crankshafts",
+                description:
+                  "Enhancing the crankshaft to handle higher power levels and increase engine durability—critical for extreme performance builds and heavy-duty applications.",
+              },
+              {
+                title: "Performance Bearings",
+                description:
+                  "Using high-performance bearings to reduce friction and improve durability—important for maintaining reliability under increased power and stress levels.",
+              },
+            ],
+          },
+        },
+        {
+          id: "reliability-impact",
+          title: "Impact on Reliability & Fuel Efficiency",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          level: "Important",
+          content: {
+            description:
+              "While performance upgrades can significantly enhance power and torque, they can also impact the engine's reliability and fuel efficiency. Understanding these trade-offs is essential for a sustainable build.",
+            points: [
+              {
+                title: "Reliability",
+                description:
+                  "Higher power levels can increase wear and tear on engine components. Regular maintenance and using high-quality parts can mitigate some risks. Properly executed upgrades with quality components can maintain reliability.",
+              },
+              {
+                title: "Fuel Efficiency",
+                description:
+                  "Performance upgrades often lead to higher fuel consumption due to increased power output. However, some modifications like ECU remapping can improve efficiency by optimizing fuel delivery under normal driving conditions.",
+              },
+            ],
+          },
+        },
+      ],
+      summary: {
+        variant: "performance",
+        title: "Performance Enhancement Summary",
+        content:
+          "By carefully selecting and implementing performance upgrades, you can significantly enhance the power, torque, and driving experience of your Jeep vehicle. From ECU remapping on a daily driver to full internal builds on a track-focused Gladiator, each stage offers greater performance potential—but also demands greater responsibility. Always work with experienced professionals, use high-quality components, and maintain your modified engine diligently to balance performance, reliability, and efficiency. At EnginesMarket.co.uk, we provide the best Jeep engine prices and ensure you get high-quality replacement engines to support your performance goals.",
+      },
+    },
+    faqs: [
+      {
+        question: "What is EnginesMarket.co.uk?",
+        answer:
+          "EnginesMarket.co.uk is a price comparison website specializing in providing competitive quotes for new, used, and reconditioned Jeep engines from multiple trusted sellers. We help you find the best deals on high-quality replacement engines for various Jeep models.",
+      },
+      {
+        question: "How does EnginesMarket.co.uk work?",
+        answer:
+          "Simply enter your Jeep model and engine requirements on our platform, and we will connect you with multiple sellers offering the best prices and availability. You can compare quotes and choose the most suitable option for your needs.",
+      },
+      {
+        question: "What types of Jeep engines can I find on EnginesMarket.co.uk?",
+        answer:
+          "We offer a wide range of Jeep engines, including petrol, diesel, reconditioned, used, and performance upgrade options. Our inventory covers popular models like the Wrangler, Grand Cherokee, Cherokee, and Compass, ensuring you find the right fit for your vehicle.",
+      },
+      {
+        question: "Why should I use EnginesMarket.co.uk for my Jeep engine replacement?",
+        answer:
+          "Using EnginesMarket.co.uk saves you time and money by providing multiple quotes from trusted sellers, ensuring you get the best prices and availability for high-quality Jeep engines. Our platform simplifies the entire replacement process.",
+      },
+      {
+        question: "Is there a warranty on engines purchased through EnginesMarket.co.uk?",
+        answer:
+          "Warranty terms vary by seller, but many offer warranties—especially on reconditioned and new units. Be sure to review the specific warranty details provided with each quote before making a purchase.",
+      },
+      {
+        question: "What are the most common Jeep engine problems?",
+        answerList: [
+          "Engine misfiring due to faulty spark plugs or ignition coils",
+          "Overheating from cooling system failures",
+          "Oil leaks from gaskets and seals",
+          "Ticking noises from lifters or rocker arms",
+          "Excessive fuel consumption from various system issues",
+        ],
+      },
+      {
+        question: "How often should I service my Jeep engine?",
+        answer:
+          "It is recommended to service your Jeep engine every 12,000 miles or 12 months, whichever comes first. Regular servicing ensures optimal performance and long-term reliability, especially for off-road driving conditions.",
+      },
+      {
+        question: "What is the average lifespan of a Jeep engine?",
+        answer:
+          "With proper maintenance, a Jeep engine can last between 150,000 to 200,000 miles. Their robust engineering, especially in the Pentastar V6 and turbocharged engines, is known for exceptional durability when properly maintained.",
+      },
+      {
+        question: "Can I use synthetic oil in my Jeep engine?",
+        answer:
+          "Yes, high-quality synthetic engine oil is recommended for Jeep engines, particularly in turbocharged and high-performance models. It provides superior lubrication and protection for advanced engine technologies and off-road applications.",
+      },
+      {
+        question: "What are the benefits of a reconditioned Jeep engine?",
+        answer:
+          "Reconditioned Jeep engines are professionally rebuilt using new or refurbished components, tested for performance, and often come with a warranty. They offer a reliable, cost-effective alternative to new engines with improved reliability over used units.",
+      },
+      {
+        question: "How do I know if my Jeep engine needs to be replaced?",
+        answerList: [
+          "Excessive smoke (blue, white, or black) from exhaust",
+          "Persistent knocking or unusual engine noises",
+          "Loss of power and acceleration",
+          "Frequent breakdowns and stalling",
+          "Severe oil or coolant leaks",
+        ],
+      },
+      {
+        question: "What is the difference between a used and a reconditioned Jeep engine?",
+        answer:
+          "A used Jeep engine is removed from another vehicle and sold as-is, with unknown wear. A reconditioned engine has been disassembled, inspected, rebuilt with new parts, and tested to ensure reliability and performance.",
+      },
+      {
+        question: "Are Jeep engines reliable?",
+        answer:
+          "Yes, Jeep engines are known for their reliability and durability, especially when properly maintained. Models like the Pentastar V6 and turbocharged engines are widely praised for their power and longevity in both daily driving and off-road applications.",
+      },
+      {
+        question: "What is the cost of replacing a Jeep engine?",
+        answer:
+          "The cost of replacing a Jeep engine typically ranges from £1,500 to £5,000, depending on the model, engine type (new, used, reconditioned), and labor costs. High-performance models like the Trackhawk are at the higher end of the range.",
+      },
+      {
+        question: "Can I install a Jeep engine myself?",
+        answer:
+          "While experienced mechanics may attempt an engine swap, it's highly recommended to have a professional technician perform the installation—especially for modern electronic fuel injection systems—to ensure proper calibration, safety, and compliance.",
+      },
+      {
+        question: "What should I do if my Jeep engine overheats?",
+        answer:
+          "If your Jeep engine overheats, pull over safely, turn off the engine, and allow it to cool. Check coolant levels and look for leaks. If the issue persists, consult a qualified mechanic to avoid serious engine damage, especially important for off-road vehicles.",
+      },
+      {
+        question: "How can I improve the fuel efficiency of my Jeep engine?",
+        answer:
+          "Regular maintenance, using high-quality fuel, ensuring proper tire pressure, keeping the air filter clean, and adopting efficient driving habits can all help improve fuel economy in your Jeep vehicle.",
+      },
+      {
+        question: "What is the best oil for a Jeep engine?",
+        answer:
+          "The best oil for a Jeep engine is a high-quality synthetic engine oil that meets manufacturer specifications—such as 5W-20 or 5W-30—depending on the model and operating conditions, especially for turbocharged engines.",
+      },
+      {
+        question: "How do I check the engine code on my Jeep?",
+        answer:
+          "You can find the engine code on the engine identification plate, usually located on the engine block or cylinder head. It may also be listed in the vehicle's service manual or on the VIN documentation.",
+      },
+      {
+        question: "What are the signs of a failing Jeep turbocharger?",
+        answerList: [
+          "Loss of power and acceleration",
+          "Excessive smoke (blue or black) from exhaust",
+          "Whining or grinding noises from the turbo area",
+          "Increased oil consumption",
+          "Check engine light or turbo fault codes",
+        ],
+      },
+      {
+        question: "Can I upgrade my Jeep engine for better performance?",
+        answer:
+          "Yes, upgrading your Jeep engine with performance parts such as ECU remapping, turbo upgrades, performance exhaust systems, and cold air intakes can significantly improve power and driving experience.",
+      },
+      {
+        question: "What is the best Jeep engine for performance?",
+        answer:
+          "The supercharged 6.2L V8 engine found in the Grand Cherokee Trackhawk delivers exceptional power and torque, making it ideal for performance enthusiasts seeking the ultimate driving experience.",
+      },
+      {
+        question: "Where can I buy a replacement Jeep engine?",
+        answer:
+          "You can find high-quality replacement Jeep engines on EnginesMarket.co.uk. Our platform connects you with trusted sellers offering competitive prices on new, used, and reconditioned engines.",
+      },
+      {
+        question: "Are performance upgrade engines available on EnginesMarket.co.uk?",
+        answer:
+          "Yes, EnginesMarket.co.uk offers a variety of engine types, including performance upgrade options where available, helping you find a high-performance solution for your Jeep vehicle or fleet.",
+      },
+      {
+        question: "What should I look for when buying a used Jeep engine?",
+        answer:
+          "When buying a used Jeep engine, inspect for oil leaks, unusual noises, exhaust smoke, and verify the engine's service history and mileage. A compression test and diagnostic scan can also reveal hidden issues.",
+      },
+      {
+        question: "Can I perform engine modifications on my Jeep vehicle myself?",
+        answer:
+          "Basic modifications like ECU remapping or air intake upgrades can be done by experienced DIYers, but advanced work such as turbo upgrades or internal engine modifications should be performed by professionals for safety and reliability.",
       },
     ],
   },

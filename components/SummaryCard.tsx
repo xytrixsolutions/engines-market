@@ -2,6 +2,7 @@ import React from "react";
 import { HelpCircle, CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { JSX } from "react/jsx-dev-runtime";
+import * as motion from "motion/react-client";
 
 interface SummaryCardProps {
   title?: string;
@@ -10,7 +11,16 @@ interface SummaryCardProps {
   variant?: "blue" | "card" | "green" | "performance";
   icon?: React.ReactNode;
   className?: string;
+  useMotion?: boolean;
 }
+
+const motionProps = {
+  initial: { opacity: 0, y: 25 },
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  transition: { duration: 0.6, ease: "easeOut" as any }, // fix
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+};
 
 const SummaryCard: React.FC<SummaryCardProps> = ({
   title = "Need Help Choosing?",
@@ -18,6 +28,7 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
   contact,
   variant = "blue",
   icon,
+  useMotion,
   className = "",
   ...opts
 }) => {
@@ -83,6 +94,14 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
     }
   };
 
+  // Motion wrapper element: motion.div or fragment fallback
+  const MotionWrapper: React.FC<React.PropsWithChildren> = ({ children }) =>
+    useMotion ? (
+      <motion.div {...motionProps}>{children}</motion.div>
+    ) : (
+      <>{children}</>
+    );
+
   const cardIcon = icon || getDefaultIcon();
   const cardStyling = getCardStyling();
   const textStyling = getTextStyling();
@@ -90,57 +109,63 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
   // All variants now use the same card layout with consistent styling
   if (variant === "card") {
     return (
-      <Card
-        className={`mt-5 mb-5 rounded-xl shadow-lg border ${cardStyling} ${className}`}
-        {...opts}
-      >
-        <CardContent className="py-0">
-          <div className="flex items-start gap-3">
-            {cardIcon}
-            <div>
-              <h3 className={textStyling.title}>{title}</h3>
-              <p className={textStyling.content}>
-                {content}
-                {contact && contact}
-              </p>
+      <MotionWrapper>
+        <Card
+          className={`mt-5 mb-5 rounded-xl shadow-lg border ${cardStyling} ${className}`}
+          {...opts}
+        >
+          <CardContent className="py-0">
+            <div className="flex items-start gap-3">
+              {cardIcon}
+              <div>
+                <h3 className={textStyling.title}>{title}</h3>
+                <p className={textStyling.content}>
+                  {content}
+                  {contact && contact}
+                </p>
+              </div>
             </div>
-          </div>
-        </CardContent>
-      </Card>
+          </CardContent>
+        </Card>
+      </MotionWrapper>
     );
   }
 
   // Summary card variants (green, performance, etc.)
   if (variant === "green" || variant === "performance") {
     return (
-      <Card
-        className={`mt-12 rounded-xl shadow-lg border ${cardStyling} ${className}`}
-        data-aos="fade-up"
-      >
-        <CardContent className="">
-          <div className="flex items-start gap-4">
-            <div className="flex-shrink-0">{cardIcon}</div>
-            <div className="space-y-2">
-              <h3 className={textStyling.title}>{title}</h3>
-              <p className={textStyling.content}>{content}</p>
+      <MotionWrapper>
+        <Card
+          className={`mt-12 rounded-xl shadow-lg border ${cardStyling} ${className}`}
+          data-aos="fade-up"
+        >
+          <CardContent className="">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0">{cardIcon}</div>
+              <div className="space-y-2">
+                <h3 className={textStyling.title}>{title}</h3>
+                <p className={textStyling.content}>{content}</p>
+              </div>
             </div>
-          </div>
-        </CardContent>
-      </Card>
+          </CardContent>
+        </Card>
+      </MotionWrapper>
     );
   }
 
   // Default blue variant
   return (
-    <div
-      className={`w-full bg-blue-50 border-t border-b border-blue-200 py-10 my-12 rounded-xl shadow-lg ${className}`}
-      data-aos="fade-up"
-    >
-      <div className="max-w-3xl mx-auto px-4 text-center">
-        <div className={textStyling.title}>{title}</div>
-        <div className={textStyling.content}>{content}</div>
+    <MotionWrapper>
+      <div
+        className={`w-full bg-blue-50 border-t border-b border-blue-200 py-10 my-12 rounded-xl shadow-lg ${className}`}
+        data-aos="fade-up"
+      >
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <div className={textStyling.title}>{title}</div>
+          <div className={textStyling.content}>{content}</div>
+        </div>
       </div>
-    </div>
+    </MotionWrapper>
   );
 };
 

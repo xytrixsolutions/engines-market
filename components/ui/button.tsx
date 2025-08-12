@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
-
+import * as motion from "motion/react-client";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
@@ -32,20 +33,32 @@ const buttonVariants = cva(
       variant: "default",
       size: "default",
     },
-  }
+  },
 );
+
+interface ButtonProps
+  extends React.ComponentProps<"button">,
+    VariantProps<typeof buttonVariants> {
+  asChild?: boolean;
+  useMotion?: boolean;
+}
 
 function Button({
   className,
   variant,
   size,
   asChild = false,
+  useMotion = false,
   ...props
-}: React.ComponentProps<"button"> &
-  VariantProps<typeof buttonVariants> & {
-    asChild?: boolean;
-  }) {
-  const Comp = asChild ? Slot : "button";
+}: ButtonProps) {
+  // Decide component type: motion.button if useMotion, else Slot or "button"
+  let Comp: React.ElementType;
+
+  if (useMotion) {
+    Comp = motion.button as any; // cast to any to avoid TS errors on props spreading
+  } else {
+    Comp = asChild ? Slot : "button";
+  }
 
   return (
     <Comp

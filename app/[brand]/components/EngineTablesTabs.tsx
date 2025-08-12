@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { useMemo, useState } from "react";
 import EngineTable from "./EngineTable";
@@ -19,6 +20,8 @@ import { Column } from "../types/engine";
 import Container from "@/components/Container";
 import SummaryCard from "@/components/SummaryCard";
 import Link from "next/link";
+import * as motion from "motion/react-client";
+import { AnimatePresence } from "motion/react";
 
 const TABLE_OPTIONS = [
   { key: "models", label: "Model Names" },
@@ -28,13 +31,18 @@ const TABLE_OPTIONS = [
 
 type TableKey = (typeof TABLE_OPTIONS)[number]["key"];
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const TABLE_COLUMNS: Record<TableKey, Column<any>[]> = {
   models: MODEL_COLUMNS,
   engine_codes: ENGINE_CODE_COLUMNS,
   models_engines: MODEL_ENGINE_COLUMNS,
 };
 
+const motionProps = {
+  initial: { opacity: 0, y: 25 },
+  transition: { duration: 0.5, ease: "easeOut" as any }, // fix
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+};
 const EngineTablesTabs = ({ brand }: { brand: string }) => {
   const [tableType, setTableType] = useState<TableKey>("models");
   const columns = TABLE_COLUMNS[tableType];
@@ -97,10 +105,12 @@ const EngineTablesTabs = ({ brand }: { brand: string }) => {
       <div className="hidden lg:flex space-x-2 mb-6 justify-center">
         {TABLE_OPTIONS.map((opt) => (
           <Button
+            useMotion
+            {...motionProps}
             key={opt.key}
             onClick={() => setTableType(opt.key)}
             variant="ghost"
-            className={`px-6 py-2 font-bold rounded-t-md border-b-4 border border-border transition-all duration-200 flex-shrink-0
+            className={`px-6 py-2 font-bold rounded-t-md border-b-4 border border-border transition-colors duration-200 flex-shrink-0
               ${
                 tableType === opt.key
                   ? "bg-neon-red/85 text-white border-border shadow-lg hover:bg-neon-red/85 hover:text-white"
@@ -114,14 +124,26 @@ const EngineTablesTabs = ({ brand }: { brand: string }) => {
       </div>
 
       {/* Table Meta */}
-      <div className="text-center mb-8 mt-10">
-        <h2 className="text-2xl md:text-3xl font-bold mb-3 text-neon-red">
-          {meta.title}
-        </h2>
-        <p className="text-base md:text-lg text-charcoal-gray mb-2 ">
-          {meta.description}
-        </p>
-      </div>
+      <AnimatePresence>
+        <motion.div
+          key={tableType}
+          {...motionProps}
+          className="text-center mb-8 mt-10"
+        >
+          <motion.h2
+            {...motionProps}
+            className="text-2xl md:text-3xl font-bold mb-3 text-neon-red"
+          >
+            {meta.title}
+          </motion.h2>
+          <motion.p
+            {...motionProps}
+            className="text-base md:text-lg text-charcoal-gray mb-2 "
+          >
+            {meta.description}
+          </motion.p>
+        </motion.div>
+      </AnimatePresence>
 
       {/* Table */}
       <div
@@ -135,6 +157,7 @@ const EngineTablesTabs = ({ brand }: { brand: string }) => {
       <SummaryCard
         variant="card"
         content={meta.note}
+        useMotion
         contact={
           <>
             feel free to{" "}

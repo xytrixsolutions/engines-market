@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   Accordion,
   AccordionContent,
@@ -13,6 +14,7 @@ import Accent from "@/components/Accent";
 import Paragraph from "@/components/Paragraph";
 import GradientBorderWrapper from "@/components/GradientBorderWrapper";
 import { data } from "../../../data/brands";
+import * as motion from "motion/react-client";
 
 const getSeverityColor = (severity: string) => {
   switch (severity) {
@@ -27,100 +29,162 @@ const getSeverityColor = (severity: string) => {
   }
 };
 
+const motionProps = {
+  initial: { opacity: 0, y: 20 },
+  transition: { duration: 0.5, ease: "easeOut" as any },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+};
+
+const containerVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.2,
+      ease: "easeOut" as any,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut" as any,
+    },
+  },
+};
 const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
   const { EngineProblems } = data[brand].section4;
   const { brandName } = data[brand];
+  const keyTakeawayMotionProps = {
+    initial: { opacity: 0, y: 20 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true },
+    transition: {
+      duration: 0.5,
+      ease: "easeOut" as any,
+      delay: EngineProblems.length * 0.15 + 0.2,
+    },
+  };
+
   return (
     <Container dark className="my-12" id="engine-problems">
-      <div
+      <motion.div
+        {...motionProps}
         className="max-w-5xl mx-auto text-center text-charcoal-gray-muted"
-        data-aos="fade-up"
       >
-        <Heading className="mb-6 text-charcoal-gray-muted">
+        <Heading
+          className="mb-6 text-charcoal-gray-muted"
+          useMotion
+          {...motionProps}
+        >
           Common<Accent>{brandName} Engine Problems</Accent>& How to Fix Them
         </Heading>
-        <Paragraph>
+        <Paragraph useMotion {...motionProps}>
           {brandName} engines are renowned for their performance and engineering
           excellence, but like any complex machinery, they can encounter issues.
           Here are some of the most common problems found in{" "}
           <strong>{brandName} engines</strong>, along with solutions and
           preventive measures:
         </Paragraph>
-      </div>
-      <Accordion
-        type="single"
-        collapsible
-        defaultValue="item-0"
-        className="space-y-4"
+      </motion.div>
+
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
       >
-        {EngineProblems.map((item, idx) => (
-          <GradientBorderWrapper key={item.title} variant="conic">
-            <AccordionItem
-              value={`item-${idx}`}
-              className="rounded-xl bg-card shadow-sm"
-            >
-              <AccordionTrigger className="px-6 py-4 font-semibold text-lg text-royal-blue flex items-center justify-between select-none rounded-t-xl transition-all duration-300 hover:no-underline">
-                <div className="flex items-center gap-3">
-                  {item.icon}
-                  <span>{item.title}</span>
-                </div>
-                <Badge
-                  variant={getSeverityColor(item.severity || "Common")}
-                  className="ml-auto mr-4"
+        <Accordion
+          type="single"
+          collapsible
+          defaultValue="item-0"
+          className="space-y-4"
+        >
+          {EngineProblems.map((item, idx) => (
+            <motion.div key={item.title} variants={itemVariants}>
+              <GradientBorderWrapper variant="conic">
+                <AccordionItem
+                  value={`item-${idx}`}
+                  className="rounded-xl bg-card shadow-sm"
                 >
-                  {item.severity}
-                </Badge>
-              </AccordionTrigger>
-              <AccordionContent className="px-6 pb-5 pt-4 transition-all duration-300">
-                <div className="space-y-4">
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2">
-                      <AlertTriangle className="h-4 w-4 text-neon-red" />
-                      <h4 className="font-bold text-neon-red">Problem</h4>
+                  <AccordionTrigger className="px-6 py-4 font-semibold text-lg text-royal-blue flex items-center justify-between select-none rounded-t-xl transition-all duration-300 hover:no-underline">
+                    <div className="flex items-center gap-3">
+                      {item.icon}
+                      <span>{item.title}</span>
                     </div>
-                    <p className="text-foreground pl-6">{item.problem}</p>
-                  </div>
+                    <Badge
+                      variant={getSeverityColor(item.severity || "Common")}
+                      className="ml-auto mr-4"
+                    >
+                      {item.severity}
+                    </Badge>
+                  </AccordionTrigger>
+                  <AccordionContent className="px-6 pb-5 pt-4 transition-all duration-300">
+                    <div className="space-y-4">
+                      <div className="space-y-2">
+                        <div className="flex items-center gap-2">
+                          <AlertTriangle className="h-4 w-4 text-neon-red" />
+                          <h4 className="font-bold text-neon-red">Problem</h4>
+                        </div>
+                        <p className="text-foreground pl-6">{item.problem}</p>
+                      </div>
 
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2">
-                      <Wrench className="h-4 w-4 text-green-600" />
-                      <h4 className="font-bold text-green-600">Solution</h4>
-                    </div>
-                    <p className="text-foreground pl-6">{item.solution}</p>
-                  </div>
+                      <div className="space-y-2">
+                        <div className="flex items-center gap-2">
+                          <Wrench className="h-4 w-4 text-green-600" />
+                          <h4 className="font-bold text-green-600">Solution</h4>
+                        </div>
+                        <p className="text-foreground pl-6">{item.solution}</p>
+                      </div>
 
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2">
-                      <Shield className="h-4 w-4 text-amber-500" />
-                      <h4 className="font-bold text-amber-500">Prevention</h4>
+                      <div className="space-y-2">
+                        <div className="flex items-center gap-2">
+                          <Shield className="h-4 w-4 text-amber-500" />
+                          <h4 className="font-bold text-amber-500">
+                            Prevention
+                          </h4>
+                        </div>
+                        <p className="text-foreground pl-6">
+                          {item.prevention}
+                        </p>
+                      </div>
                     </div>
-                    <p className="text-foreground pl-6">{item.prevention}</p>
-                  </div>
-                </div>
-              </AccordionContent>
-            </AccordionItem>
-          </GradientBorderWrapper>
-        ))}
-      </Accordion>
-      <Card className="bg-blue-50 border-blue-200 mt-5" data-aos="fade-up">
-        <CardContent>
-          
-          <div className="flex items-start gap-3">
-            <Shield className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-            <div className="min-w-0">
-              <h3 className="text-base md:text-lg font-semibold text-blue-900 mb-2">
-                Key Takeaway
-              </h3>
-              <p className="text-sm md:text-base text-blue-800">
-                By understanding these common issues and taking preventive
-                measures, you can ensure your {brandName} engine remains in top
-                condition, providing you with the performance and reliability
-                you expect from the brand.
-              </p>
+                  </AccordionContent>
+                </AccordionItem>
+              </GradientBorderWrapper>
+            </motion.div>
+          ))}
+        </Accordion>
+      </motion.div>
+
+      <motion.div {...keyTakeawayMotionProps}>
+        <Card className="bg-blue-50 border-blue-200 mt-5">
+          <CardContent>
+            <div className="flex items-start gap-3">
+              <Shield className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+              <div className="min-w-0">
+                <h3 className="text-base md:text-lg font-semibold text-blue-900 mb-2">
+                  Key Takeaway
+                </h3>
+                <p className="text-sm md:text-base text-blue-800">
+                  By understanding these common issues and taking preventive
+                  measures, you can ensure your {brandName} engine remains in
+                  top condition, providing you with the performance and
+                  reliability you expect from the brand.
+                </p>
+              </div>
             </div>
-          </div>
-        </CardContent>
-      </Card>
+          </CardContent>
+        </Card>
+      </motion.div>
     </Container>
   );
 };

@@ -5,16 +5,32 @@ import Paragraph from "@/components/Paragraph";
 import { CheckCircle } from "lucide-react";
 import { data } from "../../../data/brands";
 import * as motion from "motion/react-client";
-import type { HTMLMotionProps } from "framer-motion";
 
-const motionProps: HTMLMotionProps<any> = {
+const motionProps = {
   initial: { opacity: 0, y: 50 },
   transition: { duration: 1, delay: 0.2, ease: "easeOut" as any }, // fix
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
 };
+const listVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
 
-const WhyChoose: React.FC<{ brand: string }> = ({ brand }) => {
+const itemVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1, ease: "easeOut" as any },
+  },
+};
+
+const WhyChoose = ({ brand }: { brand: string }) => {
   const { section0Image } = data[brand];
 
   return (
@@ -48,17 +64,28 @@ const WhyChoose: React.FC<{ brand: string }> = ({ brand }) => {
             borderRadius: "1.5rem",
           }}
         >
-          <Heading dark className="text-center">
+          <Heading useMotion dark className="text-center" {...motionProps}>
             Why Choose <Accent>Engines</Accent> Market?
           </Heading>
 
-          <Paragraph dark className="text-start max-w-lg">
+          <Paragraph
+            useMotion
+            dark
+            className="text-start max-w-lg"
+            {...motionProps}
+          >
             At <strong>Engines</strong> Market, we take pride in delivering
             top-notch automotive services backed by expertise, quality, and
             customer satisfaction.
           </Paragraph>
 
-          <div className="space-y-6 text-charcoal-gray-muted ">
+          <motion.div
+            className="space-y-6 text-charcoal-gray-muted"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={listVariants}
+          >
             {[
               "Free Instant Quotes",
               "12 Years Industry Experience",
@@ -67,15 +94,16 @@ const WhyChoose: React.FC<{ brand: string }> = ({ brand }) => {
               "Save 40% on Replacement Cost",
               "Certified Engines with OEM Parts",
             ].map((text, i) => (
-              <div
+              <motion.div
                 key={i}
-                className="flex items-center space-x-3 translate-x-6 sm:translate-x-10 md:translate-x-48 lg:translate-x-10 xl:translate-x-10 [@media(min-width:1400px)]:translate-x-16 [@media(min-width:1600px)]:translate-x-24 [@media(min-width:1700px)]:translate-x-36 "
+                className="flex items-center space-x-3 translate-x-6 sm:translate-x-10 md:translate-x-48 lg:translate-x-10 xl:translate-x-10 [@media(min-width:1400px)]:translate-x-16 [@media(min-width:1600px)]:translate-x-24 [@media(min-width:1700px)]:translate-x-36"
+                variants={itemVariants}
               >
                 <CheckCircle className="w-5 h-5 text-green-400" />
                 <span className="font-semibold">{text}</span>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </motion.div>
     </div>

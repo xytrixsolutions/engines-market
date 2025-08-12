@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { TableProps } from "../types/engine";
 import {
   Table,
@@ -7,6 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import * as motion from "motion/react-client";
 
 type EngineTableProps<T = Record<string, unknown>> = TableProps<T> & {
   tableType?:
@@ -14,6 +16,12 @@ type EngineTableProps<T = Record<string, unknown>> = TableProps<T> & {
     | "engine_codes"
     | "models_engines"
     | "replacement_costs";
+};
+const motionProps = {
+  initial: { opacity: 0, y: 25 },
+  transition: { duration: 0.6, ease: "easeOut" as any }, // fix
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
 };
 
 const EngineTable = <T extends Record<string, unknown>>({
@@ -49,7 +57,7 @@ const EngineTable = <T extends Record<string, unknown>>({
   return (
     <>
       {/* Desktop Table View */}
-      <div className={tableContainerClass}>
+      <motion.div {...motionProps} className={tableContainerClass}>
         <Table className="w-full table-auto">
           <TableHeader>
             <TableRow className="border-b border-border">
@@ -91,12 +99,16 @@ const EngineTable = <T extends Record<string, unknown>>({
             ))}
           </TableBody>
         </Table>
-      </div>
+      </motion.div>
 
       {/* Mobile Card View */}
       <div className="lg:hidden space-y-4">
         {data.map((row, i) => (
-          <div key={i} className="bg-card rounded-xl shadow-lg p-4 space-y-3">
+          <motion.div
+            {...motionProps}
+            key={i}
+            className="bg-card rounded-xl shadow-lg p-4 space-y-3"
+          >
             {columns.map((col) => (
               <div key={col.key} className="flex justify-between items-start">
                 <span className="font-semibold text-foreground">
@@ -119,7 +131,7 @@ const EngineTable = <T extends Record<string, unknown>>({
                 </div>
               </div>
             ))}
-          </div>
+          </motion.div>
         ))}
       </div>
     </>

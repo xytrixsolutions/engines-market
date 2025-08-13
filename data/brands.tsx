@@ -15826,4 +15826,2129 @@ export const data: BrandsData = {
       },
     ],
   },
+  kia: {
+    metadata: {
+      title: "Best KIA Engines for Sale - New, Used & Reconditioned | EnginesMarket.co.uk",
+      description: "Discover unbeatable prices on KIA engines at EnginesMarket.co.uk. Compare quotes for new, used, and reconditioned KIA engines. Save time and money with our trusted network of sellers. Request a quote today!",
+      keywords: [
+        "KIA engines",
+        "new KIA engines",
+        "used KIA engines",
+        "reconditioned KIA engines",
+        "best KIA engine prices",
+        "KIA engine replacement",
+        "KIA engine deals",
+        "KIA engine quotes",
+        "affordable KIA engines",
+        "KIA engine comparison",
+        "EnginesMarket.co.uk",
+        "KIA engine parts",
+        "KIA engine repair",
+        "KIA engine troubleshooting",
+        "KIA engine upgrades"
+      ],
+    },
+    brandName: "Kia",
+    carImages: [
+      "/banners/banner-1.webp",
+      "/banners/banner-2.webp",
+      "/banners/banner-3.webp",
+      "/banners/banner-4.webp",
+      "/banners/banner-5.webp",
+    ],
+    carModelNames: [
+      "BMW X5",
+      "Audi A6",
+      "Mercedes C-Class",
+      "Range Rover Evoque",
+      "Volkswagen Golf",
+    ],
+    section0Image: {
+      img: "/bmw/bmw.png",
+      alt: "BMW front view",
+    },
+    section1Image: {
+      img: "/engine-guide-banners/engine-guide.png",
+      alt: "BMW rear view",
+    },
+    section4: {
+      mainParagraph:
+        "KIA engines are known for their reliability and performance, but like all mechanical components, they can experience issues over time. Whether you drive a KIA Optima, Sorento, or Telluride, understanding common engine problems—and how to address them—can help maintain smooth operation and extend engine life. Below are the most frequently encountered KIA engine issues, along with solutions and preventive measures:",
+      EngineProblems: [
+        {
+          title: "Overheating",
+          icon: <Thermometer className="h-5 w-5" />,
+          problem:
+            "Overheating is a prevalent issue in KIA engines, often caused by a malfunctioning thermostat, coolant leaks, a faulty radiator fan, or a failing water pump.",
+          solution:
+            "Check and replace the thermostat, inspect for coolant leaks, ensure the radiator fan is operational, and replace the water pump if necessary.",
+          prevention:
+            "Regularly check coolant levels, inspect the cooling system components, and ensure timely maintenance to prevent overheating.",
+          severity: "Critical",
+        },
+        {
+          title: "Oil Leaks",
+          icon: <Droplet className="h-5 w-5" />,
+          problem:
+            "Oil leaks can occur due to worn-out gaskets, faulty seals, or damaged oil pans, leading to low oil levels and potential engine damage.",
+          solution:
+            "Replace worn gaskets and seals, repair or replace the oil pan, and identify the exact source of the leak for effective repair.",
+          prevention:
+            "Regularly check oil levels, inspect for leaks during routine maintenance, and proactively replace aging gaskets and seals.",
+          severity: "Common",
+        },
+        {
+          title: "Timing Belt Failure",
+          icon: <Zap className="h-5 w-5" />,
+          problem:
+            "Timing belt failure is common in KIA engines equipped with timing belts. Over time, the belt may wear out, become loose, or break, potentially causing severe internal engine damage.",
+          solution:
+            "Regular inspection and timely replacement of the timing belt according to the manufacturer’s schedule can prevent catastrophic failure.",
+          prevention:
+            "Follow the manufacturer's recommended timing belt replacement interval (typically every 60,000–100,000 miles) and monitor for unusual engine noises.",
+          severity: "Critical",
+        },
+        {
+          title: "Ignition Coil Failure",
+          icon: <Zap className="h-5 w-5" />,
+          problem:
+            "Faulty ignition coils can cause engine misfires, reduced power, and decreased fuel efficiency, often triggering the check engine light.",
+          solution:
+            "Replace defective ignition coils and inspect spark plugs to ensure optimal combustion and engine performance.",
+          prevention:
+            "Regularly inspect ignition system components and replace coils and spark plugs as part of scheduled maintenance.",
+          severity: "Moderate",
+        },
+        {
+          title: "Fuel Pump Problems",
+          icon: <Fuel className="h-5 w-5" />,
+          problem:
+            "Fuel pump issues can disrupt fuel delivery, leading to engine stalling, poor acceleration, and difficulty starting the vehicle.",
+          solution:
+            "Inspect and replace the fuel pump if necessary, and check fuel pressure to confirm proper operation.",
+          prevention:
+            "Regularly service the fuel system, replace the fuel filter on schedule, and use high-quality fuel to reduce strain on the fuel pump.",
+          severity: "Moderate",
+        },
+      ],
+      engineReliabilityAndPerformance: [
+        {
+          reliability: [
+            {
+              heading: "Best Engines for Reliability",
+              paragraph:
+                "The 2.0-liter and 2.4-liter Theta engines are known for their reliability, especially in models like the KIA Optima and KIA Soul. The 3.3-liter Lambda engine, used in vehicles like the KIA Cadenza, also has a solid track record of durability and consistent performance.",
+            },
+            {
+              heading: "Maintenance Tips for Longevity",
+              paragraph:
+                "To maximize engine life, follow the manufacturer’s maintenance schedule, use high-quality synthetic oil, regularly replace air and oil filters, and inspect cooling and fuel systems. Timely timing belt replacement is crucial for long-term reliability.",
+            },
+          ],
+          performance: [
+            {
+              heading: "Best Engines for Performance",
+              paragraph:
+                "For performance-oriented drivers, the 2.5-liter turbocharged I-4 engine in the KIA Sorento delivers an excellent balance of power and efficiency. The 3.8-liter V6 engine in the KIA Telluride is another top performer, offering strong acceleration and towing capability for enthusiasts.",
+            },
+            {
+              heading: "Performance Maintenance Tips",
+              paragraph:
+                "To maintain peak performance, ensure regular inspection of turbocharger systems (if applicable), use premium fuel, monitor engine diagnostics, and keep intake and exhaust systems clean. Performance air filters and periodic ECU checks can also help sustain optimal output.",
+            },
+          ],
+        },
+      ],
+      conclusion:
+        "By understanding these common KIA engine issues and their solutions, you can ensure your vehicle remains reliable and efficient for years to come. Regular maintenance, timely repairs, and using quality parts and fluids are essential to preventing major problems and extending engine life. Whether you're driving a compact KIA Soul or a powerful Telluride, proper care will keep your KIA running smoothly and deliver a confident driving experience.",
+    },
+    engineData: {
+      models: [
+        {
+          model: "/jeep/jeep-wrangler.png",
+          model_name: "Jeep Wrangler",
+          engine_options: "2.0L Turbo Petrol, 3.6L V6 Petrol, 2.2L Diesel, 4xe Hybrid",
+        },
+        {
+          model: "/jeep/jeep-grand-cherokee.png",
+          model_name: "Jeep Grand Cherokee",
+          engine_options: "3.6L V6 Petrol, 5.7L V8 Petrol, 3.0L Diesel, 4xe Hybrid",
+        },
+        {
+          model: "/jeep/jeep-compass.png",
+          model_name: "Jeep Compass",
+          engine_options: "1.3L Turbo Petrol, 2.4L Petrol, 2.0L Diesel",
+        },
+        {
+          model: "/jeep/jeep-renegade.png",
+          model_name: "Jeep Renegade",
+          engine_options: "1.0L Turbo Petrol, 1.3L Turbo Petrol, 1.6L Diesel",
+        },
+        {
+          model: "/jeep/jeep-cherokee.png",
+          model_name: "Jeep Cherokee",
+          engine_options: "2.0L Turbo Petrol, 3.2L V6 Petrol, 2.2L Diesel",
+        },
+        {
+          model: "/jeep/jeep-gladiator.png",
+          model_name: "Jeep Gladiator",
+          engine_options: "3.6L V6 Petrol, 3.0L Diesel",
+        },
+        {
+          model: "/jeep/jeep-wagoneer.png",
+          model_name: "Jeep Wagoneer",
+          engine_options: "5.7L V8 Petrol, 6.4L V8 Petrol",
+        },
+        {
+          model: "/jeep/jeep-patriot.png",
+          model_name: "Jeep Patriot",
+          engine_options: "2.0L Petrol, 2.4L Petrol, 2.2L Diesel",
+        },
+        {
+          model: "/jeep/jeep-commander.png",
+          model_name: "Jeep Commander",
+          engine_options: "3.7L V6 Petrol, 5.7L V8 Petrol, 3.0L Diesel",
+        },
+        {
+          model: "/jeep/jeep-liberty.png",
+          model_name: "Jeep Liberty",
+          engine_options: "3.7L V6 Petrol, 2.8L Diesel",
+        },
+        {
+          model: "/jeep/jeep-avenger.png",
+          model_name: "Jeep Avenger",
+          engine_options: "1.2L Turbo Petrol, 1.5L Diesel",
+        },
+        {
+          model: "/jeep/jeep-trailhawk.png",
+          model_name: "Jeep Trailhawk",
+          engine_options: "2.0L Turbo Petrol, 3.2L V6 Petrol",
+        },
+        {
+          model: "/jeep/jeep-laredo.png",
+          model_name: "Jeep Laredo",
+          engine_options: "3.6L V6 Petrol, 5.7L V8 Petrol",
+        },
+        {
+          model: "/jeep/jeep-overland.png",
+          model_name: "Jeep Overland",
+          engine_options: "3.6L V6 Petrol, 5.7L V8 Petrol",
+        },
+        {
+          model: "/jeep/jeep-srt.png",
+          model_name: "Jeep SRT",
+          engine_options: "6.4L V8 Petrol",
+        },
+        {
+          model: "/jeep/jeep-trackhawk.png",
+          model_name: "Jeep Trackhawk",
+          engine_options: "6.2L Supercharged V8 Petrol",
+        },
+        {
+          model: "/jeep/jeep-rubicon.png",
+          model_name: "Jeep Rubicon",
+          engine_options: "2.0L Turbo Petrol, 3.6L V6 Petrol, 2.2L Diesel",
+        },
+        {
+          model: "/jeep/jeep-sahara.png",
+          model_name: "Jeep Sahara",
+          engine_options: "2.0L Turbo Petrol, 3.6L V6 Petrol",
+        },
+        {
+          model: "/jeep/jeep-latitude.png",
+          model_name: "Jeep Latitude",
+          engine_options: "2.4L Petrol, 2.0L Diesel",
+        },
+        {
+          model: "/jeep/jeep-summit.png",
+          model_name: "Jeep Summit",
+          engine_options: "3.6L V6 Petrol, 5.7L V8 Petrol",
+        },
+      ],
+      engine_codes: [
+        {
+          engineCode: "552 83 099",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 270,
+          torque: 295,
+          productionYears: "2020-2025",
+        },
+        {
+          engineCode: "552 63 088",
+          engineSize: 3.6,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 285,
+          torque: 260,
+          productionYears: "2012-2025",
+        },
+        {
+          engineCode: "552 60 384",
+          engineSize: 2.0,
+          fuelType: "Hybrid",
+          turbo: true,
+          horsepower: 375,
+          torque: 470,
+          productionYears: "2021-2025",
+        },
+        {
+          engineCode: "552 63 842",
+          engineSize: 6.4,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 470,
+          torque: 470,
+          productionYears: "2020-2025",
+        },
+        {
+          engineCode: "683 06 384",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 260,
+          torque: 600,
+          productionYears: "2014-2025",
+        },
+        {
+          engineCode: "683 06 842",
+          engineSize: 2.4,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 180,
+          torque: 237,
+          productionYears: "2014-2025",
+        },
+        {
+          engineCode: "683 63 099",
+          engineSize: 1.3,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 177,
+          torque: 285,
+          productionYears: "2018-2025",
+        },
+        {
+          engineCode: "683 63 088",
+          engineSize: 2.2,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 200,
+          torque: 450,
+          productionYears: "2015-2025",
+        },
+        {
+          engineCode: "683 60 384",
+          engineSize: 1.6,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 120,
+          torque: 320,
+          productionYears: "2016-2025",
+        },
+        {
+          engineCode: "683 63 842",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 270,
+          torque: 295,
+          productionYears: "2018-2025",
+        },
+        {
+          engineCode: "684 06 384",
+          engineSize: 3.6,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 285,
+          torque: 260,
+          productionYears: "2012-2025",
+        },
+        {
+          engineCode: "684 06 842",
+          engineSize: 2.0,
+          fuelType: "Hybrid",
+          turbo: true,
+          horsepower: 375,
+          torque: 470,
+          productionYears: "2021-2025",
+        },
+        {
+          engineCode: "684 63 099",
+          engineSize: 6.4,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 470,
+          torque: 470,
+          productionYears: "2020-2025",
+        },
+        {
+          engineCode: "684 63 088",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 260,
+          torque: 600,
+          productionYears: "2014-2025",
+        },
+        {
+          engineCode: "684 60 384",
+          engineSize: 2.4,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 180,
+          torque: 237,
+          productionYears: "2014-2025",
+        },
+        {
+          engineCode: "684 63 842",
+          engineSize: 1.3,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 177,
+          torque: 285,
+          productionYears: "2018-2025",
+        },
+        {
+          engineCode: "685 06 384",
+          engineSize: 2.2,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 200,
+          torque: 450,
+          productionYears: "2015-2025",
+        },
+        {
+          engineCode: "685 06 842",
+          engineSize: 1.6,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 120,
+          torque: 320,
+          productionYears: "2016-2025",
+        },
+        {
+          engineCode: "685 63 099",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 270,
+          torque: 295,
+          productionYears: "2018-2025",
+        },
+        {
+          engineCode: "685 63 088",
+          engineSize: 3.6,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 285,
+          torque: 260,
+          productionYears: "2012-2025",
+        },
+      ],
+      models_engines: [
+        {
+          engineCode: "552 83 099",
+          compatibleModels: ["Wrangler", "Cherokee"],
+        },
+        {
+          engineCode: "552 63 088",
+          compatibleModels: ["Grand Cherokee", "Gladiator"],
+        },
+        {
+          engineCode: "552 60 384",
+          compatibleModels: ["Wrangler 4xe", "Grand Cherokee 4xe"],
+        },
+        {
+          engineCode: "552 63 842",
+          compatibleModels: ["Grand Cherokee SRT", "Trackhawk"],
+        },
+        {
+          engineCode: "683 06 384",
+          compatibleModels: ["Grand Cherokee", "Gladiator"],
+        },
+        {
+          engineCode: "683 06 842",
+          compatibleModels: ["Compass", "Renegade"],
+        },
+        {
+          engineCode: "683 63 099",
+          compatibleModels: ["Renegade", "Compass"],
+        },
+        {
+          engineCode: "683 63 088",
+          compatibleModels: ["Cherokee", "Grand Cherokee"],
+        },
+        {
+          engineCode: "683 60 384",
+          compatibleModels: ["Renegade", "Compass"],
+        },
+        {
+          engineCode: "683 63 842",
+          compatibleModels: ["Wrangler", "Cherokee"],
+        },
+        {
+          engineCode: "684 06 384",
+          compatibleModels: ["Grand Cherokee", "Gladiator"],
+        },
+        {
+          engineCode: "684 06 842",
+          compatibleModels: ["Wrangler 4xe", "Grand Cherokee 4xe"],
+        },
+        {
+          engineCode: "684 63 099",
+          compatibleModels: ["Renegade", "Compass"],
+        },
+        {
+          engineCode: "684 63 088",
+          compatibleModels: ["Cherokee", "Grand Cherokee"],
+        },
+        {
+          engineCode: "684 60 384",
+          compatibleModels: ["Renegade", "Compass"],
+        },
+        {
+          engineCode: "684 63 842",
+          compatibleModels: ["Wrangler", "Cherokee"],
+        },
+        {
+          engineCode: "685 06 384",
+          compatibleModels: ["Grand Cherokee", "Gladiator"],
+        },
+        {
+          engineCode: "685 06 842",
+          compatibleModels: ["Compass", "Renegade"],
+        },
+        {
+          engineCode: "685 63 099",
+          compatibleModels: ["Renegade", "Compass"],
+        },
+        {
+          engineCode: "685 63 088",
+          compatibleModels: ["Cherokee", "Grand Cherokee"],
+        },
+      ],
+      replacement_costs: [
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Wrangler",
+          engineType: "2.0L Turbo Petrol",
+          estimatedCost: "£4,000 - £6,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Wrangler",
+          engineType: "3.6L V6 Petrol",
+          estimatedCost: "£5,000 - £7,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Grand Cherokee",
+          engineType: "3.6L V6 Petrol",
+          estimatedCost: "£5,500 - £8,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Grand Cherokee",
+          engineType: "5.7L V8 Petrol",
+          estimatedCost: "£7,000 - £10,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Grand Cherokee",
+          engineType: "3.0L Diesel",
+          estimatedCost: "£6,000 - £9,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Compass",
+          engineType: "1.3L Turbo Petrol",
+          estimatedCost: "£3,500 - £5,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Compass",
+          engineType: "2.0L Diesel",
+          estimatedCost: "£4,500 - £6,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Renegade",
+          engineType: "1.0L Turbo Petrol",
+          estimatedCost: "£3,000 - £4,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Renegade",
+          engineType: "1.6L Diesel",
+          estimatedCost: "£3,500 - £5,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Cherokee",
+          engineType: "2.0L Turbo Petrol",
+          estimatedCost: "£4,500 - £6,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Cherokee",
+          engineType: "3.2L V6 Petrol",
+          estimatedCost: "£5,500 - £8,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Gladiator",
+          engineType: "3.6L V6 Petrol",
+          estimatedCost: "£5,000 - £7,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Gladiator",
+          engineType: "3.0L Diesel",
+          estimatedCost: "£6,000 - £9,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Patriot",
+          engineType: "2.0L Petrol",
+          estimatedCost: "£3,500 - £5,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Patriot",
+          engineType: "2.4L Petrol",
+          estimatedCost: "£4,000 - £6,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Liberty",
+          engineType: "3.7L V6 Petrol",
+          estimatedCost: "£5,000 - £7,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Liberty",
+          engineType: "2.8L Diesel",
+          estimatedCost: "£5,500 - £8,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Commander",
+          engineType: "3.7L V6 Petrol",
+          estimatedCost: "£5,500 - £8,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Commander",
+          engineType: "5.7L V8 Petrol",
+          estimatedCost: "£7,000 - £10,000",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Wagoneer",
+          engineType: "5.7L V8 Petrol",
+          estimatedCost: "£7,500 - £10,500",
+        },
+        {
+          image: "/jeep/jeep-generic.png",
+          model: "Jeep Wagoneer",
+          engineType: "6.4L V8 Petrol",
+          estimatedCost: "£8,000 - £11,000",
+        },
+      ],
+    },
+    section7: [
+      {
+        title: "New KIA Engines",
+        icon: <Sparkles className="h-6 w-6" />,
+        badge: "Premium",
+        badgeVariant: "default" as const,
+        pros: [
+          "100% reliability with a factory warranty",
+          "Best performance & longevity",
+        ],
+        cons: [
+          "Higher cost",
+          "Limited availability for older models",
+        ],
+      },
+      {
+        title: "Used KIA Engines",
+        icon: <DollarSign className="h-6 w-6" />,
+        badge: "Budget-Friendly",
+        badgeVariant: "secondary" as const,
+        pros: [
+          "Cost-effective & widely available",
+          "Good for quick replacements",
+        ],
+        cons: [
+          "Potential hidden wear and tear",
+          "Shorter lifespan than new or reconditioned engines",
+        ],
+      },
+      {
+        title: "Reconditioned KIA Engines",
+        icon: <Wrench className="h-6 w-6" />,
+        badge: "Best Value",
+        badgeVariant: "outline" as const,
+        pros: [
+          "Professionally rebuilt with new components",
+          "More reliable than used engines",
+          "Balanced cost vs. performance",
+        ],
+        cons: [
+          "Slightly more expensive than used engines",
+        ],
+      },
+    ],
+    section8: {
+      EngineProblems: [
+        {
+          id: "check-engine-light-issues",
+          title: "Check Engine Light Issues",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          severity: "Common",
+          data: [
+            {
+              heading: "Common Causes",
+              paragraph:
+                "The check engine light can illuminate due to various reasons, including sensor malfunctions, exhaust system issues, engine misfires, or even a loose gas cap. Common triggers include faulty oxygen sensors, malfunctioning MAF sensors, or problems within the emissions system.",
+            },
+            {
+              heading: "Effective Solutions",
+              paragraph:
+                "Use an OBD-II scanner to read the diagnostic trouble codes and pinpoint the exact issue. Typical fixes include replacing defective sensors, repairing exhaust leaks, or addressing misfires by replacing spark plugs and ignition coils.",
+            },
+            {
+              heading: "Prevention Tips",
+              paragraph:
+                "Regular vehicle servicing, timely replacement of worn sensors, ensuring the fuel cap is tightly sealed, and maintaining the exhaust and emissions systems can help prevent unexpected check engine light activations.",
+            },
+          ],
+        },
+        {
+          id: "power-loss-and-turbo-failures",
+          title: "Power Loss & Turbo Failures",
+          icon: <Gauge className="h-5 w-5" />,
+          severity: "Critical",
+          data: [
+            {
+              heading: "Identifying Root Causes",
+              paragraph:
+                "Power loss in turbocharged KIA engines can stem from clogged fuel injectors, dirty air filters, or failing turbochargers. Reduced boost pressure or turbo lag are telltale signs of turbo system degradation.",
+            },
+            {
+              heading: "Repair Solutions",
+              paragraph:
+                "Clean or replace fuel injectors, install new air filters, and inspect the turbocharger for oil leaks, shaft play, or compressor damage. Rebuild or replace the turbocharger if necessary to restore full performance.",
+            },
+            {
+              heading: "Preventive Measures",
+              paragraph:
+                "Use high-quality fuel and synthetic oil, follow the manufacturer’s service intervals for turbo engines, allow proper cool-down periods after high-load driving, and monitor boost pressure regularly to avoid premature turbo failure.",
+            },
+          ],
+        },
+        {
+          id: "excessive-smoke-and-oil-leaks",
+          title: "Excessive Smoke & Oil Leaks",
+          icon: <Smoke className="h-5 w-5" />,
+          severity: "Moderate",
+          data: [
+            {
+              heading: "Understanding the Causes",
+              paragraph:
+                "Blue or grey exhaust smoke often indicates oil burning due to worn valve seals, piston rings, or PCV system issues. Visible oil leaks are commonly caused by degraded gaskets, seals, or a damaged oil pan.",
+            },
+            {
+              heading: "Troubleshooting Steps",
+              paragraph:
+                "Inspect valve cover gaskets, oil pan seals, and front/rear main seals for leaks. Perform a compression test or leak-down test to assess internal wear. Replace worn components and ensure the PCV system is functioning properly.",
+            },
+            {
+              heading: "Maintenance for Prevention",
+              paragraph:
+                "Regularly check oil levels, inspect the engine bay for signs of leaks, replace gaskets during major services, and maintain the PCV system to prevent pressure buildup and oil consumption.",
+            },
+          ],
+        },
+        {
+          id: "overheating",
+          title: "Engine Overheating",
+          icon: <Thermometer className="h-5 w-5" />,
+          severity: "Critical",
+          data: [
+            {
+              heading: "Common Causes",
+              paragraph:
+                "Overheating can result from coolant leaks, a failed thermostat, malfunctioning radiator fan, water pump failure, or blocked radiator. Low coolant levels or air pockets in the cooling system can also lead to temperature spikes.",
+            },
+            {
+              heading: "Repair Solutions",
+              paragraph:
+                "Inspect and refill coolant, replace faulty thermostats or water pumps, flush the cooling system, and ensure the radiator fan operates correctly. In severe cases, check for head gasket failure or internal blockages.",
+            },
+            {
+              heading: "Prevention Tips",
+              paragraph:
+                "Perform routine cooling system inspections, replace coolant every 3–5 years, check hoses and connections for wear, and address overheating symptoms immediately to avoid engine damage.",
+            },
+          ],
+        },
+        {
+          id: "engine-misfire",
+          title: "Engine Misfire",
+          icon: <Zap className="h-5 w-5" />,
+          severity: "Moderate",
+          data: [
+            {
+              heading: "Identifying Causes",
+              paragraph:
+                "Engine misfires are often caused by worn spark plugs, failing ignition coils, clogged fuel injectors, or vacuum leaks. These issues disrupt combustion and lead to rough idling, power loss, and poor fuel economy.",
+            },
+            {
+              heading: "Troubleshooting Steps",
+              paragraph:
+                "Replace aged spark plugs and faulty ignition coils, clean or replace fuel injectors, and use a smoke test or vacuum gauge to detect intake leaks. Clear error codes after repairs using an OBD-II scanner.",
+            },
+            {
+              heading: "Preventive Maintenance",
+              paragraph:
+                "Stick to scheduled maintenance, use OEM-spec spark plugs and coils, perform regular fuel system cleanings, and conduct diagnostic scans to catch misfire codes early and prevent catalytic converter damage.",
+            },
+          ],
+        },
+      ],
+      maintenanceTips: [
+        {
+          icon: "Lightbulb",
+          iconColor: "text-blue-600",
+          border: "border-blue-200",
+          bg: "bg-blue-50",
+          title: "Regular Inspections",
+          titleColor: "text-blue-800",
+          text: "Check your KIA engine monthly for fluid levels, leaks, and warning lights to catch issues early",
+          textColor: "text-blue-700",
+        },
+        {
+          icon: "CheckCircle",
+          iconColor: "text-green-600",
+          border: "border-green-200",
+          bg: "bg-green-50",
+          title: "Preventive Maintenance",
+          titleColor: "text-green-800",
+          text: "Follow KIA's recommended service intervals to maximize engine life and performance",
+          textColor: "text-green-700",
+        },
+        {
+          icon: "AlertTriangle",
+          iconColor: "text-orange-600",
+          border: "border-orange-200",
+          bg: "bg-orange-50",
+          title: "Act Quickly",
+          titleColor: "text-orange-800",
+          text: "Address check engine lights and unusual noises immediately to avoid costly repairs",
+          textColor: "text-orange-700",
+        },
+      ],
+      summary: {
+        variant: "green",
+        title: "Key Takeaway",
+        content:
+          "By following these troubleshooting tips and maintaining regular engine checks, you can help prevent common KIA engine faults and extend its lifespan. Regular maintenance, timely diagnostics, and prompt attention to warning signs are essential to keeping your vehicle running smoothly and reliably for years to come. At EnginesMarket.co.uk, we provide the best KIA engine prices and ensure you get high-quality replacement engines—new, used, or reconditioned—to keep your car in top condition.",
+      },
+    },
+    section9: {
+      performanceUpgrades: [
+        {
+          id: "basic-enhancements",
+          title: "Basic Enhancement Options",
+          icon: <Zap className="h-5 w-5" />,
+          level: "Beginner",
+          upgrades: [
+            {
+              name: "ECU Remapping (Stage 1 Tuning)",
+              icon: <Cog className="h-4 w-4" />,
+              description:
+                "ECU remapping involves adjusting the engine control unit (ECU) settings to optimize fuel delivery, ignition timing, and airflow. This software-based tuning is one of the most effective and non-invasive ways to enhance performance in KIA engines, especially turbocharged models like the Stinger and Sorento.",
+              benefits:
+                "10–25% increase in horsepower and torque, improved throttle response, and better fuel efficiency under optimal conditions—ideal for daily driving and spirited performance.",
+              considerations:
+                "Should be performed by a certified tuner using KIA-specific software. Improper tuning can lead to engine knocking, increased emissions, or long-term reliability issues.",
+            },
+            {
+              name: "Cold Air Intake Systems",
+              icon: <Wind className="h-4 w-4" />,
+              description:
+                "Replacing the stock air intake with a cold air intake system allows cooler, denser air to enter the engine, improving combustion efficiency and power output—especially effective in turbocharged KIA models.",
+              benefits:
+                "Enhanced engine breathing, improved mid-range torque, and a more aggressive induction sound—ideal for KIA Stinger, Seltos, and Sorento owners seeking a sportier feel.",
+              considerations:
+                "Ensure proper sealing and water shielding to avoid hydrolock or sensor damage. Use high-quality filters to maintain engine longevity, particularly in wet or dusty conditions.",
+            },
+            {
+              name: "Performance Exhaust Systems",
+              icon: <Volume2 className="h-4 w-4" />,
+              description:
+                "Upgrading to a high-flow cat-back or axle-back exhaust system reduces backpressure, allowing exhaust gases to exit more efficiently and improving engine performance.",
+              benefits:
+                "Improved horsepower and torque, enhanced exhaust note, and better thermal efficiency—especially beneficial for V6-powered models like the Telluride and K5.",
+              considerations:
+                "May affect emissions compliance and void factory warranty. Always pair with ECU tuning to prevent check engine lights and ensure optimal air-fuel balance.",
+            },
+            {
+              name: "Performance Chips",
+              icon: <Microchip className="h-4 w-4" />,
+              description:
+                "Plug-in performance chips modify ECU signals to boost power output, throttle response, and torque delivery without permanent changes—ideal for temporary upgrades or leased vehicles.",
+              benefits:
+                "Easy installation, reversible tuning, and noticeable gains in acceleration and responsiveness—great for KIA owners wanting quick improvements.",
+              considerations:
+                "Less precise than full ECU remaps; some chips may not adapt well to modern KIA engine management systems and could trigger fault codes.",
+            },
+          ],
+        },
+        {
+          id: "tuning-stages",
+          title: "Tuning Upgrade: Stage 1-3",
+          icon: <TrendingUp className="h-5 w-5" />,
+          level: "Progressive",
+          stages: [
+            {
+              stage: "Stage 1 Tuning",
+              description:
+                "Software-only ECU remap with no hardware changes. Often combined with performance air filters and exhaust tips for mild but effective gains.",
+              benefits:
+                "Safe 10–25% power increase, improved drivability, and better throttle response—ideal for KIA Optima, Seltos, and Sportage models used for daily driving.",
+              considerations:
+                "Maintains factory reliability when done correctly; use reputable tuners familiar with KIA’s KSD and MEDC engine control systems.",
+            },
+            {
+              stage: "Stage 2 Tuning",
+              description:
+                "Combines ECU tuning with hardware upgrades such as upgraded turbochargers, high-flow intake, performance exhaust systems, and upgraded intercoolers.",
+              benefits:
+                "30–60 horsepower gains, faster turbo spool, and improved performance under load—perfect for KIA Stinger and Sorento owners seeking serious upgrades.",
+              considerations:
+                "Requires supporting modifications like upgraded fuel injectors and intercoolers; may void warranty and require more frequent maintenance.",
+            },
+            {
+              stage: "Stage 3 Tuning",
+              description:
+                "Full performance build involving extensive engine modifications, larger turbochargers, custom fuel systems, forged internals, and race-grade ECU calibration for maximum output.",
+              benefits: "70%+ power gains, ideal for track-focused builds or high-performance KIA Stinger and K5 models.",
+              considerations:
+                "Significantly impacts engine longevity and fuel economy; requires expert setup, reinforced drivetrain, and continuous monitoring to prevent mechanical failure.",
+            },
+          ],
+        },
+        {
+          id: "turbo-upgrades",
+          title: "Turbo Upgrades",
+          icon: <Gauge className="h-5 w-5" />,
+          level: "Advanced",
+          content: {
+            description:
+              "Upgrading the turbocharger is one of the most effective ways to increase power in turbocharged KIA engines like the 2.5L Turbo and 3.3L V6 Turbo. Forced induction upgrades dramatically improve airflow and boost pressure.",
+            points: [
+              {
+                title: "K03 Upgraded Turbo",
+                description:
+                  "A popular upgrade for 2.5L turbo engines, offering increased boost without significant lag—ideal for KIA Sorento and Stinger models seeking reliable power gains.",
+              },
+              {
+                title: "Lap3 Twin-Turbo Kit",
+                description:
+                  "Designed for the KIA Stinger, this twin-turbo setup can support up to 800 wheel horsepower with proper supporting mods—perfect for high-performance builds.",
+              },
+              {
+                title: "IMR Twin-Turbo Kit",
+                description:
+                  "Offers massive power potential with upgrades like high-flow intercoolers, fuel pumps, and strengthened internals—ideal for motorsport or drag-focused KIA applications.",
+              },
+            ],
+          },
+        },
+        {
+          id: "engine-internals",
+          title: "Engine Internals Reinforcements",
+          icon: <Cog className="h-5 w-5" />,
+          level: "Expert",
+          content: {
+            description:
+              "To sustain high power levels from aggressive tuning and turbo upgrades, reinforcing engine internals is essential for durability and long-term reliability in performance-modified KIA engines.",
+            points: [
+              {
+                title: "Forged Pistons",
+                description:
+                  "Stronger than stock cast pistons, forged units withstand higher compression and boost pressures—critical for turbocharged builds like the KIA Stinger GT.",
+              },
+              {
+                title: "Performance Camshafts",
+                description:
+                  "Optimize valve timing for improved airflow and combustion efficiency—ideal for maximizing power in naturally aspirated and forced induction engines.",
+              },
+              {
+                title: "High-Performance Bearings",
+                description:
+                  "Reduce internal friction and wear under high RPM and load, enhancing engine durability and oil flow stability—essential for track-ready KIA engines.",
+              },
+            ],
+          },
+        },
+        {
+          id: "reliability-impact",
+          title: "Impact on Reliability & Fuel Efficiency",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          level: "Important",
+          content: {
+            description:
+              "While performance upgrades enhance power and responsiveness, they also affect engine reliability and fuel economy. Understanding these trade-offs ensures a balanced and sustainable build.",
+            points: [
+              {
+                title: "Reliability",
+                description:
+                  "Extensive modifications, especially Stage 3 and turbo upgrades, increase stress on engine components. Regular maintenance, high-quality parts, and proper cooling are essential to preserve longevity.",
+              },
+              {
+                title: "Fuel Efficiency",
+                description:
+                  "Aggressive tuning and forced induction typically reduce fuel economy due to higher fuel demand. However, mild ECU remaps can improve efficiency by optimizing combustion under normal driving conditions.",
+              },
+            ],
+          },
+        },
+      ],
+      summary: {
+        variant: "performance",
+        title: "Performance Enhancement Summary",
+        content:
+          "By carefully selecting and implementing performance upgrades, you can transform your KIA engine into a high-output powerhouse—whether it's a daily-driven Seltos or a track-focused Stinger. From ECU remapping and cold air intakes to full internal builds and twin-turbo setups, each stage offers greater performance potential. However, with increased power comes greater responsibility: always use quality parts, work with experienced tuners, and maintain your engine diligently. At EnginesMarket.co.uk, we provide the best KIA engine prices and offer high-quality replacement engines—new, used, or reconditioned—to support your performance journey while maintaining reliability and efficiency.",
+      },
+    },
+    faqs: [
+      {
+        question: "What is EnginesMarket.co.uk?",
+        answer:
+          "EnginesMarket.co.uk is a price comparison website specializing in providing competitive quotes for new, used, and reconditioned KIA engines from multiple trusted sellers. Our platform helps you save time and money by finding the best deals on high-quality replacement engines.",
+      },
+      {
+        question: "How does EnginesMarket.co.uk work?",
+        answer:
+          "Simply enter your vehicle's details on our website, and we will provide you with multiple quotes from verified sellers. You can compare prices and choose the best option that suits your needs and budget.",
+      },
+      {
+        question: "What types of KIA engines can I find on EnginesMarket.co.uk?",
+        answer:
+          "We offer a wide range of KIA engines, including new, used, and reconditioned options. Whether you need a petrol or diesel engine, we have you covered with competitive prices and reliable sellers.",
+      },
+      {
+        question: "Is there a warranty on the engines purchased through EnginesMarket.co.uk?",
+        answer:
+          "Yes, many of the engines listed on our platform come with a warranty. The warranty terms vary depending on the seller and the type of engine (new, used, or reconditioned). Always check the warranty details before making a purchase.",
+      },
+      {
+        question: "How can I request a quote on EnginesMarket.co.uk?",
+        answer:
+          "To request a quote, visit our website, enter your vehicle's registration number and engine details, and submit the form. You will receive multiple quotes from our network of trusted sellers, allowing you to compare and choose the best deal.",
+      },
+      {
+        question: "What are the most common problems with KIA engines?",
+        answerList: [
+          "Overheating due to coolant leaks or thermostat failure",
+          "Oil leaks from worn gaskets or seals",
+          "Timing belt failure if not replaced on schedule",
+          "Ignition coil failure leading to misfires",
+          "Fuel pump issues causing stalling or poor acceleration",
+        ],
+      },
+      {
+        question: "How can I prevent carbon buildup in my KIA GDI engine?",
+        answer:
+          "Regular maintenance, using high-quality fuel with detergents, and periodic professional cleaning of the intake valves can help prevent carbon buildup in KIA GDI engines.",
+      },
+      {
+        question: "What is the best KIA engine for reliability?",
+        answer:
+          "The 2.0-liter and 2.4-liter Theta engines are known for their reliability, especially in models like the KIA Optima and KIA Soul. These engines offer a strong balance of durability and performance when properly maintained.",
+      },
+      {
+        question: "How often should I replace the timing belt in my KIA?",
+        answer:
+          "It is recommended to replace the timing belt every 60,000 to 100,000 miles, depending on the specific model and engine type. Always refer to the owner's manual for the manufacturer's recommendations to avoid engine damage.",
+      },
+      {
+        question: "What are the benefits of using a reconditioned KIA engine?",
+        answer:
+          "Reconditioned KIA engines are professionally rebuilt to meet or exceed original specifications, offering a cost-effective and reliable alternative to new engines. They often come with a warranty, providing peace of mind and better longevity than used units.",
+      },
+      {
+        question: "Can I upgrade the turbocharger on my KIA engine?",
+        answer:
+          "Yes, upgrading the turbocharger can significantly increase the power output of your KIA engine. Popular options include the K03 upgraded turbo and twin-turbo kits like the Lap3 or IMR systems, especially for performance models like the KIA Stinger.",
+      },
+      {
+        question: "What is ECU remapping, and how does it benefit my KIA?",
+        answer:
+          "ECU remapping involves adjusting the Engine Control Unit settings to optimize performance. This can improve horsepower, torque, throttle response, and in some cases, fuel efficiency—especially beneficial for turbocharged KIA models.",
+      },
+      {
+        question: "How do I know if my KIA engine needs a replacement?",
+        answerList: [
+          "Persistent knocking or metallic engine noises",
+          "Excessive exhaust smoke (blue, white, or black)",
+          "Severe loss of power or misfiring",
+          "Frequent stalling or failure to start",
+          "Major oil or coolant leaks indicating internal damage",
+        ],
+      },
+      {
+        question: "What is the estimated cost of replacing a KIA engine?",
+        answer:
+          "The cost of replacing a KIA engine varies based on the engine type and model. Rough estimates range from £1,500 to £7,000, including parts and labour. Reconditioned engines offer a middle-ground option for cost and reliability.",
+      },
+      {
+        question: "Are used KIA engines a good option?",
+        answer:
+          "Used KIA engines can be a cost-effective option, but they may come with unknown wear and limited warranty. It's important to verify the engine's history, mileage, and condition before purchasing to avoid future issues.",
+      },
+      {
+        question: "What are the advantages of a cold air intake system for my KIA?",
+        answer:
+          "A cold air intake system increases airflow to the engine, resulting in better combustion, improved power output, enhanced throttle response, and potentially better fuel efficiency—especially when combined with other performance upgrades.",
+      },
+      {
+        question: "How can I improve the fuel efficiency of my KIA engine?",
+        answer:
+          "Regular maintenance, using high-quality fuel, ensuring proper tire pressure, keeping the air filter clean, and adopting smooth driving habits can all help improve the fuel efficiency of your KIA engine.",
+      },
+      {
+        question: "What is the difference between new, used, and reconditioned KIA engines?",
+        answer:
+          "New engines offer the best performance and come with a full warranty but are the most expensive. Used engines are affordable but may have hidden wear. Reconditioned engines are rebuilt to meet original standards, offering a reliable and cost-effective middle ground with better warranties than used units.",
+      },
+      {
+        question: "Can I perform an engine swap on my KIA vehicle?",
+        answer:
+          "Yes, engine swaps are possible, but they can be complex and costly. It's important to ensure compatibility with the vehicle’s transmission, ECU, wiring harness, and cooling system. Professional installation is highly recommended.",
+      },
+      {
+        question: "What are the best performance upgrades for KIA engines?",
+        answerList: [
+          "ECU remapping for improved power and responsiveness",
+          "Cold air intake systems for better airflow",
+          "Performance exhaust systems to reduce backpressure",
+          "Turbocharger upgrades for significant power gains",
+          "Upgraded intercoolers and fuel systems for supporting mods",
+        ],
+      },
+    ],
+  },
+  landrover: {
+    metadata: {
+      title: "Best Land Rover Engines | New, Used & Reconditioned | Engines Market",
+      description: "Discover top-quality Land Rover engines at Engines Market. Compare prices on new, used, and reconditioned Land Rover engines. Save time and money with our competitive quotes from trusted sellers. Get your reliable replacement engine today!",
+      keywords: [
+        "Land Rover engines",
+        "reconditioned Land Rover engines",
+        "used Land Rover engines",
+        "replacement Land Rover engines",
+        "best Land Rover engine prices",
+        "Land Rover engine quotes",
+        "buy Land Rover engines",
+        "affordable Land Rover engines",
+        "high-quality Land Rover engines",
+        "Engines Market"
+      ],
+    },
+    brandName: "Land Rover",
+    carImages: [
+      "/banners/banner-1.webp",
+      "/banners/banner-2.webp",
+      "/banners/banner-3.webp",
+      "/banners/banner-4.webp",
+      "/banners/banner-5.webp",
+    ],
+    carModelNames: [
+      "BMW X5",
+      "Audi A6",
+      "Mercedes C-Class",
+      "Range Rover Evoque",
+      "Volkswagen Golf",
+    ],
+    section0Image: {
+      img: "/bmw/bmw.png",
+      alt: "BMW front view",
+    },
+    section1Image: {
+      img: "/engine-guide-banners/engine-guide.png",
+      alt: "BMW rear view",
+    },
+    section4: {
+      mainParagraph:
+        "Land Rover engines are known for their performance and durability, but like any complex machinery, they can encounter issues over time. Whether you drive a Range Rover, Discovery, or Defender, understanding common engine problems—and how to address them—can help maintain reliability and extend engine life. Below are the most frequently encountered Land Rover engine issues, along with solutions and preventive measures:",
+      EngineProblems: [
+        {
+          title: "Oil Leaks",
+          icon: <Droplet className="h-5 w-5" />,
+          problem:
+            "Oil leaks are a frequent issue in Land Rover engines, commonly occurring in the oil cooler lines, valve cover gaskets, and timing cover seals. These leaks can lead to low oil levels and potential engine damage if not addressed.",
+          solution:
+            "Inspect and replace worn gaskets, seals, and oil cooler lines. Use OEM-quality parts and ensure proper torque during installation to prevent recurring leaks.",
+          prevention:
+            "Schedule regular maintenance checks to catch leaks early. Use high-quality synthetic oil, which is less prone to breakdown and can help reduce the likelihood of leaks.",
+          severity: "Common",
+        },
+        {
+          title: "Cooling System Failures",
+          icon: <Thermometer className="h-5 w-5" />,
+          problem:
+            "Cooling system issues—such as leaks in the coolant expansion tank, failed O-ring seals, or water pump failure—can lead to engine overheating, especially under heavy load or off-road conditions.",
+          solution:
+            "Replace faulty components including the radiator, water pump, expansion tank, and hoses. Flush the cooling system and refill with the correct type of coolant to restore proper function.",
+          prevention:
+            "Regularly check coolant levels, inspect for leaks, and replace coolant according to the manufacturer’s recommended intervals. Monitor temperature gauges and address overheating immediately.",
+          severity: "Critical",
+        },
+        {
+          title: "Timing Chain Problems",
+          icon: <Zap className="h-5 w-5" />,
+          problem:
+            "Timing chain failures are common in high-mileage Land Rover engines, particularly in models with the 3.0L V6 and 5.0L V8 engines. Causes include skipped oil changes, use of incorrect oil, or worn tensioners and guides.",
+          solution:
+            "Replace the timing chain, tensioners, and guides if wear is detected. Ensure proper lubrication and use the correct oil specification to reduce strain on the system.",
+          prevention:
+            "Adhere to strict oil change intervals using high-quality full synthetic oil. Listen for rattling noises on startup, which may indicate early timing chain wear.",
+          severity: "Critical",
+        },
+        {
+          title: "EGR Valve and DPF Issues",
+          icon: <Filter className="h-5 w-5" />,
+          problem:
+            "Exhaust Gas Recirculation (EGR) valve clogging and Diesel Particulate Filter (DPF) blockages are common in diesel Land Rover engines, leading to reduced power, poor fuel economy, and increased emissions.",
+          solution:
+            "Clean or replace clogged EGR valves and DPF units. Perform forced regeneration where possible and ensure the engine reaches optimal operating temperature regularly.",
+          prevention:
+            "Use high-quality diesel fuel with additives, avoid frequent short trips, and follow a regular driving pattern that allows for DPF regeneration. Perform scheduled exhaust system maintenance.",
+          severity: "Moderate",
+        },
+        {
+          title: "Electrical Issues",
+          icon: <Zap className="h-5 w-5" />,
+          problem:
+            "Electrical problems such as faulty sensors, corroded wiring, and failing engine control modules can disrupt engine performance and trigger warning lights.",
+          solution:
+            "Diagnose issues using an OBD-II scanner, replace defective sensors, repair damaged wiring harnesses, and clean electrical connectors to restore proper function.",
+          prevention:
+            "Regularly inspect the engine bay for moisture, dirt, and corrosion. Keep electrical connections sealed and clean, especially in off-road or high-humidity environments.",
+          severity: "Common",
+        },
+      ],
+      engineReliabilityAndPerformance: [
+        {
+          reliability: [
+            {
+              heading: "Best Engines for Reliability",
+              paragraph:
+                "The TD5 Turbodiesel engine is renowned for its durability and longevity, making it a top choice for off-road and commercial use. The modern Ingenium 3.0L Diesel engine also offers excellent reliability with improved fuel efficiency and lower emissions across Discovery and Range Rover models.",
+            },
+            {
+              heading: "Maintenance Tips for Longevity",
+              paragraph:
+                "To maximize engine life, adhere to strict service intervals, use Land Rover-approved synthetic oils, replace air and fuel filters regularly, and monitor the health of the cooling and exhaust systems. Early detection of oil or coolant leaks can prevent costly repairs.",
+            },
+          ],
+          performance: [
+            {
+              heading: "Best Engines for Performance",
+              paragraph:
+                "The 5.0L Supercharged V8 engine delivers exceptional power and acceleration, making it a favorite among performance enthusiasts in the Range Rover and Range Rover Sport. The 4.4L SDV8 Diesel engine also offers strong performance with ample torque, ideal for towing and high-speed driving.",
+            },
+            {
+              heading: "Performance Maintenance Tips",
+              paragraph:
+                "For high-performance Land Rover engines, regular inspection of supercharger systems, intercoolers, and engine mounts is essential. Use premium fuel, monitor engine diagnostics, and consider ECU remapping to optimize output while maintaining reliability.",
+            },
+          ],
+        },
+      ],
+      conclusion:
+        "By understanding these common Land Rover engine issues and their solutions, you can ensure your vehicle remains capable and reliable for years to come. Regular maintenance, using high-quality fluids and parts, and addressing warning signs early are key to preserving both performance and resale value. Whether you're navigating city streets or tackling rugged terrain, proper care will keep your Land Rover running at its best—powerful, smooth, and ready for any adventure.",
+    },
+    engineData: {
+      models: [
+        {
+          model: "/landrover/land-rover-range-rover.png",
+          model_name: "Range Rover",
+          engine_options: "3.0L Petrol, 3.0L Diesel, 4.4L Petrol, 5.0L Petrol",
+        },
+        {
+          model: "/landrover/land-rover-range-rover-sport.png",
+          model_name: "Range Rover Sport",
+          engine_options: "3.0L Petrol, 3.0L Diesel, 4.4L Petrol, 5.0L Petrol",
+        },
+        {
+          model: "/landrover/land-rover-range-rover-velar.png",
+          model_name: "Range Rover Velar",
+          engine_options: "2.0L Petrol, 2.0L Diesel, 3.0L Petrol, 3.0L Diesel",
+        },
+        {
+          model: "/landrover/land-rover-range-rover-evoque.png",
+          model_name: "Range Rover Evoque",
+          engine_options: "2.0L Petrol, 2.0L Diesel, 1.5L Hybrid",
+        },
+        {
+          model: "/landrover/land-rover-discovery.png",
+          model_name: "Discovery",
+          engine_options: "2.0L Petrol, 2.0L Diesel, 3.0L Petrol, 3.0L Diesel",
+        },
+        {
+          model: "/landrover/land-rover-discovery-sport.png",
+          model_name: "Discovery Sport",
+          engine_options: "2.0L Petrol, 2.0L Diesel, 1.5L Hybrid",
+        },
+        {
+          model: "/landrover/land-rover-defender.png",
+          model_name: "Defender",
+          engine_options: "2.0L Petrol, 2.0L Diesel, 3.0L Petrol, 3.0L Diesel",
+        },
+        {
+          model: "/landrover/land-rover-freelander.png",
+          model_name: "Freelander",
+          engine_options: "2.0L Petrol, 2.0L Diesel",
+        },
+        {
+          model: "/landrover/land-rover-lr4.png",
+          model_name: "LR4",
+          engine_options: "3.0L Petrol, 3.0L Diesel, 5.0L Petrol",
+        },
+        {
+          model: "/landrover/land-rover-lr2.png",
+          model_name: "LR2",
+          engine_options: "2.0L Petrol, 2.0L Diesel",
+        },
+        {
+          model: "/landrover/land-rover-range-rover-classic.png",
+          model_name: "Range Rover Classic",
+          engine_options: "3.5L Petrol, 3.9L Petrol, 4.2L Petrol",
+        },
+        {
+          model: "/landrover/land-rover-phev.png",
+          model_name: "Range Rover PHEV",
+          engine_options: "2.0L Hybrid, 3.0L Hybrid",
+        },
+        {
+          model: "/landrover/land-rover-svr.png",
+          model_name: "Range Rover SVR",
+          engine_options: "5.0L Petrol",
+        },
+        {
+          model: "/landrover/land-rover-autobiography.png",
+          model_name: "Range Rover Autobiography",
+          engine_options: "3.0L Petrol, 4.4L Petrol, 5.0L Petrol",
+        },
+        {
+          model: "/landrover/land-rover-lwb.png",
+          model_name: "Range Rover LWB",
+          engine_options: "3.0L Petrol, 4.4L Petrol, 5.0L Petrol",
+        },
+        {
+          model: "/landrover/land-rover-hse.png",
+          model_name: "Range Rover HSE",
+          engine_options: "3.0L Petrol, 4.4L Petrol, 5.0L Petrol",
+        },
+        {
+          model: "/landrover/land-rover-vogue.png",
+          model_name: "Range Rover Vogue",
+          engine_options: "3.0L Petrol, 4.4L Petrol, 5.0L Petrol",
+        },
+        {
+          model: "/landrover/land-rover-westminster.png",
+          model_name: "Range Rover Westminster",
+          engine_options: "3.0L Petrol, 4.4L Petrol, 5.0L Petrol",
+        },
+        {
+          model: "/landrover/land-rover-fifty.png",
+          model_name: "Range Rover Fifty",
+          engine_options: "3.0L Petrol, 4.4L Petrol, 5.0L Petrol",
+        },
+        {
+          model: "/landrover/land-rover-sv-autobiography.png",
+          model_name: "Range Rover SV Autobiography",
+          engine_options: "5.0L Petrol",
+        },
+      ],
+      engine_codes: [
+        {
+          engineCode: "244DT",
+          engineSize: 2.4,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 122,
+          torque: 360,
+          productionYears: "1999 – 2011",
+        },
+        {
+          engineCode: "276DT",
+          engineSize: 2.7,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 207,
+          torque: 440,
+          productionYears: "2004 – 2010",
+        },
+        {
+          engineCode: "30DDTX",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 306,
+          torque: 700,
+          productionYears: "2009 – present",
+        },
+        {
+          engineCode: "306DT",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 306,
+          torque: 700,
+          productionYears: "2009 – present",
+        },
+        {
+          engineCode: "406PN",
+          engineSize: 4.0,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 219,
+          torque: 346,
+          productionYears: "2005 – 2009",
+        },
+        {
+          engineCode: "448PN",
+          engineSize: 4.4,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 305,
+          torque: 440,
+          productionYears: "2004 – 2009",
+        },
+        {
+          engineCode: "508PN",
+          engineSize: 5.0,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 385,
+          torque: 515,
+          productionYears: "2009 – 2014",
+        },
+        {
+          engineCode: "428PS",
+          engineSize: 4.2,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 396,
+          torque: 560,
+          productionYears: "2005 – 2009",
+        },
+        {
+          engineCode: "448DT",
+          engineSize: 4.4,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 340,
+          torque: 740,
+          productionYears: "2010 – 2020",
+        },
+        {
+          engineCode: "368DT",
+          engineSize: 3.6,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 272,
+          torque: 640,
+          productionYears: "2006 – 2010",
+        },
+        {
+          engineCode: "508PS",
+          engineSize: 5.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 600,
+          torque: 700,
+          productionYears: "2009 – present",
+        },
+      ],
+      models_engines: [
+        {
+          engineCode: "244DT",
+          compatibleModels: ["Defender"],
+        },
+        {
+          engineCode: "276DT",
+          compatibleModels: ["Discovery 3", "Discovery 4", "Range Rover Sport 1"],
+        },
+        {
+          engineCode: "30DDTX",
+          compatibleModels: [
+            "Discovery 4",
+            "Discovery 5",
+            "Range Rover Sport 1",
+            "Range Rover Sport 2",
+            "Range Rover 4",
+            "Range Rover Velar 1",
+          ],
+        },
+        {
+          engineCode: "306DT",
+          compatibleModels: [
+            "Discovery 4",
+            "Discovery 5",
+            "Range Rover Sport 1",
+            "Range Rover Sport 2",
+            "Range Rover 4",
+            "Range Rover Velar 1",
+          ],
+        },
+        {
+          engineCode: "406PN",
+          compatibleModels: ["Discovery 3"],
+        },
+        {
+          engineCode: "448PN",
+          compatibleModels: ["Discovery 3", "Range Rover 3", "Range Rover Sport 1"],
+        },
+        {
+          engineCode: "508PN",
+          compatibleModels: ["Discovery 4", "Range Rover 3", "Range Rover Sport 1"],
+        },
+        {
+          engineCode: "428PS",
+          compatibleModels: ["Range Rover 3", "Range Rover Sport 1"],
+        },
+        {
+          engineCode: "448DT",
+          compatibleModels: ["Range Rover 3", "Range Rover 4", "Range Rover Sport 2"],
+        },
+        {
+          engineCode: "368DT",
+          compatibleModels: ["Range Rover 3", "Range Rover Sport 1"],
+        },
+        {
+          engineCode: "508PS",
+          compatibleModels: [
+            "Range Rover 3",
+            "Range Rover 4",
+            "Range Rover Sport 1",
+            "Range Rover Sport 2",
+            "Range Rover Velar 1",
+          ],
+        },
+      ],
+      replacement_costs: [
+        {
+          image: "/landrover/land-rover-generic.png",
+          model: "Land Rover Defender, Discovery",
+          engineType: "2.0L Diesel",
+          estimatedCost: "£3,000 - £5,000",
+        },
+        {
+          image: "/landrover/land-rover-generic.png",
+          model: "Range Rover, Range Rover Sport",
+          engineType: "3.0L Diesel",
+          estimatedCost: "£4,000 - £7,000",
+        },
+        {
+          image: "/landrover/land-rover-generic.png",
+          model: "Range Rover Evoque, Discovery Sport",
+          engineType: "2.0L Petrol",
+          estimatedCost: "£3,500 - £6,000",
+        },
+        {
+          image: "/landrover/land-rover-generic.png",
+          model: "Land Rover Freelander, Range Rover Velar",
+          engineType: "2.2L Diesel",
+          estimatedCost: "£3,500 - £6,500",
+        },
+        {
+          image: "/landrover/land-rover-generic.png",
+          model: "Land Rover Defender, Range Rover Classic",
+          engineType: "3.5L V8 Petrol",
+          estimatedCost: "£5,000 - £8,000",
+        },
+        {
+          image: "/landrover/land-rover-generic.png",
+          model: "Land Rover Discovery, Range Rover P38",
+          engineType: "4.0L V8 Petrol",
+          estimatedCost: "£5,500 - £9,000",
+        },
+        {
+          image: "/landrover/land-rover-generic.png",
+          model: "Range Rover L322, Range Rover L405",
+          engineType: "4.4L V8 Diesel",
+          estimatedCost: "£6,000 - £10,000",
+        },
+        {
+          image: "/landrover/land-rover-generic.png",
+          model: "Land Rover Series I, II, III",
+          engineType: "2.25L Petrol",
+          estimatedCost: "£2,500 - £4,500",
+        },
+        {
+          image: "/landrover/land-rover-generic.png",
+          model: "Range Rover Sport SVR, Range Rover Velar Autobiography",
+          engineType: "5.0L V8 Petrol",
+          estimatedCost: "£7,000 - £12,000",
+        },
+        {
+          image: "/landrover/land-rover-generic.png",
+          model: "Land Rover Defender 110, 130",
+          engineType: "2.5L Diesel",
+          estimatedCost: "£3,000 - £5,500",
+        },
+        {
+          image: "/landrover/land-rover-generic.png",
+          model: "Range Rover Vogue, Range Rover Autobiography",
+          engineType: "4.4L V8 Petrol",
+          estimatedCost: "£6,500 - £10,500",
+        },
+        {
+          image: "/landrover/land-rover-generic.png",
+          model: "Land Rover Discovery 4, Range Rover Sport HSE",
+          engineType: "3.0L V6 Diesel",
+          estimatedCost: "£4,500 - £7,500",
+        },
+        {
+          image: "/landrover/land-rover-generic.png",
+          model: "Range Rover Evoque, Range Rover Velar",
+          engineType: "2.0L Diesel",
+          estimatedCost: "£3,500 - £6,000",
+        },
+        {
+          image: "/landrover/land-rover-generic.png",
+          model: "Land Rover Defender 90, Range Rover Classic",
+          engineType: "3.9L V8 Petrol",
+          estimatedCost: "£5,500 - £9,500",
+        },
+        {
+          image: "/landrover/land-rover-generic.png",
+          model: "Range Rover PHEV, Range Rover Sport PHEV",
+          engineType: "Hybrid",
+          estimatedCost: "£6,000 - £10,000",
+        },
+      ],
+    },
+    section7: [
+      {
+        title: "New Land Rover Engines",
+        icon: <Sparkles className="h-6 w-6" />,
+        badge: "Premium",
+        badgeVariant: "default" as const,
+        pros: [
+          "100% reliability with a factory warranty",
+          "Best performance & longevity",
+        ],
+        cons: [
+          "Higher cost",
+          "Limited availability for older models",
+        ],
+      },
+      {
+        title: "Used Land Rover Engines",
+        icon: <DollarSign className="h-6 w-6" />,
+        badge: "Budget-Friendly",
+        badgeVariant: "secondary" as const,
+        pros: [
+          "Cost-effective & widely available",
+          "Good for quick replacements",
+        ],
+        cons: [
+          "Potential hidden wear and tear",
+          "Shorter lifespan than new or reconditioned engines",
+        ],
+      },
+      {
+        title: "Reconditioned Land Rover Engines",
+        icon: <Wrench className="h-6 w-6" />,
+        badge: "Best Value",
+        badgeVariant: "outline" as const,
+        pros: [
+          "Professionally rebuilt with new components",
+          "More reliable than used engines",
+          "Balanced cost vs. performance",
+        ],
+        cons: [
+          "Slightly more expensive than used engines",
+        ],
+      },
+    ],
+    section8: {
+      EngineProblems: [
+        {
+          id: "check-engine-light-issues",
+          title: "Check Engine Light Issues",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          severity: "Common",
+          data: [
+            {
+              heading: "Common Causes",
+              paragraph:
+                "The check engine light can illuminate for various reasons, ranging from minor sensor glitches to serious engine faults. Common triggers include faulty oxygen sensors, EGR valve malfunctions, misfires, or issues within the emissions and turbocharging systems.",
+            },
+            {
+              heading: "Effective Solutions",
+              paragraph:
+                "Use an OBD-II scanner to read diagnostic trouble codes and identify the root cause. Address issues such as replacing defective sensors, repairing exhaust leaks, or resolving misfires by inspecting ignition components and fuel delivery systems.",
+            },
+            {
+              heading: "Prevention Tips",
+              paragraph:
+                "Regular servicing, timely replacement of worn sensors, and ensuring all engine systems (EGR, DPF, turbo) are functioning properly can help prevent unexpected warning lights. Always verify the fuel cap is secure after refueling.",
+            },
+          ],
+        },
+        {
+          id: "power-loss-and-turbo-failures",
+          title: "Power Loss & Turbo Failures",
+          icon: <Gauge className="h-5 w-5" />,
+          severity: "Critical",
+          data: [
+            {
+              heading: "Identifying Root Causes",
+              paragraph:
+                "Power loss in Land Rover engines is frequently linked to turbocharger issues, clogged EGR valves, DPF blockages, or intercooler leaks. These problems reduce boost pressure and impair engine responsiveness, especially under load.",
+            },
+            {
+              heading: "Repair Solutions",
+              paragraph:
+                "Clean or replace the EGR valve and DPF unit, inspect the intercooler for cracks or leaks, and test the turbocharger for shaft play or oil leaks. Replace or rebuild the turbo if performance is compromised.",
+            },
+            {
+              heading: "Preventive Measures",
+              paragraph:
+                "Use high-quality diesel fuel with additives, avoid frequent short trips to allow DPF regeneration, follow service intervals for turbo systems, and allow the engine to idle for 30–60 seconds before shutdown to cool the turbo.",
+            },
+          ],
+        },
+        {
+          id: "excessive-smoke-and-oil-leaks",
+          title: "Excessive Smoke & Oil Leaks",
+          icon: <Smoke className="h-5 w-5" />,
+          severity: "Moderate",
+          data: [
+            {
+              heading: "Understanding the Causes",
+              paragraph:
+                "Blue or grey exhaust smoke typically indicates oil burning due to worn valve seals, turbocharger seals, or PCV system failure. Visible oil leaks are often caused by degraded valve cover gaskets, oil cooler lines, or sump seals.",
+            },
+            {
+              heading: "Troubleshooting Steps",
+              paragraph:
+                "Inspect the turbocharger for oil leakage, check valve cover and oil cooler gaskets, and perform a compression or leak-down test to assess internal engine wear. Replace faulty components promptly.",
+            },
+            {
+              heading: "Maintenance for Prevention",
+              paragraph:
+                "Regularly check oil levels, inspect for leaks during service intervals, use OEM-quality gaskets and high-grade synthetic oil, and maintain the PCV system to prevent pressure buildup and oil consumption.",
+            },
+          ],
+        },
+        {
+          id: "overheating",
+          title: "Engine Overheating",
+          icon: <Thermometer className="h-5 w-5" />,
+          severity: "Critical",
+          data: [
+            {
+              heading: "Common Causes",
+              paragraph:
+                "Overheating is often caused by coolant leaks, a failed water pump, cracked expansion tank, faulty thermostat, or airlocks in the cooling system—common in Land Rover's plastic-component-heavy cooling setups.",
+            },
+            {
+              heading: "Repair Solutions",
+              paragraph:
+                "Replace the coolant expansion tank, radiator, water pump, or thermostat as needed. Flush the cooling system and bleed air from the system to restore proper circulation and temperature control.",
+            },
+            {
+              heading: "Prevention Tips",
+              paragraph:
+                "Inspect the cooling system regularly for cracks or leaks, replace coolant every 3–5 years, upgrade to metal expansion tanks where applicable, and monitor temperature gauges closely—especially during off-road or towing use.",
+            },
+          ],
+        },
+        {
+          id: "timing-chain-problems",
+          title: "Timing Chain Problems",
+          icon: <Zap className="h-5 w-5" />,
+          severity: "Critical",
+          data: [
+            {
+              heading: "Identifying Causes",
+              paragraph:
+                "Timing chain stretch or failure is common in Land Rover engines with high mileage or poor oil maintenance. Symptoms include rattling on startup, misfires, and loss of power.",
+            },
+            {
+              heading: "Troubleshooting Steps",
+              paragraph:
+                "Inspect the timing chain tensioner, guides, and chain for wear. Replace the entire timing chain kit if excessive slack or noise is present. Ensure proper oil flow and use the correct specification of synthetic oil.",
+            },
+            {
+              heading: "Preventive Maintenance",
+              paragraph:
+                "Adhere to strict oil change intervals (every 10,000–12,000 miles), use Land Rover-approved full synthetic oil, and listen for early warning noises. Proactive replacement before failure can prevent catastrophic engine damage.",
+            },
+          ],
+        },
+      ],
+      maintenanceTips: [
+        {
+          icon: "Lightbulb",
+          iconColor: "text-blue-600",
+          border: "border-blue-200",
+          bg: "bg-blue-50",
+          title: "Regular Inspections",
+          titleColor: "text-blue-800",
+          text: "Check your Land Rover engine monthly for coolant levels, oil leaks, and warning lights to catch issues early",
+          textColor: "text-blue-700",
+        },
+        {
+          icon: "CheckCircle",
+          iconColor: "text-green-600",
+          border: "border-green-200",
+          bg: "bg-green-50",
+          title: "Preventive Maintenance",
+          titleColor: "text-green-800",
+          text: "Follow Land Rover's recommended service schedule to maximize engine life and off-road reliability",
+          textColor: "text-green-700",
+        },
+        {
+          icon: "AlertTriangle",
+          iconColor: "text-orange-600",
+          border: "border-orange-200",
+          bg: "bg-orange-50",
+          title: "Act Quickly",
+          titleColor: "text-orange-800",
+          text: "Address check engine lights and unusual noises immediately to avoid costly engine repairs",
+          textColor: "text-orange-700",
+        },
+      ],
+      summary: {
+        variant: "green",
+        title: "Key Takeaway",
+        content:
+          "By following these troubleshooting tips and maintaining regular engine checks, you can help prevent common Land Rover engine faults and extend its lifespan. Regular maintenance, timely diagnostics, and prompt attention to warning signs are essential to keeping your luxury SUV running smoothly and reliably for years to come. At EnginesMarket.co.uk, we provide the best Land Rover engine prices and ensure you get high-quality replacement engines—new, used, or reconditioned—to keep your vehicle in top condition, whether on road or off-road.",
+      },
+    },
+    section9: {
+      performanceUpgrades: [
+        {
+          id: "basic-enhancements",
+          title: "Basic Enhancement Options",
+          icon: <Zap className="h-5 w-5" />,
+          level: "Beginner",
+          upgrades: [
+            {
+              name: "ECU Remapping (Stage 1 Tuning)",
+              icon: <Cog className="h-4 w-4" />,
+              description:
+                "ECU remapping involves adjusting the engine control unit (ECU) settings to optimize fuel delivery, ignition timing, and boost pressure. This software-based tuning is one of the most cost-effective ways to enhance performance in Land Rover engines, especially turbocharged diesel models like the 3.0L D and SDV6.",
+              benefits:
+                "10–30% increase in horsepower and torque, improved throttle response, and enhanced towing capability—ideal for daily driving, off-road adventures, and overlanding.",
+              considerations:
+                "Must be performed by a certified tuner using Land Rover-specific software. Poorly executed remaps can lead to increased DPF issues, higher EGTs, or transmission strain.",
+            },
+            {
+              name: "Cold Air Intake Systems",
+              icon: <Wind className="h-4 w-4" />,
+              description:
+                "Replacing the stock air intake with a high-flow cold air intake system allows cooler, denser air to enter the engine, improving combustion efficiency and power output—particularly effective in V8 and turbo-diesel engines.",
+              benefits:
+                "Better engine breathing, improved low-end torque, and a more aggressive induction sound—ideal for Range Rover and Discovery owners seeking enhanced performance.",
+              considerations:
+                "Ensure proper sealing and water protection, especially for off-road use. Use high-quality filters to prevent dirt ingestion, which can damage turbochargers or engine internals.",
+            },
+            {
+              name: "Performance Exhaust Systems",
+              icon: <Volume2 className="h-4 w-4" />,
+              description:
+                "Upgrading to a high-flow cat-back or axle-back exhaust system reduces backpressure, allowing the engine to breathe more freely and improving overall efficiency and sound.",
+              benefits:
+                "Noticeable gains in power and torque, deeper exhaust tone, and better thermal management—especially beneficial for 5.0L V8 and 3.0L diesel models.",
+              considerations:
+                "May affect emissions compliance and void factory warranty. Always pair with ECU tuning to avoid triggering fault codes and ensure optimal performance.",
+            },
+            {
+              name: "High-Performance Intercooler",
+              icon: <Snowflake className="h-4 w-4" />,
+              description:
+                "Installing a larger or more efficient intercooler reduces intake air temperatures, increases charge density, and prevents power loss due to heat soak—critical for turbocharged Land Rover engines.",
+              benefits:
+                "Improved power consistency during towing or off-road driving, reduced thermal stress on the turbo, and greater tuning headroom for future upgrades.",
+              considerations:
+                "Ensure compatibility with your model and proper installation to avoid airflow restrictions or coolant leaks that could impact reliability.",
+            },
+          ],
+        },
+        {
+          id: "tuning-stages",
+          title: "Tuning Upgrade: Stage 1-3",
+          icon: <TrendingUp className="h-5 w-5" />,
+          level: "Progressive",
+          stages: [
+            {
+              stage: "Stage 1 Tuning",
+              description:
+                "Software-only ECU remap with no hardware changes. Often combined with performance air filters and exhaust tips for mild but effective gains.",
+              benefits:
+                "Safe 10–25% power increase, improved drivability, and better throttle response—ideal for Range Rover Sport, Discovery, and Defender models used for daily or off-road driving.",
+              considerations:
+                "Maintains factory reliability when done correctly; use reputable tuners familiar with Land Rover’s Bosch EDC17 and MED17 engine management systems.",
+            },
+            {
+              stage: "Stage 2 Tuning",
+              description:
+                "Combines ECU tuning with hardware upgrades such as upgraded turbochargers, high-flow intake, performance exhaust systems, and upgraded intercoolers.",
+              benefits:
+                "30–70 horsepower gains, faster turbo spool, improved DPF regeneration, and enhanced performance under load—perfect for modified Land Rover builds.",
+              considerations:
+                "Requires supporting modifications and more frequent maintenance; may void warranty and affect emissions compliance if not properly calibrated.",
+            },
+            {
+              stage: "Stage 3 Tuning",
+              description:
+                "Full performance build involving extensive engine modifications, larger turbochargers, custom fuel systems, forged internals, and race-grade ECU calibration for maximum output.",
+              benefits: "80%+ power gains, ideal for motorsport, extreme off-road, or high-performance Land Rover builds.",
+              considerations:
+                "Significantly impacts engine longevity and fuel economy; requires expert setup, reinforced drivetrain, upgraded cooling, and ongoing monitoring to prevent failure.",
+            },
+          ],
+        },
+        {
+          id: "turbo-upgrades",
+          title: "Turbo Upgrades",
+          icon: <Gauge className="h-5 w-5" />,
+          level: "Advanced",
+          content: {
+            description:
+              "Upgrading the turbocharger is one of the most effective ways to boost performance in Land Rover’s turbo-diesel and supercharged petrol engines. Forced induction upgrades dramatically improve airflow, boost pressure, and overall power output.",
+            points: [
+              {
+                title: "Variable Nozzle Turbo (VNT)",
+                description:
+                  "Offers improved low-end torque and smoother power delivery—ideal for older 300Tdi and TD5 engines, enhancing drivability without excessive lag.",
+              },
+              {
+                title: "T28 Turbo Upgrade",
+                description:
+                  "A popular upgrade for 2.7L and 3.0L diesel engines, providing greater airflow and boost pressure for noticeable power gains and improved throttle response.",
+              },
+              {
+                title: "Performance Turbo Kits",
+                description:
+                  "Complete kits featuring upgraded turbochargers, reinforced exhaust manifolds, and performance intercooler piping—designed for serious power increases in Discovery and Range Rover models.",
+              },
+            ],
+          },
+        },
+        {
+          id: "engine-internals",
+          title: "Engine Internals Reinforcements",
+          icon: <Cog className="h-5 w-5" />,
+          level: "Expert",
+          content: {
+            description:
+              "To handle the increased power from aggressive tuning and turbo upgrades, reinforcing engine internals is essential for durability and long-term reliability in high-performance Land Rover engines.",
+            points: [
+              {
+                title: "Forged Pistons and Rods",
+                description:
+                  "Stronger and more heat-resistant than stock components, forged internals reduce the risk of failure under high boost and load—critical for modified 5.0L V8 and 3.0L diesel engines.",
+              },
+              {
+                title: "Performance Camshafts",
+                description:
+                  "Optimize valve timing for improved airflow and combustion efficiency—ideal for maximizing power in both petrol and diesel performance builds.",
+              },
+              {
+                title: "Upgraded Bearings and Gaskets",
+                description:
+                  "High-performance engine bearings and reinforced head gaskets reduce friction and prevent leaks under high pressure—essential for track or heavy-duty applications.",
+              },
+            ],
+          },
+        },
+        {
+          id: "reliability-impact",
+          title: "Impact on Reliability & Fuel Efficiency",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          level: "Important",
+          content: {
+            description:
+              "While performance upgrades enhance power and responsiveness, they also affect engine reliability and fuel economy. Understanding these trade-offs is crucial for a sustainable and dependable build.",
+            points: [
+              {
+                title: "Reliability",
+                description:
+                  "Extensive modifications increase stress on engine and drivetrain components. Regular maintenance, high-quality parts, and proper cooling are essential to preserve longevity, especially in off-road or towing scenarios.",
+              },
+              {
+                title: "Fuel Efficiency",
+                description:
+                  "Aggressive tuning and larger turbos typically increase fuel consumption due to higher power demands. However, mild ECU remaps can improve efficiency by optimizing combustion in diesel engines under normal driving conditions.",
+              },
+            ],
+          },
+        },
+      ],
+      summary: {
+        variant: "performance",
+        title: "Performance Enhancement Summary",
+        content:
+          "By carefully selecting and implementing performance upgrades, you can transform your Land Rover into a high-output machine—whether it's a luxury Range Rover or a rugged Defender. From ECU remapping and cold air intakes to full internal builds and turbo upgrades, each stage offers greater performance potential. However, with increased power comes greater responsibility: always use quality parts, work with experienced professionals, and maintain your engine diligently. At EnginesMarket.co.uk, we provide the best Land Rover engine prices and offer high-quality replacement engines—new, used, or reconditioned—to support your performance goals while balancing reliability, efficiency, and durability on and off the road.",
+      },
+    },
+    faqs: [
+      {
+        question: "What is EnginesMarket.co.uk?",
+        answer:
+          "EnginesMarket.co.uk is a price comparison website specializing in providing competitive quotes for new, used, and reconditioned Land Rover engines from multiple trusted sellers. Our platform helps you save time and money by finding the best deals on high-quality replacement engines."
+      },
+      {
+        question: "How does EnginesMarket.co.uk work?",
+        answer:
+          "Simply enter your vehicle's details on our website, and we will provide you with multiple quotes from verified sellers. You can compare prices and choose the best option that suits your needs and budget."
+      },
+      {
+        question: "What types of Land Rover engines can I find on EnginesMarket.co.uk?",
+        answer:
+          "We offer a wide range of Land Rover engines, including new, used, and reconditioned options. Whether you need a petrol, diesel, hybrid, or electric engine, we have you covered with competitive prices and reliable sellers across various Land Rover models."
+      },
+      {
+        question: "Is there a warranty on the engines purchased through EnginesMarket.co.uk?",
+        answer:
+          "Yes, most engines listed on our platform come with a warranty. The specific terms vary depending on the seller and the type of engine (new, used, or reconditioned). Always review the warranty details before making a purchase to ensure coverage meets your expectations."
+      },
+      {
+        question: "How can I request a quote on EnginesMarket.co.uk?",
+        answer:
+          "To request a quote, visit our website, fill out the form with your vehicle’s registration number, model, and engine specifications, and submit your request. You’ll receive competitive quotes from trusted sellers within 24 hours."
+      },
+      {
+        question: "What are the most common problems with Land Rover engines?",
+        answerList: [
+          "Oil leaks from valve cover gaskets or sump seals",
+          "Air suspension system failures affecting ride quality",
+          "Electrical faults due to complex wiring and sensors",
+          "Cooling system issues leading to overheating",
+          "Turbocharger wear causing loss of power or smoke"
+        ]
+      },
+      {
+        question: "How often should I service my Land Rover engine?",
+        answer:
+          "It is recommended to service your Land Rover engine every 12,000 miles or 12 months, whichever comes first. Regular servicing helps maintain performance, reliability, and longevity."
+      },
+      {
+        question: "What is the average lifespan of a Land Rover engine?",
+        answer:
+          "With proper maintenance, a Land Rover engine can last between 150,000 to 200,000 miles. Regular oil changes, coolant flushes, and addressing issues promptly contribute to extended engine life."
+      },
+      {
+        question: "Can I use synthetic oil in my Land Rover engine?",
+        answer:
+          "Yes, synthetic oil is recommended for Land Rover engines as it provides superior protection, better performance in extreme temperatures, and improved engine cleanliness compared to conventional oils."
+      },
+      {
+        question: "What are the benefits of a reconditioned Land Rover engine?",
+        answer:
+          "Reconditioned Land Rover engines are professionally rebuilt to meet original manufacturer specifications. They offer a cost-effective, reliable, and environmentally friendly alternative to new engines, often coming with a warranty for added peace of mind."
+      },
+      {
+        question: "How do I know if my Land Rover engine needs replacing?",
+        answerList: [
+          "Excessive smoke from the exhaust (blue, white, or black)",
+          "Persistent knocking or grinding noises from the engine",
+          "Significant loss of power or poor acceleration",
+          "Frequent overheating despite coolant system checks",
+          "Major oil or coolant leaks indicating internal damage"
+        ]
+      },
+      {
+        question: "What is the difference between a used and a reconditioned Land Rover engine?",
+        answer:
+          "A used Land Rover engine is removed from another vehicle and sold as-is, with unknown wear and limited warranty. A reconditioned engine is completely disassembled, inspected, repaired where necessary, and rebuilt to meet original specifications, offering greater reliability and longer lifespan."
+      },
+      {
+        question: "Are Land Rover engines reliable?",
+        answer:
+          "Yes, Land Rover engines are known for their durability and performance, particularly when properly maintained. Regular servicing and timely repairs help ensure long-term reliability across both petrol and diesel variants."
+      },
+      {
+        question: "What types of engines are available for Land Rover models?",
+        answer:
+          "Land Rover offers a variety of engines across its lineup, including efficient diesel, powerful petrol, plug-in hybrid (PHEV), and fully electric powertrains, depending on the model and market availability."
+      },
+      {
+        question: "How can I improve the fuel efficiency of my Land Rover engine?",
+        answer:
+          "Regular maintenance, using high-quality fuel, keeping tires properly inflated, driving smoothly, and ensuring the air filter and injectors are clean can all help improve fuel efficiency in your Land Rover."
+      },
+      {
+        question: "What is the cost of replacing a Land Rover engine?",
+        answer:
+          "The cost of replacing a Land Rover engine typically ranges from £2,000 to £10,000, depending on the model, engine type (new, used, or reconditioned), and labor costs. Reconditioned engines often offer a balanced option in terms of price and reliability."
+      },
+      {
+        question: "Can I install a Land Rover engine myself?",
+        answer:
+          "While it is technically possible for experienced individuals, we strongly recommend professional installation. Land Rover engines involve complex electronics, cooling, and transmission integration, and improper fitting can lead to costly damage."
+      },
+      {
+        question: "What are the signs of a failing Land Rover turbocharger?",
+        answerList: [
+          "Loss of engine power and acceleration",
+          "Excessive blue or black smoke from the exhaust",
+          "Whining, grinding, or hissing noises from the engine bay",
+          "Increased fuel consumption",
+          "Illuminated engine warning light"
+        ]
+      },
+      {
+        question: "How do I maintain my Land Rover diesel engine?",
+        answer:
+          "Key maintenance steps include regular oil changes with correct-grade oil, using high-quality diesel fuel, periodic DPF (Diesel Particulate Filter) checks, maintaining the fuel injection system, and ensuring the cooling and air intake systems are functioning properly."
+      },
+      {
+        question: "What is the best engine oil for Land Rover engines?",
+        answer:
+          "The best oil depends on your specific Land Rover model and engine type, but high-quality synthetic oils meeting Land Rover’s WSS-M2C specifications (e.g., 5W-30 or 10W-60) are generally recommended for optimal protection and performance."
+      },
+      {
+        question: "Can I upgrade my Land Rover engine for better performance?",
+        answer:
+          "Yes, performance upgrades such as ECU remapping, upgraded turbochargers, performance exhaust systems, cold air intakes, and intercoolers can significantly enhance the power and responsiveness of your Land Rover engine."
+      },
+      {
+        question: "What are the benefits of a hybrid Land Rover engine?",
+        answer:
+          "Hybrid Land Rover engines combine a petrol engine with an electric motor to deliver improved fuel efficiency, reduced emissions, and smoother driving. They also allow for short-distance electric-only driving, ideal for city use."
+      },
+      {
+        question: "How do I troubleshoot a Land Rover engine that won't start?",
+        answer:
+          "Check the battery charge and connections, ensure there is fuel in the tank, inspect the starter motor and ignition system, and look for any fault codes using a diagnostic tool. If basic checks don’t resolve the issue, consult a qualified mechanic."
+      },
+      {
+        question: "What is the towing capacity of Land Rover engines?",
+        answer:
+          "Towing capacity varies by model and engine type, but most Land Rover vehicles can tow between 3,500 to 7,700 pounds. Always refer to your vehicle’s manual for exact figures based on configuration and drivetrain."
+      },
+      {
+        question: "Are there any recalls on Land Rover engines?",
+        answer:
+          "Occasionally, Land Rover issues recalls related to engine components, emissions systems, or software. It's best to check with your local Land Rover dealer or visit the official Land Rover website to verify if your vehicle is affected by any active recalls."
+      }
+    ]
+  },
 };

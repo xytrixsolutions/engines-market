@@ -30,47 +30,23 @@ const getSeverityColor = (severity: string) => {
 };
 
 const motionProps = {
-  initial: { opacity: 0, y: 20 },
-  transition: { duration: 0.5, ease: "easeOut" as any },
+  initial: { opacity: 0, y: 25 },
+  transition: { duration: 1, ease: "easeOut" as any },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
 };
 
-const containerVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      staggerChildren: 0.15,
-      delayChildren: 0.2,
-      ease: "easeOut" as any,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut" as any,
-    },
-  },
-};
 const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
   const { EngineProblems } = data[brand].section4;
   const { brandName } = data[brand];
   const keyTakeawayMotionProps = {
-    initial: { opacity: 0, y: 20 },
+    initial: { opacity: 0, y: 25 },
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true },
     transition: {
-      duration: 0.5,
+      duration: 1,
       ease: "easeOut" as any,
-      delay: EngineProblems.length * 0.15 + 0.2,
+      delay: EngineProblems.length * 0.1 + 0.02,
     },
   };
 
@@ -96,20 +72,26 @@ const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
         </Paragraph>
       </motion.div>
 
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
+      <Accordion
+        type="single"
+        collapsible
+        defaultValue="item-0"
+        className="space-y-4"
       >
-        <Accordion
-          type="single"
-          collapsible
-          defaultValue="item-0"
-          className="space-y-4"
-        >
-          {EngineProblems.map((item, idx) => (
-            <motion.div key={item.title} variants={itemVariants}>
+        {EngineProblems.map((item, idx) => {
+          const delay = idx * 0.1;
+          return (
+            <motion.div
+              key={item.title}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 1,
+                ease: "easeOut",
+                delay,
+              }}
+            >
               <GradientBorderWrapper variant="conic">
                 <AccordionItem
                   value={`item-${idx}`}
@@ -161,9 +143,9 @@ const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
                 </AccordionItem>
               </GradientBorderWrapper>
             </motion.div>
-          ))}
-        </Accordion>
-      </motion.div>
+          );
+        })}
+      </Accordion>
 
       <motion.div {...keyTakeawayMotionProps}>
         <Card className="bg-blue-50 border-blue-200 mt-5">

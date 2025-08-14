@@ -1,9 +1,7 @@
-"use client";
-
 import Accent from "./Accent";
 import Container from "./Container";
 import Heading from "./Heading";
-import { motion } from "framer-motion";
+import * as motion from "motion/react-client";
 import {
   Accordion,
   AccordionContent,

@@ -88,7 +88,7 @@ const Page = ({ params }) => {
 };
 
 // ISR Configuration
-export const revalidate = 86400; // Revalidate every 24 hours
+// export const revalidate = 86400; // Revalidate every 24 hours
 
 // Generate static paths at build time
 export async function generateStaticParams() {

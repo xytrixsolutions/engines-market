@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { TableProps } from "../types/engine";
 import {
   Table,
@@ -8,7 +7,6 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import * as motion from "motion/react-client";
 
 type EngineTableProps<T = Record<string, unknown>> = TableProps<T> & {
   tableType?:
@@ -16,12 +14,6 @@ type EngineTableProps<T = Record<string, unknown>> = TableProps<T> & {
     | "engine_codes"
     | "models_engines"
     | "replacement_costs";
-};
-const motionProps = {
-  initial: { opacity: 0, y: 25 },
-  transition: { duration: 0.6, ease: "easeOut" as any }, // fix
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
 };
 
 const EngineTable = <T extends Record<string, unknown>>({
@@ -52,12 +44,12 @@ const EngineTable = <T extends Record<string, unknown>>({
     return "w-4xl";
   };
 
-  const tableContainerClass = `hidden lg:block bg-card rounded-2xl shadow-lg mb-5 overflow-hidden ${getWidthClass()} mx-auto`;
+  const tableContainerClass = `hidden lg:block bg-card rounded-2xl shadow-lg mb-5 overflow-y-hidden overflow-y-hidden ${getWidthClass()} mx-auto         className="transition-all duration-500 ease-in-out opacity-0 animate-fadeIn"`;
 
   return (
     <>
       {/* Desktop Table View */}
-      <motion.div {...motionProps} className={tableContainerClass}>
+      <div className={tableContainerClass}>
         <Table className="w-full table-auto">
           <TableHeader>
             <TableRow className="border-b border-border">
@@ -99,16 +91,12 @@ const EngineTable = <T extends Record<string, unknown>>({
             ))}
           </TableBody>
         </Table>
-      </motion.div>
+      </div>
 
       {/* Mobile Card View */}
       <div className="lg:hidden space-y-4">
         {data.map((row, i) => (
-          <motion.div
-            {...motionProps}
-            key={i}
-            className="bg-card rounded-xl shadow-lg p-4 space-y-3"
-          >
+          <div key={i} className="bg-card rounded-xl shadow-lg p-4 space-y-3">
             {columns.map((col) => (
               <div key={col.key} className="flex justify-between items-start">
                 <span className="font-semibold text-foreground">
@@ -131,7 +119,7 @@ const EngineTable = <T extends Record<string, unknown>>({
                 </div>
               </div>
             ))}
-          </motion.div>
+          </div>
         ))}
       </div>
     </>

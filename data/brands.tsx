@@ -25,6 +25,7 @@ import {
   Hammer,
   Filter,
   Battery,
+  Cloud,
 } from "lucide-react";
 
 export const data: BrandsData = {
@@ -17948,6 +17949,2073 @@ export const data: BrandsData = {
         question: "Are there any recalls on Land Rover engines?",
         answer:
           "Occasionally, Land Rover issues recalls related to engine components, emissions systems, or software. It's best to check with your local Land Rover dealer or visit the official Land Rover website to verify if your vehicle is affected by any active recalls."
+      }
+    ]
+  },
+  lexus: {
+    metadata: {
+      title: "Top-Quality Lexus Engines | New, Used & Reconditioned | EnginesMarket.co.uk",
+      description: "Discover the best deals on Lexus engines at EnginesMarket.co.uk. Compare prices for new, used, and reconditioned Lexus engines. Save time and money with our competitive quotes from trusted sellers.",
+      keywords: [
+        "Lexus engines",
+        "reconditioned Lexus engines",
+        "used Lexus engines",
+        "replacement Lexus engines",
+        "best Lexus engine prices",
+        "Lexus engine specifications",
+        "buy Lexus engines",
+        "Lexus engine quotes",
+        "affordable Lexus engines",
+        "high-quality Lexus engines",
+        "EnginesMarket.co.uk"
+      ],
+    },
+    brandName: "Lexus",
+    carImages: [
+      "/banners/banner-1.webp",
+      "/banners/banner-2.webp",
+      "/banners/banner-3.webp",
+      "/banners/banner-4.webp",
+      "/banners/banner-5.webp",
+    ],
+    carModelNames: [
+      "BMW X5",
+      "Audi A6",
+      "Mercedes C-Class",
+      "Range Rover Evoque",
+      "Volkswagen Golf",
+    ],
+    section0Image: {
+      img: "/bmw/bmw.png",
+      alt: "BMW front view",
+    },
+    section1Image: {
+      img: "/engine-guide-banners/engine-guide.png",
+      alt: "BMW rear view",
+    },
+    section4: {
+      mainParagraph:
+        "Lexus engines are known for their reliability and performance, but like any mechanical component, they can encounter issues over time. Whether you drive a Lexus ES, RX, LS, or performance-focused RC F, understanding common engine problems—and how to address them—can help maintain smooth operation and extend engine life. Below are the most frequently encountered Lexus engine issues, along with solutions and preventive measures:",
+      EngineProblems: [
+        {
+          title: "Oil Leaks",
+          icon: <Droplet className="h-5 w-5" />,
+          problem:
+            "One of the most common issues, particularly in the 2GR-FE 3.5L V6 engine, is oil leaks from the front timing cover. This can result in oil puddles, reduced engine performance, and potential damage if ignored.",
+          solution:
+            "Replace the timing cover gasket. This is a labor-intensive repair that may require removing the engine and transmission for proper access.",
+          prevention:
+            "Regularly inspect for signs of oil leakage and maintain proper oil levels. Use high-quality synthetic oil and adhere to recommended oil change intervals to minimize gasket degradation.",
+          severity: "Common",
+        },
+        {
+          title: "Excessive Oil Consumption",
+          icon: <Zap className="h-5 w-5" />,
+          problem:
+            "The 1UR-FE 4.6L V8 engine is known to consume excessive oil, sometimes requiring top-ups between oil changes. This can lead to carbon buildup and potential engine damage if oil levels drop too low.",
+          solution:
+            "Repair may involve replacing valve stem seals or piston rings. In severe cases, a full engine rebuild or replacement may be necessary.",
+          prevention:
+            "Monitor oil levels monthly and top up as needed. Use the manufacturer-recommended oil grade and avoid extended oil change intervals to reduce wear.",
+          severity: "Moderate",
+        },
+        {
+          title: "Water Pump Failures",
+          icon: <Thermometer className="h-5 w-5" />,
+          problem:
+            "Water pump failures are common in both the 1UR-FE and 2GR-FE engines. A failing pump can cause coolant leaks and lead to engine overheating, risking serious internal damage.",
+          solution:
+            "Replace the water pump immediately upon noticing coolant leaks, overheating, or bearing noise. Consider replacing the timing belt (if applicable) and thermostat at the same time.",
+          prevention:
+            "Inspect the cooling system regularly and replace the water pump at recommended service intervals. Use high-quality coolant and maintain proper coolant levels.",
+          severity: "Critical",
+        },
+        {
+          title: "Timing Chain Tensioner Issues",
+          icon: <Zap className="h-5 w-5" />,
+          problem:
+            "The 1UR-FE engine can suffer from timing chain tensioner failure, often resulting in a rattling noise on cold start-up. If left unaddressed, this can lead to timing chain slippage and catastrophic engine damage.",
+          solution:
+            "Replace the timing chain tensioner and inspect the chain and guides for wear. In some cases, the entire timing chain assembly may need replacement.",
+          prevention:
+            "Follow strict maintenance schedules using high-quality full synthetic oil. Avoid delayed oil changes, as poor lubrication accelerates wear on tensioners and chains.",
+          severity: "Critical",
+        },
+        {
+          title: "Sensor Failures",
+          icon: <Filter className="h-5 w-5" />,
+          problem:
+            "Failures in sensors such as the oxygen (O2) sensor or mass airflow (MAF) sensor are common across various Lexus engines. These can trigger check engine lights, reduce fuel efficiency, and degrade engine performance.",
+          solution:
+            "Diagnose the faulty sensor using an OBD-II scanner and replace it with a high-quality OEM or equivalent part. Clean the MAF sensor carefully if contamination is the cause.",
+          prevention:
+            "Include sensor inspection in routine maintenance. Use high-quality fuel, replace air filters regularly, and keep the intake system clean to reduce sensor contamination.",
+          severity: "Common",
+        },
+      ],
+      engineReliabilityAndPerformance: [
+        {
+          reliability: [
+            {
+              heading: "Best Engines for Reliability",
+              paragraph:
+                "The 1UR-FE 4.6L V8 is renowned for its durability and ability to reach high mileage with proper maintenance. The legendary 2JZ-GTE 3.0L inline-six is also highly reliable, often lasting beyond 250,000 miles with regular care, making it a favorite among enthusiasts and daily drivers alike.",
+            },
+            {
+              heading: "Maintenance Tips for Longevity",
+              paragraph:
+                "To maximize engine lifespan, follow Lexus-recommended service intervals, use high-quality synthetic oil, replace coolant and filters on schedule, and address warning signs like oil consumption or leaks early. Regular diagnostics can catch issues before they escalate into costly repairs.",
+            },
+          ],
+          performance: [
+            {
+              heading: "Best Engines for Performance",
+              paragraph:
+                "The 2UR-GSE 5.0L V8 delivers exhilarating performance with high-revving power and is used in performance models like the Lexus RC F and GS F. The rare 1LR-GUE 4.8L V10, found in the limited-edition Lexus LFA, is celebrated for its race-inspired engineering, 9,000 RPM redline, and distinctive exhaust note.",
+            },
+            {
+              heading: "Performance Maintenance Tips",
+              paragraph:
+                "For high-performance Lexus engines, prioritize cooling system health, use premium fuel, and monitor oil pressure and temperature. Regular inspection of intake, exhaust, and valvetrain components ensures peak performance. Consider ECU tuning and performance oil filters for track-focused models.",
+            },
+          ],
+        },
+      ],
+      conclusion:
+        "By understanding these common Lexus engine issues and their solutions, you can ensure your vehicle remains reliable, efficient, and powerful for years to come. Proactive maintenance, using genuine or high-quality replacement parts, and addressing problems early are key to preserving both performance and resale value. Whether you're commuting in comfort or enjoying spirited driving, proper care will keep your Lexus engine running smoothly—delivering the luxury, refinement, and dependability the brand is known for.",
+    },
+    engineData: {
+      models: [
+        {
+          model: "/lexus/lexus-es.png",
+          model_name: "Lexus ES",
+          engine_options: "2.5L I4, 3.5L V6, 2.5L Hybrid",
+        },
+        {
+          model: "/lexus/lexus-is.png",
+          model_name: "Lexus IS",
+          engine_options: "2.0L Turbo I4, 3.5L V6, 5.0L V8",
+        },
+        {
+          model: "/lexus/lexus-rx.png",
+          model_name: "Lexus RX",
+          engine_options: "2.4L Turbo I4, 3.5L V6, 3.5L Hybrid",
+        },
+        {
+          model: "/lexus/lexus-nx.png",
+          model_name: "Lexus NX",
+          engine_options: "2.5L I4, 2.4L Turbo I4, 2.5L Hybrid",
+        },
+        {
+          model: "/lexus/lexus-gx.png",
+          model_name: "Lexus GX",
+          engine_options: "4.6L V8",
+        },
+        {
+          model: "/lexus/lexus-lx.png",
+          model_name: "Lexus LX",
+          engine_options: "3.5L Twin-Turbo V6",
+        },
+        {
+          model: "/lexus/lexus-ls.png",
+          model_name: "Lexus LS",
+          engine_options: "3.5L V6, 3.5L Hybrid",
+        },
+        {
+          model: "/lexus/lexus-rc.png",
+          model_name: "Lexus RC",
+          engine_options: "2.0L Turbo I4, 3.5L V6, 5.0L V8",
+        },
+        {
+          model: "/lexus/lexus-lc.png",
+          model_name: "Lexus LC",
+          engine_options: "5.0L V8, 3.5L Hybrid",
+        },
+        {
+          model: "/lexus/lexus-ux.png",
+          model_name: "Lexus UX",
+          engine_options: "2.0L I4, 2.0L Hybrid",
+        },
+        {
+          model: "/lexus/lexus-ct.png",
+          model_name: "Lexus CT",
+          engine_options: "1.8L Hybrid",
+        },
+        {
+          model: "/lexus/lexus-hs.png",
+          model_name: "Lexus HS",
+          engine_options: "2.4L I4, 2.4L Hybrid",
+        },
+        {
+          model: "/lexus/lexus-sc.png",
+          model_name: "Lexus SC",
+          engine_options: "4.3L V8",
+        },
+        {
+          model: "/lexus/lexus-gs.png",
+          model_name: "Lexus GS",
+          engine_options: "2.0L Turbo I4, 3.5L V6, 5.0L V8",
+        },
+        {
+          model: "/lexus/lexus-lfa.png",
+          model_name: "Lexus LFA",
+          engine_options: "4.8L V10",
+        },
+        {
+          model: "/lexus/lexus-rz.png",
+          model_name: "Lexus RZ",
+          engine_options: "Electric",
+        },
+        {
+          model: "/lexus/lexus-tx.png",
+          model_name: "Lexus TX",
+          engine_options: "2.4L Turbo I4, 3.5L V6, 3.5L Hybrid",
+        },
+        {
+          model: "/lexus/lexus-lm.png",
+          model_name: "Lexus LM",
+          engine_options: "3.5L V6, 2.5L Hybrid",
+        },
+        {
+          model: "/lexus/lexus-rc-f.png",
+          model_name: "Lexus RC F",
+          engine_options: "5.0L V8",
+        },
+        {
+          model: "/lexus/lexus-is-f.png",
+          model_name: "Lexus IS F",
+          engine_options: "5.0L V8",
+        },
+      ],
+      engine_codes: [
+        {
+          engineCode: "2JZ-GTE",
+          engineSize: 3.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 276,
+          torque: 451,
+          productionYears: "1991 – 2002",
+        },
+        {
+          engineCode: "1UR-FE",
+          engineSize: 4.6,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 386,
+          torque: 500,
+          productionYears: "2006 – 2020",
+        },
+        {
+          engineCode: "2GR-FKS",
+          engineSize: 3.5,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 295,
+          torque: 362,
+          productionYears: "2015 – present",
+        },
+        {
+          engineCode: "8AR-FTS",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 235,
+          torque: 350,
+          productionYears: "2015 – present",
+        },
+        {
+          engineCode: "2UR-GSE",
+          engineSize: 5.0,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 471,
+          torque: 540,
+          productionYears: "2008 – present",
+        },
+        {
+          engineCode: "1LR-GUE",
+          engineSize: 4.8,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 552,
+          torque: 480,
+          productionYears: "2010 – 2012",
+        },
+        {
+          engineCode: "3MZ-FE",
+          engineSize: 3.3,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 230,
+          torque: 325,
+          productionYears: "2003 – 2010",
+        },
+        {
+          engineCode: "2AZ-FXE",
+          engineSize: 2.4,
+          fuelType: "Hybrid",
+          turbo: false,
+          horsepower: 147,
+          torque: 187,
+          productionYears: "2004 – 2015",
+        },
+        {
+          engineCode: "2GR-FXE",
+          engineSize: 3.5,
+          fuelType: "Hybrid",
+          turbo: false,
+          horsepower: 295,
+          torque: 352,
+          productionYears: "2007 – present",
+        },
+        {
+          engineCode: "1NZ-FXE",
+          engineSize: 1.5,
+          fuelType: "Hybrid",
+          turbo: false,
+          horsepower: 76,
+          torque: 111,
+          productionYears: "1997 – present",
+        },
+        {
+          engineCode: "2AR-FXE",
+          engineSize: 2.5,
+          fuelType: "Hybrid",
+          turbo: false,
+          horsepower: 200,
+          torque: 221,
+          productionYears: "2012 – present",
+        },
+        {
+          engineCode: "3UR-FE",
+          engineSize: 5.7,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 381,
+          torque: 543,
+          productionYears: "2007 – present",
+        },
+        {
+          engineCode: "1VD-FTV",
+          engineSize: 4.5,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 268,
+          torque: 650,
+          productionYears: "2007 – present",
+        },
+        {
+          engineCode: "1GD-FTV",
+          engineSize: 2.8,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 174,
+          torque: 450,
+          productionYears: "2015 – present",
+        },
+        {
+          engineCode: "2ZR-FXE",
+          engineSize: 1.8,
+          fuelType: "Hybrid",
+          turbo: false,
+          horsepower: 134,
+          torque: 142,
+          productionYears: "2009 – present",
+        },
+        {
+          engineCode: "2UR-FSE",
+          engineSize: 5.0,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 416,
+          torque: 530,
+          productionYears: "2007 – present",
+        },
+        {
+          engineCode: "8GR-FXS",
+          engineSize: 3.5,
+          fuelType: "Hybrid",
+          turbo: false,
+          horsepower: 354,
+          torque: 500,
+          productionYears: "2017 – present",
+        },
+        {
+          engineCode: "1MZ-FE",
+          engineSize: 3.0,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 210,
+          torque: 298,
+          productionYears: "1993 – 2007",
+        },
+        {
+          engineCode: "2GR-FE",
+          engineSize: 3.5,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 268,
+          torque: 336,
+          productionYears: "2004 – present",
+        },
+        {
+          engineCode: "1GZ-FE",
+          engineSize: 5.0,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 276,
+          torque: 481,
+          productionYears: "1997 – 2017",
+        },
+      ],
+      models_engines: [
+        {
+          engineCode: "2JZ-GTE",
+          compatibleModels: ["Lexus GS 300", "Lexus IS 300", "Lexus SC 300"],
+        },
+        {
+          engineCode: "1UR-FE",
+          compatibleModels: ["Lexus LS 460", "Lexus GX 460", "Lexus LX 570"],
+        },
+        {
+          engineCode: "2GR-FKS",
+          compatibleModels: ["Lexus RX 350", "Lexus ES 350", "Lexus IS 350"],
+        },
+        {
+          engineCode: "8AR-FTS",
+          compatibleModels: ["Lexus NX 200t", "Lexus RX 200t", "Lexus IS 200t"],
+        },
+        {
+          engineCode: "2UR-GSE",
+          compatibleModels: ["Lexus RC F", "Lexus GS F", "Lexus LC 500"],
+        },
+        {
+          engineCode: "1LR-GUE",
+          compatibleModels: ["Lexus LFA"],
+        },
+        {
+          engineCode: "3MZ-FE",
+          compatibleModels: ["Lexus RX 330", "Lexus ES 330"],
+        },
+        {
+          engineCode: "2AZ-FXE",
+          compatibleModels: ["Lexus HS 250h", "Lexus RX 400h"],
+        },
+        {
+          engineCode: "2GR-FXE",
+          compatibleModels: ["Lexus RX 450h", "Lexus GS 450h", "Lexus LS 600h"],
+        },
+        {
+          engineCode: "1NZ-FXE",
+          compatibleModels: ["Lexus CT 200h"],
+        },
+        {
+          engineCode: "2AR-FXE",
+          compatibleModels: ["Lexus ES 300h", "Lexus NX 300h"],
+        },
+        {
+          engineCode: "3UR-FE",
+          compatibleModels: ["Lexus LX 570", "Lexus GX 460"],
+        },
+        {
+          engineCode: "1VD-FTV",
+          compatibleModels: ["Lexus LX 450d"],
+        },
+        {
+          engineCode: "1GD-FTV",
+          compatibleModels: ["Lexus GX 300d"],
+        },
+        {
+          engineCode: "2ZR-FXE",
+          compatibleModels: ["Lexus CT 200h", "Lexus UX 250h"],
+        },
+        {
+          engineCode: "2UR-FSE",
+          compatibleModels: ["Lexus LS 500", "Lexus LC 500"],
+        },
+        {
+          engineCode: "8GR-FXS",
+          compatibleModels: ["Lexus LS 500h", "Lexus LC 500h"],
+        },
+        {
+          engineCode: "1MZ-FE",
+          compatibleModels: ["Lexus ES 300", "Lexus RX 300"],
+        },
+        {
+          engineCode: "2GR-FE",
+          compatibleModels: ["Lexus RX 350", "Lexus ES 350", "Lexus IS 350"],
+        },
+        {
+          engineCode: "1GZ-FE",
+          compatibleModels: ["Lexus LS 600h"],
+        },
+      ],
+      replacement_costs: [
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus IS 300, GS 300",
+          engineType: "2JZ-GTE",
+          estimatedCost: "£3,000 - £5,000",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus LS 460, GX 460",
+          engineType: "1UR-FE",
+          estimatedCost: "£4,000 - £6,000",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus RX 350, ES 350",
+          engineType: "2GR-FKS",
+          estimatedCost: "£3,500 - £5,500",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus NX 200t, IS 200t",
+          engineType: "8AR-FTS",
+          estimatedCost: "£2,500 - £4,500",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus RC F, GS F",
+          engineType: "2UR-GSE",
+          estimatedCost: "£5,000 - £7,000",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus LFA",
+          engineType: "1LR-GUE",
+          estimatedCost: "£8,000 - £12,000",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus RX 330, ES 330",
+          engineType: "3MZ-FE",
+          estimatedCost: "£2,000 - £4,000",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus HS 250h, RX 400h",
+          engineType: "2AZ-FXE",
+          estimatedCost: "£2,500 - £4,500",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus RX 450h, GS 450h",
+          engineType: "2GR-FXE",
+          estimatedCost: "£3,500 - £5,500",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus CT 200h",
+          engineType: "1NZ-FXE",
+          estimatedCost: "£1,500 - £3,000",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus ES 300h, NX 300h",
+          engineType: "2AR-FXE",
+          estimatedCost: "£2,500 - £4,500",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus LX 570",
+          engineType: "3UR-FE",
+          estimatedCost: "£4,500 - £6,500",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus GX 460",
+          engineType: "1VD-FTV",
+          estimatedCost: "£5,000 - £7,000",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus GX 460",
+          engineType: "1GD-FTV",
+          estimatedCost: "£3,000 - £5,000",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus CT 200h",
+          engineType: "2ZR-FXE",
+          estimatedCost: "£2,000 - £4,000",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus LS 600h",
+          engineType: "2UR-FSE",
+          estimatedCost: "£5,000 - £7,000",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus LS 500h",
+          engineType: "8GR-FXS",
+          estimatedCost: "£4,500 - £6,500",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus RX 300, ES 300",
+          engineType: "1MZ-FE",
+          estimatedCost: "£2,500 - £4,500",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus RX 350, ES 350",
+          engineType: "2GR-FE",
+          estimatedCost: "£3,000 - £5,000",
+        },
+        {
+          image: "/lexus/lexus-generic.png",
+          model: "Lexus LS 600h",
+          engineType: "1GZ-FE",
+          estimatedCost: "£6,000 - £8,000",
+        },
+      ],
+    },
+    section7: [
+      {
+        title: "New Lexus Engines",
+        icon: <Sparkles className="h-6 w-6" />,
+        badge: "Premium",
+        badgeVariant: "default" as const,
+        pros: [
+          "100% reliability with a factory warranty",
+          "Best performance & longevity",
+        ],
+        cons: [
+          "Higher cost",
+          "Limited availability for older models",
+        ],
+      },
+      {
+        title: "Used Lexus Engines",
+        icon: <DollarSign className="h-6 w-6" />,
+        badge: "Budget-Friendly",
+        badgeVariant: "secondary" as const,
+        pros: [
+          "Cost-effective & widely available",
+          "Good for quick replacements",
+        ],
+        cons: [
+          "Potential hidden wear and tear",
+          "Shorter lifespan than new or reconditioned engines",
+        ],
+      },
+      {
+        title: "Reconditioned Lexus Engines",
+        icon: <Wrench className="h-6 w-6" />,
+        badge: "Best Value",
+        badgeVariant: "outline" as const,
+        pros: [
+          "Professionally rebuilt with new components",
+          "More reliable than used engines",
+          "Balanced cost vs. performance",
+        ],
+        cons: [
+          "Slightly more expensive than used engines",
+        ],
+      },
+    ],
+    section8: {
+      EngineProblems: [
+        {
+          id: "check-engine-light-issues",
+          title: "Check Engine Light Issues",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          severity: "Common",
+          data: [
+            {
+              heading: "Common Causes",
+              paragraph:
+                "The check engine light can indicate a range of issues, from minor problems like a loose gas cap to more serious engine faults. Common triggers include faulty oxygen sensors, catalytic converter inefficiency, ignition misfires, or issues with fuel and emissions systems.",
+            },
+            {
+              heading: "Effective Solutions",
+              paragraph:
+                "Use an OBD-II scanner to retrieve diagnostic trouble codes (DTCs) and pinpoint the exact issue. Address problems such as replacing defective sensors, repairing vacuum leaks, or resolving misfires by inspecting spark plugs, coils, and fuel injectors.",
+            },
+            {
+              heading: "Prevention Tips",
+              paragraph:
+                "Stick to regular maintenance schedules, ensure all engine sensors are functioning properly, and always tighten the fuel cap securely after refueling. Timely oil changes and air filter replacements also help prevent sensor-related warnings.",
+            },
+          ],
+        },
+        {
+          id: "power-loss-and-turbo-failures",
+          title: "Power Loss & Turbo Failures",
+          icon: <Gauge className="h-5 w-5" />,
+          severity: "Critical",
+          data: [
+            {
+              heading: "Identifying Root Causes",
+              paragraph:
+                "Power loss in Lexus engines—especially turbocharged models—can stem from turbocharger failure, clogged air filters, fuel system blockages, or intake restrictions. These issues reduce airflow and engine efficiency, leading to sluggish performance.",
+            },
+            {
+              heading: "Repair Solutions",
+              paragraph:
+                "Inspect the turbocharger for oil leaks, shaft play, or compressor damage. Replace clogged air filters, clean the intake system, and check fuel pressure and injectors. If the turbo is faulty, consider repair or replacement with a high-quality unit.",
+            },
+            {
+              heading: "Preventive Measures",
+              paragraph:
+                "Service the turbo system regularly, replace air and fuel filters on schedule, use high-octane fuel where recommended, and allow the engine to idle for 30 seconds before shutdown to cool the turbo and prevent oil coking.",
+            },
+          ],
+        },
+        {
+          id: "excessive-smoke-and-oil-leaks",
+          title: "Excessive Smoke & Oil Leaks",
+          icon: <Smoke className="h-5 w-5" />,
+          severity: "Moderate",
+          data: [
+            {
+              heading: "Understanding the Causes",
+              paragraph:
+                "Blue or grey exhaust smoke typically indicates oil burning due to worn valve stem seals, PCV valve failure, or turbocharger oil leaks. Visible oil leaks are often caused by degraded gaskets, such as valve cover or front timing cover seals.",
+            },
+            {
+              heading: "Troubleshooting Steps",
+              paragraph:
+                "Inspect the PCV system, turbocharger, and valve cover gaskets for leaks. Perform a compression or leak-down test to assess internal engine wear. Replace damaged seals and components to stop leaks and reduce oil consumption.",
+            },
+            {
+              heading: "Maintenance for Prevention",
+              paragraph:
+                "Use high-quality synthetic oil, replace gaskets with OEM-spec parts during service, and inspect the engine bay regularly for signs of oil seepage. Keeping the PCV system clean and functional helps prevent pressure buildup and oil leaks.",
+            },
+          ],
+        },
+      ],
+      maintenanceTips: [
+        {
+          icon: "Lightbulb",
+          iconColor: "text-blue-600",
+          border: "border-blue-200",
+          bg: "bg-blue-50",
+          title: "Regular Inspections",
+          titleColor: "text-blue-800",
+          text: "Check your Lexus engine monthly for oil levels, coolant leaks, and warning lights to catch issues early and maintain peak performance",
+          textColor: "text-blue-700",
+        },
+        {
+          icon: "CheckCircle",
+          iconColor: "text-green-600",
+          border: "border-green-200",
+          bg: "bg-green-50",
+          title: "Preventive Maintenance",
+          titleColor: "text-green-800",
+          text: "Follow Lexus-recommended service intervals to maximize engine longevity and ensure smooth, reliable operation",
+          textColor: "text-green-700",
+        },
+        {
+          icon: "AlertTriangle",
+          iconColor: "text-orange-600",
+          border: "border-orange-200",
+          bg: "bg-orange-50",
+          title: "Act Quickly",
+          titleColor: "text-orange-800",
+          text: "Address warning lights and unusual engine noises immediately to avoid costly repairs and engine damage",
+          textColor: "text-orange-700",
+        },
+      ],
+      summary: {
+        variant: "green",
+        title: "Key Takeaway",
+        content:
+          "By following these troubleshooting tips and maintaining regular engine checks, you can help prevent common Lexus engine faults and extend its lifespan. Proactive maintenance, accurate diagnostics, and prompt attention to early warning signs are essential to preserving the reliability and performance Lexus is known for. At EnginesMarket.co.uk, we offer the best Lexus engine prices and provide high-quality replacement engines—new, used, or reconditioned—so you can keep your vehicle running smoothly for years to come, whether on city streets or long-distance drives.",
+      },
+    },
+    section9: {
+      performanceUpgrades: [
+        {
+          id: "basic-enhancements",
+          title: "Basic Enhancement Options",
+          icon: <Zap className="h-5 w-5" />,
+          level: "Beginner",
+          upgrades: [
+            {
+              name: "ECU Remapping (Stage 1 Tuning)",
+              icon: <Cog className="h-4 w-4" />,
+              description:
+                "ECU remapping involves adjusting the engine control unit (ECU) settings to optimize fuel delivery, ignition timing, and turbo boost pressure. This software-based tuning is a popular and effective way to enhance performance in Lexus engines, particularly turbocharged models like the 8AR-FTS and hybrid variants.",
+              benefits:
+                "Gains of 15–30% in horsepower and torque, improved throttle response, and smoother power delivery—ideal for daily driving and spirited performance in models like the IS, NX, and RX.",
+              considerations:
+                "Should be performed by an experienced tuner using Lexus-specific software. Poorly tuned maps can lead to increased oil consumption, knock detection issues, or long-term reliability concerns.",
+            },
+            {
+              name: "Cold Air Intake Systems",
+              icon: <Wind className="h-4 w-4" />,
+              description:
+                "Replacing the stock air intake with a high-flow cold air intake allows cooler, denser air into the engine, improving combustion efficiency and increasing power—especially effective on naturally aspirated V6 and turbocharged 4-cylinder engines.",
+              benefits:
+                "Enhanced engine breathing, better low-end torque, and a more aggressive induction sound—ideal for drivers seeking a sportier driving experience in the ES, IS, or RC models.",
+              considerations:
+                "Ensure proper sealing and water protection to prevent hydro-lock. Use high-quality filters to avoid debris entering the engine, which could damage sensitive components.",
+            },
+            {
+              name: "Performance Exhaust Systems",
+              icon: <Volume2 className="h-4 w-4" />,
+              description:
+                "Upgrading to a cat-back or axle-back performance exhaust system reduces backpressure, improves exhaust flow, and enhances engine efficiency—commonly used on V8 models like the GS F, RC F, and LS.",
+              benefits:
+                "Improved power output, deeper and more aggressive exhaust note, and reduced engine heat—great for enhancing both performance and auditory appeal.",
+              considerations:
+                "May affect emissions compliance and void factory warranty. Pair with ECU tuning to avoid check engine lights and ensure optimal performance gains.",
+            },
+            {
+              name: "High-Performance Intercooler",
+              icon: <Snowflake className="h-4 w-4" />,
+              description:
+                "Installing an upgraded intercooler on turbocharged Lexus models (e.g., NX 250t, IS 200t) reduces intake air temperatures, increases air density, and prevents power loss during sustained driving or spirited use.",
+              benefits:
+                "Better power consistency, reduced turbo lag, and increased tuning headroom—ideal for modified or frequently driven performance-oriented models.",
+              considerations:
+                "Ensure proper fitment and airflow design to avoid heat soak or installation issues. Use with ECU tuning for maximum benefit.",
+            },
+          ],
+        },
+        {
+          id: "tuning-stages",
+          title: "Tuning Upgrade: Stage 1-3",
+          icon: <TrendingUp className="h-5 w-5" />,
+          level: "Progressive",
+          stages: [
+            {
+              stage: "Stage 1 Tuning",
+              description:
+                "Software-only ECU remap with no hardware changes. Often combined with performance air filters and exhaust modifications for mild but noticeable gains.",
+              benefits:
+                "Safe 10–25% power increase, improved throttle response, and enhanced driving dynamics—ideal for stock or lightly modified Lexus models like the NX, RX, and IS.",
+              considerations:
+                "Maintains factory reliability when done correctly; best performed by tuners experienced with Toyota/Lexus D-4S and ETCS systems.",
+            },
+            {
+              stage: "Stage 2 Tuning",
+              description:
+                "Combines ECU tuning with hardware upgrades such as upgraded turbos, high-flow fuel injectors, performance intakes, and upgraded intercoolers.",
+              benefits:
+                "30–70 horsepower gains, faster turbo spool, and significantly improved acceleration—perfect for enthusiasts pushing their IS, NX, or RC beyond stock limits.",
+              considerations:
+                "Requires supporting modifications and more frequent maintenance; may impact fuel economy and long-term reliability if not properly managed.",
+            },
+            {
+              stage: "Stage 3 Tuning",
+              description:
+                "Full performance build with aggressive cam profiles, forged internals, high-boost turbos, and race-grade ECU calibration—designed for maximum power output.",
+              benefits: "80%+ power gains, ideal for track-focused builds or high-performance Lexus variants like the RC F or GS F.",
+              considerations:
+                "Significantly impacts engine longevity and daily drivability; requires expert installation, upgraded cooling, and reinforced drivetrain components to handle the stress.",
+            },
+          ],
+        },
+        {
+          id: "turbo-upgrades",
+          title: "Turbo Upgrades",
+          icon: <Gauge className="h-5 w-5" />,
+          level: "Advanced",
+          content: {
+            description:
+              "Upgrading the turbocharger is one of the most effective ways to boost performance in turbocharged Lexus engines like the 8AR-FTS. Forced induction upgrades increase airflow, boost pressure, and overall engine output significantly.",
+            points: [
+              {
+                title: "Hybrid Turbo Upgrades",
+                description:
+                  "Combines factory housings with upgraded internals to improve efficiency and flow. For example, hybrid turbos for the 8AR-FTS can deliver up to 161% more power over stock—ideal for high-performance NX and IS models.",
+              },
+              {
+                title: "Larger Turbochargers",
+                description:
+                  "Installing a larger turbo increases airflow and boost capacity, resulting in higher horsepower and torque—common in modified performance builds.",
+              },
+              {
+                title: "Twin-Turbo Systems",
+                description:
+                  "Adding a second turbocharger (e.g., on inline-6 engines) improves power delivery, reduces lag, and maximizes top-end performance—popular in custom GS and LS engine swaps.",
+              },
+            ],
+          },
+        },
+        {
+          id: "engine-internals",
+          title: "Engine Internals Reinforcements",
+          icon: <Cog className="h-5 w-5" />,
+          level: "Expert",
+          content: {
+            description:
+              "To handle extreme power levels from aggressive tuning and turbo upgrades, reinforcing engine internals is essential for durability and reliability in high-performance Lexus builds.",
+            points: [
+              {
+                title: "Forged Pistons and Rods",
+                description:
+                  "Stronger than stock cast components, forged internals withstand higher cylinder pressures and temperatures—critical for high-boost turbo builds on the 8AR-FTS or modified 2JZ engines.",
+              },
+              {
+                title: "Performance Camshafts",
+                description:
+                  "Optimize valve timing for improved airflow and higher RPM power—ideal for naturally aspirated V8s like the 2UR-GSE in the RC F and GS F.",
+              },
+              {
+                title: "High-Flow Fuel Systems",
+                description:
+                  "Upgraded fuel pumps, rails, and injectors ensure adequate fuel delivery to support increased power—essential for turbocharged and supercharged performance engines.",
+              },
+            ],
+          },
+        },
+        {
+          id: "reliability-impact",
+          title: "Impact on Reliability & Fuel Efficiency",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          level: "Important",
+          content: {
+            description:
+              "While performance upgrades significantly enhance power and driving excitement, they also influence engine longevity and fuel economy. Understanding these trade-offs is key to a balanced and sustainable build.",
+            points: [
+              {
+                title: "Reliability",
+                description:
+                  "Increased stress from tuning and forced induction can accelerate wear on engine components. Regular maintenance, high-quality fluids, and robust cooling systems are crucial to maintaining reliability—especially under track or high-load conditions.",
+              },
+              {
+                title: "Fuel Efficiency",
+                description:
+                  "Aggressive tuning and larger turbos typically reduce fuel economy due to higher fuel demands. However, mild ECU remaps can slightly improve efficiency by optimizing combustion in normal driving conditions.",
+              },
+            ],
+          },
+        },
+      ],
+      summary: {
+        variant: "performance",
+        title: "Performance Enhancement Summary",
+        content:
+          "By carefully selecting and implementing performance upgrades, you can transform your Lexus into a high-performance machine—whether it's a refined ES, a sporty IS, or a track-ready RC F. From ECU remapping and cold air intakes to full internal builds and turbo upgrades, each modification offers greater power and driving engagement. However, increased performance requires responsible tuning, quality parts, and diligent maintenance to preserve engine life. At EnginesMarket.co.uk, we offer the best Lexus engine prices and provide high-quality replacement engines—new, used, or reconditioned—to support your performance journey while balancing reliability, efficiency, and long-term durability on the road or track.",
+      },
+    },
+    faqs: [
+      {
+        question: "What is EnginesMarket.co.uk?",
+        answer:
+          "EnginesMarket.co.uk is a price comparison website specializing in providing competitive quotes for new, used, and reconditioned Lexus engines from multiple sellers. Our platform helps you save time and money by connecting you with reliable and affordable engine options."
+      },
+      {
+        question: "How does EnginesMarket.co.uk work?",
+        answer:
+          "Simply enter your vehicle details and engine requirements on our website. We will then provide you with quotes from various trusted sellers, allowing you to compare prices and choose the best option for your needs."
+      },
+      {
+        question: "What types of Lexus engines can I find on EnginesMarket.co.uk?",
+        answer:
+          "We offer a wide range of Lexus engines, including reconditioned, used, and replacement engines. Our inventory covers various models and engine types to ensure you find the perfect match for your vehicle."
+      },
+      {
+        question: "Are the engines on EnginesMarket.co.uk reliable?",
+        answer:
+          "Yes, all engines listed on EnginesMarket.co.uk come from reputable sellers who adhere to strict quality standards. We ensure that each engine is thoroughly inspected and tested to guarantee reliability and performance."
+      },
+      {
+        question: "How can I request a quote on EnginesMarket.co.uk?",
+        answer:
+          "To request a quote, simply fill out the form on our website with your vehicle and engine details. You will receive multiple quotes from different sellers, allowing you to compare and choose the best option."
+      },
+      {
+        question: "What are the most common problems with Lexus engines?",
+        answerList: [
+          "Oil leaks, particularly from the timing cover gasket",
+          "Sensor failures (e.g., oxygen or mass airflow sensors)",
+          "Excessive oil consumption in V8 engines like the 1UR-FE",
+          "Water pump failures leading to overheating",
+          "Timing chain tensioner issues causing engine noise or damage"
+        ]
+      },
+      {
+        question: "How often should I service my Lexus engine?",
+        answer:
+          "It is recommended to service your Lexus engine every 5,000 to 7,500 miles, depending on your driving habits and the specific model. Regular servicing helps maintain engine performance and longevity."
+      },
+      {
+        question: "What is the difference between a reconditioned and a used Lexus engine?",
+        answer:
+          "A reconditioned Lexus engine has been disassembled, cleaned, and rebuilt with new or refurbished parts to meet original specifications. A used engine, on the other hand, is taken from a vehicle and sold as-is, with minimal refurbishment."
+      },
+      {
+        question: "Can I upgrade my Lexus engine for better performance?",
+        answer:
+          "Yes, you can upgrade your Lexus engine with performance parts such as turbochargers, exhaust systems, and engine tuning. However, it is essential to consult with a professional to ensure compatibility and avoid potential issues."
+      },
+      {
+        question: "What are the benefits of choosing a hybrid Lexus engine?",
+        answer:
+          "Hybrid Lexus engines offer improved fuel efficiency, reduced emissions, and a smoother driving experience. They combine a petrol engine with an electric motor to provide optimal performance and environmental benefits."
+      },
+      {
+        question: "How do I know if my Lexus engine needs replacement?",
+        answerList: [
+          "Excessive smoke from the exhaust (blue, white, or grey)",
+          "Knocking, rattling, or grinding noises from the engine",
+          "Significant loss of power or poor acceleration",
+          "Frequent overheating despite coolant checks",
+          "Persistent oil leaks or high oil consumption"
+        ]
+      },
+      {
+        question: "What is the average lifespan of a Lexus engine?",
+        answer:
+          "With proper maintenance, a Lexus engine can last between 200,000 to 300,000 miles. Regular servicing and timely repairs are crucial to extending the engine's lifespan."
+      },
+      {
+        question: "Are Lexus engines fuel-efficient?",
+        answer:
+          "Yes, Lexus engines are known for their fuel efficiency, especially the hybrid models. Advanced engineering and technology ensure optimal fuel consumption and reduced emissions."
+      },
+      {
+        question: "Can I install a Lexus engine in a different car brand?",
+        answer:
+          "While it is possible to install a Lexus engine in a different car brand, it requires significant modifications and expertise. It is recommended to consult with a professional mechanic for such projects."
+      },
+      {
+        question: "What is the warranty on Lexus engines purchased from EnginesMarket.co.uk?",
+        answer:
+          "The warranty on Lexus engines varies depending on the seller and the engine type. Most reconditioned engines come with a warranty, while used engines may have limited or no warranty. Always check the warranty details before purchasing."
+      },
+      {
+        question: "How can I improve the performance of my Lexus engine?",
+        answer:
+          "Regular maintenance, using high-quality fuel, and upgrading parts such as air filters, exhaust systems, and ECU tuning can help improve the performance of your Lexus engine."
+      },
+      {
+        question: "What are the best Lexus models for engine performance?",
+        answer:
+          "Some of the best Lexus models for engine performance include the Lexus LC 500, Lexus RC F, and Lexus IS F, known for their powerful V8 engines and exceptional driving dynamics."
+      },
+      {
+        question: "How do I find the right Lexus engine for my car?",
+        answer:
+          "To find the right Lexus engine for your car, you need to know your vehicle's make, model, year, and engine specifications. EnginesMarket.co.uk can help you find the perfect match by providing multiple quotes from trusted sellers."
+      },
+      {
+        question: "What is the cost of replacing a Lexus engine?",
+        answer:
+          "The cost of replacing a Lexus engine varies depending on the engine type, model, and condition. On average, a replacement engine can cost between £2,000 to £5,000, including labor."
+      },
+      {
+        question: "Can I finance the purchase of a Lexus engine?",
+        answer:
+          "Some sellers on EnginesMarket.co.uk may offer financing options for purchasing a Lexus engine. It is best to inquire with the seller directly to explore available financing plans."
+      }
+    ]
+  },
+  mazda: {
+    metadata: {
+      title: "Mazda Engines for Sale - New, Used & Reconditioned | Engines Market",
+      description: "Find the best deals on Mazda engines at Engines Market. Compare prices for new, used, and reconditioned Mazda engines. Save time and money with our trusted sellers.",
+      keywords: [
+        "Mazda engines",
+        "reconditioned Mazda engines",
+        "used Mazda engines",
+        "replacement Mazda engines",
+        "best Mazda engine prices",
+        "Mazda engine quotes",
+        "Mazda engine deals",
+        "buy Mazda engines",
+        "Mazda engine comparison",
+        "affordable Mazda engines"
+      ],
+    },
+    brandName: "Mazda",
+    carImages: [
+      "/banners/banner-1.webp",
+      "/banners/banner-2.webp",
+      "/banners/banner-3.webp",
+      "/banners/banner-4.webp",
+      "/banners/banner-5.webp",
+    ],
+    carModelNames: [
+      "BMW X5",
+      "Audi A6",
+      "Mercedes C-Class",
+      "Range Rover Evoque",
+      "Volkswagen Golf",
+    ],
+    section0Image: {
+      img: "/bmw/bmw.png",
+      alt: "BMW front view",
+    },
+    section1Image: {
+      img: "/engine-guide-banners/engine-guide.png",
+      alt: "BMW rear view",
+    },
+    section4: {
+      mainParagraph:
+        "Mazda engines are known for their reliability and performance, but like any mechanical system, they can experience issues over time. Whether you drive a Mazda3, CX-5, CX-9, or the iconic RX-8, understanding common engine problems—and how to address them—can help maintain smooth operation and extend engine life. Below are the most frequently encountered Mazda engine issues, along with solutions and preventive measures:",
+      EngineProblems: [
+        {
+          title: "Variable Valve Timing (VVT) Issues",
+          icon: <Zap className="h-5 w-5" />,
+          problem:
+            "Found primarily in L-series engines, faulty VVT systems can lead to loose timing chains, oil leaks, and in severe cases, catastrophic engine failure due to improper valve timing and sludge buildup.",
+          solution:
+            "Replace the timing chain, tensioners, and VVT solenoids as needed. Perform a thorough engine flush if sludge is present and ensure all oil passages are clear.",
+          prevention:
+            "Use high-quality full synthetic oil and adhere strictly to Mazda's recommended oil change intervals (every 5,000–7,500 miles) to prevent sludge formation and maintain optimal VVT performance.",
+          severity: "Critical",
+        },
+        {
+          title: "Brake Booster Failure",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          problem:
+            "A known issue in the Mazda CX-9, where the brake booster diaphragm can deteriorate over time, especially in hot climates, leading to a hard brake pedal and reduced braking power.",
+          solution:
+            "Replace the brake booster with an updated, more durable version designed to resolve the material defect. Ensure vacuum lines are also inspected during replacement.",
+          prevention:
+            "Regularly inspect the brake system, especially in high-temperature environments. Address any changes in brake pedal feel immediately to prevent safety risks.",
+          severity: "Critical",
+        },
+        {
+          title: "Clutch System Failures",
+          icon: <Wrench className="h-5 w-5" />,
+          problem:
+            "The 2010 Mazda3 is prone to premature clutch failure due to faulty clutch release levers, pins, and bearings, resulting in slipping, grinding, and loss of drive.",
+          solution:
+            "Replace the entire clutch assembly with redesigned components that address the known design flaws. Use OEM or upgraded aftermarket parts for improved durability.",
+          prevention:
+            "Avoid aggressive clutch usage and ensure the clutch system is inspected during routine servicing. Address any unusual noises or engagement issues promptly.",
+          severity: "Moderate",
+        },
+        {
+          title: "Carbon Buildup in SkyActiv Engines",
+          icon: <Cloud className="h-5 w-5" />,
+          problem:
+            "The direct-injection SkyActiv-G 2.0L and 2.5L engines are susceptible to carbon buildup on intake valves and ports, leading to reduced airflow, poor combustion, and rough idling.",
+          solution:
+            "Perform professional intake valve cleaning (e.g., walnut blasting) and use high-quality fuel system cleaners regularly. In severe cases, disassembly may be required.",
+          prevention:
+            "Use Top Tier detergent gasoline, follow maintenance schedules for intake cleaning, and consider periodic long highway drives to help reduce deposit accumulation.",
+          severity: "Common",
+        },
+        {
+          title: "Excessive Oil Consumption",
+          icon: <Droplet className="h-5 w-5" />,
+          problem:
+            "Some Mazda engines, particularly older SkyActiv-G variants, may exhibit high oil consumption due to worn piston rings or valve seals, risking engine damage if oil levels drop too low.",
+          solution:
+            "Monitor oil levels closely and top up as needed. If consumption persists, inspect for internal wear and consider replacing piston rings or valve stem seals.",
+          prevention:
+            "Use the recommended 0W-20 or 5W-30 synthetic oil, avoid extended oil change intervals, and address any signs of oil burning (blue exhaust smoke) early.",
+          severity: "Moderate",
+        },
+      ],
+      engineReliabilityAndPerformance: [
+        {
+          reliability: [
+            {
+              heading: "Best Engines for Reliability",
+              paragraph:
+                "The SkyActiv-G 2.0L engine is widely praised for its durability, fuel efficiency, and low maintenance needs, making it a top choice for long-term ownership. The SkyActiv-D 2.2L diesel engine also stands out for its robustness, excellent fuel economy, and strong low-end torque, ideal for high-mileage drivers.",
+            },
+            {
+              heading: "Maintenance Tips for Longevity",
+              paragraph:
+                "To maximize engine life, stick to regular oil changes with high-quality synthetic oil, clean the intake system periodically, inspect timing components, and address warning lights promptly. Using genuine Mazda parts and following the factory service schedule ensures optimal reliability.",
+            },
+          ],
+          performance: [
+            {
+              heading: "Best Engines for Performance",
+              paragraph:
+                "The turbocharged SkyActiv-G 2.5L engine delivers strong performance with up to 250+ horsepower, powering models like the Mazda CX-9 and Mazda6 with confidence. The legendary 1.3L rotary 13B-MSP engine in the RX-8 offers high-revving excitement and a unique driving experience, beloved by enthusiasts for its smooth power delivery and compact design.",
+            },
+            {
+              heading: "Performance Maintenance Tips",
+              paragraph:
+                "For performance-oriented Mazda engines, ensure the turbocharger and intercooler are in good condition, use premium fuel, and monitor boost levels. Rotary engines require meticulous care—regular oil top-ups, warm-up routines, and avoidance of prolonged idling are essential for longevity.",
+            },
+          ],
+        },
+      ],
+      conclusion:
+        "By understanding these common Mazda engine issues and their solutions, you can ensure your vehicle remains reliable, efficient, and enjoyable to drive for years to come. Proactive maintenance, using high-quality fluids and parts, and addressing problems early are key to preserving both performance and resale value. Whether you're driving a fuel-sipping Mazda3 or a spirited RX-8, proper care will keep your Mazda engine running smoothly—delivering the precision, balance, and driving pleasure the brand is known for.",
+    },
+    engineData: {
+      models: [
+        {
+          model: "/mazda/mazda3.png",
+          model_name: "Mazda3",
+          engine_options: "2.0L Petrol, 2.5L Petrol, 2.2L Diesel",
+        },
+        {
+          model: "/mazda/mazda6.png",
+          model_name: "Mazda6",
+          engine_options: "2.0L Petrol, 2.5L Petrol, 2.2L Diesel",
+        },
+        {
+          model: "/mazda/mazda-cx-3.png",
+          model_name: "Mazda CX-3",
+          engine_options: "2.0L Petrol, 1.8L Diesel",
+        },
+        {
+          model: "/mazda/mazda-cx-30.png",
+          model_name: "Mazda CX-30",
+          engine_options: "2.0L Petrol, 2.5L Petrol, 2.0L Hybrid",
+        },
+        {
+          model: "/mazda/mazda-cx-5.png",
+          model_name: "Mazda CX-5",
+          engine_options: "2.0L Petrol, 2.5L Petrol, 2.2L Diesel",
+        },
+        {
+          model: "/mazda/mazda-cx-50.png",
+          model_name: "Mazda CX-50",
+          engine_options: "2.5L Petrol, 2.5L Turbo Petrol",
+        },
+        {
+          model: "/mazda/mazda-cx-60.png",
+          model_name: "Mazda CX-60",
+          engine_options: "2.5L Petrol, 3.0L Diesel, 2.5L Hybrid",
+        },
+        {
+          model: "/mazda/mazda-cx-70.png",
+          model_name: "Mazda CX-70",
+          engine_options: "2.5L Petrol, 3.0L Diesel, 2.5L Hybrid",
+        },
+        {
+          model: "/mazda/mazda-cx-90.png",
+          model_name: "Mazda CX-90",
+          engine_options: "3.3L Petrol, 3.3L Diesel, 2.5L Hybrid",
+        },
+        {
+          model: "/mazda/mazda-mx-5.png",
+          model_name: "Mazda MX-5 Miata",
+          engine_options: "1.5L Petrol, 2.0L Petrol",
+        },
+        {
+          model: "/mazda/mazda-mx-30.png",
+          model_name: "Mazda MX-30",
+          engine_options: "Electric",
+        },
+        {
+          model: "/mazda/mazda-rx-8.png",
+          model_name: "Mazda RX-8",
+          engine_options: "1.3L Rotary",
+        },
+        {
+          model: "/mazda/mazda-bt-50.png",
+          model_name: "Mazda BT-50",
+          engine_options: "3.0L Diesel, 3.2L Diesel",
+        },
+        {
+          model: "/mazda/mazda2.png",
+          model_name: "Mazda2",
+          engine_options: "1.5L Petrol, 1.5L Diesel",
+        },
+        {
+          model: "/mazda/mazda5.png",
+          model_name: "Mazda5",
+          engine_options: "2.0L Petrol, 2.5L Petrol",
+        },
+        {
+          model: "/mazda/mazda-cx-7.png",
+          model_name: "Mazda CX-7",
+          engine_options: "2.3L Turbo Petrol, 2.5L Petrol",
+        },
+        {
+          model: "/mazda/mazda-cx-9.png",
+          model_name: "Mazda CX-9",
+          engine_options: "2.5L Turbo Petrol",
+        },
+        {
+          model: "/mazda/mazda-tribute.png",
+          model_name: "Mazda Tribute",
+          engine_options: "2.0L Petrol, 3.0L V6 Petrol",
+        },
+        {
+          model: "/mazda/mazda-bongo.png",
+          model_name: "Mazda Bongo",
+          engine_options: "1.8L Petrol, 2.0L Diesel",
+        },
+      ],
+      engine_codes: [
+        {
+          engineCode: "BP6J",
+          engineSize: 1.6,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 105,
+          torque: 145,
+          productionYears: "1998 – 2004",
+        },
+        {
+          engineCode: "PEX6",
+          engineSize: 2.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 150,
+          torque: 380,
+          productionYears: "2012 – 2018",
+        },
+        {
+          engineCode: "SH-VPTS",
+          engineSize: 2.2,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 175,
+          torque: 420,
+          productionYears: "2012 – present",
+        },
+        {
+          engineCode: "LF-VE",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 147,
+          torque: 183,
+          productionYears: "2003 – 2013",
+        },
+        {
+          engineCode: "L3-VDT",
+          engineSize: 2.3,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 263,
+          torque: 380,
+          productionYears: "2006 – 2012",
+        },
+        {
+          engineCode: "PY-VPS",
+          engineSize: 2.5,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 184,
+          torque: 250,
+          productionYears: "2012 – present",
+        },
+        {
+          engineCode: "PY-RPS",
+          engineSize: 2.5,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 250,
+          torque: 420,
+          productionYears: "2016 – present",
+        },
+        {
+          engineCode: "PE-VPS",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 155,
+          torque: 200,
+          productionYears: "2012 – present",
+        },
+        {
+          engineCode: "13B-MSP",
+          engineSize: 1.3,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 232,
+          torque: 211,
+          productionYears: "2003 – 2012",
+        },
+        {
+          engineCode: "RF-T",
+          engineSize: 2.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 110,
+          torque: 250,
+          productionYears: "1998 – 2002",
+        },
+        {
+          engineCode: "ZJ-VE",
+          engineSize: 1.3,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 91,
+          torque: 123,
+          productionYears: "2003 – 2014",
+        },
+        {
+          engineCode: "Z6-VE",
+          engineSize: 1.6,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 105,
+          torque: 145,
+          productionYears: "2003 – 2014",
+        },
+        {
+          engineCode: "MZR-CD",
+          engineSize: 2.2,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 185,
+          torque: 400,
+          productionYears: "2009 – 2015",
+        },
+        {
+          engineCode: "SkyActiv-X",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 178,
+          torque: 224,
+          productionYears: "2019 – present",
+        },
+        {
+          engineCode: "SkyActiv-G",
+          engineSize: 2.5,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 187,
+          torque: 252,
+          productionYears: "2012 – present",
+        },
+        {
+          engineCode: "SkyActiv-D",
+          engineSize: 1.8,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 116,
+          torque: 270,
+          productionYears: "2018 – present",
+        },
+        {
+          engineCode: "SkyActiv-D",
+          engineSize: 2.2,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 173,
+          torque: 420,
+          productionYears: "2012 – present",
+        },
+        {
+          engineCode: "SkyActiv-G",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 155,
+          torque: 200,
+          productionYears: "2012 – present",
+        },
+        {
+          engineCode: "SkyActiv-G 2.5T",
+          engineSize: 2.5,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 250,
+          torque: 420,
+          productionYears: "2016 – present",
+        },
+      ],
+      models_engines: [
+        {
+          engineCode: "BP-ZE",
+          compatibleModels: ["Mazda MX-5 Miata", "Mazda Familia", "Mazda 323"],
+        },
+        {
+          engineCode: "B6-ZE",
+          compatibleModels: ["Mazda MX-5 Miata", "Mazda Familia", "Mazda 323"],
+        },
+        {
+          engineCode: "LF-DE",
+          compatibleModels: ["Mazda3", "Mazda6", "Mazda CX-7"],
+        },
+        {
+          engineCode: "L3-VDT",
+          compatibleModels: ["Mazda3", "Mazda6", "Mazda CX-7"],
+        },
+        {
+          engineCode: "RF-T",
+          compatibleModels: ["Mazda Bongo", "Mazda E-series", "Mazda 626"],
+        },
+        {
+          engineCode: "FE-DOHC",
+          compatibleModels: ["Mazda 626", "Mazda Capella", "Mazda MX-6"],
+        },
+        {
+          engineCode: "FS-DE",
+          compatibleModels: ["Mazda 626", "Mazda MX-6", "Mazda Millenia"],
+        },
+        {
+          engineCode: "K8-DE",
+          compatibleModels: ["Mazda MX-3", "Mazda Eunos 500"],
+        },
+        {
+          engineCode: "KL-ZE",
+          compatibleModels: ["Mazda MX-6", "Mazda 626", "Mazda Millenia"],
+        },
+        {
+          engineCode: "MZR-CD",
+          compatibleModels: ["Mazda3", "Mazda6", "Mazda CX-5"],
+        },
+        {
+          engineCode: "Y4",
+          compatibleModels: ["Mazda Bongo", "Mazda E-series"],
+        },
+        {
+          engineCode: "ZJ-VE",
+          compatibleModels: ["Mazda2", "Mazda Demio"],
+        },
+        {
+          engineCode: "Z6-VE",
+          compatibleModels: ["Mazda2", "Mazda Demio"],
+        },
+        {
+          engineCode: "ZY-VE",
+          compatibleModels: ["Mazda2", "Mazda Demio"],
+        },
+        {
+          engineCode: "P5-VPS",
+          compatibleModels: ["Mazda CX-3", "Mazda2"],
+        },
+        {
+          engineCode: "PY-VPS",
+          compatibleModels: ["Mazda CX-5", "Mazda6"],
+        },
+        {
+          engineCode: "SH-VPTS",
+          compatibleModels: ["Mazda CX-5", "Mazda6"],
+        },
+        {
+          engineCode: "PE-VPS",
+          compatibleModels: ["Mazda3", "Mazda6", "Mazda CX-5"],
+        },
+        {
+          engineCode: "PY-VPR",
+          compatibleModels: ["Mazda CX-5", "Mazda6"],
+        },
+        {
+          engineCode: "R2",
+          compatibleModels: ["Mazda Bongo", "Mazda Titan"],
+        },
+      ],
+      replacement_costs: [
+        {
+          image: "/mazda/mazda-generic.png",
+          model: "Mazda3, Mazda6",
+          engineType: "1.5L Petrol",
+          estimatedCost: "£1,500 - £3,000",
+        },
+        {
+          image: "/mazda/mazda-generic.png",
+          model: "Mazda CX-3, Mazda2",
+          engineType: "2.0L Petrol",
+          estimatedCost: "£2,000 - £3,500",
+        },
+        {
+          image: "/mazda/mazda-generic.png",
+          model: "Mazda CX-5, Mazda6",
+          engineType: "2.2L Diesel",
+          estimatedCost: "£2,500 - £4,500",
+        },
+        {
+          image: "/mazda/mazda-generic.png",
+          model: "Mazda CX-9, Mazda CX-5",
+          engineType: "2.5L Petrol",
+          estimatedCost: "£3,000 - £5,000",
+        },
+        {
+          image: "/mazda/mazda-generic.png",
+          model: "Mazda MX-5 Miata",
+          engineType: "2.0L Petrol",
+          estimatedCost: "£2,000 - £4,000",
+        },
+        {
+          image: "/mazda/mazda-generic.png",
+          model: "Mazda CX-30, Mazda3",
+          engineType: "2.0L Hybrid",
+          estimatedCost: "£3,500 - £6,000",
+        },
+        {
+          image: "/mazda/mazda-generic.png",
+          model: "Mazda CX-60, Mazda CX-70",
+          engineType: "2.5L Hybrid",
+          estimatedCost: "£4,000 - £7,000",
+        },
+        {
+          image: "/mazda/mazda-generic.png",
+          model: "Mazda CX-90",
+          engineType: "3.3L Diesel",
+          estimatedCost: "£4,500 - £8,000",
+        },
+        {
+          image: "/mazda/mazda-generic.png",
+          model: "Mazda RX-8",
+          engineType: "1.3L Rotary",
+          estimatedCost: "£3,000 - £5,500",
+        },
+        {
+          image: "/mazda/mazda-generic.png",
+          model: "Mazda BT-50",
+          engineType: "3.0L Diesel",
+          estimatedCost: "£3,500 - £6,500",
+        },
+        {
+          image: "/mazda/mazda-generic.png",
+          model: "Mazda Tribute",
+          engineType: "3.0L V6 Petrol",
+          estimatedCost: "£3,000 - £5,500",
+        },
+        {
+          image: "/mazda/mazda-generic.png",
+          model: "Mazda Bongo",
+          engineType: "2.0L Diesel",
+          estimatedCost: "£2,500 - £4,500",
+        },
+        {
+          image: "/mazda/mazda-generic.png",
+          model: "Mazda CX-7",
+          engineType: "2.3L Turbo Petrol",
+          estimatedCost: "£3,500 - £6,000",
+        },
+        {
+          image: "/mazda/mazda-generic.png",
+          model: "Mazda CX-9",
+          engineType: "2.5L Turbo Petrol",
+          estimatedCost: "£4,000 - £7,000",
+        },
+        {
+          image: "/mazda/mazda-generic.png",
+          model: "Mazda MX-30",
+          engineType: "Electric",
+          estimatedCost: "£5,000 - £9,000",
+        },
+      ],
+    },
+    section7: [
+      {
+        title: "New Mazda Engines",
+        icon: <Sparkles className="h-6 w-6" />,
+        badge: "Premium",
+        badgeVariant: "default" as const,
+        pros: [
+          "100% reliability with a factory warranty",
+          "Best performance & longevity",
+        ],
+        cons: [
+          "Higher cost",
+          "Limited availability for older models",
+        ],
+      },
+      {
+        title: "Used Mazda Engines",
+        icon: <DollarSign className="h-6 w-6" />,
+        badge: "Budget-Friendly",
+        badgeVariant: "secondary" as const,
+        pros: [
+          "Cost-effective & widely available",
+          "Good for quick replacements",
+        ],
+        cons: [
+          "Potential hidden wear and tear",
+          "Shorter lifespan than new or reconditioned engines",
+        ],
+      },
+      {
+        title: "Reconditioned Mazda Engines",
+        icon: <Wrench className="h-6 w-6" />,
+        badge: "Best Value",
+        badgeVariant: "outline" as const,
+        pros: [
+          "Professionally rebuilt with new components",
+          "More reliable than used engines",
+          "Balanced cost vs. performance",
+        ],
+        cons: [
+          "Slightly more expensive than used engines",
+        ],
+      },
+    ],
+    section8: {
+      EngineProblems: [
+        {
+          id: "check-engine-light-issues",
+          title: "Check Engine Light Issues",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          severity: "Common",
+          data: [
+            {
+              heading: "Common Causes",
+              paragraph:
+                "The check engine light can indicate a range of issues, from a loose gas cap to serious engine problems. Common triggers include faulty oxygen sensors, catalytic converter issues, or ignition system malfunctions.",
+            },
+            {
+              heading: "Effective Solutions",
+              paragraph:
+                "Use an OBD-II scanner to read the error codes and identify the issue. Common fixes include tightening the gas cap, replacing faulty oxygen sensors, or addressing misfires through spark plug or coil replacements.",
+            },
+            {
+              heading: "Prevention Tips",
+              paragraph:
+                "Regularly inspect and maintain your vehicle. Address minor issues promptly and ensure proper fuel cap sealing. Follow scheduled maintenance for optimal sensor and emissions system performance.",
+            },
+          ],
+        },
+        {
+          id: "power-loss-and-turbo-failures",
+          title: "Power Loss & Turbo Failures",
+          icon: <Gauge className="h-5 w-5" />,
+          severity: "Critical",
+          data: [
+            {
+              heading: "Identifying Root Causes",
+              paragraph:
+                "Loss of power in Mazda engines can be caused by clogged fuel filters, faulty turbochargers, or worn spark plugs. Turbocharged models may experience boost leaks or compressor wheel damage.",
+            },
+            {
+              heading: "Repair Solutions",
+              paragraph:
+                "Replace clogged fuel filters, inspect and repair turbochargers, and replace spark plugs as needed. For turbo issues, check for oil leaks, shaft play, or damaged compressor components.",
+            },
+            {
+              heading: "Preventive Measures",
+              paragraph:
+                "Follow the recommended maintenance schedule for fuel system and turbocharger inspections. Use high-quality fuel and oil, and allow turbo engines to cool properly before shutdown.",
+            },
+          ],
+        },
+        {
+          id: "excessive-smoke-and-oil-leaks",
+          title: "Excessive Smoke & Oil Leaks",
+          icon: <Smoke className="h-5 w-5" />,
+          severity: "Moderate",
+          data: [
+            {
+              heading: "Understanding the Causes",
+              paragraph:
+                "Excessive smoke from the exhaust can indicate oil leaks, worn piston rings, or valve seals. Blue smoke typically indicates oil burning, while white smoke may suggest coolant issues.",
+            },
+            {
+              heading: "Troubleshooting Steps",
+              paragraph:
+                "Identify the source of leaks and replace worn components like valve seals, piston rings, or gaskets. Perform compression tests to assess internal engine condition.",
+            },
+            {
+              heading: "Maintenance for Prevention",
+              paragraph:
+                "Regularly check oil levels and look for signs of leaks. Use high-quality oil and replace it according to manufacturer recommendations. Inspect PCV system and valve cover gaskets periodically.",
+            },
+          ],
+        },
+      ],
+      maintenanceTips: [
+        {
+          icon: "Lightbulb",
+          iconColor: "text-blue-600",
+          border: "border-blue-200",
+          bg: "bg-blue-50",
+          title: "Regular Inspections",
+          titleColor: "text-blue-800",
+          text: "Check your Mazda engine monthly for oil levels, coolant condition, and warning lights to detect potential issues early.",
+          textColor: "text-blue-700",
+        },
+        {
+          icon: "CheckCircle",
+          iconColor: "text-green-600",
+          border: "border-green-200",
+          bg: "bg-green-50",
+          title: "Preventive Maintenance",
+          titleColor: "text-green-800",
+          text: "Follow Mazda's recommended service intervals for oil changes, filter replacements, and system inspections to maintain optimal performance.",
+          textColor: "text-green-700",
+        },
+        {
+          icon: "AlertTriangle",
+          iconColor: "text-orange-600",
+          border: "border-orange-200",
+          bg: "bg-orange-50",
+          title: "Act Quickly",
+          titleColor: "text-orange-800",
+          text: "Address warning signs like unusual noises, smoke, or performance changes immediately to prevent further damage.",
+          textColor: "text-orange-700",
+        },
+      ],
+      summary: {
+        variant: "green",
+        title: "Key Takeaway",
+        content:
+          "By following these troubleshooting tips and maintaining your Mazda engine properly, you can help ensure its longevity and reliable performance. Proactive maintenance, timely diagnostics, and quality repairs are essential to prevent common engine faults. At EnginesMarket.co.uk, we offer a wide selection of Mazda engines—new, used, or reconditioned—to keep your vehicle running smoothly for years to come, whether for daily commutes or spirited driving.",
+      },
+    },
+    section9: {
+      performanceUpgrades: [
+        {
+          id: "basic-enhancements",
+          title: "Basic Enhancement Options",
+          icon: <Zap className="h-5 w-5" />,
+          level: "Beginner",
+          upgrades: [
+            {
+              name: "ECU Remapping (Stage 1 Tuning)",
+              icon: <Cog className="h-4 w-4" />,
+              description:
+                "Adjusting the engine control unit (ECU) settings to optimize performance parameters like fuel delivery, ignition timing, and boost pressure. Particularly effective for Mazda's Skyactiv-G and Skyactiv-D engines.",
+              benefits:
+                "Gains of 10-25% in horsepower and torque, improved throttle response, and better fuel efficiency in models like the Mazda3, CX-5, and MX-5.",
+              considerations:
+                "Should be performed by tuners familiar with Mazda's Skyactiv technology. Poor tuning can trigger check engine lights or affect long-term reliability.",
+            },
+            {
+              name: "Cold Air Intake Systems",
+              icon: <Wind className="h-4 w-4" />,
+              description:
+                "Replacing the stock air intake with a high-flow system that draws cooler air from outside the engine bay, improving combustion efficiency.",
+              benefits:
+                "Better throttle response, modest power gains (5-10hp), and enhanced engine sound—ideal for MX-5 and Mazda3 enthusiasts.",
+              considerations:
+                "Must maintain proper air filtration to protect Skyactiv engines' high compression ratios.",
+            },
+            {
+              name: "Performance Exhaust Systems",
+              icon: <Volume2 className="h-4 w-4" />,
+              description:
+                "Upgrading to a cat-back or axle-back system reduces backpressure and improves exhaust flow, particularly beneficial for turbocharged models like the Mazda CX-30 Turbo.",
+              benefits:
+                "3-8% power increase, weight reduction, and sportier exhaust note while maintaining emissions compliance.",
+              considerations:
+                "May require ECU adjustments to prevent check engine lights on newer Skyactiv models.",
+            },
+          ],
+        },
+        {
+          id: "tuning-stages",
+          title: "Tuning Stages: 1-3",
+          icon: <TrendingUp className="h-5 w-5" />,
+          level: "Progressive",
+          stages: [
+            {
+              stage: "Stage 1 Tuning",
+              description:
+                "Software-only modifications including ECU remapping, combined with bolt-ons like air intakes and cat-back exhausts.",
+              benefits:
+                "Safe 15-30hp gains on naturally aspirated Skyactiv-G engines, improved drivability—ideal for daily-driven Mazdas.",
+              considerations:
+                "Maintains factory reliability when properly tuned; excellent for CX-5 and Mazda6 owners.",
+            },
+            {
+              stage: "Stage 2 Tuning",
+              description:
+                "Adds performance camshafts, high-flow fuel injectors, and turbo upgrades for Mazdas like the CX-30 Turbo or Mazdaspeed models.",
+              benefits:
+                "50-100hp gains on turbo models, significantly improved acceleration and top-end power.",
+              considerations:
+                "Requires upgraded cooling and more frequent maintenance; best for weekend performance cars.",
+            },
+            {
+              stage: "Stage 3 Tuning",
+              description:
+                "Full performance builds with forged internals, large turbochargers, and standalone ECUs—popular for Mazdaspeed3 and RX-8 builds.",
+              benefits:
+                "150+hp over stock, race-ready performance suitable for track use.",
+              considerations:
+                "Dramatically impacts daily drivability and requires professional installation and tuning.",
+            },
+          ],
+        },
+        {
+          id: "turbo-upgrades",
+          title: "Turbo Upgrades",
+          icon: <Gauge className="h-5 w-5" />,
+          level: "Advanced",
+          content: {
+            description:
+              "Forced induction upgrades are particularly effective on Mazda's Skyactiv engines, offering substantial power gains when properly implemented.",
+            points: [
+              {
+                title: "Factory Turbo Upgrades",
+                description:
+                  "Upgrading the stock turbo on CX-30 Turbo or Mazdaspeed models with larger compressors or hybrid turbos can yield 30-50% power increases.",
+              },
+              {
+                title: "Turbo Kits for NA Engines",
+                description:
+                  "Aftermarket turbo kits for naturally aspirated Skyactiv-G engines can transform models like the MX-5 or Mazda3 into potent performance machines.",
+              },
+              {
+                title: "Twin-Scroll Turbo Conversions",
+                description:
+                  "Advanced turbo setups that improve low-end response and high-RPM power—ideal for track-focused Mazdas.",
+              },
+            ],
+          },
+        },
+        {
+          id: "engine-internals",
+          title: "Engine Internals Reinforcements",
+          icon: <Cog className="h-5 w-5" />,
+          level: "Expert",
+          content: {
+            description:
+              "Essential upgrades for high-power Mazda builds to handle increased stress from forced induction or high-RPM operation.",
+            points: [
+              {
+                title: "Forged Pistons and Rods",
+                description:
+                  "Crucial for turbocharged Skyactiv or Mazdaspeed engines pushing beyond 300hp to prevent catastrophic failure.",
+              },
+              {
+                title: "Performance Camshafts",
+                description:
+                  "Improve airflow in high-RPM applications, especially beneficial for naturally aspirated MX-5 and rotary engines.",
+              },
+              {
+                title: "Upgraded Fuel Systems",
+                description:
+                  "High-flow fuel pumps and injectors are mandatory for turbo builds to prevent lean conditions and engine damage.",
+              },
+            ],
+          },
+        },
+        {
+          id: "reliability-impact",
+          title: "Impact on Reliability & Fuel Efficiency",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          level: "Important",
+          content: {
+            description:
+              "Performance modifications always involve trade-offs that Mazda owners should carefully consider.",
+            points: [
+              {
+                title: "Reliability Considerations",
+                description:
+                  "Skyactiv engines are built for efficiency—aggressive tuning may reduce lifespan. Turbo builds require meticulous maintenance intervals.",
+              },
+              {
+                title: "Fuel Efficiency Changes",
+                description:
+                  "Stage 1 tuning may improve MPG in normal driving, while Stage 3 builds typically cut efficiency by 30-50% due to richer fuel maps.",
+              },
+            ],
+          },
+        },
+      ],
+      summary: {
+        variant: "performance",
+        title: "Performance Enhancement Summary",
+        content:
+          "Mazda's engineering excellence provides a fantastic foundation for performance upgrades, from simple ECU remaps on Skyactiv engines to full turbo builds on Mazdaspeed platforms. Each modification stage offers increased power and driving excitement, but requires careful consideration of supporting modifications and maintenance needs. At EnginesMarket.co.uk, we offer high-quality Mazda engines—including performance-built options—to support your tuning journey while maintaining the balance between exhilarating performance and long-term reliability that Mazda is known for.",
+      },
+    },
+    faqs: [
+      {
+        question: "What is EnginesMarket.co.uk?",
+        answer:
+          "EnginesMarket.co.uk is a price comparison website specializing in providing competitive quotes for new, used, and reconditioned Mazda engines from multiple trusted sellers. Our platform helps you find the best deals on quality Mazda engines while saving time and money."
+      },
+      {
+        question: "How can I request a quote on EnginesMarket.co.uk?",
+        answer:
+          "Simply visit our website, fill out the quote request form with your Mazda model details and engine requirements, and you'll receive competitive quotes from multiple verified sellers within our network."
+      },
+      {
+        question: "What types of Mazda engines does EnginesMarket.co.uk offer?",
+        answer:
+          "We offer a comprehensive selection of Mazda engines including reconditioned, used, and brand new replacement engines for various models from MX-5 roadsters to CX-5 SUVs, featuring both SkyActiv-G petrol and SkyActiv-D diesel options."
+      },
+      {
+        question: "How does EnginesMarket.co.uk ensure the quality of the engines?",
+        answer:
+          "We partner only with established sellers who provide fully tested engines. Each engine undergoes thorough inspection and comes with detailed condition reports. Reconditioned units are rebuilt to meet strict quality standards."
+      },
+      {
+        question: "Can I save money by using EnginesMarket.co.uk?",
+        answer:
+          "Absolutely. By comparing multiple quotes from our network of sellers, customers typically save 20-40% on engine replacements while getting quality-assured options. Our service is completely free to use."
+      },
+      {
+        question: "What are the most common issues with Mazda engines?",
+        answerList: [
+          "Variable valve timing (VVT) system defects",
+          "Brake booster failure in certain models",
+          "Clutch system failures in manual transmissions",
+          "Carbon buildup in SkyActiv direct-injection engines",
+          "Excessive oil consumption in some turbocharged models"
+        ]
+      },
+      {
+        question: "How often should I service my Mazda engine?",
+        answer:
+          "Mazda recommends servicing your engine every 12,000 miles or 12 months (whichever comes first) for optimal performance and longevity. Turbocharged models may require more frequent oil changes."
+      },
+      {
+        question: "What is the best Mazda engine for performance?",
+        answer:
+          "The SkyActiv-G 2.5L Turbo engine found in models like the Mazda3 Turbo and CX-9 delivers 250hp and 320lb-ft of torque, making it Mazda's current performance leader. For enthusiasts, the rotary 13B-MSP in RX-8s remains iconic."
+      },
+      {
+        question: "Which Mazda engine is the most reliable?",
+        answer:
+          "The naturally aspirated SkyActiv-G 2.0L engine is renowned for its durability and efficiency, regularly achieving 200,000+ miles with proper maintenance. It's found in Mazda3, CX-30, and MX-5 models."
+      },
+      {
+        question: "How can I prevent carbon buildup in my Mazda SkyActiv engine?",
+        answerList: [
+          "Use Top Tier detergent gasoline regularly",
+          "Perform intake valve cleanings every 30,000 miles",
+          "Install an oil catch can for turbo models",
+          "Avoid excessive short-trip driving",
+          "Consider periodic fuel system treatments"
+        ]
+      },
+      {
+        question: "What should I do if my Mazda's check engine light comes on?",
+        answer:
+          "First, check your fuel cap is tight. If the light persists, use an OBD-II scanner to read the codes. Common Mazda-specific issues involve oxygen sensors, VVT solenoids, or misfires. Address promptly to prevent further damage."
+      },
+      {
+        question: "How much does it cost to replace a Mazda engine?",
+        answer:
+          "Replacement costs vary from £1,500 for used MX-5 engines to £9,000 for new SkyActiv-D diesel units in CX-5s. Reconditioned engines typically offer the best value at £2,500-£4,500 including installation."
+      },
+      {
+        question: "What are the benefits of a reconditioned Mazda engine?",
+        answer:
+          "Reconditioned Mazda engines are professionally rebuilt with new components where needed, often come with 12-24 month warranties, and cost 30-50% less than new while offering similar reliability and performance."
+      },
+      {
+        question: "Can I install a Mazda engine myself?",
+        answer:
+          "While possible for experienced mechanics, we strongly recommend professional installation due to the complexity of modern SkyActiv engines and the precise calibration required for proper operation and emissions compliance."
+      },
+      {
+        question: "What is the lifespan of a Mazda engine?",
+        answer:
+          "With proper maintenance, most Mazda engines last 150,000-250,000 miles. SkyActiv engines often exceed 200,000 miles, while rotary engines typically require rebuilds around 80,000-100,000 miles."
+      },
+      {
+        question: "Are Mazda rotary engines reliable?",
+        answer:
+          "Mazda's rotary engines (like the 13B-MSP) are mechanically simple but require meticulous maintenance. Apex seals and oil consumption need regular attention. Properly maintained, they can be reliable but demand more care than piston engines."
+      },
+      {
+        question: "What fuel type is best for Mazda engines?",
+        answer:
+          "Use premium 95+ RON petrol for turbocharged SkyActiv-G engines and standard 91 RON for naturally aspirated models. SkyActiv-D engines require low-sulfur diesel. Always follow your owner's manual recommendations."
+      },
+      {
+        question: "How can I improve the fuel efficiency of my Mazda engine?",
+        answerList: [
+          "Maintain proper tire pressure",
+          "Follow the recommended service intervals",
+          "Use the correct grade of motor oil",
+          "Replace air filters regularly",
+          "Avoid excessive idling and aggressive driving"
+        ]
+      },
+      {
+        question: "What is the difference between SkyActiv-G and SkyActiv-D engines?",
+        answer:
+          "SkyActiv-G are high-compression (13:1-14:1) petrol engines optimized for efficiency and response. SkyActiv-D are ultra-clean diesel engines featuring variable-geometry turbos for strong torque while meeting strict emissions standards."
+      },
+      {
+        question: "Where can I find the engine code on my Mazda?",
+        answer:
+          "The engine code is typically stamped on the engine block near the front or on a label in the engine bay. Common Mazda codes include PE-VPS (2.0L SkyActiv-G), PY-VPTS (2.5L Turbo), and SH-VPTS (2.2L SkyActiv-D)."
       }
     ]
   },

@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import Container from "@/components/Container";
 import { Settings } from "lucide-react";
+import * as Lucide from "lucide-react";
 import Heading from "@/components/Heading";
 import Accent from "@/components/Accent";
 import Paragraph from "@/components/Paragraph";
@@ -169,7 +170,12 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand }) => {
       <div className="mt-8">
         <div className="grid gap-4 md:grid-cols-3">
           {tips.map((tip, idx) => {
-            const Icon = Settings;
+            type IconName = keyof typeof Lucide;
+            const iconName = tip.icon as IconName;
+            const Icon =
+              (Lucide[iconName] as React.ComponentType<
+                React.SVGProps<SVGSVGElement>
+              >) ?? Lucide.Settings;
             return (
               <motion.div
                 key={idx}
@@ -178,11 +184,14 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand }) => {
                 viewport={{ once: true }}
                 transition={{
                   duration: 0.8,
-                  delay: tipsDelay + idx * 0.25, // Stagger each tip by 0.25s
+                  delay: tipsDelay + idx * 0.25,
                 }}
+                className="flex flex-col h-full" // 👈 ADD THIS LINE
               >
-                <Card className={`${tip.border} ${tip.bg}`}>
-                  <CardContent className="py-8 text-center">
+                <Card
+                  className={`flex flex-col h-full ${tip.border} ${tip.bg}`}
+                >
+                  <CardContent className="py-8 text-center flex-grow">
                     <Icon className={`h-8 w-8 mx-auto mb-2 ${tip.iconColor}`} />
                     <h4 className={`font-semibold mb-1 ${tip.titleColor}`}>
                       {tip.title}

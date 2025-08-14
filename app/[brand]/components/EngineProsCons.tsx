@@ -11,15 +11,21 @@ import * as motion from "motion/react-client";
 
 const EngineProsCons = ({ brand }: { brand: string }) => {
   const { section7, brandName } = data[brand];
-  const staggerDelay = section7.length * 0.25;
+  const firstSectionItemCount = section7.length; // Adjust based on actual EngineProblems count
+  const firstSectionStaggerDelay = firstSectionItemCount * 0.05;
+
   return (
     <Container className="my-16" id="pros-cons">
       <motion.div
         className="max-w-6xl mx-auto text-center mb-12"
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
+        transition={{
+          duration: 1,
+          delay: firstSectionStaggerDelay,
+          ease: "easeOut",
+        }}
       >
         <Heading>
           Pros & Cons of New, Used &
@@ -38,10 +44,14 @@ const EngineProsCons = ({ brand }: { brand: string }) => {
         {section7.map((engineType, key) => (
           <motion.div
             key={key}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: (key + 1) * 0.25 }}
+            transition={{
+              duration: 1,
+              ease: "easeOut",
+              delay: firstSectionStaggerDelay + (key + 1) * 0.15,
+            }}
           >
             <Card className="relative overflow-hidden border-2 hover:shadow-lg transition-shadow duration-300">
               <CardHeader className="pb-4">
@@ -100,10 +110,15 @@ const EngineProsCons = ({ brand }: { brand: string }) => {
 
       {/* Bottom CTA/Info Section */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        id="summary-card"
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: staggerDelay }}
+        transition={{
+          duration: 0.8,
+          ease: "easeOut",
+          delay: 0.2, // Fixed small delay for consistent experience
+        }}
       >
         <SummaryCard
           variant="card"

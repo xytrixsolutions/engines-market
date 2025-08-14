@@ -17,7 +17,7 @@ export const MODEL_COLUMNS: Column<Model>[] = [
       <img
         src={value as string}
         alt="BMW Model"
-        className="w-32 h-24s object-contain rounded-lg"
+        className="w-64 h-48 md:w-96 md:h-72 lg:w-32 lg:h-24 object-contain rounded-lg"
         onError={(e) => {
           console.log("Image failed to load:", value);
           e.currentTarget.style.display = "none";
@@ -72,7 +72,7 @@ export const REPLACEMENT_COST_COLUMNS: Column<ReplacementCost>[] = [
       <img
         src={value as string}
         alt="BMW Model"
-        className="w-32 h-24s object-contain rounded-lg"
+        className="w-64 h-48 md:w-96 md:h-72 lg:w-32 lg:h-24 object-contain rounded-lg"
         onError={(e) => {
           console.log("Image failed to load:", value);
           e.currentTarget.style.display = "none";

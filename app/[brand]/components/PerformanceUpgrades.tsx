@@ -15,7 +15,7 @@ import Accent from "@/components/Accent";
 import GradientBorderWrapper from "@/components/GradientBorderWrapper";
 import SummaryCard from "@/components/SummaryCard";
 import { data } from "@/data/brands";
-import { FC } from "react";
+import { FC, memo } from "react";
 
 // Animation variants
 const fadeUp = {

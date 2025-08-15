@@ -1,3 +1,5 @@
+"use client";
+import { memo } from "react";
 import { TableProps } from "../types/engine";
 import {
   Table,
@@ -44,7 +46,7 @@ const EngineTable = <T extends Record<string, unknown>>({
     return "w-4xl";
   };
 
-  const tableContainerClass = `hidden lg:block bg-card rounded-2xl shadow-lg mb-5 overflow-y-hidden overflow-y-hidden ${getWidthClass()} mx-auto         className="transition-all duration-500 ease-in-out opacity-0 animate-fadeIn"`;
+  const tableContainerClass = `hidden lg:block bg-card rounded-2xl shadow-lg mb-5 overflow-y-hidden overflow-y-hidden ${getWidthClass()} mx-auto`;
 
   return (
     <>

@@ -15,6 +15,7 @@ import Paragraph from "@/components/Paragraph";
 import GradientBorderWrapper from "@/components/GradientBorderWrapper";
 import { data } from "../../../data/brands";
 import * as motion from "motion/react-client";
+import { memo } from "react";
 
 const getSeverityColor = (severity: string) => {
   switch (severity) {
@@ -37,8 +38,8 @@ const motionProps = {
 };
 
 const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
-  const { EngineProblems } = data[brand].section4;
-  const { brandName } = data[brand];
+  const EngineProblems = data[brand].section4.EngineProblems;
+  const brandName = data[brand].brandName;
   const keyTakeawayMotionProps = {
     initial: { opacity: 0, y: 25 },
     whileInView: { opacity: 1, y: 0 },

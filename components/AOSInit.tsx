@@ -3,10 +3,10 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 
 const AOSWrapper = () => {
-  const pathname = usePathname();
+  // const pathname = usePathname();
 
   useEffect(() => {
     AOS.init({
@@ -15,10 +15,10 @@ const AOSWrapper = () => {
     });
   }, []);
 
-  useEffect(() => {
-    // Runs every time the route changes
-    AOS.refresh();
-  }, [pathname]);
+  // useEffect(() => {
+  //   // Runs every time the route changes
+  //   AOS.refresh();
+  // }, [pathname]);
 
   return null;
 };

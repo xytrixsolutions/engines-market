@@ -194,3 +194,4 @@ declare interface Data {
 }
 
 declare type BrandsData = Record<string, Data>;
+type TableData = EngineModel[] | EngineCode[] | ModelEngineCompatibility[];

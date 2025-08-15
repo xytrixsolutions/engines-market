@@ -621,4 +621,4 @@ const EngineDealsCTA: React.FC<{ brand: string }> = ({ brand }) => {
   );
 };
 
-export default memo(EngineDealsCTA);
+export default EngineDealsCTA;

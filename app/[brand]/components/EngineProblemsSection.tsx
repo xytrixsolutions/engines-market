@@ -172,4 +172,4 @@ const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
   );
 };
 
-export default memo(EngineProblemsSection);
+export default EngineProblemsSection;

@@ -130,4 +130,4 @@ const EngineProsCons = ({ brand }: { brand: string }) => {
   );
 };
 
-export default memo(EngineProsCons);
+export default EngineProsCons;

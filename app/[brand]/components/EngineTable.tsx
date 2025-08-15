@@ -128,4 +128,4 @@ const EngineTable = <T extends Record<string, unknown>>({
   );
 };
 
-export default memo(EngineTable);
+export default EngineTable;

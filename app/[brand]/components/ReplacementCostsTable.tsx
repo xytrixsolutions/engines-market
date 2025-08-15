@@ -185,4 +185,4 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand }) => {
   );
 };
 
-export default memo(ReplacementCostsTable);
+export default ReplacementCostsTable;

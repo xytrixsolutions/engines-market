@@ -164,4 +164,4 @@ const EngineTablesTabs = ({ brand }: { brand: string }) => {
   );
 };
 
-export default memo(EngineTablesTabs);
+export default EngineTablesTabs;

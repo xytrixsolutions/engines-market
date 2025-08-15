@@ -209,4 +209,4 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand }) => {
   );
 };
 
-export default memo(TroubleshootingGuide);
+export default TroubleshootingGuide;

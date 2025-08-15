@@ -259,4 +259,4 @@ const PerformanceUpgrades: FC<{ brand: string }> = ({ brand }) => {
   );
 };
 
-export default memo(PerformanceUpgrades);
+export default PerformanceUpgrades;

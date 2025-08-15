@@ -15,9 +15,7 @@ import PerformanceUpgrades from "./components/PerformanceUpgrades";
 import ReplacementCostsTable from "./components/ReplacementCostsTable";
 import TroubleshootingGuide from "./components/TroubleShoot";
 import WhyChoose from "./components/WhyChoose";
-import { ClientWrapper } from "./components/ClientWrapper";
 import AOSWrapper from "@/components/AOSInit";
-import * as motion from "motion/react-client";
 
 export async function generateMetadata({ params }) {
   const brand = (await params).brand.toLowerCase();
@@ -78,13 +76,7 @@ const Page = ({ params }) => {
       />
       <EngineGuide brand={brand} />
       <WhyChoose brand={brand} />
-      <div
-        style={{
-          contain: "layout",
-        }}
-      >
-        <EngineTablesTabs brand={brand} />
-      </div>
+      <EngineTablesTabs brand={brand} />
       <EngineProblemsSection brand={brand} />
       <EngineProsCons brand={brand} />
       <TroubleshootingGuide brand={brand} />
@@ -106,4 +98,4 @@ export async function generateStaticParams() {
   }));
 }
 
-export default memo(Page);
+export default Page;

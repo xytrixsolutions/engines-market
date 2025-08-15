@@ -20019,4 +20019,3820 @@ export const data: BrandsData = {
       }
     ]
   },
+  mercedes: {
+    metadata: {
+      title: "Best Mercedes-Benz Engines Deal - New, Used & Reconditioned at Unbeatable Prices",
+      description: "Discover high-quality Mercedes-Benz engines at Engines Market UK. Compare prices for new, used, and reconditioned engines. Save time and money with our competitive quotes. Get your reliable replacement engine today!",
+      keywords: [
+        "Mercedes-Benz engines",
+        "reconditioned Mercedes-Benz engines",
+        "used Mercedes-Benz engines",
+        "replacement Mercedes-Benz engines",
+        "best Mercedes-Benz engine prices",
+        "Mercedes-Benz engine comparison",
+        "buy Mercedes-Benz engines",
+        "affordable Mercedes-Benz engines",
+        "high-quality Mercedes-Benz engines",
+        "Mercedes-Benz engine quotes"
+      ],
+    },
+    brandName: "Mercedes",
+    carImages: [
+      "/banners/banner-1.webp",
+      "/banners/banner-2.webp",
+      "/banners/banner-3.webp",
+      "/banners/banner-4.webp",
+      "/banners/banner-5.webp",
+    ],
+    carModelNames: [
+      "BMW X5",
+      "Audi A6",
+      "Mercedes C-Class",
+      "Range Rover Evoque",
+      "Volkswagen Golf",
+    ],
+    section0Image: {
+      img: "/bmw/bmw.png",
+      alt: "BMW front view",
+    },
+    section1Image: {
+      img: "/engine-guide-banners/engine-guide.png",
+      alt: "BMW rear view",
+    },
+    section4: {
+      mainParagraph:
+        "Mercedes-Benz engines are renowned for their performance and reliability, but like any complex machinery, they can encounter issues over time. Whether you own a sedan, SUV, or AMG model, understanding common engine problems—and how to address them—can help maintain optimal performance and extend engine life. Below are the most frequently encountered Mercedes-Benz engine issues, along with solutions and preventive measures:",
+      EngineProblems: [
+        {
+          title: "Oil Leaks",
+          icon: <Zap className="h-5 w-5" />,
+          problem:
+            "Oil leaks are a frequent issue in Mercedes-Benz engines, particularly in high-mileage models. Common sources include the valve cover gasket, oil pan gasket, and rear main seal.",
+          solution:
+            "Inspect the engine regularly for signs of oil leakage. If oil spots are visible under the vehicle or a burning oil smell is present, have the gaskets inspected and replaced as needed.",
+          prevention:
+            "Perform regular maintenance and replace gaskets proactively. Use high-quality engine oil and maintain proper oil levels to reduce stress on seals and gaskets.",
+          severity: "Common",
+        },
+        {
+          title: "Engine Misfires",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          problem:
+            "Engine misfires often stem from faulty spark plugs, ignition coils, or fuel injectors. This issue is especially common in M272 and M273 engine models.",
+          solution:
+            "Use an OBD-II scanner to diagnose the root cause. Replace defective spark plugs, ignition coils, or fuel injectors to restore smooth engine operation.",
+          prevention:
+            "Replace spark plugs and ignition coils according to the manufacturer’s schedule. Use high-quality fuel to minimize carbon buildup and maintain combustion efficiency.",
+          severity: "Moderate",
+        },
+        {
+          title: "Timing Chain Issues",
+          icon: <Wrench className="h-5 w-5" />,
+          problem:
+            "Timing chain stretching or failure is a known issue in M271 and M272 engines. If ignored, it can lead to severe internal engine damage.",
+          solution:
+            "If a rattling noise is heard from the engine, have the timing chain, tensioner, and guides inspected immediately. Replace all components as a set if wear is detected.",
+          prevention:
+            "Perform regular oil changes using the correct oil grade to ensure proper lubrication of the timing chain. Avoid aggressive driving to reduce mechanical stress.",
+          severity: "Critical",
+        },
+        {
+          title: "Turbocharger Failures",
+          icon: <Cloud className="h-5 w-5" />,
+          problem:
+            "Turbocharged engines like the M274 and OM642 are prone to turbocharger failures, resulting in loss of power, excessive exhaust smoke, and unusual whining or grinding noises.",
+          solution:
+            "Have the turbocharger inspected by a qualified technician. If damaged, replace or rebuild the unit and check related components such as intercoolers and hoses.",
+          prevention:
+            "Change engine oil and air filters regularly. Allow the engine to idle for 1–2 minutes before shutdown to let the turbocool down and prevent oil coking.",
+          severity: "Moderate",
+        },
+        {
+          title: "Diesel Particulate Filter (DPF) Problems",
+          icon: <Droplet className="h-5 w-5" />,
+          problem:
+            "DPF clogging is common in diesel engines like the OM651, leading to reduced performance, increased fuel consumption, and warning lights.",
+          solution:
+            "Initiate a forced DPF regeneration or have it professionally cleaned. In severe cases, replacement may be necessary.",
+          prevention:
+            "Drive regularly at highway speeds to enable passive DPF regeneration. Use high-quality diesel fuel and adhere to maintenance intervals to minimize soot buildup.",
+          severity: "Common",
+        },
+      ],
+      engineReliabilityAndPerformance: [
+        {
+          reliability: [
+            {
+              heading: "Most Reliable Engines",
+              paragraph:
+                "The M113 V8 engine is celebrated for its durability and mechanical simplicity, often exceeding 200,000 miles with proper care. Similarly, the OM606 inline-six diesel engine is highly regarded for its robust construction and long service life, making it a favorite among diesel enthusiasts.",
+            },
+            {
+              heading: "Maintenance Tips for Longevity",
+              paragraph:
+                "To maximize engine lifespan, follow the manufacturer's maintenance schedule, use OEM or high-spec replacement parts, and perform regular oil and filter changes. Address warning lights promptly and use only high-quality fluids designed for Mercedes-Benz specifications.",
+            },
+          ],
+          performance: [
+            {
+              heading: "Best Engines for Performance",
+              paragraph:
+                "The naturally aspirated M156 V8, used in AMG models, delivers exhilarating power and a high-revving character, making it a benchmark in performance engineering. The M177 twin-turbo V8 offers even greater output and responsiveness, powering modern AMG vehicles with exceptional acceleration and refinement.",
+            },
+            {
+              heading: "Performance Maintenance Tips",
+              paragraph:
+                "For high-performance engines, ensure cooling and oiling systems are in top condition. Use premium-grade fuel, monitor turbo health, and avoid short trips that don’t allow full system warm-up. Regular diagnostics help catch issues before they impact performance.",
+            },
+          ],
+        },
+      ],
+      conclusion:
+        "By understanding the common issues associated with Mercedes-Benz engines and knowing which models offer the best reliability and performance, you can make informed decisions about maintenance, repairs, and upgrades. Proactive care, using genuine or high-quality replacement parts, and timely servicing are essential to preserving the sophistication, power, and longevity that define the Mercedes-Benz driving experience. Whether you're maintaining a daily driver or a high-performance AMG, proper attention ensures your engine continues to deliver luxury, efficiency, and thrill for years to come.",
+    },
+    engineData: {
+      models: [
+        {
+          model: "/mercedes/mercedes-a-class.png",
+          model_name: "A-Class",
+          engine_options: "1.3L Petrol, 2.0L Diesel, 2.0L AMG",
+        },
+        {
+          model: "/mercedes/mercedes-b-class.png",
+          model_name: "B-Class",
+          engine_options: "1.5L Diesel, 2.0L Petrol, 2.0L Diesel",
+        },
+        {
+          model: "/mercedes/mercedes-c-class.png",
+          model_name: "C-Class",
+          engine_options: "1.5L Petrol, 2.0L Diesel, 3.0L AMG",
+        },
+        {
+          model: "/mercedes/mercedes-e-class.png",
+          model_name: "E-Class",
+          engine_options: "2.0L Petrol, 2.0L Diesel, 3.0L Hybrid",
+        },
+        {
+          model: "/mercedes/mercedes-s-class.png",
+          model_name: "S-Class",
+          engine_options: "3.0L Petrol, 3.0L Diesel, 4.0L AMG",
+        },
+        {
+          model: "/mercedes/mercedes-gla.png",
+          model_name: "GLA",
+          engine_options: "1.3L Petrol, 2.0L Diesel, 2.0L AMG",
+        },
+        {
+          model: "/mercedes/mercedes-glb.png",
+          model_name: "GLB",
+          engine_options: "1.5L Diesel, 2.0L Petrol, 2.0L Diesel",
+        },
+        {
+          model: "/mercedes/mercedes-glc.png",
+          model_name: "GLC",
+          engine_options: "2.0L Petrol, 2.0L Diesel, 3.0L AMG",
+        },
+        {
+          model: "/mercedes/mercedes-gle.png",
+          model_name: "GLE",
+          engine_options: "2.0L Petrol, 3.0L Diesel, 4.0L AMG",
+        },
+        {
+          model: "/mercedes/mercedes-gls.png",
+          model_name: "GLS",
+          engine_options: "3.0L Petrol, 3.0L Diesel, 4.0L AMG",
+        },
+        {
+          model: "/mercedes/mercedes-cla.png",
+          model_name: "CLA",
+          engine_options: "1.3L Petrol, 2.0L Diesel, 2.0L AMG",
+        },
+        {
+          model: "/mercedes/mercedes-cls.png",
+          model_name: "CLS",
+          engine_options: "2.0L Petrol, 3.0L Diesel, 3.0L AMG",
+        },
+        {
+          model: "/mercedes/mercedes-g-class.png",
+          model_name: "G-Class",
+          engine_options: "2.9L Diesel, 4.0L Petrol, 4.0L AMG",
+        },
+        {
+          model: "/mercedes/mercedes-eqc.png",
+          model_name: "EQC",
+          engine_options: "Electric",
+        },
+        {
+          model: "/mercedes/mercedes-eqs.png",
+          model_name: "EQS",
+          engine_options: "Electric",
+        },
+        {
+          model: "/mercedes/mercedes-eqb.png",
+          model_name: "EQB",
+          engine_options: "Electric",
+        },
+        {
+          model: "/mercedes/mercedes-amg-gt.png",
+          model_name: "AMG GT",
+          engine_options: "4.0L AMG",
+        },
+        {
+          model: "/mercedes/mercedes-sl.png",
+          model_name: "SL",
+          engine_options: "3.0L Petrol, 4.0L AMG",
+        },
+        {
+          model: "/mercedes/mercedes-v-class.png",
+          model_name: "V-Class",
+          engine_options: "2.0L Diesel, 2.1L Diesel",
+        },
+        {
+          model: "/mercedes/mercedes-sprinter.png",
+          model_name: "Sprinter",
+          engine_options: "2.1L Diesel, 3.0L Diesel",
+        },
+      ],
+      engine_codes: [
+        { engineCode: "M102.982", engineSize: 2.3, fuelType: "Petrol", turbo: false, horsepower: 136, torque: 205, productionYears: "1984–1993" },
+        { engineCode: "M104.992", engineSize: 3.6, fuelType: "Petrol", turbo: false, horsepower: 276, torque: 385, productionYears: "1993–1997" },
+        { engineCode: "M112.951", engineSize: 3.2, fuelType: "Petrol", turbo: false, horsepower: 218, torque: 310, productionYears: "1997–2005" },
+        { engineCode: "M113.962", engineSize: 5.0, fuelType: "Petrol", turbo: false, horsepower: 302, torque: 460, productionYears: "1998–2006" },
+        { engineCode: "M113.989", engineSize: 5.5, fuelType: "Petrol", turbo: false, horsepower: 493, torque: 700, productionYears: "1999–2012" },
+        { engineCode: "M119.985", engineSize: 5.0, fuelType: "Petrol", turbo: false, horsepower: 347, torque: 480, productionYears: "1990–1998" },
+        { engineCode: "M133.980", engineSize: 2.0, fuelType: "Petrol", turbo: true, horsepower: 375, torque: 475, productionYears: "2013–2019" },
+        { engineCode: "M156.982", engineSize: 6.2, fuelType: "Petrol", turbo: false, horsepower: 518, torque: 630, productionYears: "2006–2014" },
+        { engineCode: "M157.981", engineSize: 5.5, fuelType: "Petrol", turbo: true, horsepower: 536, torque: 800, productionYears: "2011–2018" },
+        { engineCode: "M157.982", engineSize: 5.5, fuelType: "Petrol", turbo: true, horsepower: 577, torque: 900, productionYears: "2011–2018" },
+        { engineCode: "M176.980", engineSize: 4.0, fuelType: "Petrol", turbo: true, horsepower: 469, torque: 650, productionYears: "2015–present" },
+        { engineCode: "M177.980", engineSize: 4.0, fuelType: "Petrol", turbo: true, horsepower: 503, torque: 700, productionYears: "2015–present" },
+        { engineCode: "M178.980", engineSize: 4.0, fuelType: "Petrol", turbo: true, horsepower: 577, torque: 800, productionYears: "2015–present" },
+        { engineCode: "M270.910", engineSize: 1.6, fuelType: "Petrol", turbo: true, horsepower: 156, torque: 250, productionYears: "2011–present" },
+        { engineCode: "M270.920", engineSize: 2.0, fuelType: "Petrol", turbo: true, horsepower: 211, torque: 350, productionYears: "2011–present" },
+        { engineCode: "M271.820", engineSize: 1.8, fuelType: "Petrol", turbo: true, horsepower: 156, torque: 250, productionYears: "2002–2015" },
+        { engineCode: "M271.860", engineSize: 1.8, fuelType: "Petrol", turbo: true, horsepower: 184, torque: 270, productionYears: "2002–2015" },
+        { engineCode: "M271.940", engineSize: 1.8, fuelType: "Petrol", turbo: true, horsepower: 204, torque: 310, productionYears: "2002–2015" },
+        { engineCode: "M272.943", engineSize: 3.5, fuelType: "Petrol", turbo: false, horsepower: 272, torque: 350, productionYears: "2004–2011" },
+        { engineCode: "M272.960", engineSize: 3.5, fuelType: "Petrol", turbo: false, horsepower: 306, torque: 370, productionYears: "2004–2011" },
+        { engineCode: "M274.910", engineSize: 1.6, fuelType: "Petrol", turbo: true, horsepower: 156, torque: 250, productionYears: "2012–present" },
+        { engineCode: "M274.920", engineSize: 2.0, fuelType: "Petrol", turbo: true, horsepower: 211, torque: 350, productionYears: "2012–present" },
+        { engineCode: "M276.820", engineSize: 3.5, fuelType: "Petrol", turbo: true, horsepower: 302, torque: 370, productionYears: "2010–2023" },
+        { engineCode: "M276.823", engineSize: 3.5, fuelType: "Petrol", turbo: true, horsepower: 333, torque: 480, productionYears: "2010–2023" },
+        { engineCode: "M276.957", engineSize: 3.0, fuelType: "Petrol", turbo: true, horsepower: 367, torque: 500, productionYears: "2010–present" },
+        { engineCode: "OM470 LA", engineSize: 10.7, fuelType: "Diesel", turbo: true, horsepower: 456, torque: 2200, productionYears: "2011–present" },
+        { engineCode: "OM471 LA", engineSize: 12.8, fuelType: "Diesel", turbo: true, horsepower: 530, torque: 2600, productionYears: "2011–present" },
+        { engineCode: "OM602.980", engineSize: 2.5, fuelType: "Diesel", turbo: false, horsepower: 94, torque: 150, productionYears: "1985–1995" },
+        { engineCode: "OM607.951", engineSize: 1.5, fuelType: "Diesel", turbo: true, horsepower: 109, torque: 260, productionYears: "2012–2018" },
+        { engineCode: "OM642.820", engineSize: 3.0, fuelType: "Diesel", turbo: true, horsepower: 224, torque: 540, productionYears: "2005–2020" },
+        { engineCode: "OM642.822", engineSize: 3.0, fuelType: "Diesel", turbo: true, horsepower: 258, torque: 620, productionYears: "2005–2020" },
+        { engineCode: "OM642.826", engineSize: 3.0, fuelType: "Diesel", turbo: true, horsepower: 190, torque: 440, productionYears: "2005–2020" },
+        { engineCode: "OM642.835", engineSize: 3.0, fuelType: "Diesel", turbo: true, horsepower: 211, torque: 540, productionYears: "2005–2020" },
+        { engineCode: "OM642.850", engineSize: 3.0, fuelType: "Diesel", turbo: true, horsepower: 265, torque: 620, productionYears: "2005–2020" },
+        { engineCode: "OM642.861", engineSize: 3.0, fuelType: "Diesel", turbo: true, horsepower: 258, torque: 620, productionYears: "2005–2020" },
+        { engineCode: "OM642.896", engineSize: 3.0, fuelType: "Diesel", turbo: true, horsepower: 190, torque: 440, productionYears: "2005–2020" },
+        { engineCode: "OM642.920", engineSize: 3.0, fuelType: "Diesel", turbo: true, horsepower: 224, torque: 540, productionYears: "2005–2020" },
+        { engineCode: "OM642.930", engineSize: 3.0, fuelType: "Diesel", turbo: true, horsepower: 258, torque: 620, productionYears: "2005–2020" },
+        { engineCode: "OM642.940", engineSize: 3.0, fuelType: "Diesel", turbo: true, horsepower: 190, torque: 440, productionYears: "2005–2020" },
+        { engineCode: "OM642.960", engineSize: 3.0, fuelType: "Diesel", turbo: true, horsepower: 258, torque: 620, productionYears: "2005–2020" },
+        { engineCode: "OM642.990", engineSize: 3.0, fuelType: "Diesel", turbo: true, horsepower: 190, torque: 440, productionYears: "2005–2020" },
+        { engineCode: "OM642.992", engineSize: 3.0, fuelType: "Diesel", turbo: true, horsepower: 258, torque: 620, productionYears: "2005–2020" },
+        { engineCode: "OM646.982", engineSize: 2.1, fuelType: "Diesel", turbo: true, horsepower: 170, torque: 400, productionYears: "2002–2010" },
+        { engineCode: "OM651.901", engineSize: 2.1, fuelType: "Diesel", turbo: true, horsepower: 136, torque: 300, productionYears: "2008–2018" },
+        { engineCode: "OM651.911", engineSize: 2.1, fuelType: "Diesel", turbo: true, horsepower: 163, torque: 360, productionYears: "2008–2018" },
+        { engineCode: "OM651.912", engineSize: 2.1, fuelType: "Diesel", turbo: true, horsepower: 136, torque: 300, productionYears: "2008–2018" },
+        { engineCode: "OM651.913", engineSize: 2.1, fuelType: "Diesel", turbo: true, horsepower: 163, torque: 360, productionYears: "2008–2018" },
+        { engineCode: "OM651.921", engineSize: 2.1, fuelType: "Diesel", turbo: true, horsepower: 136, torque: 300, productionYears: "2008–2018" },
+        { engineCode: "OM651.924", engineSize: 2.1, fuelType: "Diesel", turbo: true, horsepower: 163, torque: 360, productionYears: "2008–2018" },
+        { engineCode: "OM651.930", engineSize: 2.1, fuelType: "Diesel", turbo: true, horsepower: 136, torque: 300, productionYears: "2008–2018" },
+        { engineCode: "OM651.940", engineSize: 2.1, fuelType: "Diesel", turbo: true, horsepower: 163, torque: 360, productionYears: "2008–2018" },
+        { engineCode: "OM651.950", engineSize: 2.1, fuelType: "Diesel", turbo: true, horsepower: 136, torque: 300, productionYears: "2008–2018" },
+        { engineCode: "OM651.955", engineSize: 2.1, fuelType: "Diesel", turbo: true, horsepower: 163, torque: 360, productionYears: "2008–2018" },
+        { engineCode: "OM651.957", engineSize: 2.1, fuelType: "Diesel", turbo: true, horsepower: 204, torque: 500, productionYears: "2008–2018" },
+        { engineCode: "OM654.920", engineSize: 2.0, fuelType: "Diesel", turbo: true, horsepower: 191, torque: 400, productionYears: "2016–present" },
+      ],
+      models_engines: [
+        { engineCode: "M133", compatibleModels: ["A-Class", "CLA", "GLA"] },
+        { engineCode: "M139", compatibleModels: ["A-Class", "CLA", "GLA", "AMG GT"] },
+        { engineCode: "M256", compatibleModels: ["E-Class", "S-Class", "GLE", "GLS"] },
+        { engineCode: "M264", compatibleModels: ["C-Class", "E-Class", "GLC"] },
+        { engineCode: "M276", compatibleModels: ["E-Class", "S-Class", "GLE", "GLS"] },
+        { engineCode: "M278", compatibleModels: ["S-Class", "GLE", "GLS"] },
+        { engineCode: "OM654", compatibleModels: ["C-Class", "E-Class", "GLC", "GLE"] },
+        { engineCode: "OM656", compatibleModels: ["E-Class", "S-Class", "GLE", "GLS"] },
+        { engineCode: "OM642", compatibleModels: ["E-Class", "S-Class", "GLE", "GLS"] },
+        { engineCode: "OM651", compatibleModels: ["C-Class", "E-Class", "GLC"] },
+        { engineCode: "M282", compatibleModels: ["A-Class", "B-Class", "CLA"] },
+        { engineCode: "M274", compatibleModels: ["C-Class", "E-Class", "GLC"] },
+        { engineCode: "M271", compatibleModels: ["C-Class", "E-Class"] },
+        { engineCode: "M112", compatibleModels: ["E-Class", "S-Class"] },
+        { engineCode: "M113", compatibleModels: ["E-Class", "S-Class", "SL"] },
+        { engineCode: "M119", compatibleModels: ["S-Class", "SL"] },
+        { engineCode: "M104", compatibleModels: ["E-Class", "S-Class"] },
+        { engineCode: "OM617", compatibleModels: ["E-Class", "S-Class"] },
+        { engineCode: "OM603", compatibleModels: ["E-Class", "S-Class"] },
+        { engineCode: "OM606", compatibleModels: ["E-Class", "S-Class"] },
+      ],
+      replacement_costs: [
+        {
+          image: "/mercedes/mercedes-generic.png",
+          model: "A-Class, CLA",
+          engineType: "1.3L Petrol",
+          estimatedCost: "£1,800 - £3,200",
+        },
+        {
+          image: "/mercedes/mercedes-generic.png",
+          model: "B-Class, GLB",
+          engineType: "1.5L Diesel",
+          estimatedCost: "£2,000 - £3,500",
+        },
+        {
+          image: "/mercedes/mercedes-generic.png",
+          model: "C-Class, E-Class",
+          engineType: "2.0L Diesel",
+          estimatedCost: "£2,500 - £4,500",
+        },
+        {
+          image: "/mercedes/mercedes-generic.png",
+          model: "C-Class, E-Class",
+          engineType: "2.0L Petrol",
+          estimatedCost: "£2,200 - £4,000",
+        },
+        {
+          image: "/mercedes/mercedes-generic.png",
+          model: "GLC, E-Class",
+          engineType: "3.0L AMG",
+          estimatedCost: "£5,000 - £8,500",
+        },
+        {
+          image: "/mercedes/mercedes-generic.png",
+          model: "S-Class, GLE",
+          engineType: "3.0L Diesel",
+          estimatedCost: "£4,500 - £7,500",
+        },
+        {
+          image: "/mercedes/mercedes-generic.png",
+          model: "S-Class, GLS",
+          engineType: "4.0L AMG",
+          estimatedCost: "£7,000 - £12,000",
+        },
+        {
+          image: "/mercedes/mercedes-generic.png",
+          model: "AMG GT",
+          engineType: "4.0L AMG",
+          estimatedCost: "£8,000 - £13,000",
+        },
+        {
+          image: "/mercedes/mercedes-generic.png",
+          model: "G-Class",
+          engineType: "4.0L Petrol",
+          estimatedCost: "£6,500 - £10,000",
+        },
+        {
+          image: "/mercedes/mercedes-generic.png",
+          model: "V-Class, Sprinter",
+          engineType: "2.1L Diesel",
+          estimatedCost: "£3,000 - £5,500",
+        },
+        {
+          image: "/mercedes/mercedes-generic.png",
+          model: "Sprinter",
+          engineType: "3.0L Diesel",
+          estimatedCost: "£3,500 - £6,000",
+        },
+        {
+          image: "/mercedes/mercedes-generic.png",
+          model: "EQC, EQS",
+          engineType: "Electric",
+          estimatedCost: "£6,000 - £10,000",
+        },
+      ],
+    },
+    section7: [
+      {
+        title: "New Mercedes Engines",
+        icon: <Sparkles className="h-6 w-6" />,
+        badge: "Premium",
+        badgeVariant: "default" as const,
+        pros: [
+          "100% reliability with a factory warranty",
+          "Best performance & longevity",
+        ],
+        cons: [
+          "Higher cost",
+          "Limited availability for older models",
+        ],
+      },
+      {
+        title: "Used Mercedes Engines",
+        icon: <DollarSign className="h-6 w-6" />,
+        badge: "Budget-Friendly",
+        badgeVariant: "secondary" as const,
+        pros: [
+          "Cost-effective & widely available",
+          "Good for quick replacements",
+        ],
+        cons: [
+          "Potential hidden wear and tear",
+          "Shorter lifespan than new or reconditioned engines",
+        ],
+      },
+      {
+        title: "Reconditioned Mercedes Engines",
+        icon: <Wrench className="h-6 w-6" />,
+        badge: "Best Value",
+        badgeVariant: "outline" as const,
+        pros: [
+          "Professionally rebuilt with new components",
+          "More reliable than used engines",
+          "Balanced cost vs. performance",
+        ],
+        cons: [
+          "Slightly more expensive than used engines",
+        ],
+      },
+    ],
+    section8: {
+      EngineProblems: [
+        {
+          id: "check-engine-light-issues",
+          title: "Check Engine Light Issues",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          severity: "Common",
+          data: [
+            {
+              heading: "Common Causes",
+              paragraph:
+                "The check engine light can indicate a wide range of issues, from minor problems like a loose gas cap to more serious faults such as failing oxygen sensors, catalytic converter inefficiency, or ignition system malfunctions.",
+            },
+            {
+              heading: "Effective Solutions",
+              paragraph:
+                "Use an OBD-II scanner to retrieve diagnostic trouble codes (DTCs) and accurately identify the issue. Common fixes include securing the fuel cap, replacing faulty sensors, or repairing components related to emissions and combustion.",
+            },
+            {
+              heading: "Prevention Tips",
+              paragraph:
+                "Perform regular vehicle inspections and adhere to scheduled maintenance. Keep sensors clean and functional, ensure the fuel system is sealed properly, and address warning lights promptly to avoid escalating issues.",
+            },
+          ],
+        },
+        {
+          id: "power-loss-and-turbo-failures",
+          title: "Power Loss & Turbo Failures",
+          icon: <Gauge className="h-5 w-5" />,
+          severity: "Critical",
+          data: [
+            {
+              heading: "Identifying Root Causes",
+              paragraph:
+                "Power loss in Mercedes-Benz engines often stems from turbocharger failures, clogged air filters, fuel delivery problems, or ECU-related issues. Symptoms include reduced acceleration, boost leaks, or unusual turbo noises.",
+            },
+            {
+              heading: "Repair Solutions",
+              paragraph:
+                "Inspect the turbocharger for oil leaks, shaft play, or compressor damage. Replace air filters, clean the intercooler, and ensure the fuel injectors and high-pressure pump are functioning correctly. Replace the turbo if necessary.",
+            },
+            {
+              heading: "Preventive Measures",
+              paragraph:
+                "Service the turbo system regularly, use only high-quality engine oil and fuel, and allow the engine to idle for 1–2 minutes before shutdown to cool the turbo. Follow manufacturer-recommended service intervals for optimal performance.",
+            },
+          ],
+        },
+        {
+          id: "excessive-smoke-and-oil-leaks",
+          title: "Excessive Smoke & Oil Leaks",
+          icon: <Smoke className="h-5 w-5" />,
+          severity: "Moderate",
+          data: [
+            {
+              heading: "Understanding the Causes",
+              paragraph:
+                "Blue or gray exhaust smoke typically indicates oil burning due to worn valve seals, piston rings, or PCV system issues. Visible oil leaks often originate from valve cover gaskets, oil pan seals, or rear main seals.",
+            },
+            {
+              heading: "Troubleshooting Steps",
+              paragraph:
+                "Inspect the engine bay for oil seepage and perform a compression or leak-down test to assess internal wear. Replace damaged gaskets, seals, or internal components as needed to restore engine integrity.",
+            },
+            {
+              heading: "Maintenance for Prevention",
+              paragraph:
+                "Check oil levels monthly and inspect for leaks during routine maintenance. Use OEM-spec engine oil, change it at recommended intervals, and replace aging seals before they fail completely.",
+            },
+          ],
+        },
+      ],
+      maintenanceTips: [
+        {
+          icon: "Lightbulb",
+          iconColor: "text-blue-600",
+          border: "border-blue-200",
+          bg: "bg-blue-50",
+          title: "Regular Inspections",
+          titleColor: "text-blue-800",
+          text: "Conduct monthly checks of oil levels, coolant condition, and dashboard warning lights to catch early signs of engine trouble in your Mercedes-Benz.",
+          textColor: "text-blue-700",
+        },
+        {
+          icon: "CheckCircle",
+          iconColor: "text-green-600",
+          border: "border-green-200",
+          bg: "bg-green-50",
+          title: "Preventive Maintenance",
+          titleColor: "text-green-800",
+          text: "Stick to Mercedes-Benz service schedules for oil changes, filter replacements, and system diagnostics to keep your engine running efficiently and reliably.",
+          textColor: "text-green-700",
+        },
+        {
+          icon: "AlertTriangle",
+          iconColor: "text-orange-600",
+          border: "border-orange-200",
+          bg: "bg-orange-50",
+          title: "Act Quickly",
+          titleColor: "text-orange-800",
+          text: "Respond immediately to symptoms like smoke, unusual noises, or loss of power to prevent costly damage and extend engine lifespan.",
+          textColor: "text-orange-700",
+        },
+      ],
+      summary: {
+        variant: "green",
+        title: "Key Takeaway",
+        content:
+          "By following these troubleshooting tips and maintaining your Mercedes-Benz engine with care, you can prevent common faults and significantly extend its life. Regular diagnostics, quality fluids, and timely repairs are crucial for peak performance. At EnginesMarket.co.uk, we provide a wide selection of Mercedes-Benz engines—new, used, and reconditioned—at unbeatable prices, ensuring your luxury vehicle stays on the road with power, precision, and reliability for years to come.",
+      },
+    },
+    section9: {
+      performanceUpgrades: [
+        {
+          id: "basic-enhancements",
+          title: "Basic Enhancement Options",
+          icon: <Zap className="h-5 w-5" />,
+          level: "Beginner",
+          upgrades: [
+            {
+              name: "ECU Remapping (Stage 1 Tuning)",
+              icon: <Cog className="h-4 w-4" />,
+              description:
+                "Adjusting the Engine Control Unit (ECU) to optimize fuel injection, ignition timing, and boost pressure. Widely used on Mercedes-Benz petrol and diesel engines, including M274, M276, and OM651 series.",
+              benefits:
+                "Delivers 20-30% gains in horsepower and torque, improved throttle response, and smoother power delivery—ideal for C-Class, E-Class, and GLC models.",
+              considerations:
+                "Must be performed by experienced tuners using reputable software. Poor remapping can lead to increased emissions, DPF issues, or long-term reliability concerns.",
+            },
+            {
+              name: "Cold Air Intake Systems",
+              icon: <Wind className="h-4 w-4" />,
+              description:
+                "Replaces the stock intake with a high-flow system that draws cooler, denser air into the engine, enhancing combustion efficiency—especially effective on turbocharged models like the AMG variants and GLC 400.",
+              benefits:
+                "Provides 5–15 hp gains, sharper throttle response, and a more aggressive engine sound without major modifications.",
+              considerations:
+                "Ensure the system includes proper water protection to prevent hydrolock, particularly in wet conditions or modified vehicles.",
+            },
+            {
+              name: "Performance Exhaust Systems",
+              icon: <Volume2 className="h-4 w-4" />,
+              description:
+                "Upgrading to a cat-back or axle-back performance exhaust reduces backpressure and improves exhaust flow, commonly used on V6 and V8 Mercedes engines like the M276 and M177.",
+              benefits:
+                "Enhances engine sound, improves scavenging, and contributes to 5–10% power gains. Offers weight savings and a sportier aesthetic.",
+              considerations:
+                "May require ECU adjustments to prevent error codes, especially on models with sensitive O2 sensor monitoring.",
+            },
+          ],
+        },
+        {
+          id: "tuning-stages",
+          title: "Tuning Stages: 1-3",
+          icon: <TrendingUp className="h-5 w-5" />,
+          level: "Progressive",
+          stages: [
+            {
+              stage: "Stage 1 Tuning",
+              description:
+                "Software-based ECU remap combined with minor bolt-ons like high-performance air filters and cat-back exhausts. No hardware changes to internals.",
+              benefits:
+                "Safe 20–30% increase in power and torque, improved drivability, and enhanced responsiveness—perfect for daily-driven models like the C300 or E400.",
+              considerations:
+                "Minimal impact on reliability when done correctly. Maintains factory warranty compatibility if revertible tuning is used.",
+            },
+            {
+              stage: "Stage 2 Tuning",
+              description:
+                "Includes full turbo-back exhaust, upgraded intercooler, high-flow fuel injectors, and advanced ECU tuning. Commonly applied to AMG Line and 4MATIC models.",
+              benefits:
+                "Additional 10–20% power over Stage 1, better thermal efficiency, and improved turbo response—ideal for performance-focused drivers.",
+              considerations:
+                "Increased stress on engine components; may require upgraded cooling, brakes, and transmission tuning for optimal balance.",
+            },
+            {
+              stage: "Stage 3 Tuning",
+              description:
+                "Comprehensive build with forged internals, larger turbochargers, upgraded fuel systems, and custom engine management—typically for AMG GT, C63, or track-prepped vehicles.",
+              benefits:
+                "Power increases exceeding 50% over stock, race-level performance, and full customization potential.",
+              considerations:
+                "Significant impact on longevity and daily usability. Requires expert installation, frequent maintenance, and is best suited for track or show use.",
+            },
+          ],
+        },
+        {
+          id: "turbo-upgrades",
+          title: "Turbo Upgrades",
+          icon: <Gauge className="h-5 w-5" />,
+          level: "Advanced",
+          content: {
+            description:
+              "Turbocharger upgrades are among the most effective ways to unlock massive power gains in Mercedes-Benz turbocharged engines like the M274, M256, and OM642.",
+            points: [
+              {
+                title: "Hybrid Turbochargers",
+                description:
+                  "Combines OEM housing with upgraded internals for better efficiency and faster spool—ideal for E-Class and GLC diesel and petrol models seeking 30–50% power gains.",
+              },
+              {
+                title: "Larger Turbochargers",
+                description:
+                  "Replaces the factory turbo with a larger unit to increase boost pressure and airflow, significantly boosting output in models like the AMG C43 and GLE 450.",
+              },
+              {
+                title: "Twin-Turbo Conversions",
+                description:
+                  "Adding a second turbo (or upgrading twin-turbo setups) reduces lag and improves power delivery across the RPM range—popular in high-performance M177 and M256 engines.",
+              },
+            ],
+          },
+        },
+        {
+          id: "engine-internals",
+          title: "Engine Internals Reinforcements",
+          icon: <Cog className="h-5 w-5" />,
+          level: "Expert",
+          content: {
+            description:
+              "Critical for high-horsepower builds to ensure engine durability under extreme stress from forced induction and aggressive tuning.",
+            points: [
+              {
+                title: "Forged Pistons and Connecting Rods",
+                description:
+                  "Replace stock components with high-strength forged alloys to withstand higher compression and boost—essential for tuned AMG and high-performance diesel engines.",
+              },
+              {
+                title: "Performance Camshafts",
+                description:
+                  "Optimize valve timing for increased airflow and high-RPM power—commonly used in M113 and M156 engine swaps or performance rebuilds.",
+              },
+              {
+                title: "Strengthened Crankshafts",
+                description:
+                  "Upgraded crankshafts handle increased torque loads, preventing flex or failure in heavily modified engines pushing 600+ horsepower.",
+              },
+            ],
+          },
+        },
+        {
+          id: "reliability-impact",
+          title: "Impact on Reliability & Fuel Efficiency",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          level: "Important",
+          content: {
+            description:
+              "While performance tuning dramatically enhances power, it also introduces trade-offs in longevity and efficiency that owners must carefully manage.",
+            points: [
+              {
+                title: "Reliability Considerations",
+                description:
+                  "Higher power outputs increase thermal and mechanical stress. Regular oil changes, upgraded cooling systems, and quality parts are essential to maintain reliability.",
+              },
+              {
+                title: "Fuel Efficiency Changes",
+                description:
+                  "Most performance upgrades increase fuel consumption due to richer air-fuel mixtures and aggressive driving. However, optimized ECU tuning can improve efficiency under light loads in certain diesel models.",
+              },
+            ],
+          },
+        },
+      ],
+      summary: {
+        variant: "performance",
+        title: "Performance Enhancement Summary",
+        content:
+          "Mercedes-Benz engines offer a robust platform for performance tuning—from subtle ECU remaps on everyday C-Class models to full-blown turbo builds on AMG powerhouses. Each stage of modification unlocks greater power and driving excitement, but demands careful planning, quality components, and diligent maintenance. At EnginesMarket.co.uk, we support your performance journey with a wide selection of Mercedes-Benz engines—stock, reconditioned, or performance-prepared—ensuring you can upgrade with confidence while balancing exhilarating performance with long-term engine reliability.",
+      },
+    },
+    faqs: [
+      {
+        question: "What is EnginesMarket.co.uk?",
+        answer:
+          "EnginesMarket.co.uk is a price comparison website specializing in providing competitive quotes for new, used, and reconditioned Mercedes-Benz engines from multiple trusted sellers. Our platform helps you find the best deals on high-quality engines while saving time and money."
+      },
+      {
+        question: "How can I request a quote on EnginesMarket.co.uk?",
+        answer:
+          "Simply visit our website, fill out the quote request form with your Mercedes-Benz model details, engine code, and requirements, and you'll receive multiple competitive quotes from verified sellers in our network."
+      },
+      {
+        question: "What types of Mercedes-Benz engines does EnginesMarket.co.uk offer?",
+        answer:
+          "We offer a comprehensive selection of Mercedes-Benz engines, including brand new, used, and professionally reconditioned options for a wide range of models—from A-Class compacts to S-Class luxury sedans and AMG performance vehicles—covering both petrol and diesel engine types."
+      },
+      {
+        question: "Are the engines on EnginesMarket.co.uk reliable?",
+        answer:
+          "Yes, all engines listed through our platform come from vetted, reputable sellers. Reconditioned engines are rebuilt to meet OEM standards and often include warranties, ensuring reliability and peace of mind for your replacement."
+      },
+      {
+        question: "Can I save money by using EnginesMarket.co.uk?",
+        answer:
+          "Absolutely. By comparing multiple quotes from our network of sellers, customers typically save 20–40% on Mercedes-Benz engine replacements. Our service is free, fast, and designed to help you make an informed decision without hidden costs."
+      },
+      {
+        question: "What are the most common issues with Mercedes-Benz engines?",
+        answerList: [
+          "Oil leaks from valve cover or oil pan gaskets",
+          "Engine misfires due to faulty spark plugs or ignition coils",
+          "Timing chain wear or failure in M271/M272 engines",
+          "Turbocharger failures in M274 and OM642 models",
+          "Diesel Particulate Filter (DPF) clogging in OM651 engines"
+        ]
+      },
+      {
+        question: "How often should I service my Mercedes-Benz engine?",
+        answer:
+          "It is recommended to service your Mercedes-Benz engine every 10,000 to 15,000 miles or once a year, whichever comes first. Regular maintenance is crucial for preventing major engine issues and ensuring long-term reliability."
+      },
+      {
+        question: "What is the best Mercedes-Benz engine for performance?",
+        answer:
+          "The M177 twin-turbo V8 engine, used in AMG models like the C63, E63, and G63, is one of the most powerful and advanced Mercedes-Benz engines ever built, delivering up to 503 HP and exceptional performance."
+      },
+      {
+        question: "Which Mercedes-Benz engine is the most reliable?",
+        answer:
+          "The M113 V8 and OM606 inline-six diesel engines are widely regarded as the most reliable Mercedes-Benz engines, known for their durability and ability to exceed 200,000 miles with proper maintenance."
+      },
+      {
+        question: "How can I prevent engine problems in my Mercedes-Benz?",
+        answerList: [
+          "Perform regular oil changes with MB-approved synthetic oil (e.g., MB 229.5)",
+          "Replace gaskets and seals proactively during scheduled maintenance",
+          "Allow turbocharged engines to idle for 1–2 minutes before shutdown",
+          "Drive at highway speeds regularly to support DPF regeneration",
+          "Use high-quality fuel and follow the manufacturer’s service schedule"
+        ]
+      },
+      {
+        question: "What should I do if my Mercedes-Benz check engine light comes on?",
+        answer:
+          "Use an OBD-II scanner to read the diagnostic trouble codes. Common causes include oxygen sensor faults, loose fuel caps, or misfires. Address the specific issue promptly to avoid further damage and costly repairs."
+      },
+      {
+        question: "How much does it cost to replace a Mercedes-Benz engine?",
+        answer:
+          "Replacement costs vary widely—from £2,000 for a used 4-cylinder engine to over £10,000 for a new AMG V8. Reconditioned engines typically cost 30–50% less than new units and offer excellent value with included warranties."
+      },
+      {
+        question: "What are the benefits of a reconditioned Mercedes-Benz engine?",
+        answer:
+          "Reconditioned engines are professionally rebuilt using new or refurbished components, tested for performance, and often come with 12–24 month warranties. They offer significant cost savings compared to new engines while maintaining high reliability."
+      },
+      {
+        question: "Can I upgrade my Mercedes-Benz engine for better performance?",
+        answer:
+          "Yes, popular upgrades include ECU remapping, cold air intakes, performance exhausts, turbocharger enhancements, and full internal engine modifications. These can significantly boost power, especially on turbocharged and AMG models."
+      },
+      {
+        question: "What is the lifespan of a Mercedes-Benz engine?",
+        answer:
+          "With proper maintenance, a Mercedes-Benz engine can last between 150,000 and 300,000 miles. Engines like the M113 and OM606 are known to exceed 250,000 miles when regularly serviced and driven responsibly."
+      },
+      {
+        question: "How do I know if my Mercedes-Benz engine needs replacement?",
+        answer:
+          "Signs include persistent knocking or ticking noises, excessive exhaust smoke, loss of power, oil consumption, coolant mixing with oil, or frequent breakdowns. A professional compression or leak-down test can confirm engine health."
+      },
+      {
+        question: "What is the best engine oil for Mercedes-Benz engines?",
+        answer:
+          "Mercedes-Benz recommends synthetic oils meeting specifications such as MB 229.5 or MB 229.51. Always refer to your owner’s manual for the correct oil type—using the right oil is critical for engine longevity and performance."
+      },
+      {
+        question: "How can I improve the fuel efficiency of my Mercedes-Benz engine?",
+        answerList: [
+          "Use the correct viscosity and specification of engine oil",
+          "Keep tires properly inflated and aligned",
+          "Avoid aggressive driving and unnecessary idling",
+          "Replace air and fuel filters regularly",
+          "Ensure the DPF and EGR systems are functioning correctly"
+        ]
+      },
+      {
+        question: "What is the difference between turbocharged and naturally aspirated Mercedes-Benz engines?",
+        answer:
+          "Turbocharged engines use exhaust-driven compressors to force more air into the combustion chamber, increasing power and efficiency. Naturally aspirated engines rely on atmospheric pressure, offering smoother power delivery but less peak output."
+      },
+      {
+        question: "Are Mercedes-Benz diesel engines reliable?",
+        answer:
+          "Yes, Mercedes-Benz diesel engines like the OM642 and OM651 are known for their durability and fuel efficiency. With regular maintenance and quality diesel fuel, they provide excellent long-term reliability and high mileage potential."
+      },
+      {
+        question: "What is the most powerful Mercedes-Benz engine available?",
+        answer:
+          "The M177 4.0L twin-turbo V8 is currently one of the most powerful production engines from Mercedes-AMG, producing up to 503–577 HP depending on the model, delivering exceptional acceleration and track-ready performance."
+      },
+      {
+        question: "Can I use aftermarket parts for my Mercedes-Benz engine?",
+        answer:
+          "While aftermarket parts may be more affordable, we recommend using OEM or high-specification replacement parts to ensure compatibility, maintain performance, and avoid voiding warranties on reconditioned engines."
+      },
+      {
+        question: "How do I check the engine code on my Mercedes-Benz?",
+        answer:
+          "The engine code is typically stamped on the engine block or located on a label in the engine bay. It can also be found in the vehicle’s service manual or retrieved via the onboard diagnostics (OBD) system using a scanner."
+      },
+      {
+        question: "What coolant should I use in my Mercedes-Benz engine?",
+        answer:
+          "Mercedes-Benz recommends using factory-approved coolants such as MB 325.0 (blue) or MB 326.0 (red), which offer superior corrosion protection and are specifically formulated for their aluminum-intensive engines."
+      },
+      {
+        question: "How can I prevent engine overheating in my Mercedes-Benz?",
+        answer:
+          "Regularly check coolant levels, inspect the radiator, thermostat, and water pump, and flush the cooling system as recommended. Avoid prolonged idling in hot conditions and address any warning lights immediately."
+      }
+    ]
+  },
+  mini: {
+    metadata: {
+      title: "Best Mini Engines for Sale - New, Used & Reconditioned | Engines Market",
+      description: "Discover top-quality Mini engines at Engines Market. Compare prices on new, used, and reconditioned Mini engines. Save time and money with our competitive quotes and reliable service. Request a quote today!",
+      keywords: [
+        "Mini engines",
+        "reconditioned Mini engines",
+        "used Mini engines",
+        "replacement Mini engines",
+        "best Mini engine prices",
+        "Mini engine quotes",
+        "Mini engine comparison"
+      ],
+    },
+    brandName: "Mini",
+    carImages: [
+      "/banners/banner-1.webp",
+      "/banners/banner-2.webp",
+      "/banners/banner-3.webp",
+      "/banners/banner-4.webp",
+      "/banners/banner-5.webp",
+    ],
+    carModelNames: [
+      "BMW X5",
+      "Audi A6",
+      "Mercedes C-Class",
+      "Range Rover Evoque",
+      "Volkswagen Golf",
+    ],
+    section0Image: {
+      img: "/bmw/bmw.png",
+      alt: "BMW front view",
+    },
+    section1Image: {
+      img: "/engine-guide-banners/engine-guide.png",
+      alt: "BMW rear view",
+    },
+    section4: {
+      mainParagraph:
+        "Mini engines are known for their spirited performance and compact efficiency, but like any precision-engineered vehicle, they can develop mechanical issues over time. Whether you own a Mini Cooper, Countryman, or Clubman, understanding the most common engine-related problems—and how to resolve them—is essential for maintaining reliability and driving enjoyment. Below are the most frequently reported Mini engine issues, along with practical solutions and preventive measures to help extend the life of your engine.",
+      EngineProblems: [
+        {
+          title: "Transmission Problems",
+          icon: <Zap className="h-5 w-5" />,
+          problem:
+            "Transmission failure is one of the most common issues in Mini engines, particularly in models produced between 2002 and 2006. Symptoms include hard or delayed shifting, gear slipping, transmission jerking, or complete loss of drive.",
+          solution:
+            "Have the transmission system professionally diagnosed using OEM-compatible scanners. Repair or replace faulty solenoids, sensors, or the entire transmission unit if necessary. Use only approved transmission fluids during servicing.",
+          prevention:
+            "Follow the manufacturer’s schedule for transmission fluid changes and inspections. Avoid aggressive driving habits such as rapid acceleration or 'riding' the clutch in manual models to reduce transmission strain.",
+          severity: "Critical",
+        },
+        {
+          title: "Timing Chain Issues",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          problem:
+            "Timing chain wear or failure can lead to serious internal engine damage. Common signs include rattling or ticking noises from the engine, misfires, reduced power, and in severe cases, valve-to-piston contact.",
+          solution:
+            "If timing chain noise is detected, inspect the chain, tensioners, and guides immediately. Replacement should include the full kit (chain, tensioners, sprockets) to prevent repeat failures and costly engine repairs.",
+          prevention:
+            "Use high-quality synthetic engine oil and change it at recommended intervals (every 10,000–15,000 miles). Regular oil changes ensure proper lubrication of the timing chain system and reduce wear.",
+          severity: "Critical",
+        },
+        {
+          title: "Coolant Leaks",
+          icon: <Droplet className="h-5 w-5" />,
+          problem:
+            "Coolant leaks are common in Mini engines and often originate from the water pump, thermostat housing, or radiator hoses. Left unchecked, this can lead to overheating and severe engine damage.",
+          solution:
+            "Inspect the cooling system regularly for signs of leakage. Replace the water pump, thermostat housing gasket, or damaged hoses promptly. Flush and refill the system with correct-spec coolant (e.g., Zerex G40).",
+          prevention:
+            "Perform routine checks of coolant levels and condition. Replace plastic components like the thermostat housing before they crack, and service the cooling system every 3–5 years as recommended.",
+          severity: "Moderate",
+        },
+        {
+          title: "Power Steering Pump Failures",
+          icon: <Wrench className="h-5 w-5" />,
+          problem:
+            "Electric power steering (EPS) pump failures can result in stiff steering, warning lights on the dashboard, or complete loss of power assistance—especially in older Mini models.",
+          solution:
+            "Diagnose the EPS system with a professional scanner. Replace the power steering pump or motor assembly if faulty. Ensure software updates are applied, as some issues are firmware-related.",
+          prevention:
+            "Check for early warning signs like whining noises or intermittent steering resistance. Keep the system clean and avoid turning the steering wheel to its lock for extended periods when stationary.",
+          severity: "Moderate",
+        },
+        {
+          title: "Clutch Problems",
+          icon: <Cloud className="h-5 w-5" />,
+          problem:
+            "Manual transmission Minis, especially those used in city driving, are prone to premature clutch wear. Symptoms include clutch slipping, difficulty shifting, grinding gears, or a sticky/clutch pedal.",
+          solution:
+            "Replace the clutch kit (friction plate, pressure plate, release bearing) with high-quality components. Ensure the flywheel is resurfaced or replaced to guarantee smooth engagement.",
+          prevention:
+            "Avoid riding the clutch, especially in stop-and-go traffic. Use proper shifting techniques and have the clutch system inspected during regular servicing to catch wear early.",
+          severity: "Common",
+        },
+      ],
+      engineReliabilityAndPerformance: [
+        {
+          reliability: [
+            {
+              heading: "Best Engines for Reliability",
+              paragraph:
+                "The Mini models from 2011 and those produced between 2015 and 2020 are widely regarded as the most reliable, benefiting from improved engine management systems and fewer powertrain complaints. The N12 and N18 engines in these models show strong durability with proper maintenance.",
+            },
+            {
+              heading: "Maintenance Tips for Longevity",
+              paragraph:
+                "To maximize engine life, stick to scheduled servicing, use BMW/Mini-approved synthetic oils (e.g., LL-01 or LL-04), replace timing components proactively, and monitor the cooling and transmission systems. Address warning lights immediately to prevent minor issues from escalating.",
+            },
+          ],
+          performance: [
+            {
+              heading: "Best Engines for Performance",
+              paragraph:
+                "The 1380cc High-Performance Engine (found in Cooper S models) is a favorite among Mini enthusiasts, delivering enhanced power, sharper throttle response, and a sportier driving experience. Tuned versions can exceed 200 HP with upgrades like ECU remaps and performance intakes.",
+            },
+            {
+              heading: "Performance Maintenance Tips",
+              paragraph:
+                "For performance-driven Mini engines, ensure the turbocharger, intercooler, and intake systems are in optimal condition. Use premium fuel, upgrade engine mounts, and maintain the cooling system to handle increased thermal loads during spirited driving.",
+            },
+          ],
+        },
+      ],
+      conclusion:
+        "By understanding the most common issues affecting Mini engines and taking proactive steps to maintain and repair them, you can ensure your vehicle remains fun, reliable, and roadworthy for years to come. Regular servicing, using high-quality parts and fluids, and addressing problems at the first sign of trouble are key to preserving both performance and resale value. If you're facing engine trouble, don’t hesitate to request a quote from Engines Market for trusted replacement engines—new, used, or reconditioned—backed by expert support and nationwide delivery.",
+    },
+    engineData: {
+      models: [
+        {
+          model: "/mini/mini-cooper.png",
+          model_name: "Mini Cooper",
+          engine_options: "1.5L Petrol, 2.0L Diesel"
+        },
+        {
+          model: "/mini/mini-cooper-s.png",
+          model_name: "Mini Cooper S",
+          engine_options: "2.0L Turbo Petrol"
+        },
+        {
+          model: "/mini/mini-cooper-se.png",
+          model_name: "Mini Cooper SE",
+          engine_options: "Electric"
+        },
+        {
+          model: "/mini/mini-clubman.png",
+          model_name: "Mini Clubman",
+          engine_options: "1.5L Petrol, 2.0L Diesel, 2.0L Turbo"
+        },
+        {
+          model: "/mini/mini-countryman.png",
+          model_name: "Mini Countryman",
+          engine_options: "1.5L Petrol, 2.0L Diesel, 2.0L Hybrid"
+        },
+        {
+          model: "/mini/mini-jcw.png",
+          model_name: "Mini John Cooper Works",
+          engine_options: "2.0L Turbo Petrol"
+        },
+        {
+          model: "/mini/mini-convertible.png",
+          model_name: "Mini Convertible",
+          engine_options: "1.5L Petrol, 2.0L Diesel"
+        },
+        {
+          model: "/mini/mini-paceman.png",
+          model_name: "Mini Paceman",
+          engine_options: "1.6L Petrol, 2.0L Diesel"
+        },
+        {
+          model: "/mini/mini-roadster.png",
+          model_name: "Mini Roadster",
+          engine_options: "1.6L Petrol, 2.0L Diesel"
+        },
+        {
+          model: "/mini/mini-coupe.png",
+          model_name: "Mini Coupe",
+          engine_options: "1.6L Petrol, 2.0L Diesel"
+        },
+        {
+          model: "/mini/mini-clubvan.png",
+          model_name: "Mini Clubvan",
+          engine_options: "1.6L Petrol"
+        },
+        {
+          model: "/mini/mini-traveller.png",
+          model_name: "Mini Traveller",
+          engine_options: "1.6L Petrol"
+        },
+        {
+          model: "/mini/mini-rocketman.png",
+          model_name: "Mini Rocketman",
+          engine_options: "Electric"
+        },
+        {
+          model: "/mini/mini-vision-electric.png",
+          model_name: "Mini Vision Electric",
+          engine_options: "Electric"
+        },
+        {
+          model: "/mini/mini-aceman.png",
+          model_name: "Mini Aceman",
+          engine_options: "Electric"
+        },
+        {
+          model: "/mini/mini-urbanaut.png",
+          model_name: "Mini Urbanaut",
+          engine_options: "Electric"
+        }
+      ],
+      engine_codes: [
+        {
+          engineCode: "W10B16A",
+          engineSize: 1.6,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 115,
+          torque: 150,
+          productionYears: "2001–2006"
+        },
+        {
+          engineCode: "W11B16A",
+          engineSize: 1.6,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 163,
+          torque: 210,
+          productionYears: "2001–2006"
+        },
+        {
+          engineCode: "N12B16A",
+          engineSize: 1.6,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 120,
+          torque: 160,
+          productionYears: "2007–2013"
+        },
+        {
+          engineCode: "N14B16A",
+          engineSize: 1.6,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 175,
+          torque: 240,
+          productionYears: "2007–2013"
+        },
+        {
+          engineCode: "B38A15M0",
+          engineSize: 1.5,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 136,
+          torque: 220,
+          productionYears: "2014–Present"
+        },
+        {
+          engineCode: "B48A20M0",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 192,
+          torque: 280,
+          productionYears: "2014–Present"
+        },
+        {
+          engineCode: "B37C15A",
+          engineSize: 1.5,
+          fuelType: "Diesel",
+          turbo: false,
+          horsepower: 95,
+          torque: 220,
+          productionYears: "2014–Present"
+        },
+        {
+          engineCode: "B47C20A",
+          engineSize: 2.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 150,
+          torque: 330,
+          productionYears: "2014–Present"
+        },
+        {
+          engineCode: "B38K15T0",
+          engineSize: 1.5,
+          fuelType: "Hybrid",
+          turbo: true,
+          horsepower: 224,
+          torque: 385,
+          productionYears: "2017–Present"
+        },
+        {
+          engineCode: "Electric",
+          engineSize: 1.5,
+          fuelType: "Electric",
+          turbo: false,
+          horsepower: 184,
+          torque: 270,
+          productionYears: "2020–Present"
+        }
+      ],
+      models_engines: [
+        {
+          engineCode: "W10B16A",
+          compatibleModels: ["Mini Cooper (R50)", "Mini Convertible (R52)"]
+        },
+        {
+          engineCode: "W11B16A",
+          compatibleModels: ["Mini Cooper S (R53)", "Mini Convertible S (R52)"]
+        },
+        {
+          engineCode: "N12B16A",
+          compatibleModels: ["Mini Cooper (R56)", "Mini Clubman (R55)"]
+        },
+        {
+          engineCode: "N14B16A",
+          compatibleModels: ["Mini Cooper S (R56)", "Mini Clubman S (R55)"]
+        },
+        {
+          engineCode: "N16B16A",
+          compatibleModels: ["Mini Cooper (R56)", "Mini Clubman (R55)", "Mini Countryman (R60)"]
+        },
+        {
+          engineCode: "N18B16A",
+          compatibleModels: ["Mini Cooper S (R56)", "Mini Clubman S (R55)", "Mini Countryman S (R60)"]
+        },
+        {
+          engineCode: "B38A15M0",
+          compatibleModels: ["Mini Cooper (F56)", "Mini Clubman (F54)"]
+        },
+        {
+          engineCode: "B48A20M0",
+          compatibleModels: ["Mini Cooper S (F56)", "Mini Clubman S (F54)", "Mini Countryman S (F60)"]
+        },
+        {
+          engineCode: "B37C15A",
+          compatibleModels: ["Mini Cooper D (F56)", "Mini Clubman D (F54)"]
+        },
+        {
+          engineCode: "B47C20A",
+          compatibleModels: ["Mini Cooper SD (F56)", "Mini Clubman SD (F54)", "Mini Countryman SD (F60)"]
+        }
+      ],
+      replacement_costs: [
+        {
+          image: "/mini/mini-generic.png",
+          model: "Mini Cooper, Mini One",
+          engineType: "1.4L Petrol",
+          estimatedCost: "£1,500 - £3,000"
+        },
+        {
+          image: "/mini/mini-generic.png",
+          model: "Mini Cooper D, Mini One D",
+          engineType: "2.0L Diesel",
+          estimatedCost: "£2,500 - £4,500"
+        },
+        {
+          image: "/mini/mini-generic.png",
+          model: "Mini Cooper S, Mini John Cooper Works",
+          engineType: "2.0L Turbo",
+          estimatedCost: "£3,000 - £5,000"
+        },
+        {
+          image: "/mini/mini-generic.png",
+          model: "Mini Countryman, Mini Clubman",
+          engineType: "1.5L Petrol",
+          estimatedCost: "£2,000 - £4,000"
+        },
+        {
+          image: "/mini/mini-generic.png",
+          model: "Mini Countryman D, Mini Clubman D",
+          engineType: "2.0L Diesel",
+          estimatedCost: "£3,000 - £5,500"
+        },
+        {
+          image: "/mini/mini-generic.png",
+          model: "Mini Electric, Mini Cooper SE",
+          engineType: "Electric",
+          estimatedCost: "£4,000 - £7,000"
+        },
+        {
+          image: "/mini/mini-generic.png",
+          model: "Mini Paceman, Mini Roadster",
+          engineType: "1.6L Petrol",
+          estimatedCost: "£2,500 - £4,500"
+        },
+        {
+          image: "/mini/mini-generic.png",
+          model: "Mini Convertible, Mini Coupe",
+          engineType: "1.6L Petrol",
+          estimatedCost: "£2,500 - £4,500"
+        },
+        {
+          image: "/mini/mini-generic.png",
+          model: "Mini Countryman Hybrid",
+          engineType: "Hybrid",
+          estimatedCost: "£4,500 - £7,500"
+        },
+        {
+          image: "/mini/mini-generic.png",
+          model: "Mini Clubman JCW, Mini Countryman JCW",
+          engineType: "2.0L Turbo",
+          estimatedCost: "£3,500 - £6,000"
+        },
+        {
+          image: "/mini/mini-generic.png",
+          model: "Mini Cooper SD, Mini One SD",
+          engineType: "2.0L Diesel",
+          estimatedCost: "£3,000 - £5,500"
+        },
+        {
+          image: "/mini/mini-generic.png",
+          model: "Mini Cooper S E Countryman Hybrid",
+          engineType: "Hybrid",
+          estimatedCost: "£4,500 - £7,500"
+        },
+        {
+          image: "/mini/mini-generic.png",
+          model: "Mini Clubvan, Mini Traveller",
+          engineType: "1.6L Petrol",
+          estimatedCost: "£2,500 - £4,500"
+        },
+        {
+          image: "/mini/mini-generic.png",
+          model: "Mini Rocketman, Mini Vision Electric",
+          engineType: "Electric",
+          estimatedCost: "£5,000 - £8,000"
+        },
+        {
+          image: "/mini/mini-generic.png",
+          model: "Mini Aceman, Mini Urbanaut",
+          engineType: "Electric",
+          estimatedCost: "£5,500 - £9,000"
+        }
+      ]
+    },
+    section7: [
+      {
+        title: "New Mini Engines",
+        icon: <Sparkles className="h-6 w-6" />,
+        badge: "Premium",
+        badgeVariant: "default" as const,
+        pros: [
+          "100% reliability with a factory warranty",
+          "Best performance & longevity",
+        ],
+        cons: [
+          "Higher cost",
+          "Limited availability for older models",
+        ],
+      },
+      {
+        title: "Used Mini Engines",
+        icon: <DollarSign className="h-6 w-6" />,
+        badge: "Budget-Friendly",
+        badgeVariant: "secondary" as const,
+        pros: [
+          "Cost-effective & widely available",
+          "Good for quick replacements",
+        ],
+        cons: [
+          "Potential hidden wear and tear",
+          "Shorter lifespan than new or reconditioned engines",
+        ],
+      },
+      {
+        title: "Reconditioned Mini Engines",
+        icon: <Wrench className="h-6 w-6" />,
+        badge: "Best Value",
+        badgeVariant: "outline" as const,
+        pros: [
+          "Professionally rebuilt with new components",
+          "More reliable than used engines",
+          "Balanced cost vs. performance",
+        ],
+        cons: [
+          "Slightly more expensive than used engines",
+        ],
+      },
+    ],
+    section8: {
+      EngineProblems: [
+        {
+          id: "check-engine-light-issues",
+          title: "Check Engine Light Issues",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          severity: "Common",
+          data: [
+            {
+              heading: "Common Causes",
+              paragraph:
+                "The check engine light can be triggered by various issues, including a faulty oxygen sensor, loose or damaged gas cap, catalytic converter problems, or mass airflow sensor malfunctions. Even minor issues like an improperly sealed fuel cap can activate the warning.",
+            },
+            {
+              heading: "Effective Solutions",
+              paragraph:
+                "Start by checking if the gas cap is securely tightened. Use an OBD-II scanner to retrieve diagnostic trouble codes from your Mini's ECU. Based on the codes, replace faulty sensors or components. If the cause isn't clear, consult a certified Mini technician for a professional diagnosis.",
+            },
+            {
+              heading: "Prevention Tips",
+              paragraph:
+                "Perform regular system checks and address small issues early. Ensure the fuel cap is always tightened properly after refueling. Follow scheduled maintenance to keep sensors and emissions systems in optimal condition and reduce false alarms.",
+            },
+          ],
+        },
+        {
+          id: "power-loss-and-turbo-failures",
+          title: "Power Loss & Turbo Failures",
+          icon: <Gauge className="h-5 w-5" />,
+          severity: "Critical",
+          data: [
+            {
+              heading: "Identifying Root Causes",
+              paragraph:
+                "Loss of engine power in turbocharged Minis (like the Cooper S or JCW) often stems from a failing turbocharger, clogged air filter, or fuel delivery issues. Boost leaks, wastegate failure, or carbon buildup in the intake can also restrict performance.",
+            },
+            {
+              heading: "Repair Solutions",
+              paragraph:
+                "Inspect and replace the air filter if dirty. Check the turbocharger for oil leaks, shaft play, or compressor damage. Clean or replace fuel injectors and ensure the fuel pump is delivering adequate pressure. Address any intake or intercooler leaks promptly.",
+            },
+            {
+              heading: "Preventive Measures",
+              paragraph:
+                "Allow the engine to idle for 30–60 seconds before turning off after high-speed driving to let the turbo cool down. Use high-quality synthetic oil and change it regularly. Follow service intervals for air and fuel filter replacements to maintain turbo health.",
+            },
+          ],
+        },
+        {
+          id: "excessive-smoke-and-oil-leaks",
+          title: "Excessive Smoke & Oil Leaks",
+          icon: <Smoke className="h-5 w-5" />,
+          severity: "Moderate",
+          data: [
+            {
+              heading: "Understanding the Causes",
+              paragraph:
+                "Blue exhaust smoke usually indicates oil burning due to worn piston rings or leaking valve seals. White smoke suggests coolant entering the combustion chamber—often from a blown head gasket. Black smoke points to a rich fuel mixture caused by faulty injectors or sensors.",
+            },
+            {
+              heading: "Troubleshooting Steps",
+              paragraph:
+                "Check oil levels and inspect for leaks around the valve cover gasket, oil pan, and seals. Perform a compression test or leak-down test to assess internal engine wear. For white smoke, test the cooling system and head gasket integrity. Use diagnostics to check fuel trim and sensor data for black smoke.",
+            },
+            {
+              heading: "Maintenance for Prevention",
+              paragraph:
+                "Use high-quality engine oil and change it every 10,000–15,000 miles (or as recommended). Regularly inspect gaskets and seals for signs of wear. Keep the PCV system clean and functioning to prevent pressure buildup that can lead to leaks.",
+            },
+          ],
+        },
+      ],
+      maintenanceTips: [
+        {
+          icon: "Lightbulb",
+          iconColor: "text-blue-600",
+          border: "border-blue-200",
+          bg: "bg-blue-50",
+          title: "Regular Inspections",
+          titleColor: "text-blue-800",
+          text: "Check your Mini’s oil level, coolant, and dashboard warning lights monthly. Early detection of leaks or sensor warnings can prevent costly engine damage down the line.",
+          textColor: "text-blue-700",
+        },
+        {
+          icon: "CheckCircle",
+          iconColor: "text-green-600",
+          border: "border-green-200",
+          bg: "bg-green-50",
+          title: "Preventive Maintenance",
+          titleColor: "text-green-800",
+          text: "Stick to Mini’s recommended service schedule—especially for oil changes, air filters, and turbo system checks. Use OEM or high-spec parts to maintain performance and reliability.",
+          textColor: "text-green-700",
+        },
+        {
+          icon: "AlertTriangle",
+          iconColor: "text-orange-600",
+          border: "border-orange-200",
+          bg: "bg-orange-50",
+          title: "Act Quickly",
+          titleColor: "text-orange-800",
+          text: "If you notice unusual noises, smoke, reduced power, or warning lights, don’t delay. Addressing issues early can save thousands in engine repairs and extend your Mini’s lifespan.",
+          textColor: "text-orange-700",
+        },
+      ],
+      summary: {
+        variant: "green",
+        title: "Key Takeaway",
+        content:
+          "By following these troubleshooting tips and maintaining your Mini engine properly, you can help ensure its longevity and reliable performance. Proactive maintenance, timely diagnostics, and quality repairs are essential to prevent common engine faults. At EnginesMarket.co.uk, we offer a wide selection of Mini engines—new, used, or reconditioned—to keep your vehicle running smoothly for years to come, whether for daily commutes or spirited driving.",
+      },
+    },
+    section9: {
+      performanceUpgrades: [
+        {
+          id: "basic-enhancements",
+          title: "Basic Enhancement Options",
+          icon: <Zap className="h-5 w-5" />,
+          level: "Beginner",
+          upgrades: [
+            {
+              name: "ECU Remapping (Stage 1 Tuning)",
+              icon: <Cog className="h-4 w-4" />,
+              description:
+                "Adjusting the engine control unit (ECU) settings to optimize fuel delivery, ignition timing, and boost pressure—especially effective on Mini Cooper S and John Cooper Works models with turbocharged B48 engines.",
+              benefits:
+                "Gains of 15–30% in horsepower and torque, improved throttle response, and more linear power delivery across the rev range.",
+              considerations:
+                "Must be performed by a Mini-specialist tuner to avoid triggering error codes or damaging sensitive turbo and emissions systems.",
+            },
+            {
+              name: "Cold Air Intake Systems",
+              icon: <Wind className="h-4 w-4" />,
+              description:
+                "Replaces the stock airbox with a high-flow system that draws cooler, denser air from outside the engine bay, enhancing combustion efficiency.",
+              benefits:
+                "Modest power gains (8–15hp), sharper throttle response, and a more engaging induction sound—ideal for F56 Cooper S and JCW models.",
+              considerations:
+                "Ensure proper sealing and filtration to protect the turbocharger and direct-injection system from debris and moisture.",
+            },
+            {
+              name: "Performance Exhaust Systems",
+              icon: <Volume2 className="h-4 w-4" />,
+              description:
+                "Upgrading to a cat-back or performance axle-back system reduces backpressure and improves exhaust flow, particularly beneficial on turbocharged Minis.",
+              benefits:
+                "Improved engine breathing, 5–10hp gains, lighter weight, and a sportier exhaust note while remaining emissions-compliant.",
+              considerations:
+                "May require ECU retuning to prevent lean conditions or check engine lights due to faster exhaust gas velocity.",
+            },
+          ],
+        },
+        {
+          id: "tuning-stages",
+          title: "Tuning Stages: 1–3",
+          icon: <TrendingUp className="h-5 w-5" />,
+          level: "Progressive",
+          stages: [
+            {
+              stage: "Stage 1 Tuning",
+              description:
+                "Entry-level tuning focused on software optimization (ECU remap) combined with bolt-on upgrades like cold air intakes and performance exhausts.",
+              benefits:
+                "Safe 20–40hp gains on B48-powered models (Cooper S, Clubman S), improved low-end torque, and better drivability—perfect for street use.",
+              considerations:
+                "Maintains factory reliability when paired with quality tuning; ideal for daily-driven Minis.",
+            },
+            {
+              stage: "Stage 2 Tuning",
+              description:
+                "Intermediate upgrades including upgraded intercooler, high-flow downpipe, larger injectors, and supporting modifications for sustained boost.",
+              benefits:
+                "60–100hp gains over stock, significantly improved turbo spool and mid-range punch—common in tuned F56/F60 JCW builds.",
+              considerations:
+                "Requires upgraded cooling, fuel system, and professional tuning; not recommended for inexperienced owners.",
+            },
+            {
+              stage: "Stage 3 Tuning",
+              description:
+                "Full race-oriented builds with forged internals, aggressive camshafts, large hybrid turbo, and standalone ECU—often used in track-focused JCW or custom Mini race cars.",
+              benefits:
+                "150+ horsepower over stock, extreme performance, and enhanced durability under high boost and RPM.",
+              considerations:
+                "Dramatically impacts daily usability, fuel economy, and road legality; requires expert installation and ongoing maintenance.",
+            },
+          ],
+        },
+        {
+          id: "turbo-upgrades",
+          title: "Turbo Upgrades",
+          icon: <Gauge className="h-5 w-5" />,
+          level: "Advanced",
+          content: {
+            description:
+              "Turbocharger upgrades are among the most effective performance modifications for Mini’s turbocharged petrol engines, offering massive power potential when properly supported.",
+            points: [
+              {
+                title: "OEM+ and Hybrid Turbos",
+                description:
+                  "Enhanced factory-style turbos (e.g., Garrett GTxx hybrids) offer improved flow and reduced lag over stock units—ideal for Stage 2 builds on Cooper S and JCW models.",
+              },
+              {
+                title: "Aftermarket Performance Turbos",
+                description:
+                  "Larger units from brands like Pure Turbo or Vargas provide 400+ hp potential but require supporting mods like upgraded fueling and cooling systems.",
+              },
+              {
+                title: "Turbo Kits for N14/B48 Engines",
+                description:
+                  "Complete bolt-on kits designed for R56 and F56 platforms, enabling significant power increases with minimal engine modification.",
+              },
+            ],
+          },
+        },
+        {
+          id: "engine-internals",
+          title: "Engine Internals Reinforcements",
+          icon: <Cog className="h-5 w-5" />,
+          level: "Expert",
+          content: {
+            description:
+              "Essential for high-power builds to withstand increased cylinder pressures and thermal loads from aggressive tuning and forced induction.",
+            points: [
+              {
+                title: "Forged Pistons and Connecting Rods",
+                description:
+                  "Critical for builds exceeding 350hp; forged internals reduce the risk of engine failure under high boost and high RPM operation.",
+              },
+              {
+                title: "Upgraded Valvetrain Components",
+                description:
+                  "Performance valve springs, retainers, and lightweight valves ensure valve control at high RPM, especially important in modified N14 and B48 engines.",
+              },
+              {
+                title: "High-Performance Bearings & Gaskets",
+                description:
+                  "Oversized main and rod bearings, along with multi-layer steel (MLS) head gaskets, improve longevity in high-stress environments.",
+              },
+            ],
+          },
+        },
+        {
+          id: "reliability-impact",
+          title: "Impact on Reliability & Fuel Efficiency",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          level: "Important",
+          content: {
+            description:
+              "While performance upgrades enhance driving excitement, they also introduce trade-offs that Mini owners must carefully manage.",
+            points: [
+              {
+                title: "Reliability Considerations",
+                description:
+                  "Increased power places greater stress on OEM components. Regular oil changes, high-quality fluids, and conservative driving habits are crucial to longevity.",
+              },
+              {
+                title: "Fuel Efficiency Changes",
+                description:
+                  "Stage 1 tuning may slightly improve efficiency under light loads, but most performance upgrades—especially turbo and exhaust mods—lead to 15–30% higher fuel consumption.",
+              },
+            ],
+          },
+        },
+      ],
+      summary: {
+        variant: "performance",
+        title: "Performance Enhancement Summary",
+        content:
+          "Mini's go-kart handling and turbocharged engine platforms provide an excellent foundation for performance tuning—from mild ECU remaps on the Cooper S to full-blown track builds on the John Cooper Works. Each stage of modification unlocks greater power and driving thrills, but demands careful attention to supporting upgrades, cooling, and maintenance. At EnginesMarket.co.uk, we offer high-performance Mini engines—reconditioned, upgraded, or built-to-order—so you can elevate your Mini’s performance while preserving reliability and driving joy, whether on city streets or the race track.",
+      },
+    },
+    faqs: [
+      {
+        question: "What services does EnginesMarket.co.uk offer?",
+        answer:
+          "EnginesMarket.co.uk specializes in providing competitive quotes for reconditioned, used, and replacement Mini engines. We connect you with multiple trusted sellers to ensure you get the best prices, availability, and warranty coverage for your engine replacement needs."
+      },
+      {
+        question: "How can I request a quote on EnginesMarket.co.uk?",
+        answer:
+          "Simply visit our website, fill out the quote request form with your Mini model, engine code, and preferred engine type (used, reconditioned, or new), and submit it. You’ll receive multiple competitive quotes from verified sellers within hours."
+      },
+      {
+        question: "Are the engines from EnginesMarket.co.uk covered by a warranty?",
+        answer:
+          "Yes, most engines offered through our platform come with a warranty. Reconditioned engines typically include a 12–24 month warranty, while used engines may have shorter coverage. Terms vary by seller and engine condition."
+      },
+      {
+        question: "How does EnginesMarket.co.uk ensure the quality of the engines?",
+        answer:
+          "We partner exclusively with reputable suppliers who inspect, test, and certify every engine. Reconditioned units are rebuilt to OEM standards, and all engines undergo compression tests and visual inspections to ensure reliability before listing."
+      },
+      {
+        question: "Can I get assistance with engine installation through EnginesMarket.co.uk?",
+        answer:
+          "Yes, we can help you locate certified mechanics and specialist workshops experienced in Mini engine replacements. Our network includes professionals who can handle everything from removal to ECU coding and final testing."
+      },
+      {
+        question: "What are the most common Mini engine problems?",
+        answerList: [
+          "Timing chain wear or failure (especially in N13 and N18 engines)",
+          "Oil leaks from valve cover gaskets or oil filter housing",
+          "Turbocharger failure in Cooper S and JCW models",
+          "Carbon buildup on intake valves in direct-injection engines",
+          "Coolant leaks due to aging expansion tanks or water pumps"
+        ]
+      },
+      {
+        question: "How do I identify the engine code on my Mini?",
+        answer:
+          "The engine code is typically stamped on the engine block near the cylinder head. You can also find it in your vehicle’s service manual, on the VIN plate, or by entering your VIN into a Mini decoder tool online. Common codes include B38, B48, B47, and N14."
+      },
+      {
+        question: "What is the best replacement engine for a Mini Cooper?",
+        answer:
+          "A reconditioned OEM engine is often the best balance of cost, reliability, and compatibility. For performance models like the Cooper S or JCW, a reconditioned B48 turbo engine is ideal. Used engines are budget-friendly, while new long-blocks offer maximum longevity."
+      },
+      {
+        question: "How often should I service my Mini engine?",
+        answer:
+          "It’s recommended to service your Mini engine every 10,000 to 15,000 miles or once a year, whichever comes first. Turbocharged and diesel models may require more frequent oil changes to maintain engine health."
+      },
+      {
+        question: "Can I upgrade my Mini engine for better performance?",
+        answerList: [
+          "Yes, popular upgrades include ECU remapping for increased power and torque",
+          "Installing a cold air intake and performance exhaust system",
+          "Upgrading the intercooler and turbocharger on Cooper S and JCW models",
+          "Adding high-flow fuel injectors and supporting modifications for Stage 2+ tuning",
+          "Reinforcing internals like pistons and rods for high-horsepower builds"
+        ]
+      },
+      {
+        question: "What is the difference between a reconditioned and a used Mini engine?",
+        answer:
+          "A reconditioned engine is completely disassembled, inspected, and rebuilt with new or refurbished parts to meet original specifications. A used engine is removed from a donor vehicle and sold as-is, with no major repairs or testing guaranteed."
+      },
+      {
+        question: "How do I know if my Mini engine needs to be replaced?",
+        answer:
+          "Signs include persistent knocking or ticking noises, excessive blue or white exhaust smoke, severe loss of power, frequent overheating, or failed compression tests. If repairs exceed the engine’s value, replacement is the smarter option."
+      },
+      {
+        question: "What are the benefits of a reconditioned Mini engine?",
+        answer:
+          "Reconditioned Mini engines offer excellent value, reliability, and peace of mind. They are rebuilt to factory specs, often come with a warranty, and cost significantly less than new engines while delivering comparable performance and lifespan."
+      },
+      {
+        question: "How can I improve the fuel efficiency of my Mini engine?",
+        answerList: [
+          "Use the correct grade of high-quality engine oil (e.g., 0W-30 or 5W-30 LL-04)",
+          "Keep tires properly inflated and aligned",
+          "Avoid aggressive driving and unnecessary idling",
+          "Replace air and fuel filters regularly",
+          "Maintain a light vehicle load and use ECU tuning optimized for efficiency"
+        ]
+      },
+      {
+        question: "What is ECU remapping, and how does it benefit my Mini engine?",
+        answer:
+          "ECU remapping involves reprogramming the engine control unit to optimize fuel delivery, boost pressure, and ignition timing. It can increase horsepower by 10–30%, improve throttle response, and in some cases enhance fuel efficiency under normal driving conditions."
+      },
+      {
+        question: "Are Mini engines reliable?",
+        answer:
+          "Mini engines are generally reliable when properly maintained. Modern B-series engines (B38/B48) are robust, while older N-series engines require attention to timing chains and cooling systems. Regular servicing greatly extends engine life."
+      },
+      {
+        question: "How much does it cost to replace a Mini engine?",
+        answer:
+          "Engine replacement costs range from £1,500 for a used 1.5L petrol unit to £7,000+ for a new or high-performance JCW engine. Reconditioned engines typically cost between £2,500 and £5,500, including core exchange and warranty."
+      },
+      {
+        question: "Can I install a Mini engine myself?",
+        answer:
+          "While experienced DIYers can replace a Mini engine with the right tools and lift, it’s recommended to use a professional. Modern Minis require ECU coding, turbo calibration, and precise torque settings, making expert installation safer and more reliable."
+      },
+      {
+        question: "What is the lifespan of a Mini engine?",
+        answer:
+          "With proper maintenance, a Mini engine can last between 150,000 and 200,000 miles. Many B-series engines exceed 180,000 miles without major issues, while well-maintained JCW and diesel variants can reach similar longevity."
+      },
+      {
+        question: "Where can I buy a replacement Mini engine?",
+        answer:
+          "You can buy a replacement Mini engine from EnginesMarket.co.uk. We offer a wide selection of new, used, and reconditioned engines from trusted suppliers across the UK. Request a free quote today to compare prices and find the perfect engine for your Mini."
+      }
+    ]
+  },
+  mitsubishi: {
+    metadata: {
+      title: "Top Mitsubishi Engines for Sale - New, Used & Reconditioned | EnginesMarket.co.uk",
+      description: "Discover the best deals on Mitsubishi engines at EnginesMarket.co.uk. Compare prices for new, used, and reconditioned engines. Save time and money with our competitive quotes from trusted suppliers.",
+      keywords: [
+        "Mitsubishi engines",
+        "reconditioned Mitsubishi engines",
+        "used Mitsubishi engines",
+        "replacement Mitsubishi engines",
+        "best Mitsubishi engine prices",
+        "Mitsubishi engine deals",
+        "Mitsubishi engine quotes",
+        "buy Mitsubishi engines",
+        "Mitsubishi engine comparison",
+        "affordable Mitsubishi engines",
+        "Mitsubishi engine suppliers",
+        "Mitsubishi engine warranty",
+        "Mitsubishi engine performance",
+        "Mitsubishi engine reliability",
+        "Mitsubishi engine options",
+        "Mitsubishi engine compatibility",
+        "Mitsubishi engine cost",
+        "Mitsubishi engine savings",
+        "Mitsubishi engine marketplace",
+        "Mitsubishi engine parts"
+      ],
+    },
+    brandName: "Mitsubishi",
+    carImages: [
+      "/banners/banner-1.webp",
+      "/banners/banner-2.webp",
+      "/banners/banner-3.webp",
+      "/banners/banner-4.webp",
+      "/banners/banner-5.webp",
+    ],
+    carModelNames: [
+      "BMW X5",
+      "Audi A6",
+      "Mercedes C-Class",
+      "Range Rover Evoque",
+      "Volkswagen Golf",
+    ],
+    section0Image: {
+      img: "/bmw/bmw.png",
+      alt: "BMW front view",
+    },
+    section1Image: {
+      img: "/engine-guide-banners/engine-guide.png",
+      alt: "BMW rear view",
+    },
+    section4: {
+      mainParagraph:
+        "Mitsubishi engines are known for their reliability and performance, but like any mechanical system, they can experience issues over time. Whether you drive a Lancer, Pajero, Outlander, or Triton, understanding common engine problems—and how to address them—can help maintain smooth operation and extend engine life. Below are the most frequently encountered Mitsubishi engine issues, along with solutions and preventive measures:",
+      EngineProblems: [
+        {
+          title: "Timing Chain Stretching",
+          icon: <Zap className="h-5 w-5" />,
+          problem:
+            "Common in the 4B11 and 4N15 engines, timing chain stretching can cause poor engine performance, misfires, and in severe cases, catastrophic engine damage due to valve-to-piston contact.",
+          solution:
+            "Inspect the timing chain and tensioners regularly. Replace the chain, guides, and tensioners as a complete kit if wear is detected. Ensure proper oil flow to the tensioner mechanism.",
+          prevention:
+            "Use high-quality synthetic oil and adhere strictly to recommended oil change intervals (every 10,000–15,000 miles). Avoid extended oil usage, which increases sludge risk and reduces chain lubrication.",
+          severity: "Critical",
+        },
+        {
+          title: "Excessive Oil Consumption",
+          icon: <Droplet className="h-5 w-5" />,
+          problem:
+            "Engines like the 3A92 and 4G63 are prone to high oil consumption, often due to worn piston rings or valve stem seals. This can lead to low oil levels and potential engine damage if not monitored.",
+          solution:
+            "Regularly check and top up engine oil. If consumption exceeds 1L per 1,000 miles, perform a compression and leak-down test to identify internal wear. Replace piston rings or seals as needed.",
+          prevention:
+            "Use the manufacturer-recommended oil grade (e.g., 5W-30 or 0W-20), avoid aggressive driving, and maintain regular servicing to keep internal components in good condition.",
+          severity: "Moderate",
+        },
+        {
+          title: "Turbocharger Failure",
+          icon: <Gauge className="h-5 w-5" />,
+          problem:
+            "Turbocharged engines such as the 4G63T and 4N15 are susceptible to turbo failure due to oil coking, bearing wear, or boost overpressure, resulting in power loss and exhaust smoke.",
+          solution:
+            "Replace or rebuild the turbocharger using a reputable kit. Inspect the oil feed and return lines for blockages and ensure the intercooler is functioning properly.",
+          prevention:
+            "Allow the engine to idle for 1–2 minutes after hard driving to cool the turbo. Use high-quality oil and change it frequently. Avoid aggressive tuning without proper cooling and oiling upgrades.",
+          severity: "Critical",
+        },
+        {
+          title: "Fuel Injector Problems",
+          icon: <Droplet className="h-5 w-5" />,
+          problem:
+            "The 4B40 and 4N14 diesel engines often suffer from clogged or failing fuel injectors, leading to rough idling, reduced fuel economy, misfires, and black smoke from the exhaust.",
+          solution:
+            "Clean injectors using professional ultrasonic cleaning or replace them with high-quality units. Use diesel additives to dissolve deposits and restore spray patterns.",
+          prevention:
+            "Use premium diesel fuel, replace the fuel filter on schedule, and run fuel system cleaners every 10,000 miles to prevent carbon buildup and maintain injector performance.",
+          severity: "Common",
+        },
+        {
+          title: "Electronic Throttle Control Issues",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          problem:
+            "Found in modern engines like the 3A92, electronic throttle control (ETC) problems can cause erratic idling, throttle lag, or sudden loss of power due to a dirty throttle body or faulty sensor.",
+          solution:
+            "Clean the throttle body and perform a throttle position sensor (TPS) relearn procedure. If the issue persists, replace the throttle body assembly.",
+          prevention:
+            "Clean the throttle body every 30,000 miles and avoid driving in dusty conditions without proper air filtration. Keep the ECU and wiring harness connections clean and dry.",
+          severity: "Moderate",
+        }
+      ],
+      engineReliabilityAndPerformance: [
+        {
+          reliability: [
+            {
+              heading: "Best Engines for Reliability",
+              paragraph:
+                "The 4N14 2.2L diesel engine stands out for its durability, fuel efficiency, and strong low-end torque, making it ideal for high-mileage drivers and commercial use. The legendary 6G72 V6 engine, found in the Pajero and 3000GT, is renowned for its robust build and long service life—many exceed 200,000 miles with proper care.",
+            },
+            {
+              heading: "Maintenance Tips for Longevity",
+              paragraph:
+                "To maximize engine life, stick to regular oil and filter changes, inspect timing components early, and use OEM-spec fluids. Keep cooling and fuel systems clean, and address warning lights immediately. For diesel models, maintain the DPF and EGR systems to prevent long-term issues.",
+            },
+          ],
+          performance: [
+            {
+              heading: "Best Engines for Performance",
+              paragraph:
+                "The iconic 4G63T engine, especially in the Lancer Evolution, is a performance legend—offering massive tuning potential, turbo responsiveness, and rally-bred durability. The 4B11 2.0L engine, used in the Lancer Ralliart and later Evolutions, delivers a modern balance of power, efficiency, and reliability, making it a favorite among tuners and daily drivers alike.",
+            },
+            {
+              heading: "Performance Maintenance Tips",
+              paragraph:
+                "For high-performance Mitsubishi engines, ensure the turbo, intercooler, and cooling system are in top condition. Use premium fuel, high-flow injectors, and upgraded oil systems. Regularly inspect mounts, intake plumbing, and boost control solenoids to maintain peak performance and reliability.",
+            },
+          ],
+        },
+      ],
+      conclusion:
+        "By understanding these common Mitsubishi engine issues and their solutions, you can ensure your vehicle remains reliable, powerful, and enjoyable to drive for years to come. Proactive maintenance, using high-quality fluids and parts, and addressing problems early are key to preserving both performance and resale value. Whether you're driving a rugged Pajero, a sporty Lancer Evolution, or a practical Outlander, proper care will keep your Mitsubishi engine running smoothly—delivering the toughness, efficiency, and driving confidence the brand is known for.",
+    },
+    engineData: {
+      models: [
+        {
+          model: "/mitsubishi/mitsubishi-outlander.png",
+          model_name: "Mitsubishi Outlander",
+          engine_options: "2.0L Petrol, 2.2L Diesel, 2.4L Hybrid"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-lancer.png",
+          model_name: "Mitsubishi Lancer",
+          engine_options: "1.6L Petrol, 2.0L Petrol, 2.4L Petrol"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-pajero.png",
+          model_name: "Mitsubishi Pajero",
+          engine_options: "3.0L Petrol, 3.2L Diesel"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-eclipse-cross.png",
+          model_name: "Mitsubishi Eclipse Cross",
+          engine_options: "1.5L Turbo Petrol, 2.2L Diesel"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-asx.png",
+          model_name: "Mitsubishi ASX",
+          engine_options: "1.6L Petrol, 2.0L Petrol"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-mirage.png",
+          model_name: "Mitsubishi Mirage",
+          engine_options: "1.2L Petrol"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-triton.png",
+          model_name: "Mitsubishi Triton",
+          engine_options: "2.4L Petrol, 2.5L Diesel"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-galant.png",
+          model_name: "Mitsubishi Galant",
+          engine_options: "2.0L Petrol, 2.4L Petrol, 3.8L V6"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-colt.png",
+          model_name: "Mitsubishi Colt",
+          engine_options: "1.1L Petrol, 1.3L Petrol, 1.5L Diesel"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-grandis.png",
+          model_name: "Mitsubishi Grandis",
+          engine_options: "2.4L Petrol, 2.0L Diesel"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-i-miev.png",
+          model_name: "Mitsubishi i-MiEV",
+          engine_options: "Electric"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-shogun.png",
+          model_name: "Mitsubishi Shogun",
+          engine_options: "3.2L Diesel"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-space-star.png",
+          model_name: "Mitsubishi Space Star",
+          engine_options: "1.0L Petrol, 1.2L Petrol"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-delica.png",
+          model_name: "Mitsubishi Delica",
+          engine_options: "2.0L Petrol, 2.4L Petrol, 2.8L Diesel"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-3000gt.png",
+          model_name: "Mitsubishi 3000GT",
+          engine_options: "3.0L V6, 3.0L Twin-Turbo V6"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-rvr.png",
+          model_name: "Mitsubishi RVR",
+          engine_options: "1.8L Petrol, 2.0L Petrol"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-endeavor.png",
+          model_name: "Mitsubishi Endeavor",
+          engine_options: "3.8L V6"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-diamante.png",
+          model_name: "Mitsubishi Diamante",
+          engine_options: "2.5L V6, 3.0L V6, 3.5L V6"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-montero.png",
+          model_name: "Mitsubishi Montero",
+          engine_options: "3.0L Petrol, 3.2L Diesel"
+        },
+        {
+          model: "/mitsubishi/mitsubishi-l200.png",
+          model_name: "Mitsubishi L200",
+          engine_options: "2.4L Diesel"
+        }
+      ],
+      engine_codes: [
+        {
+          engineCode: "4G63",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 200,
+          torque: 290,
+          productionYears: "1988–2007"
+        },
+        {
+          engineCode: "4G64",
+          engineSize: 2.4,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 160,
+          torque: 220,
+          productionYears: "1986–2006"
+        },
+        {
+          engineCode: "4G69",
+          engineSize: 2.4,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 162,
+          torque: 220,
+          productionYears: "2004–2012"
+        },
+        {
+          engineCode: "4B11",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 240,
+          torque: 366,
+          productionYears: "2007–present"
+        },
+        {
+          engineCode: "4B12",
+          engineSize: 2.4,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 168,
+          torque: 226,
+          productionYears: "2007–present"
+        },
+        {
+          engineCode: "6G72",
+          engineSize: 3.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 150,
+          torque: 250,
+          productionYears: "1986–2006"
+        },
+        {
+          engineCode: "6G74",
+          engineSize: 3.5,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 215,
+          torque: 310,
+          productionYears: "1992–2006"
+        },
+        {
+          engineCode: "4N14",
+          engineSize: 2.2,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 177,
+          torque: 380,
+          productionYears: "2010–present"
+        },
+        {
+          engineCode: "4D56",
+          engineSize: 2.5,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 136,
+          torque: 314,
+          productionYears: "1986–2015"
+        },
+        {
+          engineCode: "4M41",
+          engineSize: 3.2,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 200,
+          torque: 441,
+          productionYears: "1999–present"
+        },
+        {
+          engineCode: "4A91",
+          engineSize: 1.5,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 109,
+          torque: 145,
+          productionYears: "2004–present"
+        },
+        {
+          engineCode: "4A92",
+          engineSize: 1.6,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 117,
+          torque: 154,
+          productionYears: "2009–present"
+        },
+        {
+          engineCode: "6A12",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 170,
+          torque: 186,
+          productionYears: "1992–2000"
+        },
+        {
+          engineCode: "6A13",
+          engineSize: 2.5,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 200,
+          torque: 250,
+          productionYears: "1992–2002"
+        },
+        {
+          engineCode: "4G15",
+          engineSize: 1.5,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 90,
+          torque: 126,
+          productionYears: "1983–2005"
+        },
+        {
+          engineCode: "4G18",
+          engineSize: 1.6,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 98,
+          torque: 138,
+          productionYears: "2004–2012"
+        },
+        {
+          engineCode: "4G93",
+          engineSize: 1.8,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 140,
+          torque: 176,
+          productionYears: "1991–2006"
+        },
+        {
+          engineCode: "4G94",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 136,
+          torque: 176,
+          productionYears: "2002–2007"
+        },
+        {
+          engineCode: "4G92",
+          engineSize: 1.6,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 170,
+          torque: 162,
+          productionYears: "1989–2005"
+        },
+        {
+          engineCode: "4G91",
+          engineSize: 1.5,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 110,
+          torque: 137,
+          productionYears: "1989–2005"
+        },
+        {
+          engineCode: "4J11",
+          engineSize: 1.8,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 139,
+          torque: 172,
+          productionYears: "2010–present"
+        },
+        {
+          engineCode: "4N15",
+          engineSize: 2.4,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 181,
+          torque: 430,
+          productionYears: "2015–present"
+        },
+        {
+          engineCode: "6B31",
+          engineSize: 3.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 230,
+          torque: 292,
+          productionYears: "2006–present"
+        },
+        {
+          engineCode: "4G63T",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 276,
+          torque: 373,
+          productionYears: "1988–2007"
+        }
+      ],
+      models_engines: [
+        {
+          engineCode: "4G63",
+          compatibleModels: ["Lancer Evolution", "Galant", "Eclipse"]
+        },
+        {
+          engineCode: "4G64",
+          compatibleModels: ["Outlander", "Galant", "Eclipse"]
+        },
+        {
+          engineCode: "4G69",
+          compatibleModels: ["Outlander", "Galant", "Endeavor"]
+        },
+        {
+          engineCode: "4B11",
+          compatibleModels: ["Lancer", "Outlander", "ASX"]
+        },
+        {
+          engineCode: "4B12",
+          compatibleModels: ["Lancer", "Outlander", "ASX"]
+        },
+        {
+          engineCode: "6G72",
+          compatibleModels: ["3000GT", "Pajero", "Montero"]
+        },
+        {
+          engineCode: "6G74",
+          compatibleModels: ["Pajero", "Montero", "Diamante"]
+        },
+        {
+          engineCode: "4N14",
+          compatibleModels: ["ASX", "Outlander", "Delica"]
+        },
+        {
+          engineCode: "4D56",
+          compatibleModels: ["Pajero", "L200", "Delica"]
+        },
+        {
+          engineCode: "4M41",
+          compatibleModels: ["Pajero", "Shogun", "Triton"]
+        },
+        {
+          engineCode: "4A91",
+          compatibleModels: ["Colt", "Lancer", "Mirage"]
+        },
+        {
+          engineCode: "4A92",
+          compatibleModels: ["Lancer", "ASX", "Mirage"]
+        },
+        {
+          engineCode: "6A12",
+          compatibleModels: ["Galant", "Eterna", "FTO"]
+        },
+        {
+          engineCode: "6A13",
+          compatibleModels: ["Galant", "Legnum", "Eterna"]
+        },
+        {
+          engineCode: "4G15",
+          compatibleModels: ["Mirage", "Colt", "Lancer"]
+        },
+        {
+          engineCode: "4G18",
+          compatibleModels: ["Lancer", "Colt", "Mirage"]
+        },
+        {
+          engineCode: "4G93",
+          compatibleModels: ["Lancer", "Galant", "Mirage"]
+        },
+        {
+          engineCode: "4G94",
+          compatibleModels: ["Lancer", "Galant", "Montero"]
+        },
+        {
+          engineCode: "4G92",
+          compatibleModels: ["Lancer", "Mirage", "Colt"]
+        },
+        {
+          engineCode: "4G91",
+          compatibleModels: ["Lancer", "Mirage", "Colt"]
+        }
+      ],
+      replacement_costs: [
+        {
+          image: "/mitsubishi/mitsubishi-generic.png",
+          model: "Mitsubishi Lancer, ASX",
+          engineType: "1.4L Petrol",
+          estimatedCost: "£1,500 - £3,000"
+        },
+        {
+          image: "/mitsubishi/mitsubishi-generic.png",
+          model: "Mitsubishi Outlander",
+          engineType: "2.0L Diesel",
+          estimatedCost: "£2,500 - £4,500"
+        },
+        {
+          image: "/mitsubishi/mitsubishi-generic.png",
+          model: "Mitsubishi Pajero",
+          engineType: "3.2L Diesel",
+          estimatedCost: "£3,000 - £5,500"
+        },
+        {
+          image: "/mitsubishi/mitsubishi-generic.png",
+          model: "Mitsubishi Eclipse Cross",
+          engineType: "1.5L Petrol",
+          estimatedCost: "£2,000 - £4,000"
+        },
+        {
+          image: "/mitsubishi/mitsubishi-generic.png",
+          model: "Mitsubishi Mirage",
+          engineType: "1.2L Petrol",
+          estimatedCost: "£1,200 - £2,500"
+        },
+        {
+          image: "/mitsubishi/mitsubishi-generic.png",
+          model: "Mitsubishi Triton",
+          engineType: "2.4L Diesel",
+          estimatedCost: "£2,800 - £5,000"
+        },
+        {
+          image: "/mitsubishi/mitsubishi-generic.png",
+          model: "Mitsubishi Shogun",
+          engineType: "3.8L Petrol",
+          estimatedCost: "£3,500 - £6,000"
+        },
+        {
+          image: "/mitsubishi/mitsubishi-generic.png",
+          model: "Mitsubishi Colt",
+          engineType: "1.3L Petrol",
+          estimatedCost: "£1,300 - £2,800"
+        },
+        {
+          image: "/mitsubishi/mitsubishi-generic.png",
+          model: "Mitsubishi Grandis",
+          engineType: "2.4L Petrol",
+          estimatedCost: "£2,200 - £4,200"
+        },
+        {
+          image: "/mitsubishi/mitsubishi-generic.png",
+          model: "Mitsubishi Galant",
+          engineType: "2.5L Petrol",
+          estimatedCost: "£2,000 - £4,000"
+        },
+        {
+          image: "/mitsubishi/mitsubishi-generic.png",
+          model: "Mitsubishi Space Star",
+          engineType: "1.6L Petrol",
+          estimatedCost: "£1,500 - £3,200"
+        },
+        {
+          image: "/mitsubishi/mitsubishi-generic.png",
+          model: "Mitsubishi Delica",
+          engineType: "2.8L Diesel",
+          estimatedCost: "£2,700 - £5,200"
+        },
+        {
+          image: "/mitsubishi/mitsubishi-generic.png",
+          model: "Mitsubishi i-MiEV",
+          engineType: "Electric",
+          estimatedCost: "£4,000 - £7,000"
+        },
+        {
+          image: "/mitsubishi/mitsubishi-generic.png",
+          model: "Mitsubishi RVR",
+          engineType: "2.0L Petrol",
+          estimatedCost: "£2,000 - £4,000"
+        },
+        {
+          image: "/mitsubishi/mitsubishi-generic.png",
+          model: "Mitsubishi Montero",
+          engineType: "3.0L Petrol",
+          estimatedCost: "£3,000 - £5,500"
+        }
+      ]
+    },
+    section7: [
+      {
+        title: "New Mitsubishi Engines",
+        icon: <Sparkles className="h-6 w-6" />,
+        badge: "Premium",
+        badgeVariant: "default" as const,
+        pros: [
+          "100% reliability with a factory warranty",
+          "Best performance & longevity",
+        ],
+        cons: [
+          "Higher cost",
+          "Limited availability for older models",
+        ],
+      },
+      {
+        title: "Used Mitsubishi Engines",
+        icon: <DollarSign className="h-6 w-6" />,
+        badge: "Budget-Friendly",
+        badgeVariant: "secondary" as const,
+        pros: [
+          "Cost-effective & widely available",
+          "Good for quick replacements",
+        ],
+        cons: [
+          "Potential hidden wear and tear",
+          "Shorter lifespan than new or reconditioned engines",
+        ],
+      },
+      {
+        title: "Reconditioned Mitsubishi Engines",
+        icon: <Wrench className="h-6 w-6" />,
+        badge: "Best Value",
+        badgeVariant: "outline" as const,
+        pros: [
+          "Professionally rebuilt with new components",
+          "More reliable than used engines",
+          "Balanced cost vs. performance",
+        ],
+        cons: [
+          "Slightly more expensive than used engines",
+        ],
+      },
+    ],
+    section8: {
+      EngineProblems: [
+        {
+          id: "check-engine-light-issues",
+          title: "Check Engine Light Issues",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          severity: "Common",
+          data: [
+            {
+              heading: "Common Causes",
+              paragraph:
+                "The check engine light in Mitsubishi vehicles can signal issues ranging from a loose gas cap to serious engine or emissions problems. Common triggers include faulty oxygen sensors, malfunctioning EGR valves, catalytic converter inefficiency, or issues with the MAF sensor—especially in models like the Outlander and Lancer with 4B11/4N14 engines.",
+            },
+            {
+              heading: "Effective Solutions",
+              paragraph:
+                "Use an OBD-II scanner to retrieve diagnostic trouble codes (DTCs) from your Mitsubishi’s ECU. Address simple fixes first—like tightening the fuel cap or replacing a faulty sensor. For persistent codes, consult a Mitsubishi specialist to diagnose deeper issues such as vacuum leaks or ignition system faults.",
+            },
+            {
+              heading: "Prevention Tips",
+              paragraph:
+                "Follow the manufacturer’s service schedule, use high-quality fuel, and inspect the fuel cap and emissions system regularly. Address warning lights early to avoid costly repairs and maintain optimal engine efficiency and emissions compliance.",
+            },
+          ],
+        },
+        {
+          id: "power-loss-and-turbo-failures",
+          title: "Power Loss & Turbo Failures",
+          icon: <Gauge className="h-5 w-5" />,
+          severity: "Critical",
+          data: [
+            {
+              heading: "Identifying Root Causes",
+              paragraph:
+                "Power loss in turbocharged Mitsubishi engines—such as the 4G63T (Lancer Evolution) or 4N15 (Outlander, Triton)—is often due to turbocharger failure, boost leaks, clogged intercoolers, or oil starvation. Symptoms include sluggish acceleration, black smoke, and reduced throttle response.",
+            },
+            {
+              heading: "Repair Solutions",
+              paragraph:
+                "Inspect the turbocharger for oil leaks, shaft play, or compressor damage. Replace worn hoses, clamps, and intercooler piping. Ensure the oil feed and return lines are clear, and consider upgrading to a performance turbo or hybrid unit for enhanced reliability and output.",
+            },
+            {
+              heading: "Preventive Measures",
+              paragraph:
+                "Allow the engine to idle for 1–2 minutes after spirited driving to cool the turbo. Use high-quality synthetic oil and change it every 10,000 miles. Avoid aggressive tuning without proper cooling, oiling, and boost control upgrades.",
+            },
+          ],
+        },
+        {
+          id: "excessive-smoke-and-oil-leaks",
+          title: "Excessive Smoke & Oil Leaks",
+          icon: <Smoke className="h-5 w-5" />,
+          severity: "Moderate",
+          data: [
+            {
+              heading: "Understanding the Causes",
+              paragraph:
+                "Blue exhaust smoke indicates burning oil—often due to worn piston rings, valve seals, or PCV system failure. White smoke suggests coolant entering the combustion chamber (possible head gasket issue), while black smoke points to a rich fuel mixture or turbo overfueling in diesel models like the 4M41.",
+            },
+            {
+              heading: "Troubleshooting Steps",
+              paragraph:
+                "Check for visible oil leaks around the valve cover gasket, oil pan, and rear main seal. Perform a compression or leak-down test to assess internal wear. For smoke issues, inspect turbocharger seals, injectors (diesel), and cooling system integrity.",
+            },
+            {
+              heading: "Maintenance for Prevention",
+              paragraph:
+                "Check oil levels monthly and top up as needed. Use OEM-spec 5W-30 or 0W-20 engine oil. Replace valve cover gaskets and PCV valves during major services. Keep the intake and turbo systems clean to reduce oil blow-by.",
+            },
+          ],
+        },
+      ],
+      maintenanceTips: [
+        {
+          icon: "Lightbulb",
+          iconColor: "text-blue-600",
+          border: "border-blue-200",
+          bg: "bg-blue-50",
+          title: "Regular Inspections",
+          titleColor: "text-blue-800",
+          text: "Check your Mitsubishi engine monthly for oil levels, coolant condition, warning lights, and unusual noises. Early detection of issues like leaks or turbo whine can prevent major engine damage.",
+          textColor: "text-blue-700",
+        },
+        {
+          icon: "CheckCircle",
+          iconColor: "text-green-600",
+          border: "border-green-200",
+          bg: "bg-green-50",
+          title: "Preventive Maintenance",
+          titleColor: "text-green-800",
+          text: "Stick to Mitsubishi’s recommended service intervals—especially for oil changes, air filters, and diesel particulate filter (DPF) maintenance. Use genuine or high-spec parts to ensure long-term reliability.",
+          textColor: "text-green-700",
+        },
+        {
+          icon: "AlertTriangle",
+          iconColor: "text-orange-600",
+          border: "border-orange-200",
+          bg: "bg-orange-50",
+          title: "Act Quickly",
+          titleColor: "text-orange-800",
+          text: "If you notice performance drops, smoke, knocking, or dashboard warnings, don’t delay. Addressing issues early can save thousands in engine repairs and extend your Mitsubishi’s lifespan.",
+          textColor: "text-orange-700",
+        },
+      ],
+      summary: {
+        variant: "green",
+        title: "Key Takeaway",
+        content:
+          "By following these troubleshooting tips and maintaining your Mitsubishi engine properly, you can help ensure its longevity and reliable performance. Proactive maintenance, timely diagnostics, and quality repairs are essential to prevent common engine faults. At EnginesMarket.co.uk, we offer a wide selection of Mitsubishi engines—new, used, or reconditioned—to keep your vehicle running smoothly for years to come, whether you're driving a rugged Pajero, a sporty Lancer Evolution, or a practical Outlander.",
+      },
+    },
+    section9: {
+      performanceUpgrades: [
+        {
+          id: "basic-enhancements",
+          title: "Basic Enhancement Options",
+          icon: <Zap className="h-5 w-5" />,
+          level: "Beginner",
+          upgrades: [
+            {
+              name: "ECU Remapping (Stage 1 Tuning)",
+              icon: <Cog className="h-4 w-4" />,
+              description:
+                "Adjusting the Engine Control Unit (ECU) settings to optimize fuel delivery, ignition timing, and boost pressure—especially effective on turbocharged Mitsubishi engines like the 4G63T (Lancer Evolution), 4B11 (Outlander), and 4N15 (Triton).",
+              benefits:
+                "Gains of 15–30% in horsepower and torque, improved throttle response, and more linear power delivery. Ideal for daily-driven Lancers, Pajeros, and Eclipse Cross models.",
+              considerations:
+                "Must be performed by a Mitsubishi-savvy tuner to avoid triggering error codes or damaging sensitive emissions and turbo systems.",
+            },
+            {
+              name: "Cold Air Intake Systems",
+              icon: <Wind className="h-4 w-4" />,
+              description:
+                "Replaces the restrictive stock airbox with a high-flow system that draws cooler, denser air from outside the engine bay, improving combustion efficiency.",
+              benefits:
+                "Modest power gains (8–15hp), sharper throttle response, and a more aggressive induction sound—popular among Lancer and Outlander owners.",
+              considerations:
+                "Ensure proper sealing and filtration to protect direct-injection engines and turbochargers from debris and moisture ingress.",
+            },
+            {
+              name: "Performance Exhaust Systems",
+              icon: <Volume2 className="h-4 w-4" />,
+              description:
+                "Upgrading to a cat-back or axle-back performance exhaust reduces backpressure, improves exhaust flow, and enhances engine breathing—particularly beneficial on turbo models.",
+              benefits:
+                "5–10hp gains, reduced engine weight, and a deeper, sportier exhaust note while remaining emissions-compliant.",
+              considerations:
+                "May require ECU retuning to prevent lean conditions or check engine lights due to faster exhaust gas velocity.",
+            },
+          ],
+        },
+        {
+          id: "tuning-stages",
+          title: "Tuning Stages: 1–3",
+          icon: <TrendingUp className="h-5 w-5" />,
+          level: "Progressive",
+          stages: [
+            {
+              stage: "Stage 1 Tuning",
+              description:
+                "Entry-level tuning focused on ECU remapping and bolt-on upgrades like cold air intakes and cat-back exhausts—no internal modifications required.",
+              benefits:
+                "Safe 20–40hp gains on turbo models like the 4G63T and 4B11, improved drivability, and enhanced low-end torque for street use.",
+              considerations:
+                "Maintains factory reliability when properly tuned; ideal for enthusiasts seeking a mild performance boost.",
+            },
+            {
+              stage: "Stage 2 Tuning",
+              description:
+                "Intermediate upgrades including high-flow turbochargers, performance intercoolers, uprated fuel injectors, and supporting modifications for sustained boost.",
+              benefits:
+                "60–120hp gains over stock, significantly improved turbo response and mid-range power—common in tuned Lancer Evos and Outlander PHEVs.",
+              considerations:
+                "Requires upgraded cooling, oiling, and fuel systems. Best suited for weekend performance or track-day vehicles.",
+            },
+            {
+              stage: "Stage 3 Tuning",
+              description:
+                "Full race builds with forged internals, aggressive camshafts, large-frame turbos, and standalone ECUs—typical for track-focused Lancer Evolution or Pajero rally builds.",
+              benefits:
+                "150+ horsepower over stock, extreme performance, and enhanced durability under high boost and RPM.",
+              considerations:
+                "Dramatically reduces daily usability and road legality; requires expert installation, tuning, and frequent maintenance.",
+            },
+          ],
+        },
+        {
+          id: "turbo-upgrades",
+          title: "Turbo Upgrades",
+          icon: <Gauge className="h-5 w-5" />,
+          level: "Advanced",
+          content: {
+            description:
+              "Turbocharger upgrades are one of the most effective ways to unlock massive power from Mitsubishi’s turbocharged engines, especially the legendary 4G63T and modern 4N15 diesel.",
+            points: [
+              {
+                title: "Bolt-On Turbo Upgrades",
+                description:
+                  "Direct-replacement turbos (e.g., Garrett GT series or Pure Turbo hybrids) offer improved flow and reduced lag over stock units—ideal for Stage 2 builds on Lancer Evolution or Triton.",
+              },
+              {
+                title: "Hybrid Turbochargers",
+                description:
+                  "Combine OEM housings with performance internals for optimal fit and increased output—popular for 4B11 and 4N14 engines seeking 400+ hp.",
+              },
+              {
+                title: "Big Turbo Kits",
+                description:
+                  "Large-frame turbo systems designed for maximum power (500hp+), often requiring custom manifolds, fuel systems, and intercoolers—common in drag and time-attack builds.",
+              },
+            ],
+          },
+        },
+        {
+          id: "engine-internals",
+          title: "Engine Internals Reinforcements",
+          icon: <Cog className="h-5 w-5" />,
+          level: "Expert",
+          content: {
+            description:
+              "Essential for high-power builds to withstand increased cylinder pressures and thermal loads from aggressive tuning and forced induction.",
+            points: [
+              {
+                title: "Forged Pistons and Connecting Rods",
+                description:
+                  "Critical for engines exceeding 350hp; forged internals reduce the risk of detonation and mechanical failure under high boost—standard in tuned 4G63T builds.",
+              },
+              {
+                title: "High-Performance Camshafts",
+                description:
+                  "Optimized cam profiles improve valve timing and airflow, especially beneficial for high-RPM performance in 6G72 and 4G63 engines.",
+              },
+              {
+                title: "Upgraded Valvetrain & Bearings",
+                description:
+                  "Performance valve springs, retainers, and oversized main/rod bearings ensure reliability under extreme conditions and high cylinder pressures.",
+              },
+            ],
+          },
+        },
+        {
+          id: "reliability-impact",
+          title: "Impact on Reliability & Fuel Efficiency",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          level: "Important",
+          content: {
+            description:
+              "While performance upgrades enhance driving excitement, they also introduce trade-offs that Mitsubishi owners must carefully manage.",
+            points: [
+              {
+                title: "Reliability Considerations",
+                description:
+                  "Increased power places greater stress on OEM components. Regular oil changes, high-quality fluids, and conservative driving habits are crucial to longevity.",
+              },
+              {
+                title: "Fuel Efficiency Changes",
+                description:
+                  "Stage 1 tuning may slightly improve efficiency under light loads, but most performance upgrades—especially turbo and exhaust mods—lead to 15–35% higher fuel consumption.",
+              },
+            ],
+          },
+        },
+      ],
+      summary: {
+        variant: "performance",
+        title: "Performance Enhancement Summary",
+        content:
+          "Mitsubishi's performance heritage—from the legendary Lancer Evolution to the rugged Pajero—provides an excellent foundation for tuning. Whether you're enhancing a daily-driven Outlander or building a track-focused Evo, each stage of modification unlocks greater power and driving thrills. However, supporting upgrades, cooling, and meticulous maintenance are essential to balance performance with reliability. At EnginesMarket.co.uk, we offer high-performance Mitsubishi engines—reconditioned, upgraded, or built-to-order—so you can elevate your Mitsubishi’s capabilities while ensuring long-term durability and driving satisfaction.",
+      },
+    },
+    faqs: [
+      {
+        question: "What is EnginesMarket.co.uk?",
+        answer:
+          "EnginesMarket.co.uk is a price comparison website specializing in providing competitive quotes for new, used, and reconditioned Mitsubishi engines from multiple trusted sellers. Our platform helps you find the best deals on quality Mitsubishi engines while saving time and money."
+      },
+      {
+        question: "How does EnginesMarket.co.uk save me money?",
+        answer:
+          "By comparing quotes from various verified suppliers, EnginesMarket.co.uk ensures you get the most competitive prices for Mitsubishi engines. Our free service eliminates overpricing and helps you save 20–40% compared to single-seller options."
+      },
+      {
+        question: "What types of Mitsubishi engines can I find on EnginesMarket.co.uk?",
+        answer:
+          "We offer a comprehensive selection of Mitsubishi engines including reconditioned, used, and brand new replacement engines for models like the Lancer, Outlander, Pajero, Triton, and Eclipse. Options include petrol, diesel, hybrid, and turbocharged variants such as the 4B11, 4N14, and legendary 4G63."
+      },
+      {
+        question: "Is there a warranty on engines purchased through EnginesMarket.co.uk?",
+        answer:
+          "Yes, many engines listed on our platform come with a warranty. Reconditioned engines typically include a 12–24 month warranty, while used engines may have shorter coverage. Warranty terms vary by seller and engine condition."
+      },
+      {
+        question: "How do I request a quote on EnginesMarket.co.uk?",
+        answer:
+          "Simply visit our website, select your Mitsubishi model and engine type, and fill out the quote request form with your vehicle details. You’ll receive competitive offers from multiple trusted suppliers within hours."
+      },
+      {
+        question: "What are the most common problems with Mitsubishi engines?",
+        answerList: [
+          "Timing chain wear or failure (especially in 4B11 and 4N15 engines)",
+          "Excessive oil consumption in models like the 3A92 and 4G63",
+          "Electronic throttle control (ETC) issues causing idle fluctuations",
+          "Turbocharger failure in 4G63T and 4N15 diesel engines",
+          "Coolant leaks from aging expansion tanks or water pumps"
+        ]
+      },
+      {
+        question: "How long do Mitsubishi engines typically last?",
+        answer:
+          "With proper maintenance, Mitsubishi engines can last between 150,000 and 200,000 miles. Robust units like the 4G63 and 4N14 diesel are known to exceed 200,000 miles when regularly serviced and driven responsibly."
+      },
+      {
+        question: "What is the best Mitsubishi engine for performance?",
+        answer:
+          "The legendary 4G63T engine from the Lancer Evolution is widely regarded as Mitsubishi’s performance flagship—renowned for its tuning potential, durability, and turbocharged power delivery. The 4B11 engine also offers strong performance in modern models like the Lancer Ralliart and Outlander."
+      },
+      {
+        question: "Are Mitsubishi engines reliable?",
+        answer:
+          "Yes, Mitsubishi engines are generally reliable, especially when properly maintained. Models like the 4G63, 4B11, and 4N14 diesel are particularly well-regarded for their durability, efficiency, and longevity across both passenger and commercial vehicles."
+      },
+      {
+        question: "Can I use a Hyundai engine in my Mitsubishi?",
+        answer:
+          "While some Hyundai and Mitsubishi engines share design similarities, direct swaps are not always feasible due to differences in mounting points, ECU systems, and ancillary components. It’s recommended to use OEM-compatible Mitsubishi engines for reliability and compliance."
+      },
+      {
+        question: "What is the fuel efficiency of Mitsubishi engines?",
+        answer:
+          "Mitsubishi engines like the 1.2L 3A92 (found in the Mirage) are among the most fuel-efficient in their class, achieving up to 60+ mpg. Even larger engines, such as the 4N14 diesel, offer excellent economy—ideal for city driving and high-mileage use."
+      },
+      {
+        question: "What is the difference between a used and a reconditioned Mitsubishi engine?",
+        answer:
+          "A used Mitsubishi engine is removed from a donor vehicle and sold as-is, with unknown wear and no refurbishment. A reconditioned engine is professionally disassembled, inspected, and rebuilt with new or refurbished parts to meet OEM standards, offering better reliability and warranty coverage."
+      },
+      {
+        question: "How do I know if a Mitsubishi engine is compatible with my car?",
+        answer:
+          "Engine compatibility depends on model, year, engine code, and drivetrain. Always match the engine code (e.g., 4B11, 4N14) and consult a professional mechanic or use a Mitsubishi parts catalog. EnginesMarket.co.uk provides compatibility guidance with every quote."
+      },
+      {
+        question: "What is the cost of a new Mitsubishi engine?",
+        answer:
+          "The cost varies by model and engine type. New engines typically range from £3,000 to £7,000+, with high-performance or diesel units at the higher end. Reconditioned engines offer significant savings, usually costing 30–50% less than new."
+      },
+      {
+        question: "Where can I buy a reconditioned Mitsubishi engine?",
+        answer:
+          "You can buy a reconditioned Mitsubishi engine through EnginesMarket.co.uk. We connect you with trusted UK suppliers who professionally rebuild engines to high standards, offering warranties and reliable performance at a fraction of the cost of new."
+      },
+      {
+        question: "What is the warranty on a reconditioned Mitsubishi engine?",
+        answer:
+          "Warranties on reconditioned Mitsubishi engines typically range from 6 months to 2 years, depending on the supplier and engine type. Most reputable rebuilders offer 12-month warranties covering parts and labor for peace of mind."
+      },
+      {
+        question: "How often should I service my Mitsubishi engine?",
+        answer:
+          "It’s recommended to service your Mitsubishi engine every 10,000 to 15,000 miles or once a year, whichever comes first. Turbocharged and diesel models may require more frequent oil and filter changes to maintain performance and longevity."
+      },
+      {
+        question: "What are the benefits of a turbocharged Mitsubishi engine?",
+        answerList: [
+          "Increased power and torque without a large increase in engine size",
+          "Improved fuel efficiency under normal driving conditions",
+          "Better throttle response and performance in models like the Lancer Evolution and Outlander PHEV",
+          "Enhanced towing and off-road capability in Pajero and Triton models"
+        ]
+      },
+      {
+        question: "Can I install a Mitsubishi engine myself?",
+        answer:
+          "While experienced DIYers can replace a Mitsubishi engine with the right tools and lift, we strongly recommend professional installation. Modern engines require ECU coding, precise torque settings, and compatibility checks best handled by certified mechanics."
+      },
+      {
+        question: "What is the most fuel-efficient Mitsubishi engine?",
+        answer:
+          "The 1.2L 3A92 petrol engine, used in the Mitsubishi Mirage, is one of the most fuel-efficient Mitsubishi engines available, delivering up to 67 mpg (UK) and low emissions—making it ideal for city drivers and budget-conscious owners."
+      }
+    ]
+  },
+  nissan: {
+    metadata: {
+      title: "Best Prices on Nissan Engines | New, Used & Reconditioned | EnginesMarket.co.uk",
+      description: "Discover unbeatable prices on new, used, and reconditioned Nissan engines at EnginesMarket.co.uk. Compare quotes from multiple sellers and save time and money on high-quality replacement engines for your Nissan vehicle. Request a quote today!",
+      keywords: [
+        "Nissan engines",
+        "new Nissan engines",
+        "used Nissan engines",
+        "reconditioned Nissan engines",
+        "best Nissan engine prices",
+        "Nissan engine replacement",
+        "Nissan engine deals",
+        "Nissan engine quotes",
+        "EnginesMarket.co.uk",
+        "Nissan engine comparison",
+        "affordable Nissan engines",
+        "high-quality Nissan engines",
+        "Nissan engine parts",
+        "Nissan engine repair",
+        "Nissan engine troubleshooting",
+        "Nissan engine upgrades",
+        "Nissan engine performance",
+        "Nissan engine reliability",
+        "Nissan engine cost",
+        "Nissan engine warranty"
+      ],
+    },
+    brandName: "Nissan",
+    carImages: [
+      "/banners/banner-1.webp",
+      "/banners/banner-2.webp",
+      "/banners/banner-3.webp",
+      "/banners/banner-4.webp",
+      "/banners/banner-5.webp",
+    ],
+    carModelNames: [
+      "BMW X5",
+      "Audi A6",
+      "Mercedes C-Class",
+      "Range Rover Evoque",
+      "Volkswagen Golf",
+    ],
+    section0Image: {
+      img: "/bmw/bmw.png",
+      alt: "BMW front view",
+    },
+    section1Image: {
+      img: "/engine-guide-banners/engine-guide.png",
+      alt: "BMW rear view",
+    },
+    section4: {
+      mainParagraph:
+        "Nissan engines are known for their reliability and performance, but like any mechanical system, they can experience issues over time. Whether you drive an Altima, Maxima, Qashqai, Pathfinder, or GT-R, understanding common engine problems—and how to address them—can help maintain smooth operation and extend engine life. Below are the most frequently encountered Nissan engine issues, along with solutions and preventive measures:",
+      EngineProblems: [
+        {
+          title: "Excessive Oil Consumption",
+          icon: <Droplet className="h-5 w-5" />,
+          problem:
+            "Common in Nissan’s 2.5L 4-cylinder engines (QR25DE), particularly in models like the Altima, Sentra, and Rogue, excessive oil consumption can lead to low oil levels, increased emissions, and potential engine damage if not monitored.",
+          solution:
+            "Regularly check and top up engine oil between services. If consumption exceeds 1L per 1,500 miles, perform a compression or leak-down test. Replace worn piston rings or valve stem seals as needed.",
+          prevention:
+            "Use high-quality full synthetic oil (e.g., 0W-20 or 5W-30), adhere to Nissan’s recommended oil change intervals, and avoid short-trip driving that increases moisture buildup and oil degradation.",
+          severity: "Moderate",
+        },
+        {
+          title: "Timing Chain Issues",
+          icon: <Zap className="h-5 w-5" />,
+          problem:
+            "Found in VQ35DE, VQ35HR, and QR25DE engines (used in Altima, Maxima, Pathfinder), timing chain wear or tensioner failure can cause rattling noises, misfires, and catastrophic engine damage due to valve-to-piston contact.",
+          solution:
+            "Inspect the timing chain, guides, and tensioners during service. Replace the entire timing chain kit if wear or noise is detected. Address oil flow issues that may contribute to premature failure.",
+          prevention:
+            "Change oil regularly with the correct viscosity grade to ensure proper tensioner operation. Avoid extended oil change intervals, which increase sludge risk and reduce lubrication to critical timing components.",
+          severity: "Critical",
+        },
+        {
+          title: "Overheating",
+          icon: <Thermometer className="h-5 w-5" />,
+          problem:
+            "Overheating is a common issue in various Nissan models, often caused by coolant leaks, thermostat failure, radiator clogs, or water pump malfunction—especially in older Qashqai, X-Trail, and Navara models.",
+          solution:
+            "Inspect the cooling system for leaks, test the thermostat, and flush the radiator. Replace faulty components such as the water pump, radiator cap, or head gasket if necessary.",
+          prevention:
+            "Check coolant levels monthly and replace coolant every 3–5 years. Inspect hoses and belts regularly, and ensure the cooling fan and thermostat are functioning properly.",
+          severity: "Critical",
+        },
+        {
+          title: "CVT Transmission Problems",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          problem:
+            "While technically a transmission issue, CVT problems (common in Altima, Rogue, Sentra, and Juke) can mimic engine faults—symptoms include shuddering, slipping, delayed response, and overheating under load.",
+          solution:
+            "Check and replace CVT fluid if degraded. Perform a software update (TSB available for many models). In severe cases, a CVT replacement or rebuild may be required.",
+          prevention:
+            "Service the CVT every 30,000–60,000 miles with OEM-spec fluid. Avoid aggressive driving, towing, or rapid acceleration, which stresses the belt and pulley system.",
+          severity: "Common",
+        },
+        {
+          title: "Fuel Injector Problems",
+          icon: <Droplet className="h-5 w-5" />,
+          problem:
+            "Fuel injectors in models like the Juke, Qashqai, and Pulsar can become clogged or fail, leading to rough idling, poor fuel economy, misfires, and reduced power—especially in direct-injection engines.",
+          solution:
+            "Clean injectors using professional fuel system cleaning or ultrasonic service. Replace faulty injectors with high-quality units to restore performance and fuel atomization.",
+          prevention:
+            "Use Top Tier gasoline, run fuel injector cleaners periodically, and replace the fuel filter as recommended. Avoid low-quality fuel to minimize carbon buildup.",
+          severity: "Common",
+        }
+      ],
+      engineReliabilityAndPerformance: [
+        {
+          reliability: [
+            {
+              heading: "Best Engines for Reliability",
+              paragraph:
+                "The Nissan VQ35DE V6 is widely acclaimed for its smooth operation, durability, and longevity—regularly exceeding 200,000 miles with proper care. Found in the Maxima, 350Z, and G35, it's one of the most reliable V6 engines ever produced. The QR25DE 2.5L 4-cylinder, used in the Altima and Sentra, also offers strong reliability and fuel efficiency when maintained correctly.",
+            },
+            {
+              heading: "Maintenance Tips for Longevity",
+              paragraph:
+                "To maximize engine life, follow Nissan’s service schedule, use full synthetic oil, flush the cooling system regularly, and monitor for early signs of oil consumption or overheating. For CVT-equipped models, prioritize transmission fluid changes and avoid excessive strain on the drivetrain.",
+            },
+          ],
+          performance: [
+            {
+              heading: "Best Engines for Performance",
+              paragraph:
+                "The legendary VR38DETT 3.8L twin-turbo V6, powering the Nissan GT-R, delivers over 500hp from the factory and is capable of 700+ hp with tuning—making it one of the most iconic performance engines of the 21st century. The SR20DET 2.0L turbocharged 4-cylinder remains a tuner favorite, known for its robust design and massive power potential in the Silvia, 180SX, and Pulsar GTI-R.",
+            },
+            {
+              heading: "Performance Maintenance Tips",
+              paragraph:
+                "For performance Nissan engines, ensure the cooling, oiling, and turbo systems are in peak condition. Use high-octane fuel, upgrade intercoolers, and monitor boost and AFR levels. Regular oil changes and data logging help prevent detonation and prolong engine life under high load.",
+            },
+          ],
+        },
+      ],
+      conclusion:
+        "By understanding these common Nissan engine issues and their solutions, you can ensure your vehicle remains reliable, efficient, and enjoyable to drive for years to come. Proactive maintenance, using high-quality fluids and parts, and addressing problems early are key to preserving both performance and resale value. Whether you're driving a family-friendly Qashqai, a powerful GT-R, or a dependable Altima, proper care will keep your Nissan engine running smoothly—delivering the refinement, innovation, and reliability the brand is known for.",
+    },
+    engineData: {
+      models: [
+        {
+          model: "/nissan/nissan-altima.png",
+          model_name: "Nissan Altima",
+          engine_options: "2.5L 4-Cylinder, 2.0L Turbo"
+        },
+        {
+          model: "/nissan/nissan-sentra.png",
+          model_name: "Nissan Sentra",
+          engine_options: "1.8L Petrol, 2.0L Petrol"
+        },
+        {
+          model: "/nissan/nissan-versa.png",
+          model_name: "Nissan Versa",
+          engine_options: "1.6L Petrol"
+        },
+        {
+          model: "/nissan/nissan-maxima.png",
+          model_name: "Nissan Maxima",
+          engine_options: "3.5L V6"
+        },
+        {
+          model: "/nissan/nissan-leaf.png",
+          model_name: "Nissan Leaf",
+          engine_options: "Electric Motor"
+        },
+        {
+          model: "/nissan/nissan-juke.png",
+          model_name: "Nissan Juke",
+          engine_options: "1.0L Turbo, 1.6L Turbo"
+        },
+        {
+          model: "/nissan/nissan-qashqai.png",
+          model_name: "Nissan Qashqai",
+          engine_options: "1.3L Turbo, 1.5L Diesel"
+        },
+        {
+          model: "/nissan/nissan-rogue.png",
+          model_name: "Nissan Rogue",
+          engine_options: "2.5L 4-Cylinder, 1.5L Turbo"
+        },
+        {
+          model: "/nissan/nissan-murano.png",
+          model_name: "Nissan Murano",
+          engine_options: "3.5L V6"
+        },
+        {
+          model: "/nissan/nissan-pathfinder.png",
+          model_name: "Nissan Pathfinder",
+          engine_options: "3.5L V6, 2.5L Hybrid"
+        },
+        {
+          model: "/nissan/nissan-armada.png",
+          model_name: "Nissan Armada",
+          engine_options: "5.6L V8"
+        },
+        {
+          model: "/nissan/nissan-frontier.png",
+          model_name: "Nissan Frontier",
+          engine_options: "3.8L V6"
+        },
+        {
+          model: "/nissan/nissan-titan.png",
+          model_name: "Nissan Titan",
+          engine_options: "5.6L V8"
+        },
+        {
+          model: "/nissan/nissan-kicks.png",
+          model_name: "Nissan Kicks",
+          engine_options: "1.6L Petrol"
+        },
+        {
+          model: "/nissan/nissan-x-trail.png",
+          model_name: "Nissan X-Trail",
+          engine_options: "2.0L Petrol, 2.5L Petrol"
+        },
+        {
+          model: "/nissan/nissan-navara.png",
+          model_name: "Nissan Navara",
+          engine_options: "2.3L Diesel, 2.5L Petrol"
+        },
+        {
+          model: "/nissan/nissan-gt-r.png",
+          model_name: "Nissan GT-R",
+          engine_options: "3.8L V6 Twin-Turbo"
+        },
+        {
+          model: "/nissan/nissan-370z.png",
+          model_name: "Nissan 370Z",
+          engine_options: "3.7L V6"
+        },
+        {
+          model: "/nissan/nissan-patrol.png",
+          model_name: "Nissan Patrol",
+          engine_options: "4.0L V6, 5.6L V8"
+        },
+        {
+          model: "/nissan/nissan-note.png",
+          model_name: "Nissan Note",
+          engine_options: "1.2L Petrol, 1.5L Diesel"
+        }
+      ],
+      engine_codes: [
+        {
+          engineCode: "HR16DE",
+          engineSize: 1.6,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 110,
+          torque: 152,
+          productionYears: "2005–present"
+        },
+        {
+          engineCode: "MR20DE",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 140,
+          torque: 200,
+          productionYears: "2005–present"
+        },
+        {
+          engineCode: "QR25DE",
+          engineSize: 2.5,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 182,
+          torque: 244,
+          productionYears: "2001–present"
+        },
+        {
+          engineCode: "VK56DE",
+          engineSize: 5.6,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 317,
+          torque: 522,
+          productionYears: "2004–present"
+        },
+        {
+          engineCode: "VQ35DE",
+          engineSize: 3.5,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 287,
+          torque: 371,
+          productionYears: "2000–2016"
+        },
+        {
+          engineCode: "VQ37VHR",
+          engineSize: 3.7,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 332,
+          torque: 366,
+          productionYears: "2007–present"
+        },
+        {
+          engineCode: "VR38DETT",
+          engineSize: 3.8,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 565,
+          torque: 633,
+          productionYears: "2007–present"
+        },
+        {
+          engineCode: "YD25DDTi",
+          engineSize: 2.5,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 190,
+          torque: 450,
+          productionYears: "2005–present"
+        },
+        {
+          engineCode: "CD17",
+          engineSize: 1.7,
+          fuelType: "Diesel",
+          turbo: false,
+          horsepower: 55,
+          torque: 103,
+          productionYears: "1983–1990"
+        },
+        {
+          engineCode: "RD28T",
+          engineSize: 2.8,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 125,
+          torque: 255,
+          productionYears: "1987–1997"
+        },
+        {
+          engineCode: "TD42T",
+          engineSize: 4.2,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 145,
+          torque: 330,
+          productionYears: "1993–2007"
+        },
+        {
+          engineCode: "ZD30DDTi",
+          engineSize: 3.0,
+          fuelType: "Diesel",
+          turbo: true,
+          horsepower: 158,
+          torque: 380,
+          productionYears: "1999–present"
+        },
+        {
+          engineCode: "HR12DE",
+          engineSize: 1.2,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 79,
+          torque: 106,
+          productionYears: "2010–present"
+        },
+        {
+          engineCode: "HR10DDT",
+          engineSize: 1.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 100,
+          torque: 160,
+          productionYears: "2019–present"
+        },
+        {
+          engineCode: "MR16DDT",
+          engineSize: 1.6,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 188,
+          torque: 240,
+          productionYears: "2010–present"
+        },
+        {
+          engineCode: "QR20DE",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 140,
+          torque: 200,
+          productionYears: "2000–present"
+        },
+        {
+          engineCode: "QG18DE",
+          engineSize: 1.8,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 125,
+          torque: 160,
+          productionYears: "1999–2006"
+        },
+        {
+          engineCode: "KA24DE",
+          engineSize: 2.4,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 155,
+          torque: 217,
+          productionYears: "1989–2004"
+        },
+        {
+          engineCode: "SR20DET",
+          engineSize: 2.0,
+          fuelType: "Petrol",
+          turbo: true,
+          horsepower: 227,
+          torque: 275,
+          productionYears: "1989–2002"
+        },
+        {
+          engineCode: "KA24E",
+          engineSize: 2.4,
+          fuelType: "Petrol",
+          turbo: false,
+          horsepower: 140,
+          torque: 206,
+          productionYears: "1988–1997"
+        }
+      ],
+      models_engines: [
+        {
+          engineCode: "QR25DE",
+          compatibleModels: ["Nissan Altima", "Nissan Sentra"]
+        },
+        {
+          engineCode: "VQ35DE",
+          compatibleModels: ["Nissan Maxima", "Nissan 350Z"]
+        },
+        {
+          engineCode: "HR16DE",
+          compatibleModels: ["Nissan Versa", "Nissan Juke"]
+        },
+        {
+          engineCode: "MR20DE",
+          compatibleModels: ["Nissan Rogue", "Nissan Sentra"]
+        },
+        {
+          engineCode: "VR38DETT",
+          compatibleModels: ["Nissan GT-R"]
+        },
+        {
+          engineCode: "SR20DET",
+          compatibleModels: ["Nissan Silvia", "Nissan 180SX"]
+        },
+        {
+          engineCode: "KA24DE",
+          compatibleModels: ["Nissan 240SX", "Nissan Frontier"]
+        },
+        {
+          engineCode: "VG30DE",
+          compatibleModels: ["Nissan 300ZX", "Nissan Pathfinder"]
+        },
+        {
+          engineCode: "VQ30DE",
+          compatibleModels: ["Nissan Maxima", "Nissan Cefiro"]
+        },
+        {
+          engineCode: "RB26DETT",
+          compatibleModels: ["Nissan Skyline GT-R"]
+        },
+        {
+          engineCode: "YD25DDTi",
+          compatibleModels: ["Nissan Navara", "Nissan X-Trail"]
+        },
+        {
+          engineCode: "VK56DE",
+          compatibleModels: ["Nissan Titan", "Nissan Armada"]
+        },
+        {
+          engineCode: "QG18DE",
+          compatibleModels: ["Nissan Almera", "Nissan Primera"]
+        },
+        {
+          engineCode: "VQ37VHR",
+          compatibleModels: ["Nissan 370Z", "Infiniti G37"]
+        },
+        {
+          engineCode: "KA24E",
+          compatibleModels: ["Nissan Hardbody", "Nissan Stanza"]
+        },
+        {
+          engineCode: "TD27",
+          compatibleModels: ["Nissan Terrano", "Nissan Patrol"]
+        },
+        {
+          engineCode: "ZD30DDTi",
+          compatibleModels: ["Nissan Patrol", "Nissan Navara"]
+        },
+        {
+          engineCode: "VQ40DE",
+          compatibleModels: ["Nissan Frontier", "Nissan Xterra"]
+        },
+        {
+          engineCode: "MR16DDT",
+          compatibleModels: ["Nissan Juke", "Nissan Pulsar"]
+        },
+        {
+          engineCode: "CR12DE",
+          compatibleModels: ["Nissan Micra", "Nissan Note"]
+        }
+      ],
+      replacement_costs: [
+        {
+          image: "/nissan/nissan-generic.png",
+          model: "Nissan Altima, Sentra",
+          engineType: "2.5L 4-Cylinder",
+          estimatedCost: "£2,000 - £3,500"
+        },
+        {
+          image: "/nissan/nissan-generic.png",
+          model: "Nissan Maxima, 350Z",
+          engineType: "3.5L V6",
+          estimatedCost: "£3,000 - £5,000"
+        },
+        {
+          image: "/nissan/nissan-generic.png",
+          model: "Nissan Versa, Juke",
+          engineType: "1.6L Petrol",
+          estimatedCost: "£1,500 - £3,000"
+        },
+        {
+          image: "/nissan/nissan-generic.png",
+          model: "Nissan Rogue, Sentra",
+          engineType: "2.0L Diesel",
+          estimatedCost: "£2,500 - £4,500"
+        },
+        {
+          image: "/nissan/nissan-generic.png",
+          model: "Nissan GT-R",
+          engineType: "3.8L V6 Twin-Turbo",
+          estimatedCost: "£10,000 - £15,000"
+        },
+        {
+          image: "/nissan/nissan-generic.png",
+          model: "Nissan Pathfinder",
+          engineType: "3.5L V6",
+          estimatedCost: "£3,000 - £5,000"
+        },
+        {
+          image: "/nissan/nissan-generic.png",
+          model: "Nissan Armada, Titan",
+          engineType: "5.6L V8",
+          estimatedCost: "£5,000 - £8,000"
+        },
+        {
+          image: "/nissan/nissan-generic.png",
+          model: "Nissan Frontier",
+          engineType: "3.8L V6",
+          estimatedCost: "£3,000 - £5,000"
+        },
+        {
+          image: "/nissan/nissan-generic.png",
+          model: "Nissan Qashqai",
+          engineType: "1.3L Turbo",
+          estimatedCost: "£2,000 - £3,500"
+        },
+        {
+          image: "/nissan/nissan-generic.png",
+          model: "Nissan Murano",
+          engineType: "3.5L V6",
+          estimatedCost: "£3,000 - £5,000"
+        },
+        {
+          image: "/nissan/nissan-generic.png",
+          model: "Nissan Leaf",
+          engineType: "Electric Motor",
+          estimatedCost: "£5,000 - £8,000"
+        },
+        {
+          image: "/nissan/nissan-generic.png",
+          model: "Nissan X-Trail",
+          engineType: "2.0L Petrol",
+          estimatedCost: "£2,500 - £4,500"
+        },
+        {
+          image: "/nissan/nissan-generic.png",
+          model: "Nissan Navara",
+          engineType: "2.3L Diesel",
+          estimatedCost: "£3,000 - £5,000"
+        },
+        {
+          image: "/nissan/nissan-generic.png",
+          model: "Nissan Patrol",
+          engineType: "4.0L V6",
+          estimatedCost: "£4,000 - £6,500"
+        },
+        {
+          image: "/nissan/nissan-generic.png",
+          model: "Nissan Note",
+          engineType: "1.2L Petrol",
+          estimatedCost: "£1,500 - £3,000"
+        }
+      ]
+    },
+    section7: [
+      {
+        title: "New Nissan Engines",
+        icon: <Sparkles className="h-6 w-6" />,
+        badge: "Premium",
+        badgeVariant: "default" as const,
+        pros: [
+          "100% reliability with a factory warranty",
+          "Best performance & longevity",
+        ],
+        cons: [
+          "Higher cost",
+          "Limited availability for older models",
+        ],
+      },
+      {
+        title: "Used Nissan Engines",
+        icon: <DollarSign className="h-6 w-6" />,
+        badge: "Budget-Friendly",
+        badgeVariant: "secondary" as const,
+        pros: [
+          "Cost-effective & widely available",
+          "Good for quick replacements",
+        ],
+        cons: [
+          "Potential hidden wear and tear",
+          "Shorter lifespan than new or reconditioned engines",
+        ],
+      },
+      {
+        title: "Reconditioned Nissan Engines",
+        icon: <Wrench className="h-6 w-6" />,
+        badge: "Best Value",
+        badgeVariant: "outline" as const,
+        pros: [
+          "Professionally rebuilt with new components",
+          "More reliable than used engines",
+          "Balanced cost vs. performance",
+        ],
+        cons: [
+          "Slightly more expensive than used engines",
+        ],
+      },
+    ],
+    section8: {
+      EngineProblems: [
+        {
+          id: "check-engine-light-issues",
+          title: "Check Engine Light Issues",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          severity: "Common",
+          data: [
+            {
+              heading: "Common Causes",
+              paragraph:
+                "The check engine light in Nissan vehicles can indicate a range of issues—from a loose gas cap to serious engine or emissions system faults. Common triggers include a malfunctioning oxygen sensor, faulty mass airflow sensor (MAF), problems with the catalytic converter, loose or damaged fuel cap, and worn spark plugs or ignition coils—especially in models like the Altima, Pathfinder, and Qashqai with MR20, QR25, or VC-Turbo engines.",
+            },
+            {
+              heading: "Effective Solutions",
+              paragraph:
+                "Use an OBD-II scanner to retrieve diagnostic trouble codes (DTCs) from your Nissan’s ECU. Start with simple fixes such as tightening or replacing the gas cap, then move to replacing defective sensors, spark plugs, or ignition coils. For persistent codes, consult a Nissan specialist to diagnose deeper issues like vacuum leaks or fuel trim problems.",
+            },
+            {
+              heading: "Prevention Tips",
+              paragraph:
+                "Follow Nissan’s recommended maintenance schedule, use high-quality fuel, and inspect sensors and electrical connections regularly. Address check engine light warnings immediately to prevent long-term damage and maintain fuel efficiency, performance, and emissions compliance.",
+            },
+          ],
+        },
+        {
+          id: "power-loss-and-turbo-failures",
+          title: "Power Loss & Turbo Failures",
+          icon: <Gauge className="h-5 w-5" />,
+          severity: "Critical",
+          data: [
+            {
+              heading: "Identifying Root Causes",
+              paragraph:
+                "Power loss in turbocharged Nissan engines—such as the MR20DDT (X-Trail, Juke) or VR38DETT (GT-R)—is often caused by a failing turbocharger, clogged air filters, fuel delivery issues, or exhaust restrictions. Symptoms include sluggish acceleration, reduced boost pressure, and unusual whistling or grinding noises.",
+            },
+            {
+              heading: "Repair Solutions",
+              paragraph:
+                "Inspect the turbocharger for oil leaks, shaft play, or compressor wheel damage. Clean or replace air filters and intercooler piping. Test fuel injectors and fuel pump performance, and ensure the exhaust system is free from blockages. Replace faulty components promptly to restore engine output.",
+            },
+            {
+              heading: "Preventive Measures",
+              paragraph:
+                "Allow the engine to idle for 1–2 minutes after high-speed driving to cool the turbo. Use high-quality synthetic oil and change it every 10,000 miles. Avoid aggressive driving habits and ensure the air intake and fuel systems are well-maintained to reduce strain on the turbo system.",
+            },
+          ],
+        },
+        {
+          id: "excessive-smoke-and-oil-leaks",
+          title: "Excessive Smoke & Oil Leaks",
+          icon: <Smoke className="h-5 w-5" />,
+          severity: "Moderate",
+          data: [
+            {
+              heading: "Understanding the Causes",
+              paragraph:
+                "Blue smoke indicates burning oil—commonly due to worn piston rings, valve seals, or a malfunctioning PCV (Positive Crankcase Ventilation) valve. White smoke may signal coolant leakage into the combustion chamber (possible head gasket failure), while black smoke typically points to a rich air-fuel mixture or clogged air filter in naturally aspirated or turbocharged engines.",
+            },
+            {
+              heading: "Troubleshooting Steps",
+              paragraph:
+                "Inspect for oil leaks around the valve cover gasket, oil pan, and rear main seal. Check oil levels and condition regularly. Perform a compression or leak-down test to assess internal engine wear. Replace damaged gaskets, PCV valves, or seals as needed to resolve smoke and leakage issues.",
+            },
+            {
+              heading: "Maintenance for Prevention",
+              paragraph:
+                "Check oil levels monthly and maintain them within the recommended range. Use Nissan-specified engine oil (e.g., 0W-20 or 5W-30) and change it on schedule. Replace gaskets and PCV valves during major services, and keep the crankcase ventilation system clean to minimize oil blow-by and leaks.",
+            },
+          ],
+        },
+      ],
+      maintenanceTips: [
+        {
+          icon: "Lightbulb",
+          iconColor: "text-blue-600",
+          border: "border-blue-200",
+          bg: "bg-blue-50",
+          title: "Regular Inspections",
+          titleColor: "text-blue-800",
+          text: "Check your Nissan engine monthly for oil level, coolant condition, warning lights, and unusual noises such as knocking or hissing. Early detection of issues like oil leaks or turbo failure can prevent costly engine damage and downtime.",
+          textColor: "text-blue-700",
+        },
+        {
+          icon: "CheckCircle",
+          iconColor: "text-green-600",
+          border: "border-green-200",
+          bg: "bg-green-50",
+          title: "Preventive Maintenance",
+          titleColor: "text-green-800",
+          text: "Stick to Nissan’s recommended service intervals—especially for oil changes, air filter replacements, and MAF sensor cleaning. Using OEM or high-spec parts helps ensure long-term engine reliability and peak performance.",
+          textColor: "text-green-700",
+        },
+        {
+          icon: "AlertTriangle",
+          iconColor: "text-orange-600",
+          border: "border-orange-200",
+          bg: "bg-orange-50",
+          title: "Act Quickly",
+          titleColor: "text-orange-800",
+          text: "If you notice symptoms like power loss, excessive smoke, strange engine noises, or dashboard warnings, don’t ignore them. Timely diagnosis and repair can save you from major engine repairs and extend the life of your Nissan.",
+          textColor: "text-orange-700",
+        },
+      ],
+      summary: {
+        variant: "green",
+        title: "Key Takeaway",
+        content:
+          "By following these troubleshooting tips and maintaining your Nissan engine properly, you can help ensure its longevity and reliable performance. Proactive maintenance, timely diagnostics, and quality repairs are essential to prevent common engine faults. At EnginesMarket.co.uk, we offer a wide selection of Nissan engines—new, used, or reconditioned—to keep your vehicle running smoothly for years to come, whether you're driving a dependable Qashqai, a powerful Navara, or a high-performance GT-R.",
+      },
+    },
+    section9: {
+      performanceUpgrades: [
+        {
+          id: "basic-enhancements",
+          title: "Basic Enhancement Options",
+          icon: <Zap className="h-5 w-5" />,
+          level: "Beginner",
+          upgrades: [
+            {
+              name: "ECU Remapping (Stage 1 Tuning)",
+              icon: <Cog className="h-4 w-4" />,
+              description:
+                "Adjusting the Engine Control Unit (ECU) settings to optimize fuel delivery, ignition timing, and boost pressure—especially effective on turbocharged Nissan engines like the MR20DDT (X-Trail, Juke), QR25DE, and the high-performance VR38DETT (GT-R).",
+              benefits:
+                "Gains of 15–30% in horsepower and torque, improved throttle response, and more efficient engine operation. Ideal for daily-driven Altimas, Qashqais, and X-Trails seeking a performance boost.",
+              considerations:
+                "Should be performed by a Nissan-savvy tuner to avoid triggering diagnostic codes or affecting emissions systems. Improper tuning may void warranty or damage sensitive components.",
+            },
+            {
+              name: "Cold Air Intake Systems",
+              icon: <Wind className="h-4 w-4" />,
+              description:
+                "Replaces the factory airbox with a high-flow system that draws cooler, denser air from outside the engine bay, improving combustion efficiency and engine breathing.",
+              benefits:
+                "Modest power gains (8–15hp), sharper throttle response, and a more aggressive induction sound—popular among performance-oriented Nissan owners.",
+              considerations:
+                "Must include proper heat shielding and water protection to prevent hydrolock, especially in wet conditions. Use only high-quality filters to protect direct-injection engines.",
+            },
+            {
+              name: "Performance Exhaust Systems",
+              icon: <Volume2 className="h-4 w-4" />,
+              description:
+                "Upgrading to a cat-back or axle-back performance exhaust reduces backpressure and improves exhaust flow—particularly beneficial on turbocharged models like the GT-R or X-Trail.",
+              benefits:
+                "5–12hp gains, reduced exhaust gas temperatures, and a deeper, sportier exhaust note while remaining street-legal and emissions-friendly.",
+              considerations:
+                "May require ECU retuning to correct air-fuel ratios due to faster exhaust flow. Avoid excessively loud systems for daily driving comfort and compliance.",
+            },
+          ],
+        },
+        {
+          id: "tuning-stages",
+          title: "Tuning Stages: 1–3",
+          icon: <TrendingUp className="h-5 w-5" />,
+          level: "Progressive",
+          stages: [
+            {
+              stage: "Stage 1 Tuning",
+              description:
+                "Entry-level performance tuning involving ECU remapping and bolt-on upgrades like cold air intakes and performance exhausts—no internal engine modifications required.",
+              benefits:
+                "Safe 20–40hp gains on turbocharged Nissans like the MR20DDT and VR38DETT, improved low-end torque, and better throttle response for street use.",
+              considerations:
+                "Maintains factory reliability when properly tuned; ideal for drivers wanting a noticeable but manageable performance increase without sacrificing daily usability.",
+            },
+            {
+              stage: "Stage 2 Tuning",
+              description:
+                "Intermediate upgrades including upgraded turbochargers, high-flow fuel injectors, performance intercoolers, and supporting modifications for higher boost levels.",
+              benefits:
+                "60–130hp gains over stock, significantly improved turbo response and mid-range power—common in tuned GT-Rs, 370Zs, and Navara models.",
+              considerations:
+                "Requires upgraded cooling, fuel system, and oil management. Best suited for weekend drivers or track-day vehicles with enhanced maintenance routines.",
+            },
+            {
+              stage: "Stage 3 Tuning",
+              description:
+                "Full race-oriented builds with forged internals, aggressive camshafts, large-frame turbos, and standalone ECUs—typical for high-horsepower GT-R, Silvia, or track-focused Navara builds.",
+              benefits:
+                "150+ horsepower over stock, extreme performance, and enhanced durability under high boost and RPM stress.",
+              considerations:
+                "Reduces daily drivability, increases fuel consumption, and may require frequent servicing. Not road-legal in many regions without proper compliance.",
+            },
+          ],
+        },
+        {
+          id: "turbo-upgrades",
+          title: "Turbo Upgrades",
+          icon: <Gauge className="h-5 w-5" />,
+          level: "Advanced",
+          content: {
+            description:
+              "Turbocharger upgrades are one of the most effective ways to unlock massive power from Nissan’s turbocharged engines, especially the VR38DETT (GT-R), MR20DDT, and YD25 diesel units.",
+            points: [
+              {
+                title: "Stock Turbo Upgrades",
+                description:
+                  "Improved compressor wheels or journal bearing replacements offer better efficiency and reduced lag over stock turbos—ideal for Stage 2 builds on X-Trail or Navara.",
+              },
+              {
+                title: "Aftermarket Turbo Kits",
+                description:
+                  "Complete bolt-on kits (e.g., Garrett, BorgWarner, or Turbonetics) provide larger turbos with higher flow rates, enabling 400–600hp reliably—popular in GT-R and 370Z tuning circles.",
+              },
+              {
+                title: "Hybrid & Race Turbos",
+                description:
+                  "Custom hybrid units combine OEM housings with performance internals for optimal fitment and output—common in high-boost GT-R and Silvia S15 builds aiming for 700hp+.",
+              },
+            ],
+          },
+        },
+        {
+          id: "engine-internals",
+          title: "Engine Internals Reinforcements",
+          icon: <Cog className="h-5 w-5" />,
+          level: "Expert",
+          content: {
+            description:
+              "Essential for high-power builds to withstand increased cylinder pressures and thermal loads from aggressive tuning and forced induction.",
+            points: [
+              {
+                title: "Forged Pistons and Connecting Rods",
+                description:
+                  "Critical for engines exceeding 400hp; forged internals resist detonation and mechanical failure under high boost—standard in tuned VR38DETT and RB26DETT-swapped builds.",
+              },
+              {
+                title: "Performance Camshafts",
+                description:
+                  "Aggressive cam profiles improve valve timing and airflow, especially beneficial for high-RPM performance in RB26, VQ35, and SR20 engines.",
+              },
+              {
+                title: "Upgraded Valvetrain & Bearings",
+                description:
+                  "Performance valve springs, retainers, and oversized main/rod bearings ensure reliability under extreme conditions and sustained high RPM operation.",
+              },
+            ],
+          },
+        },
+        {
+          id: "reliability-impact",
+          title: "Impact on Reliability & Fuel Efficiency",
+          icon: <AlertTriangle className="h-5 w-5" />,
+          level: "Important",
+          content: {
+            description:
+              "While performance upgrades enhance driving excitement, they also introduce trade-offs that Nissan owners must carefully manage to maintain engine longevity.",
+            points: [
+              {
+                title: "Reliability Considerations",
+                description:
+                  "Increased power places greater stress on OEM components. Regular oil changes, high-quality fluids, and conservative driving habits are crucial to prevent premature wear and failure.",
+              },
+              {
+                title: "Fuel Efficiency Changes",
+                description:
+                  "Stage 1 tuning may slightly improve efficiency under light loads, but most performance upgrades—especially turbo, exhaust, and intake mods—lead to 15–35% higher fuel consumption under spirited driving.",
+              },
+            ],
+          },
+        },
+      ],
+      summary: {
+        variant: "performance",
+        title: "Performance Enhancement Summary",
+        content:
+          "Nissan's performance legacy—from the iconic GT-R and 370Z to the agile Qashqai and rugged Navara—provides a strong foundation for tuning. Whether you're enhancing a daily-driven family SUV or building a track-ready powerhouse, each stage of modification unlocks greater power and driving excitement. However, supporting upgrades, proper cooling, and meticulous maintenance are essential to balance performance with long-term reliability. At EnginesMarket.co.uk, we offer high-performance Nissan engines—new, used, reconditioned, or built-to-order—so you can elevate your Nissan’s capabilities while ensuring durability, efficiency, and driving satisfaction for years to come.",
+      },
+    },
+    faqs: [
+      {
+        question: "What is EnginesMarket.co.uk?",
+        answer:
+          "EnginesMarket.co.uk is a price comparison website specializing in providing competitive quotes for new, used, and reconditioned Nissan engines from multiple trusted sellers. Our platform helps you find the best deals on quality Nissan engines while saving time and money."
+      },
+      {
+        question: "How does EnginesMarket.co.uk work?",
+        answer:
+          "Simply enter your vehicle details and engine requirements on our platform. We then connect you with multiple verified sellers who provide competitive quotes, allowing you to compare options and choose the best deal for your Nissan engine replacement."
+      },
+      {
+        question: "What types of Nissan engines can I find on EnginesMarket.co.uk?",
+        answer:
+          "We offer a wide range of Nissan engines, including new, used, and reconditioned options for popular models such as the Altima, Qashqai, GT-R, X-Trail, Navara, and more. Our selection includes petrol, diesel, and turbocharged engines like the VQ35DE, QR25DE, MR20DDT, and VR38DETT."
+      },
+      {
+        question: "Are the engines on EnginesMarket.co.uk covered by a warranty?",
+        answer:
+          "Yes, many of the engines listed on our platform come with a warranty. The specific terms depend on the seller and engine type—reconditioned engines typically include a 12–24 month warranty, while used engines may have shorter or optional coverage."
+      },
+      {
+        question: "How can I request a quote on EnginesMarket.co.uk?",
+        answer:
+          "To request a quote, visit our website, enter your vehicle’s make, model, year, and engine requirements. You’ll quickly receive multiple competitive offers from trusted UK suppliers, helping you make an informed decision."
+      },
+      {
+        question: "What are the most common Nissan engine problems?",
+        answerList: [
+          "Excessive oil consumption, especially in certain 2.5L 4-cylinder engines",
+          "Timing chain wear or failure in some VQ-series engines",
+          "Overheating due to cooling system leaks or thermostat issues",
+          "CVT transmission failures in models like the Altima and Rogue",
+          "Carbon buildup on direct-injection engines affecting performance"
+        ]
+      },
+      {
+        question: "How can I improve the performance of my Nissan engine?",
+        answerList: [
+          "ECU remapping to optimize fuel, timing, and boost settings",
+          "Installing a cold air intake for improved airflow and throttle response",
+          "Upgrading to a performance exhaust system for better engine breathing",
+          "Adding a turbocharger or supercharger for significant power gains",
+          "Enhancing cooling and fuel systems to support increased output"
+        ]
+      },
+      {
+        question: "Which Nissan engines are known for their reliability?",
+        answer:
+          "The VQ35DE V6 and QR25DE 4-cylinder engines are highly regarded for their durability, smooth performance, and long service life. These engines are commonly found in the Altima, Maxima, and Pathfinder, and often exceed 200,000 miles with proper maintenance."
+      },
+      {
+        question: "What is the cost of replacing a Nissan engine?",
+        answer:
+          "The cost varies by model and engine type. For example, replacing a 2.5L 4-cylinder engine in a Nissan Altima typically ranges from £2,000 to £3,500, including parts and labor. Reconditioned engines can offer savings of 30–50% compared to brand-new units."
+      },
+      {
+        question: "How do I know if my Nissan engine needs to be replaced?",
+        answerList: [
+          "Excessive oil consumption with no visible leaks",
+          "Loud knocking, ticking, or grinding engine noises",
+          "Persistent overheating despite cooling system repairs",
+          "Severe loss of power or compression",
+          "A continuously illuminated check engine light with major fault codes"
+        ]
+      },
+      {
+        question: "What are the benefits of using a reconditioned Nissan engine?",
+        answer:
+          "Reconditioned Nissan engines are professionally rebuilt using new or refurbished components to meet OEM standards. They offer a reliable, cost-effective alternative to new engines, often coming with a warranty and significantly lower mileage equivalent."
+      },
+      {
+        question: "Can I install a different Nissan engine in my car?",
+        answer:
+          "Yes, many Nissan engines are interchangeable across similar platforms. However, compatibility depends on your vehicle’s transmission, ECU, wiring harness, and drivetrain. Always verify engine codes and consult a professional mechanic before performing an engine swap."
+      },
+      {
+        question: "How often should I service my Nissan engine?",
+        answer:
+          "Follow Nissan’s recommended service intervals—typically every 5,000 to 7,500 miles or annually. Regular oil changes, air filter replacements, and inspections help prevent common issues and extend engine life, especially for turbocharged or high-mileage vehicles."
+      },
+      {
+        question: "What is ECU remapping, and how does it benefit my Nissan engine?",
+        answer:
+          "ECU remapping involves reprogramming the engine control unit to optimize fuel delivery, ignition timing, and boost pressure. It can improve power, torque, throttle response, and even fuel efficiency under light loads—especially effective on turbocharged models like the X-Trail and GT-R."
+      },
+      {
+        question: "Are Nissan engines fuel-efficient?",
+        answer:
+          "Many Nissan engines are designed for excellent fuel economy. The 1.6L petrol engines in the Juke and Versa, as well as the electric powertrain in the Nissan Leaf, deliver strong efficiency. Diesel models like the Navara with the YD25 engine also offer great mpg for high-mileage and commercial use."
+      },
+      {
+        question: "What should I do if my Nissan engine overheats?",
+        answer:
+          "Safely pull over and let the engine cool down. Check for coolant leaks, inspect the radiator, thermostat, and water pump, and replace any faulty components. Regular maintenance of the cooling system helps prevent overheating and serious engine damage."
+      },
+      {
+        question: "How can I prevent excessive oil consumption in my Nissan engine?",
+        answerList: [
+          "Perform regular oil changes using high-quality, manufacturer-recommended oil",
+          "Check oil levels monthly and top up as needed",
+          "Replace worn valve seals and PCV valves during maintenance",
+          "Avoid short trips and aggressive driving that increase engine stress",
+          "Monitor for early signs of internal wear, such as blue exhaust smoke"
+        ]
+      },
+      {
+        question: "What are the best Nissan engines for performance enthusiasts?",
+        answer:
+          "The VR38DETT V6 (found in the GT-R) and the SR20DET 4-cylinder (used in the Silvia and 180SX) are top choices among performance fans. Both engines offer high power output, exceptional tuning potential, and legendary status in the tuning and motorsport communities."
+      },
+      {
+        question: "How do I troubleshoot a check engine light in my Nissan?",
+        answer:
+          "Use an OBD-II scanner to read the diagnostic trouble codes (DTCs). Common causes include a loose gas cap, faulty oxygen or MAF sensor, failing spark plugs, or ignition coils. Address the specific code promptly to prevent further damage and maintain engine performance."
+      },
+      {
+        question: "What are the advantages of using a used Nissan engine?",
+        answer:
+          "Used Nissan engines are generally more affordable and widely available. They can be a quick solution for replacements, especially for older models. However, their condition and remaining lifespan can vary, so it's important to verify service history and test the engine when possible."
+      }
+    ]
+  },
 };

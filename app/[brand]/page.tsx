@@ -4,7 +4,6 @@ import BrandSchema from "@/components/schema";
 import { data } from "@/data/brands";
 import Head from "next/head";
 import { notFound } from "next/navigation";
-import { memo, use } from "react";
 import Hero1 from "../../components/Hero1";
 import EngineDealsCTA from "./components/EngineDealsCTA";
 import EngineGuide from "./components/EngineGuide";
@@ -16,9 +15,15 @@ import ReplacementCostsTable from "./components/ReplacementCostsTable";
 import TroubleshootingGuide from "./components/TroubleShoot";
 import WhyChoose from "./components/WhyChoose";
 import AOSWrapper from "@/components/AOSInit";
+import LazyInView from "./components/LazyInView";
+import { Metadata } from "next";
 
-export async function generateMetadata({ params }) {
-  const brand = (await params).brand.toLowerCase();
+export async function generateMetadata({
+  params,
+}: {
+  params: { brand: string };
+}): Promise<Metadata> {
+  const brand = params.brand.toLowerCase();
   const brandData = data[brand];
 
   if (!brandData) {
@@ -41,8 +46,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
-const Page = ({ params }) => {
-  const brand = use(params).brand.toLowerCase();
+const Page = ({ params }: { params: { brand: string } }) => {
+  const brand = params.brand.toLowerCase();
   if (!data[brand]) notFound();
   const { carImages, carModelNames, faqs, brandName } = data[brand];
 
@@ -77,21 +82,28 @@ const Page = ({ params }) => {
       <EngineGuide brand={brand} />
       <WhyChoose brand={brand} />
       <EngineTablesTabs brand={brand} />
-      <EngineProblemsSection brand={brand} />
+
+      <LazyInView>
+        <EngineProblemsSection brand={brand} />
+      </LazyInView>
+
       <EngineProsCons brand={brand} />
-      <TroubleshootingGuide brand={brand} />
+
+      <LazyInView>
+        <TroubleshootingGuide brand={brand} />
+      </LazyInView>
+
       <ReplacementCostsTable brand={brand} />
-      <PerformanceUpgrades brand={brand} />
+
+      <LazyInView>
+        <PerformanceUpgrades brand={brand} />
+      </LazyInView>
       <EngineDealsCTA brand={brand} />
       <FAQSection faqs={faqs} brandName={brandName} />
     </>
   );
 };
 
-// ISR Configuration
-// export const revalidate = 86400; // Revalidate every 24 hours
-
-// Generate static paths at build time
 export async function generateStaticParams() {
   return Object.keys(data).map((brand) => ({
     brand,

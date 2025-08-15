@@ -1,11 +1,5 @@
 "use client";
-import {
-  memo,
-  useDeferredValue,
-  useMemo,
-  useState,
-  useTransition,
-} from "react";
+import { useDeferredValue, useMemo, useState, useTransition } from "react";
 import EngineTable from "./EngineTable";
 import { data } from "../../../data/brands";
 import {
@@ -26,8 +20,6 @@ import { Column } from "../types/engine";
 import Container from "@/components/Container";
 import SummaryCard from "@/components/SummaryCard";
 import Link from "next/link";
-import { AnimatePresence } from "motion/react";
-import * as motion from "motion/react-client";
 
 const TABLE_OPTIONS = [
   { key: "models", label: "Model Names" },

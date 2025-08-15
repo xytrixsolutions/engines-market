@@ -16,7 +16,6 @@ import Paragraph from "@/components/Paragraph";
 import GradientBorderWrapper from "@/components/GradientBorderWrapper";
 import { data } from "../../../data/brands";
 import * as motion from "motion/react-client";
-import { memo } from "react";
 
 const getSeverityColor = (severity: string) => {
   switch (severity) {

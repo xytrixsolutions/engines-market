@@ -9,7 +9,6 @@ import Accent from "@/components/Accent";
 import SummaryCard from "@/components/SummaryCard";
 import { data } from "../../../data/brands";
 import * as motion from "motion/react-client";
-import { memo } from "react";
 
 const EngineProsCons = ({ brand }: { brand: string }) => {
   const { section7, brandName } = data[brand];

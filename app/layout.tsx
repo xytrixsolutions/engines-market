@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased bg-white" suppressHydrationWarning>
+      <body className="antialiased bg-white">
         <Toaster richColors />
         <AOSInit /> {/* Initialize AOS on the client */}
         <Header />

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import { memo, useState } from "react";
+import { useState } from "react";
 import EngineTable from "./EngineTable";
 import { REPLACEMENT_COST_COLUMNS } from "../constants/tableColumns";
 import Container from "@/components/Container";

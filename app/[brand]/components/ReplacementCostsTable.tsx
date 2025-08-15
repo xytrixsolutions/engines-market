@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import { useState } from "react";
+import { memo, useState } from "react";
 import EngineTable from "./EngineTable";
 import { REPLACEMENT_COST_COLUMNS } from "../constants/tableColumns";
 import Container from "@/components/Container";
@@ -185,4 +185,4 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand }) => {
   );
 };
 
-export default ReplacementCostsTable;
+export default memo(ReplacementCostsTable);

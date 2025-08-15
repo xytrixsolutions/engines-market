@@ -17,6 +17,7 @@ import GradientBorderWrapper from "@/components/GradientBorderWrapper";
 import SummaryCard from "@/components/SummaryCard";
 import { data } from "../../../data/brands";
 import * as motion from "motion/react-client";
+import { memo } from "react";
 
 const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand }) => {
   const { section8, brandName } = data[brand];
@@ -208,4 +209,4 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand }) => {
   );
 };
 
-export default TroubleshootingGuide;
+export default memo(TroubleshootingGuide);

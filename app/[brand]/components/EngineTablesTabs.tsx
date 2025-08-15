@@ -1,5 +1,11 @@
 "use client";
-import { useMemo, useState } from "react";
+import {
+  memo,
+  useDeferredValue,
+  useMemo,
+  useState,
+  useTransition,
+} from "react";
 import EngineTable from "./EngineTable";
 import { data } from "../../../data/brands";
 import {
@@ -19,6 +25,8 @@ import { Column } from "../types/engine";
 import Container from "@/components/Container";
 import SummaryCard from "@/components/SummaryCard";
 import Link from "next/link";
+import { AnimatePresence } from "motion/react";
+import * as motion from "motion/react-client";
 
 const TABLE_OPTIONS = [
   { key: "models", label: "Model Names" },
@@ -37,8 +45,10 @@ const TABLE_COLUMNS: Record<TableKey, Column<any>[]> = {
 
 const EngineTablesTabs = ({ brand }: { brand: string }) => {
   const [tableType, setTableType] = useState<TableKey>("models");
-  const columns = TABLE_COLUMNS[tableType];
+  const [isPending, startTransition] = useTransition();
+  const deferredTableType = useDeferredValue(tableType);
 
+  const columns = TABLE_COLUMNS[tableType];
   const tableData = data[brand].engineData[tableType];
   const { brandName } = data[brand];
 
@@ -98,7 +108,11 @@ const EngineTablesTabs = ({ brand }: { brand: string }) => {
         {TABLE_OPTIONS.map((opt) => (
           <Button
             key={opt.key}
-            onClick={() => setTableType(opt.key)}
+            onClick={() => {
+              startTransition(() => {
+                setTableType(opt.key as TableKey);
+              });
+            }}
             variant="ghost"
             className={`px-6 py-2 font-bold rounded-t-md border-b-4 border border-border transition-all duration-200 flex-shrink-0
               ${
@@ -124,12 +138,12 @@ const EngineTablesTabs = ({ brand }: { brand: string }) => {
       </div>
 
       {/* Table */}
-
       <EngineTable
-        key={tableType}
+        key="engine-table" // stays the same across tab switches
         columns={columns}
         data={tableData}
         tableType={tableType}
+        // tableType={deferredTableType}
       />
 
       {/* Note */}
@@ -150,4 +164,4 @@ const EngineTablesTabs = ({ brand }: { brand: string }) => {
   );
 };
 
-export default EngineTablesTabs;
+export default memo(EngineTablesTabs);

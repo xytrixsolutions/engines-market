@@ -4,7 +4,7 @@ import BrandSchema from "@/components/schema";
 import { data } from "@/data/brands";
 import Head from "next/head";
 import { notFound } from "next/navigation";
-import { use } from "react";
+import { memo, use } from "react";
 import Hero1 from "../../components/Hero1";
 import EngineDealsCTA from "./components/EngineDealsCTA";
 import EngineGuide from "./components/EngineGuide";
@@ -16,6 +16,8 @@ import ReplacementCostsTable from "./components/ReplacementCostsTable";
 import TroubleshootingGuide from "./components/TroubleShoot";
 import WhyChoose from "./components/WhyChoose";
 import { ClientWrapper } from "./components/ClientWrapper";
+import AOSWrapper from "@/components/AOSInit";
+import * as motion from "motion/react-client";
 
 export async function generateMetadata({ params }) {
   const brand = (await params).brand.toLowerCase();
@@ -63,10 +65,11 @@ const Page = ({ params }) => {
 
   return (
     <>
+      <AOSWrapper />
       <Head>
         <BrandSchema brand={brand} />
       </Head>
-      <ClientWrapper />
+      {/* <ClientWrapper /> */}
       <SearchNav navItems={navItems} />
       <Hero1
         carImages={carImages}
@@ -75,7 +78,13 @@ const Page = ({ params }) => {
       />
       <EngineGuide brand={brand} />
       <WhyChoose brand={brand} />
-      <EngineTablesTabs brand={brand} />
+      <div
+        style={{
+          contain: "layout",
+        }}
+      >
+        <EngineTablesTabs brand={brand} />
+      </div>
       <EngineProblemsSection brand={brand} />
       <EngineProsCons brand={brand} />
       <TroubleshootingGuide brand={brand} />
@@ -97,4 +106,4 @@ export async function generateStaticParams() {
   }));
 }
 
-export default Page;
+export default memo(Page);

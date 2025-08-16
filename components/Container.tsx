@@ -1,12 +1,59 @@
-import { cn } from "@/lib/utils"; // adjust path as needed
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* import { cn } from "@/lib/utils"; // adjust path as needed */
+/* import React from "react"; */
+/**/
+/* interface WrapperProps extends React.HTMLAttributes<HTMLDivElement> { */
+/*   children: React.ReactNode; */
+/*   dark?: boolean; */
+/*   as?: any; */
+/* } */
+/**/
+/* const Container = ({ */
+/*   children, */
+/*   className, */
+/*   dark, */
+/*   as, */
+/*   ...props */
+/* }: WrapperProps) => { */
+/*   const Div = as || HTMLDivElement; */
+/*   return ( */
+/*     <div */
+/*       className={cn( */
+/*         "w-full overflow-x-hidden", */
+/*         dark && */
+/*           "bg-[radial-gradient(ellipse_at_center,_#484848_0%,_#383838_40%,_#1a1a1a_100%)]", */
+/*       )} */
+/*     > */
+/*       <Div */
+/*         className={cn("w-11/12 lg:w-10/12 mx-auto py-16", className)} */
+/*         {...props} */
+/*       > */
+/*         {children} */
+/*       </Div> */
+/*     </div> */
+/*   ); */
+/* }; */
+/**/
+/* export default Container; */
+import { cn } from "@/lib/utils";
 import React from "react";
 
-interface WrapperProps extends React.HTMLAttributes<HTMLDivElement> {
+interface WrapperProps<T extends React.ElementType = "div">
+  extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   dark?: boolean;
+  as?: T;
 }
 
-const Container = ({ children, className, dark, ...props }: WrapperProps) => {
+const Container = <T extends React.ElementType = "div">({
+  children,
+  className,
+  dark,
+  as,
+  ...props
+}: WrapperProps<T> &
+  Omit<React.ComponentPropsWithoutRef<T>, keyof WrapperProps>) => {
+  const As = as || "div";
   return (
     <div
       className={cn(
@@ -15,12 +62,12 @@ const Container = ({ children, className, dark, ...props }: WrapperProps) => {
           "bg-[radial-gradient(ellipse_at_center,_#484848_0%,_#383838_40%,_#1a1a1a_100%)]",
       )}
     >
-      <div
+      <As
         className={cn("w-11/12 lg:w-10/12 mx-auto py-16", className)}
         {...props}
       >
         {children}
-      </div>
+      </As>
     </div>
   );
 };

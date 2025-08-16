@@ -21,12 +21,7 @@ const GradientBorderWrapper: React.FC<GradientBorderWrapperProps> = ({
   };
 
   return (
-    <div
-      data-aos="fade-up"
-      className={`${getGradientClasses()} ${className}`}
-    >
-      {children}
-    </div>
+    <div className={`${getGradientClasses()} ${className}`}>{children}</div>
   );
 };
 

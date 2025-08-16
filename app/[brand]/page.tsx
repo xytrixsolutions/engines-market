@@ -4,7 +4,6 @@ import BrandSchema from "@/components/schema";
 import { data } from "@/data/brands";
 import Head from "next/head";
 import { notFound } from "next/navigation";
-import { memo, use } from "react";
 import Hero1 from "../../components/Hero1";
 import EngineDealsCTA from "./components/EngineDealsCTA";
 import EngineGuide from "./components/EngineGuide";
@@ -16,9 +15,17 @@ import ReplacementCostsTable from "./components/ReplacementCostsTable";
 import TroubleshootingGuide from "./components/TroubleShoot";
 import WhyChoose from "./components/WhyChoose";
 import AOSWrapper from "@/components/AOSInit";
+import LazyInView from "./components/LazyInView";
+import { Metadata } from "next";
+import LazyComponentWrapper from "./components/LazyComponentWrapper";
 
-export async function generateMetadata({ params }) {
-  const brand = (await params).brand.toLowerCase();
+interface BrandProps {
+  params: Promise<{ brand: string }>;
+}
+
+export async function generateMetadata(props: BrandProps): Promise<Metadata> {
+  const params = await props.params;
+  const brand = params.brand.toLowerCase();
   const brandData = data[brand];
 
   if (!brandData) {
@@ -27,8 +34,6 @@ export async function generateMetadata({ params }) {
       description: "The requested brand does not exist",
     };
   }
-
-  // Use brand-specific metadata if available, fallback to generated
   return {
     title: brandData.metadata?.title || `${brandData.brandName} Engines`,
     description:
@@ -41,8 +46,9 @@ export async function generateMetadata({ params }) {
   };
 }
 
-const Page = ({ params }) => {
-  const brand = use(params).brand.toLowerCase();
+const Page = async (props: BrandProps) => {
+  const params = await props.params;
+  const brand = params.brand.toLowerCase();
   if (!data[brand]) notFound();
   const { carImages, carModelNames, faqs, brandName } = data[brand];
 
@@ -67,7 +73,6 @@ const Page = ({ params }) => {
       <Head>
         <BrandSchema brand={brand} />
       </Head>
-      {/* <ClientWrapper /> */}
       <SearchNav navItems={navItems} />
       <Hero1
         carImages={carImages}
@@ -77,21 +82,32 @@ const Page = ({ params }) => {
       <EngineGuide brand={brand} />
       <WhyChoose brand={brand} />
       <EngineTablesTabs brand={brand} />
-      <EngineProblemsSection brand={brand} />
+
+      <LazyComponentWrapper dark className="my-12" id="engine-problems">
+        <EngineProblemsSection brand={brand} />
+      </LazyComponentWrapper>
+
       <EngineProsCons brand={brand} />
-      <TroubleshootingGuide brand={brand} />
+
+      <LazyComponentWrapper dark className="my-16" id="troubleshooting-guide">
+        <TroubleshootingGuide brand={brand} />
+      </LazyComponentWrapper>
+
       <ReplacementCostsTable brand={brand} />
-      <PerformanceUpgrades brand={brand} />
+
+      <LazyComponentWrapper
+        dark
+        className="my-16"
+        id="performance-upgrades-modifications"
+      >
+        <PerformanceUpgrades brand={brand} />
+      </LazyComponentWrapper>
       <EngineDealsCTA brand={brand} />
       <FAQSection faqs={faqs} brandName={brandName} />
     </>
   );
 };
 
-// ISR Configuration
-// export const revalidate = 86400; // Revalidate every 24 hours
-
-// Generate static paths at build time
 export async function generateStaticParams() {
   return Object.keys(data).map((brand) => ({
     brand,

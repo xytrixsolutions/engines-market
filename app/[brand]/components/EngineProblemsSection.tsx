@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+//
 import {
   Accordion,
   AccordionContent,
@@ -6,16 +7,13 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
-import Container from "@/components/Container";
 import { AlertTriangle, Wrench, Shield } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Heading from "@/components/Heading";
 import Accent from "@/components/Accent";
 import Paragraph from "@/components/Paragraph";
-import GradientBorderWrapper from "@/components/GradientBorderWrapper";
 import { data } from "../../../data/brands";
 import * as motion from "motion/react-client";
-import { memo } from "react";
 
 const getSeverityColor = (severity: string) => {
   switch (severity) {
@@ -52,7 +50,7 @@ const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
   };
 
   return (
-    <Container dark className="my-12" id="engine-problems">
+    <>
       <motion.div
         {...motionProps}
         className="max-w-5xl mx-auto text-center text-charcoal-gray-muted"
@@ -93,56 +91,50 @@ const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
                 delay,
               }}
             >
-              <GradientBorderWrapper variant="conic">
-                <AccordionItem
-                  value={`item-${idx}`}
-                  className="rounded-xl bg-card shadow-sm"
-                >
-                  <AccordionTrigger className="px-6 py-4 font-semibold text-lg text-royal-blue flex items-center justify-between select-none rounded-t-xl transition-all duration-300 hover:no-underline">
-                    <div className="flex items-center gap-3">
-                      {item.icon}
-                      <span>{item.title}</span>
+              <AccordionItem
+                value={`item-${idx}`}
+                className="rounded-xl shadow-sm bg-card gradient-border"
+              >
+                <AccordionTrigger className="px-6 py-4 font-semibold text-lg text-royal-blue flex items-center justify-between select-none rounded-t-xl transition-all duration-300 hover:no-underline">
+                  <div className="flex items-center gap-3">
+                    {item.icon}
+                    <span>{item.title}</span>
+                  </div>
+                  <Badge
+                    variant={getSeverityColor(item.severity || "Common")}
+                    className="ml-auto mr-4"
+                  >
+                    {item.severity}
+                  </Badge>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-5 pt-4 transition-all duration-300">
+                  <div className="space-y-4">
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <AlertTriangle className="h-4 w-4 text-neon-red" />
+                        <h4 className="font-bold text-neon-red">Problem</h4>
+                      </div>
+                      <p className="text-foreground pl-6">{item.problem}</p>
                     </div>
-                    <Badge
-                      variant={getSeverityColor(item.severity || "Common")}
-                      className="ml-auto mr-4"
-                    >
-                      {item.severity}
-                    </Badge>
-                  </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-5 pt-4 transition-all duration-300">
-                    <div className="space-y-4">
-                      <div className="space-y-2">
-                        <div className="flex items-center gap-2">
-                          <AlertTriangle className="h-4 w-4 text-neon-red" />
-                          <h4 className="font-bold text-neon-red">Problem</h4>
-                        </div>
-                        <p className="text-foreground pl-6">{item.problem}</p>
-                      </div>
 
-                      <div className="space-y-2">
-                        <div className="flex items-center gap-2">
-                          <Wrench className="h-4 w-4 text-green-600" />
-                          <h4 className="font-bold text-green-600">Solution</h4>
-                        </div>
-                        <p className="text-foreground pl-6">{item.solution}</p>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <Wrench className="h-4 w-4 text-green-600" />
+                        <h4 className="font-bold text-green-600">Solution</h4>
                       </div>
-
-                      <div className="space-y-2">
-                        <div className="flex items-center gap-2">
-                          <Shield className="h-4 w-4 text-amber-500" />
-                          <h4 className="font-bold text-amber-500">
-                            Prevention
-                          </h4>
-                        </div>
-                        <p className="text-foreground pl-6">
-                          {item.prevention}
-                        </p>
-                      </div>
+                      <p className="text-foreground pl-6">{item.solution}</p>
                     </div>
-                  </AccordionContent>
-                </AccordionItem>
-              </GradientBorderWrapper>
+
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <Shield className="h-4 w-4 text-amber-500" />
+                        <h4 className="font-bold text-amber-500">Prevention</h4>
+                      </div>
+                      <p className="text-foreground pl-6">{item.prevention}</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
             </motion.div>
           );
         })}
@@ -168,7 +160,7 @@ const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
           </CardContent>
         </Card>
       </motion.div>
-    </Container>
+    </>
   );
 };
 

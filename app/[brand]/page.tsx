@@ -17,12 +17,14 @@ import WhyChoose from "./components/WhyChoose";
 import AOSWrapper from "@/components/AOSInit";
 import LazyInView from "./components/LazyInView";
 import { Metadata } from "next";
+import LazyComponentWrapper from "./components/LazyComponentWrapper";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { brand: string };
-}): Promise<Metadata> {
+interface BrandProps {
+  params: Promise<{ brand: string }>;
+}
+
+export async function generateMetadata(props: BrandProps): Promise<Metadata> {
+  const params = await props.params;
   const brand = params.brand.toLowerCase();
   const brandData = data[brand];
 
@@ -32,8 +34,6 @@ export async function generateMetadata({
       description: "The requested brand does not exist",
     };
   }
-
-  // Use brand-specific metadata if available, fallback to generated
   return {
     title: brandData.metadata?.title || `${brandData.brandName} Engines`,
     description:
@@ -46,7 +46,8 @@ export async function generateMetadata({
   };
 }
 
-const Page = ({ params }: { params: { brand: string } }) => {
+const Page = async (props: BrandProps) => {
+  const params = await props.params;
   const brand = params.brand.toLowerCase();
   if (!data[brand]) notFound();
   const { carImages, carModelNames, faqs, brandName } = data[brand];
@@ -72,7 +73,6 @@ const Page = ({ params }: { params: { brand: string } }) => {
       <Head>
         <BrandSchema brand={brand} />
       </Head>
-      {/* <ClientWrapper /> */}
       <SearchNav navItems={navItems} />
       <Hero1
         carImages={carImages}
@@ -83,21 +83,25 @@ const Page = ({ params }: { params: { brand: string } }) => {
       <WhyChoose brand={brand} />
       <EngineTablesTabs brand={brand} />
 
-      <LazyInView>
+      <LazyComponentWrapper dark className="my-12" id="engine-problems">
         <EngineProblemsSection brand={brand} />
-      </LazyInView>
+      </LazyComponentWrapper>
 
       <EngineProsCons brand={brand} />
 
-      <LazyInView>
+      <LazyComponentWrapper dark className="my-16" id="troubleshooting-guide">
         <TroubleshootingGuide brand={brand} />
-      </LazyInView>
+      </LazyComponentWrapper>
 
       <ReplacementCostsTable brand={brand} />
 
-      <LazyInView>
+      <LazyComponentWrapper
+        dark
+        className="my-16"
+        id="performance-upgrades-modifications"
+      >
         <PerformanceUpgrades brand={brand} />
-      </LazyInView>
+      </LazyComponentWrapper>
       <EngineDealsCTA brand={brand} />
       <FAQSection faqs={faqs} brandName={brandName} />
     </>

@@ -7,13 +7,11 @@ import {
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import Container from "@/components/Container";
 import { Settings } from "lucide-react";
 import * as Lucide from "lucide-react";
 import Heading from "@/components/Heading";
 import Accent from "@/components/Accent";
 import Paragraph from "@/components/Paragraph";
-import GradientBorderWrapper from "@/components/GradientBorderWrapper";
 import SummaryCard from "@/components/SummaryCard";
 import { data } from "../../../data/brands";
 import * as motion from "motion/react-client";
@@ -59,7 +57,7 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand }) => {
   const tipsDelay = summaryFinishTime - 0.5; // 0.3s gap after summary
 
   return (
-    <Container dark className="my-16" id="troubleshooting-guide">
+    <>
       {/* Heading Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -102,47 +100,45 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand }) => {
               viewport={{ once: true }}
               transition={{
                 duration: 0.8,
-                delay: idx * 0.1, // Stagger each accordion item
+                delay: idx * 0.1,
               }}
             >
-              <GradientBorderWrapper>
-                <AccordionItem
-                  value={section.id}
-                  className="rounded-xl bg-card shadow-sm"
-                >
-                  <AccordionTrigger className="px-6 py-4 font-semibold text-lg text-royal-blue flex items-center justify-between select-none rounded-t-xl transition-all duration-300 hover:no-underline">
-                    <div className="flex items-center gap-3">
-                      {section.icon}
-                      <span>{section.title}</span>
-                    </div>
-                    <Badge
-                      variant={getSeverityColor(section.severity)}
-                      className="ml-auto mr-4"
-                    >
-                      {section.severity}
-                    </Badge>
-                  </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-5 pt-4 transition-all duration-300">
-                    <div className="space-y-4">
-                      {section.data?.map((item, index) => (
-                        <div key={index} className="space-y-2">
-                          <div className="flex items-center gap-2">
-                            <Settings className="h-4 w-4 text-blue-600" />
-                            <h4 className="font-bold text-blue-700">
-                              {item.heading}
-                            </h4>
-                          </div>
-                          {item.paragraph && (
-                            <p className="text-foreground pl-6 text-sm leading-relaxed">
-                              {item.paragraph}
-                            </p>
-                          )}
+              <AccordionItem
+                value={section.id}
+                className="rounded-xl bg-card shadow-sm gradient-border"
+              >
+                <AccordionTrigger className="px-6 py-4 font-semibold text-lg text-royal-blue flex items-center justify-between select-none rounded-t-xl transition-all duration-300 hover:no-underline">
+                  <div className="flex items-center gap-3">
+                    {section.icon}
+                    <span>{section.title}</span>
+                  </div>
+                  <Badge
+                    variant={getSeverityColor(section.severity)}
+                    className="ml-auto mr-4"
+                  >
+                    {section.severity}
+                  </Badge>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-5 pt-4 transition-all duration-300">
+                  <div className="space-y-4">
+                    {section.data?.map((item, index) => (
+                      <div key={index} className="space-y-2">
+                        <div className="flex items-center gap-2">
+                          <Settings className="h-4 w-4 text-blue-600" />
+                          <h4 className="font-bold text-blue-700">
+                            {item.heading}
+                          </h4>
                         </div>
-                      ))}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-              </GradientBorderWrapper>
+                        {item.paragraph && (
+                          <p className="text-foreground pl-6 text-sm leading-relaxed">
+                            {item.paragraph}
+                          </p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
             </motion.div>
           ))}
         </Accordion>
@@ -204,7 +200,7 @@ const TroubleshootingGuide: React.FC<{ brand: string }> = ({ brand }) => {
           })}
         </div>
       </div>
-    </Container>
+    </>
   );
 };
 

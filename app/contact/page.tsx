@@ -198,7 +198,7 @@ function VehicleServiceFormContent() {
                                 txt.substr(1).toLowerCase(),
                             );
                           })
-                          .join(", ")}
+                          .join(" - ")}
                       </p>
                     </div>
 

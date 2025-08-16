@@ -197,3 +197,11 @@
     }
   }
 }
+.gradient-border {
+  border: 2px solid transparent;
+  border-radius: 0.75rem;
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #ff003c, #ff3c00, #ff003c) border-box;
+  background-color: white;
+}

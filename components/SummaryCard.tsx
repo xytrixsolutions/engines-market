@@ -1,13 +1,12 @@
 import React from "react";
 import { HelpCircle, CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { JSX } from "react/jsx-dev-runtime";
 import * as motion from "motion/react-client";
 
 interface SummaryCardProps {
   title?: string;
   content: string;
-  contact?: JSX.Element;
+  contact?: React.ReactNode;
   variant?: "blue" | "card" | "green" | "performance";
   icon?: React.ReactNode;
   className?: string;
@@ -16,8 +15,7 @@ interface SummaryCardProps {
 
 const motionProps = {
   initial: { opacity: 0, y: 25 },
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  transition: { duration: 0.6, ease: "easeOut" as any }, // fix
+  transition: { duration: 0.6, ease: "easeOut" as const },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
 };
@@ -28,7 +26,7 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
   contact,
   variant = "blue",
   icon,
-  useMotion,
+  useMotion = true,
   className = "",
   ...opts
 }) => {
@@ -94,78 +92,70 @@ const SummaryCard: React.FC<SummaryCardProps> = ({
     }
   };
 
-  // Motion wrapper element: motion.div or fragment fallback
-  const MotionWrapper: React.FC<React.PropsWithChildren> = ({ children }) =>
+  const cardIcon = icon || getDefaultIcon();
+  const cardStyling = getCardStyling();
+  const textStyling = getTextStyling();
+
+  // Motion wrapper element
+  const renderContent = (children: React.ReactNode) =>
     useMotion ? (
       <motion.div {...motionProps}>{children}</motion.div>
     ) : (
       <>{children}</>
     );
 
-  const cardIcon = icon || getDefaultIcon();
-  const cardStyling = getCardStyling();
-  const textStyling = getTextStyling();
-
   // All variants now use the same card layout with consistent styling
   if (variant === "card") {
-    return (
-      <MotionWrapper>
-        <Card
-          className={`mt-5 mb-5 rounded-xl shadow-lg border ${cardStyling} ${className}`}
-          {...opts}
-        >
-          <CardContent className="py-0">
-            <div className="flex items-start gap-3">
-              {cardIcon}
-              <div>
-                <h3 className={textStyling.title}>{title}</h3>
-                <p className={textStyling.content}>
-                  {content}
-                  {contact && contact}
-                </p>
-              </div>
+    return renderContent(
+      <Card
+        className={`mt-5 mb-5 rounded-xl shadow-lg border ${cardStyling} ${className}`}
+        {...opts}
+      >
+        <CardContent className="py-0">
+          <div className="flex items-start gap-3">
+            {cardIcon}
+            <div>
+              <h3 className={textStyling.title}>{title}</h3>
+              <p className={textStyling.content}>
+                {content}
+                {contact}
+              </p>
             </div>
-          </CardContent>
-        </Card>
-      </MotionWrapper>
+          </div>
+        </CardContent>
+      </Card>,
     );
   }
 
   // Summary card variants (green, performance, etc.)
   if (variant === "green" || variant === "performance") {
-    return (
-      <MotionWrapper>
-        <Card
-          className={`mt-12 rounded-xl shadow-lg border ${cardStyling} ${className}`}
-          data-aos="fade-up"
-        >
-          <CardContent className="">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0">{cardIcon}</div>
-              <div className="space-y-2">
-                <h3 className={textStyling.title}>{title}</h3>
-                <p className={textStyling.content}>{content}</p>
-              </div>
+    return renderContent(
+      <Card
+        className={`mt-12 rounded-xl shadow-lg border ${cardStyling} ${className}`}
+      >
+        <CardContent className="">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0">{cardIcon}</div>
+            <div className="space-y-2">
+              <h3 className={textStyling.title}>{title}</h3>
+              <p className={textStyling.content}>{content}</p>
             </div>
-          </CardContent>
-        </Card>
-      </MotionWrapper>
+          </div>
+        </CardContent>
+      </Card>,
     );
   }
 
   // Default blue variant
-  return (
-    <MotionWrapper>
-      <div
-        className={`w-full bg-blue-50 border-t border-b border-blue-200 py-10 my-12 rounded-xl shadow-lg ${className}`}
-        data-aos="fade-up"
-      >
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <div className={textStyling.title}>{title}</div>
-          <div className={textStyling.content}>{content}</div>
-        </div>
+  return renderContent(
+    <div
+      className={`w-full bg-blue-50 border-t border-b border-blue-200 py-10 my-12 rounded-xl shadow-lg ${className}`}
+    >
+      <div className="max-w-3xl mx-auto px-4 text-center">
+        <div className={textStyling.title}>{title}</div>
+        <div className={textStyling.content}>{content}</div>
       </div>
-    </MotionWrapper>
+    </div>,
   );
 };
 

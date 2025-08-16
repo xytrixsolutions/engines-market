@@ -1,26 +1,16 @@
-"use client";
-
 import Container from "@/components/Container";
 import Image from "next/image";
-import { motion } from "framer-motion";
-
-// import { Easing } from "motion";
-//
-// const easeOut: Easing = [0.22, 1, 0.36, 1]; // cubic-bezier for easeOut
+import * as motion from "motion/react-client";
 
 const fadeUpVariants = {
   hidden: { opacity: 0, y: 20 },
-  // visible: (custom = 0) => ({
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  visible: (_ = 0) => ({
+  visible: {
     opacity: 1,
     y: 0,
     transition: {
-      // delay: custom * 0.12,
       duration: 0.75,
-      // ease: easeOut, // use the typed easing array
     },
-  }),
+  },
 };
 
 const containerVariants = {
@@ -57,25 +47,19 @@ const WhyChoose = () => {
         <div className="w-full md:w-[90%] text-left">
           <motion.h2
             className="text-3xl md:text-4xl font-bold text-charcoal-gray mb-4"
-            custom={0}
             variants={fadeUpVariants}
           >
             Why Choose <span className="text-neon-red">Engine Market</span>?
           </motion.h2>
           <motion.p
             className="text-lg text-gray-700 mb-6"
-            custom={1}
             variants={fadeUpVariants}
           >
             A Smarter Way to Buy Engines – The Power is in Your Hands!
           </motion.p>
           <ul className="space-y-4 text-black text-base">
             {listItems.map((item, idx) => (
-              <motion.li
-                key={idx}
-                custom={idx + 2} // offset index for delay after h2 and p
-                variants={fadeUpVariants}
-              >
+              <motion.li key={idx} variants={fadeUpVariants}>
                 <span className="font-bold">{item.split(" - ")[0]}</span> -{" "}
                 {item.split(" - ")[1]}
               </motion.li>

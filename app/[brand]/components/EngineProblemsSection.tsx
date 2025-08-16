@@ -30,7 +30,7 @@ const getSeverityColor = (severity: string) => {
 
 const motionProps = {
   initial: { opacity: 0, y: 25 },
-  transition: { duration: 1, ease: "easeOut" as any },
+  transition: { duration: 1, ease: "easeOut" as const },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
 };
@@ -44,7 +44,7 @@ const EngineProblemsSection: React.FC<{ brand: string }> = ({ brand }) => {
     viewport: { once: true },
     transition: {
       duration: 1,
-      ease: "easeOut" as any,
+      ease: "easeOut" as const,
       delay: EngineProblems.length * 0.1 + 0.02,
     },
   };

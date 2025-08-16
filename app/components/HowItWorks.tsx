@@ -7,13 +7,13 @@ import { motion } from "framer-motion";
 // Reuse the same variants for consistency
 const fadeUpVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: (_ = 0) => ({
+  visible: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.75,
     },
-  }),
+  },
 };
 
 const containerVariants = {
@@ -67,7 +67,6 @@ const HowItWorks = () => {
         <div className="w-full md:w-[90%] text-left">
           <motion.h2
             className="text-3xl md:text-4xl font-bold text-charcoal-gray-muted mb-5"
-            custom={0}
             variants={fadeUpVariants}
           >
             How It Works -{" "}
@@ -75,14 +74,13 @@ const HowItWorks = () => {
           </motion.h2>
           <motion.p
             className="text-lg text-gray-300 mb-6"
-            custom={1}
             variants={fadeUpVariants}
           >
             Get Multiple Quotes Within Hours!
           </motion.p>
           <ul className="space-y-4 text-charcoal-gray-muted text-base">
             {steps.map((step, idx) => (
-              <motion.li key={idx} custom={idx + 2} variants={fadeUpVariants}>
+              <motion.li key={idx} variants={fadeUpVariants}>
                 <span className="font-bold">{step.split(" - ")[0]}</span> -{" "}
                 {step.split(" - ")[1]}
               </motion.li>

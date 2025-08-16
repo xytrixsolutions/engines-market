@@ -8,7 +8,7 @@ import * as motion from "motion/react-client";
 
 const motionProps = {
   initial: { opacity: 0, y: 50 },
-  transition: { duration: 1, delay: 0.2, ease: "easeOut" as any }, // fix
+  transition: { duration: 1, delay: 0.2, ease: "easeOut" as const }, // fix
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
 };
@@ -26,7 +26,7 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 1, ease: "easeOut" as any },
+    transition: { duration: 1, ease: "easeOut" as const },
   },
 };
 

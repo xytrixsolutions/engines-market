@@ -6,6 +6,7 @@ import {
 } from "react-icons/fa";
 import { ReactElement } from "react";
 import Container from "@/components/Container";
+import * as motion from "motion/react-client";
 
 interface Badge {
   icon: ReactElement;
@@ -40,26 +41,32 @@ const TrustBadges = () => {
   return (
     <Container dark id="why-choose-us">
       {/* Section Heading */}
-      <h2
+      <motion.h2
         className="text-3xl font-bold text-center text-charcoal-gray-muted mb-10"
-        data-aos="fade-up"
-        data-aos-delay="50"
-        data-aos-duration="500"
-        data-aos-once="true"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.5,
+          delay: 0.05, // 50ms delay
+        }}
       >
         Why <span className="text-neon-red">Choose</span> Us?
-      </h2>
+      </motion.h2>
 
       {/* Badges Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {badges.map((badge, index) => (
-          <div
+          <motion.div
             key={index}
-            className="relative bg-white py-14 text-center rounded-xl shadow-md hover:shadow-lg transition-transform duration-300"
-            data-aos="fade-up"
-            data-aos-delay={100 + index * 100}
-            data-aos-duration="500" // Snappier animation
-            data-aos-once="true"
+            className="relative bg-white py-14 text-center rounded-xl shadow-md hover:shadow-lg"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.5,
+              delay: 0.1 + index * 0.1, // 100ms + stagger
+            }}
           >
             {/* Icon Circle */}
             <div className="absolute -top-7 left-1/2 transform -translate-x-1/2">
@@ -73,7 +80,7 @@ const TrustBadges = () => {
               {badge.title}
             </h3>
             <p className="text-sm text-gray-500 mt-2">{badge.description}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </Container>

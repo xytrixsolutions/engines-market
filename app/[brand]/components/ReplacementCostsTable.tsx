@@ -35,7 +35,7 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand }) => {
     animate: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" as any },
+      transition: { duration: 0.6, ease: "easeOut" as const },
     },
   };
 
@@ -47,7 +47,7 @@ const ReplacementCostsTable: React.FC<{ brand: string }> = ({ brand }) => {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut" as any,
+        ease: "easeOut" as const,
         when: "beforeChildren", // Animate parent first
         staggerChildren: 0.15, // Then stagger children
       },

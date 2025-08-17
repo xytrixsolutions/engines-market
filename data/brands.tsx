@@ -39065,7 +39065,7 @@ export const data: BrandsData = {
             "Replace the failed turbocharger and inspect the oil supply and return lines. Clean or replace the intercooler and associated piping to prevent debris from damaging the new unit.",
           prevention:
             "Use high-quality synthetic oil and change it regularly. Avoid sudden shutdowns after hard driving—allow the engine to idle for 30–60 seconds to cool the turbo. Consider installing an oil catch can to reduce contamination.",
-          severity: "High",
+          severity: "Moderate",
         },
       ],
     

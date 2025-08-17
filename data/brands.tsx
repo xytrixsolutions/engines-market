@@ -36895,7 +36895,7 @@ export const data: BrandsData = {
       },
     ],
   },
-  vauzhall: {
+  vauxhall: {
     metadata: {
       title: "Top Vauxhall Engines for Sale | New, Used & Reconditioned | Engines Market",
       description: "Discover the best deals on Vauxhall engines at Engines Market. Compare prices on new, used, and reconditioned Vauxhall engines. Save time and money with our extensive selection and competitive quotes.",
@@ -36912,7 +36912,7 @@ export const data: BrandsData = {
         "affordable Vauxhall engines"
       ],
     },
-    brandName: "Vauzhall",
+    brandName: "Vauxhall",
     carImages: [
       "/banners/banner-1.webp",
       "/banners/banner-2.webp",

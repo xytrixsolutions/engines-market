@@ -74,7 +74,7 @@ export const data: BrandsData = {
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/bmw.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -579,13 +579,13 @@ export const data: BrandsData = {
     estimatedCost: "£7,500 - £12,500",
   },
   {
-    image: "/bmw/bmw-x7.png",
+    image: "/bmw/BMW X7.png",
     model: "BMW X7",
     engineType: "3.0L Petrol",
     estimatedCost: "£6,000 - £10,000",
   },
   {
-    image: "/bmw/bmw-x7.png",
+    image: "/bmw/BMW X7.png",
     model: "BMW X7",
     engineType: "4.4L V8",
     estimatedCost: "£7,500 - £12,500",
@@ -1234,11 +1234,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/audi.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/image 1.png",
+      img: "/engine-guide-banners/audi.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -2159,11 +2159,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/alfa-romeo.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/bmw/engine-guide.png",
+      img: "/engine-guide-banners/alfaromeo.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -3101,11 +3101,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/brands/bentley.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/bently.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -3930,11 +3930,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/brans/.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/chevrolet.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -4879,7 +4879,7 @@ export const data: BrandsData = {
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/chrysler.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -6081,12 +6081,12 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/citreon.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
-      alt: "BMW rear view",
+      img: "/engine-guide-banners/citroen.webp",
+      alt: "citroen",
     },
     section4: {
       mainParagraph:
@@ -7033,7 +7033,7 @@ export const data: BrandsData = {
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/doge.png",
       alt: "BMW rear view",
     },
     section4: {
@@ -8038,11 +8038,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/fiat.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/fiat.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -9286,11 +9286,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
-      alt: "BMW front view",
+      img: "/whychoose-logos/ford.png",
+      alt: "Ford",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/ford.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -10612,11 +10612,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/honda.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/honda.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -11653,11 +11653,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "public/whychoose-logos/hyundai.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/hyundai.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -12665,11 +12665,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/iveco.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/isuzu.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -13686,11 +13686,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/iveco.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/iveco.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -14726,11 +14726,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
-      alt: "BMW front view",
+      img: "/whychoose-logos/jaguar.png",
+      alt: "Jaguar",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/jaguar.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -15923,7 +15923,7 @@ export const data: BrandsData = {
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/jeep.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -17074,11 +17074,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
-      alt: "BMW front view",
+      img: "/whychoose-logos/kia.png",
+      alt: "Kia",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/kia.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -18192,11 +18192,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
-      alt: "BMW front view",
+      img: "/whychoose-logos/landrover.png",
+      alt: "Land Rover",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/landrover.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -19217,11 +19217,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/luxus.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/lexus.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -20275,11 +20275,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
-      alt: "BMW front view",
+      img: "/whychoose-logos/mazda.png",
+      alt: "Mazda",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/mazda.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -21284,11 +21284,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/mercedes.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/mercedes.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -22590,11 +22590,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/mini.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/mini.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -23491,11 +23491,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/mitsubishi.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/mitsubishi.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -24555,11 +24555,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
-      alt: "BMW front view",
+      img: "/whychoose-logos/nissan.png",
+      alt: "Nissan",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/nissan.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -25591,11 +25591,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
-      alt: "BMW front view",
+      img: "/whychoose-logos/peugeot.png",
+      alt: "Peugeot",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
+      img: "/engine-guide-banners/peugeot.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -26592,12 +26592,12 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
-      alt: "BMW front view",
+      img: "/whychoose-logos/range-rover.png",
+      alt: "Range Rover",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
-      alt: "BMW rear view",
+      img: "/engine-guide-banners/porsche.webp",
+      alt: "porsche",
     },
     section4: {
       mainParagraph:
@@ -27665,8 +27665,8 @@ export const data: BrandsData = {
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
-      alt: "BMW rear view",
+      img: "/engine-guide-banners/rangerover.webp",
+      alt: "rangerover",
     },
     section4: {
       mainParagraph:
@@ -28656,12 +28656,12 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
-      alt: "BMW front view",
+      img: "/whychoose-logos/renault.png",
+      alt: "Renault",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
-      alt: "BMW rear view",
+      img: "/engine-guide-banners/renault.webp",
+      alt: "renault",
     },
     section4: {
       mainParagraph:
@@ -29718,8 +29718,8 @@ export const data: BrandsData = {
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
-      alt: "BMW rear view",
+      img: "/engine-guide-banners/saab.webp",
+      alt: "saab",
     },
     section4: {
       mainParagraph:
@@ -30731,12 +30731,12 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
-      alt: "BMW front view",
+      img: "/whychoose-logos/seat.png",
+      alt: "Seat",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
-      alt: "BMW rear view",
+      img: "/engine-guide-banners/seat.webp",
+      alt: "seat",
     },
     section4: {
       mainParagraph:
@@ -31766,12 +31766,12 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/skoda.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
-      alt: "BMW rear view",
+      img: "/engine-guide-banners/skoda.wep",
+      alt: "skoda",
     },
     section4: {
       mainParagraph:
@@ -32784,8 +32784,8 @@ export const data: BrandsData = {
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
-      alt: "BMW rear view",
+      img: "/engine-guide-banners/skoda.webp",
+      alt: "skoda",
     },
     section4: {
       mainParagraph:
@@ -33794,12 +33794,12 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/subaru.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
-      alt: "BMW rear view",
+      img: "/engine-guide-banners/subaru.webp",
+      alt: "subaru",
     },
     section4: {
       mainParagraph:
@@ -34867,12 +34867,12 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/suzuki.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
-      alt: "BMW rear view",
+      img: "/engine-guide-banners/suzuki.webp",
+      alt: "suzuki",
     },
     section4: {
       mainParagraph:
@@ -35975,12 +35975,12 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
-      alt: "BMW front view",
+      img: "/whychoose-logos/suzuki.png",
+      alt: "Suzuki",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
-      alt: "BMW rear view",
+      img: "/engine-guide-banners/toyota.webp",
+      alt: "toyota",
     },
     section4: {
       mainParagraph:
@@ -37066,12 +37066,12 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
-      alt: "BMW front view",
+      img: "/whychoose-logos/vauxhall.png",
+      alt: "Vauxhall",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
-      alt: "BMW rear view",
+      img: "/engine-guide-banners/vauxhall.webp",
+      alt: "vauxhall",
     },
     section4: {
       mainParagraph:
@@ -38079,12 +38079,12 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
-      alt: "BMW front view",
+      img: "/whychoose-logos/volkswagen.png",
+      alt: "Volkswagen",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
-      alt: "BMW rear view",
+      img: "/engine-guide-banners/volkswagen.webp",
+      alt: "volkswagen",
     },
     section4: {
       mainParagraph:
@@ -39138,12 +39138,12 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
-      alt: "BMW front view",
+      img: "/whychoose-logos/Group 7.png",
+      alt: "Volvo",
     },
     section1Image: {
-      img: "/engine-guide-banners/engine-guide.png",
-      alt: "BMW rear view",
+      img: "/engine-guide-banners/volvo.webp",
+      alt: "volvo",
     },
     section4: {
       mainParagraph:

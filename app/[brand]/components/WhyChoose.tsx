@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import Accent from "@/components/Accent";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
@@ -35,7 +34,7 @@ const WhyChoose = ({ brand }: { brand: string }) => {
 
   return (
     <div
-      className="grid grid-cols-1 lg:grid-cols-2 items-center h-auto lg:h-[85vh]"
+      className="grid grid-cols-1 lg:grid-cols-2 items-center h-auto lg:h-[85vh] overflow-x-hidden"
       id="why-choose"
     >
       {/* Image Side - Full height + BG */}
@@ -96,7 +95,7 @@ const WhyChoose = ({ brand }: { brand: string }) => {
             ].map((text, i) => (
               <motion.div
                 key={i}
-                className="flex items-center space-x-3 translate-x-6 sm:translate-x-10 md:translate-x-48 lg:translate-x-10 xl:translate-x-10 [@media(min-width:1400px)]:translate-x-16 [@media(min-width:1600px)]:translate-x-24 [@media(min-width:1700px)]:translate-x-36"
+                className="flex items-center space-x-3 translate-x-6 sm:translate-x-10 md:translate-x-16 lg:translate-x-10 xl:translate-x-10 [@media(min-width:1400px)]:translate-x-16 [@media(min-width:1600px)]:translate-x-24 [@media(min-width:1700px)]:translate-x-36"
                 variants={itemVariants}
               >
                 <CheckCircle className="w-5 h-5 text-green-400" />

@@ -3101,7 +3101,7 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/brands/bentley.png",
+      img: "/whychoose-logos/bentley.png",
       alt: "BMW front view",
     },
     section1Image: {
@@ -3930,8 +3930,8 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/brans/.png",
-      alt: "BMW front view",
+      img: "/whychoose-logos/chrysler.png",
+      alt: "Chrysler",
     },
     section1Image: {
       img: "/engine-guide-banners/chevrolet.webp",
@@ -6994,7 +6994,7 @@ export const data: BrandsData = {
       },
     ],
   },
-  doge: {
+  dodge: {
     metadata: {
       title:
         "Best Citroen Engines | New, Used & Reconditioned | Engines Market",
@@ -7013,7 +7013,7 @@ export const data: BrandsData = {
         "Citroen engine market",
       ],
     },
-    brandName: "Doge",
+    brandName: "Dodge",
     carImages: [
       "/banners/banner-1.webp",
       "/banners/banner-2.webp",
@@ -7029,11 +7029,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/doge.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/doge.png",
+      img: "/engine-guide-banners/doge.webp",
       alt: "BMW rear view",
     },
     section4: {
@@ -11653,7 +11653,7 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "public/whychoose-logos/hyundai.png",
+      img: "/whychoose-logos/hyundai.png",
       alt: "BMW front view",
     },
     section1Image: {
@@ -12665,7 +12665,7 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/whychoose-logos/iveco.png",
+      img: "/whychoose-logos/isuzu.png",
       alt: "BMW front view",
     },
     section1Image: {
@@ -15919,12 +15919,12 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
-      alt: "BMW front view",
+      img: "/whychoose-logos/jeep.png",
+      alt: "jeep",
     },
     section1Image: {
       img: "/engine-guide-banners/jeep.webp",
-      alt: "BMW rear view",
+      alt: "jeep",
     },
     section4: {
       mainParagraph:
@@ -18192,7 +18192,7 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/whychoose-logos/landrover.png",
+      img: "/whychoose-logos/land-rover.png",
       alt: "Land Rover",
     },
     section1Image: {
@@ -19217,7 +19217,7 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/whychoose-logos/luxus.png",
+      img: "/whychoose-logos/lexus.png",
       alt: "BMW front view",
     },
     section1Image: {
@@ -26592,7 +26592,7 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/whychoose-logos/range-rover.png",
+      img: "/whychoose-logos/porsche.png",
       alt: "Range Rover",
     },
     section1Image: {
@@ -27661,7 +27661,7 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/rangerover.png",
       alt: "BMW front view",
     },
     section1Image: {
@@ -29714,7 +29714,7 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/saab.png",
       alt: "BMW front view",
     },
     section1Image: {
@@ -31770,7 +31770,7 @@ export const data: BrandsData = {
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/skoda.wep",
+      img: "/engine-guide-banners/skoda.webp",
       alt: "skoda",
     },
     section4: {
@@ -32780,11 +32780,11 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "whychoose-logos/smart.png",
       alt: "BMW front view",
     },
     section1Image: {
-      img: "/engine-guide-banners/skoda.webp",
+      img: "/engine-guide-banners/smart.webp",
       alt: "skoda",
     },
     section4: {
@@ -35975,7 +35975,7 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/whychoose-logos/suzuki.png",
+      img: "/whychoose-logos/toyota.png",
       alt: "Suzuki",
     },
     section1Image: {

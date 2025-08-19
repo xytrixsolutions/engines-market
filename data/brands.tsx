@@ -27661,7 +27661,7 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/whychoose-logos/rangerover.png",
+      img: "/whychoose-logos/range-rover.png",
       alt: "BMW front view",
     },
     section1Image: {

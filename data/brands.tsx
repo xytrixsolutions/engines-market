@@ -3930,7 +3930,7 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/whychoose-logos/chrysler.png",
+      img: "/whychoose-logos/chevrolet.png",
       alt: "Chrysler",
     },
     section1Image: {
@@ -4875,7 +4875,7 @@ export const data: BrandsData = {
       "Volkswagen Golf",
     ],
     section0Image: {
-      img: "/bmw/bmw.png",
+      img: "/whychoose-logos/chrysler.png",
       alt: "BMW front view",
     },
     section1Image: {
@@ -4991,7 +4991,7 @@ export const data: BrandsData = {
           engine_options: "2.4L I4, 3.5L V6",
         },
         {
-          model: "/models/chrysler/chryslertowncountry.png",
+          model: "/models/chrysler/chrisleytown&country.png",
           model_name: "Chrysler Town & Country",
           engine_options: "3.6L V6",
         },
@@ -5016,7 +5016,7 @@ export const data: BrandsData = {
           engine_options: "2.7L V6, 3.5L V6",
         },
         {
-          model: "/models/chrysler/chryslerlhs.png",
+          model: "/models/chrysler/chryslerkhs.png",
           model_name: "Chrysler LHS",
           engine_options: "3.5L V6",
         },
@@ -5347,243 +5347,57 @@ export const data: BrandsData = {
           image: "/models/chrysler/chrysler300.png",
           model: "Chrysler 300",
           engineType: "3.6L Pentastar V6",
-          estimatedCost: "£3,500 - £6,500",
-        },
-        {
-          image: "/models/dodge/dodgecharger.png",
-          model: "Dodge Charger",
-          engineType: "3.6L Pentastar V6",
-          estimatedCost: "£3,500 - £6,500",
+          estimatedCost: "£3,500 - £6,500"
         },
         {
           image: "/models/chrysler/chrysler300.png",
           model: "Chrysler 300",
           engineType: "5.7L HEMI V8",
-          estimatedCost: "£5,600 - £13,000",
-        },
-        {
-          image: "/models/dodge/dodgechallenger.png",
-          model: "Dodge Challenger",
-          engineType: "5.7L HEMI V8",
-          estimatedCost: "£5,600 - £13,000",
-        },
-        {
-          image: "/models/jeep/jeepgrandcherokee.png",
-          model: "Jeep Grand Cherokee",
-          engineType: "3.0L EcoDiesel",
-          estimatedCost: "£4,000 - £7,500",
-        },
-        {
-          image: "/models/ram/ram1500.png",
-          model: "Ram 1500",
-          engineType: "3.0L EcoDiesel",
-          estimatedCost: "£4,000 - £7,500",
-        },
-        {
-          image: "/models/jeep/jeepwrangler.png",
-          model: "Jeep Wrangler",
-          engineType: "2.0L GME",
-          estimatedCost: "£2,500 - £5,000",
-        },
-        {
-          image: "/models/jeep/jeepcherokee.png",
-          model: "Jeep Cherokee",
-          engineType: "2.0L GME",
-          estimatedCost: "£2,500 - £5,000",
+          estimatedCost: "£5,600 - £13,000"
         },
         {
           image: "/models/chrysler/chryslerpacifica.png",
           model: "Chrysler Pacifica",
           engineType: "3.6L Pentastar V6",
-          estimatedCost: "£3,500 - £6,500",
+          estimatedCost: "£3,500 - £6,500"
         },
         {
-          image: "/dodge/dodgecaravan.png",
-          model: "Dodge Caravan",
-          engineType: "3.6L Pentastar V6",
-          estimatedCost: "£3,500 - £6,500",
-        },
-        {
-          image: "/dodge/dodge-challenger.png",
-          model: "Dodge Challenger",
-          engineType: "6.2L Hellcat V8",
-          estimatedCost: "£8,000 - £15,000",
-        },
-        {
-          image: "/dodge/dodge-charger.png",
-          model: "Dodge Charger",
-          engineType: "6.2L Hellcat V8",
-          estimatedCost: "£8,000 - £15,000",
-        },
-        {
-          image: "/jeep/jeep-grand-cherokee.png",
-          model: "Jeep Grand Cherokee",
-          engineType: "6.4L Apache V8",
-          estimatedCost: "£6,000 - £12,000",
-        },
-        {
-          image: "/dodge/dodge-durango.png",
-          model: "Dodge Durango",
-          engineType: "6.4L Apache V8",
-          estimatedCost: "£6,000 - £12,000",
-        },
-        {
-          image: "/chrysler/chrysler-pt-cruiser.png",
+          image: "/models/chrysler/chryslerptcruiser.png",
           model: "Chrysler PT Cruiser",
           engineType: "2.2L CRD",
-          estimatedCost: "£2,000 - £4,000",
+          estimatedCost: "£2,000 - £4,000"
         },
         {
-          image: "/jeep/jeep-liberty.png",
-          model: "Jeep Liberty",
-          engineType: "2.2L CRD",
-          estimatedCost: "£2,000 - £4,000",
-        },
-        {
-          image: "/chrysler/chrysler-sebring.png",
+          image: "/models/chrysler/chryslersebring.png",
           model: "Chrysler Sebring",
           engineType: "2.7L V6",
-          estimatedCost: "£2,750 - £4,850",
+          estimatedCost: "£2,750 - £4,850"
         },
         {
-          image: "/dodge/dodge-magnum.png",
-          model: "Dodge Magnum",
-          engineType: "2.7L V6",
-          estimatedCost: "£2,750 - £4,850",
-        },
-        {
-          image: "/chrysler/chrysler-town-country.png",
+          image: "/models/chrysler/chrisleytown&country.png",
           model: "Chrysler Town & Country",
           engineType: "3.3L V6",
-          estimatedCost: "£2,500 - £5,000",
+          estimatedCost: "£2,500 - £5,000"
         },
         {
-          image: "/dodge/dodge-grand-caravan.png",
-          model: "Dodge Grand Caravan",
-          engineType: "3.3L V6",
-          estimatedCost: "£2,500 - £5,000",
-        },
-        {
-          image: "/chrysler/chrysler-pacifica.png",
+          image: "/models/chrysler/chryslerpacifica.png",
           model: "Chrysler Pacifica",
           engineType: "3.8L V6",
-          estimatedCost: "£3,000 - £5,500",
+          estimatedCost: "£3,000 - £5,500"
         },
         {
-          image: "/dodge/dodge-grand-caravan.png",
-          model: "Dodge Grand Caravan",
-          engineType: "3.8L V6",
-          estimatedCost: "£3,000 - £5,500",
-        },
-        {
-          image: "/jeep/jeep-cherokee.png",
-          model: "Jeep Cherokee",
-          engineType: "4.0L I6",
-          estimatedCost: "£2,500 - £4,500",
-        },
-        {
-          image: "/jeep/jeep-wrangler.png",
-          model: "Jeep Wrangler",
-          engineType: "4.0L I6",
-          estimatedCost: "£2,500 - £4,500",
-        },
-        {
-          image: "/dodge/dodge-dakota.png",
-          model: "Dodge Dakota",
-          engineType: "5.2L V8",
-          estimatedCost: "£3,000 - £6,000",
-        },
-        {
-          image: "/dodge/dodge-ram-1500.png",
-          model: "Dodge Ram 1500",
-          engineType: "5.2L V8",
-          estimatedCost: "£3,000 - £6,000",
-        },
-        {
-          image: "/dodge/dodge-ram-1500.png",
-          model: "Dodge Ram 1500",
-          engineType: "5.9L V8",
-          estimatedCost: "£3,500 - £7,000",
-        },
-        {
-          image: "/dodge/dodge-durango.png",
-          model: "Dodge Durango",
-          engineType: "5.9L V8",
-          estimatedCost: "£3,500 - £7,000",
-        },
-        {
-          image: "/dodge/dodge-charger-srt8.png",
-          model: "Dodge Charger SRT8",
-          engineType: "6.1L HEMI V8",
-          estimatedCost: "£5,000 - £10,000",
-        },
-        {
-          image: "/chrysler/chrysler-300c-srt8.png",
+          image: "/models/chrysler/chrysler300csrt8.png",
           model: "Chrysler 300C SRT8",
           engineType: "6.1L HEMI V8",
-          estimatedCost: "£5,000 - £10,000",
+          estimatedCost: "£5,000 - £10,000"
         },
         {
-          image: "/dodge/dodge-caliber.png",
-          model: "Dodge Caliber",
-          engineType: "2.0L World Engine",
-          estimatedCost: "£2,000 - £4,000",
-        },
-        {
-          image: "/jeep/jeep-compass.png",
-          model: "Jeep Compass",
-          engineType: "2.0L World Engine",
-          estimatedCost: "£2,000 - £4,000",
-        },
-        {
-          image: "/dodge/dodge-caliber.png",
-          model: "Dodge Caliber",
-          engineType: "2.4L World Engine",
-          estimatedCost: "£2,500 - £4,500",
-        },
-        {
-          image: "/jeep/jeep-patriot.png",
-          model: "Jeep Patriot",
-          engineType: "2.4L World Engine",
-          estimatedCost: "£2,500 - £4,500",
-        },
-        {
-          image: "/jeep/jeep-compass.png",
-          model: "Jeep Compass",
-          engineType: "2.0L Tigershark",
-          estimatedCost: "£2,500 - £5,000",
-        },
-        {
-          image: "/jeep/jeep-renegade.png",
-          model: "Jeep Renegade",
-          engineType: "2.0L Tigershark",
-          estimatedCost: "£2,500 - £5,000",
-        },
-        {
-          image: "/jeep/jeep-cherokee.png",
-          model: "Jeep Cherokee",
-          engineType: "2.4L MultiAir",
-          estimatedCost: "£2,500 - £5,000",
-        },
-        {
-          image: "/jeep/jeep-renegade.png",
-          model: "Jeep Renegade",
-          engineType: "2.4L MultiAir",
-          estimatedCost: "£2,500 - £5,000",
-        },
-        {
-          image: "/jeep/jeep-grand-cherokee.png",
-          model: "Jeep Grand Cherokee",
-          engineType: "3.0L CRD",
-          estimatedCost: "£3,500 - £6,500",
-        },
-        {
-          image: "/chrysler/chrysler-300.png",
+          image: "/models/chrysler/chrysler300.png",
           model: "Chrysler 300",
           engineType: "3.0L CRD",
-          estimatedCost: "£3,500 - £6,500",
-        },
-      ],
+          estimatedCost: "£3,500 - £6,500"
+        }
+      ]
     },
     section7: [
       {

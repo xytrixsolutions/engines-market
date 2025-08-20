@@ -15,7 +15,6 @@ import ReplacementCostsTable from "./components/ReplacementCostsTable";
 import TroubleshootingGuide from "./components/TroubleShoot";
 import WhyChoose from "./components/WhyChoose";
 import AOSWrapper from "@/components/AOSInit";
-import LazyInView from "./components/LazyInView";
 import { Metadata } from "next";
 import LazyComponentWrapper from "./components/LazyComponentWrapper";
 

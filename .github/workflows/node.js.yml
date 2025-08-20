@@ -11,6 +11,18 @@ jobs:
     strategy:
       matrix:
         node-version: [22.x]
+    env:
+      NODE_ENV: production
+      API_KEY: ${{ vars.API_KEY }}
+      BASE_URL: ${{ vars.BASE_URL }}
+      SMTP_HOST: ${{ vars.SMTP_HOST }}
+      SMTP_PORT: ${{ vars.SMTP_PORT }}
+      SMTP_SECURE: ${{ vars.SMTP_SECURE }}
+      SMTP_USER: ${{ vars.SMTP_USER }}
+      SMTP_PASSWORD: ${{ vars.SMTP_PASSWORD }}
+      SMTP_FROM_EMAIL: ${{ vars.SMTP_FROM_EMAIL }}
+      SMTP_TO_EMAIL: ${{ vars.SMTP_TO_EMAIL }}
+
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}

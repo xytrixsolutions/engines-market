@@ -1,22 +1,58 @@
-name: Node.js CI
+# name: Node.js CI
+# on:
+#   push:
+#     branches: ["master"]
+#   pull_request:
+#     branches: ["master"]
+#
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     strategy:
+#       matrix:
+#         node-version: [22.x]
+#     env:
+#       NODE_ENV: production
+#       API_KEY: ${{ vars.API_KEY }}
+#       BASE_URL: ${{ vars.BASE_URL }}
+#       SMTP_HOST: ${{ vars.SMTP_HOST }}
+#       SMTP_PORT: ${{ vars.SMTP_PORT }}
+#       SMTP_SECURE: ${{ vars.SMTP_SECURE }}
+#       SMTP_USER: ${{ vars.SMTP_USER }}
+#       SMTP_PASSWORD: ${{ vars.SMTP_PASSWORD }}
+#       SMTP_FROM_EMAIL: ${{ vars.SMTP_FROM_EMAIL }}
+#       SMTP_TO_EMAIL: ${{ vars.SMTP_TO_EMAIL }}
+#
+#     steps:
+#       - uses: actions/checkout@v4
+#       - name: Use Node.js ${{ matrix.node-version }}
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: ${{ matrix.node-version }}
+#           cache: "npm"
+#       - run: npm ci
+#       - run: npm run build
+name: Deploy Website
+
 on:
   push:
-    branches: ["master"]
-  pull_request:
-    branches: ["master"]
+    branches:
+      - master
 
 jobs:
-  build:
+  web-deploy:
+    name: Deploying to Production
+
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [22.x]
+
     steps:
-      - uses: actions/checkout@v4
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+      - name: Get latest code
+        uses: actions/checkout@v2
+
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: "npm"
-      - run: npm ci
-      - run: npm run build
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_DIR }}

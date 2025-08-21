@@ -3,6 +3,7 @@
 import Button from "@/components/Button";
 import Container from "@/components/Container";
 import { submitForm } from "@/app/actions/submitForm";
+import axios from "axios";
 import {
   Accordion,
   AccordionContent,
@@ -84,37 +85,37 @@ function VehicleServiceFormContent() {
     const fetchVehicleData = async () => {
       setIsFetchingVehicle(true);
       try {
-        // const response = await axios.get(
-        //   `/api/vehicle?reg=${encodeURIComponent(regNumber!)}`,
-        // );
+        const response = await axios.get(
+          `/api/vehicle?reg=${encodeURIComponent(regNumber!)}`,
+        );
         // WARN: Do not Remove this comment, this is for testing in order to avoid API calls
-        const response = {
-          data: {
-            registrationNumber: "EA65AMX",
-            make: "BMW",
-            model: "X5 SPORT D AUTO",
-            colour: "BLACK",
-            fuelType: "DIESEL",
-            engineCapacity: "2993",
-            yearOfManufacture: "2006",
-            vehicleAge: "15 Years 2 Months",
-            wheelplan: "2 AXLE RIGID BODY",
-            dateOfLastV5CIssued: "2021-12-15",
-            typeApproval: "M1",
-            co2Emissions: 250,
-            registrationPlace: "Birmingham",
-            tax: {
-              taxStatus: "Untaxed",
-              taxDueDate: "2021-09-07",
-              days: "108",
-            },
-            mot: {
-              motStatus: "Valid",
-              motDueDate: "2022-07-05",
-              days: 193,
-            },
-          },
-        };
+        // const response = {
+        //   data: {
+        //     registrationNumber: "EA65AMX",
+        //     make: "BMW",
+        //     model: "X5 SPORT D AUTO",
+        //     colour: "BLACK",
+        //     fuelType: "DIESEL",
+        //     engineCapacity: "2993",
+        //     yearOfManufacture: "2006",
+        //     vehicleAge: "15 Years 2 Months",
+        //     wheelplan: "2 AXLE RIGID BODY",
+        //     dateOfLastV5CIssued: "2021-12-15",
+        //     typeApproval: "M1",
+        //     co2Emissions: 250,
+        //     registrationPlace: "Birmingham",
+        //     tax: {
+        //       taxStatus: "Untaxed",
+        //       taxDueDate: "2021-09-07",
+        //       days: "108",
+        //     },
+        //     mot: {
+        //       motStatus: "Valid",
+        //       motDueDate: "2022-07-05",
+        //       days: 193,
+        //     },
+        //   },
+        // };
         if (response.data) {
           setVehicleInfo({
             registration: regNumber!,

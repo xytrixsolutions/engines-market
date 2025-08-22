@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  output: "standalone",
+  // output: "standalone",
   // reactStrictMode: false,
   // productionBrowserSourceMaps: false,
   // experimental: {

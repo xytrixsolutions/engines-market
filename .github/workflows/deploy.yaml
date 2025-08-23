@@ -1,5 +1,4 @@
 name: Build & Deploy to VPS
-
 on:
   push:
     branches: ["master"]
@@ -23,7 +22,7 @@ jobs:
       - name: Copy image to VPS
         uses: appleboy/scp-action@v0.1.7
         with:
-          host: ${{ secrets.SERVER_IP }}
+          host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           source: "enginesmarket.tar"
@@ -37,6 +36,23 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             mkdir -p /var/www/enginesmarket
+
             cd /var/www/enginesmarket
+
+            cat > .env.production <<EOL
+            API_KEY=${{ secrets.API_KEY }}
+            BASE_URL=${{ secrets.BASE_URL }}
+            SMTP_HOST=${{ secrets.SMTP_HOST }}
+            SMTP_PORT=${{ secrets.SMTP_PORT }}
+            SMTP_SECURE=${{ secrets.SMTP_SECURE }}
+            SMTP_USER=${{ secrets.SMTP_USER }}
+            SMTP_PASSWORD=${{ secrets.SMTP_PASSWORD }}
+            SMTP_FROM_EMAIL=${{ secrets.SMTP_FROM_EMAIL }}
+            SMTP_TO_EMAIL=${{ secrets.SMTP_TO_EMAIL }}
+            EOL
+
             docker load -i /tmp/enginesmarket.tar
-            docker compose up -d
+
+            docker compose up -d --force-recreate
+
+            rm /tmp/enginesmarket.tar

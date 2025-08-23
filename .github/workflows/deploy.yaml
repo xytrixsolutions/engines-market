@@ -96,7 +96,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           source: "enginesmarket.tar.gz"
-          target: "/tmp/enginesmarket.tar.gz"
+          target: "/tmp"
 
       - name: Deploy on VPS
         uses: appleboy/ssh-action@v1.2.0

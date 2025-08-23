@@ -1,0 +1,48 @@
+version: "3.9"
+networks:
+  web:
+    external: true
+
+services:
+  reverse-proxy:
+    image: traefik:v3.0
+    command:
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--certificatesresolvers.le.acme.tlschallenge=true"
+      - "--certificatesresolvers.le.acme.email=muneebusmani8355@gmail.com"
+      - "--certificatesresolvers.le.acme.storage=/letsencrypt/acme.json"
+      - "--api.dashboard=true"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - "letsencrypt:/letsencrypt"
+    networks:
+      - web
+    restart: unless-stopped
+
+  webapp:
+    image: your-dockerhub-username/yourapp:latest
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.webapp.rule=Host(`khaki-kangaroo-21779.zap.cloud`)"
+      - "traefik.http.routers.webapp.entrypoints=websecure"
+      - "traefik.http.routers.webapp.tls.certresolver=le"
+      - "traefik.http.middlewares.webapp-redirect.redirectscheme.scheme=https"
+      - "traefik.http.routers.webapp-redirect.rule=Host(`khaki-kangaroo-21779.zap.cloud`)"
+      - "traefik.http.routers.webapp-redirect.entrypoints=web"
+      - "traefik.http.routers.webapp-redirect.middlewares=webapp-redirect"
+      # tell Traefik the container exposes port 3000
+      - "traefik.http.services.webapp.loadbalancer.server.port=3000"
+    depends_on:
+      - reverse-proxy
+    networks:
+      - web
+    restart: unless-stopped
+
+volumes:
+  letsencrypt:

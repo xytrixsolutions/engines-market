@@ -169,6 +169,14 @@ jobs:
           echo "Current directory: $(pwd)"
           echo "GitHub workspace: $GITHUB_WORKSPACE"
 
+      - name: Verify files exist before SCP
+        run: |
+          echo "Checking if files exist:"
+          ls -la enginesmarket.tar.gz || echo "enginesmarket.tar.gz not found"
+          ls -la .deploy/docker-compose.yml || echo "docker-compose.yml not found"
+          ls -la .env.production || echo ".env.production not found"
+          echo "Current directory: $(pwd)"
+
       - name: Copy files to VPS
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -176,9 +184,9 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           source: |
-            enginesmarket.tar.gz
-            .deploy/docker-compose.yml
-            .env.production
+            ${{ github.workspace }}/enginesmarket.tar.gz
+            ${{ github.workspace }}/.deploy/docker-compose.yml
+            ${{ github.workspace }}/.env.production
           target: "/tmp/enginesmarket"
 
       - name: Deploy on VPS

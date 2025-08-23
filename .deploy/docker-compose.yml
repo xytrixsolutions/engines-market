@@ -26,7 +26,8 @@ services:
     restart: unless-stopped
 
   webapp:
-    image: your-dockerhub-username/yourapp:latest
+    # image: your-dockerhub-username/yourapp:latest
+    image: muneeb6969/enginesmarket:latest
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.webapp.rule=Host(`khaki-kangaroo-21779.zap.cloud`)"

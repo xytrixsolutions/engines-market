@@ -57,6 +57,6 @@ jobs:
           script: |
             mkdir -p /var/www/enginesmarket
             cd /var/www/enginesmarket
-            zstd -d -c /tmp/enginesmarket.tar.zst | docker load
+            zstd -d -c /tmp/enginesmarket.tar.zst/enginesmarket.tar.zst | docker load
             docker compose up -d --force-recreate
             rm /tmp/enginesmarket.tar.zst -rf

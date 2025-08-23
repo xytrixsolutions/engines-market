@@ -179,7 +179,7 @@ jobs:
             enginesmarket.tar.gz
             .deploy/docker-compose.yml
             .env.production
-          target: "/tmp"
+          target: "/tmp/enginesmarket"
 
       - name: Deploy on VPS
         uses: appleboy/ssh-action@v1.2.0
@@ -192,9 +192,9 @@ jobs:
             mkdir -p /var/www/enginesmarket
 
             # Move files to deployment directory
-            mv /tmp/enginesmarket.tar.gz /var/www/enginesmarket/
-            mv /tmp/docker-compose.yml /var/www/enginesmarket/
-            mv /tmp/.env.production /var/www/enginesmarket/
+            mv /tmp/enginesmarket/enginesmarket.tar.gz /var/www/enginesmarket/
+            mv /tmp/enginesmarket/docker-compose.yml /var/www/enginesmarket/
+            mv /tmp/enginesmarket/.env.production /var/www/enginesmarket/
 
             # Change to deployment directory
             cd /var/www/enginesmarket

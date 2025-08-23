@@ -63,7 +63,7 @@
 name: Build & Deploy to VPS
 on:
   push:
-    branches: ["master"]
+    branches: ["muneeb"]
 
 jobs:
   build:

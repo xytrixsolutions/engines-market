@@ -228,7 +228,7 @@
 name: Build & Deploy to VPS
 on:
   push:
-    branches: ["muneeb"]
+    branches: ["master"]
 
 jobs:
   build:

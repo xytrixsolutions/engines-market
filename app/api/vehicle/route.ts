@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import axios from "axios";
 
-const API_KEY = process.env.API_KEY;
-const BASE_URL = process.env.BASE_URL;
+const API_KEY = process.env.API_KEY || "";
+const BASE_URL = process.env.BASE_URL || "";
 
 if (!API_KEY)
   throw new Error("API_KEY is not defined in environment variables");

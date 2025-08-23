@@ -60,6 +60,66 @@
 #             zstd -d -c /tmp/enginesmarket.tar.zst/enginesmarket.tar.zst | docker load
 #             docker compose up -d --force-recreate
 #             rm /tmp/enginesmarket.tar.zst -rf
+#
+#
+#
+#
+#    ===============> #2
+# name: Build & Deploy to VPS
+# on:
+#   push:
+#     branches: ["muneeb"]
+#
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repo
+#         uses: actions/checkout@v4
+#
+#       - name: Set up Docker Buildx
+#         uses: docker/setup-buildx-action@v3
+#
+#       - name: Debug Docker info
+#         run: |
+#           docker version
+#           docker info
+#
+#       - name: Build Docker image
+#         run: |
+#           docker build --build-arg API_KEY="${{ secrets.API_KEY }}" --build-arg BASE_URL="${{ secrets.BASE_URL }}" --build-arg SMTP_HOST="${{ secrets.SMTP_HOST }}" --build-arg SMTP_PORT="${{ secrets.SMTP_PORT }}" --build-arg SMTP_SECURE="${{ secrets.SMTP_SECURE }}" --build-arg SMTP_USER="${{ secrets.SMTP_USER }}" --build-arg SMTP_PASSWORD="${{ secrets.SMTP_PASSWORD }}" --build-arg SMTP_FROM_EMAIL="${{ secrets.SMTP_FROM_EMAIL }}" --build-arg SMTP_TO_EMAIL="${{ secrets.SMTP_TO_EMAIL }}" -t enginesmarket:latest .
+#
+#       - name: Save image as tarball
+#         run: |
+#           docker save enginesmarket:latest | gzip > enginesmarket.tar.gz
+#           chmod 644 enginesmarket.tar.gz
+#
+#       - name: Copy image to VPS
+#         uses: appleboy/scp-action@v0.1.7
+#         with:
+#           host: ${{ secrets.SERVER_HOST }}
+#           username: ${{ secrets.SERVER_USER }}
+#           key: ${{ secrets.SERVER_SSH_KEY }}
+#           source: "enginesmarket.tar.gz"
+#           target: "/tmp"
+#
+#       - name: Deploy on VPS
+#         uses: appleboy/ssh-action@v1.2.0
+#         with:
+#           host: ${{ secrets.SERVER_HOST }}
+#           username: ${{ secrets.SERVER_USER }}
+#           key: ${{ secrets.SERVER_SSH_KEY }}
+#           script: |
+#             mkdir -p /var/www/enginesmarket
+#
+#             cd /var/www/enginesmarket
+#
+#             # Extract and load the gzipped tar file
+#             gunzip -c /tmp/enginesmarket.tar.gz | docker load
+#
+#             docker compose up -d --force-recreate
+#
+#             # rm /tmp/enginesmarket.tar.gz
 name: Build & Deploy to VPS
 on:
   push:
@@ -89,13 +149,30 @@ jobs:
           docker save enginesmarket:latest | gzip > enginesmarket.tar.gz
           chmod 644 enginesmarket.tar.gz
 
-      - name: Copy image to VPS
+      - name: Create environment file
+        run: |
+          cat > .env.production << EOF
+          API_KEY=${{ secrets.API_KEY }}
+          BASE_URL=${{ secrets.BASE_URL }}
+          SMTP_HOST=${{ secrets.SMTP_HOST }}
+          SMTP_PORT=${{ secrets.SMTP_PORT }}
+          SMTP_SECURE=${{ secrets.SMTP_SECURE }}
+          SMTP_USER=${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD=${{ secrets.SMTP_PASSWORD }}
+          SMTP_FROM_EMAIL=${{ secrets.SMTP_FROM_EMAIL }}
+          SMTP_TO_EMAIL=${{ secrets.SMTP_TO_EMAIL }}
+          EOF
+
+      - name: Copy files to VPS
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
-          source: "enginesmarket.tar.gz"
+          source: |
+            enginesmarket.tar.gz
+            .deploy/docker-compose.yml
+            .env.production
           target: "/tmp"
 
       - name: Deploy on VPS
@@ -105,13 +182,28 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
+            # Create deployment directory
             mkdir -p /var/www/enginesmarket
 
+            # Move files to deployment directory
+            mv /tmp/enginesmarket.tar.gz /var/www/enginesmarket/
+            mv /tmp/docker-compose.yml /var/www/enginesmarket/
+            mv /tmp/.env.production /var/www/enginesmarket/
+
+            # Change to deployment directory
             cd /var/www/enginesmarket
 
-            # Extract and load the gzipped tar file
-            gunzip -c /tmp/enginesmarket.tar.gz | docker load
+            # Extract and load Docker image
+            gunzip -c enginesmarket.tar.gz | docker load
 
+            # Create external network if it doesn't exist
+            docker network ls | grep -q web || docker network create web
+
+            # Create letsencrypt volume if it doesn't exist
+            docker volume ls | grep -q letsencrypt || docker volume create letsencrypt
+
+            # Start services
             docker compose up -d --force-recreate
 
-            # rm /tmp/enginesmarket.tar.gz
+            # Cleanup
+            rm -f enginesmarket.tar.gz

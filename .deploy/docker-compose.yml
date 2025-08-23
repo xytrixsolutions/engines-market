@@ -27,8 +27,8 @@ services:
 
   webapp:
     image: enginesmarket:latest
-    env_file:
-      - .env.production
+    # env_file:
+    #   - .env.production
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.webapp.rule=Host(`khaki-kangaroo-21779.zap.cloud`)"

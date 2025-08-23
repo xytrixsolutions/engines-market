@@ -10,12 +10,17 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # - name: Set up Docker Buildx
-      #   uses: docker/setup-buildx-action@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Debug Docker info
+        run: |
+          docker version
+          docker info
 
       - name: Build Docker image
         run: |
-          docker build --build-arg API_KEY=${{ secrets.API_KEY }} --build-arg BASE_URL=${{ secrets.BASE_URL }} --build-arg SMTP_HOST=${{ secrets.SMTP_HOST }} --build-arg SMTP_PORT=${{ secrets.SMTP_PORT }} --build-arg SMTP_SECURE=${{ secrets.SMTP_SECURE }} --build-arg SMTP_USER=${{ secrets.SMTP_USER }} --build-arg SMTP_PASSWORD=${{ secrets.SMTP_PASSWORD }} --build-arg SMTP_FROM_EMAIL=${{ secrets.SMTP_FROM_EMAIL }} --build-arg SMTP_TO_EMAIL=${{ secrets.SMTP_TO_EMAIL }} -t enginesmarket:latest .
+          docker build --build-arg API_KEY="${{ secrets.API_KEY }}" --build-arg BASE_URL="${{ secrets.BASE_URL }}" --build-arg SMTP_HOST="${{ secrets.SMTP_HOST }}" --build-arg SMTP_PORT="${{ secrets.SMTP_PORT }}" --build-arg SMTP_SECURE="${{ secrets.SMTP_SECURE }}" --build-arg SMTP_USER="${{ secrets.SMTP_USER }}" --build-arg SMTP_PASSWORD="${{ secrets.SMTP_PASSWORD }}" --build-arg SMTP_FROM_EMAIL="${{ secrets.SMTP_FROM_EMAIL }}" --build-arg SMTP_TO_EMAIL="${{ secrets.SMTP_TO_EMAIL }}" -t enginesmarket:latest .
 
       - name: Save image as tarball
         run: docker save enginesmarket:latest -o enginesmarket.tar

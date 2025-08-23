@@ -1,5 +1,66 @@
+# name: Build & Deploy to VPS
+#
+# on:
+#   push:
+#     branches: ["master"]
+#
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#
+#     steps:
+#       - name: Checkout repo
+#
+#         uses: actions/checkout@v4
+#
+#       - name: Set up Docker Buildx
+#
+#         uses: docker/setup-buildx-action@v3
+#
+#       - name: Debug Docker info
+#
+#         run: |
+#           docker version
+#           docker info
+#
+#       - name: Build Docker image
+#
+#         run: |
+#           docker build --build-arg API_KEY="${{ secrets.API_KEY }}" --build-arg BASE_URL="${{ secrets.BASE_URL }}" --build-arg SMTP_HOST="${{ secrets.SMTP_HOST }}" --build-arg SMTP_PORT="${{ secrets.SMTP_PORT }}" --build-arg SMTP_SECURE="${{ secrets.SMTP_SECURE }}" --build-arg SMTP_USER="${{ secrets.SMTP_USER }}" --build-arg SMTP_PASSWORD="${{ secrets.SMTP_PASSWORD }}" --build-arg SMTP_FROM_EMAIL="${{ secrets.SMTP_FROM_EMAIL }}" --build-arg SMTP_TO_EMAIL="${{ secrets.SMTP_TO_EMAIL }}" -t enginesmarket:latest .
+#
+#       - name: Save image as tarball
+#
+#         run: |
+#           docker save enginesmarket:latest | zstd -19 -o enginesmarket.tar.zst
+#           chmod 644 enginesmarket.tar.zst
+#           chown $(id -u):$(id -g) enginesmarket.tar.zst
+#
+#       - name: Copy image to VPS
+#
+#         uses: appleboy/scp-action@v0.1.7
+#
+#         with:
+#           host: ${{ secrets.SERVER_HOST }}
+#           username: ${{ secrets.SERVER_USER }}
+#           key: ${{ secrets.SERVER_SSH_KEY }}
+#           source: "enginesmarket.tar.zst"
+#           target: "/tmp/enginesmarket.tar.zst"
+#
+#       - name: Deploy on VPS
+#
+#         uses: appleboy/ssh-action@v1.2.0
+#
+#         with:
+#           host: ${{ secrets.SERVER_HOST }}
+#           username: ${{ secrets.SERVER_USER }}
+#           key: ${{ secrets.SERVER_SSH_KEY }}
+#           script: |
+#             mkdir -p /var/www/enginesmarket
+#             cd /var/www/enginesmarket
+#             zstd -d -c /tmp/enginesmarket.tar.zst/enginesmarket.tar.zst | docker load
+#             docker compose up -d --force-recreate
+#             rm /tmp/enginesmarket.tar.zst -rf
 name: Build & Deploy to VPS
-
 on:
   push:
     branches: ["master"]
@@ -7,56 +68,50 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
-
         uses: actions/checkout@v4
 
       - name: Set up Docker Buildx
-
         uses: docker/setup-buildx-action@v3
 
       - name: Debug Docker info
-
         run: |
           docker version
           docker info
 
       - name: Build Docker image
-
         run: |
           docker build --build-arg API_KEY="${{ secrets.API_KEY }}" --build-arg BASE_URL="${{ secrets.BASE_URL }}" --build-arg SMTP_HOST="${{ secrets.SMTP_HOST }}" --build-arg SMTP_PORT="${{ secrets.SMTP_PORT }}" --build-arg SMTP_SECURE="${{ secrets.SMTP_SECURE }}" --build-arg SMTP_USER="${{ secrets.SMTP_USER }}" --build-arg SMTP_PASSWORD="${{ secrets.SMTP_PASSWORD }}" --build-arg SMTP_FROM_EMAIL="${{ secrets.SMTP_FROM_EMAIL }}" --build-arg SMTP_TO_EMAIL="${{ secrets.SMTP_TO_EMAIL }}" -t enginesmarket:latest .
 
       - name: Save image as tarball
-
         run: |
-          docker save enginesmarket:latest | zstd -19 -o enginesmarket.tar.zst
-          chmod 644 enginesmarket.tar.zst
-          chown $(id -u):$(id -g) enginesmarket.tar.zst
+          docker save enginesmarket:latest | gzip > enginesmarket.tar.gz
+          chmod 644 enginesmarket.tar.gz
 
       - name: Copy image to VPS
-
         uses: appleboy/scp-action@v0.1.7
-
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
-          source: "enginesmarket.tar.zst"
-          target: "/tmp/enginesmarket.tar.zst"
+          source: "enginesmarket.tar.gz"
+          target: "/tmp/enginesmarket.tar.gz"
 
       - name: Deploy on VPS
-
         uses: appleboy/ssh-action@v1.2.0
-
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             mkdir -p /var/www/enginesmarket
+
             cd /var/www/enginesmarket
-            zstd -d -c /tmp/enginesmarket.tar.zst/enginesmarket.tar.zst | docker load
+
+            # Extract and load the gzipped tar file
+            gunzip -c /tmp/enginesmarket.tar.gz | docker load
+
             docker compose up -d --force-recreate
-            rm /tmp/enginesmarket.tar.zst -rf
+
+            # rm /tmp/enginesmarket.tar.gz

@@ -59,4 +59,4 @@ jobs:
             cd /var/www/enginesmarket
             zstd -d -c /tmp/enginesmarket.tar.zst | docker load
             docker compose up -d --force-recreate
-            rm /tmp/enginesmarket.tar.zst
+            rm /tmp/enginesmarket.tar.zst -rf

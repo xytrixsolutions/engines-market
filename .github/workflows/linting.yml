@@ -1,0 +1,45 @@
+# name: Check Code
+#
+# on:
+#   pull_request:
+#     branches: [master]
+#
+# jobs:
+#   type-lint:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - uses: actions/setup-node@v3
+#         with:
+#           node-version: "22"
+#       - run: npm ci
+#       - run: npx tsc --noEmit && npx eslint . --ext .ts,.tsx,.jsx --max-warnings=0
+name: Check Code
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  type-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "22"
+
+      # Cache npm modules
+      - uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      # Install dependencies
+      - run: npm ci
+
+      # Type check + lint
+      - run: npx tsc --noEmit && npx eslint . --ext .ts,.tsx,.jsx --max-warnings=0

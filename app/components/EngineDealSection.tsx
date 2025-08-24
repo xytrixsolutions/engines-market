@@ -58,7 +58,6 @@ const EngineDealSection = () => {
       y: 0,
       transition: {
         duration: 0.6,
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ease: "easeOut" as const,
       },
     },

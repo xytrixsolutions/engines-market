@@ -176,6 +176,7 @@ const EngineDealsCTA: React.FC<{ brand: string }> = ({ brand }) => {
               { icon: Phone, label: "Call Now" },
               { icon: Mail, label: "Email Us" },
               { icon: FaWhatsapp, label: "WhatsApp" },
+              // eslint-disable-next-line @typescript-eslint/no-unused-vars
             ].map(({ icon: Icon, label }, i) => (
               <MotionDiv key={label} variants={fadeInUp}>
                 <Button

@@ -54,6 +54,7 @@ export const MODEL_ENGINE_COLUMNS: Column<ModelEngine>[] = [
   {
     key: "compatibleModels",
     label: "Compatible Models",
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     render: (value, row) =>
       Array.isArray(value) ? value.join(", ") : String(value),
   },

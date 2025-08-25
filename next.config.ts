@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  images: {
+    unoptimized: true,
+  },
   output: "standalone",
   // reactStrictMode: false,
   // productionBrowserSourceMaps: false,

@@ -326,3 +326,4 @@ jobs:
 
             # Cleanup
             rm -f /tmp/enginesmarket.tar.gz
+            rm -rf ~/engines-market

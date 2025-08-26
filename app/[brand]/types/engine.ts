@@ -1,7 +1,9 @@
 export type Column<T = Record<string, unknown>> = {
   key: string;
   label?: string;
-  render?: ( value: unknown, row: T ) => React.ReactNode;
+  render?: (value: unknown, row: T) => React.ReactNode;
+  width?: string;
+  maxWidth?: string;
 };
 
 export type TableProps<T = Record<string, unknown>> = {

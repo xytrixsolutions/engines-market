@@ -126,11 +126,10 @@ const EngineTablesTabs = ({ brand }: { brand: string }) => {
 
       {/* Table */}
       <EngineTable
-        key="engine-table" // stays the same across tab switches
+        key="engine-table"
         columns={columns}
         data={tableData}
         tableType={tableType}
-        // tableType={deferredTableType}
       />
 
       {/* Note */}

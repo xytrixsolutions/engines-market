@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useState } from "react";
 import Button from "./Button";
 
-// Reusable navigation link component
 const NavLink = ({
   href,
   children,
@@ -21,7 +20,6 @@ const NavLink = ({
   </Link>
 );
 
-// Mobile navigation link component
 const MobileNavLink = ({
   href,
   children,
@@ -37,10 +35,9 @@ const MobileNavLink = ({
   </Link>
 );
 
-// Navigation items data
 const NAV_ITEMS = [
   { href: "/engines", label: "Engines" },
-  { href: "/car-parts", label: "Car Parts" },
+  { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
@@ -52,7 +49,6 @@ export default function Header() {
     <header className="bg-charcoal-gray">
       <nav className="w-11/12 lg:w-10/12 mx-auto py-2 md:py-5  text-charcoal-gray-muted">
         <div className="flex items-center h-16">
-          {/* Logo and Brand */}
           <div className="flex items-center space-x-3 flex-1">
             <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-20 lg:h-20">
               <Image
@@ -63,10 +59,13 @@ export default function Header() {
               />
             </div>
 
-            <div className="text-xl lg:text-2xl xl:text-3xl font-bold">
+            <Link
+              href="/"
+              className="text-xl lg:text-2xl xl:text-3xl font-bold"
+            >
               <span className="text-charcoal-gray-muted">ENGINES</span>
               <span className="text-neon-red">MARKET</span>
-            </div>
+            </Link>
           </div>
 
           {/* Navigation Menu (center) */}

@@ -17067,503 +17067,575 @@ export const data: BrandsData = {
       conclusion:
         "By understanding these common KIA engine issues and their solutions, you can ensure your vehicle remains reliable and efficient for years to come. Regular maintenance, timely repairs, and using quality parts and fluids are essential to preventing major problems and extending engine life. Whether you're driving a compact KIA Soul or a powerful Telluride, proper care will keep your KIA running smoothly and deliver a confident driving experience.",
     },
-    engineData: {
-      models: [
+    "engineData": {
+      "models": [
         {
-          model: "/jeep/jeep-wrangler.png",
-          model_name: "Jeep Wrangler",
-          engine_options:
-            "2.0L Turbo Petrol, 3.6L V6 Petrol, 2.2L Diesel, 4xe Hybrid",
+          "model": "/models/kia/kia-sportage.png",
+          "model_name": "KIA Sportage",
+          "engine_options": "1.6L Petrol, 2.0L Diesel"
         },
         {
-          model: "/jeep/jeep-grand-cherokee.png",
-          model_name: "Jeep Grand Cherokee",
-          engine_options:
-            "3.6L V6 Petrol, 5.7L V8 Petrol, 3.0L Diesel, 4xe Hybrid",
+          "model": "/models/kia/kia-sorento.png",
+          "model_name": "KIA Sorento",
+          "engine_options": "2.5L Petrol, 2.2L Diesel, 1.6L Hybrid"
         },
         {
-          model: "/jeep/jeep-compass.png",
-          model_name: "Jeep Compass",
-          engine_options: "1.3L Turbo Petrol, 2.4L Petrol, 2.0L Diesel",
+          "model": "/models/kia/kia-seltos.png",
+          "model_name": "KIA Seltos",
+          "engine_options": "1.6L Turbo, 2.0L Petrol"
         },
         {
-          model: "/jeep/jeep-renegade.png",
-          model_name: "Jeep Renegade",
-          engine_options: "1.0L Turbo Petrol, 1.3L Turbo Petrol, 1.6L Diesel",
+          "model": "/models/kia/kia-telluride.png",
+          "model_name": "KIA Telluride",
+          "engine_options": "3.8L V6"
         },
         {
-          model: "/jeep/jeep-cherokee.png",
-          model_name: "Jeep Cherokee",
-          engine_options: "2.0L Turbo Petrol, 3.2L V6 Petrol, 2.2L Diesel",
+          "model": "/models/kia/kia-stinger.png",
+          "model_name": "KIA Stinger",
+          "engine_options": "2.0L Turbo, 3.3L V6"
         },
         {
-          model: "/jeep/jeep-gladiator.png",
-          model_name: "Jeep Gladiator",
-          engine_options: "3.6L V6 Petrol, 3.0L Diesel",
+          "model": "/models/kia/kia-niro.png",
+          "model_name": "KIA Niro",
+          "engine_options": "1.6L Hybrid, 1.6L Plug-in Hybrid"
         },
         {
-          model: "/jeep/jeep-wagoneer.png",
-          model_name: "Jeep Wagoneer",
-          engine_options: "5.7L V8 Petrol, 6.4L V8 Petrol",
+          "model": "/models/kia/kia-carnival.png",
+          "model_name": "KIA Carnival",
+          "engine_options": "3.5L V6"
         },
         {
-          model: "/jeep/jeep-patriot.png",
-          model_name: "Jeep Patriot",
-          engine_options: "2.0L Petrol, 2.4L Petrol, 2.2L Diesel",
+          "model": "/models/kia/kia-k5.png",
+          "model_name": "KIA K5",
+          "engine_options": "1.6L Turbo, 2.5L Turbo"
         },
         {
-          model: "/jeep/jeep-commander.png",
-          model_name: "Jeep Commander",
-          engine_options: "3.7L V6 Petrol, 5.7L V8 Petrol, 3.0L Diesel",
+          "model": "/models/kia/kia-rio.png",
+          "model_name": "KIA Rio",
+          "engine_options": "1.6L Petrol"
         },
         {
-          model: "/jeep/jeep-liberty.png",
-          model_name: "Jeep Liberty",
-          engine_options: "3.7L V6 Petrol, 2.8L Diesel",
+          "model": "/models/kia/kia-forte.png",
+          "model_name": "KIA Forte",
+          "engine_options": "2.0L Petrol, 1.6L Turbo"
         },
         {
-          model: "/jeep/jeep-avenger.png",
-          model_name: "Jeep Avenger",
-          engine_options: "1.2L Turbo Petrol, 1.5L Diesel",
+          "model": "/models/kia/kia-soul.png",
+          "model_name": "KIA Soul",
+          "engine_options": "2.0L Petrol, 1.6L Turbo"
         },
         {
-          model: "/jeep/jeep-trailhawk.png",
-          model_name: "Jeep Trailhawk",
-          engine_options: "2.0L Turbo Petrol, 3.2L V6 Petrol",
+          "model": "/models/kia/kia-optima.png",
+          "model_name": "KIA Optima",
+          "engine_options": "2.4L Petrol, 1.6L Turbo, 2.0L Hybrid"
         },
         {
-          model: "/jeep/jeep-laredo.png",
-          model_name: "Jeep Laredo",
-          engine_options: "3.6L V6 Petrol, 5.7L V8 Petrol",
+          "model": "/models/kia/kia-cadenza.png",
+          "model_name": "KIA Cadenza",
+          "engine_options": "3.3L V6"
         },
         {
-          model: "/jeep/jeep-overland.png",
-          model_name: "Jeep Overland",
-          engine_options: "3.6L V6 Petrol, 5.7L V8 Petrol",
+          "model": "/models/kia/kia-k900.png",
+          "model_name": "KIA K900",
+          "engine_options": "3.3L V6, 5.0L V8"
         },
         {
-          model: "/jeep/jeep-srt.png",
-          model_name: "Jeep SRT",
-          engine_options: "6.4L V8 Petrol",
+          "model": "/models/kia/kia-ev6.png",
+          "model_name": "KIA EV6",
+          "engine_options": "Electric"
         },
         {
-          model: "/jeep/jeep-trackhawk.png",
-          model_name: "Jeep Trackhawk",
-          engine_options: "6.2L Supercharged V8 Petrol",
+          "model": "/models/kia/kia-picanto.png",
+          "model_name": "KIA Picanto",
+          "engine_options": "1.0L Petrol, 1.2L Petrol"
         },
         {
-          model: "/jeep/jeep-rubicon.png",
-          model_name: "Jeep Rubicon",
-          engine_options: "2.0L Turbo Petrol, 3.6L V6 Petrol, 2.2L Diesel",
+          "model": "/models/kia/kia-ceed.png",
+          "model_name": "KIA Ceed",
+          "engine_options": "1.0L Petrol, 1.4L Petrol, 1.6L Diesel"
         },
         {
-          model: "/jeep/jeep-sahara.png",
-          model_name: "Jeep Sahara",
-          engine_options: "2.0L Turbo Petrol, 3.6L V6 Petrol",
+          "model": "/models/kia/kia-xceed.png",
+          "model_name": "KIA XCeed",
+          "engine_options": "1.0L Petrol, 1.4L Petrol, 1.6L Diesel"
         },
         {
-          model: "/jeep/jeep-latitude.png",
-          model_name: "Jeep Latitude",
-          engine_options: "2.4L Petrol, 2.0L Diesel",
+          "model": "/models/kia/kia-stonic.png",
+          "model_name": "KIA Stonic",
+          "engine_options": "1.0L Turbo, 1.4L Petrol"
         },
         {
-          model: "/jeep/jeep-summit.png",
-          model_name: "Jeep Summit",
-          engine_options: "3.6L V6 Petrol, 5.7L V8 Petrol",
+          "model": "/models/kia/kia-k4.png",
+          "model_name": "KIA K4",
+          "engine_options": "1.6L Petrol, 2.0L Petrol"
         },
       ],
-      engine_codes: [
+      "engine_codes": [
         {
-          engineCode: "552 83 099",
-          engineSize: 2.0,
-          fuelType: "Petrol",
-          turbo: true,
-          horsepower: 270,
-          torque: 295,
-          productionYears: "2020-2025",
+          "engineCode": "G4HC",
+          "engineSize": 1.0,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 67,
+          "torque": 95,
+          "productionYears": "2004-2011"
         },
         {
-          engineCode: "552 63 088",
-          engineSize: 3.6,
-          fuelType: "Petrol",
-          turbo: false,
-          horsepower: 285,
-          torque: 260,
-          productionYears: "2012-2025",
+          "engineCode": "G4NG",
+          "engineSize": 1.6,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 204,
+          "torque": 265,
+          "productionYears": "2015-Present"
         },
         {
-          engineCode: "552 60 384",
-          engineSize: 2.0,
-          fuelType: "Hybrid",
-          turbo: true,
-          horsepower: 375,
-          torque: 470,
-          productionYears: "2021-2025",
+          "engineCode": "G3LA",
+          "engineSize": 1.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 120,
+          "torque": 172,
+          "productionYears": "2017-Present"
         },
         {
-          engineCode: "552 63 842",
-          engineSize: 6.4,
-          fuelType: "Petrol",
-          turbo: false,
-          horsepower: 470,
-          torque: 470,
-          productionYears: "2020-2025",
+          "engineCode": "G6DB",
+          "engineSize": 3.3,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 290,
+          "torque": 341,
+          "productionYears": "2005-2010"
         },
         {
-          engineCode: "683 06 384",
-          engineSize: 3.0,
-          fuelType: "Diesel",
-          turbo: true,
-          horsepower: 260,
-          torque: 600,
-          productionYears: "2014-2025",
+          "engineCode": "D4HB",
+          "engineSize": 2.2,
+          "fuelType": "Diesel",
+          "turbo": true,
+          "horsepower": 200,
+          "torque": 440,
+          "productionYears": "2012-Present"
         },
         {
-          engineCode: "683 06 842",
-          engineSize: 2.4,
-          fuelType: "Petrol",
-          turbo: false,
-          horsepower: 180,
-          torque: 237,
-          productionYears: "2014-2025",
+          "engineCode": "G4LD",
+          "engineSize": 1.4,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 140,
+          "torque": 242,
+          "productionYears": "2016-Present"
         },
         {
-          engineCode: "683 63 099",
-          engineSize: 1.3,
-          fuelType: "Petrol",
-          turbo: true,
-          horsepower: 177,
-          torque: 285,
-          productionYears: "2018-2025",
+          "engineCode": "G4FA",
+          "engineSize": 1.4,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 109,
+          "torque": 137,
+          "productionYears": "2008-2017"
         },
         {
-          engineCode: "683 63 088",
-          engineSize: 2.2,
-          fuelType: "Diesel",
-          turbo: true,
-          horsepower: 200,
-          torque: 450,
-          productionYears: "2015-2025",
+          "engineCode": "G4FJ",
+          "engineSize": 1.6,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 201,
+          "torque": 265,
+          "productionYears": "2011-Present"
         },
         {
-          engineCode: "683 60 384",
-          engineSize: 1.6,
-          fuelType: "Diesel",
-          turbo: true,
-          horsepower: 120,
-          torque: 320,
-          productionYears: "2016-2025",
+          "engineCode": "G4NA",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 150,
+          "torque": 192,
+          "productionYears": "2010-Present"
         },
         {
-          engineCode: "683 63 842",
-          engineSize: 2.0,
-          fuelType: "Petrol",
-          turbo: true,
-          horsepower: 270,
-          torque: 295,
-          productionYears: "2018-2025",
+          "engineCode": "G4KH",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 245,
+          "torque": 353,
+          "productionYears": "2011-Present"
         },
         {
-          engineCode: "684 06 384",
-          engineSize: 3.6,
-          fuelType: "Petrol",
-          turbo: false,
-          horsepower: 285,
-          torque: 260,
-          productionYears: "2012-2025",
+          "engineCode": "G6CU",
+          "engineSize": 3.5,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 194,
+          "torque": 294,
+          "productionYears": "2002-2006"
         },
         {
-          engineCode: "684 06 842",
-          engineSize: 2.0,
-          fuelType: "Hybrid",
-          turbo: true,
-          horsepower: 375,
-          torque: 470,
-          productionYears: "2021-2025",
+          "engineCode": "G6AU",
+          "engineSize": 3.5,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 276,
+          "torque": 336,
+          "productionYears": "2006-2014"
         },
         {
-          engineCode: "684 63 099",
-          engineSize: 6.4,
-          fuelType: "Petrol",
-          turbo: false,
-          horsepower: 470,
-          torque: 470,
-          productionYears: "2020-2025",
+          "engineCode": "G6DA",
+          "engineSize": 3.8,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 290,
+          "torque": 358,
+          "productionYears": "2005-2011"
         },
         {
-          engineCode: "684 63 088",
-          engineSize: 3.0,
-          fuelType: "Diesel",
-          turbo: true,
-          horsepower: 260,
-          torque: 600,
-          productionYears: "2014-2025",
+          "engineCode": "G6DP",
+          "engineSize": 3.8,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 291,
+          "torque": 355,
+          "productionYears": "2011-2019"
         },
         {
-          engineCode: "684 60 384",
-          engineSize: 2.4,
-          fuelType: "Petrol",
-          turbo: false,
-          horsepower: 180,
-          torque: 237,
-          productionYears: "2014-2025",
+          "engineCode": "G4KJ",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 274,
+          "torque": 353,
+          "productionYears": "2015-Present"
         },
         {
-          engineCode: "684 63 842",
-          engineSize: 1.3,
-          fuelType: "Petrol",
-          turbo: true,
-          horsepower: 177,
-          torque: 285,
-          productionYears: "2018-2025",
+          "engineCode": "G4NC",
+          "engineSize": 1.6,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 123,
+          "torque": 154,
+          "productionYears": "2010-Present"
         },
         {
-          engineCode: "685 06 384",
-          engineSize: 2.2,
-          fuelType: "Diesel",
-          turbo: true,
-          horsepower: 200,
-          torque: 450,
-          productionYears: "2015-2025",
+          "engineCode": "G4FC",
+          "engineSize": 1.6,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 130,
+          "torque": 157,
+          "productionYears": "2006-2019"
         },
         {
-          engineCode: "685 06 842",
-          engineSize: 1.6,
-          fuelType: "Diesel",
-          turbo: true,
-          horsepower: 120,
-          torque: 320,
-          productionYears: "2016-2025",
+          "engineCode": "G4KD",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 165,
+          "torque": 196,
+          "productionYears": "2007-2015"
         },
         {
-          engineCode: "685 63 099",
-          engineSize: 2.0,
-          fuelType: "Petrol",
-          turbo: true,
-          horsepower: 270,
-          torque: 295,
-          productionYears: "2018-2025",
+          "engineCode": "G4KE",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 156,
+          "torque": 192,
+          "productionYears": "2010-Present"
         },
         {
-          engineCode: "685 63 088",
-          engineSize: 3.6,
-          fuelType: "Petrol",
-          turbo: false,
-          horsepower: 285,
-          torque: 260,
-          productionYears: "2012-2025",
+          "engineCode": "306PS",
+          "engineSize": 3.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 400,
+          "torque": 550,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "204DTD",
+          "engineSize": 2.0,
+          "fuelType": "Diesel",
+          "turbo": true,
+          "horsepower": 180,
+          "torque": 430,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "306DT",
+          "engineSize": 3.0,
+          "fuelType": "Diesel",
+          "turbo": true,
+          "horsepower": 275,
+          "torque": 600,
+          "productionYears": "2009-2025"
+        },
+        {
+          "engineCode": "508PS",
+          "engineSize": 5.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 575,
+          "torque": 700,
+          "productionYears": "2013-2025"
+        },
+        {
+          "engineCode": "AJ8FT",
+          "engineSize": 4.2,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 400,
+          "torque": 553,
+          "productionYears": "2002-2010"
+        },
+        {
+          "engineCode": "AJ200D",
+          "engineSize": 2.0,
+          "fuelType": "Diesel",
+          "turbo": true,
+          "horsepower": 180,
+          "torque": 430,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "AJ126",
+          "engineSize": 3.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 340,
+          "torque": 450,
+          "productionYears": "2012-2025"
+        },
+        {
+          "engineCode": "AJ133",
+          "engineSize": 5.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 510,
+          "torque": 625,
+          "productionYears": "2009-2025"
+        },
+        {
+          "engineCode": "AJ20P",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 250,
+          "torque": 365,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "AJ20D",
+          "engineSize": 2.0,
+          "fuelType": "Diesel",
+          "turbo": true,
+          "horsepower": 240,
+          "torque": 500,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "AJ200P",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 300,
+          "torque": 400,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "AJ126S",
+          "engineSize": 3.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 380,
+          "torque": 450,
+          "productionYears": "2012-2025"
+        },
+        {
+          "engineCode": "AJ133S",
+          "engineSize": 5.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 550,
+          "torque": 680,
+          "productionYears": "2009-2025"
+        },
+        {
+          "engineCode": "AJ200H",
+          "engineSize": 2.0,
+          "fuelType": "Hybrid",
+          "turbo": true,
+          "horsepower": 300,
+          "torque": 400,
+          "productionYears": "2018-2025"
+        },
+        {
+          "engineCode": "AJ20E",
+          "engineSize": 2.0,
+          "fuelType": "Electric",
+          "turbo": false,
+          "horsepower": 400,
+          "torque": 700,
+          "productionYears": "2020-2025"
+        },
+        {
+          "engineCode": "AJ-V6",
+          "engineSize": 3.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 380,
+          "torque": 450,
+          "productionYears": "2012-2025"
+        },
+        {
+          "engineCode": "204DTA",
+          "engineSize": 2.0,
+          "fuelType": "Diesel",
+          "turbo": true,
+          "horsepower": 180,
+          "torque": 430,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "224DT",
+          "engineSize": 2.2,
+          "fuelType": "Diesel",
+          "turbo": true,
+          "horsepower": 200,
+          "torque": 450,
+          "productionYears": "2012-2025"
+        },
+        {
+          "engineCode": "204PT",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 250,
+          "torque": 365,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "PT204",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 300,
+          "torque": 400,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "RG (AJ-V8)",
+          "engineSize": 5.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 575,
+          "torque": 700,
+          "productionYears": "2013-2025"
+        }
+      ],
+      "models_engines": [
+        {
+          "engineCode": "G4KD",
+          "compatibleModels": ["KIA Optima", "KIA Sportage", "KIA Soul"]
+        },
+        {
+          "engineCode": "G4KE",
+          "compatibleModels": ["KIA Sorento", "KIA Sportage", "KIA Optima"]
+        },
+        {
+          "engineCode": "G4KJ",
+          "compatibleModels": ["KIA Stinger", "KIA K5", "KIA Optima"]
+        },
+        {
+          "engineCode": "G4NA",
+          "compatibleModels": ["KIA Forte", "KIA Soul", "KIA Seltos"]
+        },
+        {
+          "engineCode": "G4NC",
+          "compatibleModels": ["KIA Rio", "KIA Forte", "KIA Soul"]
+        },
+        {
+          "engineCode": "G4FC",
+          "compatibleModels": ["KIA Rio", "KIA Forte", "KIA Soul"]
+        },
+        {
+          "engineCode": "G4FA",
+          "compatibleModels": ["KIA Picanto", "KIA Rio"]
+        },
+        {
+          "engineCode": "G4LA",
+          "compatibleModels": ["KIA Picanto", "KIA Rio"]
+        },
+        {
+          "engineCode": "G4LC",
+          "compatibleModels": ["KIA Picanto", "KIA Rio"]
+        },
+        {
+          "engineCode": "G4FG",
+          "compatibleModels": ["KIA Forte", "KIA Soul"]
+        },
+        {
+          "engineCode": "G4FJ",
+          "compatibleModels": ["KIA Forte", "KIA Soul"]
+        },
+        {
+          "engineCode": "G4KH",
+          "compatibleModels": ["KIA Stinger", "KIA K5"]
+        },
+        {
+          "engineCode": "G4NJ",
+          "compatibleModels": ["KIA Forte", "KIA Soul"]
         },
       ],
-      models_engines: [
+      "replacement_costs": [
         {
-          engineCode: "552 83 099",
-          compatibleModels: ["Wrangler", "Cherokee"],
+          "image": "/models/kia/kia-ceed.png",
+          "model": "KIA Ceed, KIA XCeed",
+          "engineType": "1.4L Petrol",
+          "estimatedCost": "£1,500 - £3,000"
         },
         {
-          engineCode: "552 63 088",
-          compatibleModels: ["Grand Cherokee", "Gladiator"],
+          "image": "/models/kia/kia-rio.png",
+          "model": "KIA Rio, KIA Picanto",
+          "engineType": "1.6L Petrol",
+          "estimatedCost": "£1,800 - £3,200"
         },
         {
-          engineCode: "552 60 384",
-          compatibleModels: ["Wrangler 4xe", "Grand Cherokee 4xe"],
+          "image": "/models/kia/kia-forte.png",
+          "model": "KIA Forte, KIA Soul",
+          "engineType": "2.0L Petrol",
+          "estimatedCost": "£2,000 - £3,500"
         },
         {
-          engineCode: "552 63 842",
-          compatibleModels: ["Grand Cherokee SRT", "Trackhawk"],
+          "image": "/models/kia/kia-sorento.png",
+          "model": "KIA Sorento, KIA Sportage",
+          "engineType": "2.0L Diesel",
+          "estimatedCost": "£2,500 - £4,500"
         },
         {
-          engineCode: "683 06 384",
-          compatibleModels: ["Grand Cherokee", "Gladiator"],
+          "image": "/models/kia/kia-optima.png",
+          "model": "KIA Optima",
+          "engineType": "2.4L Petrol",
+          "estimatedCost": "£2,200 - £4,000"
         },
         {
-          engineCode: "683 06 842",
-          compatibleModels: ["Compass", "Renegade"],
+          "image": "/models/kia/kia-k5.png",
+          "model": "KIA K5, KIA Stinger",
+          "engineType": "2.5L Turbo",
+          "estimatedCost": "£3,000 - £5,000"
         },
         {
-          engineCode: "683 63 099",
-          compatibleModels: ["Renegade", "Compass"],
+          "image": "/models/kia/kia-cadenza.png",
+          "model": "KIA Cadenza, KIA K900",
+          "engineType": "3.3L V6",
+          "estimatedCost": "£3,500 - £6,000"
         },
         {
-          engineCode: "683 63 088",
-          compatibleModels: ["Cherokee", "Grand Cherokee"],
+          "image": "/models/kia/kia-telluride.png",
+          "model": "KIA Telluride",
+          "engineType": "3.8L V6",
+          "estimatedCost": "£4,000 - £7,000"
         },
-        {
-          engineCode: "683 60 384",
-          compatibleModels: ["Renegade", "Compass"],
-        },
-        {
-          engineCode: "683 63 842",
-          compatibleModels: ["Wrangler", "Cherokee"],
-        },
-        {
-          engineCode: "684 06 384",
-          compatibleModels: ["Grand Cherokee", "Gladiator"],
-        },
-        {
-          engineCode: "684 06 842",
-          compatibleModels: ["Wrangler 4xe", "Grand Cherokee 4xe"],
-        },
-        {
-          engineCode: "684 63 099",
-          compatibleModels: ["Renegade", "Compass"],
-        },
-        {
-          engineCode: "684 63 088",
-          compatibleModels: ["Cherokee", "Grand Cherokee"],
-        },
-        {
-          engineCode: "684 60 384",
-          compatibleModels: ["Renegade", "Compass"],
-        },
-        {
-          engineCode: "684 63 842",
-          compatibleModels: ["Wrangler", "Cherokee"],
-        },
-        {
-          engineCode: "685 06 384",
-          compatibleModels: ["Grand Cherokee", "Gladiator"],
-        },
-        {
-          engineCode: "685 06 842",
-          compatibleModels: ["Compass", "Renegade"],
-        },
-        {
-          engineCode: "685 63 099",
-          compatibleModels: ["Renegade", "Compass"],
-        },
-        {
-          engineCode: "685 63 088",
-          compatibleModels: ["Cherokee", "Grand Cherokee"],
-        },
-      ],
-      replacement_costs: [
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Wrangler",
-          engineType: "2.0L Turbo Petrol",
-          estimatedCost: "£4,000 - £6,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Wrangler",
-          engineType: "3.6L V6 Petrol",
-          estimatedCost: "£5,000 - £7,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Grand Cherokee",
-          engineType: "3.6L V6 Petrol",
-          estimatedCost: "£5,500 - £8,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Grand Cherokee",
-          engineType: "5.7L V8 Petrol",
-          estimatedCost: "£7,000 - £10,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Grand Cherokee",
-          engineType: "3.0L Diesel",
-          estimatedCost: "£6,000 - £9,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Compass",
-          engineType: "1.3L Turbo Petrol",
-          estimatedCost: "£3,500 - £5,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Compass",
-          engineType: "2.0L Diesel",
-          estimatedCost: "£4,500 - £6,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Renegade",
-          engineType: "1.0L Turbo Petrol",
-          estimatedCost: "£3,000 - £4,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Renegade",
-          engineType: "1.6L Diesel",
-          estimatedCost: "£3,500 - £5,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Cherokee",
-          engineType: "2.0L Turbo Petrol",
-          estimatedCost: "£4,500 - £6,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Cherokee",
-          engineType: "3.2L V6 Petrol",
-          estimatedCost: "£5,500 - £8,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Gladiator",
-          engineType: "3.6L V6 Petrol",
-          estimatedCost: "£5,000 - £7,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Gladiator",
-          engineType: "3.0L Diesel",
-          estimatedCost: "£6,000 - £9,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Patriot",
-          engineType: "2.0L Petrol",
-          estimatedCost: "£3,500 - £5,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Patriot",
-          engineType: "2.4L Petrol",
-          estimatedCost: "£4,000 - £6,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Liberty",
-          engineType: "3.7L V6 Petrol",
-          estimatedCost: "£5,000 - £7,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Liberty",
-          engineType: "2.8L Diesel",
-          estimatedCost: "£5,500 - £8,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Commander",
-          engineType: "3.7L V6 Petrol",
-          estimatedCost: "£5,500 - £8,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Commander",
-          engineType: "5.7L V8 Petrol",
-          estimatedCost: "£7,000 - £10,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Wagoneer",
-          engineType: "5.7L V8 Petrol",
-          estimatedCost: "£7,500 - £10,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Wagoneer",
-          engineType: "6.4L V8 Petrol",
-          estimatedCost: "£8,000 - £11,000",
-        },
-      ],
+      ]
     },
     section7: [
       {

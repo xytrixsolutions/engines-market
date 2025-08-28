@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { getPosts } from "@/lib/wordpressHelpers";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -5,12 +7,6 @@ import Link from "next/link";
 const POSTS_PER_PAGE = 6;
 
 // app/blog/page.tsx
-async function getPosts() {
-  const res = await fetch("http://localhost/wp-json/wp/v2/posts?_embed", {
-    next: { revalidate: 3600 },
-  });
-  return res.json();
-}
 
 const decodeHTMLEntities = (text: string): string => {
   const entities: Record<string, string> = {

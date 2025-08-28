@@ -1,42 +1,19 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { use } from "react";
 import Image from "next/image";
 import Container from "@/components/Container";
-
-// Fetch single post from WordPress
-async function getPost(id: number | string) {
-  const res = await fetch(`http://localhost/wp-json/wp/v2/posts/${id}?_embed`, {
-    next: { revalidate: 3600 },
-  });
-
-  if (!res.ok) return null;
-  return res.json();
-}
-
-// Fetch related posts by category
-async function getRelatedPosts(categoryId: number) {
-  const res = await fetch(
-    `http://localhost/wp-json/wp/v2/posts?categories=${categoryId}&per_page=5&_embed`,
-    {
-      next: { revalidate: 3600 },
-    },
-  );
-
-  if (!res.ok) return [];
-  return res.json();
-}
+import { getPost, getRelatedPosts } from "@/lib/wordpressHelpers";
 
 interface Params {
   id: string;
 }
 
-export default function BlogDetailPage(props: { params: Promise<Params> }) {
-  const params = use(props.params);
+const BlogDetailPage = async (props: { params: Promise<Params> }) => {
+  const params = await props.params;
   const { id } = params;
-  const post = use(getPost(id));
-  const relatedPosts = use(getRelatedPosts(post?.categories[0] || 1));
+  const post = await getPost(id);
+  const relatedPosts = await getRelatedPosts(post?.categories[0] || 1);
 
   if (!post) {
     notFound();
@@ -248,4 +225,5 @@ export default function BlogDetailPage(props: { params: Promise<Params> }) {
       </aside>
     </Container>
   );
-}
+};
+export default BlogDetailPage;

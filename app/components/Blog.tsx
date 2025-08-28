@@ -120,6 +120,7 @@
 /* export default BlogCards; */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Container from "@/components/Container";
+import { getFeaturedPosts } from "@/lib/wordpressHelpers";
 import * as motion from "motion/react-client";
 import Image from "next/image";
 import Link from "next/link";
@@ -144,20 +145,6 @@ function decodeHTMLEntities(text: string): string {
   };
 
   return text.replace(/&[^;]+;/g, (match) => entities[match] || match);
-}
-
-// Fetch real posts
-async function getFeaturedPosts() {
-  try {
-    const res = await fetch(
-      "http://localhost/wp-json/wp/v2/posts?_embed&per_page=3",
-    );
-    if (!res.ok) return [];
-    return res.json();
-  } catch (error) {
-    console.error("Failed to fetch blog posts:", error);
-    return [];
-  }
 }
 
 // Animation variants

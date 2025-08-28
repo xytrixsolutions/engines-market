@@ -17067,503 +17067,575 @@ export const data: BrandsData = {
       conclusion:
         "By understanding these common KIA engine issues and their solutions, you can ensure your vehicle remains reliable and efficient for years to come. Regular maintenance, timely repairs, and using quality parts and fluids are essential to preventing major problems and extending engine life. Whether you're driving a compact KIA Soul or a powerful Telluride, proper care will keep your KIA running smoothly and deliver a confident driving experience.",
     },
-    engineData: {
-      models: [
+    "engineData": {
+      "models": [
         {
-          model: "/jeep/jeep-wrangler.png",
-          model_name: "Jeep Wrangler",
-          engine_options:
-            "2.0L Turbo Petrol, 3.6L V6 Petrol, 2.2L Diesel, 4xe Hybrid",
+          "model": "/models/kia/kia-sportage.png",
+          "model_name": "KIA Sportage",
+          "engine_options": "1.6L Petrol, 2.0L Diesel"
         },
         {
-          model: "/jeep/jeep-grand-cherokee.png",
-          model_name: "Jeep Grand Cherokee",
-          engine_options:
-            "3.6L V6 Petrol, 5.7L V8 Petrol, 3.0L Diesel, 4xe Hybrid",
+          "model": "/models/kia/kia-sorento.png",
+          "model_name": "KIA Sorento",
+          "engine_options": "2.5L Petrol, 2.2L Diesel, 1.6L Hybrid"
         },
         {
-          model: "/jeep/jeep-compass.png",
-          model_name: "Jeep Compass",
-          engine_options: "1.3L Turbo Petrol, 2.4L Petrol, 2.0L Diesel",
+          "model": "/models/kia/kia-seltos.png",
+          "model_name": "KIA Seltos",
+          "engine_options": "1.6L Turbo, 2.0L Petrol"
         },
         {
-          model: "/jeep/jeep-renegade.png",
-          model_name: "Jeep Renegade",
-          engine_options: "1.0L Turbo Petrol, 1.3L Turbo Petrol, 1.6L Diesel",
+          "model": "/models/kia/kia-telluride.png",
+          "model_name": "KIA Telluride",
+          "engine_options": "3.8L V6"
         },
         {
-          model: "/jeep/jeep-cherokee.png",
-          model_name: "Jeep Cherokee",
-          engine_options: "2.0L Turbo Petrol, 3.2L V6 Petrol, 2.2L Diesel",
+          "model": "/models/kia/kia-stinger.png",
+          "model_name": "KIA Stinger",
+          "engine_options": "2.0L Turbo, 3.3L V6"
         },
         {
-          model: "/jeep/jeep-gladiator.png",
-          model_name: "Jeep Gladiator",
-          engine_options: "3.6L V6 Petrol, 3.0L Diesel",
+          "model": "/models/kia/kia-niro.png",
+          "model_name": "KIA Niro",
+          "engine_options": "1.6L Hybrid, 1.6L Plug-in Hybrid"
         },
         {
-          model: "/jeep/jeep-wagoneer.png",
-          model_name: "Jeep Wagoneer",
-          engine_options: "5.7L V8 Petrol, 6.4L V8 Petrol",
+          "model": "/models/kia/kia-carnival.png",
+          "model_name": "KIA Carnival",
+          "engine_options": "3.5L V6"
         },
         {
-          model: "/jeep/jeep-patriot.png",
-          model_name: "Jeep Patriot",
-          engine_options: "2.0L Petrol, 2.4L Petrol, 2.2L Diesel",
+          "model": "/models/kia/kia-k5.png",
+          "model_name": "KIA K5",
+          "engine_options": "1.6L Turbo, 2.5L Turbo"
         },
         {
-          model: "/jeep/jeep-commander.png",
-          model_name: "Jeep Commander",
-          engine_options: "3.7L V6 Petrol, 5.7L V8 Petrol, 3.0L Diesel",
+          "model": "/models/kia/kia-rio.png",
+          "model_name": "KIA Rio",
+          "engine_options": "1.6L Petrol"
         },
         {
-          model: "/jeep/jeep-liberty.png",
-          model_name: "Jeep Liberty",
-          engine_options: "3.7L V6 Petrol, 2.8L Diesel",
+          "model": "/models/kia/kia-forte.png",
+          "model_name": "KIA Forte",
+          "engine_options": "2.0L Petrol, 1.6L Turbo"
         },
         {
-          model: "/jeep/jeep-avenger.png",
-          model_name: "Jeep Avenger",
-          engine_options: "1.2L Turbo Petrol, 1.5L Diesel",
+          "model": "/models/kia/kia-soul.png",
+          "model_name": "KIA Soul",
+          "engine_options": "2.0L Petrol, 1.6L Turbo"
         },
         {
-          model: "/jeep/jeep-trailhawk.png",
-          model_name: "Jeep Trailhawk",
-          engine_options: "2.0L Turbo Petrol, 3.2L V6 Petrol",
+          "model": "/models/kia/kia-optima.png",
+          "model_name": "KIA Optima",
+          "engine_options": "2.4L Petrol, 1.6L Turbo, 2.0L Hybrid"
         },
         {
-          model: "/jeep/jeep-laredo.png",
-          model_name: "Jeep Laredo",
-          engine_options: "3.6L V6 Petrol, 5.7L V8 Petrol",
+          "model": "/models/kia/kia-cadenza.png",
+          "model_name": "KIA Cadenza",
+          "engine_options": "3.3L V6"
         },
         {
-          model: "/jeep/jeep-overland.png",
-          model_name: "Jeep Overland",
-          engine_options: "3.6L V6 Petrol, 5.7L V8 Petrol",
+          "model": "/models/kia/kia-k900.png",
+          "model_name": "KIA K900",
+          "engine_options": "3.3L V6, 5.0L V8"
         },
         {
-          model: "/jeep/jeep-srt.png",
-          model_name: "Jeep SRT",
-          engine_options: "6.4L V8 Petrol",
+          "model": "/models/kia/kia-ev6.png",
+          "model_name": "KIA EV6",
+          "engine_options": "Electric"
         },
         {
-          model: "/jeep/jeep-trackhawk.png",
-          model_name: "Jeep Trackhawk",
-          engine_options: "6.2L Supercharged V8 Petrol",
+          "model": "/models/kia/kia-picanto.png",
+          "model_name": "KIA Picanto",
+          "engine_options": "1.0L Petrol, 1.2L Petrol"
         },
         {
-          model: "/jeep/jeep-rubicon.png",
-          model_name: "Jeep Rubicon",
-          engine_options: "2.0L Turbo Petrol, 3.6L V6 Petrol, 2.2L Diesel",
+          "model": "/models/kia/kia-ceed.png",
+          "model_name": "KIA Ceed",
+          "engine_options": "1.0L Petrol, 1.4L Petrol, 1.6L Diesel"
         },
         {
-          model: "/jeep/jeep-sahara.png",
-          model_name: "Jeep Sahara",
-          engine_options: "2.0L Turbo Petrol, 3.6L V6 Petrol",
+          "model": "/models/kia/kia-xceed.png",
+          "model_name": "KIA XCeed",
+          "engine_options": "1.0L Petrol, 1.4L Petrol, 1.6L Diesel"
         },
         {
-          model: "/jeep/jeep-latitude.png",
-          model_name: "Jeep Latitude",
-          engine_options: "2.4L Petrol, 2.0L Diesel",
+          "model": "/models/kia/kia-stonic.png",
+          "model_name": "KIA Stonic",
+          "engine_options": "1.0L Turbo, 1.4L Petrol"
         },
         {
-          model: "/jeep/jeep-summit.png",
-          model_name: "Jeep Summit",
-          engine_options: "3.6L V6 Petrol, 5.7L V8 Petrol",
+          "model": "/models/kia/kia-k4.png",
+          "model_name": "KIA K4",
+          "engine_options": "1.6L Petrol, 2.0L Petrol"
         },
       ],
-      engine_codes: [
+      "engine_codes": [
         {
-          engineCode: "552 83 099",
-          engineSize: 2.0,
-          fuelType: "Petrol",
-          turbo: true,
-          horsepower: 270,
-          torque: 295,
-          productionYears: "2020-2025",
+          "engineCode": "G4HC",
+          "engineSize": 1.0,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 67,
+          "torque": 95,
+          "productionYears": "2004-2011"
         },
         {
-          engineCode: "552 63 088",
-          engineSize: 3.6,
-          fuelType: "Petrol",
-          turbo: false,
-          horsepower: 285,
-          torque: 260,
-          productionYears: "2012-2025",
+          "engineCode": "G4NG",
+          "engineSize": 1.6,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 204,
+          "torque": 265,
+          "productionYears": "2015-Present"
         },
         {
-          engineCode: "552 60 384",
-          engineSize: 2.0,
-          fuelType: "Hybrid",
-          turbo: true,
-          horsepower: 375,
-          torque: 470,
-          productionYears: "2021-2025",
+          "engineCode": "G3LA",
+          "engineSize": 1.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 120,
+          "torque": 172,
+          "productionYears": "2017-Present"
         },
         {
-          engineCode: "552 63 842",
-          engineSize: 6.4,
-          fuelType: "Petrol",
-          turbo: false,
-          horsepower: 470,
-          torque: 470,
-          productionYears: "2020-2025",
+          "engineCode": "G6DB",
+          "engineSize": 3.3,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 290,
+          "torque": 341,
+          "productionYears": "2005-2010"
         },
         {
-          engineCode: "683 06 384",
-          engineSize: 3.0,
-          fuelType: "Diesel",
-          turbo: true,
-          horsepower: 260,
-          torque: 600,
-          productionYears: "2014-2025",
+          "engineCode": "D4HB",
+          "engineSize": 2.2,
+          "fuelType": "Diesel",
+          "turbo": true,
+          "horsepower": 200,
+          "torque": 440,
+          "productionYears": "2012-Present"
         },
         {
-          engineCode: "683 06 842",
-          engineSize: 2.4,
-          fuelType: "Petrol",
-          turbo: false,
-          horsepower: 180,
-          torque: 237,
-          productionYears: "2014-2025",
+          "engineCode": "G4LD",
+          "engineSize": 1.4,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 140,
+          "torque": 242,
+          "productionYears": "2016-Present"
         },
         {
-          engineCode: "683 63 099",
-          engineSize: 1.3,
-          fuelType: "Petrol",
-          turbo: true,
-          horsepower: 177,
-          torque: 285,
-          productionYears: "2018-2025",
+          "engineCode": "G4FA",
+          "engineSize": 1.4,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 109,
+          "torque": 137,
+          "productionYears": "2008-2017"
         },
         {
-          engineCode: "683 63 088",
-          engineSize: 2.2,
-          fuelType: "Diesel",
-          turbo: true,
-          horsepower: 200,
-          torque: 450,
-          productionYears: "2015-2025",
+          "engineCode": "G4FJ",
+          "engineSize": 1.6,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 201,
+          "torque": 265,
+          "productionYears": "2011-Present"
         },
         {
-          engineCode: "683 60 384",
-          engineSize: 1.6,
-          fuelType: "Diesel",
-          turbo: true,
-          horsepower: 120,
-          torque: 320,
-          productionYears: "2016-2025",
+          "engineCode": "G4NA",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 150,
+          "torque": 192,
+          "productionYears": "2010-Present"
         },
         {
-          engineCode: "683 63 842",
-          engineSize: 2.0,
-          fuelType: "Petrol",
-          turbo: true,
-          horsepower: 270,
-          torque: 295,
-          productionYears: "2018-2025",
+          "engineCode": "G4KH",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 245,
+          "torque": 353,
+          "productionYears": "2011-Present"
         },
         {
-          engineCode: "684 06 384",
-          engineSize: 3.6,
-          fuelType: "Petrol",
-          turbo: false,
-          horsepower: 285,
-          torque: 260,
-          productionYears: "2012-2025",
+          "engineCode": "G6CU",
+          "engineSize": 3.5,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 194,
+          "torque": 294,
+          "productionYears": "2002-2006"
         },
         {
-          engineCode: "684 06 842",
-          engineSize: 2.0,
-          fuelType: "Hybrid",
-          turbo: true,
-          horsepower: 375,
-          torque: 470,
-          productionYears: "2021-2025",
+          "engineCode": "G6AU",
+          "engineSize": 3.5,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 276,
+          "torque": 336,
+          "productionYears": "2006-2014"
         },
         {
-          engineCode: "684 63 099",
-          engineSize: 6.4,
-          fuelType: "Petrol",
-          turbo: false,
-          horsepower: 470,
-          torque: 470,
-          productionYears: "2020-2025",
+          "engineCode": "G6DA",
+          "engineSize": 3.8,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 290,
+          "torque": 358,
+          "productionYears": "2005-2011"
         },
         {
-          engineCode: "684 63 088",
-          engineSize: 3.0,
-          fuelType: "Diesel",
-          turbo: true,
-          horsepower: 260,
-          torque: 600,
-          productionYears: "2014-2025",
+          "engineCode": "G6DP",
+          "engineSize": 3.8,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 291,
+          "torque": 355,
+          "productionYears": "2011-2019"
         },
         {
-          engineCode: "684 60 384",
-          engineSize: 2.4,
-          fuelType: "Petrol",
-          turbo: false,
-          horsepower: 180,
-          torque: 237,
-          productionYears: "2014-2025",
+          "engineCode": "G4KJ",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 274,
+          "torque": 353,
+          "productionYears": "2015-Present"
         },
         {
-          engineCode: "684 63 842",
-          engineSize: 1.3,
-          fuelType: "Petrol",
-          turbo: true,
-          horsepower: 177,
-          torque: 285,
-          productionYears: "2018-2025",
+          "engineCode": "G4NC",
+          "engineSize": 1.6,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 123,
+          "torque": 154,
+          "productionYears": "2010-Present"
         },
         {
-          engineCode: "685 06 384",
-          engineSize: 2.2,
-          fuelType: "Diesel",
-          turbo: true,
-          horsepower: 200,
-          torque: 450,
-          productionYears: "2015-2025",
+          "engineCode": "G4FC",
+          "engineSize": 1.6,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 130,
+          "torque": 157,
+          "productionYears": "2006-2019"
         },
         {
-          engineCode: "685 06 842",
-          engineSize: 1.6,
-          fuelType: "Diesel",
-          turbo: true,
-          horsepower: 120,
-          torque: 320,
-          productionYears: "2016-2025",
+          "engineCode": "G4KD",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 165,
+          "torque": 196,
+          "productionYears": "2007-2015"
         },
         {
-          engineCode: "685 63 099",
-          engineSize: 2.0,
-          fuelType: "Petrol",
-          turbo: true,
-          horsepower: 270,
-          torque: 295,
-          productionYears: "2018-2025",
+          "engineCode": "G4KE",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": false,
+          "horsepower": 156,
+          "torque": 192,
+          "productionYears": "2010-Present"
         },
         {
-          engineCode: "685 63 088",
-          engineSize: 3.6,
-          fuelType: "Petrol",
-          turbo: false,
-          horsepower: 285,
-          torque: 260,
-          productionYears: "2012-2025",
+          "engineCode": "306PS",
+          "engineSize": 3.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 400,
+          "torque": 550,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "204DTD",
+          "engineSize": 2.0,
+          "fuelType": "Diesel",
+          "turbo": true,
+          "horsepower": 180,
+          "torque": 430,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "306DT",
+          "engineSize": 3.0,
+          "fuelType": "Diesel",
+          "turbo": true,
+          "horsepower": 275,
+          "torque": 600,
+          "productionYears": "2009-2025"
+        },
+        {
+          "engineCode": "508PS",
+          "engineSize": 5.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 575,
+          "torque": 700,
+          "productionYears": "2013-2025"
+        },
+        {
+          "engineCode": "AJ8FT",
+          "engineSize": 4.2,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 400,
+          "torque": 553,
+          "productionYears": "2002-2010"
+        },
+        {
+          "engineCode": "AJ200D",
+          "engineSize": 2.0,
+          "fuelType": "Diesel",
+          "turbo": true,
+          "horsepower": 180,
+          "torque": 430,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "AJ126",
+          "engineSize": 3.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 340,
+          "torque": 450,
+          "productionYears": "2012-2025"
+        },
+        {
+          "engineCode": "AJ133",
+          "engineSize": 5.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 510,
+          "torque": 625,
+          "productionYears": "2009-2025"
+        },
+        {
+          "engineCode": "AJ20P",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 250,
+          "torque": 365,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "AJ20D",
+          "engineSize": 2.0,
+          "fuelType": "Diesel",
+          "turbo": true,
+          "horsepower": 240,
+          "torque": 500,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "AJ200P",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 300,
+          "torque": 400,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "AJ126S",
+          "engineSize": 3.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 380,
+          "torque": 450,
+          "productionYears": "2012-2025"
+        },
+        {
+          "engineCode": "AJ133S",
+          "engineSize": 5.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 550,
+          "torque": 680,
+          "productionYears": "2009-2025"
+        },
+        {
+          "engineCode": "AJ200H",
+          "engineSize": 2.0,
+          "fuelType": "Hybrid",
+          "turbo": true,
+          "horsepower": 300,
+          "torque": 400,
+          "productionYears": "2018-2025"
+        },
+        {
+          "engineCode": "AJ20E",
+          "engineSize": 2.0,
+          "fuelType": "Electric",
+          "turbo": false,
+          "horsepower": 400,
+          "torque": 700,
+          "productionYears": "2020-2025"
+        },
+        {
+          "engineCode": "AJ-V6",
+          "engineSize": 3.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 380,
+          "torque": 450,
+          "productionYears": "2012-2025"
+        },
+        {
+          "engineCode": "204DTA",
+          "engineSize": 2.0,
+          "fuelType": "Diesel",
+          "turbo": true,
+          "horsepower": 180,
+          "torque": 430,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "224DT",
+          "engineSize": 2.2,
+          "fuelType": "Diesel",
+          "turbo": true,
+          "horsepower": 200,
+          "torque": 450,
+          "productionYears": "2012-2025"
+        },
+        {
+          "engineCode": "204PT",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 250,
+          "torque": 365,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "PT204",
+          "engineSize": 2.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 300,
+          "torque": 400,
+          "productionYears": "2015-2025"
+        },
+        {
+          "engineCode": "RG (AJ-V8)",
+          "engineSize": 5.0,
+          "fuelType": "Petrol",
+          "turbo": true,
+          "horsepower": 575,
+          "torque": 700,
+          "productionYears": "2013-2025"
+        }
+      ],
+      "models_engines": [
+        {
+          "engineCode": "G4KD",
+          "compatibleModels": ["KIA Optima", "KIA Sportage", "KIA Soul"]
+        },
+        {
+          "engineCode": "G4KE",
+          "compatibleModels": ["KIA Sorento", "KIA Sportage", "KIA Optima"]
+        },
+        {
+          "engineCode": "G4KJ",
+          "compatibleModels": ["KIA Stinger", "KIA K5", "KIA Optima"]
+        },
+        {
+          "engineCode": "G4NA",
+          "compatibleModels": ["KIA Forte", "KIA Soul", "KIA Seltos"]
+        },
+        {
+          "engineCode": "G4NC",
+          "compatibleModels": ["KIA Rio", "KIA Forte", "KIA Soul"]
+        },
+        {
+          "engineCode": "G4FC",
+          "compatibleModels": ["KIA Rio", "KIA Forte", "KIA Soul"]
+        },
+        {
+          "engineCode": "G4FA",
+          "compatibleModels": ["KIA Picanto", "KIA Rio"]
+        },
+        {
+          "engineCode": "G4LA",
+          "compatibleModels": ["KIA Picanto", "KIA Rio"]
+        },
+        {
+          "engineCode": "G4LC",
+          "compatibleModels": ["KIA Picanto", "KIA Rio"]
+        },
+        {
+          "engineCode": "G4FG",
+          "compatibleModels": ["KIA Forte", "KIA Soul"]
+        },
+        {
+          "engineCode": "G4FJ",
+          "compatibleModels": ["KIA Forte", "KIA Soul"]
+        },
+        {
+          "engineCode": "G4KH",
+          "compatibleModels": ["KIA Stinger", "KIA K5"]
+        },
+        {
+          "engineCode": "G4NJ",
+          "compatibleModels": ["KIA Forte", "KIA Soul"]
         },
       ],
-      models_engines: [
+      "replacement_costs": [
         {
-          engineCode: "552 83 099",
-          compatibleModels: ["Wrangler", "Cherokee"],
+          "image": "/models/kia/kia-ceed.png",
+          "model": "KIA Ceed, KIA XCeed",
+          "engineType": "1.4L Petrol",
+          "estimatedCost": "£1,500 - £3,000"
         },
         {
-          engineCode: "552 63 088",
-          compatibleModels: ["Grand Cherokee", "Gladiator"],
+          "image": "/models/kia/kia-rio.png",
+          "model": "KIA Rio, KIA Picanto",
+          "engineType": "1.6L Petrol",
+          "estimatedCost": "£1,800 - £3,200"
         },
         {
-          engineCode: "552 60 384",
-          compatibleModels: ["Wrangler 4xe", "Grand Cherokee 4xe"],
+          "image": "/models/kia/kia-forte.png",
+          "model": "KIA Forte, KIA Soul",
+          "engineType": "2.0L Petrol",
+          "estimatedCost": "£2,000 - £3,500"
         },
         {
-          engineCode: "552 63 842",
-          compatibleModels: ["Grand Cherokee SRT", "Trackhawk"],
+          "image": "/models/kia/kia-sorento.png",
+          "model": "KIA Sorento, KIA Sportage",
+          "engineType": "2.0L Diesel",
+          "estimatedCost": "£2,500 - £4,500"
         },
         {
-          engineCode: "683 06 384",
-          compatibleModels: ["Grand Cherokee", "Gladiator"],
+          "image": "/models/kia/kia-optima.png",
+          "model": "KIA Optima",
+          "engineType": "2.4L Petrol",
+          "estimatedCost": "£2,200 - £4,000"
         },
         {
-          engineCode: "683 06 842",
-          compatibleModels: ["Compass", "Renegade"],
+          "image": "/models/kia/kia-k5.png",
+          "model": "KIA K5, KIA Stinger",
+          "engineType": "2.5L Turbo",
+          "estimatedCost": "£3,000 - £5,000"
         },
         {
-          engineCode: "683 63 099",
-          compatibleModels: ["Renegade", "Compass"],
+          "image": "/models/kia/kia-cadenza.png",
+          "model": "KIA Cadenza, KIA K900",
+          "engineType": "3.3L V6",
+          "estimatedCost": "£3,500 - £6,000"
         },
         {
-          engineCode: "683 63 088",
-          compatibleModels: ["Cherokee", "Grand Cherokee"],
+          "image": "/models/kia/kia-telluride.png",
+          "model": "KIA Telluride",
+          "engineType": "3.8L V6",
+          "estimatedCost": "£4,000 - £7,000"
         },
-        {
-          engineCode: "683 60 384",
-          compatibleModels: ["Renegade", "Compass"],
-        },
-        {
-          engineCode: "683 63 842",
-          compatibleModels: ["Wrangler", "Cherokee"],
-        },
-        {
-          engineCode: "684 06 384",
-          compatibleModels: ["Grand Cherokee", "Gladiator"],
-        },
-        {
-          engineCode: "684 06 842",
-          compatibleModels: ["Wrangler 4xe", "Grand Cherokee 4xe"],
-        },
-        {
-          engineCode: "684 63 099",
-          compatibleModels: ["Renegade", "Compass"],
-        },
-        {
-          engineCode: "684 63 088",
-          compatibleModels: ["Cherokee", "Grand Cherokee"],
-        },
-        {
-          engineCode: "684 60 384",
-          compatibleModels: ["Renegade", "Compass"],
-        },
-        {
-          engineCode: "684 63 842",
-          compatibleModels: ["Wrangler", "Cherokee"],
-        },
-        {
-          engineCode: "685 06 384",
-          compatibleModels: ["Grand Cherokee", "Gladiator"],
-        },
-        {
-          engineCode: "685 06 842",
-          compatibleModels: ["Compass", "Renegade"],
-        },
-        {
-          engineCode: "685 63 099",
-          compatibleModels: ["Renegade", "Compass"],
-        },
-        {
-          engineCode: "685 63 088",
-          compatibleModels: ["Cherokee", "Grand Cherokee"],
-        },
-      ],
-      replacement_costs: [
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Wrangler",
-          engineType: "2.0L Turbo Petrol",
-          estimatedCost: "£4,000 - £6,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Wrangler",
-          engineType: "3.6L V6 Petrol",
-          estimatedCost: "£5,000 - £7,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Grand Cherokee",
-          engineType: "3.6L V6 Petrol",
-          estimatedCost: "£5,500 - £8,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Grand Cherokee",
-          engineType: "5.7L V8 Petrol",
-          estimatedCost: "£7,000 - £10,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Grand Cherokee",
-          engineType: "3.0L Diesel",
-          estimatedCost: "£6,000 - £9,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Compass",
-          engineType: "1.3L Turbo Petrol",
-          estimatedCost: "£3,500 - £5,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Compass",
-          engineType: "2.0L Diesel",
-          estimatedCost: "£4,500 - £6,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Renegade",
-          engineType: "1.0L Turbo Petrol",
-          estimatedCost: "£3,000 - £4,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Renegade",
-          engineType: "1.6L Diesel",
-          estimatedCost: "£3,500 - £5,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Cherokee",
-          engineType: "2.0L Turbo Petrol",
-          estimatedCost: "£4,500 - £6,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Cherokee",
-          engineType: "3.2L V6 Petrol",
-          estimatedCost: "£5,500 - £8,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Gladiator",
-          engineType: "3.6L V6 Petrol",
-          estimatedCost: "£5,000 - £7,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Gladiator",
-          engineType: "3.0L Diesel",
-          estimatedCost: "£6,000 - £9,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Patriot",
-          engineType: "2.0L Petrol",
-          estimatedCost: "£3,500 - £5,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Patriot",
-          engineType: "2.4L Petrol",
-          estimatedCost: "£4,000 - £6,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Liberty",
-          engineType: "3.7L V6 Petrol",
-          estimatedCost: "£5,000 - £7,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Liberty",
-          engineType: "2.8L Diesel",
-          estimatedCost: "£5,500 - £8,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Commander",
-          engineType: "3.7L V6 Petrol",
-          estimatedCost: "£5,500 - £8,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Commander",
-          engineType: "5.7L V8 Petrol",
-          estimatedCost: "£7,000 - £10,000",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Wagoneer",
-          engineType: "5.7L V8 Petrol",
-          estimatedCost: "£7,500 - £10,500",
-        },
-        {
-          image: "/jeep/jeep-generic.png",
-          model: "Jeep Wagoneer",
-          engineType: "6.4L V8 Petrol",
-          estimatedCost: "£8,000 - £11,000",
-        },
-      ],
+      ]
     },
     section7: [
       {
@@ -32779,77 +32851,77 @@ export const data: BrandsData = {
     engineData: {
       models: [
         {
-          model: "/smart/fortwo.png",
+          model: "/models/smart/smart-fortwo.png",
           model_name: "Smart Fortwo",
           engine_options: "1.0L Petrol, 0.9L Turbo Petrol",
         },
         {
-          model: "/smart/forfour.png",
+          model: "/models/smart/smart-forfour.png",
           model_name: "Smart Forfour",
           engine_options: "1.0L Petrol, 0.9L Turbo Petrol",
         },
         {
-          model: "/smart/eq-fortwo.png",
+          model: "/models/smart/smart-eq-fortwo.png",
           model_name: "Smart EQ Fortwo",
           engine_options: "Electric",
         },
         {
-          model: "/smart/eq-forfour.png",
+          model: "/models/smart/smart-eq-forfour.png",
           model_name: "Smart EQ Forfour",
           engine_options: "Electric",
         },
         {
-          model: "/smart/fortwo-cabrio.png",
+          model: "/models/smart/smart-fortwo-cabrio.png",
           model_name: "Smart Fortwo Cabrio",
           engine_options: "1.0L Petrol, 0.9L Turbo Petrol",
         },
         {
-          model: "/smart/eq-fortwo-cabrio.png",
+          model: "/models/smart/smart-eq-fortwo-cabrio.png",
           model_name: "Smart EQ Fortwo Cabrio",
           engine_options: "Electric",
         },
         {
-          model: "/smart/brabus-fortwo.png",
+          model: "/models/smart/smart-brabus-fortwo.png",
           model_name: "Smart Brabus Fortwo",
           engine_options: "0.9L Turbo Petrol",
         },
         {
-          model: "/smart/brabus-forfour.png",
+          model: "/models/smart/smart-brabus-forfour.png",
           model_name: "Smart Brabus Forfour",
           engine_options: "0.9L Turbo Petrol",
         },
         {
-          model: "/smart/roadster.png",
+          model: "/models/smart/smart-roadster.png",
           model_name: "Smart Roadster",
           engine_options: "0.7L Turbo Petrol",
         },
         {
-          model: "/smart/crossblade.png",
+          model: "/models/smart/smart-crossblade.png",
           model_name: "Smart Crossblade",
           engine_options: "0.6L Petrol",
         },
         {
-          model: "/smart/fortwo-electric-drive.png",
+          model: "/models/smart/smart-fortwo-electric-drive.png",
           model_name: "Smart Fortwo Electric Drive",
           engine_options: "Electric",
         },
         {
-          model: "/smart/forfour-electric-drive.png",
+          model: "/models/smart/smart-forfour-electric-drive.png",
           model_name: "Smart Forfour Electric Drive",
           engine_options: "Electric",
         },
         {
-          model: "/smart/fortwo-special.png",
+          model: "/models/smart/smart-fortwo-special-models.png",
           model_name: "Smart Fortwo Special Models",
           engine_options: "1.0L Petrol, 0.9L Turbo Petrol",
         },
         {
-          model: "/smart/edition1.png",
+          model: "/models/smart/smart-1.png",
           model_name: "Smart Edition #1",
           engine_options: "1.0L Petrol, 0.9L Turbo Petrol",
         },
         {
-          model: "/smart/formore.png",
+          model: "/models/smart/smart-formore.png",
           model_name: "Smart Formore",
           engine_options: "1.5L Petrol, 1.5L Diesel",
         },
@@ -33108,85 +33180,85 @@ export const data: BrandsData = {
       ],
       replacement_costs: [
         {
-          image: "/smart/generic.png",
+          image: "/models/smart/smart-fortwo.png",
           model: "Smart Fortwo, Forfour",
           engineType: "1.0L Petrol",
           estimatedCost: "£1,500 - £3,000",
         },
         {
-          image: "/smart/generic.png",
+          image: "/models/smart/smart-forfour.png",
           model: "Smart Fortwo, Forfour",
           engineType: "0.9L Turbo Petrol",
           estimatedCost: "£2,000 - £3,500",
         },
         {
-          image: "/smart/generic.png",
+          image: "/models/smart/smart-eq-fortwo.png",
           model: "Smart EQ Fortwo, EQ Forfour",
           engineType: "Electric",
           estimatedCost: "£3,000 - £5,000",
         },
         {
-          image: "/smart/generic.png",
+          image: "/models/smart/smart-fortwo-cabrio.png",
           model: "Smart Fortwo Cabrio",
           engineType: "1.0L Petrol",
           estimatedCost: "£1,500 - £3,000",
         },
         {
-          image: "/smart/generic.png",
+          image: "/models/smart/smart-eq-fortwo.png",
           model: "Smart EQ Fortwo Cabrio",
           engineType: "Electric",
           estimatedCost: "£3,000 - £5,000",
         },
         {
-          image: "/smart/generic.png",
+          image: "/models/smart/smart-brabus-fortwo.png",
           model: "Smart Brabus Fortwo, Brabus Forfour",
           engineType: "0.9L Turbo Petrol",
           estimatedCost: "£2,500 - £4,000",
         },
         {
-          image: "/smart/generic.png",
+          image: "/models/smart/smart-roadster.png",
           model: "Smart Roadster",
           engineType: "0.7L Turbo Petrol",
           estimatedCost: "£2,000 - £3,500",
         },
         {
-          image: "/smart/generic.png",
+          image: "/models/smart/smart-crossblade.png",
           model: "Smart Crossblade",
           engineType: "0.6L Petrol",
           estimatedCost: "£1,800 - £3,200",
         },
         {
-          image: "/smart/generic.png",
+          image: "/models/smart/smart-fortwo-electric-drive.png",
           model: "Smart Fortwo Electric Drive",
           engineType: "Electric",
           estimatedCost: "£3,000 - £5,000",
         },
         {
-          image: "/smart/generic.png",
+          image: "/models/smart/smart-fortwo-electric-drive.png",
           model: "Smart Forfour Electric Drive",
           engineType: "Electric",
           estimatedCost: "£3,000 - £5,000",
         },
         {
-          image: "/smart/generic.png",
+          image: "/models/smart/smart-fortwo-special-models.png",
           model: "Smart Fortwo Special Models",
           engineType: "1.0L Petrol",
           estimatedCost: "£1,500 - £3,000",
         },
         {
-          image: "/smart/generic.png",
+          image: "/models/smart/smart-1.png",
           model: "Smart Edition #1",
           engineType: "1.0L Petrol",
           estimatedCost: "£1,500 - £3,000",
         },
         {
-          image: "/smart/generic.png",
+          image: "/models/smart/smart-formore.png",
           model: "Smart Formore",
           engineType: "1.5L Petrol",
           estimatedCost: "£2,500 - £4,500",
         },
         {
-          image: "/smart/generic.png",
+          image: "/models/smart/smart-formore.png",
           model: "Smart Formore",
           engineType: "1.5L Diesel",
           estimatedCost: "£2,500 - £4,500",
@@ -34866,102 +34938,102 @@ export const data: BrandsData = {
     engineData: {
       models: [
         {
-          model: "/suzuki/swift.png",
+          model: "/models/suzuki/suzuki-swift.png",
           model_name: "Suzuki Swift",
           engine_options: "1.2L Petrol, 1.0L Turbo, 1.3L Diesel"
         },
         {
-          model: "/suzuki/vitara.png",
+          model: "/models/suzuki/suzuki-vitara.png",
           model_name: "Suzuki Vitara",
           engine_options: "1.4L Turbo, 1.6L Petrol, 1.9L Diesel"
         },
         {
-          model: "/suzuki/jimny.png",
+          model: "/models/suzuki/suzuki-jimny.png",
           model_name: "Suzuki Jimny",
           engine_options: "1.5L Petrol"
         },
         {
-          model: "/suzuki/baleno.png",
+          model: "/models/suzuki/suzuki-baleno.png",
           model_name: "Suzuki Baleno",
           engine_options: "1.2L Petrol, 1.0L Turbo"
         },
         {
-          model: "/suzuki/ignis.png",
+          model: "/models/suzuki/suzuki-ignis.png",
           model_name: "Suzuki Ignis",
           engine_options: "1.2L Petrol, 1.2L Hybrid"
         },
         {
-          model: "/suzuki/celerio.png",
+          model: "/models/suzuki/suzuki-celerio.png",
           model_name: "Suzuki Celerio",
           engine_options: "1.0L Petrol"
         },
         {
-          model: "/suzuki/s-cross.png",
+          model: "/models/suzuki/suzuki-s-cross.png",
           model_name: "Suzuki S-Cross",
           engine_options: "1.4L Turbo, 1.6L Diesel"
         },
         {
-          model: "/suzuki/alto.png",
+          model: "/models/suzuki/suzuki-alto.png",
           model_name: "Suzuki Alto",
           engine_options: "0.8L Petrol, 1.0L Petrol"
         },
         {
-          model: "/suzuki/ertiga.png",
+          model: "/models/suzuki/suzuki-ertiga.png",
           model_name: "Suzuki Ertiga",
           engine_options: "1.5L Petrol, 1.3L Diesel"
         },
         {
-          model: "/suzuki/wagon-r.png",
+          model: "/models/suzuki/suzuki-wagon-r.png",
           model_name: "Suzuki Wagon R",
           engine_options: "1.0L Petrol, 1.2L Petrol"
         },
         {
-          model: "/suzuki/ciaz.png",
+          model: "/models/suzuki/suzuki-ciaz.png",
           model_name: "Suzuki Ciaz",
           engine_options: "1.5L Petrol, 1.3L Diesel"
         },
         {
-          model: "/suzuki/xl7.png",
+          model: "/models/suzuki/suzuki-xl7.png",
           model_name: "Suzuki XL7",
           engine_options: "1.5L Petrol"
         },
         {
-          model: "/suzuki/grand-vitara.png",
+          model: "/models/suzuki/suzuki-grand-vitara.png",
           model_name: "Suzuki Grand Vitara",
           engine_options: "2.4L Petrol, 1.9L Diesel"
         },
         {
-          model: "/suzuki/kizashi.png",
+          model: "/models/suzuki/suzuki-kizashi.png",
           model_name: "Suzuki Kizashi",
           engine_options: "2.4L Petrol"
         },
         {
-          model: "/suzuki/sx4.png",
+          model: "/models/suzuki/suzuki-sx4.png",
           model_name: "Suzuki SX4",
           engine_options: "1.6L Petrol, 1.9L Diesel"
         },
         {
-          model: "/suzuki/fronx.png",
+          model: "/models/suzuki/suzuki-fronx.png",
           model_name: "Suzuki Fronx",
           engine_options: "1.2L Petrol, 1.0L Turbo"
         },
         {
-          model: "/suzuki/eeco.png",
+          model: "/models/suzuki/suzuki-eeco.png",
           model_name: "Suzuki Eeco",
           engine_options: "1.2L Petrol"
         },
         {
-          model: "/suzuki/dzire.png",
+          model: "/models/suzuki/suzuki-dzire.png",
           model_name: "Suzuki Dzire",
           engine_options: "1.2L Petrol, 1.3L Diesel"
         },
         {
-          model: "/suzuki/brezza.png",
+          model: "/models/suzuki/suzuki-brezza.png",
           model_name: "Suzuki Brezza",
           engine_options: "1.5L Petrol"
         },
         {
-          model: "/suzuki/spresso.png",
+          model: "/models/suzuki/suzuki-spresso.png",
           model_name: "Suzuki Spresso",
           engine_options: "1.0L Petrol"
         }
@@ -35241,91 +35313,91 @@ export const data: BrandsData = {
       ],
       replacement_costs: [
         {
-          image: "/suzuki/generic.png",
+          image: "/models/suzuki/suzuki-swift.png",
           model: "Suzuki Swift, Baleno",
           engineType: "1.2L Petrol / 1.0L Turbo",
           estimatedCost: "£1,500 - £3,000"
         },
         {
-          image: "/suzuki/generic.png",
+          image: "models/suzuki/suzuki-grand-vitara.png",
           model: "Suzuki Vitara, S-Cross",
           engineType: "1.4L Turbo / 1.6L Diesel",
           estimatedCost: "£2,000 - £4,000"
         },
         {
-          image: "/suzuki/generic.png",
+          image: "models/suzuki/suzuki-jimny.png",
           model: "Suzuki Jimny, Ignis",
           engineType: "1.5L Petrol / 1.2L Hybrid",
           estimatedCost: "£1,800 - £3,500"
         },
         {
-          image: "/suzuki/generic.png",
+          image: "models/suzuki/suzuki-celerio.png",
           model: "Suzuki Celerio, Alto",
           engineType: "1.0L Petrol",
           estimatedCost: "£1,200 - £2,500"
         },
         {
-          image: "/suzuki/generic.png",
+          image: "models/suzuki/suzuki-ertiga.png",
           model: "Suzuki Ertiga, Ciaz",
           engineType: "1.5L Petrol / 1.3L Diesel",
           estimatedCost: "£1,800 - £3,500"
         },
         {
-          image: "/suzuki/generic.png",
+          image: "/models/suzuki/suzuki-grand-vitara.png",
           model: "Suzuki Grand Vitara",
           engineType: "2.4L Petrol / 1.9L Diesel",
           estimatedCost: "£2,500 - £5,000"
         },
         {
-          image: "/suzuki/generic.png",
+          image: "/models/suzuki/suzuki-sx4.png",
           model: "Suzuki SX4, Liana",
           engineType: "1.6L Petrol / 1.8L Petrol",
           estimatedCost: "£1,700 - £3,200"
         },
         {
-          image: "/suzuki/generic.png",
+          image: "/models/suzuki/suzuki-wagon-r.png",
           model: "Suzuki Wagon R, Spresso",
           engineType: "1.0L / 1.2L Petrol",
           estimatedCost: "£1,200 - £2,500"
         },
         {
-          image: "/suzuki/generic.png",
+          image: "/models/suzuki/suzuki-kizashi.png",
           model: "Suzuki Kizashi",
           engineType: "2.4L Petrol",
           estimatedCost: "£2,500 - £5,000"
         },
         {
-          image: "/suzuki/generic.png",
+          image: "/models/suzuki/suzuki-brezza.png",
           model: "Suzuki Brezza, XL7",
           engineType: "1.5L Petrol",
           estimatedCost: "£1,800 - £3,500"
         },
         {
-          image: "/suzuki/generic.png",
+          image: "/models/suzuki/suzuki-fronx.png",
           model: "Suzuki Fronx, Dzire",
           engineType: "1.2L Petrol / 1.3L Diesel",
           estimatedCost: "£1,500 - £3,000"
         },
         {
-          image: "/suzuki/generic.png",
+          image: "/models/suzuki/suzuki-alto.png",
           model: "Suzuki Alto, Maruti 800",
           engineType: "0.8L / 1.0L Petrol",
           estimatedCost: "£1,000 - £2,000"
         },
         {
-          image: "/suzuki/generic.png",
+          image: "/models/suzuki/suzuki-vitara.png",
           model: "Suzuki Vitara, Baleno",
           engineType: "1.6L Petrol / 1.2L Turbo",
           estimatedCost: "£2,500 - £4,500"
         },
         {
-          image: "/suzuki/generic.png",
+          image: "/models/suzuki/suzuki-swift.png",
           model: "Suzuki Swift Sport",
           engineType: "1.6L Petrol",
           estimatedCost: "£1,700 - £3,200"
         },
         {
-          image: "/suzuki/generic.png",
+          image: "/models/suzuki/suzuki-carry.png",
           model: "Suzuki Carry",
           engineType: "0.66L Petrol",
           estimatedCost: "£1,000 - £2,000"
@@ -35974,102 +36046,102 @@ export const data: BrandsData = {
     engineData: {
       models: [
         {
-          model: "/toyota/camry.png",
+          model: "/models/toyota/toyota-camry.png",
           model_name: "Toyota Camry",
           engine_options: "2.5L Hybrid, 3.5L V6"
         },
         {
-          model: "/toyota/corolla.png",
+          model: "/models/toyota/toyota-corolla.png",
           model_name: "Toyota Corolla",
           engine_options: "1.8L Petrol, 2.0L Hybrid"
         },
         {
-          model: "/toyota/rav4.png",
+          model: "/models/toyota/toyota-rav4.png",
           model_name: "Toyota RAV4",
           engine_options: "2.5L Hybrid, 2.0L Petrol"
         },
         {
-          model: "/toyota/prius.png",
+          model: "/models/toyota/toyota-prius.png",
           model_name: "Toyota Prius",
           engine_options: "1.8L Hybrid"
         },
         {
-          model: "/toyota/hilux.png",
+          model: "/models/toyota/toyota-hilux.png",
           model_name: "Toyota Hilux",
           engine_options: "2.4L Diesel, 2.8L Diesel"
         },
         {
-          model: "/toyota/land-cruiser.png",
+          model: "/models/toyota/toyota-land-cruiser-prado.png",
           model_name: "Toyota Land Cruiser",
           engine_options: "4.0L V6, 4.5L V8 Diesel"
         },
         {
-          model: "/toyota/yaris.png",
+          model: "/models/toyota/toyota-yaris.png",
           model_name: "Toyota Yaris",
           engine_options: "1.5L Petrol, 1.5L Hybrid"
         },
         {
-          model: "/toyota/highlander.png",
+          model: "/models/toyota/toyota-highlander.png",
           model_name: "Toyota Highlander",
           engine_options: "3.5L V6, 2.5L Hybrid"
         },
         {
-          model: "/toyota/tacoma.png",
+          model: "/models/toyota/toyota-tacoma.png",
           model_name: "Toyota Tacoma",
           engine_options: "2.7L Petrol, 3.5L V6"
         },
         {
-          model: "/toyota/4runner.png",
+          model: "/models/toyota/toyota-4runner.png",
           model_name: "Toyota 4Runner",
           engine_options: "4.0L V6"
         },
         {
-          model: "/toyota/avalon.png",
+          model: "/models/toyota/toyota-avalon.png",
           model_name: "Toyota Avalon",
           engine_options: "3.5L V6, 2.5L Hybrid"
         },
         {
-          model: "/toyota/c-hr.png",
+          model: "/models/toyota/toyota-c-hr.png",
           model_name: "Toyota C-HR",
           engine_options: "1.8L Hybrid"
         },
         {
-          model: "/toyota/sienna.png",
+          model: "/models/toyota/toyota-sienna.png",
           model_name: "Toyota Sienna",
           engine_options: "2.5L Hybrid"
         },
         {
-          model: "/toyota/tundra.png",
+          model: "/models/toyota/toyota-tundra.png",
           model_name: "Toyota Tundra",
           engine_options: "3.5L V6, 5.7L V8"
         },
         {
-          model: "/toyota/venza.png",
+          model: "/models/toyota/toyota-venza.png",
           model_name: "Toyota Venza",
           engine_options: "2.5L Hybrid"
         },
         {
-          model: "/toyota/supra.png",
+          model: "/models/toyota/toyota-supra.png",
           model_name: "Toyota Supra",
           engine_options: "2.0L Turbo, 3.0L Turbo"
         },
         {
-          model: "/toyota/sequoia.png",
+          model: "/models/toyota/toyota-sequoia.png",
           model_name: "Toyota Sequoia",
           engine_options: "5.7L V8"
         },
         {
-          model: "/toyota/mirai.png",
+          model: "/models/toyota/toyota-mirai.png",
           model_name: "Toyota Mirai",
           engine_options: "Hydrogen Fuel Cell"
         },
         {
-          model: "/toyota/gr86.png",
+          model: "/models/toyota/toyota-gr86.png",
           model_name: "Toyota GR86",
           engine_options: "2.4L Boxer"
         },
         {
-          model: "/toyota/crown.png",
+          model: "/models/toyota/toyota-crown.png",
           model_name: "Toyota Crown",
           engine_options: "2.4L Turbo Hybrid"
         }
@@ -36340,91 +36412,91 @@ export const data: BrandsData = {
       ],
       replacement_costs: [
         {
-          image: "/toyota/generic.png",
+          image: "/models/toyota/toyota-corolla.png",
           model: "Toyota Corolla, Toyota Yaris",
           engineType: "1.4L Petrol",
           estimatedCost: "£1,500 - £3,000"
         },
         {
-          image: "/toyota/generic.png",
+          image: "/models/toyota/toyota-camry.png",
           model: "Toyota Camry, Toyota RAV4",
           engineType: "2.0L Diesel",
           estimatedCost: "£2,500 - £4,500"
         },
         {
-          image: "/toyota/generic.png",
+          image: "/models/toyota/toyota-prius.png",
           model: "Toyota Prius, Toyota Aqua",
           engineType: "1.8L Hybrid",
           estimatedCost: "£2,000 - £4,000"
         },
         {
-          image: "/toyota/generic.png",
+          image: "/models/toyota/toyota-hilux.png",
           model: "Toyota Hilux, Toyota Land Cruiser",
           engineType: "3.0L Diesel",
           estimatedCost: "£3,000 - £5,500"
         },
         {
-          image: "/toyota/generic.png",
+          image: "/models/toyota/toyota-supra.png",
           model: "Toyota Supra, Toyota Aristo",
           engineType: "3.0L Petrol",
           estimatedCost: "£4,000 - £7,000"
         },
         {
-          image: "/toyota/generic.png",
+          image: "/models/toyota/toyota-avalon.png",
           model: "Toyota Avalon, Toyota Highlander",
           engineType: "3.5L Petrol",
           estimatedCost: "£3,500 - £6,000"
         },
         {
-          image: "/toyota/generic.png",
+          image: "/models/toyota/toyota-4runner.png",
           model: "Toyota 4Runner, Toyota Tacoma",
           engineType: "4.0L Petrol",
           estimatedCost: "£3,000 - £5,500"
         },
         {
-          image: "/toyota/generic.png",
+          image: "/models/toyota/toyota-tundra.png",
           model: "Toyota Tundra, Toyota Sequoia",
           engineType: "5.7L Petrol",
           estimatedCost: "£5,000 - £8,000"
         },
         {
-          image: "/toyota/generic.png",
+          image: "/models/toyota/toyota-aygo.png",
           model: "Toyota Aygo, Toyota Wigo",
           engineType: "1.0L Petrol",
           estimatedCost: "£1,200 - £2,500"
         },
         {
-          image: "/toyota/generic.png",
+          image: "/models/toyota/toyota-yaris.png",
           model: "Toyota Vios, Toyota Yaris",
           engineType: "1.5L Petrol",
           estimatedCost: "£1,800 - £3,200"
         },
         {
-          image: "/toyota/generic.png",
+          image: "/models/toyota/toyota-celica.png",
           model: "Toyota Celica, Lotus Elise",
           engineType: "1.8L Petrol",
           estimatedCost: "£2,500 - £4,500"
         },
         {
-          image: "/toyota/generic.png",
+          image: "/models/toyota/toyota-land-cruiser-prado.png",
           model: "Toyota Land Cruiser, Toyota Sequoia",
           engineType: "4.5L Diesel",
           estimatedCost: "£4,500 - £7,500"
         },
         {
-          image: "/toyota/generic.png",
+          image: "/models/toyota/toyota-tundra.png",
           model: "Lexus LS 460, Toyota Tundra",
           engineType: "4.6L Petrol",
           estimatedCost: "£4,000 - £6,500"
         },
         {
-          image: "/toyota/generic.png",
-          model: "Toyota Avensis, Toyota RAV4",
+          image: "/models/toyota/toyota-rav4.png",
+          model: "Toyota , Toyota RAV4",
           engineType: "2.0L Petrol",
           estimatedCost: "£2,000 - £4,000"
         },
         {
-          image: "/toyota/generic.png",
+          image: "/models/toyota/toyota-aygo.png",
           model: "Toyota Aygo, Toyota Wigo",
           engineType: "1.0L Petrol",
           estimatedCost: "£1,200 - £2,500"
@@ -37065,77 +37137,77 @@ export const data: BrandsData = {
     engineData: {
       models: [
         {
-          model: "/vauxhall/corsa.png",
+          model: "/models/vauxhall/vauxhall-corsa.png",
           model_name: "Vauxhall Corsa",
           engine_options: "1.2L Petrol, 1.5L Diesel, 1.4L Turbo"
         },
         {
-          model: "/vauxhall/astra.png",
+          model: "/models/vauxhall/vauxhall-astra.png",
           model_name: "Vauxhall Astra",
           engine_options: "1.4L Petrol, 1.6L Diesel, 1.6L Turbo"
         },
         {
-          model: "/vauxhall/insignia.png",
+          model: "/models/vauxhall/vauxhall-insignia.png",
           model_name: "Vauxhall Insignia",
           engine_options: "1.5L Petrol, 2.0L Diesel, 2.0L Turbo"
         },
         {
-          model: "/vauxhall/mokka.png",
+          model: "/models/vauxhall/vauxhall-mokka.png",
           model_name: "Vauxhall Mokka",
           engine_options: "1.2L Petrol, 1.5L Diesel, 1.6L Turbo"
         },
         {
-          model: "/vauxhall/grandland.png",
+          model: "/models/vauxhall/vauxhall-grandland.png",
           model_name: "Vauxhall Grandland",
           engine_options: "1.2L Petrol, 1.5L Diesel, 1.6L Hybrid"
         },
         {
-          model: "/vauxhall/crossland.png",
+          model: "/models/vauxhall/vauxhall-crossland.png",
           model_name: "Vauxhall Crossland",
           engine_options: "1.2L Petrol, 1.5L Diesel"
         },
         {
-          model: "/vauxhall/vivaro.png",
+          model: "/models/vauxhall/vauxhall-vivaro.png",
           model_name: "Vauxhall Vivaro",
           engine_options: "1.5L Diesel, 2.0L Diesel"
         },
         {
-          model: "/vauxhall/combo.png",
+          model: "/models/vauxhall/vauxhall-combo.png",
           model_name: "Vauxhall Combo",
           engine_options: "1.2L Petrol, 1.5L Diesel"
         },
         {
-          model: "/vauxhall/zafira.png",
+          model: "/models/vauxhall/vauxhall-zafira.png",
           model_name: "Vauxhall Zafira",
           engine_options: "1.4L Petrol, 2.0L Diesel"
         },
         {
-          model: "/vauxhall/adam.png",
+          model: "/models/vauxhall/vauxhall-adam.png",
           model_name: "Vauxhall Adam",
           engine_options: "1.2L Petrol, 1.4L Petrol"
         },
         {
-          model: "/vauxhall/meriva.png",
+          model: "/models/vauxhall/vauxhall-meriva.png",
           model_name: "Vauxhall Meriva",
           engine_options: "1.4L Petrol, 1.6L Diesel"
         },
         {
-          model: "/vauxhall/cascada.png",
+          model: "/models/vauxhall/vauxhall-cascada.png",
           model_name: "Vauxhall Cascada",
           engine_options: "1.6L Petrol, 2.0L Diesel"
         },
         {
-          model: "/vauxhall/ampera.png",
+          model: "/models/vauxhall/vauxhall-ampera.png",
           model_name: "Vauxhall Ampera",
           engine_options: "1.4L Petrol, Electric"
         },
         {
-          model: "/vauxhall/frontera.png",
+          model: "/models/vauxhall/vauxhall-frontera.png",
           model_name: "Vauxhall Frontera",
           engine_options: "2.2L Diesel, 2.4L Petrol"
         },
         {
-          model: "/vauxhall/antara.png",
+          model: "/models/vauxhall/vauxhall-antara.png",
           model_name: "Vauxhall Antara",
           engine_options: "2.2L Diesel, 2.4L Petrol"
         }
@@ -37406,73 +37478,73 @@ export const data: BrandsData = {
       ],
       replacement_costs: [
         {
-          image: "/vauxhall/generic.png",
+          image: "/models/vauxhall/vauxhall-corsa.png",
           model: "Vauxhall Corsa, Vauxhall Adam",
           engineType: "1.2L Petrol",
           estimatedCost: "£1,300 - £2,700"
         },
         {
-          image: "/vauxhall/generic.png",
+          image: "/models/vauxhall/vauxhall-astra.png",
           model: "Vauxhall Astra, Vauxhall Meriva",
           engineType: "1.4L Petrol",
           estimatedCost: "£1,800 - £3,200"
         },
         {
-          image: "/vauxhall/generic.png",
+          image: "/models/vauxhall/vauxhall-insignia.png",
           model: "Vauxhall Insignia, Vauxhall Mokka",
           engineType: "2.0L Diesel",
           estimatedCost: "£2,500 - £4,500"
         },
         {
-          image: "/vauxhall/generic.png",
+          image: "/models/vauxhall/vauxhall-grandland.png",
           model: "Vauxhall Grandland, Vauxhall Crossland",
           engineType: "1.5L Diesel",
           estimatedCost: "£1,700 - £3,100"
         },
         {
-          image: "/vauxhall/generic.png",
+          image: "/models/vauxhall/vauxhall-vivaro.png",
           model: "Vauxhall Vivaro, Vauxhall Combo",
           engineType: "2.0L Diesel",
           estimatedCost: "£2,200 - £4,000"
         },
         {
-          image: "/vauxhall/generic.png",
+          image: "/models/vauxhall/vauxhall-zafira.png",
           model: "Vauxhall Zafira, Vauxhall Cascada",
           engineType: "2.0L Diesel",
           estimatedCost: "£1,600 - £3,000"
         },
         {
-          image: "/vauxhall/generic.png",
+          image: "/models/vauxhall/vauxhall-ampera.png",
           model: "Vauxhall Ampera",
           engineType: "Electric",
           estimatedCost: "£3,000 - £5,000"
         },
         {
-          image: "/vauxhall/generic.png",
+          image: "/models/vauxhall/vauxhall-frontera.png",
           model: "Vauxhall Frontera, Vauxhall Antara",
           engineType: "2.4L Petrol",
           estimatedCost: "£2,800 - £5,000"
         },
         {
-          image: "/vauxhall/generic.png",
+          image: "/models/vauxhall/vauxhall-astra.png",
           model: "Vauxhall Astra, Vauxhall Insignia",
           engineType: "1.6L Turbo",
           estimatedCost: "£2,600 - £4,800"
         },
         {
-          image: "/vauxhall/generic.png",
+          image: "/models/vauxhall/vauxhall-corsa.png",
           model: "Vauxhall Corsa, Vauxhall Mokka",
           engineType: "1.2L Petrol",
           estimatedCost: "£1,400 - £2,800"
         },
         {
-          image: "/vauxhall/generic.png",
+          image: "/models/vauxhall/vauxhall-astra.png",
           model: "Vauxhall Astra, Vauxhall Zafira",
           engineType: "1.4L Petrol",
           estimatedCost: "£1,900 - £3,300"
         },
         {
-          image: "/vauxhall/generic.png",
+          image: "/models/vauxhall/vauxhall-insignia.png",
           model: "Vauxhall Insignia, Vauxhall Grandland",
           engineType: "2.0L Turbo",
           estimatedCost: "£2,300 - £4,200"
@@ -38078,97 +38150,97 @@ export const data: BrandsData = {
     engineData: {
       models: [
         {
-          model: "/volkswagen/golf.png",
+          model: "/models/volkswagen/volkswagen-golf.png",
           model_name: "Volkswagen Golf",
           engine_options: "1.0L Petrol, 1.5L Petrol, 2.0L Diesel, 2.0L Turbo"
         },
         {
-          model: "/volkswagen/polo.png",
+          model: "/models/volkswagen/volkswagen-polo.png",
           model_name: "Volkswagen Polo",
           engine_options: "1.0L Petrol, 1.2L Petrol, 1.6L Diesel"
         },
         {
-          model: "/volkswagen/passat.png",
+          model: "/models/volkswagen/volkswagen-passat.png",
           model_name: "Volkswagen Passat",
           engine_options: "1.5L Petrol, 2.0L Diesel, 2.0L Turbo"
         },
         {
-          model: "/volkswagen/tiguan.png",
+          model: "/models/volkswagen/volkswagen-tiguan.png",
           model_name: "Volkswagen Tiguan",
           engine_options: "1.5L Petrol, 2.0L Diesel, 2.0L Turbo"
         },
         {
-          model: "/volkswagen/t-roc.png",
+          model: "/models/volkswagen/volkswagen-t-roc.png",
           model_name: "Volkswagen T-Roc",
           engine_options: "1.0L Petrol, 1.5L Petrol, 2.0L Diesel"
         },
         {
-          model: "/volkswagen/touareg.png",
+          model: "/models/volkswagen/volkswagen-touareg.png",
           model_name: "Volkswagen Touareg",
           engine_options: "3.0L Diesel, 3.0L Hybrid, 4.0L V8"
         },
         {
-          model: "/volkswagen/arteon.png",
+          model: "/models/volkswagen/volkswagen-arteon.png",
           model_name: "Volkswagen Arteon",
           engine_options: "1.5L Petrol, 2.0L Diesel, 2.0L Turbo"
         },
         {
-          model: "/volkswagen/up.png",
+          model: "/models/volkswagen/volkswagen-up.png",
           model_name: "Volkswagen Up!",
           engine_options: "1.0L Petrol, 1.0L Turbo"
         },
         {
-          model: "/volkswagen/caddy.png",
+          model: "/models/volkswagen/volkswagen-caddy.png",
           model_name: "Volkswagen Caddy",
           engine_options: "1.5L Petrol, 2.0L Diesel"
         },
         {
-          model: "/volkswagen/transporter.png",
+          model: "/models/volkswagen/volkswagen-transporter.png",
           model_name: "Volkswagen Transporter",
           engine_options: "2.0L Diesel, 2.0L BiTDI"
         },
         {
-          model: "/volkswagen/sharan.png",
+          model: "/models/volkswagen/volkswagen-sharan.png",
           model_name: "Volkswagen Sharan",
           engine_options: "1.4L Petrol, 2.0L Diesel"
         },
         {
-          model: "/volkswagen/touran.png",
+          model: "/models/volkswagen/volkswagen-touran.png",
           model_name: "Volkswagen Touran",
           engine_options: "1.5L Petrol, 2.0L Diesel"
         },
         {
-          model: "/volkswagen/scirocco.png",
+          model: "/models/volkswagen/volkswagen-scirocco.png",
           model_name: "Volkswagen Scirocco",
           engine_options: "1.4L Petrol, 2.0L Turbo Petrol"
         },
         {
-          model: "/volkswagen/beetle.png",
+          model: "/models/volkswagen/volkswagen-beetle.png",
           model_name: "Volkswagen Beetle",
           engine_options: "1.2L Petrol, 1.4L Petrol, 2.0L Turbo Diesel"
         },
         {
-          model: "/volkswagen/passat-cc.png",
+          model: "/models/volkswagen/volkswagen-passat-cc.png",
           model_name: "Volkswagen Passat CC",
           engine_options: "1.8L Petrol, 2.0L Diesel, 3.6L V6"
         },
         {
-          model: "/volkswagen/id3.png",
+          model: "/models/volkswagen/volkswagen-id.3.png",
           model_name: "Volkswagen ID.3",
           engine_options: "Electric"
         },
         {
-          model: "/volkswagen/id4.png",
+          model: "/models/volkswagen/volkswagen-id.4.png",
           model_name: "Volkswagen ID.4",
           engine_options: "Electric"
         },
         {
-          model: "/volkswagen/id-buzz.png",
+          model: "/models/volkswagen/volkswagen-id-buzz.png",
           model_name: "Volkswagen ID. Buzz",
           engine_options: "Electric"
         },
         {
-          model: "/volkswagen/amarok.png",
+          model: "/models/volkswagen/volkswagen-amarok.png",
           model_name: "Volkswagen Amarok",
           engine_options: "2.0L Diesel, 3.0L V6 Diesel"
         }
@@ -38439,91 +38511,91 @@ export const data: BrandsData = {
       ],
       replacement_costs: [
         {
-          image: "/volkswagen/generic.png",
+          image: "/models/volkswagen/volkswagen-golf.png",
           model: "Volkswagen Golf, Volkswagen Polo",
           engineType: "1.0L–1.6L",
           estimatedCost: "£1,500 - £3,000"
         },
         {
-          image: "/volkswagen/generic.png",
+          image: "/models/volkswagen/volkswagen-passat.png",
           model: "Volkswagen Passat, Volkswagen Tiguan",
           engineType: "2.0L Diesel/Turbo",
           estimatedCost: "£2,500 - £4,500"
         },
         {
-          image: "/volkswagen/generic.png",
+          image: "/models/volkswagen/volkswagen-beetle.png",
           model: "Volkswagen Jetta, Volkswagen Beetle",
           engineType: "1.4L–2.0L",
           estimatedCost: "£2,000 - £3,500"
         },
         {
-          image: "/volkswagen/generic.png",
+          image: "/models/volkswagen/volkswagen-touareg.png",
           model: "Volkswagen Touareg, Volkswagen Atlas",
           engineType: "3.0L–4.0L V8",
           estimatedCost: "£4,000 - £7,000"
         },
         {
-          image: "/volkswagen/generic.png",
+          image: "/models/volkswagen/volkswagen-arteon.png",
           model: "Volkswagen Arteon, Volkswagen CC",
           engineType: "2.0L Turbo",
           estimatedCost: "£3,000 - £5,000"
         },
         {
-          image: "/volkswagen/generic.png",
+          image: "/models/volkswagen/volkswagen-scirocco.png",
           model: "Volkswagen Scirocco, Volkswagen Eos",
           engineType: "2.0L Turbo Petrol",
           estimatedCost: "£2,500 - £4,500"
         },
         {
-          image: "/volkswagen/generic.png",
+          image: "/models/volkswagen/volkswagen-t-Roc.png",
           model: "Volkswagen T-Roc, Volkswagen T-Cross",
           engineType: "1.0L–2.0L",
           estimatedCost: "£2,000 - £3,500"
         },
         {
-          image: "/volkswagen/generic.png",
+          image: "/models/volkswagen/volkswagen-sharan.png",
           model: "Volkswagen Sharan, Volkswagen Touran",
           engineType: "1.5L–2.0L",
           estimatedCost: "£3,500 - £6,000"
         },
         {
-          image: "/volkswagen/generic.png",
+          image: "/models/volkswagen/volkswagen-amarok.png",
           model: "Volkswagen Amarok, Volkswagen Caddy",
           engineType: "2.0L–3.0L Diesel",
           estimatedCost: "£3,000 - £5,000"
         },
         {
-          image: "/volkswagen/generic.png",
+          image: "/models/volkswagen/volkswagen-transporter.png",
           model: "Volkswagen Transporter, Volkswagen Caravelle",
           engineType: "2.0L BiTDI",
           estimatedCost: "£3,500 - £6,500"
         },
         {
-          image: "/volkswagen/generic.png",
+          image: "/models/volkswagen/volkswagen-id.3.png",
           model: "Volkswagen ID.3, Volkswagen ID.4",
           engineType: "Electric",
           estimatedCost: "£4,500 - £7,500"
         },
         {
-          image: "/volkswagen/generic.png",
+          image: "/models/volkswagen/volkswagen-passat.png",
           model: "Volkswagen Phaeton, Volkswagen Passat CC",
           engineType: "3.6L V6, 4.2L V8",
           estimatedCost: "£5,000 - £8,000"
         },
         {
-          image: "/volkswagen/generic.png",
+          image: "/models/volkswagen/volkswagen-up.png",
           model: "Volkswagen Up!, Volkswagen Fox",
           engineType: "1.0L Petrol",
           estimatedCost: "£1,200 - £2,500"
         },
         {
-          image: "/volkswagen/generic.png",
+          image: "/models/volkswagen/volkswagen-arteon.png",
           model: "Volkswagen Golf R, Volkswagen Arteon R",
           engineType: "2.0L Turbo High-Performance",
           estimatedCost: "£4,000 - £7,000"
         },
         {
-          image: "/volkswagen/generic.png",
+          image: "/models/volkswagen/volkswagen-multivan.png",
           model: "Volkswagen Multivan, Volkswagen California",
           engineType: "2.0L BiTDI",
           estimatedCost: "£3,500 - £6,500"
@@ -39137,132 +39209,132 @@ export const data: BrandsData = {
     engineData: {
       models: [
         {
-          model: "/volvo/240.png",
+          model: "/models/volvo/volvo-240.png",
           model_name: "Volvo 240",
           engine_options: "2.1L Petrol, 2.3L Diesel"
         },
         {
-          model: "/volvo/740.png",
+          model: "/models/volvo/volvo-740.png",
           model_name: "Volvo 740",
           engine_options: "2.3L Petrol, 2.4L Diesel"
         },
         {
-          model: "/volvo/760.png",
+          model: "/models/volvo/volvo-760.png",
           model_name: "Volvo 760",
           engine_options: "2.8L Petrol, 2.4L Diesel"
         },
         {
-          model: "/volvo/780.png",
+          model: "/models/volvo/volvo-780.png",
           model_name: "Volvo 780",
           engine_options: "2.8L Petrol, 2.4L Diesel"
         },
         {
-          model: "/volvo/850.png",
+          model: "/models/volvo/volvo-850.png",
           model_name: "Volvo 850",
           engine_options: "2.0L Petrol, 2.5L Diesel"
         },
         {
-          model: "/volvo/940.png",
+          model: "/models/volvo/volvo-940.png",
           model_name: "Volvo 940",
           engine_options: "2.3L Petrol, 2.4L Diesel"
         },
         {
-          model: "/volvo/960.png",
+          model: "/models/volvo/volvo-960.png",
           model_name: "Volvo 960",
           engine_options: "2.5L Petrol, 3.0L Petrol"
         },
         {
-          model: "/volvo/c30.png",
+          model: "/models/volvo/volvo-c30.png",
           model_name: "Volvo C30",
           engine_options: "1.6L Petrol, 2.0L Diesel"
         },
         {
-          model: "/volvo/c40.png",
+          model: "/models/volvo/volvo-c40.png",
           model_name: "Volvo C40",
           engine_options: "1.5L Petrol, 2.0L Diesel, 2.0L Hybrid"
         },
         {
-          model: "/volvo/es90.png",
+          model: "/models/volvo/volvo-es90.png",
           model_name: "Volvo ES90",
           engine_options: "Electric, Twin Motor"
         },
         {
-          model: "/volvo/ex30.png",
+          model: "/models/volvo/volvo-ex30.png",
           model_name: "Volvo EX30",
           engine_options: "Electric, Twin Motor Performance"
         },
         {
-          model: "/volvo/ex40.png",
+          model: "/models/volvo/volvo-ex40.png",
           model_name: "Volvo EX40",
           engine_options: "Electric, Twin Motor"
         },
         {
-          model: "/volvo/ex90.png",
+          model: "/models/volvo/volvo-ex90.png",
           model_name: "Volvo EX90",
           engine_options: "Electric, Twin Motor, Twin Motor Performance"
         },
         {
-          model: "/volvo/s40.png",
+          model: "/models/volvo/volvo-s40.png",
           model_name: "Volvo S40",
           engine_options: "1.6L Petrol, 2.0L Diesel"
         },
         {
-          model: "/volvo/s60.png",
+          model: "/models/volvo/volvo-s60.png",
           model_name: "Volvo S60",
           engine_options: "2.0L Petrol, 2.0L Diesel, 2.0L Hybrid"
         },
         {
-          model: "/volvo/s90.png",
+          model: "/models/volvo/volvo-s90.png",
           model_name: "Volvo S90",
           engine_options: "2.0L Petrol, 2.0L Diesel, 2.0L Hybrid"
         },
         {
-          model: "/volvo/v40.png",
+          model: "/models/volvo/volvo-v40.png",
           model_name: "Volvo V40",
           engine_options: "1.6L Petrol, 2.0L Diesel"
         },
         {
-          model: "/volvo/v50.png",
+          model: "/models/volvo/volvo-v50.png",
           model_name: "Volvo V50",
           engine_options: "1.6L Petrol, 2.0L Diesel"
         },
         {
-          model: "/volvo/v60.png",
+          model: "/models/volvo/volvo-v60.png",
           model_name: "Volvo V60",
           engine_options: "2.0L Petrol, 2.0L Diesel, 2.0L Hybrid"
         },
         {
-          model: "/volvo/v60-crosscountry.png",
+          model: "/models/volvo/volvo-v60-cross-country.png",
           model_name: "Volvo V60 Cross Country",
           engine_options: "2.0L Petrol, 2.0L Diesel"
         },
         {
-          model: "/volvo/v70.png",
+          model: "/models/volvo/volvo-v70.png",
           model_name: "Volvo V70",
           engine_options: "2.0L Petrol, 2.4L Diesel"
         },
         {
-          model: "/volvo/v90.png",
+          model: "/models/volvo/volvo-v90.png",
           model_name: "Volvo V90",
           engine_options: "2.0L Petrol, 2.0L Diesel, 2.0L Hybrid"
         },
         {
-          model: "/volvo/xc40.png",
+          model: "/models/volvo/volvo-xc40.png",
           model_name: "Volvo XC40",
           engine_options: "1.5L Petrol, 2.0L Diesel, 2.0L Hybrid"
         },
         {
-          model: "/volvo/xc60.png",
+          model: "/models/volvo/volvo-xc60.png",
           model_name: "Volvo XC60",
           engine_options: "2.0L Petrol, 2.0L Diesel, 2.0L Hybrid"
         },
         {
-          model: "/volvo/xc70.png",
+          model: "/models/volvo/volvo-xc70.png",
           model_name: "Volvo XC70",
           engine_options: "2.0L Petrol, 2.4L Diesel"
         },
         {
-          model: "/volvo/xc90.png",
+          model: "/models/volvo/volvo-xc90.png",
           model_name: "Volvo XC90",
           engine_options: "2.0L Petrol, 2.0L Diesel, 2.0L Hybrid"
         }
@@ -39533,79 +39605,79 @@ export const data: BrandsData = {
       ],
       replacement_costs: [
         {
-          image: "/volvo/generic.png",
+          image: "/models/volvo/volvo-xc60.png",
           model: "Volvo XC60, S60, V60",
           engineType: "2.0L Petrol",
           estimatedCost: "£3,000 - £5,000"
         },
         {
-          image: "/volvo/generic.png",
+          image: "/models/volvo/volvo-xc90.png",
           model: "Volvo XC90, S90, V90",
           engineType: "2.0L Diesel",
           estimatedCost: "£4,000 - £6,500"
         },
         {
-          image: "/volvo/generic.png",
+          image: "/models/volvo/volvo-xc40.png",
           model: "Volvo XC40, S40, V40",
           engineType: "1.5L Petrol",
           estimatedCost: "£2,500 - £4,000"
         },
         {
-          image: "/volvo/generic.png",
+          image: "/models/volvo/volvo-xc70.png",
           model: "Volvo XC70, V70",
           engineType: "2.4L Diesel",
           estimatedCost: "£3,500 - £5,500"
         },
         {
-          image: "/volvo/generic.png",
+          image: "/models/volvo/volvo-780.png",
           model: "Volvo S80, V70",
           engineType: "2.5L Petrol",
           estimatedCost: "£3,000 - £5,000"
         },
         {
-          image: "/volvo/generic.png",
+          image: "/models/volvo/volvo-c30.png",
           model: "Volvo C30, V50",
           engineType: "1.6L Petrol",
           estimatedCost: "£2,000 - £3,500"
         },
         {
-          image: "/volvo/generic.png",
+          image: "/models/volvo/volvo-850.png",
           model: "Volvo 850, 940",
           engineType: "2.3L Petrol",
           estimatedCost: "£2,500 - £4,000"
         },
         {
-          image: "/volvo/generic.png",
+          image: "/models/volvo/volvo-960.png",
           model: "Volvo 960, 760",
           engineType: "2.8L Petrol",
           estimatedCost: "£3,500 - £5,500"
         },
         {
-          image: "/volvo/generic.png",
+          image: "/models/volvo/volvo-240.png",
           model: "Volvo 240, 740",
           engineType: "2.1L Petrol",
           estimatedCost: "£2,000 - £3,500"
         },
         {
-          image: "/volvo/generic.png",
+          image: "/models/volvo/volvo-xc60.png",
           model: "Volvo XC60, S60, V60",
           engineType: "2.0L Hybrid",
           estimatedCost: "£4,500 - £7,000"
         },
         {
-          image: "/volvo/generic.png",
+          image: "/models/volvo/volvo-xc90.png",
           model: "Volvo XC90, S90, V90",
           engineType: "2.0L Hybrid",
           estimatedCost: "£5,000 - £8,000"
         },
         {
-          image: "/volvo/generic.png",
+          image: "/models/volvo/volvo-xc40.png",
           model: "Volvo XC40, S40, V40",
           engineType: "2.0L Diesel",
           estimatedCost: "£3,000 - £5,000"
         },
         {
-          image: "/volvo/generic.png",
+          image: "/models/volvo/volvo-c30.png",
           model: "Volvo C30, V50",
           engineType: "1.6L Diesel",
           estimatedCost: "£2,500 - £4,000"

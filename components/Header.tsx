@@ -38,7 +38,6 @@ const MobileNavLink = ({
 const NAV_ITEMS = [
   { href: "/engines", label: "Engines" },
   { href: "/blog", label: "Blog" },
-  { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
 

@@ -56,17 +56,17 @@ export const data: BrandsData = {
     },
     brandName: "BMW",
     carImages: [
-      "/banners/bmw/bmw-1.webp",
-      "/banners/bmw/bmw-2.webp",
-      "/banners/bmw/bmw-3.webp",
-      "/banners/bmw/bmw-4.webp",
-      "/banners/bmw/bmw-5.webp",
+      "/banners/banner-1.webp",
+      "/banners/banner-2.webp",
+      "/banners/banner-3.webp",
+      "/banners/banner-4.webp",
+      "/banners/banner-5.webp",
     ],
     carModelNames: [
-      "BMW X3 20",
-      "BMW M8",
-      "BMW Royalty",
-      "BMW 7 Serires",
+      "BMW X5",
+      "Audi A6",
+      "Mercedes C-Class",
+      "Range Rover Evoque",
       "Volkswagen Golf",
     ],
     section0Image: {
@@ -1220,18 +1220,18 @@ export const data: BrandsData = {
     },
     brandName: "Audi",
     carImages: [
-      "/banners/audi/aud-r8.webp",
-      "/banners/audi/audi-a8.webp",
-      "/banners/audi/audi-rs7-sport-back.webp",
-      "/banners/audi/audi-e-tron-gt.webp",
-      "/banners/audi/audi-tt-rs.webp",
+      "/banners/banner-1.webp",
+      "/banners/banner-2.webp",
+      "/banners/banner-3.webp",
+      "/banners/banner-4.webp",
+      "/banners/banner-5.webp",
     ],
     carModelNames: [
-      "Audi R8",
-      "Audi A8",
-      "Audi RS7 Sport Back",
-      "Audi E Tron GT",
-      "Audi TT RS",
+      "BMW X5",
+      "Audi A6",
+      "Mercedes C-Class",
+      "Range Rover Evoque",
+      "Volkswagen Golf",
     ],
     section0Image: {
       img: "/whychoose-logos/audi.png",
@@ -2261,102 +2261,102 @@ export const data: BrandsData = {
     engineData: {
       models: [
         {
-          model: "/alfa-romeo/giulia.png",
+          model: "/models/alfa-romeo/alfa-romeo-giulia.png",
           model_name: "Alfa Romeo Giulia",
           engine_options: "2.0L Turbo Petrol, 2.2L Diesel, 2.9L V6"
         },
         {
-          model: "/alfa-romeo/stelvio.png",
+          model: "/models/alfa-romeo/alfa-romeo-stelvio.png",
           model_name: "Alfa Romeo Stelvio",
           engine_options: "2.0L Turbo Petrol, 2.2L Diesel, 2.9L V6"
         },
         {
-          model: "/alfa-romeo/4c.png",
+          model: "/models/alfa-romeo/alfa-romeo-4c.png",
           model_name: "Alfa Romeo 4C",
           engine_options: "1.7L Turbo Petrol"
         },
         {
-          model: "/alfa-romeo/giulietta.png",
+          model: "/models/alfa-romeo/alfa-romeo-giulietta.png",
           model_name: "Alfa Romeo Giulietta",
           engine_options: "1.4L Turbo Petrol, 1.6L Diesel, 2.0L Diesel"
         },
         {
-          model: "/alfa-romeo/mito.png",
+          model: "/models/alfa-romeo/alfa-romeo-mito.png",
           model_name: "Alfa Romeo MiTo",
           engine_options: "0.9L TwinAir, 1.3L Diesel, 1.4L Turbo Petrol"
         },
         {
-          model: "/alfa-romeo/159.png",
+          model: "/models/alfa-romeo/alfa-romeo-159.png",
           model_name: "Alfa Romeo 159",
           engine_options: "1.8L Petrol, 2.2L JTS, 3.2L V6, 1.9L Diesel"
         },
         {
-          model: "/alfa-romeo/brera.png",
+          model: "/models/alfa-romeo/alfa-romeo-brera.png",
           model_name: "Alfa Romeo Brera",
           engine_options: "2.2L JTS, 3.2L V6, 2.4L Diesel"
         },
         {
-          model: "/alfa-romeo/spider.png",
+          model: "/models/alfa-romeo/alfa-romeo-spider.png",
           model_name: "Alfa Romeo Spider",
           engine_options: "2.2L JTS, 3.2L V6, 2.4L Diesel"
         },
         {
-          model: "/alfa-romeo/147.png",
+          model: "/models/alfa-romeo/alfa-romeo-147.png",
           model_name: "Alfa Romeo 147",
           engine_options: "1.6L Petrol, 2.0L Petrol, 1.9L Diesel"
         },
         {
-          model: "/alfa-romeo/156.png",
+          model: "/models/alfa-romeo/alfa-romeo-156.png",
           model_name: "Alfa Romeo 156",
           engine_options: "1.6L Petrol, 2.0L Petrol, 2.5L V6, 1.9L Diesel"
         },
         {
-          model: "/alfa-romeo/166.png",
+          model: "/models/alfa-romeo/alfa-romeo-166.png",
           model_name: "Alfa Romeo 166",
           engine_options: "2.0L Twin Spark, 3.0L V6, 2.4L Diesel"
         },
         {
-          model: "/alfa-romeo/gtv.png",
+          model: "/models/alfa-romeo/alfa-romeo-gtv.png",
           model_name: "Alfa Romeo GTV",
           engine_options: "2.0L Twin Spark, 3.0L V6"
         },
         {
-          model: "/alfa-romeo/gt.png",
+          model: "/models/alfa-romeo/alfa-romeo-gt.png",
           model_name: "Alfa Romeo GT",
           engine_options: "1.8L Petrol, 2.0L JTS, 3.2L V6, 1.9L Diesel"
         },
         {
-          model: "/alfa-romeo/33.png",
+          model: "/models/alfa-romeo/alfa-romeo-33.png",
           model_name: "Alfa Romeo 33",
           engine_options: "1.3L Petrol, 1.7L Petrol, 1.8L Diesel"
         },
         {
-          model: "/alfa-romeo/75.png",
+          model: "/models/alfa-romeo/alfa-romeo-75.png",
           model_name: "Alfa Romeo 75",
           engine_options: "1.6L Petrol, 2.0L Twin Spark, 3.0L V6"
         },
         {
-          model: "/alfa-romeo/90.png",
+          model: "/models/alfa-romeo/alfa-romeo-90.png",
           model_name: "Alfa Romeo 90",
           engine_options: "1.8L Petrol, 2.0L Twin Spark, 2.5L V6"
         },
         {
-          model: "/alfa-romeo/164.png",
+          model: "/models/alfa-romeo/alfa-romeo-164.png",
           model_name: "Alfa Romeo 164",
           engine_options: "2.0L Twin Spark, 3.0L V6, 2.5L Diesel"
         },
         {
-          model: "/alfa-romeo/8c.png",
+          model: "/models/alfa-romeo/alfa -romeo-8c.png",
           model_name: "Alfa Romeo 8C",
           engine_options: "4.7L V8"
         },
         {
-          model: "/alfa-romeo/tonale.png",
+          model: "/models/alfa-romeo/alfa-romeo-tonale.png",
           model_name: "Alfa Romeo Tonale",
           engine_options: "1.3L Turbo Hybrid, 2.0L Turbo Petrol"
         },
         {
-          model: "/alfa-romeo/sz.png",
+          model: "/models/alfa-romeo/alfa-romeo-sz.png",
           model_name: "Alfa Romeo SZ",
           engine_options: "3.0L V6"
         }
@@ -2612,91 +2612,91 @@ export const data: BrandsData = {
       ],
       replacement_costs: [
         {
-          image: "/alfa-romeo/giulietta.png",
+          image: "/models/alfa-romeo/alfa-romeo-giulia.png",
           model: "Alfa Romeo Giulietta, MiTo",
           engineType: "1.4L Petrol",
           estimatedCost: "£1,500 - £3,000"
         },
         {
-          image: "/alfa-romeo/giulia.png",
+          image: "/models/alfa-romeo/alfa-romeo-stelvio.png",
           model: "Alfa Romeo Giulia, Stelvio",
           engineType: "2.0L Diesel",
           estimatedCost: "£2,500 - £4,500"
         },
         {
-          image: "/alfa-romeo/4c.png",
+          image: "/models/alfa-romeo/alfa-romeo-4c.png",
           model: "Alfa Romeo 4C, 8C",
           engineType: "1.75L Turbo",
           estimatedCost: "£3,000 - £5,000"
         },
         {
-          image: "/alfa-romeo/gtv.png",
+          image: "/models/alfa-romeo/alfa-romeo-gtv.png",
           model: "Alfa Romeo GTV, Spider",
           engineType: "2.0L Petrol",
           estimatedCost: "£2,000 - £4,000"
         },
         {
-          image: "/alfa-romeo/159.png",
+          image: "/models/alfa-romeo/alfa-romeo-gt.png",
           model: "Alfa Romeo 159, Brera",
           engineType: "2.4L Diesel",
           estimatedCost: "£3,500 - £6,000"
         },
         {
-          image: "/alfa-romeo/166.png",
+          image: "/models/alfa-romeo/alfa-romeo-166.png",
           model: "Alfa Romeo 166, 156",
           engineType: "3.0L V6",
           estimatedCost: "£4,000 - £7,000"
         },
         {
-          image: "/alfa-romeo/147.png",
+          image: "/models/alfa-romeo/alfa-romeo-147.png",
           model: "Alfa Romeo 147, 145",
           engineType: "1.6L Petrol",
           estimatedCost: "£1,800 - £3,200"
         },
         {
-          image: "/alfa-romeo/giulia.png",
+          image: "/models/alfa-romeo/alfa-romeo-giulia.png",
           model: "Alfa Romeo Giulia Quadrifoglio",
           engineType: "2.9L V6",
           estimatedCost: "£5,000 - £8,000"
         },
         {
-          image: "/alfa-romeo/stelvio.png",
+          image: "/models/alfa-romeo/alfa-romeo-stelvio.png",
           model: "Alfa Romeo Stelvio Quadrifoglio",
           engineType: "2.9L V6",
           estimatedCost: "£5,500 - £9,000"
         },
         {
-          image: "/alfa-romeo/tonale.png",
+          image: "/models/alfa-romeo/alfa-romeo-tonale.png",
           model: "Alfa Romeo Tonale",
           engineType: "1.5L Hybrid",
           estimatedCost: "£3,500 - £6,000"
         },
         {
-          image: "/alfa-romeo/33.png",
+          image: "/models/alfa-romeo/alfa-romeo-33.png",
           model: "Alfa Romeo 33, 75",
           engineType: "1.7L Petrol",
           estimatedCost: "£2,000 - £4,000"
         },
         {
-          image: "/alfa-romeo/90.png",
+          image: "/models/alfa-romeo/alfa-romeo-90.png",
           model: "Alfa Romeo 90, 164",
           engineType: "3.0L V6",
           estimatedCost: "£4,500 - £7,500"
         },
         {
-          image: "/alfa-romeo/sz.png",
+          image: "/models/alfa-romeo/alfa-romeo-sz.png",
           model: "Alfa Romeo SZ, RZ",
           engineType: "3.0L V6",
           estimatedCost: "£5,000 - £8,000"
         },
         {
-          image: "/alfa-romeo/gt.png",
+          image: "/models/alfa-romeo/alfa-romeo-gt.png",
           model: "Alfa Romeo GT, GTV",
           engineType: "2.0L Petrol",
           estimatedCost: "£2,500 - £4,500"
         },
         {
-          image: "/alfa-romeo/montreal.png",
+          image: "/models/alfa-romeo/alfa-romeo-montreal.png",
           model: "Alfa Romeo Montreal",
           engineType: "2.6L V8",
           estimatedCost: "£6,000 - £10,000"
@@ -33865,97 +33865,97 @@ export const data: BrandsData = {
     engineData: {
       models: [
         {
-          model: "/subaru/outback.png",
+          model: "/models/subaru/outback.png",
           model_name: "Subaru Outback",
           engine_options: "2.5L Petrol, 2.4L Turbo",
         },
         {
-          model: "/subaru/forester.png",
+          model: "/models/subaru/forester.png",
           model_name: "Subaru Forester",
           engine_options: "2.5L Petrol, 2.0L Hybrid",
         },
         {
-          model: "/subaru/crosstrek.png",
+          model: "/models/subaru/crosstrek.png",
           model_name: "Subaru Crosstrek",
           engine_options: "2.0L Petrol, 2.5L Petrol, 2.0L Hybrid",
         },
         {
-          model: "/subaru/impresa.png",
+          model: "/models/subaru/impreza.png",
           model_name: "Subaru Impreza",
           engine_options: "2.0L Petrol, 2.0L Hybrid",
         },
         {
-          model: "/subaru/ascent.png",
+          model: "/models/subaru/ascent.png",
           model_name: "Subaru Ascent",
           engine_options: "2.4L Turbo",
         },
         {
-          model: "/subaru/legacy.png",
+          model: "/models/subaru/legacy.png",
           model_name: "Subaru Legacy",
           engine_options: "2.5L Petrol, 2.4L Turbo",
         },
         {
-          model: "/subaru/wrx.png",
+          model: "/models/subaru/wrx.png",
           model_name: "Subaru WRX",
           engine_options: "2.0L Turbo, 2.5L Turbo",
         },
         {
-          model: "/subaru/brz.png",
+          model: "/models/subaru/brz.png",
           model_name: "Subaru BRZ",
           engine_options: "2.4L Petrol",
         },
         {
-          model: "/subaru/solterra.png",
+          model: "/models/subaru/solterra.png",
           model_name: "Subaru Solterra",
           engine_options: "Electric",
         },
         {
-          model: "/subaru/xv.png",
+          model: "/models/subaru/xv.png",
           model_name: "Subaru XV",
           engine_options: "2.0L Petrol, 2.0L Hybrid",
         },
         {
-          model: "/subaru/levorg.png",
+          model: "/models/subaru/levorg.png",
           model_name: "Subaru Levorg",
           engine_options: "1.6L Turbo, 2.0L Turbo",
         },
         {
-          model: "/subaru/tribeca.png",
+          model: "/models/subaru/tribeca.png",
           model_name: "Subaru Tribeca",
           engine_options: "3.6L Petrol",
         },
         {
-          model: "/subaru/baja.png",
+          model: "/models/subaru/baja.png",
           model_name: "Subaru Baja",
           engine_options: "2.5L Petrol",
         },
         {
-          model: "/subaru/justy.png",
+          model: "/models/subaru/justy.png",
           model_name: "Subaru Justy",
           engine_options: "1.0L Petrol, 1.2L Petrol",
         },
         {
-          model: "/subaru/svx.png",
+          model: "/models/subaru/svx.png",
           model_name: "Subaru SVX",
           engine_options: "3.3L Petrol",
         },
         {
-          model: "/subaru/alcyone.png",
+          model: "/models/subaru/alcyone.png",
           model_name: "Subaru Alcyone",
           engine_options: "1.8L Turbo, 2.7L Petrol",
         },
         {
-          model: "/subaru/exiga.png",
+          model: "/models/subaru/exiga.png",
           model_name: "Subaru Exiga",
           engine_options: "2.0L Petrol, 2.5L Petrol",
         },
         {
-          model: "/subaru/sambar.png",
+          model: "/models/subaru/sambar.png",
           model_name: "Subaru Sambar",
           engine_options: "0.7L Petrol",
         },
         {
-          model: "/subaru/r1.png",
+          model: "/models/subaru/r1.png",
           model_name: "Subaru R1",
           engine_options: "0.7L Petrol",
         },
@@ -34263,91 +34263,91 @@ export const data: BrandsData = {
       ],
       replacement_costs: [
         {
-          image: "/subaru/generic.png",
+          image: "/models/subaru/outback.png",
           model: "Subaru Outback, Legacy",
           engineType: "2.5L Petrol",
           estimatedCost: "£2,500 - £4,000",
         },
         {
-          image: "/subaru/generic.png",
+          image: "/models/subaru/forester.png",
           model: "Subaru Forester, Impreza",
           engineType: "2.0L Petrol",
           estimatedCost: "£2,000 - £3,500",
         },
         {
-          image: "/subaru/generic.png",
+          image: "/models/subaru/wrx.png",
           model: "Subaru WRX, WRX STI",
           engineType: "2.5L Turbo",
           estimatedCost: "£3,500 - £5,500",
         },
         {
-          image: "/subaru/generic.png",
+          image: "/models/subaru/crosstrek.png",
           model: "Subaru Crosstrek, XV",
           engineType: "2.0L Hybrid",
           estimatedCost: "£3,000 - £4,500",
         },
         {
-          image: "/subaru/generic.png",
+          image: "/models/subaru/ascent.png",
           model: "Subaru Ascent",
           engineType: "2.4L Turbo",
           estimatedCost: "£3,500 - £5,000",
         },
         {
-          image: "/subaru/generic.png",
+          image: "/models/subaru/brz.png",
           model: "Subaru BRZ",
           engineType: "2.4L Petrol",
           estimatedCost: "£3,000 - £4,500",
         },
         {
-          image: "/subaru/generic.png",
+          image: "/models/subaru/tribeca.png",
           model: "Subaru Tribeca",
           engineType: "3.6L Petrol",
           estimatedCost: "£4,000 - £6,000",
         },
         {
-          image: "/subaru/generic.png",
+          image: "/models/subaru/baja.png",
           model: "Subaru Baja",
           engineType: "2.5L Petrol",
           estimatedCost: "£2,500 - £4,000",
         },
         {
-          image: "/subaru/generic.png",
+          image: "/models/subaru/levorg.png",
           model: "Subaru Levorg",
           engineType: "1.6L Turbo",
           estimatedCost: "£2,500 - £4,000",
         },
         {
-          image: "/subaru/generic.png",
+          image: "/models/subaru/exiga.png",
           model: "Subaru Exiga",
           engineType: "2.0L Petrol",
           estimatedCost: "£2,500 - £4,000",
         },
         {
-          image: "/subaru/generic.png",
+          image: "/models/subaru/solterra.png",
           model: "Subaru Solterra",
           engineType: "Electric",
           estimatedCost: "£5,000 - £7,000",
         },
         {
-          image: "/subaru/generic.png",
+          image: "/models/subaru/justy.png",
           model: "Subaru Justy",
           engineType: "1.2L Petrol",
           estimatedCost: "£1,500 - £3,000",
         },
         {
-          image: "/subaru/generic.png",
+          image: "/models/subaru/alcyone.png",
           model: "Subaru Alcyone",
           engineType: "2.7L Petrol",
           estimatedCost: "£3,500 - £5,500",
         },
         {
-          image: "/subaru/generic.png",
+          image: "/models/subaru/sambar.png",
           model: "Subaru Sambar",
           engineType: "0.7L Petrol",
           estimatedCost: "£1,500 - £2,500",
         },
         {
-          image: "/subaru/generic.png",
+          image: "/models/subaru/r1.png",
           model: "Subaru R1",
           engineType: "0.7L Petrol",
           estimatedCost: "£1,500 - £2,500",

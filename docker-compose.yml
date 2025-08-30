@@ -37,6 +37,7 @@ services:
       - "traefik.http.routers.traefik-dashboard.tls.certresolver=le"
       - "traefik.http.services.traefik-dashboard.loadbalancer.server.port=80"
 
+
   # ============ MAIN SITE (Next.js App) ============
   webapp:
     build: ./website

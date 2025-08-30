@@ -15,6 +15,7 @@ import { Suspense, useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
+import { useActionState } from "react";
 interface VehicleInfo {
   registration?: string;
   make?: string;
@@ -30,7 +31,6 @@ enum OPTIONS {
   model = "model",
   engineCode = "engineCode",
   reg = "reg",
-  success = "success",
 }
 const checkFalsy = (param: unknown) =>
   param !== null &&
@@ -60,27 +60,20 @@ function VehicleServiceFormContent() {
   const model_name = get(OPTIONS.model_name);
   const model = get(OPTIONS.model);
   const engineCode = get(OPTIONS.engineCode);
-  const success = get(OPTIONS.success);
   const data = model || model_name || engineCode;
   const router = useRouter();
+  const [state, formAction, isPending] = useActionState(submitForm, {
+    success: false,
+    message: "",
+  });
 
   useEffect(() => {
-    if (success === "true") {
-      toast.success("Form submitted successfully", {
-        position: "top-right",
-      });
-      const newParams = new URLSearchParams(searchParams.toString());
-      newParams.delete(OPTIONS.success);
-      router.replace(`?${newParams.toString()}`, { scroll: false });
-    } else if (success === "false") {
-      toast.error("Unexpected error occured", {
-        position: "top-right",
-      });
-      const newParams = new URLSearchParams(searchParams.toString());
-      newParams.delete(OPTIONS.success);
-      router.replace(`?${newParams.toString()}`, { scroll: false });
+    if (state.success) {
+      toast.success("Form submitted successfully!", { position: "top-right" });
+    } else if (state.message && !state.success) {
+      toast.error(state.message, { position: "top-right" });
     }
-  }, [success, searchParams, router]);
+  }, [state, router]);
   useEffect(() => {
     const fetchVehicleData = async () => {
       setIsFetchingVehicle(true);
@@ -190,13 +183,14 @@ function VehicleServiceFormContent() {
                           vehicleInfo.data,
                         ]
                           .filter(Boolean)
-                          .map((item = "", idx) => {
+                          .map((item: string = "", idx) => {
                             if (idx === 4) return item;
-                            return item.replace(
+                            const str = String(item);
+                            return str.replace(
                               /\w\S*/g,
                               (txt) =>
                                 txt.charAt(0).toUpperCase() +
-                                txt.substr(1).toLowerCase(),
+                                txt.slice(1).toLowerCase(),
                             );
                           })
                           .join(" - ")}
@@ -241,7 +235,7 @@ function VehicleServiceFormContent() {
 
         {/* Form Section - Show form only when not fetching initial vehicle data */}
         {!isFetchingVehicle && (
-          <form action={submitForm} className="gap-6">
+          <form action={formAction} className="gap-6">
             <div className="border border-gray-300 rounded-4xl p-6 bg-white shadow-2xl">
               <h2 className="text-lg font-semibold text-gray-800 mb-4">
                 REQUIRED DETAILS
@@ -475,8 +469,8 @@ function VehicleServiceFormContent() {
                   </a>
                   .
                 </p>
-                <Button variant="red" className="w-full before:bg-white">
-                  Request A Quote
+                <Button variant="red" className="w-full" disabled={isPending}>
+                  {isPending ? "Submitting..." : "Request A Quote"}
                 </Button>
               </div>
             </div>

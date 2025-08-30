@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Container from "@/components/Container";
 import { getPost, getRelatedPosts } from "@/lib/wordpressHelpers";
+import QuickQuoteForm from "./QuickQuoteForm";
 
 interface Params {
   id: string;
@@ -30,7 +31,8 @@ const BlogDetailPage = async (props: { params: Promise<Params> }) => {
   });
 
   // Get category name
-  const categoryName = post.categories[0] === 1 ? "Range Rover" : "Jaguar";
+  const categoryName =
+    post.categories[0] === 1 ? "uncategorized" : post.categories[0];
 
   // Reading time estimate
   const readingTime = Math.ceil(post.content.rendered.split(" ").length / 200);
@@ -86,82 +88,7 @@ const BlogDetailPage = async (props: { params: Promise<Params> }) => {
       <aside className="w-full md:w-96">
         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 sticky">
           {/* Quick Quote Form */}
-          <div className="mb-8">
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">
-              Quick Engine Quote - No Obligation
-            </h3>
-            <p className="text-xs text-gray-600 mb-4">
-              We compare prices from trusted UK engine suppliers
-            </p>
-            <form className="space-y-3">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-xs font-medium text-gray-700"
-                >
-                  Name *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                  placeholder="Enter Your Name"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="mobile"
-                  className="block text-xs font-medium text-gray-700"
-                >
-                  Mobile No. *
-                </label>
-                <input
-                  type="tel"
-                  id="mobile"
-                  className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                  placeholder="Enter Your Mobile Number"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-xs font-medium text-gray-700"
-                >
-                  Email *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                  placeholder="Enter Your Email"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="vehicle"
-                  className="block text-xs font-medium text-gray-700"
-                >
-                  Your Vehicle Details (Optional)
-                </label>
-                <textarea
-                  id="vehicle"
-                  rows={3}
-                  className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                  placeholder="Your Car Engine or Make/Model or Engine Info (Optional)"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 transition font-medium text-sm"
-              >
-                Request A Quote
-              </button>
-              <p className="text-xs text-gray-500 mt-2">
-                100% free, no obligation - we&apos;ll get back to you within
-                hours.
-              </p>
-            </form>
-          </div>
+          <QuickQuoteForm />
 
           {/* Related Posts */}
           <div>

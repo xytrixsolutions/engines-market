@@ -1,23 +1,19 @@
 "use server";
 import { createTransport } from "nodemailer";
 
-export interface FormState
-{
+export interface FormState {
   success: boolean;
   message?: string;
 }
 export async function submitForm(
   prevState: FormState,
   data: FormData,
-): Promise<FormState>
-{
-  const formData = Object.fromEntries( data );
+): Promise<FormState> {
+  const formData = Object.fromEntries(data);
   let vehicleDetails;
-  if ( formData.data )
-  {
+  if (formData.data) {
     vehicleDetails = `Registration Data: ${formData.data}`;
-  } else
-  {
+  } else {
     vehicleDetails = `
       Make: ${formData.make || "Not provided"}
       Model: ${formData.model || "Not provided"}
@@ -28,12 +24,12 @@ export async function submitForm(
     `;
   }
   const services = [];
-  if ( formData.part_supplied_fitted ) services.push( "Part Supplied & Fitted" );
-  if ( formData.supply_only ) services.push( "Supply Only" );
+  if (formData.part_supplied_fitted) services.push("Part Supplied & Fitted");
+  if (formData.supply_only) services.push("Supply Only");
   const engineTypes = [];
-  if ( formData.new ) engineTypes.push( "New" );
-  if ( formData.used ) engineTypes.push( "Used" );
-  if ( formData.rebuilt ) engineTypes.push( "Rebuilt" );
+  if (formData.new) engineTypes.push("New");
+  if (formData.used) engineTypes.push("Used");
+  if (formData.rebuilt) engineTypes.push("Rebuilt");
 
   const emailContent = `
     <h1>New Vehicle Service Request</h1>
@@ -48,13 +44,17 @@ export async function submitForm(
     <pre>${vehicleDetails}</pre>
     
     <h2>Service Options:</h2>
-    <p><strong>Services Selected:</strong> ${services.join( ", " ) || "None selected"
+    <p><strong>Services Selected:</strong> ${
+      services.join(", ") || "None selected"
     }</p>
-    <p><strong>Engine Types Preferred:</strong> ${engineTypes.join( ", " ) || "None selected"
+    <p><strong>Engine Types Preferred:</strong> ${
+      engineTypes.join(", ") || "None selected"
     }</p>
-    <p><strong>Does Vehicle Drive?:</strong> ${formData.drives || "Not specified"
+    <p><strong>Does Vehicle Drive?:</strong> ${
+      formData.drives || "Not specified"
     }</p>
-    <p><strong>Requires Collection?:</strong> ${formData.requiresCollection || "Not specified"
+    <p><strong>Requires Collection?:</strong> ${
+      formData.requiresCollection || "Not specified"
     }</p>
     
     <h2>Additional Notes:</h2>
@@ -62,15 +62,15 @@ export async function submitForm(
   `;
 
   // Configure SMTP transporter
-  const transporter = createTransport( {
+  const transporter = createTransport({
     host: process.env.SMTP_HOST,
-    port: parseInt( process.env.SMTP_PORT || "587" ),
+    port: parseInt(process.env.SMTP_PORT || "587"),
     secure: process.env.SMTP_SECURE === "true", // true for 465, false for other ports
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASSWORD,
     },
-  } );
+  });
 
   // Email options
   const mailOptions = {
@@ -80,13 +80,11 @@ export async function submitForm(
     html: emailContent,
   };
 
-  try
-  {
-    await transporter.sendMail( mailOptions );
+  try {
+    await transporter.sendMail(mailOptions);
     return { success: true, message: "Form submitted successfully!" };
-  } catch ( error )
-  {
-    console.error( "Email send error:", error );
+  } catch (error) {
+    console.error("Email send error:", error);
     return { success: false, message: "Failed to send message." };
   }
 }

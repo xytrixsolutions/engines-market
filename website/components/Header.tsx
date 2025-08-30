@@ -4,6 +4,7 @@ import { FiArrowUpRight, FiMenu, FiX } from "react-icons/fi";
 import Image from "next/image";
 import { useState } from "react";
 import Button from "./Button";
+import { data } from "@/data/brands";
 
 const NavLink = ({
   href,
@@ -36,10 +37,37 @@ const MobileNavLink = ({
 );
 
 const NAV_ITEMS = [
-  { href: "/engines", label: "Engines" },
+  { href: "/brands", label: "Brands", type: "dropdown" }, // Mark as dropdown
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
+const CAR_BRANDS = [
+  "Toyota",
+  "Honda",
+  "Ford",
+  "BMW",
+  "Mercedes-Benz",
+  "Audi",
+  "Tesla",
+  "Porsche",
+  "Lexus",
+  "Nissan",
+  "Hyundai",
+  "Kia",
+  "Volkswagen",
+  "Chevrolet",
+  "Ferrari",
+  "Lamborghini",
+  "Mazda",
+  "Subaru",
+  "Volvo",
+  "Jaguar",
+];
+const brandEntries = Object.entries(data) as [string, { brandName: string }][];
+const brandLinks = brandEntries.map(([slug, { brandName }]) => ({
+  href: `/${slug}`,
+  label: brandName,
+}));
 
 export default function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -67,16 +95,39 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Navigation Menu (center) */}
-          <nav className="hidden md:flex items-center space-x-8 mx-auto">
-            {NAV_ITEMS.map((item) => (
-              <NavLink key={item.href} href={item.href}>
-                {item.label}
-              </NavLink>
-            ))}
+          {/* Centered Navigation Links */}
+          <nav className="hidden md:flex items-center space-x-8 mx-auto relative">
+            {NAV_ITEMS.map((item) =>
+              item.label === "Brands" ? (
+                <div key={item.href} className="relative group">
+                  <NavLink href={item.href}>{item.label}</NavLink>
+                  <div
+                    className="absolute top-15  -translate-x-[44.2%] w-screen
+                               opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+                               transition-all duration-300 z-[99999999999]"
+                  >
+                    <div className="bg-charcoal-gray border border-charcoal-gray-muted/20 shadow-2xl rounded-md overflow-hidden">
+                      <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 gap-3 p-5 max-h-96 overflow-y-auto">
+                        {brandLinks.map(({ href, label }) => (
+                          <Link
+                            key={href}
+                            href={href}
+                            className="block px-3 py-2 text-sm text-center text-charcoal-gray-muted hover:text-neon-red hover:bg-gray-800 rounded transition-colors duration-200"
+                          >
+                            {label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div key={item.href}>
+                  <NavLink href={item.href}>{item.label}</NavLink>
+                </div>
+              )
+            )}
           </nav>
-
-          {/* Right Side Actions (desktop only) */}
           <form
             action={"/contact"}
             className="hidden md:flex items-center space-x-6 justify-end flex-1"

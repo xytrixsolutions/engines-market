@@ -159,9 +159,7 @@ function VehicleServiceFormContent() {
               </p>
               {vehicleInfo && (
                 <div className="flex flex-col items-center gap-4">
-                  {/* ... (vehicle details display) ... */}
                   <div className="flex flex-col items-center gap-2">
-                    {/* Vehicle Details - All on one line centered */}
                     <div className="flex items-center gap-2 flex-wrap justify-center">
                       <p className="text-md font-semibold text-neon-red">
                         {(() => {
@@ -196,8 +194,6 @@ function VehicleServiceFormContent() {
                           .join(" - ")}
                       </p>
                     </div>
-
-                    {/* Number Plate - On next line, centered */}
                     {vehicleInfo.registration && (
                       <div
                         className="flex items-center w-32 h-9 bg-[#ffcb05] border-2 border-black rounded-md overflow-hidden mt-2"
@@ -206,7 +202,6 @@ function VehicleServiceFormContent() {
                           letterSpacing: "0.8px", // helps maintain number plate spacing at small size
                         }}
                       >
-                        {/* UK Flag Strip - Slimmer */}
                         <div className="w-5 h-full relative flex-shrink-0">
                           <Image
                             src="/Home/uknumberplate.png"
